@@ -1,16 +1,3 @@
-# SteepWood Webapp
+# SteepWood
 
-Next.js site for [steepwood.com.au](https://steepwood.com.au).
-
-## Local development
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to preview changes before deploying.
-
-## Deploy
-
-Pushes to `main` on [GitHub](https://github.com/SteepWood/Webapp) deploy automatically to Vercel.
+Premium custom joinery for Newcastle, Hunter Valley and Australia-wide. Production codebase. Australian English. Not for public distribution.

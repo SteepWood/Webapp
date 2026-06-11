@@ -1,0 +1,2518 @@
+[
+  {
+    "path": "/",
+    "title": "SteepWood Custom Joinery — Newcastle NSW | Australia-Wide",
+    "metas": [
+      {
+        "key": "description",
+        "content": "Premium custom joinery from our Newcastle workshop. Kitchens, wardrobes, vanities, commercial fitouts across 16 Australian cities. Free design consultation."
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Premium custom joinery from our Newcastle workshop. Kitchens, wardrobes, vanities, commercial fitouts across 16 Australian cities. Free design consultation."
+      },
+      {
+        "key": "og:image",
+        "content": "http://localhost:3000/opengraph-image?7d164e0f2a46ba70"
+      },
+      {
+        "key": "og:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "key": "og:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "SteepWood Custom Joinery — Newcastle NSW | Australia-Wide"
+      },
+      {
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Premium custom joinery from our Newcastle workshop. Kitchens, wardrobes, vanities, commercial fitouts across 16 Australian cities. Free design consultation."
+      },
+      {
+        "key": "twitter:image",
+        "content": "http://localhost:3000/opengraph-image?7d164e0f2a46ba70"
+      },
+      {
+        "key": "twitter:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "twitter:image:height",
+        "content": "630"
+      },
+      {
+        "key": "twitter:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "twitter:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "twitter:title",
+        "content": "SteepWood Custom Joinery — Newcastle NSW | Australia-Wide"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"@id\":\"http://localhost:3000/#localbusiness\",\"name\":\"SteepWood\",\"url\":\"http://localhost:3000/\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":4.9,\"reviewCount\":7,\"bestRating\":5,\"worstRating\":1}}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"LocalBusiness\",\"@id\":\"http://localhost:3000/#localbusiness\",\"name\":\"SteepWood\"},\"author\":{\"@type\":\"Person\",\"name\":\"Sarah Mitchell\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"SteepWood transformed our kitchen with incredible attention to detail. The team communicated clearly at every stage and the finished joinery feels truly bespoke.\",\"url\":\"https://www.google.com/maps\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"LocalBusiness\",\"@id\":\"http://localhost:3000/#localbusiness\",\"name\":\"SteepWood\"},\"author\":{\"@type\":\"Person\",\"name\":\"James Chen\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"Our built-in wardrobes maximise every millimetre of space. Installation was tidy, on schedule, and the 2-Pac finish is flawless.\",\"url\":\"https://www.google.com/maps\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"LocalBusiness\",\"@id\":\"http://localhost:3000/#localbusiness\",\"name\":\"SteepWood\"},\"author\":{\"@type\":\"Person\",\"name\":\"Emma Walsh\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"The bathroom vanity and storage wall completely changed how we use the ensuite. Beautiful craftsmanship and thoughtful design suggestions throughout.\"}"
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Custom Joinery, Designed and Built in Newcastle"
+      },
+      {
+        "tag": "h2",
+        "text": "Ten services. One commitment to craft."
+      },
+      {
+        "tag": "h2",
+        "text": "Why SteepWood"
+      },
+      {
+        "tag": "h2",
+        "text": "Recent projects across Australia"
+      },
+      {
+        "tag": "h2",
+        "text": "From consultation to install — what to expect"
+      },
+      {
+        "tag": "h2",
+        "text": "Crafted in Newcastle. Delivered Australia-wide."
+      },
+      {
+        "tag": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "tag": "h2",
+        "text": "Ready to start your project?"
+      },
+      {
+        "tag": "h2",
+        "text": "What our clients say"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Kitchen Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Built-In Wardrobes & Walk-In Robes"
+      },
+      {
+        "tag": "h3",
+        "text": "Office Fitout"
+      },
+      {
+        "tag": "h3",
+        "text": "Shopfitting & Retail Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Bathroom Vanity Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Commercial Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom & Bespoke Furniture"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Home Office Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Laundry Cabinets & Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Timber Staircase Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Newcastle Workshop"
+      },
+      {
+        "tag": "h3",
+        "text": "20+ Years of Craftsmanship"
+      },
+      {
+        "tag": "h3",
+        "text": "Premium Materials Only"
+      },
+      {
+        "tag": "h3",
+        "text": "Fixed-Price Quotes"
+      },
+      {
+        "tag": "h3",
+        "text": "Hamptons Kitchen — Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Walk-In Robe — Sydney"
+      },
+      {
+        "tag": "h3",
+        "text": "Floating Vanity — Byron Bay"
+      },
+      {
+        "tag": "h3",
+        "text": "Free design consultation"
+      },
+      {
+        "tag": "h3",
+        "text": "Detailed design and fixed-price quote"
+      },
+      {
+        "tag": "h3",
+        "text": "Manufacture in Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Install by our own teams"
+      },
+      {
+        "tag": "h3",
+        "text": "How much does custom joinery cost in Australia?"
+      },
+      {
+        "tag": "h3",
+        "text": "Do you service areas outside Newcastle?"
+      },
+      {
+        "tag": "h3",
+        "text": "How long does a custom kitchen take from quote to install?"
+      },
+      {
+        "tag": "h3",
+        "text": "What materials and hardware do you use?"
+      },
+      {
+        "tag": "h3",
+        "text": "Is there a warranty on SteepWood joinery?"
+      }
+    ]
+  },
+  {
+    "path": "/about/",
+    "title": "About SteepWood Custom Joinery — Newcastle Craftsmen | SteepWood",
+    "metas": [
+      {
+        "key": "description",
+        "content": "Twenty years of Newcastle joinery craftsmanship. Family-run, premium materials, fixed-price quotes. Learn the SteepWood story and meet the team."
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Twenty years of Newcastle joinery craftsmanship. Family-run, premium materials, fixed-price quotes. Learn the SteepWood story and meet the team."
+      },
+      {
+        "key": "og:image",
+        "content": "http://localhost:3000/about/opengraph-image?a70e0ac12d14f4e5"
+      },
+      {
+        "key": "og:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "key": "og:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "About SteepWood Custom Joinery — Newcastle Craftsmen"
+      },
+      {
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000/about/"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Twenty years of Newcastle joinery craftsmanship. Family-run, premium materials, fixed-price quotes. Learn the SteepWood story and meet the team."
+      },
+      {
+        "key": "twitter:image",
+        "content": "http://localhost:3000/about/opengraph-image?a70e0ac12d14f4e5"
+      },
+      {
+        "key": "twitter:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "twitter:image:height",
+        "content": "630"
+      },
+      {
+        "key": "twitter:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "twitter:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "twitter:title",
+        "content": "About SteepWood Custom Joinery — Newcastle Craftsmen"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000/about/",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000/about/",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "About SteepWood — Twenty Years of Newcastle Craftsmanship"
+      },
+      {
+        "tag": "h2",
+        "text": "Our story"
+      },
+      {
+        "tag": "h2",
+        "text": "Our values"
+      },
+      {
+        "tag": "h2",
+        "text": "The workshop"
+      },
+      {
+        "tag": "h2",
+        "text": "Meet the team"
+      },
+      {
+        "tag": "h2",
+        "text": "Credentials and memberships"
+      },
+      {
+        "tag": "h2",
+        "text": "Want to see what we can craft for you?"
+      },
+      {
+        "tag": "h3",
+        "text": "Craftsmanship over speed"
+      },
+      {
+        "tag": "h3",
+        "text": "Materials that age beautifully"
+      },
+      {
+        "tag": "h3",
+        "text": "Honest communication"
+      },
+      {
+        "tag": "h3",
+        "text": "Built for generations"
+      },
+      {
+        "tag": "h3",
+        "text": "James Mitchell"
+      },
+      {
+        "tag": "h3",
+        "text": "Sarah Chen"
+      },
+      {
+        "tag": "h3",
+        "text": "Tom Walsh"
+      },
+      {
+        "tag": "h3",
+        "text": "Elena Rossi"
+      }
+    ]
+  },
+  {
+    "path": "/contact/",
+    "title": "Contact SteepWood — Free Joinery Quote | SteepWood",
+    "metas": [
+      {
+        "key": "description",
+        "content": "Get a free design consultation and fixed-price quote for custom joinery. Phone, email, or contact form. Servicing 16 Australian cities from Newcastle."
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Get a free design consultation and fixed-price quote for custom joinery. Phone, email, or contact form. Servicing 16 Australian cities from Newcastle."
+      },
+      {
+        "key": "og:image",
+        "content": "http://localhost:3000/contact/opengraph-image?ed143b8ef172a388"
+      },
+      {
+        "key": "og:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "key": "og:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "Contact SteepWood — Free Joinery Quote"
+      },
+      {
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000/contact/"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Get a free design consultation and fixed-price quote for custom joinery. Phone, email, or contact form. Servicing 16 Australian cities from Newcastle."
+      },
+      {
+        "key": "twitter:image",
+        "content": "http://localhost:3000/contact/opengraph-image?ed143b8ef172a388"
+      },
+      {
+        "key": "twitter:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "twitter:image:height",
+        "content": "630"
+      },
+      {
+        "key": "twitter:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "twitter:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "twitter:title",
+        "content": "Contact SteepWood — Free Joinery Quote"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000/contact/",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000/contact/",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Get a Free Design Consultation"
+      },
+      {
+        "tag": "h2",
+        "text": "Phone"
+      },
+      {
+        "tag": "h2",
+        "text": "Email"
+      },
+      {
+        "tag": "h2",
+        "text": "Workshop visit"
+      },
+      {
+        "tag": "h2",
+        "text": "Send an enquiry"
+      },
+      {
+        "tag": "h2",
+        "text": "Opening hours"
+      },
+      {
+        "tag": "h2",
+        "text": "Workshop location"
+      }
+    ]
+  },
+  {
+    "path": "/quote/",
+    "title": "Get a Free Measure & Quote — SteepWood | SteepWood",
+    "metas": [
+      {
+        "key": "description",
+        "content": "Request a free in-home measure and fixed-price quote for custom joinery. Tell us about your project in three quick steps."
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Request a free in-home measure and fixed-price quote for custom joinery. Tell us about your project in three quick steps."
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "Get a Free Measure & Quote — SteepWood"
+      },
+      {
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000/quote/"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Request a free in-home measure and fixed-price quote for custom joinery. Tell us about your project in three quick steps."
+      },
+      {
+        "key": "twitter:title",
+        "content": "Get a Free Measure & Quote — SteepWood"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000/quote/",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000/quote/",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Get a Free Measure & Quote"
+      }
+    ]
+  },
+  {
+    "path": "/portfolio/",
+    "title": "Our Projects — Custom Joinery Portfolio | SteepWood | SteepWood",
+    "metas": [
+      {
+        "key": "description",
+        "content": "Explore SteepWood's custom joinery portfolio — kitchens, wardrobes, vanities, and commercial fitouts crafted in Newcastle and delivered across Australia."
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Explore SteepWood's custom joinery portfolio — kitchens, wardrobes, vanities, and commercial fitouts crafted in Newcastle and delivered across Australia."
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "Our Projects — Custom Joinery Portfolio | SteepWood"
+      },
+      {
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000/portfolio/"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Explore SteepWood's custom joinery portfolio — kitchens, wardrobes, vanities, and commercial fitouts crafted in Newcastle and delivered across Australia."
+      },
+      {
+        "key": "twitter:title",
+        "content": "Our Projects — Custom Joinery Portfolio | SteepWood"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000/portfolio/",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000/portfolio/",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Selected works"
+      },
+      {
+        "tag": "h3",
+        "text": "Hamptons Kitchen — Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Walk-In Robe — Sydney"
+      },
+      {
+        "tag": "h3",
+        "text": "Floating Vanity — Byron Bay"
+      }
+    ]
+  },
+  {
+    "path": "/custom-kitchen-joinery/",
+    "title": "Custom Kitchen Joinery Australia | SteepWood Joinery | SteepWood",
+    "metas": [
+      {
+        "key": "description",
+        "content": "Custom kitchen joinery designed and built in our Newcastle workshop. Premium 2pac, Caesarstone, Blum hardware. Free design consultation Australia-wide."
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Custom kitchen joinery designed and built in our Newcastle workshop. Premium 2pac, Caesarstone, Blum hardware. Free design consultation Australia-wide."
+      },
+      {
+        "key": "og:image",
+        "content": "http://localhost:3000/custom-kitchen-joinery/opengraph-image?4349e6e39737c42d"
+      },
+      {
+        "key": "og:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "key": "og:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "Custom Kitchen Joinery Australia | SteepWood Joinery"
+      },
+      {
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000/custom-kitchen-joinery/"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Custom kitchen joinery designed and built in our Newcastle workshop. Premium 2pac, Caesarstone, Blum hardware. Free design consultation Australia-wide."
+      },
+      {
+        "key": "twitter:image",
+        "content": "http://localhost:3000/custom-kitchen-joinery/opengraph-image?4349e6e39737c42d"
+      },
+      {
+        "key": "twitter:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "twitter:image:height",
+        "content": "630"
+      },
+      {
+        "key": "twitter:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "twitter:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "twitter:title",
+        "content": "Custom Kitchen Joinery Australia | SteepWood Joinery"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000/custom-kitchen-joinery/",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000/custom-kitchen-joinery/",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"http://localhost:3000/custom-kitchen-joinery/#service\",\"serviceType\":\"Custom Kitchen Joinery\",\"name\":\"Custom Kitchen Joinery by SteepWood\",\"description\":\"Custom kitchen joinery designed and built in our Newcastle workshop. Premium 2pac, Caesarstone, Blum hardware. Free design consultation Australia-wide.\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/\",\"provider\":{\"@id\":\"http://localhost:3000/#localbusiness\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Newcastle\",\"@id\":\"https://en.wikipedia.org/wiki/Newcastle,_New_South_Wales\"},{\"@type\":\"City\",\"name\":\"Sydney\",\"@id\":\"https://en.wikipedia.org/wiki/Sydney\"},{\"@type\":\"City\",\"name\":\"Canberra\",\"@id\":\"https://en.wikipedia.org/wiki/Canberra\"},{\"@type\":\"City\",\"name\":\"Melbourne\",\"@id\":\"https://en.wikipedia.org/wiki/Melbourne\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Central Coast\",\"@id\":\"https://en.wikipedia.org/wiki/Central_Coast_(New_South_Wales)\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Hunter Valley\",\"@id\":\"https://en.wikipedia.org/wiki/Hunter_Valley\"},{\"@type\":\"City\",\"name\":\"Gold Coast\",\"@id\":\"https://en.wikipedia.org/wiki/Gold_Coast,_Queensland\"},{\"@type\":\"City\",\"name\":\"Wollongong\",\"@id\":\"https://en.wikipedia.org/wiki/Wollongong\"},{\"@type\":\"City\",\"name\":\"Brisbane\",\"@id\":\"https://en.wikipedia.org/wiki/Brisbane\"},{\"@type\":\"City\",\"name\":\"Perth\",\"@id\":\"https://en.wikipedia.org/wiki/Perth\"},{\"@type\":\"Place\",\"name\":\"Byron Bay\",\"@id\":\"https://en.wikipedia.org/wiki/Byron_Bay\"},{\"@type\":\"City\",\"name\":\"Port Macquarie\",\"@id\":\"https://en.wikipedia.org/wiki/Port_Macquarie\"},{\"@type\":\"City\",\"name\":\"Coffs Harbour\",\"@id\":\"https://en.wikipedia.org/wiki/Coffs_Harbour\"},{\"@type\":\"City\",\"name\":\"Adelaide\",\"@id\":\"https://en.wikipedia.org/wiki/Adelaide\"},{\"@type\":\"City\",\"name\":\"Bathurst\",\"@id\":\"https://en.wikipedia.org/wiki/Bathurst,_New_South_Wales\"},{\"@type\":\"City\",\"name\":\"Orange\",\"@id\":\"https://en.wikipedia.org/wiki/Orange,_New_South_Wales\"}],\"hasOfferCatalog\":{\"@type\":\"OfferCatalog\",\"name\":\"Custom Kitchen Joinery Locations\",\"itemListElement\":[{\"@type\":\"Offer\",\"position\":1,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Newcastle\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/newcastle/\"}},{\"@type\":\"Offer\",\"position\":2,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Sydney\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/sydney/\"}},{\"@type\":\"Offer\",\"position\":3,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Canberra\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/canberra/\"}},{\"@type\":\"Offer\",\"position\":4,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Melbourne\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/melbourne/\"}},{\"@type\":\"Offer\",\"position\":5,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Central Coast\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/central-coast/\"}},{\"@type\":\"Offer\",\"position\":6,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Hunter Valley\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/hunter-valley/\"}},{\"@type\":\"Offer\",\"position\":7,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Gold Coast\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/gold-coast/\"}},{\"@type\":\"Offer\",\"position\":8,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Wollongong\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/wollongong/\"}},{\"@type\":\"Offer\",\"position\":9,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Brisbane\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/brisbane/\"}},{\"@type\":\"Offer\",\"position\":10,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Perth\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/perth/\"}},{\"@type\":\"Offer\",\"position\":11,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Byron Bay\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/byron-bay/\"}},{\"@type\":\"Offer\",\"position\":12,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Port Macquarie\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/port-macquarie/\"}},{\"@type\":\"Offer\",\"position\":13,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Coffs Harbour\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/coffs-harbour/\"}},{\"@type\":\"Offer\",\"position\":14,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Adelaide\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/adelaide/\"}},{\"@type\":\"Offer\",\"position\":15,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Bathurst\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/bathurst/\"}},{\"@type\":\"Offer\",\"position\":16,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Custom Kitchen Joinery in Orange\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/orange/\"}}]}}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Custom Kitchen Joinery\",\"item\":\"http://localhost:3000/custom-kitchen-joinery/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"@id\":\"http://localhost:3000/custom-kitchen-joinery/#faq\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How much does custom kitchen joinery cost in Australia?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Custom kitchens range from $15,000 for a small budget kitchen with laminate doors and laminate tops, through to $120,000+ for a luxury kitchen with 2pac doors, stone benchtops, and butler's pantry. Most SteepWood kitchens fall between $35,000 and $75,000.\"}},{\"@type\":\"Question\",\"name\":\"How long does it take to build a custom kitchen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"From deposit to installation: typically 8 to 14 weeks. Design and approvals take 2–3 weeks; manufacturing 6–8 weeks; installation 3–7 days.\"}},{\"@type\":\"Question\",\"name\":\"What is the difference between 2pac and polyurethane?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"2pac is a two-pack polyurethane — the same family of finish, sprayed in our spray booth for a hard, uniform finish. \\\"Polyurethane\\\" generally refers to the same material; the term \\\"2pac\\\" is the trade name. Both are durable, washable, and available in any colour from Dulux, Resene, or Polytec palettes.\"}},{\"@type\":\"Question\",\"name\":\"Can you match my kitchen joinery to my benchtop material?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. We carry samples from Caesarstone, Smartstone, Essastone, Quantum Quartz, Polytec, and Laminex, and we coordinate door colour, benchtop, and splashback during the design stage.\"}},{\"@type\":\"Question\",\"name\":\"Do you supply and install appliances?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We design around your chosen appliances (or recommend Westinghouse, Bosch, Miele, Smeg, Fisher & Paykel depending on budget) and install joinery to suit. Appliance supply is optional — many clients prefer to source independently.\"}},{\"@type\":\"Question\",\"name\":\"What warranties do you offer on kitchen joinery?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"10-year structural warranty on joinery, 25-year Blum hardware warranty (manufacturer-backed), benchtop warranties per supplier (Caesarstone offers a 25-year residential warranty).\"}},{\"@type\":\"Question\",\"name\":\"Can you work with an existing floor plan, or does the whole kitchen need to change?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Both. We do straight cabinetry replacements within an existing footprint, and we also redesign full layouts in partnership with builders and architects.\"}},{\"@type\":\"Question\",\"name\":\"What is the minimum space needed for a kitchen island?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"1,000 mm clear walkway on every side of the island is the practical minimum; 1,200 mm is ideal. Total island width including bench: from 900 mm for a small prep island, up to 1,500–1,800 mm for an island with seating.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"Service\",\"@id\":\"http://localhost:3000/custom-kitchen-joinery/#service\",\"name\":\"SteepWood — Custom Kitchen Joinery\"},\"author\":{\"@type\":\"Person\",\"name\":\"Sarah Mitchell\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"SteepWood transformed our kitchen with incredible attention to detail. The team communicated clearly at every stage and the finished joinery feels truly bespoke.\",\"url\":\"https://www.google.com/maps\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"Service\",\"@id\":\"http://localhost:3000/custom-kitchen-joinery/#service\",\"name\":\"SteepWood — Custom Kitchen Joinery\"},\"author\":{\"@type\":\"Person\",\"name\":\"Rachel O'Brien\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"From first measure to final install, the process was professional and transparent. The quote matched the final invoice with no surprises.\",\"url\":\"https://www.google.com/maps\"}"
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Custom Kitchen Joinery — Handcrafted in Newcastle, Delivered Australia-Wide"
+      },
+      {
+        "tag": "h2",
+        "text": "What is custom kitchen joinery?"
+      },
+      {
+        "tag": "h2",
+        "text": "What's included"
+      },
+      {
+        "tag": "h2",
+        "text": "Materials & finishes"
+      },
+      {
+        "tag": "h2",
+        "text": "Custom cabinetry"
+      },
+      {
+        "tag": "h2",
+        "text": "Benchtops"
+      },
+      {
+        "tag": "h2",
+        "text": "Splashbacks"
+      },
+      {
+        "tag": "h2",
+        "text": "Soft-close hardware"
+      },
+      {
+        "tag": "h2",
+        "text": "Integrated appliances"
+      },
+      {
+        "tag": "h2",
+        "text": "Finishing and install"
+      },
+      {
+        "tag": "h2",
+        "text": "Our custom kitchens process"
+      },
+      {
+        "tag": "h2",
+        "text": "Recent projects across Australia"
+      },
+      {
+        "tag": "h2",
+        "text": "What our clients say"
+      },
+      {
+        "tag": "h2",
+        "text": "We craft custom kitchen joinery for clients across Australia"
+      },
+      {
+        "tag": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "tag": "h2",
+        "text": "Ready to design your custom kitchen joinery?"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom cabinetry"
+      },
+      {
+        "tag": "h3",
+        "text": "Benchtops"
+      },
+      {
+        "tag": "h3",
+        "text": "Splashbacks"
+      },
+      {
+        "tag": "h3",
+        "text": "Soft-close hardware"
+      },
+      {
+        "tag": "h3",
+        "text": "Integrated appliances"
+      },
+      {
+        "tag": "h3",
+        "text": "Finishing and install"
+      },
+      {
+        "tag": "h3",
+        "text": "Free design consultation"
+      },
+      {
+        "tag": "h3",
+        "text": "Design render and fixed-price quote"
+      },
+      {
+        "tag": "h3",
+        "text": "Manufacture in Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Install by our own teams"
+      },
+      {
+        "tag": "h3",
+        "text": "Hamptons Kitchen — Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Sydney"
+      },
+      {
+        "tag": "h3",
+        "text": "Canberra"
+      },
+      {
+        "tag": "h3",
+        "text": "Melbourne"
+      },
+      {
+        "tag": "h3",
+        "text": "Central Coast"
+      },
+      {
+        "tag": "h3",
+        "text": "Hunter Valley"
+      },
+      {
+        "tag": "h3",
+        "text": "Gold Coast"
+      },
+      {
+        "tag": "h3",
+        "text": "Wollongong"
+      },
+      {
+        "tag": "h3",
+        "text": "Brisbane"
+      },
+      {
+        "tag": "h3",
+        "text": "Perth"
+      },
+      {
+        "tag": "h3",
+        "text": "Byron Bay"
+      },
+      {
+        "tag": "h3",
+        "text": "Port Macquarie"
+      },
+      {
+        "tag": "h3",
+        "text": "Coffs Harbour"
+      },
+      {
+        "tag": "h3",
+        "text": "Adelaide"
+      },
+      {
+        "tag": "h3",
+        "text": "Bathurst"
+      },
+      {
+        "tag": "h3",
+        "text": "Orange"
+      },
+      {
+        "tag": "h3",
+        "text": "How much does custom kitchen joinery cost in Australia?"
+      },
+      {
+        "tag": "h3",
+        "text": "How long does it take to build a custom kitchen?"
+      },
+      {
+        "tag": "h3",
+        "text": "What is the difference between 2pac and polyurethane?"
+      },
+      {
+        "tag": "h3",
+        "text": "Can you match my kitchen joinery to my benchtop material?"
+      },
+      {
+        "tag": "h3",
+        "text": "Do you supply and install appliances?"
+      },
+      {
+        "tag": "h3",
+        "text": "What warranties do you offer on kitchen joinery?"
+      },
+      {
+        "tag": "h3",
+        "text": "Can you work with an existing floor plan, or does the whole kitchen need to change?"
+      },
+      {
+        "tag": "h3",
+        "text": "What is the minimum space needed for a kitchen island?"
+      }
+    ]
+  },
+  {
+    "path": "/built-in-wardrobes/",
+    "title": "Built-In Wardrobes & Walk-In Robes | SteepWood | SteepWood",
+    "metas": [
+      {
+        "key": "description",
+        "content": "Custom built-in wardrobes and walk-in robes designed for your space. Polytec, 2pac, Blum hardware. Free in-home consultation Australia-wide. Free design consult"
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Custom built-in wardrobes and walk-in robes designed for your space. Polytec, 2pac, Blum hardware. Free in-home consultation Australia-wide. Free design consult"
+      },
+      {
+        "key": "og:image",
+        "content": "http://localhost:3000/built-in-wardrobes/opengraph-image?4349e6e39737c42d"
+      },
+      {
+        "key": "og:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "key": "og:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "Built-In Wardrobes & Walk-In Robes | SteepWood"
+      },
+      {
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000/built-in-wardrobes/"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Custom built-in wardrobes and walk-in robes designed for your space. Polytec, 2pac, Blum hardware. Free in-home consultation Australia-wide. Free design consult"
+      },
+      {
+        "key": "twitter:image",
+        "content": "http://localhost:3000/built-in-wardrobes/opengraph-image?4349e6e39737c42d"
+      },
+      {
+        "key": "twitter:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "twitter:image:height",
+        "content": "630"
+      },
+      {
+        "key": "twitter:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "twitter:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "twitter:title",
+        "content": "Built-In Wardrobes & Walk-In Robes | SteepWood"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000/built-in-wardrobes/",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000/built-in-wardrobes/",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"http://localhost:3000/built-in-wardrobes/#service\",\"serviceType\":\"Built-In Wardrobes & Walk-In Robes\",\"name\":\"Built-In Wardrobes & Walk-In Robes by SteepWood\",\"description\":\"Custom built-in wardrobes and walk-in robes designed for your space. Polytec, 2pac, Blum hardware. Free in-home consultation Australia-wide.\",\"url\":\"http://localhost:3000/built-in-wardrobes/\",\"provider\":{\"@id\":\"http://localhost:3000/#localbusiness\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Newcastle\",\"@id\":\"https://en.wikipedia.org/wiki/Newcastle,_New_South_Wales\"},{\"@type\":\"City\",\"name\":\"Sydney\",\"@id\":\"https://en.wikipedia.org/wiki/Sydney\"},{\"@type\":\"City\",\"name\":\"Canberra\",\"@id\":\"https://en.wikipedia.org/wiki/Canberra\"},{\"@type\":\"City\",\"name\":\"Melbourne\",\"@id\":\"https://en.wikipedia.org/wiki/Melbourne\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Central Coast\",\"@id\":\"https://en.wikipedia.org/wiki/Central_Coast_(New_South_Wales)\"},{\"@type\":\"AdministrativeArea\",\"name\":\"Hunter Valley\",\"@id\":\"https://en.wikipedia.org/wiki/Hunter_Valley\"},{\"@type\":\"City\",\"name\":\"Gold Coast\",\"@id\":\"https://en.wikipedia.org/wiki/Gold_Coast,_Queensland\"},{\"@type\":\"City\",\"name\":\"Wollongong\",\"@id\":\"https://en.wikipedia.org/wiki/Wollongong\"},{\"@type\":\"City\",\"name\":\"Brisbane\",\"@id\":\"https://en.wikipedia.org/wiki/Brisbane\"},{\"@type\":\"City\",\"name\":\"Perth\",\"@id\":\"https://en.wikipedia.org/wiki/Perth\"},{\"@type\":\"Place\",\"name\":\"Byron Bay\",\"@id\":\"https://en.wikipedia.org/wiki/Byron_Bay\"},{\"@type\":\"City\",\"name\":\"Port Macquarie\",\"@id\":\"https://en.wikipedia.org/wiki/Port_Macquarie\"},{\"@type\":\"City\",\"name\":\"Coffs Harbour\",\"@id\":\"https://en.wikipedia.org/wiki/Coffs_Harbour\"},{\"@type\":\"City\",\"name\":\"Adelaide\",\"@id\":\"https://en.wikipedia.org/wiki/Adelaide\"},{\"@type\":\"City\",\"name\":\"Bathurst\",\"@id\":\"https://en.wikipedia.org/wiki/Bathurst,_New_South_Wales\"},{\"@type\":\"City\",\"name\":\"Orange\",\"@id\":\"https://en.wikipedia.org/wiki/Orange,_New_South_Wales\"}],\"hasOfferCatalog\":{\"@type\":\"OfferCatalog\",\"name\":\"Built-In Wardrobes & Walk-In Robes Locations\",\"itemListElement\":[{\"@type\":\"Offer\",\"position\":1,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Newcastle\",\"url\":\"http://localhost:3000/built-in-wardrobes/newcastle/\"}},{\"@type\":\"Offer\",\"position\":2,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Sydney\",\"url\":\"http://localhost:3000/built-in-wardrobes/sydney/\"}},{\"@type\":\"Offer\",\"position\":3,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Canberra\",\"url\":\"http://localhost:3000/built-in-wardrobes/canberra/\"}},{\"@type\":\"Offer\",\"position\":4,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Melbourne\",\"url\":\"http://localhost:3000/built-in-wardrobes/melbourne/\"}},{\"@type\":\"Offer\",\"position\":5,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Central Coast\",\"url\":\"http://localhost:3000/built-in-wardrobes/central-coast/\"}},{\"@type\":\"Offer\",\"position\":6,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Hunter Valley\",\"url\":\"http://localhost:3000/built-in-wardrobes/hunter-valley/\"}},{\"@type\":\"Offer\",\"position\":7,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Gold Coast\",\"url\":\"http://localhost:3000/built-in-wardrobes/gold-coast/\"}},{\"@type\":\"Offer\",\"position\":8,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Wollongong\",\"url\":\"http://localhost:3000/built-in-wardrobes/wollongong/\"}},{\"@type\":\"Offer\",\"position\":9,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Brisbane\",\"url\":\"http://localhost:3000/built-in-wardrobes/brisbane/\"}},{\"@type\":\"Offer\",\"position\":10,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Perth\",\"url\":\"http://localhost:3000/built-in-wardrobes/perth/\"}},{\"@type\":\"Offer\",\"position\":11,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Byron Bay\",\"url\":\"http://localhost:3000/built-in-wardrobes/byron-bay/\"}},{\"@type\":\"Offer\",\"position\":12,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Port Macquarie\",\"url\":\"http://localhost:3000/built-in-wardrobes/port-macquarie/\"}},{\"@type\":\"Offer\",\"position\":13,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Coffs Harbour\",\"url\":\"http://localhost:3000/built-in-wardrobes/coffs-harbour/\"}},{\"@type\":\"Offer\",\"position\":14,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Adelaide\",\"url\":\"http://localhost:3000/built-in-wardrobes/adelaide/\"}},{\"@type\":\"Offer\",\"position\":15,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Bathurst\",\"url\":\"http://localhost:3000/built-in-wardrobes/bathurst/\"}},{\"@type\":\"Offer\",\"position\":16,\"itemOffered\":{\"@type\":\"Service\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Orange\",\"url\":\"http://localhost:3000/built-in-wardrobes/orange/\"}}]}}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Built-In Wardrobes & Walk-In Robes\",\"item\":\"http://localhost:3000/built-in-wardrobes/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"@id\":\"http://localhost:3000/built-in-wardrobes/#faq\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How much does a built-in wardrobe cost in Australia?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Standard built-ins: $1,000–$2,500 per linear metre. Custom robes with internal drawers and LED: $3,000–$7,500. Walk-in robes: $10,000–$30,000+.\"}},{\"@type\":\"Question\",\"name\":\"What is the minimum width for a walk-in robe?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"1,500 mm clear width for a single-sided WIR; 2,200 mm for a double-sided WIR with hanging on both walls and a 900 mm walkway.\"}},{\"@type\":\"Question\",\"name\":\"Is it cheaper to build custom wardrobes or buy flatpack?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Flatpack (IKEA PAX) is cheaper upfront — $800–$1,500 for a comparable run. Custom is $3,000+. The trade-off is lifetime durability, ceiling-height usage, and a finish that holds up to daily wear. Custom typically pays back through resale value on a quality home.\"}},{\"@type\":\"Question\",\"name\":\"What materials are used for built-in wardrobes?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Carcasses: Laminex/Polytec melamine. Doors: 2pac polyurethane, melamine, veneer, or solid timber. Hardware: Blum drawer runners and hinges.\"}},{\"@type\":\"Question\",\"name\":\"How long does it take to install built-in wardrobes?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Design to install: 4–8 weeks. On-site installation typically 1–2 days.\"}},{\"@type\":\"Question\",\"name\":\"Do built-in wardrobes add value to a home?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes — agents consistently cite quality joinery as a value-add. A $5,000 wardrobe upgrade typically returns $8,000–$12,000 at sale in mid-tier markets.\"}},{\"@type\":\"Question\",\"name\":\"What is the difference between a built-in wardrobe and a walk-in robe?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"A built-in wardrobe is closed cabinetry with doors against a wall; a walk-in robe is a dedicated room with internal joinery. Walk-ins suit larger bedrooms; built-ins maximise smaller rooms.\"}},{\"@type\":\"Question\",\"name\":\"Can I get a wardrobe with integrated lighting and charging points?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes — Blum SERVO-DRIVE LED, motion-sensor strip lighting, and integrated USB-C/AC power points are standard options.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"Service\",\"@id\":\"http://localhost:3000/built-in-wardrobes/#service\",\"name\":\"SteepWood — Built-In Wardrobes & Walk-In Robes\"},\"author\":{\"@type\":\"Person\",\"name\":\"James Chen\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"Our built-in wardrobes maximise every millimetre of space. Installation was tidy, on schedule, and the 2-Pac finish is flawless.\",\"url\":\"https://www.google.com/maps\"}"
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Built-In Wardrobes & Walk-In Robes — Custom Wardrobe Joinery"
+      },
+      {
+        "tag": "h2",
+        "text": "What is built-in wardrobes & walk-in robes?"
+      },
+      {
+        "tag": "h2",
+        "text": "What's included"
+      },
+      {
+        "tag": "h2",
+        "text": "Materials & finishes"
+      },
+      {
+        "tag": "h2",
+        "text": "Built-in wardrobes"
+      },
+      {
+        "tag": "h2",
+        "text": "Walk-in robe layouts"
+      },
+      {
+        "tag": "h2",
+        "text": "Door styles"
+      },
+      {
+        "tag": "h2",
+        "text": "Internal fittings"
+      },
+      {
+        "tag": "h2",
+        "text": "LED and mirror integration"
+      },
+      {
+        "tag": "h2",
+        "text": "Installation"
+      },
+      {
+        "tag": "h2",
+        "text": "Our built-in wardrobes process"
+      },
+      {
+        "tag": "h2",
+        "text": "Recent projects across Australia"
+      },
+      {
+        "tag": "h2",
+        "text": "What our clients say"
+      },
+      {
+        "tag": "h2",
+        "text": "We craft built-in wardrobes & walk-in robes for clients across Australia"
+      },
+      {
+        "tag": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "tag": "h2",
+        "text": "Ready to design your built-in wardrobes & walk-in robes?"
+      },
+      {
+        "tag": "h3",
+        "text": "Built-in wardrobes"
+      },
+      {
+        "tag": "h3",
+        "text": "Walk-in robe layouts"
+      },
+      {
+        "tag": "h3",
+        "text": "Door styles"
+      },
+      {
+        "tag": "h3",
+        "text": "Internal fittings"
+      },
+      {
+        "tag": "h3",
+        "text": "LED and mirror integration"
+      },
+      {
+        "tag": "h3",
+        "text": "Installation"
+      },
+      {
+        "tag": "h3",
+        "text": "Wardrobe consultation"
+      },
+      {
+        "tag": "h3",
+        "text": "Layout design and quote"
+      },
+      {
+        "tag": "h3",
+        "text": "Manufacture in Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Install"
+      },
+      {
+        "tag": "h3",
+        "text": "Walk-In Robe — Sydney"
+      },
+      {
+        "tag": "h3",
+        "text": "Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Sydney"
+      },
+      {
+        "tag": "h3",
+        "text": "Canberra"
+      },
+      {
+        "tag": "h3",
+        "text": "Melbourne"
+      },
+      {
+        "tag": "h3",
+        "text": "Central Coast"
+      },
+      {
+        "tag": "h3",
+        "text": "Hunter Valley"
+      },
+      {
+        "tag": "h3",
+        "text": "Gold Coast"
+      },
+      {
+        "tag": "h3",
+        "text": "Wollongong"
+      },
+      {
+        "tag": "h3",
+        "text": "Brisbane"
+      },
+      {
+        "tag": "h3",
+        "text": "Perth"
+      },
+      {
+        "tag": "h3",
+        "text": "Byron Bay"
+      },
+      {
+        "tag": "h3",
+        "text": "Port Macquarie"
+      },
+      {
+        "tag": "h3",
+        "text": "Coffs Harbour"
+      },
+      {
+        "tag": "h3",
+        "text": "Adelaide"
+      },
+      {
+        "tag": "h3",
+        "text": "Bathurst"
+      },
+      {
+        "tag": "h3",
+        "text": "Orange"
+      },
+      {
+        "tag": "h3",
+        "text": "How much does a built-in wardrobe cost in Australia?"
+      },
+      {
+        "tag": "h3",
+        "text": "What is the minimum width for a walk-in robe?"
+      },
+      {
+        "tag": "h3",
+        "text": "Is it cheaper to build custom wardrobes or buy flatpack?"
+      },
+      {
+        "tag": "h3",
+        "text": "What materials are used for built-in wardrobes?"
+      },
+      {
+        "tag": "h3",
+        "text": "How long does it take to install built-in wardrobes?"
+      },
+      {
+        "tag": "h3",
+        "text": "Do built-in wardrobes add value to a home?"
+      },
+      {
+        "tag": "h3",
+        "text": "What is the difference between a built-in wardrobe and a walk-in robe?"
+      },
+      {
+        "tag": "h3",
+        "text": "Can I get a wardrobe with integrated lighting and charging points?"
+      }
+    ]
+  },
+  {
+    "path": "/locations/newcastle/",
+    "title": "Custom Joinery Newcastle NSW | SteepWood | SteepWood",
+    "metas": [
+      {
+        "key": "description",
+        "content": "Newcastle's premium custom joinery workshop. Kitchens, wardrobes, vanities, commercial joinery. Local craftsmanship, fixed-price quotes. Free in-home visit."
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Newcastle's premium custom joinery workshop. Kitchens, wardrobes, vanities, commercial joinery. Local craftsmanship, fixed-price quotes. Free in-home visit."
+      },
+      {
+        "key": "og:image",
+        "content": "http://localhost:3000/locations/newcastle/opengraph-image?cede952990828cfd"
+      },
+      {
+        "key": "og:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "key": "og:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "Custom Joinery Newcastle NSW | SteepWood"
+      },
+      {
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000/locations/newcastle/"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Newcastle's premium custom joinery workshop. Kitchens, wardrobes, vanities, commercial joinery. Local craftsmanship, fixed-price quotes. Free in-home visit."
+      },
+      {
+        "key": "twitter:image",
+        "content": "http://localhost:3000/locations/newcastle/opengraph-image?cede952990828cfd"
+      },
+      {
+        "key": "twitter:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "twitter:image:height",
+        "content": "630"
+      },
+      {
+        "key": "twitter:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "twitter:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "twitter:title",
+        "content": "Custom Joinery Newcastle NSW | SteepWood"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000/locations/newcastle/",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000/locations/newcastle/",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"HomeAndConstructionBusiness\",\"@id\":\"http://localhost:3000/locations/newcastle/#service-area\",\"name\":\"SteepWood Custom Joinery — Newcastle\",\"url\":\"http://localhost:3000/locations/newcastle/\",\"telephone\":\"+61-2-4000-0000\",\"parentOrganization\":{\"@id\":\"http://localhost:3000/#localbusiness\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Newcastle\",\"@id\":\"https://en.wikipedia.org/wiki/Newcastle,_New_South_Wales\"},{\"@type\":\"Place\",\"name\":\"Newcastle CBD\"},{\"@type\":\"Place\",\"name\":\"Newcastle East\"},{\"@type\":\"Place\",\"name\":\"Newcastle West\"},{\"@type\":\"Place\",\"name\":\"Hamilton\"},{\"@type\":\"Place\",\"name\":\"Cooks Hill\"},{\"@type\":\"Place\",\"name\":\"The Hill\"},{\"@type\":\"Place\",\"name\":\"Merewether\"},{\"@type\":\"Place\",\"name\":\"Bar Beach\"},{\"@type\":\"Place\",\"name\":\"Charlestown\"},{\"@type\":\"Place\",\"name\":\"Adamstown\"},{\"@type\":\"Place\",\"name\":\"New Lambton\"},{\"@type\":\"Place\",\"name\":\"Mayfield\"},{\"@type\":\"Place\",\"name\":\"Stockton\"},{\"@type\":\"Place\",\"name\":\"Wickham\"},{\"@type\":\"Place\",\"name\":\"Islington\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Locations\",\"item\":\"http://localhost:3000/locations/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Newcastle\",\"item\":\"http://localhost:3000/locations/newcastle/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"@id\":\"http://localhost:3000/locations/newcastle/#faq\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Where is SteepWood's workshop in Newcastle?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Our workshop is in Newcastle NSW 2300. We host design consultations by appointment.\"}},{\"@type\":\"Question\",\"name\":\"Do you do joinery for heritage and Federation Newcastle homes?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes — we routinely match period mouldings, architraves, and door profiles for Hamilton, Cooks Hill, and The Hill heritage renovations.\"}},{\"@type\":\"Question\",\"name\":\"What is the typical lead time for a Newcastle kitchen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"8–12 weeks from deposit. Faster than Sydney/Melbourne projects because we don't need interstate logistics.\"}},{\"@type\":\"Question\",\"name\":\"Do you work with Newcastle builders and architects?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes — we provide architect-grade shop drawings on request and work with local builders across the Hunter.\"}},{\"@type\":\"Question\",\"name\":\"Can you replace just the kitchen doors and benchtop without changing carcasses?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes — door + benchtop refresh is a common Newcastle project, ~$8,000–$18,000.\"}},{\"@type\":\"Question\",\"name\":\"What suburbs of Newcastle do you cover for free in-home consultations?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"All Newcastle LGA, Lake Macquarie, Maitland, Cessnock LGAs at no charge. Hunter Valley and Central Coast: free for projects over $20,000.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"LocalBusiness\",\"@id\":\"http://localhost:3000/locations/newcastle/#localbusiness\",\"name\":\"SteepWood Custom Joinery — Newcastle\"},\"author\":{\"@type\":\"Person\",\"name\":\"Sarah Mitchell\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"SteepWood transformed our kitchen with incredible attention to detail. The team communicated clearly at every stage and the finished joinery feels truly bespoke.\",\"url\":\"https://www.google.com/maps\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"LocalBusiness\",\"@id\":\"http://localhost:3000/locations/newcastle/#localbusiness\",\"name\":\"SteepWood Custom Joinery — Newcastle\"},\"author\":{\"@type\":\"Person\",\"name\":\"Rachel O'Brien\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"From first measure to final install, the process was professional and transparent. The quote matched the final invoice with no surprises.\",\"url\":\"https://www.google.com/maps\"}"
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Custom Joinery in Newcastle NSW — Local Craftsmanship Since 2006"
+      },
+      {
+        "tag": "h2",
+        "text": "Why Newcastle clients choose SteepWood"
+      },
+      {
+        "tag": "h2",
+        "text": "Services in Newcastle"
+      },
+      {
+        "tag": "h2",
+        "text": "Recent projects across Australia"
+      },
+      {
+        "tag": "h2",
+        "text": "What our Newcastle clients say"
+      },
+      {
+        "tag": "h2",
+        "text": "Service area — suburbs we cover in Newcastle"
+      },
+      {
+        "tag": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "tag": "h2",
+        "text": "Nearby locations"
+      },
+      {
+        "tag": "h2",
+        "text": "Ready to start your Newcastle project?"
+      },
+      {
+        "tag": "h3",
+        "text": "Workshop crafted in Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Free measure visits to Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Delivery and install by our team"
+      },
+      {
+        "tag": "h3",
+        "text": "From our Newcastle workshop"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Kitchen Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Built-In Wardrobes & Walk-In Robes"
+      },
+      {
+        "tag": "h3",
+        "text": "Office Fitout"
+      },
+      {
+        "tag": "h3",
+        "text": "Shopfitting & Retail Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Bathroom Vanity Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Commercial Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom & Bespoke Furniture"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Home Office Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Laundry Cabinets & Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Timber Staircase Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Hamptons Kitchen — Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Where is SteepWood's workshop in Newcastle?"
+      },
+      {
+        "tag": "h3",
+        "text": "Do you do joinery for heritage and Federation Newcastle homes?"
+      },
+      {
+        "tag": "h3",
+        "text": "What is the typical lead time for a Newcastle kitchen?"
+      },
+      {
+        "tag": "h3",
+        "text": "Do you work with Newcastle builders and architects?"
+      },
+      {
+        "tag": "h3",
+        "text": "Can you replace just the kitchen doors and benchtop without changing carcasses?"
+      },
+      {
+        "tag": "h3",
+        "text": "What suburbs of Newcastle do you cover for free in-home consultations?"
+      },
+      {
+        "tag": "h3",
+        "text": "Hunter Valley"
+      },
+      {
+        "tag": "h3",
+        "text": "Central Coast"
+      },
+      {
+        "tag": "h3",
+        "text": "Sydney"
+      },
+      {
+        "tag": "h3",
+        "text": "Wollongong"
+      },
+      {
+        "tag": "h3",
+        "text": "Port Macquarie"
+      }
+    ]
+  },
+  {
+    "path": "/locations/sydney/",
+    "title": "Custom Joinery Sydney NSW | SteepWood | SteepWood",
+    "metas": [
+      {
+        "key": "description",
+        "content": "Custom kitchens, wardrobes and bespoke joinery for Sydney homes. Newcastle-crafted, 2hr from our workshop. Free in-home design consultation and quote."
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Custom kitchens, wardrobes and bespoke joinery for Sydney homes. Newcastle-crafted, 2hr from our workshop. Free in-home design consultation and quote."
+      },
+      {
+        "key": "og:image",
+        "content": "http://localhost:3000/locations/sydney/opengraph-image?cede952990828cfd"
+      },
+      {
+        "key": "og:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "key": "og:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "Custom Joinery Sydney NSW | SteepWood"
+      },
+      {
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000/locations/sydney/"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Custom kitchens, wardrobes and bespoke joinery for Sydney homes. Newcastle-crafted, 2hr from our workshop. Free in-home design consultation and quote."
+      },
+      {
+        "key": "twitter:image",
+        "content": "http://localhost:3000/locations/sydney/opengraph-image?cede952990828cfd"
+      },
+      {
+        "key": "twitter:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "twitter:image:height",
+        "content": "630"
+      },
+      {
+        "key": "twitter:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "twitter:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "twitter:title",
+        "content": "Custom Joinery Sydney NSW | SteepWood"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000/locations/sydney/",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000/locations/sydney/",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"HomeAndConstructionBusiness\",\"@id\":\"http://localhost:3000/locations/sydney/#service-area\",\"name\":\"SteepWood Custom Joinery — Sydney\",\"url\":\"http://localhost:3000/locations/sydney/\",\"telephone\":\"+61-2-4000-0000\",\"parentOrganization\":{\"@id\":\"http://localhost:3000/#localbusiness\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Sydney\",\"@id\":\"https://en.wikipedia.org/wiki/Sydney\"},{\"@type\":\"Place\",\"name\":\"Mosman\"},{\"@type\":\"Place\",\"name\":\"Cremorne\"},{\"@type\":\"Place\",\"name\":\"Neutral Bay\"},{\"@type\":\"Place\",\"name\":\"North Sydney\"},{\"@type\":\"Place\",\"name\":\"Chatswood\"},{\"@type\":\"Place\",\"name\":\"Bondi\"},{\"@type\":\"Place\",\"name\":\"Double Bay\"},{\"@type\":\"Place\",\"name\":\"Paddington\"},{\"@type\":\"Place\",\"name\":\"Balmain\"},{\"@type\":\"Place\",\"name\":\"Manly\"},{\"@type\":\"Place\",\"name\":\"Dee Why\"},{\"@type\":\"Place\",\"name\":\"Castle Hill\"},{\"@type\":\"Place\",\"name\":\"Strathfield\"},{\"@type\":\"Place\",\"name\":\"Surry Hills\"},{\"@type\":\"Place\",\"name\":\"Pyrmont\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Locations\",\"item\":\"http://localhost:3000/locations/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sydney\",\"item\":\"http://localhost:3000/locations/sydney/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"@id\":\"http://localhost:3000/locations/sydney/#faq\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Do you charge a travel fee for Sydney projects?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No — all in-home consultations and site measures are free, anywhere in metropolitan Sydney.\"}},{\"@type\":\"Question\",\"name\":\"How does manufacturing in Newcastle work for a Sydney install?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We manufacture in our Newcastle workshop and deliver via our own truck. Two-hour drive — no different from an outer-Sydney manufacturer.\"}},{\"@type\":\"Question\",\"name\":\"Do you carry European hardware brands for premium projects?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes — Blum, Häfele, Salice, Hettich all routinely supplied. Specify in your brief.\"}},{\"@type\":\"Question\",\"name\":\"Can you handle multi-trade renovation projects in Sydney?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We do supply-and-install for joinery, and can recommend trusted Sydney builders, plumbers, and electricians from our network for full renovations.\"}},{\"@type\":\"Question\",\"name\":\"Are you registered to work on Sydney apartment buildings (strata-managed)?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes — we hold the required public liability and worker's compensation, and we work with strata building managers on access, hours, and protection requirements.\"}},{\"@type\":\"Question\",\"name\":\"What is your turnaround for a Sydney kitchen quote?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Site measure within 5–10 days of enquiry; fixed-price quote within 5 working days of measure.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"LocalBusiness\",\"@id\":\"http://localhost:3000/locations/sydney/#localbusiness\",\"name\":\"SteepWood Custom Joinery — Sydney\"},\"author\":{\"@type\":\"Person\",\"name\":\"James Chen\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"Our built-in wardrobes maximise every millimetre of space. Installation was tidy, on schedule, and the 2-Pac finish is flawless.\",\"url\":\"https://www.google.com/maps\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"LocalBusiness\",\"@id\":\"http://localhost:3000/locations/sydney/#localbusiness\",\"name\":\"SteepWood Custom Joinery — Sydney\"},\"author\":{\"@type\":\"Person\",\"name\":\"Michael Torres\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":4,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"Excellent home office joinery with integrated cable management and lighting. Minor scheduling tweak, but the finished result exceeded expectations.\",\"url\":\"https://www.google.com/maps\"}"
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Custom Joinery in Sydney NSW — Newcastle-Crafted, Sydney-Delivered"
+      },
+      {
+        "tag": "h2",
+        "text": "Why Sydney clients choose SteepWood"
+      },
+      {
+        "tag": "h2",
+        "text": "Services in Sydney"
+      },
+      {
+        "tag": "h2",
+        "text": "Recent projects across Australia"
+      },
+      {
+        "tag": "h2",
+        "text": "What our Sydney clients say"
+      },
+      {
+        "tag": "h2",
+        "text": "Service area — suburbs we cover in Sydney"
+      },
+      {
+        "tag": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "tag": "h2",
+        "text": "Nearby locations"
+      },
+      {
+        "tag": "h2",
+        "text": "Ready to start your Sydney project?"
+      },
+      {
+        "tag": "h3",
+        "text": "Workshop crafted in Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Free measure visits to Sydney"
+      },
+      {
+        "tag": "h3",
+        "text": "Delivery and install by our team"
+      },
+      {
+        "tag": "h3",
+        "text": "From our Newcastle workshop"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Kitchen Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Built-In Wardrobes & Walk-In Robes"
+      },
+      {
+        "tag": "h3",
+        "text": "Office Fitout"
+      },
+      {
+        "tag": "h3",
+        "text": "Shopfitting & Retail Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Bathroom Vanity Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Commercial Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom & Bespoke Furniture"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Home Office Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Laundry Cabinets & Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Timber Staircase Joinery"
+      },
+      {
+        "tag": "h3",
+        "text": "Walk-In Robe — Sydney"
+      },
+      {
+        "tag": "h3",
+        "text": "Do you charge a travel fee for Sydney projects?"
+      },
+      {
+        "tag": "h3",
+        "text": "How does manufacturing in Newcastle work for a Sydney install?"
+      },
+      {
+        "tag": "h3",
+        "text": "Do you carry European hardware brands for premium projects?"
+      },
+      {
+        "tag": "h3",
+        "text": "Can you handle multi-trade renovation projects in Sydney?"
+      },
+      {
+        "tag": "h3",
+        "text": "Are you registered to work on Sydney apartment buildings (strata-managed)?"
+      },
+      {
+        "tag": "h3",
+        "text": "What is your turnaround for a Sydney kitchen quote?"
+      },
+      {
+        "tag": "h3",
+        "text": "Wollongong"
+      },
+      {
+        "tag": "h3",
+        "text": "Central Coast"
+      },
+      {
+        "tag": "h3",
+        "text": "Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Canberra"
+      },
+      {
+        "tag": "h3",
+        "text": "Gold Coast"
+      }
+    ]
+  },
+  {
+    "path": "/custom-kitchen-joinery/newcastle/",
+    "title": "Custom Kitchens Newcastle | SteepWood Joinery | SteepWood",
+    "metas": [
+      {
+        "key": "description",
+        "content": "Custom Kitchens in Newcastle by SteepWood. Newcastle-crafted, 20+ years experience. Premium materials, fixed-price quote. Free design consultation."
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Custom Kitchens in Newcastle by SteepWood. Newcastle-crafted, 20+ years experience. Premium materials, fixed-price quote. Free design consultation."
+      },
+      {
+        "key": "og:image",
+        "content": "http://localhost:3000/custom-kitchen-joinery/newcastle/opengraph-image?45d2a540ff666aac"
+      },
+      {
+        "key": "og:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "key": "og:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "Custom Kitchens Newcastle | SteepWood Joinery"
+      },
+      {
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000/custom-kitchen-joinery/newcastle/"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Custom Kitchens in Newcastle by SteepWood. Newcastle-crafted, 20+ years experience. Premium materials, fixed-price quote. Free design consultation."
+      },
+      {
+        "key": "twitter:image",
+        "content": "http://localhost:3000/custom-kitchen-joinery/newcastle/opengraph-image?45d2a540ff666aac"
+      },
+      {
+        "key": "twitter:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "twitter:image:height",
+        "content": "630"
+      },
+      {
+        "key": "twitter:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "twitter:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "twitter:title",
+        "content": "Custom Kitchens Newcastle | SteepWood Joinery"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000/custom-kitchen-joinery/newcastle/",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000/custom-kitchen-joinery/newcastle/",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"http://localhost:3000/custom-kitchen-joinery/newcastle/#service\",\"serviceType\":\"Custom Kitchen Joinery\",\"name\":\"Custom Kitchen Joinery in Newcastle\",\"description\":\"Custom Kitchens in Newcastle by SteepWood. Newcastle-crafted, 20+ years experience. Premium materials, fixed-price quote. Free design consultation.\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/newcastle/\",\"provider\":{\"@id\":\"http://localhost:3000/#localbusiness\"},\"areaServed\":{\"@type\":\"City\",\"name\":\"Newcastle\",\"@id\":\"https://en.wikipedia.org/wiki/Newcastle,_New_South_Wales\"}}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"HomeAndConstructionBusiness\",\"@id\":\"http://localhost:3000/custom-kitchen-joinery/newcastle/#localbusiness\",\"name\":\"SteepWood Custom Joinery — Newcastle\",\"url\":\"http://localhost:3000/custom-kitchen-joinery/newcastle/\",\"telephone\":\"+61-2-4000-0000\",\"parentOrganization\":{\"@id\":\"http://localhost:3000/#localbusiness\"},\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Newcastle\",\"addressRegion\":\"NSW\",\"addressCountry\":\"AU\"},\"areaServed\":{\"@type\":\"City\",\"name\":\"Newcastle\",\"@id\":\"https://en.wikipedia.org/wiki/Newcastle,_New_South_Wales\"}}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Custom Kitchen Joinery\",\"item\":\"http://localhost:3000/custom-kitchen-joinery/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Newcastle\",\"item\":\"http://localhost:3000/custom-kitchen-joinery/newcastle/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"@id\":\"http://localhost:3000/custom-kitchen-joinery/newcastle/#faq\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How much does custom kitchens cost in Newcastle?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Custom kitchens range from $15,000 for a small budget kitchen with laminate doors and laminate tops, through to $120,000+ for a luxury kitchen with 2pac doors, stone benchtops, and butler's pantry. Most SteepWood kitchens fall between $35,000 and $75,000.\"}},{\"@type\":\"Question\",\"name\":\"What is the lead time for custom kitchens in Newcastle?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"8–12 weeks from deposit. We provide a detailed programme at quote stage, including design, manufacture in our Newcastle workshop, and install in Newcastle.\"}},{\"@type\":\"Question\",\"name\":\"Do you charge a travel fee for Newcastle projects?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Our workshop is in Newcastle NSW 2300. We host design consultations by appointment.\"}},{\"@type\":\"Question\",\"name\":\"How long does it take to build a custom kitchen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"From deposit to installation: typically 8 to 14 weeks. Design and approvals take 2–3 weeks; manufacturing 6–8 weeks; installation 3–7 days.\"}},{\"@type\":\"Question\",\"name\":\"Do you do joinery for heritage and Federation Newcastle homes?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes — we routinely match period mouldings, architraves, and door profiles for Hamilton, Cooks Hill, and The Hill heritage renovations.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"HomeAndConstructionBusiness\",\"@id\":\"http://localhost:3000/custom-kitchen-joinery/newcastle/#localbusiness\",\"name\":\"SteepWood Custom Joinery — Newcastle\"},\"author\":{\"@type\":\"Person\",\"name\":\"Sarah Mitchell\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"SteepWood transformed our kitchen with incredible attention to detail. The team communicated clearly at every stage and the finished joinery feels truly bespoke.\",\"url\":\"https://www.google.com/maps\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"HomeAndConstructionBusiness\",\"@id\":\"http://localhost:3000/custom-kitchen-joinery/newcastle/#localbusiness\",\"name\":\"SteepWood Custom Joinery — Newcastle\"},\"author\":{\"@type\":\"Person\",\"name\":\"Rachel O'Brien\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"From first measure to final install, the process was professional and transparent. The quote matched the final invoice with no surprises.\",\"url\":\"https://www.google.com/maps\"}"
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Custom Kitchen Joinery in Newcastle — Custom, Crafted, Delivered"
+      },
+      {
+        "tag": "h2",
+        "text": "Why SteepWood for custom kitchens in Newcastle"
+      },
+      {
+        "tag": "h2",
+        "text": "Custom Kitchens in Newcastle— what's included"
+      },
+      {
+        "tag": "h2",
+        "text": "Materials, finishes, and hardware"
+      },
+      {
+        "tag": "h2",
+        "text": "Cost guide for custom kitchens in Newcastle"
+      },
+      {
+        "tag": "h2",
+        "text": "Custom cabinetry for Newcastle homes"
+      },
+      {
+        "tag": "h2",
+        "text": "Benchtops for Newcastle homes"
+      },
+      {
+        "tag": "h2",
+        "text": "Splashbacks for Newcastle homes"
+      },
+      {
+        "tag": "h2",
+        "text": "Recent custom kitchens projects in Newcastle"
+      },
+      {
+        "tag": "h2",
+        "text": "Why choose SteepWood for custom kitchens in Newcastle"
+      },
+      {
+        "tag": "h2",
+        "text": "Our custom kitchens process in Newcastle"
+      },
+      {
+        "tag": "h2",
+        "text": "What our Newcastle clients say"
+      },
+      {
+        "tag": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "tag": "h2",
+        "text": "Custom Kitchens in nearby cities"
+      },
+      {
+        "tag": "h2",
+        "text": "Other joinery services in Newcastle"
+      },
+      {
+        "tag": "h2",
+        "text": "Get a free custom kitchens quote for Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom cabinetry"
+      },
+      {
+        "tag": "h3",
+        "text": "Benchtops"
+      },
+      {
+        "tag": "h3",
+        "text": "Splashbacks"
+      },
+      {
+        "tag": "h3",
+        "text": "Soft-close hardware"
+      },
+      {
+        "tag": "h3",
+        "text": "Integrated appliances"
+      },
+      {
+        "tag": "h3",
+        "text": "Finishing and install"
+      },
+      {
+        "tag": "h3",
+        "text": "Hamptons Kitchen — Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Newcastle-crafted"
+      },
+      {
+        "tag": "h3",
+        "text": "Free measure visits to Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "0 — Newcastle is home"
+      },
+      {
+        "tag": "h3",
+        "text": "Free design consultation"
+      },
+      {
+        "tag": "h3",
+        "text": "Design render and fixed-price quote"
+      },
+      {
+        "tag": "h3",
+        "text": "Manufacture in Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Install by our own teams"
+      },
+      {
+        "tag": "h3",
+        "text": "How much does custom kitchens cost in Newcastle?"
+      },
+      {
+        "tag": "h3",
+        "text": "What is the lead time for custom kitchens in Newcastle?"
+      },
+      {
+        "tag": "h3",
+        "text": "Do you charge a travel fee for Newcastle projects?"
+      },
+      {
+        "tag": "h3",
+        "text": "How long does it take to build a custom kitchen?"
+      },
+      {
+        "tag": "h3",
+        "text": "Do you do joinery for heritage and Federation Newcastle homes?"
+      }
+    ]
+  },
+  {
+    "path": "/built-in-wardrobes/sydney/",
+    "title": "Built-In Wardrobes Sydney | SteepWood Joinery | SteepWood",
+    "metas": [
+      {
+        "key": "description",
+        "content": "Built-In Wardrobes in Sydney by SteepWood. Newcastle-crafted, 20+ years experience. Premium materials, fixed-price quote. Free design consultation."
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Built-In Wardrobes in Sydney by SteepWood. Newcastle-crafted, 20+ years experience. Premium materials, fixed-price quote. Free design consultation."
+      },
+      {
+        "key": "og:image",
+        "content": "http://localhost:3000/built-in-wardrobes/sydney/opengraph-image?45d2a540ff666aac"
+      },
+      {
+        "key": "og:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "og:image:height",
+        "content": "630"
+      },
+      {
+        "key": "og:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "og:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "Built-In Wardrobes Sydney | SteepWood Joinery"
+      },
+      {
+        "key": "og:type",
+        "content": "website"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000/built-in-wardrobes/sydney/"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Built-In Wardrobes in Sydney by SteepWood. Newcastle-crafted, 20+ years experience. Premium materials, fixed-price quote. Free design consultation."
+      },
+      {
+        "key": "twitter:image",
+        "content": "http://localhost:3000/built-in-wardrobes/sydney/opengraph-image?45d2a540ff666aac"
+      },
+      {
+        "key": "twitter:image:alt",
+        "content": "SteepWood — Premium Custom Joinery"
+      },
+      {
+        "key": "twitter:image:height",
+        "content": "630"
+      },
+      {
+        "key": "twitter:image:type",
+        "content": "image/png"
+      },
+      {
+        "key": "twitter:image:width",
+        "content": "1200"
+      },
+      {
+        "key": "twitter:title",
+        "content": "Built-In Wardrobes Sydney | SteepWood Joinery"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000/built-in-wardrobes/sydney/",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000/built-in-wardrobes/sydney/",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"http://localhost:3000/built-in-wardrobes/sydney/#service\",\"serviceType\":\"Built-In Wardrobes & Walk-In Robes\",\"name\":\"Built-In Wardrobes & Walk-In Robes in Sydney\",\"description\":\"Built-In Wardrobes in Sydney by SteepWood. Newcastle-crafted, 20+ years experience. Premium materials, fixed-price quote. Free design consultation.\",\"url\":\"http://localhost:3000/built-in-wardrobes/sydney/\",\"provider\":{\"@id\":\"http://localhost:3000/#localbusiness\"},\"areaServed\":{\"@type\":\"City\",\"name\":\"Sydney\",\"@id\":\"https://en.wikipedia.org/wiki/Sydney\"}}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"HomeAndConstructionBusiness\",\"@id\":\"http://localhost:3000/built-in-wardrobes/sydney/#localbusiness\",\"name\":\"SteepWood Custom Joinery — Sydney\",\"url\":\"http://localhost:3000/built-in-wardrobes/sydney/\",\"telephone\":\"+61-2-4000-0000\",\"parentOrganization\":{\"@id\":\"http://localhost:3000/#localbusiness\"},\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Sydney\",\"addressRegion\":\"NSW\",\"addressCountry\":\"AU\"},\"areaServed\":{\"@type\":\"City\",\"name\":\"Sydney\",\"@id\":\"https://en.wikipedia.org/wiki/Sydney\"}}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Built-In Wardrobes & Walk-In Robes\",\"item\":\"http://localhost:3000/built-in-wardrobes/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sydney\",\"item\":\"http://localhost:3000/built-in-wardrobes/sydney/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"@id\":\"http://localhost:3000/built-in-wardrobes/sydney/#faq\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"How much does built-in wardrobes cost in Sydney?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Standard built-ins: $1,000–$2,500 per linear metre. Custom robes with internal drawers and LED: $3,000–$7,500. Walk-in robes: $10,000–$30,000+.\"}},{\"@type\":\"Question\",\"name\":\"What is the lead time for built-in wardrobes in Sydney?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"8–14 weeks from deposit. We provide a detailed programme at quote stage, including design, manufacture in our Newcastle workshop, and install in Sydney.\"}},{\"@type\":\"Question\",\"name\":\"Do you charge a travel fee for Sydney projects?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No — all in-home consultations and site measures are free, anywhere in metropolitan Sydney.\"}},{\"@type\":\"Question\",\"name\":\"What is the minimum width for a walk-in robe?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"1,500 mm clear width for a single-sided WIR; 2,200 mm for a double-sided WIR with hanging on both walls and a 900 mm walkway.\"}},{\"@type\":\"Question\",\"name\":\"How does manufacturing in Newcastle work for a Sydney install?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"We manufacture in our Newcastle workshop and deliver via our own truck. Two-hour drive — no different from an outer-Sydney manufacturer.\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Review\",\"itemReviewed\":{\"@type\":\"HomeAndConstructionBusiness\",\"@id\":\"http://localhost:3000/built-in-wardrobes/sydney/#localbusiness\",\"name\":\"SteepWood Custom Joinery — Sydney\"},\"author\":{\"@type\":\"Person\",\"name\":\"James Chen\"},\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":5,\"bestRating\":5,\"worstRating\":1},\"reviewBody\":\"Our built-in wardrobes maximise every millimetre of space. Installation was tidy, on schedule, and the 2-Pac finish is flawless.\",\"url\":\"https://www.google.com/maps\"}"
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Built-In Wardrobes & Walk-In Robes in Sydney — Custom, Crafted, Delivered"
+      },
+      {
+        "tag": "h2",
+        "text": "Why SteepWood for built-in wardrobes in Sydney"
+      },
+      {
+        "tag": "h2",
+        "text": "Built-In Wardrobes in Sydney— what's included"
+      },
+      {
+        "tag": "h2",
+        "text": "Materials, finishes, and hardware"
+      },
+      {
+        "tag": "h2",
+        "text": "Cost guide for built-in wardrobes in Sydney"
+      },
+      {
+        "tag": "h2",
+        "text": "Built-in wardrobes for Sydney homes"
+      },
+      {
+        "tag": "h2",
+        "text": "Walk-in robe layouts for Sydney homes"
+      },
+      {
+        "tag": "h2",
+        "text": "Door styles for Sydney homes"
+      },
+      {
+        "tag": "h2",
+        "text": "Recent built-in wardrobes projects in Sydney"
+      },
+      {
+        "tag": "h2",
+        "text": "Why choose SteepWood for built-in wardrobes in Sydney"
+      },
+      {
+        "tag": "h2",
+        "text": "Our built-in wardrobes process in Sydney"
+      },
+      {
+        "tag": "h2",
+        "text": "What our Sydney clients say"
+      },
+      {
+        "tag": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "tag": "h2",
+        "text": "Built-In Wardrobes in nearby cities"
+      },
+      {
+        "tag": "h2",
+        "text": "Other joinery services in Sydney"
+      },
+      {
+        "tag": "h2",
+        "text": "Get a free built-in wardrobes quote for Sydney"
+      },
+      {
+        "tag": "h3",
+        "text": "Built-in wardrobes"
+      },
+      {
+        "tag": "h3",
+        "text": "Walk-in robe layouts"
+      },
+      {
+        "tag": "h3",
+        "text": "Door styles"
+      },
+      {
+        "tag": "h3",
+        "text": "Internal fittings"
+      },
+      {
+        "tag": "h3",
+        "text": "LED and mirror integration"
+      },
+      {
+        "tag": "h3",
+        "text": "Installation"
+      },
+      {
+        "tag": "h3",
+        "text": "Walk-In Robe — Sydney"
+      },
+      {
+        "tag": "h3",
+        "text": "Newcastle-crafted"
+      },
+      {
+        "tag": "h3",
+        "text": "Free measure visits to Sydney"
+      },
+      {
+        "tag": "h3",
+        "text": "~2 hours via M1"
+      },
+      {
+        "tag": "h3",
+        "text": "Wardrobe consultation"
+      },
+      {
+        "tag": "h3",
+        "text": "Layout design and quote"
+      },
+      {
+        "tag": "h3",
+        "text": "Manufacture in Newcastle"
+      },
+      {
+        "tag": "h3",
+        "text": "Install"
+      },
+      {
+        "tag": "h3",
+        "text": "How much does built-in wardrobes cost in Sydney?"
+      },
+      {
+        "tag": "h3",
+        "text": "What is the lead time for built-in wardrobes in Sydney?"
+      },
+      {
+        "tag": "h3",
+        "text": "Do you charge a travel fee for Sydney projects?"
+      },
+      {
+        "tag": "h3",
+        "text": "What is the minimum width for a walk-in robe?"
+      },
+      {
+        "tag": "h3",
+        "text": "How does manufacturing in Newcastle work for a Sydney install?"
+      }
+    ]
+  },
+  {
+    "path": "/blog/kitchen-storage-planning-australia/",
+    "title": "Kitchen Storage Planning Australia | SteepWood Blog | SteepWood",
+    "metas": [
+      {
+        "key": "article:author",
+        "content": "SteepWood Design Team"
+      },
+      {
+        "key": "article:modified_time",
+        "content": "2026-06-09T04:55:01.678Z"
+      },
+      {
+        "key": "article:published_time",
+        "content": "2026-06-06T04:55:01.678Z"
+      },
+      {
+        "key": "description",
+        "content": "Practical kitchen storage planning advice for Australian homes — drawers, pantries, and layout decisions before joinery quoting."
+      },
+      {
+        "key": "next-size-adjust",
+        "content": ""
+      },
+      {
+        "key": "og:description",
+        "content": "Practical kitchen storage planning advice for Australian homes — drawers, pantries, and layout decisions before joinery quoting."
+      },
+      {
+        "key": "og:image",
+        "content": "http://localhost:3000/images/hero-workshop.svg/"
+      },
+      {
+        "key": "og:image:alt",
+        "content": "SteepWood workshop joinery craftsmanship"
+      },
+      {
+        "key": "og:locale",
+        "content": "en_AU"
+      },
+      {
+        "key": "og:site_name",
+        "content": "SteepWood"
+      },
+      {
+        "key": "og:title",
+        "content": "Kitchen Storage Planning Australia | SteepWood Blog"
+      },
+      {
+        "key": "og:type",
+        "content": "article"
+      },
+      {
+        "key": "og:url",
+        "content": "http://localhost:3000/blog/kitchen-storage-planning-australia/"
+      },
+      {
+        "key": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "key": "twitter:description",
+        "content": "Practical kitchen storage planning advice for Australian homes — drawers, pantries, and layout decisions before joinery quoting."
+      },
+      {
+        "key": "twitter:image",
+        "content": "http://localhost:3000/images/hero-workshop.svg/"
+      },
+      {
+        "key": "twitter:image:alt",
+        "content": "SteepWood workshop joinery craftsmanship"
+      },
+      {
+        "key": "twitter:title",
+        "content": "Kitchen Storage Planning Australia | SteepWood Blog"
+      },
+      {
+        "key": "viewport",
+        "content": "width=device-width, initial-scale=1, viewport-fit=cover"
+      }
+    ],
+    "links": [
+      {
+        "rel": "alternate",
+        "href": "http://localhost:3000/blog/kitchen-storage-planning-australia/",
+        "hreflang": "en-AU"
+      },
+      {
+        "rel": "canonical",
+        "href": "http://localhost:3000/blog/kitchen-storage-planning-australia/",
+        "hreflang": ""
+      }
+    ],
+    "jsonLd": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Kitchen Storage Planning for Australian Homes\",\"description\":\"How to plan drawers, pantries, and internal layouts before your kitchen joinery quote — practical advice from a Newcastle workshop.\",\"image\":\"http://localhost:3000/images/hero-workshop.svg\",\"datePublished\":\"2026-06-06T04:55:01.678Z\",\"dateModified\":\"2026-06-09T04:55:01.678Z\",\"author\":{\"@type\":\"Person\",\"name\":\"SteepWood Design Team\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"SteepWood\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"http://localhost:3000/brand/steepwood-logo.png\"}},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"http://localhost:3000/blog/kitchen-storage-planning-australia/\"},\"articleBody\":\"## Why storage planning comes first\\n\\nAustralian kitchens work hardest before breakfast. Between school lunches, bulk shopping, and bench appliances, storage decisions shape every other joinery choice.\\n\\n<Callout variant=\\\"tip\\\" title=\\\"Start with daily routines\\\">\\nMap what you reach for every morning and every evening. That sequence should drive drawer heights, pantry widths, and corner solutions.\\n</Callout>\\n\\n## Drawer banks vs cupboards\\n\\nDeep drawers with Blum Legrabox or similar runners outperform standard cupboards for pots, lids, and prep bowls. Reserve overhead cupboards for lightweight items and display zones.\\n\\n### Corner strategies\\n\\n- Le Mans units for blind corners\\n- Magic corners where budget allows\\n- Open shelving only when access is unobstructed\\n\\n## Pantry proportions\\n\\nWalk-in pantries need 900–1200 mm clear depth. Butler''s pantries can be tighter if shelving is specified early.\\n\\n<ServiceCTA service=\\\"custom-kitchen-joinery\\\" />\\n\\n## Measuring for a fixed-price quote\\n\\nBring appliance model numbers, plumbing positions, and power points to your design consult. Accurate dimensions reduce variations later.\\n\\n<Callout variant=\\\"info\\\">\\nSteepWood includes a free in-home measure before every fixed-price kitchen quote across our service areas.\\n</Callout>\\n\\n## Next steps\\n\\nDocument your must-haves, nice-to-haves, and budget range before requesting a quote. That clarity shortens the design phase and improves first-pass accuracy.\",\"wordCount\":199,\"timeRequired\":\"PT1M\",\"url\":\"http://localhost:3000/blog/kitchen-storage-planning-australia/\"}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"http://localhost:3000/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"http://localhost:3000/blog/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Kitchen Storage Planning for Australian Homes\",\"item\":\"http://localhost:3000/blog/kitchen-storage-planning-australia/\"}]}"
+    ],
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Kitchen Storage Planning for Australian Homes"
+      },
+      {
+        "tag": "h2",
+        "text": "Why storage planning comes first"
+      },
+      {
+        "tag": "h2",
+        "text": "Drawer banks vs cupboards"
+      },
+      {
+        "tag": "h2",
+        "text": "Pantry proportions"
+      },
+      {
+        "tag": "h2",
+        "text": "Measuring for a fixed-price quote"
+      },
+      {
+        "tag": "h2",
+        "text": "Next steps"
+      },
+      {
+        "tag": "h2",
+        "text": "About SteepWood Design Team"
+      },
+      {
+        "tag": "h2",
+        "text": "Planning a project? Get a free measure & quote"
+      },
+      {
+        "tag": "h3",
+        "text": "Corner strategies"
+      },
+      {
+        "tag": "h3",
+        "text": "Custom Kitchen Joinery"
+      }
+    ]
+  }
+]

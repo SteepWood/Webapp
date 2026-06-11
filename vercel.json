@@ -1,4 +1,23 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "nextjs"
+  "regions": ["syd1"],
+  "functions": {
+    "src/app/api/**/*": {
+      "maxDuration": 30
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/publish-scheduled-posts",
+      "schedule": "0 * * * *"
+    },
+    {
+      "path": "/api/cron/admin-weekly-summary",
+      "schedule": "0 9 * * 1"
+    },
+    {
+      "path": "/api/cron/cleanup-draft-uploads",
+      "schedule": "0 2 * * *"
+    }
+  ]
 }

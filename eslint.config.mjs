@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Legacy nested scaffold — not part of the active app
+    "webapp/**",
   ]),
 ]);
 

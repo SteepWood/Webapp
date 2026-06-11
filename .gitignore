@@ -30,8 +30,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files — never commit secrets
+.env
+.env.local
+.env*.local
+.env.production.local
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +43,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# UX upgrade generated snapshots (baseline pre files are committed)
+snapshots/seo-post.json
+snapshots/headings-post.json
+snapshots/lighthouse-post/
+snapshots/lighthouse-pre/
+results.csv
+lighthouse-prod.json
+lighthouse-report.json
+
+# Legacy nested app copy (repo root is canonical)
+/webapp/

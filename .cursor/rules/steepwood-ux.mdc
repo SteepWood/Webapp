@@ -1,0 +1,50 @@
+---
+description: SteepWood motion and interaction grammar — applied to all UI work
+alwaysApply: true
+---
+
+# SteepWood UX rules
+
+## Scope (locked)
+- UI/UX changes are visual and interaction-only. Never alter copy, metadata, structured data, routes, DB queries, or SEO fields.
+- Read `docs/STEEPWOOD-UI-UX-SKILLS-PACK.md` before any UI upgrade work.
+
+## Motion grammar (locked)
+- All animations use `motion` (the renamed framer-motion). Never import from `framer-motion` — that package is deprecated.
+- Default spring: `{ type: "spring", stiffness: 260, damping: 22, mass: 0.6 }`.
+- Default tween for opacity/colour: `{ duration: 0.25, ease: [0.2, 0.0, 0, 1] }`.
+- Stagger children with `staggerChildren: 0.06`.
+- Every interactive element with hover state has a `whileHover` and `whileTap`.
+- Every animated element respects `prefers-reduced-motion: reduce` via `useReducedMotion()`.
+
+## Scroll grammar (locked)
+- Lenis runs at the layout level. Never duplicate scroll listeners — sync GSAP ScrollTrigger to Lenis with `lenis.on('scroll', ScrollTrigger.update)`.
+- Disable Lenis on `prefers-reduced-motion` AND below 768px viewport.
+- GSAP scroll animations use `useGSAP` from `@gsap/react`, not raw `useEffect`. Always return cleanup.
+
+## Liquid glass usage (locked)
+- Liquid glass (`liquid-glass-react`) is reserved for: sticky mobile CTA, scrolled-state desktop nav, "Get a Quote" floating trigger, image hover overlays on portfolio.
+- Never use liquid glass on body text, form inputs, or anywhere it would hurt readability.
+- Always provide a CSS-fallback variant for Safari and Firefox (feature-detect via `CSS.supports('backdrop-filter', 'blur(1px)')` and user-agent).
+
+## Component sourcing (locked)
+- Before writing a new animated component from scratch, search shadcn MCP for an existing one in @magicui, @aceternity, @cult, @kibo, @kokonut.
+- If a component exists in a registry, install it via `npx shadcn@latest add @<registry>/<name>` — do not paste the source manually.
+- Customise installed components in `components/ui/`, never in `node_modules`.
+
+## Accessibility (locked)
+- All hover-only interactions must have a keyboard equivalent.
+- All decorative motion must pause/skip under `prefers-reduced-motion`.
+- Liquid glass blur must not drop text contrast below WCAG AA (4.5:1).
+
+## SEO lock (alwaysApply: true)
+- Never modify `<title>`, `<meta>`, `<link rel="canonical"|"alternate">`, or `<script type="application/ld+json">` blocks in this codebase as part of a UX task. If a UX change requires touching them, abort and ask the user.
+- Never modify the text of any H1, H2, H3, paragraph, FAQ question, FAQ answer, button label, image alt, or aria-label in this codebase as part of a UX task.
+- Never modify route file paths or add/remove pages as part of a UX task.
+- Never change Tailwind `@theme` tokens in `src/app/globals.css` as part of a UX task.
+- If you must add a new visual component that itself contains text, use existing copy from the page's content kit — do not invent new copy.
+
+## Performance (locked)
+- Heavy components (3D canvas, large Motion compositions) lazy-load via `next/dynamic({ ssr: false })`.
+- Aceternity / Magic UI hero blocks load above the fold; everything else below the fold is `loading="lazy"`.
+- Per-page JS bundle ≤ 200 KB gzipped — if a Motion-heavy component pushes a route over budget, split it.

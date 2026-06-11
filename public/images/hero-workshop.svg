@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="SteepWood joinery workshop interior">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1f18"/>
+      <stop offset="100%" stop-color="#1c1410"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4892a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d4892a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#warm)"/>
+  <rect x="80" y="520" width="1040" height="28" rx="4" fill="#3d2e22"/>
+  <rect x="120" y="360" width="180" height="160" rx="6" fill="#4a3828" stroke="#d4892a" stroke-width="2" opacity="0.9"/>
+  <rect x="340" y="300" width="220" height="220" rx="6" fill="#4a3828" stroke="#7a8f66" stroke-width="2" opacity="0.85"/>
+  <rect x="600" y="340" width="200" height="180" rx="6" fill="#4a3828" stroke="#d4892a" stroke-width="2" opacity="0.8"/>
+  <rect x="840" y="280" width="240" height="240" rx="6" fill="#4a3828" stroke="#f5e4c8" stroke-width="2" opacity="0.75"/>
+  <rect x="200" y="180" width="800" height="12" rx="2" fill="#3d2e22" opacity="0.6"/>
+</svg>

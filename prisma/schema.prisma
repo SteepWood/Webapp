@@ -1,0 +1,207 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearchPostgres"]
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Service {
+  id               String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  slug             String            @unique
+  name             String
+  shortDescription String?           @map("short_description")
+  description      String?
+  metaTitle        String?           @map("meta_title")
+  metaDescription  String?           @map("meta_description")
+  heroImageUrl     String?           @map("hero_image_url")
+  heroImageAlt     String?           @map("hero_image_alt")
+  displayOrder     Int               @default(0) @map("display_order")
+  isActive         Boolean           @default(true) @map("is_active")
+  createdAt        DateTime          @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt        DateTime          @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+  serviceLocations ServiceLocation[]
+
+  @@map("services")
+}
+
+model Location {
+  id               String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  slug             String            @unique
+  name             String
+  state            String?
+  region           String?
+  metaTitle        String?           @map("meta_title")
+  metaDescription  String?           @map("meta_description")
+  latitude         Float?            @db.DoublePrecision
+  longitude        Float?            @db.DoublePrecision
+  displayOrder     Int               @default(0) @map("display_order")
+  isActive         Boolean           @default(true) @map("is_active")
+  createdAt        DateTime          @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt        DateTime          @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+  serviceLocations ServiceLocation[]
+
+  @@map("locations")
+}
+
+model ServiceLocation {
+  id              String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  serviceId       String   @map("service_id") @db.Uuid
+  locationId      String   @map("location_id") @db.Uuid
+  h1              String?
+  intro           String?
+  bodyContent     String?  @map("body_content")
+  metaTitle       String?  @map("meta_title")
+  metaDescription String?  @map("meta_description")
+  heroImageUrl    String?  @map("hero_image_url")
+  heroImageAlt    String?  @map("hero_image_alt")
+  isPublished     Boolean  @default(false) @map("is_published")
+  createdAt       DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt       DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+  location        Location @relation(fields: [locationId], references: [id], onDelete: Cascade)
+  service         Service  @relation(fields: [serviceId], references: [id], onDelete: Cascade)
+
+  @@unique([serviceId, locationId])
+  @@index([serviceId])
+  @@index([locationId])
+  @@map("service_locations")
+}
+
+model BlogPost {
+  id              String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  slug            String    @unique
+  title           String
+  excerpt         String?
+  content         String?
+  metaTitle       String?   @map("meta_title")
+  metaDescription String?   @map("meta_description")
+  coverImageUrl   String?   @map("cover_image_url")
+  coverImageAlt   String?   @map("cover_image_alt")
+  authorName      String?   @map("author_name")
+  category        String?
+  tags            Json      @default("[]")
+  isPublished     Boolean   @default(false) @map("is_published")
+  publishedAt     DateTime? @map("published_at") @db.Timestamptz(6)
+  createdAt       DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt       DateTime  @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@index([publishedAt])
+  @@map("blog_posts")
+}
+
+model PortfolioProject {
+  id              String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  slug            String   @unique
+  title           String
+  summary         String?
+  description     String?
+  locationName    String?  @map("location_name")
+  serviceSlug     String?  @map("service_slug")
+  beforeImageUrl  String?  @map("before_image_url")
+  afterImageUrl   String?  @map("after_image_url")
+  galleryImages   Json     @default("[]") @map("gallery_images")
+  metaTitle       String?  @map("meta_title")
+  metaDescription String?  @map("meta_description")
+  isPublished     Boolean  @default(false) @map("is_published")
+  displayOrder    Int      @default(0) @map("display_order")
+  createdAt       DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt       DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@index([displayOrder])
+  @@map("portfolio_projects")
+}
+
+model Testimonial {
+  id             String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  authorName     String   @map("author_name")
+  authorLocation String?  @map("author_location")
+  rating         Int      @default(5)
+  quote          String
+  source         String?
+  sourceUrl      String?  @map("source_url")
+  serviceSlug    String?  @map("service_slug")
+  locationSlug   String?  @map("location_slug")
+  isVerified     Boolean  @default(false) @map("is_verified")
+  isFeatured     Boolean  @default(false) @map("is_featured")
+  isPublished    Boolean  @default(false) @map("is_published")
+  displayOrder   Int      @default(0) @map("display_order")
+  createdAt      DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt      DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@index([displayOrder])
+  @@map("testimonials")
+}
+
+model Faq {
+  id           String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  question     String
+  answer       String
+  category     String?
+  displayOrder Int      @default(0) @map("display_order")
+  isPublished  Boolean  @default(false) @map("is_published")
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt    DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@index([displayOrder])
+  @@map("faqs")
+}
+
+model QuoteRequest {
+  id             String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  projectType    String   @map("project_type")
+  projectScope   String?  @map("project_scope")
+  suburb         String
+  budgetRange    String?  @map("budget_range")
+  firstName      String   @map("first_name")
+  phone          String
+  email          String
+  bestTimeToCall String?  @map("best_time_to_call")
+  attachmentUrls        Json     @default("[]") @map("attachment_urls")
+  status                String   @default("new")
+  emailDeliveryStatus   String?  @map("email_delivery_status")
+  createdAt      DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt      DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@map("quote_requests")
+}
+
+model ContactSubmission {
+  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name      String
+  email     String
+  phone     String?
+  message   String
+  status    String   @default("new")
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@map("contact_submissions")
+}
+
+model AdminUser {
+  id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  authUserId  String   @unique @map("auth_user_id") @db.Uuid
+  email       String   @unique
+  displayName String?  @map("display_name")
+  role        String   @default("editor")
+  isActive    Boolean  @default(true) @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt   DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@map("admin_users")
+}
+
+model SitemapOverride {
+  id              String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  path            String   @unique
+  changeFrequency String?  @map("change_frequency")
+  priority        Decimal? @db.Decimal(2, 1)
+  isExcluded      Boolean  @default(false) @map("is_excluded")
+  createdAt       DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt       DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@map("sitemap_overrides")
+}

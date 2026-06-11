@@ -1,0 +1,171 @@
+---
+description: SteepWood — Next.js 15 custom joinery site coding standards
+globs: ["**/*.ts", "**/*.tsx", "**/*.css", "**/*.md"]
+alwaysApply: true
+---
+
+# SteepWood Coding Standards
+
+You are working on **SteepWood**, a premium custom joinery website. Apply these rules to every change.
+
+## Build-first workflow (Phases 1–4)
+
+- **Phases 1–4 = code only.** Do not block implementation on Supabase dashboard setup, DNS, Resend domain verification, RLS SQL in production, or live email E2E tests.
+- Implement code paths; fail gracefully when env vars are missing.
+- All manual / external launch steps live in `docs/STEEPWOOD-MANUAL-OPS.md` — run **after Phase 4 code**, before `v1.0.0-launch`.
+- Phase completion tags: `phase-1-complete` … `phase-4-complete` (code). Production launch: `v1.0.0-launch` (manual ops).
+
+## Stack (non-negotiable)
+
+- **Next.js 15.3+** App Router only (no Pages Router)
+- **React 19** with Server Components by default; Client Components only when needed
+- **TypeScript 5.8+** with `strict: true` and `noUncheckedIndexedAccess: true`
+- **Tailwind v4.1** CSS-first — `@theme` in globals.css, NO tailwind.config.ts file
+- **Prisma 6** for all direct DB queries; **@supabase/ssr 0.6+** for auth + storage
+- **shadcn/ui v4** for primitive components
+- **react-hook-form 7.54+ + zod 3.24+** for all forms
+- **Resend 4+** for transactional email (React Email templates)
+- **pnpm** package manager
+- **Australian English** throughout — code comments, copy, alt text, schema
+
+## File and naming conventions
+
+- File names: PascalCase for components (`HeroBanner.tsx`), kebab-case for routes (`custom-kitchen-joinery/`), camelCase for utilities (`buildServiceMetadata.ts`)
+- Component names: PascalCase
+- Functions: camelCase, verbs (`resolveService`, `getAggregateRating`)
+- Constants: SCREAMING_SNAKE_CASE
+- Hooks: prefix with `use`
+- Server actions: in `src/app/actions/`, suffix with the entity (e.g. `quote.ts`, `contact.ts`)
+- Types: prefer `type` over `interface` unless declaration merging needed
+- No default exports for components; use named exports for tree-shake friendliness
+
+## React patterns
+
+- Server Component is the default. Add `'use client'` only when the file:
+  - uses state (useState/useReducer)
+  - uses effects (useEffect/useLayoutEffect)
+  - uses browser-only APIs (window, document)
+  - registers event listeners
+- Keep Client Components as small as possible — push state down, lift Server Component rendering up
+- Wrap Prisma queries in React `cache()` from 'react' when called from multiple places per request (e.g. generateMetadata + page body)
+- Use Suspense with skeleton fallbacks for any data fetch that could be slow
+
+## SEO requirements (apply to EVERY page)
+
+Every page MUST include:
+
+1. `generateMetadata` returning title (≤60 chars), description (150-160 chars), openGraph, twitter, alternates.canonical
+2. `revalidate` exported (default 86400s for static, 3600s for blog, 0 for admin)
+3. JSON-LD structured data appropriate to the page type:
+   - Home: LocalBusiness + Organization + WebSite (in root layout @graph — already done)
+   - Service pillar: Service + BreadcrumbList + FAQPage
+   - Location hub: LocalBusiness + BreadcrumbList + FAQPage
+   - Service+Location: Service + LocalBusiness + BreadcrumbList + FAQPage + AggregateRating (when reviews exist)
+   - Blog post: BlogPosting + BreadcrumbList
+   - Project: ImageGallery + BreadcrumbList + Review (if testimonial linked)
+4. `<h1>` with the primary keyword
+5. Semantic HTML: `<main>`, `<article>`, `<section>`, `<nav>`, `<aside>`, `<header>`, `<footer>`
+6. All images use `next/image` with width + height (or fill + aspect-ratio container)
+7. All internal links use `next/link` Link component with descriptive anchor text (NOT "click here", "learn more", "read more")
+8. No use of `<a href="/internal-path">` for internal links — always Link
+
+## Prisma patterns
+
+- Singleton client from `@/lib/db/prisma` only — never `new PrismaClient()` directly
+- Always use Prisma's typed methods; never raw SQL unless absolutely necessary
+- For read queries reused across components, wrap in `cache()` and put in `src/lib/db/cached.ts`
+- Pagination: use `take` + `skip` for offset pagination; for cursor pagination use `cursor` + `take`
+- Never log full DB results in production code (sensitive data risk)
+
+## Form patterns
+
+- All forms use react-hook-form with zod resolver
+- Zod schemas live in `src/lib/validations/<entity>.ts`
+- Submit handler calls a server action in `src/app/actions/<entity>.ts`
+- Server action: validate with zod, check honeypot, persist, return `{ ok: boolean, error?: string, data?: T }`
+- Use Sonner for success/error toasts
+- Honeypot field name "company" or "website" — hidden via `aria-hidden + tabindex=-1 + style absolute -9999px`
+
+## Styling patterns
+
+- Use Tailwind utility classes; never inline `style={}` except for dynamic CSS variables
+- Use design tokens (see globals.css @theme): bg-ink-900, text-amber-500, font-serif, text-display-1, p-section-y, etc.
+- Mobile-first: write base classes for mobile, then add `sm:`, `md:`, `lg:`, `xl:` overrides
+- Container width: `max-w-7xl mx-auto px-container-x`
+- Section padding: `py-section-y`
+- For complex variants on shadcn primitives, edit the component's `variants` in cva config rather than overriding with utility classes downstream
+
+## Accessibility (WCAG 2.2 AA — non-negotiable)
+
+- All interactive elements have visible focus indicators (focus-visible:ring-2 ring-amber-500 ring-offset-2)
+- All images have descriptive `alt` text (decorative images: `alt=""`)
+- All form inputs have associated `<label>` elements (use shadcn Form which handles this)
+- All buttons have accessible names (text content OR aria-label for icon-only buttons)
+- Colour contrast ≥4.5:1 for body text, ≥3:1 for large text — verify with browser DevTools
+- Touch targets ≥44×44 CSS pixels on mobile
+- Respect prefers-reduced-motion (globals.css has the rule already)
+- Use semantic HTML; don't use `<div>` for clickable things — use `<button>` or `<a>`
+
+## Australian English
+
+This is non-negotiable. Use Australian spelling in ALL user-facing copy, code comments, JSON-LD descriptions, alt text, and meta tags:
+
+- colour (not color)
+- centre (not center)
+- favourite (not favorite)
+- organisation (not organization)
+- specialise, customise, recognise (-ise not -ize)
+- kilometres, metres (not kilometers, meters)
+- catalogue (not catalog)
+- programme (when meaning a structured plan), program (for software/computer)
+- enquiry (not inquiry)
+- practise (verb), practice (noun)
+- licence (noun), license (verb)
+- defence (not defense)
+- analyse (not analyze)
+- travelling, travelled (double l)
+- "you'll receive your quote within 1 business day" — note no full stop after numerals when in headlines
+
+CSS/Tailwind keywords stay in US English because they are reserved technical terms — `text-color`, `border-color`, `background-color` are CSS specs, not our copy. Use ink/amber/sage colour scale names in our @theme.
+
+## Comments
+
+- Code comments: Australian English, sentence case, full stops at end.
+- TODO comments: format `// TODO: <description> (<initials> <YYYY-MM-DD>)`
+- FIXME for known bugs to address
+- NOTE for non-obvious decisions worth preserving
+
+## Performance defaults
+
+- Default to next/image, next/link, next/script
+- Default to Server Components — only opt into Client when needed
+- Default to ISR (revalidate=86400 for marketing pages, 3600 for blog) — only use force-dynamic for admin/forms
+- Default to lazy loading (next/image is lazy by default except priority=true for above-fold)
+- Default to AVIF/WebP image formats (configured in next.config.ts)
+- Avoid blocking the main thread: useDeferredValue, useTransition, dynamic() with ssr:false for heavy client-only widgets
+
+## When generating code
+
+- Always produce complete, working code — no `// ...` placeholders
+- Always include the imports at the top
+- Always include TypeScript types — no `any` (use `unknown` if truly unknown, then narrow)
+- Always include error handling for async operations
+- Always include accessibility attributes
+- Always include JSON-LD for new pages where appropriate
+- When uncertain about a pattern, prefer the documented pattern in the master build document over invention
+
+## When asked to refactor
+
+- Preserve existing behaviour first; verify with the developer before changing behaviour
+- Update tests if any
+- Update affected types throughout
+
+## Commit message format
+
+- Conventional Commits: `<type>(<scope>): <description>`
+- Types: feat, fix, chore, docs, refactor, test, perf, style
+- Scopes: foundation, design-system, seo, quote, blog, admin, perf, a11y, dx
+- Examples:
+  - `feat(quote): add multi-step quote form Step 1`
+  - `perf(images): preload LCP hero image on homepage`
+  - `fix(seo): correct BreadcrumbList @id resolution`
