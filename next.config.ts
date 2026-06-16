@@ -33,6 +33,10 @@ const cspDirectives = [
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  experimental: {
+    // Supabase transaction pooler allows one connection per Prisma client.
+    staticGenerationMaxConcurrency: 1,
+  },
   async redirects() {
     return [
       {

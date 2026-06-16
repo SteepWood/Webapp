@@ -2,7 +2,11 @@
 
 import { motion, useReducedMotion } from "motion/react";
 
-import { heroSpring, staggerContainer, fadeUpItem } from "@/lib/motion/presets";
+import {
+  revealTween,
+  staggerContainer,
+  fadeUpItem,
+} from "@/lib/motion/presets";
 
 type HeroMotionProps = {
   children: React.ReactNode;
@@ -20,7 +24,6 @@ export function HeroMotion({ children }: HeroMotionProps) {
       variants={staggerContainer}
       initial="hidden"
       animate="show"
-      transition={heroSpring}
     >
       {children}
     </motion.div>
@@ -41,7 +44,11 @@ export function HeroMotionItem({
   }
 
   return (
-    <motion.div variants={fadeUpItem} transition={heroSpring} className={className}>
+    <motion.div
+      variants={fadeUpItem}
+      transition={revealTween}
+      className={className}
+    >
       {children}
     </motion.div>
   );

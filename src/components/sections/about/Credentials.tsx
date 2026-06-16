@@ -15,7 +15,7 @@ const CREDENTIALS = [
 
 export function Credentials() {
   return (
-    <SectionShell className="bg-ink-900 text-ink-100">
+    <SectionShell className="relative border-y border-ink-800 bg-gradient-to-b from-ink-950 via-ink-900 to-ink-950 text-ink-100">
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
         <div>
           <h2 className="mb-stack-md font-serif text-h2 text-ink-50">
@@ -40,7 +40,7 @@ export function Credentials() {
             ))}
           </ul>
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-8 rounded-lg border border-ink-700/40 bg-ink-800/50 p-8">
+        <div className="flex flex-wrap items-center justify-center gap-8 rounded-lg border border-amber-400/25 bg-ink-800 p-8 shadow-lg ring-1 ring-ink-50/10">
           <Image
             src="/badges/hia.svg"
             alt="HIA member"

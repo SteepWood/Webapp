@@ -36,13 +36,16 @@ export function LenisProvider({ children }: LenisProviderProps) {
   useGSAP(
     () => {
       if (!enabled) {
+        ScrollTrigger.normalizeScroll(false);
         return;
       }
 
       const lenis = new Lenis({
-        duration: 1.2,
+        duration: 1.05,
         easing: (t: number) => Math.min(1, 1.001 - 2 ** (-10 * t)),
         smoothWheel: true,
+        wheelMultiplier: 0.9,
+        touchMultiplier: 1,
       });
 
       lenisRef.current = lenis;
@@ -56,10 +59,15 @@ export function LenisProvider({ children }: LenisProviderProps) {
       gsap.ticker.add(ticker);
       gsap.ticker.lagSmoothing(0);
 
+      requestAnimationFrame(() => {
+        ScrollTrigger.refresh();
+      });
+
       return () => {
         gsap.ticker.remove(ticker);
         lenis.destroy();
         lenisRef.current = null;
+        ScrollTrigger.refresh();
       };
     },
     { dependencies: [enabled], revertOnUpdate: true },

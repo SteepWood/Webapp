@@ -1,0 +1,397 @@
+{
+  "$schema": "steepwood-image-manifest/v1",
+  "outputRoot": "docs/pictures",
+  "publicRoot": "public",
+  "namingConvention": "{category}-{slug}-{variant}.jpg",
+  "priority": ["P0", "P1", "P2"],
+  "assets": [
+    {
+      "priority": "P0",
+      "source": "01-workshop/workshop-hero-main.jpg",
+      "deployTo": "public/images/workshop-hero-main.jpg",
+      "alsoReplaces": "public/images/hero-workshop.svg",
+      "usedBy": ["Hero", "AboutHero", "ServicePillarPage", "LocationHubPage", "ServiceLocationPage", "page.tsx preload"],
+      "size": "1600x1000",
+      "aspect": "16:10"
+    },
+    {
+      "priority": "P0",
+      "source": "01-workshop/workshop-assembly-bench.jpg",
+      "deployTo": "public/images/workshop/assembly-bench.jpg",
+      "usedBy": ["WorkshopGallery"],
+      "caption": "Assembly bench",
+      "alt": "SteepWood workshop bench with timber components laid out for assembly",
+      "size": "1600x1200",
+      "aspect": "4:3"
+    },
+    {
+      "priority": "P0",
+      "source": "01-workshop/workshop-panel-processing.jpg",
+      "deployTo": "public/images/workshop/panel-processing.jpg",
+      "usedBy": ["WorkshopGallery"],
+      "caption": "Panel processing",
+      "alt": "CNC and panel processing area in the SteepWood Newcastle workshop",
+      "size": "1600x1200",
+      "aspect": "4:3"
+    },
+    {
+      "priority": "P0",
+      "source": "01-workshop/workshop-hand-finishing.jpg",
+      "deployTo": "public/images/workshop/hand-finishing.jpg",
+      "usedBy": ["WorkshopGallery"],
+      "caption": "Hand finishing",
+      "alt": "Hand-finishing station for custom joinery doors and drawer fronts",
+      "size": "1600x1200",
+      "aspect": "4:3"
+    },
+    {
+      "priority": "P0",
+      "source": "01-workshop/workshop-timber-storage.jpg",
+      "deployTo": "public/images/workshop/timber-storage.jpg",
+      "usedBy": ["WorkshopGallery"],
+      "caption": "Timber storage",
+      "alt": "Timber storage racks in the SteepWood workshop",
+      "size": "1600x1200",
+      "aspect": "4:3"
+    },
+    {
+      "priority": "P0",
+      "source": "01-workshop/workshop-quality-inspection.jpg",
+      "deployTo": "public/images/workshop/quality-inspection.jpg",
+      "usedBy": ["WorkshopGallery"],
+      "caption": "Quality inspection",
+      "alt": "Quality inspection area before joinery leaves the workshop",
+      "size": "1600x1200",
+      "aspect": "4:3"
+    },
+    {
+      "priority": "P0",
+      "source": "01-workshop/workshop-dispatch-prep.jpg",
+      "deployTo": "public/images/workshop/dispatch-prep.jpg",
+      "usedBy": ["WorkshopGallery"],
+      "caption": "Dispatch and install prep",
+      "alt": "Install team preparing cabinetry for delivery across NSW",
+      "size": "1600x1200",
+      "aspect": "4:3"
+    },
+    {
+      "priority": "P0",
+      "source": "06-og-social/og-site-default.jpg",
+      "deployTo": "public/og-default.jpg",
+      "usedBy": ["structuredData LocalBusiness"],
+      "size": "1200x630",
+      "aspect": "1.91:1"
+    },
+    {
+      "priority": "P0",
+      "source": "04-portfolio/project-hamptons-kitchen-newcastle-after.jpg",
+      "deployTo": "cms:portfolio/hamptons-kitchen-newcastle/after.jpg",
+      "portfolioSlug": "hamptons-kitchen-newcastle",
+      "field": "afterImageUrl",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P0",
+      "source": "04-portfolio/project-hamptons-kitchen-newcastle-before.jpg",
+      "deployTo": "cms:portfolio/hamptons-kitchen-newcastle/before.jpg",
+      "portfolioSlug": "hamptons-kitchen-newcastle",
+      "field": "beforeImageUrl",
+      "size": "1600x1000",
+      "pairWith": "project-hamptons-kitchen-newcastle-after.jpg"
+    },
+    {
+      "priority": "P0",
+      "source": "04-portfolio/project-walk-in-robe-sydney-after.jpg",
+      "deployTo": "cms:portfolio/walk-in-robe-sydney/after.jpg",
+      "portfolioSlug": "walk-in-robe-sydney",
+      "field": "afterImageUrl",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P0",
+      "source": "04-portfolio/project-walk-in-robe-sydney-before.jpg",
+      "deployTo": "cms:portfolio/walk-in-robe-sydney/before.jpg",
+      "portfolioSlug": "walk-in-robe-sydney",
+      "field": "beforeImageUrl",
+      "size": "1600x1000",
+      "pairWith": "project-walk-in-robe-sydney-after.jpg"
+    },
+    {
+      "priority": "P0",
+      "source": "04-portfolio/project-floating-vanity-byron-bay-after.jpg",
+      "deployTo": "cms:portfolio/floating-vanity-byron-bay/after.jpg",
+      "portfolioSlug": "floating-vanity-byron-bay",
+      "field": "afterImageUrl",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P0",
+      "source": "04-portfolio/project-floating-vanity-byron-bay-before.jpg",
+      "deployTo": "cms:portfolio/floating-vanity-byron-bay/before.jpg",
+      "portfolioSlug": "floating-vanity-byron-bay",
+      "field": "beforeImageUrl",
+      "size": "1600x1000",
+      "pairWith": "project-floating-vanity-byron-bay-after.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "02-services/service-custom-kitchen-joinery-hero.jpg",
+      "deployTo": "public/images/services/custom-kitchen-joinery-hero.jpg",
+      "dataRef": "services.ts heroImagePath",
+      "ogSource": "06-og-social/og-service-custom-kitchen-joinery.jpg",
+      "ogDeployTo": "public/og/services/custom-kitchen-joinery-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "02-services/service-built-in-wardrobes-hero.jpg",
+      "deployTo": "public/images/services/built-in-wardrobes-hero.jpg",
+      "dataRef": "services.ts heroImagePath",
+      "ogSource": "06-og-social/og-service-built-in-wardrobes.jpg",
+      "ogDeployTo": "public/og/services/built-in-wardrobes-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "02-services/service-office-fitout-hero.jpg",
+      "deployTo": "public/images/services/office-fitout-hero.jpg",
+      "dataRef": "services.ts heroImagePath",
+      "ogSource": "06-og-social/og-service-office-fitout.jpg",
+      "ogDeployTo": "public/og/services/office-fitout-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "02-services/service-shopfitting-hero.jpg",
+      "deployTo": "public/images/services/shopfitting-hero.jpg",
+      "dataRef": "services.ts heroImagePath",
+      "ogSource": "06-og-social/og-service-shopfitting.jpg",
+      "ogDeployTo": "public/og/services/shopfitting-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "02-services/service-custom-bathroom-vanity-hero.jpg",
+      "deployTo": "public/images/services/custom-bathroom-vanity-hero.jpg",
+      "dataRef": "services.ts heroImagePath",
+      "ogSource": "06-og-social/og-service-custom-bathroom-vanity.jpg",
+      "ogDeployTo": "public/og/services/custom-bathroom-vanity-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "02-services/service-commercial-joinery-hero.jpg",
+      "deployTo": "public/images/services/commercial-joinery-hero.jpg",
+      "dataRef": "services.ts heroImagePath",
+      "ogSource": "06-og-social/og-service-commercial-joinery.jpg",
+      "ogDeployTo": "public/og/services/commercial-joinery-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "02-services/service-custom-furniture-hero.jpg",
+      "deployTo": "public/images/services/custom-furniture-hero.jpg",
+      "dataRef": "services.ts heroImagePath",
+      "ogSource": "06-og-social/og-service-custom-furniture.jpg",
+      "ogDeployTo": "public/og/services/custom-furniture-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "02-services/service-home-office-joinery-hero.jpg",
+      "deployTo": "public/images/services/home-office-joinery-hero.jpg",
+      "dataRef": "services.ts heroImagePath",
+      "ogSource": "06-og-social/og-service-home-office-joinery.jpg",
+      "ogDeployTo": "public/og/services/home-office-joinery-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "02-services/service-laundry-cabinets-hero.jpg",
+      "deployTo": "public/images/services/laundry-cabinets-hero.jpg",
+      "dataRef": "services.ts heroImagePath",
+      "ogSource": "06-og-social/og-service-laundry-cabinets.jpg",
+      "ogDeployTo": "public/og/services/laundry-cabinets-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "02-services/service-staircase-joinery-hero.jpg",
+      "deployTo": "public/images/services/staircase-joinery-hero.jpg",
+      "dataRef": "services.ts heroImagePath",
+      "ogSource": "06-og-social/og-service-staircase-joinery.jpg",
+      "ogDeployTo": "public/og/services/staircase-joinery-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-newcastle-hero.jpg",
+      "deployTo": "public/images/locations/newcastle-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-newcastle.jpg",
+      "ogDeployTo": "public/og/locations/newcastle-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-sydney-hero.jpg",
+      "deployTo": "public/images/locations/sydney-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-sydney.jpg",
+      "ogDeployTo": "public/og/locations/sydney-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-canberra-hero.jpg",
+      "deployTo": "public/images/locations/canberra-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-canberra.jpg",
+      "ogDeployTo": "public/og/locations/canberra-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-melbourne-hero.jpg",
+      "deployTo": "public/images/locations/melbourne-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-melbourne.jpg",
+      "ogDeployTo": "public/og/locations/melbourne-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-central-coast-hero.jpg",
+      "deployTo": "public/images/locations/central-coast-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-central-coast.jpg",
+      "ogDeployTo": "public/og/locations/central-coast-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-hunter-valley-hero.jpg",
+      "deployTo": "public/images/locations/hunter-valley-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-hunter-valley.jpg",
+      "ogDeployTo": "public/og/locations/hunter-valley-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-gold-coast-hero.jpg",
+      "deployTo": "public/images/locations/gold-coast-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-gold-coast.jpg",
+      "ogDeployTo": "public/og/locations/gold-coast-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-wollongong-hero.jpg",
+      "deployTo": "public/images/locations/wollongong-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-wollongong.jpg",
+      "ogDeployTo": "public/og/locations/wollongong-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-brisbane-hero.jpg",
+      "deployTo": "public/images/locations/brisbane-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-brisbane.jpg",
+      "ogDeployTo": "public/og/locations/brisbane-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-perth-hero.jpg",
+      "deployTo": "public/images/locations/perth-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-perth.jpg",
+      "ogDeployTo": "public/og/locations/perth-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-byron-bay-hero.jpg",
+      "deployTo": "public/images/locations/byron-bay-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-byron-bay.jpg",
+      "ogDeployTo": "public/og/locations/byron-bay-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-port-macquarie-hero.jpg",
+      "deployTo": "public/images/locations/port-macquarie-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-port-macquarie.jpg",
+      "ogDeployTo": "public/og/locations/port-macquarie-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-coffs-harbour-hero.jpg",
+      "deployTo": "public/images/locations/coffs-harbour-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-coffs-harbour.jpg",
+      "ogDeployTo": "public/og/locations/coffs-harbour-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-adelaide-hero.jpg",
+      "deployTo": "public/images/locations/adelaide-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-adelaide.jpg",
+      "ogDeployTo": "public/og/locations/adelaide-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-bathurst-hero.jpg",
+      "deployTo": "public/images/locations/bathurst-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-bathurst.jpg",
+      "ogDeployTo": "public/og/locations/bathurst-og.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "03-locations/location-orange-hero.jpg",
+      "deployTo": "public/images/locations/orange-hero.jpg",
+      "dataRef": "locations.ts heroImagePath",
+      "ogSource": "06-og-social/og-location-orange.jpg",
+      "ogDeployTo": "public/og/locations/orange-og.jpg"
+    },
+    {
+      "priority": "P2",
+      "source": "05-team/team-james-mitchell-portrait.jpg",
+      "deployTo": "public/images/team/james-mitchell.jpg",
+      "usedBy": ["Team.tsx"]
+    },
+    {
+      "priority": "P2",
+      "source": "05-team/team-sarah-chen-portrait.jpg",
+      "deployTo": "public/images/team/sarah-chen.jpg",
+      "usedBy": ["Team.tsx"]
+    },
+    {
+      "priority": "P2",
+      "source": "05-team/team-tom-walsh-portrait.jpg",
+      "deployTo": "public/images/team/tom-walsh.jpg",
+      "usedBy": ["Team.tsx"]
+    },
+    {
+      "priority": "P2",
+      "source": "05-team/team-elena-rossi-portrait.jpg",
+      "deployTo": "public/images/team/elena-rossi.jpg",
+      "usedBy": ["Team.tsx"]
+    },
+    {
+      "priority": "P2",
+      "source": "07-materials/materials-workshop-samples.jpg",
+      "deployTo": "public/images/materials-workshop-samples.jpg",
+      "usedBy": ["ServicePillarPage materials block"]
+    },
+    {
+      "priority": "P2",
+      "source": "08-blog/blog-kitchen-storage-planning-australia-hero.jpg",
+      "deployTo": "cms:blog/kitchen-storage-planning-australia/cover.jpg",
+      "field": "coverImageUrl"
+    }
+  ],
+  "portfolioGalleryPattern": {
+    "source": "04-portfolio/project-{slug}-g{nn}.jpg",
+    "deployTo": "cms:portfolio/{slug}/gallery/g{nn}.jpg",
+    "field": "galleryImages",
+    "countPerProject": 5,
+    "projects": [
+      "hamptons-kitchen-newcastle",
+      "walk-in-robe-sydney",
+      "floating-vanity-byron-bay"
+    ]
+  },
+  "skipGeneration": [
+    "public/brand/**",
+    "public/badges/**",
+    "public/logo.png"
+  ]
+}

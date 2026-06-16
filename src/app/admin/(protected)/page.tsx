@@ -12,6 +12,8 @@ import {
   getAdminRecentActivity,
 } from "@/lib/db/admin";
 
+export const dynamic = "force-dynamic";
+
 const METRIC_CARDS = [
   {
     key: "quotesThisWeek" as const,

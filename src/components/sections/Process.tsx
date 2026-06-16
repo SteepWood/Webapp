@@ -36,7 +36,7 @@ export function Process() {
       <ol className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
         {STEPS.map((step) => (
           <li key={step.number} className="flex flex-col gap-3">
-            <span className="font-serif text-5xl leading-none text-amber-500/80">
+            <span className="font-serif text-5xl leading-none text-amber-600">
               {step.number}
             </span>
             <h3 className="font-serif text-h4 text-ink-900">{step.title}</h3>

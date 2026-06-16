@@ -32,7 +32,11 @@ export default async function AdminLoginPage({
     <div className="flex min-h-screen items-center justify-center bg-ink-900 px-4 py-12">
       <div className="w-full max-w-md">
         <div className="mb-8 text-center">
-          <SteepWoodLogo variant="mark" className="mx-auto justify-center text-ink-50" />
+          <SteepWoodLogo
+            variant="mark"
+            theme="dark"
+            className="mx-auto justify-center text-ink-50"
+          />
           <h1 className="mt-6 font-serif text-display-3 text-ink-50">
             Admin sign in
           </h1>

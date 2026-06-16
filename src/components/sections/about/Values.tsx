@@ -31,7 +31,7 @@ export function Values() {
         {VALUES.map((value) => (
           <article
             key={value.title}
-            className="rounded-lg border border-ink-700/10 bg-ink-50 p-6"
+            className="surface-card rounded-lg p-6"
           >
             <h3 className="mb-3 font-serif text-h4 text-ink-900">
               {value.title}

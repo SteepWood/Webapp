@@ -28,10 +28,10 @@ export function ProgressBar({ currentStep }: { currentStep: 1 | 2 | 3 }) {
                 className={cn(
                   "flex size-9 items-center justify-center rounded-full border-2 text-sm font-semibold transition-colors",
                   isActive &&
-                    "border-amber-500 bg-amber-500 text-ink-950",
+                    "border-amber-600/30 bg-wood-texture text-on-wood",
                   isComplete &&
                     !isActive &&
-                    "border-amber-500 bg-amber-100 text-amber-700",
+                    "border-amber-500/50 bg-amber-100 text-amber-600",
                   !isActive &&
                     !isComplete &&
                     "border-ink-700/20 bg-ink-50 text-ink-800/60",
@@ -57,7 +57,7 @@ export function ProgressBar({ currentStep }: { currentStep: 1 | 2 | 3 }) {
         aria-label={`Step ${currentStep} of 3`}
       >
         <div
-          className="h-full rounded-full bg-amber-500 transition-all duration-[var(--duration-base)] ease-[var(--ease-out-soft)]"
+          className="h-full rounded-full bg-wood-texture transition-all duration-[var(--duration-base)] ease-[var(--ease-out-soft)]"
           style={{ width: `${progressPercent}%` }}
         />
       </div>

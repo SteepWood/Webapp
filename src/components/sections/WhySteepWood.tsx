@@ -1,5 +1,12 @@
+"use client";
+
 import { Award, Gem, Hammer, Warehouse } from "lucide-react";
 
+import {
+  ScrollReveal,
+  ScrollRevealItem,
+  ScrollRevealStagger,
+} from "@/components/motion/ScrollReveal";
 import { SectionShell } from "@/components/sections/section-shell";
 
 const PILLARS = [
@@ -31,25 +38,29 @@ const PILLARS = [
 
 export function WhySteepWood() {
   return (
-    <SectionShell className="bg-ink-100/40">
-      <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">
-        Why SteepWood
-      </h2>
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <SectionShell className="surface-section">
+      <ScrollReveal>
+        <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">
+          Why SteepWood
+        </h2>
+      </ScrollReveal>
+      <ScrollRevealStagger className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {PILLARS.map((pillar) => (
-          <div key={pillar.title} className="flex flex-col gap-3">
-            <pillar.icon
-              className="size-8 text-amber-600"
-              aria-hidden
-              strokeWidth={1.5}
-            />
-            <h3 className="font-serif text-h4 text-ink-900">{pillar.title}</h3>
-            <p className="text-body-sm leading-relaxed text-ink-800/80">
-              {pillar.description}
-            </p>
-          </div>
+          <ScrollRevealItem key={pillar.title}>
+            <div className="flex flex-col gap-3">
+              <pillar.icon
+                className="size-8 text-amber-700"
+                aria-hidden
+                strokeWidth={1.5}
+              />
+              <h3 className="font-serif text-h4 text-ink-900">{pillar.title}</h3>
+              <p className="text-body-sm leading-relaxed text-ink-800/80">
+                {pillar.description}
+              </p>
+            </div>
+          </ScrollRevealItem>
         ))}
-      </div>
+      </ScrollRevealStagger>
     </SectionShell>
   );
 }

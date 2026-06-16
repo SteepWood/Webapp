@@ -37,7 +37,7 @@ export function Team() {
         {TEAM.map((member) => (
           <article
             key={member.name}
-            className="flex flex-col rounded-lg border border-ink-700/10 bg-ink-50 p-6"
+            className="surface-card flex flex-col rounded-lg p-6"
           >
             <div
               className="mb-4 flex size-16 items-center justify-center rounded-full bg-ink-900 font-serif text-xl text-ink-50"

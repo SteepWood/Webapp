@@ -1,14 +1,21 @@
 "use client";
 
 import type { PortfolioProject } from "@prisma/client";
-import Image from "next/image";
-import Link from "@/components/ui/link";
 
 import {
-  CardBody,
-  CardContainer,
-  CardItem,
-} from "@/components/ui/aceternity/card-3d";
+  ScrollRevealItem,
+  ScrollRevealStagger,
+} from "@/components/motion/ScrollReveal";
+import {
+  MediaCard,
+  MediaCardContent,
+  MediaCardDescription,
+  MediaCardImage,
+  MediaCardLink,
+  MediaCardMeta,
+  MediaCardPlaceholder,
+  MediaCardTitle,
+} from "@/components/ui/media-card";
 import {
   getLocationLabel,
   getProjectHeroImage,
@@ -32,60 +39,41 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <ScrollRevealStagger className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {projects.map((project) => {
         const hero = getProjectHeroImage(project);
 
         return (
-          <CardContainer key={project.slug}>
-            <CardBody className="rounded-lg border border-ink-700/10 bg-ink-50">
-              <CardItem translateZ={12}>
-                <article>
-                  <Link
-                    href={`/portfolio/${project.slug}/`}
-                    className="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
-                  >
-                    <div className="flex min-h-[12rem] items-center justify-center bg-ink-100 p-2 sm:min-h-[14rem]">
-                      {hero ? (
-                        <Image
-                          src={hero.url}
-                          alt={hero.alt}
-                          width={hero.width}
-                          height={hero.height}
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                          className="h-auto max-h-64 w-full object-contain"
-                          loading="lazy"
-                        />
-                      ) : (
-                        <div className="flex min-h-[12rem] w-full items-end bg-gradient-to-br from-ink-800 to-ink-950 p-6">
-                          <span className="font-serif text-xl text-ink-50">
-                            {project.title}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-
-                    <div className="p-5">
-                      <h3 className="font-serif text-h4 text-ink-900">
-                        {project.title}
-                      </h3>
-                      <p className="mt-1 text-body-sm text-ink-800/70">
-                        {getServiceLabel(project.serviceSlug)} ·{" "}
-                        {getLocationLabel(project.locationName)}
-                      </p>
-                      {project.summary ? (
-                        <p className="mt-2 text-body-sm leading-relaxed text-ink-800/80">
-                          {project.summary}
-                        </p>
-                      ) : null}
-                    </div>
-                  </Link>
-                </article>
-              </CardItem>
-            </CardBody>
-          </CardContainer>
+          <ScrollRevealItem key={project.slug} className="h-full">
+            <MediaCard>
+              <MediaCardLink href={`/portfolio/${project.slug}/`}>
+                {hero ? (
+                  <MediaCardImage
+                    src={hero.url}
+                    alt={hero.alt}
+                    width={hero.width}
+                    height={hero.height}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    loading="lazy"
+                  />
+                ) : (
+                  <MediaCardPlaceholder label={project.title} />
+                )}
+                <MediaCardContent>
+                  <MediaCardTitle>{project.title}</MediaCardTitle>
+                  <MediaCardMeta>
+                    {getServiceLabel(project.serviceSlug)} ·{" "}
+                    {getLocationLabel(project.locationName)}
+                  </MediaCardMeta>
+                  {project.summary ? (
+                    <MediaCardDescription>{project.summary}</MediaCardDescription>
+                  ) : null}
+                </MediaCardContent>
+              </MediaCardLink>
+            </MediaCard>
+          </ScrollRevealItem>
         );
       })}
-    </div>
+    </ScrollRevealStagger>
   );
 }

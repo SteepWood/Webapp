@@ -64,7 +64,7 @@ export function ContactForm() {
   }
 
   return (
-    <div className="rounded-lg border border-ink-700/10 bg-ink-50 p-6 md:p-8">
+    <div className="surface-card rounded-lg p-6 md:p-8">
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}

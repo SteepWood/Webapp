@@ -39,7 +39,7 @@ export function AdminMobileNav() {
       <SheetContent side="left" className="w-full max-w-xs bg-ink-900 text-ink-50">
         <SheetHeader>
           <SheetTitle className="sr-only">Admin navigation</SheetTitle>
-          <SteepWoodLogo variant="mark" className="text-ink-50" />
+          <SteepWoodLogo variant="mark" theme="dark" className="text-ink-50" />
         </SheetHeader>
         <nav className="mt-6 flex flex-col gap-1" aria-label="Admin navigation">
           {ADMIN_NAV_ITEMS.map((item) => {
@@ -56,7 +56,7 @@ export function AdminMobileNav() {
                 className={cn(
                   "flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium transition-colors",
                   isActive
-                    ? "bg-amber-500 text-ink-950"
+                    ? "bg-wood-texture text-on-wood shadow-sm"
                     : "text-ink-50/80 hover:bg-ink-800 hover:text-ink-50",
                 )}
               >

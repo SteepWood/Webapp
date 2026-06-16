@@ -1,5 +1,9 @@
 import { PrismaClient } from "@prisma/client";
 
+import {
+  portfolioGalleryImages,
+  portfolioImagePath,
+} from "../src/lib/images";
 import { LOCATIONS } from "../src/lib/services-locations/locations";
 import { SERVICES } from "../src/lib/services-locations/services";
 
@@ -183,6 +187,10 @@ async function seedFaqs() {
 
 async function seedPortfolio() {
   for (const project of SAMPLE_PROJECTS) {
+    const beforeImageUrl = portfolioImagePath(project.slug, "before");
+    const afterImageUrl = portfolioImagePath(project.slug, "after");
+    const galleryImages = portfolioGalleryImages(project.slug, project.title);
+
     await prisma.portfolioProject.upsert({
       where: { slug: project.slug },
       update: {
@@ -192,7 +200,9 @@ async function seedPortfolio() {
         serviceSlug: project.serviceSlug,
         displayOrder: project.displayOrder,
         isPublished: true,
-        afterImageUrl: "/images/hero-workshop.svg",
+        beforeImageUrl,
+        afterImageUrl,
+        galleryImages,
       },
       create: {
         slug: project.slug,
@@ -202,7 +212,9 @@ async function seedPortfolio() {
         serviceSlug: project.serviceSlug,
         displayOrder: project.displayOrder,
         isPublished: true,
-        afterImageUrl: "/images/hero-workshop.svg",
+        beforeImageUrl,
+        afterImageUrl,
+        galleryImages,
       },
     });
   }

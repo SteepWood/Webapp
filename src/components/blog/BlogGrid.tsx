@@ -35,8 +35,8 @@ function BlogCard({
     <article
       className={
         featured
-          ? "overflow-hidden rounded-lg border border-ink-700/10 bg-ink-50 lg:grid lg:grid-cols-2"
-          : "overflow-hidden rounded-lg border border-ink-700/10 bg-ink-50"
+          ? "surface-card overflow-hidden rounded-lg lg:grid lg:grid-cols-2"
+          : "surface-card overflow-hidden rounded-lg"
       }
     >
       <Link

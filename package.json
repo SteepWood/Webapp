@@ -24,7 +24,9 @@
     "snapshot:seo:pre": "node scripts/snapshot-seo.mjs pre",
     "snapshot:seo": "node scripts/snapshot-seo.mjs",
     "snapshot:headings:pre": "node scripts/snapshot-headings.mjs pre",
-    "snapshot:headings": "node scripts/snapshot-headings.mjs"
+    "snapshot:headings": "node scripts/snapshot-headings.mjs",
+    "import:logo": "node scripts/import-brand-logo.mjs",
+    "deploy:p0-images": "node scripts/deploy-p0-images.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -84,6 +86,7 @@
     "eslint": "^9.26.0",
     "eslint-config-next": "^16.2.7",
     "prisma": "^6.19.3",
+    "sharp": "^0.34.5",
     "supabase": "^2.105.0",
     "tailwindcss": "^4.1.8",
     "tsx": "^4.22.4",

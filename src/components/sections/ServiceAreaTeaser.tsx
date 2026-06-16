@@ -1,3 +1,6 @@
+"use client";
+
+import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { LocationTeaserGrid } from "@/components/sections/LocationTeaserGrid";
 import { SectionShell } from "@/components/sections/section-shell";
 import type { HomepageLocation } from "@/lib/db/homepage-page";
@@ -8,7 +11,7 @@ export function ServiceAreaTeaser({
   locations: HomepageLocation[];
 }) {
   return (
-    <SectionShell className="relative overflow-hidden bg-ink-100/30">
+    <SectionShell className="surface-section relative overflow-hidden">
       <svg
         viewBox="0 0 200 120"
         aria-hidden
@@ -21,7 +24,7 @@ export function ServiceAreaTeaser({
         />
       </svg>
 
-      <div className="relative max-w-3xl">
+      <ScrollReveal className="relative max-w-3xl">
         <h2 className="mb-stack-sm font-serif text-h2 text-ink-900">
           Crafted in Newcastle. Delivered Australia-wide.
         </h2>
@@ -30,7 +33,7 @@ export function ServiceAreaTeaser({
           workshop we travel for free consultations across NSW and ACT, and
           deliver via dedicated furniture freight to QLD, VIC, WA, and SA.
         </p>
-      </div>
+      </ScrollReveal>
 
       <LocationTeaserGrid locations={locations} />
     </SectionShell>

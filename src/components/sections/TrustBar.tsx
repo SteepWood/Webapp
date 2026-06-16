@@ -9,7 +9,7 @@ export async function TrustBar() {
   const aggregateRating = await getAggregateRating();
 
   return (
-    <SectionShell className="border-y border-ink-700/10 bg-ink-50 py-8">
+    <SectionShell className="surface-panel border-y border-ink-700/15 py-8">
       <TrustBarMotion>
       <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
         {aggregateRating ? (
@@ -17,7 +17,7 @@ export async function TrustBar() {
             href="/#testimonials"
             className="flex items-center gap-3 rounded-md text-ink-900 transition-colors hover:text-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
           >
-            <span className="text-amber-500" aria-hidden>
+            <span className="text-amber-600" aria-hidden>
               ★★★★★
             </span>
             <span className="text-sm font-medium">

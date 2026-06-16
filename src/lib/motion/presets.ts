@@ -1,21 +1,18 @@
 export const defaultSpring = {
   type: "spring" as const,
-  stiffness: 260,
-  damping: 22,
-  mass: 0.6,
+  stiffness: 220,
+  damping: 28,
+  mass: 0.8,
 };
 
-export const heroSpring = {
-  type: "spring" as const,
-  mass: 0.5,
-  stiffness: 100,
-  damping: 14,
+export const revealTween = {
+  duration: 0.65,
+  ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
 };
 
-export const hoverSpring = {
-  type: "spring" as const,
-  stiffness: 300,
-  damping: 24,
+export const hoverTween = {
+  duration: 0.35,
+  ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
 };
 
 export const fadeTween = {
@@ -24,14 +21,24 @@ export const fadeTween = {
 };
 
 export const staggerContainer = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 1 },
   show: {
     opacity: 1,
-    transition: { staggerChildren: 0.06 },
+    transition: { staggerChildren: 0.08, delayChildren: 0.04 },
   },
 };
 
 export const fadeUpItem = {
-  hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0 },
+  hidden: { opacity: 1, y: 14 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: revealTween,
+  },
 };
+
+export const scrollRevealViewport = {
+  once: true,
+  margin: "0px 0px -4% 0px",
+  amount: 0.12,
+} as const;

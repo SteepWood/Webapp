@@ -263,11 +263,11 @@ export default async function ProjectDetailPage({
       ) : null}
 
       <SectionShell className="border-t border-ink-700/10">
-        <div className="rounded-lg bg-ink-900 px-8 py-10 text-center md:px-12">
+        <div className="mx-auto max-w-3xl rounded-lg border border-amber-400/40 bg-ink-800 px-8 py-10 text-center shadow-xl ring-1 ring-ink-50/15 md:px-12">
           <h2 className="mb-stack-sm font-serif text-h2 text-ink-50">
             Inspired? Get a free measure &amp; quote
           </h2>
-          <p className="mb-stack-lg text-body text-ink-100/80">
+          <p className="mb-stack-lg text-body text-ink-100/90">
             Tell us about your project and we&apos;ll arrange a no-obligation
             in-home visit.
           </p>

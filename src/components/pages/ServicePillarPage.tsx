@@ -5,12 +5,13 @@ import { MediaFrame } from "@/components/ui/media-frame";
 import { SectionShell } from "@/components/sections/section-shell";
 import { ServicePillarFAQ } from "@/components/pages/ServicePillarFAQ";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
+import { PageClosingCta } from "@/components/sections/dark-cta-section";
 import { Button } from "@/components/ui/button";
+import { WORKSHOP_HERO_IMAGE } from "@/lib/images";
 import type { ServicePillarContent } from "@/lib/services-locations/serviceContent";
 import { LOCATIONS } from "@/lib/services-locations/locations";
 import type { ResolvedService } from "@/lib/services-locations/types";
 import type { PortfolioProject, Testimonial } from "@prisma/client";
-import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/navigation";
 import { canonicalUrl } from "@/lib/seo/canonical";
 import {
   serviceBreadcrumbStructuredData,
@@ -100,7 +101,7 @@ export function ServicePillarPage({
             </div>
           </div>
           <MediaFrame
-            src="/images/hero-workshop.svg"
+            src={WORKSHOP_HERO_IMAGE}
             alt={`${service.name} crafted in the SteepWood Newcastle workshop`}
             priority
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -144,7 +145,7 @@ export function ServicePillarPage({
           {content.includes.map((item) => (
             <li
               key={item.title}
-              className="rounded-lg border border-ink-700/10 bg-ink-50 p-6"
+              className="surface-card rounded-lg p-6"
             >
               <h3 className="mb-2 font-serif text-h4 text-ink-900">
                 {item.title}
@@ -168,7 +169,7 @@ export function ServicePillarPage({
             ))}
           </div>
           <MediaFrame
-            src="/images/hero-workshop.svg"
+            src={WORKSHOP_HERO_IMAGE}
             alt="Premium joinery materials and finishes in the SteepWood workshop"
             sizes="(max-width: 1024px) 100vw, 50vw"
             imageClassName="grayscale"
@@ -199,7 +200,7 @@ export function ServicePillarPage({
         <ol className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
           {content.processSteps.map((step, index) => (
             <li key={step.title} className="flex flex-col gap-3">
-              <span className="font-serif text-5xl leading-none text-amber-500/80">
+              <span className="font-serif text-5xl leading-none text-amber-600">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <h3 className="font-serif text-h4 text-ink-900">{step.title}</h3>
@@ -235,7 +236,7 @@ export function ServicePillarPage({
             <li key={location.slug}>
               <Link
                 href={`/${service.slug}/${location.slug}/`}
-                className="block rounded-lg border border-ink-700/10 bg-ink-50 p-5 transition-colors hover:border-amber-500/40 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                className="surface-card block rounded-lg p-5 transition-colors hover:border-amber-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
               >
                 <h3 className="mb-1 font-serif text-h4 text-ink-900">
                   {location.name}
@@ -254,30 +255,11 @@ export function ServicePillarPage({
 
       <ServicePillarFAQ faqs={content.faqs} />
 
-      <SectionShell className="bg-ink-900 text-ink-100">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-stack-sm font-serif text-h2 text-ink-50">
-            Ready to design your {service.name.toLowerCase()}?
-          </h2>
-          <p className="mb-stack-lg text-body-lg text-ink-100/80">
-            Free design consultation, fixed-price quote within 5 working days, no
-            obligation.
-          </p>
-          <div className="flex flex-col justify-center gap-stack-sm sm:flex-row">
-            <Button asChild size="xl">
-              <Link href="/contact/">Get a Free Quote</Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="xl"
-              className="border-ink-50 text-ink-50 hover:bg-ink-50 hover:text-ink-900"
-            >
-              <a href={PHONE_HREF}>Call us — {PHONE_DISPLAY}</a>
-            </Button>
-          </div>
-        </div>
-      </SectionShell>
+      <PageClosingCta
+        title={`Ready to design your ${service.name.toLowerCase()}?`}
+        description="Free design consultation, fixed-price quote within 5 working days, no obligation."
+        phoneContext="service-pillar-cta"
+      />
     </>
   );
 }

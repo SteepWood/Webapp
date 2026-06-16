@@ -5,13 +5,14 @@ import { MediaFrame } from "@/components/ui/media-frame";
 import { SectionShell } from "@/components/sections/section-shell";
 import { ServicePillarFAQ } from "@/components/pages/ServicePillarFAQ";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
+import { PageClosingCta } from "@/components/sections/dark-cta-section";
 import { Button } from "@/components/ui/button";
+import { WORKSHOP_HERO_IMAGE } from "@/lib/images";
 import { SERVICES } from "@/lib/services-locations/services";
 import type { LocationHubContent } from "@/lib/services-locations/locationContent";
 import { getNearbyLocations } from "@/lib/services-locations/locationContent";
 import type { ResolvedLocation } from "@/lib/services-locations/types";
 import type { PortfolioProject, Testimonial } from "@prisma/client";
-import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/navigation";
 import { canonicalUrl } from "@/lib/seo/canonical";
 import {
   locationBreadcrumbStructuredData,
@@ -138,7 +139,7 @@ export function LocationHubPage({
             </div>
           </div>
           <MediaFrame
-            src="/images/hero-workshop.svg"
+            src={WORKSHOP_HERO_IMAGE}
             alt={`Custom joinery projects in ${location.name}`}
             priority
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -162,7 +163,7 @@ export function LocationHubPage({
           {trustCards(location).map((card) => (
             <li
               key={card.title}
-              className="rounded-lg border border-ink-700/10 bg-ink-50 p-6"
+              className="surface-card rounded-lg p-6"
             >
               <h3 className="mb-2 font-serif text-h4 text-ink-900">
                 {card.title}
@@ -188,7 +189,7 @@ export function LocationHubPage({
             <li key={service.slug}>
               <Link
                 href={`/${service.slug}/${location.slug}/`}
-                className="block h-full rounded-lg border border-ink-700/10 bg-ink-50 p-5 transition-colors hover:border-amber-500/40 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                className="surface-card block h-full rounded-lg p-5 transition-colors hover:border-amber-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
               >
                 <h3 className="mb-1 font-serif text-h4 text-ink-900">
                   {service.name}
@@ -249,7 +250,7 @@ export function LocationHubPage({
               <li key={nearby.slug}>
                 <Link
                   href={`/locations/${nearby.slug}/`}
-                  className="block rounded-lg border border-ink-700/10 bg-ink-50 p-5 transition-colors hover:border-amber-500/40 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                  className="surface-card block rounded-lg p-5 transition-colors hover:border-amber-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                 >
                   <h3 className="mb-1 font-serif text-h4 text-ink-900">
                     {nearby.name}
@@ -267,30 +268,11 @@ export function LocationHubPage({
         </SectionShell>
       ) : null}
 
-      <SectionShell className="bg-ink-900 text-ink-100">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-stack-sm font-serif text-h2 text-ink-50">
-            Ready to start your {location.name} project?
-          </h2>
-          <p className="mb-stack-lg text-body-lg text-ink-100/80">
-            Free design consultation, fixed-price quote within 5 working days, no
-            obligation.
-          </p>
-          <div className="flex flex-col justify-center gap-stack-sm sm:flex-row">
-            <Button asChild size="xl">
-              <Link href="/contact/">Get a Free Quote</Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="xl"
-              className="border-ink-50 text-ink-50 hover:bg-ink-50 hover:text-ink-900"
-            >
-              <a href={PHONE_HREF}>Call us — {PHONE_DISPLAY}</a>
-            </Button>
-          </div>
-        </div>
-      </SectionShell>
+      <PageClosingCta
+        title={`Ready to start your ${location.name} project?`}
+        description="Free design consultation, fixed-price quote within 5 working days, no obligation."
+        phoneContext="location-hub-cta"
+      />
     </>
   );
 }

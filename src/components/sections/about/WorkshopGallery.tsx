@@ -9,39 +9,13 @@ import {
   DialogContent,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { WORKSHOP_GALLERY_IMAGES } from "@/lib/images";
 
-const WORKSHOP_PHOTOS = [
-  {
-    src: "/images/hero-workshop.svg",
-    alt: "SteepWood workshop bench with timber components laid out for assembly",
-    caption: "Assembly bench",
-  },
-  {
-    src: "/images/hero-workshop.svg",
-    alt: "CNC and panel processing area in the SteepWood Newcastle workshop",
-    caption: "Panel processing",
-  },
-  {
-    src: "/images/hero-workshop.svg",
-    alt: "Hand-finishing station for custom joinery doors and drawer fronts",
-    caption: "Hand finishing",
-  },
-  {
-    src: "/images/hero-workshop.svg",
-    alt: "Timber storage racks in the SteepWood workshop",
-    caption: "Timber storage",
-  },
-  {
-    src: "/images/hero-workshop.svg",
-    alt: "Quality inspection area before joinery leaves the workshop",
-    caption: "Quality inspection",
-  },
-  {
-    src: "/images/hero-workshop.svg",
-    alt: "Install team preparing cabinetry for delivery across NSW",
-    caption: "Dispatch and install prep",
-  },
-] as const;
+const WORKSHOP_PHOTOS = WORKSHOP_GALLERY_IMAGES.map((photo) => ({
+  src: photo.src,
+  alt: photo.alt,
+  caption: photo.caption,
+}));
 
 export function WorkshopGallery() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

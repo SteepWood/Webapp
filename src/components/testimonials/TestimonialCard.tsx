@@ -87,7 +87,7 @@ export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="flex h-full w-full flex-col rounded-lg border border-ink-700/10 bg-ink-50 p-6 text-left transition-colors hover:border-amber-400/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
+        className="surface-card flex h-full w-full flex-col rounded-lg p-6 text-left transition-colors hover:border-amber-400/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
       >
         <StarRating rating={testimonial.rating} />
         <blockquote className="mb-4 flex-1 font-serif text-body italic leading-relaxed text-ink-800">

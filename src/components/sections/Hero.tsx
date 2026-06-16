@@ -1,14 +1,18 @@
 import Link from "@/components/ui/link";
 
 import { HeroMotion, HeroMotionItem } from "@/components/sections/HeroMotion";
-import { Spotlight } from "@/components/ui/aceternity/spotlight";
 import { MediaFrame } from "@/components/ui/media-frame";
 import { Button } from "@/components/ui/button";
+import { WORKSHOP_HERO_IMAGE } from "@/lib/images";
 
 export function Hero() {
   return (
-    <Spotlight className="px-container-x py-section-y">
-      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
+    <section className="relative overflow-hidden px-container-x py-section-y">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_20%_0%,_rgba(139,107,71,0.14)_0%,_transparent_55%)]"
+      />
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
         <HeroMotion>
           <HeroMotionItem>
             <p className="mb-stack-sm font-mono text-caption uppercase tracking-widest text-amber-600">
@@ -46,17 +50,17 @@ export function Hero() {
 
         <HeroMotionItem className="min-w-0">
           <MediaFrame
-            src="/images/hero-workshop.svg"
+            src={WORKSHOP_HERO_IMAGE}
             alt="SteepWood joinery workshop in Newcastle showing custom cabinetry in production"
-            width={1200}
-            height={800}
+            width={1600}
+            height={1000}
             priority
             fetchPriority="high"
             sizes="(max-width: 1024px) 100vw, 50vw"
-            className="rounded-xl shadow-lg ring-1 ring-ink-700/10"
+            className="rounded-lg shadow-md ring-1 ring-ink-700/10"
           />
         </HeroMotionItem>
       </div>
-    </Spotlight>
+    </section>
   );
 }

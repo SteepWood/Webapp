@@ -6,17 +6,20 @@
 
 @theme {
   /* COLOURS — Craft & Contrast palette (Australian English: 'colour' in comments) */
-  --color-ink-950: #0f0a07; /* deepest near-black */
-  --color-ink-900: #1c1410; /* primary background (workshop charcoal) */
-  --color-ink-800: #2a1f18; /* elevated surface */
-  --color-ink-700: #3d2e22; /* borders on dark */
-  --color-ink-100: #f5f0ea; /* off-white (warm) */
-  --color-ink-50: #faf7f2; /* paper */
+  --color-ink-950: #120c08; /* deepest near-black */
+  --color-ink-900: #1f1610; /* primary background (workshop charcoal) */
+  --color-ink-800: #2e2219; /* elevated surface */
+  --color-ink-700: #453528; /* borders on dark */
+  --color-ink-100: #efe6d9; /* off-white (warm wood paper) */
+  --color-ink-50: #f7f1e8; /* linen paper */
 
-  --color-amber-600: #b8721f; /* hover/pressed accent */
-  --color-amber-500: #d4892a; /* PRIMARY accent — Amber Timber */
-  --color-amber-400: #e0a04f; /* light accent */
-  --color-amber-100: #f5e4c8; /* tint backgrounds */
+  --color-amber-800: #4a3626; /* deep walnut — emphasis on light surfaces */
+  --color-amber-700: #5c452f; /* walnut — inline links and labels */
+  --color-amber-600: #6b5038; /* dark oak — links, pressed states */
+  --color-amber-500: #8b6b47; /* PRIMARY accent — natural oak */
+  --color-amber-400: #a88862; /* light oak — accents on dark surfaces */
+  --color-amber-100: #e8dcc8; /* parchment tint */
+  --color-amber-50: #f3ebe0; /* pale timber wash */
 
   --color-sage-700: #4a5d3a; /* supporting muted green */
   --color-sage-500: #7a8f66;
@@ -90,13 +93,12 @@
     @apply font-sans;
   }
   body {
-    background-color: var(--color-ink-50);
     color: var(--color-ink-900);
     font-family: var(--font-sans);
     font-size: var(--text-body);
     line-height: 1.6;
     overflow-x: clip;
-    @apply bg-background text-foreground;
+    @apply text-foreground;
   }
   img,
   video,
@@ -177,24 +179,24 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --background: oklch(0.97 0.012 78);
+  --foreground: oklch(0.22 0.03 55);
+  --card: oklch(0.99 0.008 78);
+  --card-foreground: oklch(0.22 0.03 55);
+  --popover: oklch(0.99 0.008 78);
+  --popover-foreground: oklch(0.22 0.03 55);
+  --primary: oklch(0.52 0.07 65);
+  --primary-foreground: oklch(0.98 0.01 78);
+  --secondary: oklch(0.94 0.015 78);
+  --secondary-foreground: oklch(0.22 0.03 55);
+  --muted: oklch(0.94 0.015 78);
+  --muted-foreground: oklch(0.48 0.04 60);
+  --accent: oklch(0.92 0.02 75);
+  --accent-foreground: oklch(0.22 0.03 55);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: oklch(0.88 0.02 70);
+  --input: oklch(0.88 0.02 70);
+  --ring: oklch(0.52 0.07 65);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -259,5 +261,77 @@
   .break-anywhere {
     overflow-wrap: anywhere;
     word-break: break-word;
+  }
+
+  /* Natural timber surfaces */
+  .bg-wood-texture {
+    --wood-base: var(--color-amber-500);
+    --wood-dark: var(--color-amber-600);
+    --wood-light: var(--color-amber-400);
+    background-color: var(--wood-base);
+    color: var(--color-ink-50);
+    background-image:
+      repeating-linear-gradient(
+        93deg,
+        transparent 0,
+        transparent 3px,
+        color-mix(in srgb, var(--wood-dark) 14%, transparent) 3px,
+        color-mix(in srgb, var(--wood-dark) 14%, transparent) 6px
+      ),
+      repeating-linear-gradient(
+        177deg,
+        transparent 0,
+        transparent 11px,
+        color-mix(in srgb, var(--wood-light) 10%, transparent) 11px,
+        color-mix(in srgb, var(--wood-light) 10%, transparent) 22px
+      ),
+      linear-gradient(
+        160deg,
+        color-mix(in srgb, var(--wood-light) 55%, var(--wood-base)) 0%,
+        var(--wood-base) 42%,
+        color-mix(in srgb, var(--wood-dark) 70%, var(--wood-base)) 100%
+      );
+  }
+
+  .bg-wood-paper {
+    background-color: var(--color-ink-50);
+    background-image:
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 48px,
+        color-mix(in srgb, var(--color-amber-500) 4%, transparent) 48px,
+        color-mix(in srgb, var(--color-amber-500) 4%, transparent) 49px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        color-mix(in srgb, var(--color-ink-700) 3%, transparent) 3px,
+        color-mix(in srgb, var(--color-ink-700) 3%, transparent) 5px
+      );
+  }
+
+  .text-on-wood {
+    color: var(--color-ink-50);
+    text-shadow: 0 1px 1px color-mix(in srgb, var(--color-ink-950) 35%, transparent);
+  }
+
+  /* Elevated surfaces — always readable on wood-paper backgrounds */
+  .surface-card {
+    background-color: #ffffff;
+    border: 1px solid color-mix(in srgb, var(--color-ink-700) 18%, transparent);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .surface-panel {
+    background-color: color-mix(in srgb, #ffffff 88%, var(--color-ink-50));
+    border: 1px solid color-mix(in srgb, var(--color-ink-700) 14%, transparent);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .surface-section {
+    background-color: color-mix(in srgb, #ffffff 55%, var(--color-ink-100));
+    border-block: 1px solid color-mix(in srgb, var(--color-ink-700) 10%, transparent);
   }
 }

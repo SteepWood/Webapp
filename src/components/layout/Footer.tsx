@@ -29,12 +29,12 @@ export function Footer() {
   return (
     <footer
       id="site-footer"
-      className="scroll-mt-24 bg-ink-900 pt-section-y pb-12 text-ink-100"
+      className="scroll-mt-24 border-t border-amber-400/20 bg-ink-950 pt-section-y pb-12 text-ink-100"
     >
       <div className="mx-auto max-w-7xl px-container-x">
         <div className="grid grid-cols-1 gap-stack-lg md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div className="flex flex-col gap-stack-sm">
-            <SteepWoodLogo variant="mark" />
+            <SteepWoodLogo theme="dark" />
             <p className="max-w-xs text-sm leading-relaxed text-ink-100/80">
               Premium custom joinery, crafted in Newcastle. Serving NSW and
               Australia-wide.
@@ -50,7 +50,7 @@ export function Footer() {
                   alt={badge.alt}
                   width={72}
                   height={32}
-                  className="h-8 w-auto opacity-70 transition-opacity duration-[var(--duration-fast)] hover:opacity-100"
+                  className="h-8 w-auto brightness-0 invert opacity-70 transition-opacity duration-[var(--duration-fast)] hover:opacity-100"
                 />
               ))}
             </div>

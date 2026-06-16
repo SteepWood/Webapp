@@ -1,5 +1,6 @@
 import { SectionShell } from "@/components/sections/section-shell";
 import { MediaFrame } from "@/components/ui/media-frame";
+import { WORKSHOP_HERO_IMAGE } from "@/lib/images";
 
 export function AboutHero() {
   return (
@@ -22,7 +23,7 @@ export function AboutHero() {
           </p>
         </div>
         <MediaFrame
-          src="/images/hero-workshop.svg"
+          src={WORKSHOP_HERO_IMAGE}
           alt="SteepWood joinery workshop in Newcastle with craftspeople at work"
           sizes="(max-width: 1024px) 100vw, 50vw"
           imageClassName="grayscale"

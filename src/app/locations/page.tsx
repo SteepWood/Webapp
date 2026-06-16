@@ -50,7 +50,7 @@ export default function LocationsIndexPage() {
           <li key={location.slug}>
             <Link
               href={`/locations/${location.slug}/`}
-              className="block rounded-lg border border-ink-700/10 bg-ink-50 p-5 transition-colors hover:border-amber-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+              className="surface-card block rounded-lg p-5 transition-colors hover:border-amber-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
             >
               <h2 className="font-serif text-h4 text-ink-900">{location.name}</h2>
               <p className="mt-1 text-body-sm text-ink-800/70">

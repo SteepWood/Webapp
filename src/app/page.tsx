@@ -6,7 +6,7 @@ import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Hero } from "@/components/sections/Hero";
 import { HomepageFAQ } from "@/components/sections/HomepageFAQ";
-import { ProcessScroll } from "@/components/sections/ProcessScroll";
+import { ProcessReveal } from "@/components/sections/ProcessReveal";
 import { ServiceAreaTeaser } from "@/components/sections/ServiceAreaTeaser";
 import { ServicesOverview } from "@/components/sections/ServicesOverview";
 import {
@@ -15,6 +15,7 @@ import {
 } from "@/components/sections/Testimonials";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { WhySteepWood } from "@/components/sections/WhySteepWood";
+import { WORKSHOP_HERO_IMAGE } from "@/lib/images";
 import { getHomepagePageData } from "@/lib/db/homepage-page";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  preload("/images/hero-workshop.svg", {
+  preload(WORKSHOP_HERO_IMAGE, {
     as: "image",
     fetchPriority: "high",
   });
@@ -62,7 +63,7 @@ export default async function HomePage() {
       <ServicesOverview services={services} />
       <WhySteepWood />
       <FeaturedProjects projects={projects} />
-      <ProcessScroll />
+      <ProcessReveal />
       <Suspense fallback={<TestimonialsSkeleton />}>
         <Testimonials />
       </Suspense>

@@ -20,7 +20,7 @@ export default function GlobalError({ error, reset }: GlobalErrorProps) {
               console.error("[app/global-error]", error);
               reset();
             }}
-            className="mt-8 rounded-md bg-amber-500 px-5 py-3 text-sm font-medium text-ink-950"
+            className="mt-8 rounded-md border border-amber-600/25 bg-wood-texture px-5 py-3 text-sm font-medium text-on-wood shadow-sm"
           >
             Try again
           </button>

@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: [{ url: "/brand/steepwood-favicon.png", type: "image/png" }],
-    apple: [{ url: "/brand/steepwood-favicon.png", type: "image/png" }],
+    icon: [{ url: "/brand/steepwood-favicon-trimmed.png", type: "image/png" }],
+    apple: [{ url: "/brand/steepwood-favicon-trimmed.png", type: "image/png" }],
   },
 };
 
@@ -47,7 +47,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${fraunces.variable} ${generalSans.variable} ${ibmPlexMono.variable} scroll-smooth h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">
+      <body className="bg-wood-paper flex min-h-full flex-col">
         <ViewTransitions>
           <Providers>
             <SiteChrome>{children}</SiteChrome>

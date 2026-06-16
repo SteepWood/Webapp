@@ -3,6 +3,7 @@
 import Link from "@/components/ui/link";
 import { useEffect, useState } from "react";
 import { Menu, Phone } from "lucide-react";
+import { motion, useReducedMotion } from "motion/react";
 
 import {
   Accordion,
@@ -28,7 +29,6 @@ import {
 } from "@/components/ui/sheet";
 import { TrackedPhoneLink } from "@/components/analytics/TrackedPhoneLink";
 import { SteepWoodLogo } from "@/components/brand/SteepWoodLogo";
-import { LiquidGlassSurface } from "@/components/ui/liquid-glass-surface";
 import {
   LOCATIONS,
   PHONE_DISPLAY,
@@ -115,10 +115,11 @@ function DesktopNav() {
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > 80);
+      setScrolled(window.scrollY > 48);
     };
 
     onScroll();
@@ -129,29 +130,35 @@ export function Header() {
   const closeMobile = () => setMobileOpen(false);
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 h-[5.5rem] pt-safe transition-all duration-[var(--duration-base)] ease-[var(--ease-out-soft)] lg:h-28">
-      <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-4 px-container-x">
+    <header className="fixed top-0 right-0 left-0 z-50 h-[5.5rem] pt-safe lg:h-28">
+      <motion.div
+        className={cn(
+          "absolute inset-0 border-b transition-colors",
+          scrolled
+            ? "border-ink-700/15 bg-white/92 shadow-md backdrop-blur-xl"
+            : "border-transparent bg-transparent",
+        )}
+        animate={{ opacity: 1 }}
+        transition={
+          shouldReduceMotion
+            ? { duration: 0 }
+            : { duration: 0.35, ease: [0.22, 1, 0.36, 1] }
+        }
+      />
+
+      <div className="relative mx-auto flex h-full max-w-7xl items-center justify-between gap-4 px-container-x">
         <SteepWoodLogo priority className="relative z-10 shrink-0" />
 
-        {scrolled ? (
-          <LiquidGlassSurface
-            fallbackClassName="rounded-full"
-            className="absolute top-1/2 left-1/2 hidden -translate-x-1/2 -translate-y-1/2 rounded-full px-3 py-1 lg:flex lg:items-center lg:gap-2"
-          >
-            <DesktopNav />
-          </LiquidGlassSurface>
-        ) : (
-          <div className="hidden flex-1 items-center justify-end gap-4 lg:flex">
-            <DesktopNav />
-          </div>
-        )}
+        <div className="hidden flex-1 items-center justify-end gap-4 lg:flex">
+          <DesktopNav />
+        </div>
 
         <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
           <SheetTrigger asChild>
             <Button
               variant="ghost"
               size="icon"
-              className="lg:hidden"
+              className="relative z-10 lg:hidden"
               aria-label="Open menu"
             >
               <Menu className="size-5" />
