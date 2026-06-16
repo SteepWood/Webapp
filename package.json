@@ -26,7 +26,9 @@
     "snapshot:headings:pre": "node scripts/snapshot-headings.mjs pre",
     "snapshot:headings": "node scripts/snapshot-headings.mjs",
     "import:logo": "node scripts/import-brand-logo.mjs",
-    "deploy:p0-images": "node scripts/deploy-p0-images.mjs"
+    "deploy:p0-images": "node scripts/deploy-images.mjs --priority=P0",
+    "deploy:images": "node scripts/deploy-images.mjs",
+    "upload:cms-images": "node scripts/upload-cms-images.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

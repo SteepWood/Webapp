@@ -7,7 +7,6 @@ import { ServicePillarFAQ } from "@/components/pages/ServicePillarFAQ";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
 import { PageClosingCta } from "@/components/sections/dark-cta-section";
 import { Button } from "@/components/ui/button";
-import { WORKSHOP_HERO_IMAGE } from "@/lib/images";
 import { SERVICES } from "@/lib/services-locations/services";
 import type { LocationHubContent } from "@/lib/services-locations/locationContent";
 import { getNearbyLocations } from "@/lib/services-locations/locationContent";
@@ -139,7 +138,7 @@ export function LocationHubPage({
             </div>
           </div>
           <MediaFrame
-            src={WORKSHOP_HERO_IMAGE}
+            src={location.heroImagePath}
             alt={`Custom joinery projects in ${location.name}`}
             priority
             sizes="(max-width: 1024px) 100vw, 50vw"

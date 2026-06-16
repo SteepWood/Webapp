@@ -1,6 +1,10 @@
 /** Site-wide workshop hero — replaces legacy hero-workshop.svg */
 export const WORKSHOP_HERO_IMAGE = "/images/workshop-hero-main.jpg";
 
+/** Materials & finishes section on service pillar pages */
+export const MATERIALS_WORKSHOP_SAMPLES_IMAGE =
+  "/images/materials-workshop-samples.jpg";
+
 export const OG_DEFAULT_IMAGE = "/og-default.jpg";
 
 export const WORKSHOP_GALLERY_IMAGES = [

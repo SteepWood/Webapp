@@ -2,13 +2,23 @@ import Link from "@/components/ui/link";
 
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { MediaFrame } from "@/components/ui/media-frame";
+import {
+  MediaCard,
+  MediaCardImage,
+  MediaCardLink,
+} from "@/components/ui/media-card";
 import { SectionShell } from "@/components/sections/section-shell";
 import { ServicePillarFAQ } from "@/components/pages/ServicePillarFAQ";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
 import { PageClosingCta } from "@/components/sections/dark-cta-section";
 import { Button } from "@/components/ui/button";
-import { WORKSHOP_HERO_IMAGE } from "@/lib/images";
 import type { ServicePillarContent } from "@/lib/services-locations/serviceContent";
+import {
+  getServiceIncludesImage,
+  getServiceProcessImage,
+  getServiceSectionImage,
+  getServiceWhatIsImage,
+} from "@/lib/services-locations/serviceImages";
 import { LOCATIONS } from "@/lib/services-locations/locations";
 import type { ResolvedService } from "@/lib/services-locations/types";
 import type { PortfolioProject, Testimonial } from "@prisma/client";
@@ -101,7 +111,7 @@ export function ServicePillarPage({
             </div>
           </div>
           <MediaFrame
-            src={WORKSHOP_HERO_IMAGE}
+            src={service.heroImagePath}
             alt={`${service.name} crafted in the SteepWood Newcastle workshop`}
             priority
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -110,30 +120,39 @@ export function ServicePillarPage({
       </SectionShell>
 
       <SectionShell>
-        <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
-          What is {service.name.toLowerCase()}?
-        </h2>
-        {content.relatedServices.length > 0 ? (
-          <p className="mb-stack-md text-body text-ink-800/80">
-            Complementary services:{" "}
-            {content.relatedServices.map((related, index) => (
-              <span key={related.slug}>
-                {index > 0 ? ", " : null}
-                <Link
-                  href={`/${related.slug}/`}
-                  className="font-medium text-amber-700 underline-offset-2 hover:underline"
-                >
-                  {related.label}
-                </Link>
-              </span>
-            ))}
-            .
-          </p>
-        ) : null}
-        <div className="prose-steepwood max-w-3xl space-y-4 text-body leading-relaxed text-ink-800">
-          {content.whatIsParagraphs.map((paragraph) => (
-            <p key={paragraph.slice(0, 40)}>{paragraph}</p>
-          ))}
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
+              What is {service.name.toLowerCase()}?
+            </h2>
+            {content.relatedServices.length > 0 ? (
+              <p className="mb-stack-md text-body text-ink-800/80">
+                Complementary services:{" "}
+                {content.relatedServices.map((related, index) => (
+                  <span key={related.slug}>
+                    {index > 0 ? ", " : null}
+                    <Link
+                      href={`/${related.slug}/`}
+                      className="font-medium text-amber-700 underline-offset-2 hover:underline"
+                    >
+                      {related.label}
+                    </Link>
+                  </span>
+                ))}
+                .
+              </p>
+            ) : null}
+            <div className="prose-steepwood space-y-4 text-body leading-relaxed text-ink-800">
+              {content.whatIsParagraphs.map((paragraph) => (
+                <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+          <MediaFrame
+            src={getServiceWhatIsImage(service.slug)}
+            alt={`${service.name} crafted in the SteepWood Newcastle workshop`}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
         </div>
       </SectionShell>
 
@@ -142,17 +161,23 @@ export function ServicePillarPage({
           What&apos;s included
         </h2>
         <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {content.includes.map((item) => (
-            <li
-              key={item.title}
-              className="surface-card rounded-lg p-6"
-            >
-              <h3 className="mb-2 font-serif text-h4 text-ink-900">
-                {item.title}
-              </h3>
-              <p className="text-body-sm leading-relaxed text-ink-800/80">
-                {item.description}
-              </p>
+          {content.includes.map((item, index) => (
+            <li key={item.title}>
+              <MediaCard className="h-full">
+                <MediaCardImage
+                  src={getServiceIncludesImage(service.slug, index)}
+                  alt={`${item.title} — ${service.name} by SteepWood`}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className="flex flex-1 flex-col bg-white p-6">
+                  <h3 className="mb-2 font-serif text-h4 text-ink-900">
+                    {item.title}
+                  </h3>
+                  <p className="text-body-sm leading-relaxed text-ink-800/80">
+                    {item.description}
+                  </p>
+                </div>
+              </MediaCard>
             </li>
           ))}
         </ul>
@@ -169,7 +194,7 @@ export function ServicePillarPage({
             ))}
           </div>
           <MediaFrame
-            src={WORKSHOP_HERO_IMAGE}
+            src={service.materialsImagePath}
             alt="Premium joinery materials and finishes in the SteepWood workshop"
             sizes="(max-width: 1024px) 100vw, 50vw"
             imageClassName="grayscale"
@@ -177,21 +202,48 @@ export function ServicePillarPage({
         </div>
       </SectionShell>
 
-      {content.bodySections.map((section) => (
-        <SectionShell
-          key={section.title}
-          className={content.bodySections.indexOf(section) % 2 === 1 ? "bg-ink-50" : undefined}
-        >
-          <h2 className="mb-stack-md max-w-3xl font-serif text-h2 text-ink-900">
-            {section.title}
-          </h2>
-          <div className="max-w-3xl space-y-4 text-body leading-relaxed text-ink-800">
+      {content.bodySections.map((section, index) => {
+        const sectionImage = getServiceSectionImage(service.slug, index);
+        const copy = (
+          <div className="space-y-4 text-body leading-relaxed text-ink-800">
             {section.paragraphs.map((paragraph) => (
               <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}
           </div>
-        </SectionShell>
-      ))}
+        );
+
+        return (
+          <SectionShell
+            key={section.title}
+            className={index % 2 === 1 ? "bg-ink-50" : undefined}
+          >
+            <h2 className="mb-stack-md max-w-3xl font-serif text-h2 text-ink-900">
+              {section.title}
+            </h2>
+            <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
+              {index % 2 === 0 ? (
+                <>
+                  <MediaFrame
+                    src={sectionImage}
+                    alt={`${section.title} — ${service.name} by SteepWood`}
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                  {copy}
+                </>
+              ) : (
+                <>
+                  {copy}
+                  <MediaFrame
+                    src={sectionImage}
+                    alt={`${section.title} — ${service.name} by SteepWood`}
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                </>
+              )}
+            </div>
+          </SectionShell>
+        );
+      })}
 
       <SectionShell className="bg-ink-50">
         <h2 className="mb-stack-lg max-w-3xl font-serif text-h2 text-ink-900">
@@ -200,6 +252,12 @@ export function ServicePillarPage({
         <ol className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
           {content.processSteps.map((step, index) => (
             <li key={step.title} className="flex flex-col gap-3">
+              <MediaFrame
+                src={getServiceProcessImage(service.slug, index)}
+                alt={`${step.title} — ${service.name} by SteepWood`}
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                frameClassName="mb-1"
+              />
               <span className="font-serif text-5xl leading-none text-amber-600">
                 {String(index + 1).padStart(2, "0")}
               </span>
@@ -234,20 +292,26 @@ export function ServicePillarPage({
         <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {LOCATIONS.map((location) => (
             <li key={location.slug}>
-              <Link
-                href={`/${service.slug}/${location.slug}/`}
-                className="surface-card block rounded-lg p-5 transition-colors hover:border-amber-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
-              >
-                <h3 className="mb-1 font-serif text-h4 text-ink-900">
-                  {location.name}
-                </h3>
-                <p className="text-body-sm text-ink-800/70">
-                  {location.region} · {location.driveTimeFromNewcastle}
-                </p>
-                <p className="mt-2 text-body-sm font-medium text-amber-700">
-                  {service.shortTitle} in {location.name} →
-                </p>
-              </Link>
+              <MediaCard className="h-full">
+                <MediaCardLink href={`/${service.slug}/${location.slug}/`}>
+                  <MediaCardImage
+                    src={location.heroImagePath}
+                    alt={`${service.shortTitle} in ${location.name} by SteepWood`}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                  <div className="flex flex-1 flex-col bg-white p-5">
+                    <h3 className="mb-1 font-serif text-h4 text-ink-900">
+                      {location.name}
+                    </h3>
+                    <p className="text-body-sm text-ink-800/70">
+                      {location.region} · {location.driveTimeFromNewcastle}
+                    </p>
+                    <p className="mt-2 text-body-sm font-medium text-amber-700">
+                      {service.shortTitle} in {location.name} →
+                    </p>
+                  </div>
+                </MediaCardLink>
+              </MediaCard>
             </li>
           ))}
         </ul>

@@ -214,6 +214,76 @@
       "ogDeployTo": "public/og/services/staircase-joinery-og.jpg"
     },
     {
+      "priority": "P2",
+      "source": "02-services/service-custom-kitchen-joinery-materials.jpg",
+      "deployTo": "public/images/services/custom-kitchen-joinery-materials.jpg",
+      "dataRef": "services.ts materialsImagePath",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P2",
+      "source": "02-services/service-built-in-wardrobes-materials.jpg",
+      "deployTo": "public/images/services/built-in-wardrobes-materials.jpg",
+      "dataRef": "services.ts materialsImagePath",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P2",
+      "source": "02-services/service-office-fitout-materials.jpg",
+      "deployTo": "public/images/services/office-fitout-materials.jpg",
+      "dataRef": "services.ts materialsImagePath",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P2",
+      "source": "02-services/service-shopfitting-materials.jpg",
+      "deployTo": "public/images/services/shopfitting-materials.jpg",
+      "dataRef": "services.ts materialsImagePath",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P2",
+      "source": "02-services/service-custom-bathroom-vanity-materials.jpg",
+      "deployTo": "public/images/services/custom-bathroom-vanity-materials.jpg",
+      "dataRef": "services.ts materialsImagePath",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P2",
+      "source": "02-services/service-commercial-joinery-materials.jpg",
+      "deployTo": "public/images/services/commercial-joinery-materials.jpg",
+      "dataRef": "services.ts materialsImagePath",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P2",
+      "source": "02-services/service-custom-furniture-materials.jpg",
+      "deployTo": "public/images/services/custom-furniture-materials.jpg",
+      "dataRef": "services.ts materialsImagePath",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P2",
+      "source": "02-services/service-home-office-joinery-materials.jpg",
+      "deployTo": "public/images/services/home-office-joinery-materials.jpg",
+      "dataRef": "services.ts materialsImagePath",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P2",
+      "source": "02-services/service-laundry-cabinets-materials.jpg",
+      "deployTo": "public/images/services/laundry-cabinets-materials.jpg",
+      "dataRef": "services.ts materialsImagePath",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P2",
+      "source": "02-services/service-staircase-joinery-materials.jpg",
+      "deployTo": "public/images/services/staircase-joinery-materials.jpg",
+      "dataRef": "services.ts materialsImagePath",
+      "size": "1600x1000"
+    },
+    {
       "priority": "P1",
       "source": "03-locations/location-newcastle-hero.jpg",
       "deployTo": "public/images/locations/newcastle-hero.jpg",

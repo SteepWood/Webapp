@@ -17,6 +17,8 @@ export type ServiceDefinition = {
   shortDescription: string;
   longIntro: string;
   heroImagePath: string;
+  /** Materials & finishes block on the service pillar page */
+  materialsImagePath: string;
   ogImagePath: string;
   buildPriority: number;
 };
