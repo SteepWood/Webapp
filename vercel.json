@@ -9,7 +9,7 @@
   "crons": [
     {
       "path": "/api/cron/publish-scheduled-posts",
-      "schedule": "0 * * * *"
+      "schedule": "0 9 * * *"
     },
     {
       "path": "/api/cron/admin-weekly-summary",
