@@ -15,9 +15,9 @@ import {
   getSimilarPortfolioProjects,
 } from "@/lib/db/portfolio";
 import {
-  anonymisedClient,
   formatCompletionDate,
   getLocationLabel,
+  getProjectClient,
   getProjectGalleryImages,
   getProjectHeroImage,
   getServiceLabel,
@@ -234,7 +234,7 @@ export default async function ProjectDetailPage({
             <dl className="space-y-4">
               <DetailItem
                 label="Client"
-                value={anonymisedClient(project.locationName)}
+                value={getProjectClient(project)}
               />
               <DetailItem
                 label="Service"

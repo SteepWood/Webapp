@@ -94,7 +94,7 @@ We also serve Newcastle's commercial market: cafes and restaurants along Beaumon
     {
       question: "Where is SteepWood's workshop in Newcastle?",
       answer:
-        "Our workshop is in Newcastle NSW 2300. We host design consultations by appointment.",
+        "Our workshop is in Newcastle, NSW. We host design consultations by appointment.",
     },
     {
       question: "Do you do joinery for heritage and Federation Newcastle homes?",

@@ -51,6 +51,7 @@ export default async function AdminProjectEditPage({
           description: project.description,
           serviceSlug: project.serviceSlug,
           locationName: project.locationName,
+          clientDisplayName: project.clientDisplayName,
           beforeImageUrl: project.beforeImageUrl,
           afterImageUrl: project.afterImageUrl,
           galleryImages,

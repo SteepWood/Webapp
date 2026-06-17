@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { slugify } from "@/lib/admin/slug";
+import { BLOG_DEFAULT_AUTHOR } from "@/lib/business";
 import { BLOG_STATUSES } from "@/lib/validations/admin/blog";
 
 type BlogPostFormProps = {
@@ -48,7 +49,9 @@ export function BlogPostForm({ initial }: BlogPostFormProps) {
   const [content, setContent] = useState(initial?.content ?? "");
   const [coverImageUrl, setCoverImageUrl] = useState(initial?.coverImageUrl ?? "");
   const [coverImageAlt, setCoverImageAlt] = useState(initial?.coverImageAlt ?? "");
-  const [authorName, setAuthorName] = useState(initial?.authorName ?? "");
+  const [authorName, setAuthorName] = useState(
+    initial?.authorName ?? BLOG_DEFAULT_AUTHOR,
+  );
   const [category, setCategory] = useState(initial?.category ?? "");
   const [tags, setTags] = useState((initial?.tags ?? []).join(", "));
   const [status, setStatus] = useState<(typeof BLOG_STATUSES)[number]>(

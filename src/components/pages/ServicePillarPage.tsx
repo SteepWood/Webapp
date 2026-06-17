@@ -1,5 +1,7 @@
 import Link from "@/components/ui/link";
 
+import { AnswerFirst } from "@/components/aio/AnswerFirst";
+import { FactsBlock } from "@/components/aio/FactsBlock";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { MediaFrame } from "@/components/ui/media-frame";
 import {
@@ -29,6 +31,15 @@ import {
   servicePillarStructuredData,
 } from "@/lib/seo/serviceStructuredData";
 import type { AggregateRatingStats } from "@/lib/testimonials/aggregateRating";
+import {
+  getServiceMaterialsPrefix,
+  getServiceWhatIsPrefix,
+} from "@/lib/aio/answer-first-data";
+import { getServiceFacts } from "@/lib/aio/facts-data";
+import {
+  howToStructuredData,
+  speakableStructuredData,
+} from "@/lib/aio/schema";
 
 type ServicePillarPageProps = {
   service: ResolvedService;
@@ -54,6 +65,12 @@ export function ServicePillarPage({
       answer: faq.answer,
     })),
   );
+  const pageUrl = canonicalUrl(`/${service.slug}/`);
+  const howToSchema = howToStructuredData(service, content.processSteps);
+  const speakableSchema = speakableStructuredData(pageUrl);
+  const whatIsPrefix = getServiceWhatIsPrefix(service.slug);
+  const materialsPrefix = getServiceMaterialsPrefix(service.slug);
+  const serviceFacts = getServiceFacts(service.slug);
 
   return (
     <>
@@ -71,6 +88,16 @@ export function ServicePillarPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       ) : null}
+      {howToSchema ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+      ) : null}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+      />
 
       <SectionShell className="pb-4 pt-8">
         <nav aria-label="Breadcrumb" className="mb-stack-md">
@@ -119,12 +146,18 @@ export function ServicePillarPage({
         </div>
       </SectionShell>
 
+      <FactsBlock
+        title={`${service.shortTitle} facts — quick reference`}
+        facts={serviceFacts}
+      />
+
       <SectionShell>
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
             <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
               What is {service.name.toLowerCase()}?
             </h2>
+            {whatIsPrefix ? <AnswerFirst>{whatIsPrefix}</AnswerFirst> : null}
             {content.relatedServices.length > 0 ? (
               <p className="mb-stack-md text-body text-ink-800/80">
                 Complementary services:{" "}
@@ -189,6 +222,7 @@ export function ServicePillarPage({
         </h2>
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
           <div className="space-y-4 text-body leading-relaxed text-ink-800">
+            {materialsPrefix ? <AnswerFirst>{materialsPrefix}</AnswerFirst> : null}
             {content.materials.map((paragraph) => (
               <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}

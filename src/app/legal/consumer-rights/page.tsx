@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import Link from "@/components/ui/link";
 
 import { LegalBreadcrumbs } from "@/components/legal/LegalBreadcrumbs";
+import { BUSINESS_LEGAL_NAME } from "@/lib/business";
+import { PHONE_DISPLAY, PHONE_HOURS_LABEL } from "@/lib/navigation";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
 export const revalidate = 86400;
@@ -67,7 +69,7 @@ export default function ConsumerRightsPage() {
           <p>
             Consumer guarantees under the{" "}
             <em>Competition and Consumer Act 2010</em> (Cth) apply to joinery
-            goods and installation services supplied by SteepWood Joinery Pty Ltd
+            goods and installation services supplied by {BUSINESS_LEGAL_NAME}
             to consumers within Australia. For more information, visit the{" "}
             <a
               href="https://www.accc.gov.au/consumers/consumer-rights-guarantees"
@@ -156,7 +158,7 @@ export default function ConsumerRightsPage() {
                 hello@steepwood.com.au
               </a>
             </li>
-            <li>Phone: 02 4000 0000 (Mon–Fri, 7am–5pm AEST)</li>
+            <li>Phone: {PHONE_DISPLAY} ({PHONE_HOURS_LABEL})</li>
           </ul>
           <p className="mt-stack-sm">
             We will acknowledge your claim within 2 business days and arrange an

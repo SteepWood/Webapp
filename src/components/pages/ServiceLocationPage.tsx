@@ -1,5 +1,6 @@
 import Link from "@/components/ui/link";
 
+import { FactsBlock } from "@/components/aio/FactsBlock";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { MediaFrame } from "@/components/ui/media-frame";
 import {
@@ -31,6 +32,8 @@ import {
   comboServiceStructuredData,
 } from "@/lib/seo/serviceLocationStructuredData";
 import type { AggregateRatingStats } from "@/lib/testimonials/aggregateRating";
+import { getComboFacts } from "@/lib/aio/facts-data";
+import { speakableStructuredData } from "@/lib/aio/schema";
 
 type ServiceLocationPageProps = {
   combo: ResolvedServiceLocation;
@@ -71,6 +74,8 @@ export function ServiceLocationPage({
       answer: faq.answer,
     })),
   );
+  const speakableSchema = speakableStructuredData(pageUrl);
+  const comboFacts = getComboFacts(service.slug, location.slug);
   const costFaq = serviceContent?.faqs[0];
 
   return (
@@ -93,6 +98,10 @@ export function ServiceLocationPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       ) : null}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+      />
 
       <SectionShell className="pb-4 pt-8">
         <nav aria-label="Breadcrumb" className="mb-stack-md">
@@ -144,6 +153,11 @@ export function ServiceLocationPage({
           />
         </div>
       </SectionShell>
+
+      <FactsBlock
+        title={`${service.shortTitle} in ${location.name} — quick facts`}
+        facts={comboFacts}
+      />
 
       <SectionShell>
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">

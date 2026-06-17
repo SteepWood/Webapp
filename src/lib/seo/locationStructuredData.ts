@@ -1,4 +1,5 @@
 import { env } from "@/env";
+import { PHONE_SCHEMA } from "@/lib/navigation";
 import { PHASE2_AREA_SERVED } from "@/lib/seo/areaServed";
 import type { ResolvedLocation } from "@/lib/services-locations/types";
 import { canonicalUrl } from "@/lib/seo/canonical";
@@ -32,7 +33,7 @@ export function locationHubStructuredData(
     "@id": `${pageUrl}#service-area`,
     name: `SteepWood Custom Joinery — ${location.name}`,
     url: pageUrl,
-    telephone: "+61-2-4000-0000",
+    telephone: PHONE_SCHEMA,
     parentOrganization: { "@id": BUSINESS_ID },
     areaServed: [
       {

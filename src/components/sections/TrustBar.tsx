@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "@/components/ui/link";
 
 import { SectionShell } from "@/components/sections/section-shell";
@@ -32,30 +31,6 @@ export async function TrustBar() {
             Trusted custom joinery across Australia
           </p>
         )}
-
-        <div className="flex flex-wrap items-center justify-center gap-6">
-          <Image
-            src="/badges/hia.svg"
-            alt="HIA member"
-            width={72}
-            height={32}
-            className="h-8 w-auto opacity-80"
-          />
-          <Image
-            src="/badges/mba.svg"
-            alt="MBA member"
-            width={72}
-            height={32}
-            className="h-8 w-auto opacity-80"
-          />
-          <Image
-            src="/badges/houzz.svg"
-            alt="Houzz"
-            width={72}
-            height={32}
-            className="h-8 w-auto opacity-80"
-          />
-        </div>
       </div>
       </TrustBarMotion>
     </SectionShell>

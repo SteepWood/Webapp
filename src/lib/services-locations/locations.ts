@@ -1,3 +1,5 @@
+import { FOUNDING_YEAR } from "@/lib/business";
+
 import type { LocationDefinition } from "./types";
 
 export const LOCATIONS: readonly LocationDefinition[] = [
@@ -16,7 +18,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     metaTitle: "Custom Joinery Newcastle NSW | SteepWood",
     metaDescription:
       "Newcastle's premium custom joinery workshop. Kitchens, wardrobes, vanities, commercial joinery. Local craftsmanship, fixed-price quotes. Free in-home visit.",
-    h1: "Custom Joinery in Newcastle NSW — Local Craftsmanship Since 2006",
+    h1: `Custom Joinery in Newcastle NSW — Local Craftsmanship Since ${FOUNDING_YEAR}`,
     heroImagePath: "/images/locations/newcastle-hero.jpg",
     ogImagePath: "/og/locations/newcastle-og.jpg",
   },

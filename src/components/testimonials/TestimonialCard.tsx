@@ -108,37 +108,41 @@ export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-lg">
+          <DialogDescription className="sr-only">
+            Full review from {testimonial.authorName}
+            {testimonial.authorLocation
+              ? `, ${testimonial.authorLocation}`
+              : ""}
+          </DialogDescription>
           <DialogHeader>
             <DialogTitle className="font-serif text-h4">
               Client review
             </DialogTitle>
-            <DialogDescription asChild>
-              <div className="space-y-4 pt-2 text-left">
-                <StarRating rating={testimonial.rating} />
-                <p className="font-serif text-body-lg italic leading-relaxed text-ink-800">
-                  &ldquo;{testimonial.quote}&rdquo;
-                </p>
-                <p className="text-body-sm text-ink-800/80">
-                  — {testimonial.authorName}
-                  {testimonial.authorLocation
-                    ? `, ${testimonial.authorLocation}`
-                    : ""}
-                </p>
-                <SourceBadge source={testimonial.source} />
-                {testimonial.sourceUrl ? (
-                  <Button asChild variant="outline" size="sm">
-                    <a
-                      href={testimonial.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View original review
-                    </a>
-                  </Button>
-                ) : null}
-              </div>
-            </DialogDescription>
           </DialogHeader>
+          <div className="space-y-4 text-left">
+            <StarRating rating={testimonial.rating} />
+            <p className="font-serif text-body-lg italic leading-relaxed text-ink-800">
+              &ldquo;{testimonial.quote}&rdquo;
+            </p>
+            <p className="text-body-sm text-ink-800/80">
+              — {testimonial.authorName}
+              {testimonial.authorLocation
+                ? `, ${testimonial.authorLocation}`
+                : ""}
+            </p>
+            <SourceBadge source={testimonial.source} />
+            {testimonial.sourceUrl ? (
+              <Button asChild variant="outline" size="sm">
+                <a
+                  href={testimonial.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View original review
+                </a>
+              </Button>
+            ) : null}
+          </div>
         </DialogContent>
       </Dialog>
     </>

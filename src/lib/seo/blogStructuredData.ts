@@ -1,5 +1,6 @@
 import type { BlogPost } from "@prisma/client";
 
+import { BLOG_DEFAULT_AUTHOR } from "@/lib/business";
 import { env } from "@/env";
 import { calculateReadingTime } from "@/lib/blog/readingTime";
 
@@ -29,7 +30,7 @@ export function blogPostingStructuredData(post: BlogPost) {
     dateModified: post.updatedAt.toISOString(),
     author: {
       "@type": "Person",
-      name: post.authorName ?? "SteepWood Team",
+      name: post.authorName ?? BLOG_DEFAULT_AUTHOR,
     },
     publisher: {
       "@type": "Organization",

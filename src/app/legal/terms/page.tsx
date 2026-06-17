@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Link from "@/components/ui/link";
 
 import { LegalBreadcrumbs } from "@/components/legal/LegalBreadcrumbs";
+import { BUSINESS_LEGAL_NAME } from "@/lib/business";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
 export const revalidate = 86400;
@@ -53,7 +54,7 @@ export default function TermsOfServicePage() {
           <p>
             These Terms of Service (&quot;Terms&quot;) govern your access to and use of
             the SteepWood website (steepwood.com.au) and related online services
-            operated by SteepWood Joinery Pty Ltd (&quot;SteepWood&quot;, &quot;we&quot;,
+            operated by {BUSINESS_LEGAL_NAME} (&quot;SteepWood&quot;, &quot;we&quot;,
             &quot;us&quot;, or &quot;our&quot;).
           </p>
           <p>

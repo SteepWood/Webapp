@@ -19,7 +19,6 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { slugify } from "@/lib/admin/slug";
-import { LOCATIONS } from "@/lib/services-locations/locations";
 import { SERVICES } from "@/lib/services-locations/services";
 import { PROJECT_STATUSES } from "@/lib/validations/admin/projects";
 
@@ -32,6 +31,7 @@ type ProjectFormProps = {
     description: string | null;
     serviceSlug: string | null;
     locationName: string | null;
+    clientDisplayName: string | null;
     beforeImageUrl: string | null;
     afterImageUrl: string | null;
     galleryImages: Array<{ url: string; alt?: string; caption?: string }>;
@@ -52,6 +52,9 @@ export function ProjectForm({ initial }: ProjectFormProps) {
   const [description, setDescription] = useState(initial?.description ?? "");
   const [serviceSlug, setServiceSlug] = useState(initial?.serviceSlug ?? "none");
   const [locationName, setLocationName] = useState(initial?.locationName ?? "");
+  const [clientDisplayName, setClientDisplayName] = useState(
+    initial?.clientDisplayName ?? "",
+  );
   const [beforeImageUrl, setBeforeImageUrl] = useState(
     initial?.beforeImageUrl ?? "",
   );
@@ -95,6 +98,7 @@ export function ProjectForm({ initial }: ProjectFormProps) {
         description,
         serviceSlug: serviceSlug === "none" ? "" : serviceSlug,
         locationName,
+        clientDisplayName,
         beforeImageUrl,
         afterImageUrl,
         galleryImages,
@@ -145,6 +149,16 @@ export function ProjectForm({ initial }: ProjectFormProps) {
         </div>
 
         <div className="space-y-2">
+          <Label htmlFor="clientDisplayName">Client name</Label>
+          <Input
+            id="clientDisplayName"
+            value={clientDisplayName}
+            onChange={(event) => setClientDisplayName(event.target.value)}
+            placeholder="e.g. James & Priya Nguyen"
+          />
+        </div>
+
+        <div className="space-y-2">
           <Label htmlFor="summary">Summary</Label>
           <Textarea
             id="summary"
@@ -182,20 +196,13 @@ export function ProjectForm({ initial }: ProjectFormProps) {
             </Select>
           </div>
           <div className="space-y-2">
-            <Label>Location</Label>
-            <Select value={locationName || "none"} onValueChange={(value) => setLocationName(value === "none" ? "" : value)}>
-              <SelectTrigger>
-                <SelectValue placeholder="Select location" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="none">None</SelectItem>
-                {LOCATIONS.map((location) => (
-                  <SelectItem key={location.slug} value={location.name}>
-                    {location.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            <Label htmlFor="locationName">Location (suburb, city)</Label>
+            <Input
+              id="locationName"
+              value={locationName}
+              onChange={(event) => setLocationName(event.target.value)}
+              placeholder="e.g. Merewether, Newcastle"
+            />
           </div>
         </div>
 

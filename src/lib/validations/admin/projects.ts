@@ -14,6 +14,7 @@ export const projectFormSchema = z.object({
   slug: z.string().min(1).max(200),
   summary: z.string().max(500).optional(),
   description: z.string().optional(),
+  clientDisplayName: z.string().max(120).optional(),
   serviceSlug: z.string().max(120).optional().or(z.literal("")),
   locationName: z.string().max(120).optional(),
   beforeImageUrl: z.string().url().optional().or(z.literal("")),

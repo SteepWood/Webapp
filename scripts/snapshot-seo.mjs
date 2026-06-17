@@ -10,6 +10,8 @@ const urlsPath = join(__dirname, "seo-sample-urls.json");
 const snapshotsDir = join(root, "snapshots");
 const prePath = join(snapshotsDir, "seo-pre.json");
 const postPath = join(snapshotsDir, "seo-post.json");
+const preAioPath = join(snapshotsDir, "seo-pre-aio.json");
+const postAioPath = join(snapshotsDir, "seo-post-aio.json");
 
 const baseUrl = (
   process.env.SNAPSHOT_BASE_URL ?? "http://localhost:3000"
@@ -99,6 +101,22 @@ function diffSnapshots(before, after) {
 mkdirSync(snapshotsDir, { recursive: true });
 
 const snapshot = await captureAll();
+
+if (mode === "pre-aio") {
+  writeFileSync(preAioPath, stableStringify(snapshot));
+  console.log(
+    `Wrote pre-AIO snapshot (${snapshot.length} URLs) → snapshots/seo-pre-aio.json`,
+  );
+  process.exit(0);
+}
+
+if (mode === "post-aio") {
+  writeFileSync(postAioPath, stableStringify(snapshot));
+  console.log(
+    `Wrote post-AIO snapshot (${snapshot.length} URLs) → snapshots/seo-post-aio.json`,
+  );
+  process.exit(0);
+}
 
 if (mode === "pre" || !existsSync(prePath)) {
   writeFileSync(prePath, stableStringify(snapshot));

@@ -26,6 +26,7 @@ export async function savePortfolioProject(
     slug: parsed.data.slug,
     summary: parsed.data.summary || null,
     description: parsed.data.description || null,
+    clientDisplayName: parsed.data.clientDisplayName || null,
     serviceSlug: parsed.data.serviceSlug || null,
     locationName: parsed.data.locationName || null,
     beforeImageUrl: parsed.data.beforeImageUrl || null,

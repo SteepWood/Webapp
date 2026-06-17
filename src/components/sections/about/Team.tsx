@@ -2,10 +2,10 @@ import { SectionShell } from "@/components/sections/section-shell";
 
 const TEAM = [
   {
-    name: "James Mitchell",
+    name: "Sukhveer Kaur",
     role: "Founder & Master Joiner",
     bio: "Twenty years in bespoke joinery across residential and commercial projects throughout NSW.",
-    initials: "JM",
+    initials: "SK",
   },
   {
     name: "Sarah Chen",
@@ -20,10 +20,10 @@ const TEAM = [
     initials: "TW",
   },
   {
-    name: "Elena Rossi",
+    name: "Marcus O'Brien",
     role: "Install Lead",
     bio: "Coordinates install teams across NSW and ACT with a focus on seamless handover.",
-    initials: "ER",
+    initials: "MO",
   },
 ] as const;
 

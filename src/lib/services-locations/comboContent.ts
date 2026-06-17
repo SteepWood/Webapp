@@ -1,5 +1,10 @@
 import { getLocationContent } from "./locationContent";
 import { getServiceContent } from "./serviceContent";
+import {
+  buildFanoutAnswer,
+  getFanoutQuestions,
+  localizeFanoutQuestion,
+} from "@/lib/aio/fanout";
 import type { ResolvedLocation, ResolvedService } from "./types";
 
 export type ComboFaq = {
@@ -137,7 +142,16 @@ function buildComboFaqs(
     },
   ];
 
-  return items.map((item, index) => ({
+  const fanoutItems = getFanoutQuestions(serviceSlug)
+    .slice(0, 2)
+    .map((question) => ({
+      question: localizeFanoutQuestion(question, location.name),
+      answer: buildFanoutAnswer(service.name, location.name),
+    }));
+
+  const allItems = [...items, ...fanoutItems];
+
+  return allItems.map((item, index) => ({
     id: `${serviceSlug}-${locationSlug}-faq-${index + 1}`,
     question: item.question,
     answer: item.answer,

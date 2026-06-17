@@ -2,6 +2,7 @@ import type { BlogPost } from "@prisma/client";
 import Image from "next/image";
 import Link from "@/components/ui/link";
 
+import { BLOG_DEFAULT_AUTHOR } from "@/lib/business";
 import { calculateReadingTime } from "@/lib/blog/readingTime";
 
 type BlogGridProps = {
@@ -96,7 +97,7 @@ function BlogCard({
             </p>
           ) : null}
           <p className="text-body-sm text-ink-800/60">
-            {post.authorName ?? "SteepWood Team"} · {formatPostDate(publishedAt)} ·{" "}
+            {post.authorName ?? BLOG_DEFAULT_AUTHOR} · {formatPostDate(publishedAt)} ·{" "}
             {readingTime} min read
           </p>
         </div>

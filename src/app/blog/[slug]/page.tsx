@@ -8,6 +8,7 @@ import { BlogGrid } from "@/components/blog/BlogGrid";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { SectionShell } from "@/components/sections/section-shell";
 import { Button } from "@/components/ui/button";
+import { BLOG_DEFAULT_AUTHOR } from "@/lib/business";
 import { extractHeadings } from "@/lib/blog/headings";
 import { renderBlogMdx } from "@/lib/blog/renderMdx";
 import { calculateReadingTime } from "@/lib/blog/readingTime";
@@ -65,7 +66,7 @@ export async function generateMetadata({
       type: "article",
       publishedTime: (post.publishedAt ?? post.createdAt).toISOString(),
       modifiedTime: post.updatedAt.toISOString(),
-      authors: [post.authorName ?? "SteepWood Team"],
+      authors: [post.authorName ?? BLOG_DEFAULT_AUTHOR],
       ...(post.coverImageUrl
         ? {
             images: [
@@ -176,7 +177,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               {post.title}
             </h1>
             <p className="mb-stack-lg text-body text-ink-800/70">
-              {post.authorName ?? "SteepWood Team"} ·{" "}
+              {post.authorName ?? BLOG_DEFAULT_AUTHOR} ·{" "}
               {formatPostDate(publishedAt)} · {readingTime} min read
             </p>
 
@@ -186,7 +187,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
             <div className="mt-stack-xl rounded-lg border border-ink-700/10 bg-ink-50 p-6">
               <h2 className="mb-2 font-serif text-h4 text-ink-900">
-                About {post.authorName ?? "the SteepWood team"}
+                About {post.authorName ?? BLOG_DEFAULT_AUTHOR}
               </h2>
               <p className="text-body text-ink-800/80">
                 SteepWood is a Newcastle-based custom joinery workshop serving

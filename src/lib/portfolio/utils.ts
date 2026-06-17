@@ -101,6 +101,17 @@ export function anonymisedClient(locationName: string | null | undefined): strin
   return `${label} homeowners`;
 }
 
+export function getProjectClient(project: {
+  clientDisplayName?: string | null;
+  locationName?: string | null;
+}): string {
+  if (project.clientDisplayName?.trim()) {
+    return project.clientDisplayName.trim();
+  }
+
+  return anonymisedClient(project.locationName);
+}
+
 export function formatCompletionDate(date: Date): string {
   return new Intl.DateTimeFormat("en-AU", {
     month: "long",

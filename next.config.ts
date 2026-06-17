@@ -69,6 +69,36 @@ const nextConfig: NextConfig = {
         destination: "/shopfitting/",
         permanent: true,
       },
+      {
+        source: "/privacy",
+        destination: "/legal/privacy/",
+        permanent: true,
+      },
+      {
+        source: "/privacy/",
+        destination: "/legal/privacy/",
+        permanent: true,
+      },
+      {
+        source: "/terms",
+        destination: "/legal/terms/",
+        permanent: true,
+      },
+      {
+        source: "/terms/",
+        destination: "/legal/terms/",
+        permanent: true,
+      },
+      {
+        source: "/australian-consumer-law",
+        destination: "/legal/consumer-rights/",
+        permanent: true,
+      },
+      {
+        source: "/australian-consumer-law/",
+        destination: "/legal/consumer-rights/",
+        permanent: true,
+      },
     ];
   },
   images: {

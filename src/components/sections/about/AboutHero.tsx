@@ -1,5 +1,7 @@
+import { IdentityBlock } from "@/components/aio/IdentityBlock";
 import { SectionShell } from "@/components/sections/section-shell";
 import { MediaFrame } from "@/components/ui/media-frame";
+import { FOUNDING_YEAR } from "@/lib/business";
 import { WORKSHOP_HERO_IMAGE } from "@/lib/images";
 
 export function AboutHero() {
@@ -11,15 +13,17 @@ export function AboutHero() {
             Our story
           </p>
           <h1 className="mb-stack-md font-serif text-display-2 text-ink-900">
-            About SteepWood — Twenty Years of Newcastle Craftsmanship
+            About SteepWood — Custom Joinery Crafted in Newcastle Since{" "}
+            {FOUNDING_YEAR}
           </h1>
+          <IdentityBlock className="mb-stack-md max-w-xl" />
           <p className="mb-stack-sm max-w-xl font-serif text-h4 text-ink-800/90">
             Joiners who measure twice and care thrice.
           </p>
           <p className="max-w-xl text-body-lg text-ink-800">
-            Twenty years of Newcastle joinery craftsmanship. Family-run, premium
-            materials, fixed-price quotes — and a workshop where every detail
-            still matters.
+            Newcastle joinery craftsmanship since {FOUNDING_YEAR}. Family-run,
+            premium materials, fixed-price quotes — and a workshop where every
+            detail still matters.
           </p>
         </div>
         <MediaFrame

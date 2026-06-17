@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
 import { Mail, MapPin, Phone } from "lucide-react";
 
+import { IdentityBlock } from "@/components/aio/IdentityBlock";
 import { TrackedPhoneLink } from "@/components/analytics/TrackedPhoneLink";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { SectionShell } from "@/components/sections/section-shell";
-import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/navigation";
+import {
+  CONTACT_HOURS_TABLE,
+  PHONE_DISPLAY,
+  PHONE_HREF,
+  PHONE_HOURS_LABEL,
+  WORKSHOP_LOCATION,
+} from "@/lib/navigation";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
 export const revalidate = 86400;
 
-const WORKSHOP_ADDRESS = "Newcastle Workshop, NSW (address coming soon)";
+const WORKSHOP_ADDRESS = WORKSHOP_LOCATION;
 const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=Newcastle+NSW+Australia";
 const MAPS_EMBED_URL =
@@ -36,12 +43,6 @@ export const metadata: Metadata = {
   },
 };
 
-const HOURS = [
-  { days: "Monday – Friday", hours: "7:00am – 5:00pm" },
-  { days: "Saturday", hours: "9:00am – 1:00pm (by appointment)" },
-  { days: "Sunday", hours: "Closed" },
-] as const;
-
 export default function ContactPage() {
   return (
     <>
@@ -53,6 +54,7 @@ export default function ContactPage() {
           <h1 className="mb-stack-md font-serif text-display-2 text-ink-900">
             Get a Free Design Consultation
           </h1>
+          <IdentityBlock className="mb-stack-md" />
           <p className="font-serif text-h4 text-ink-800/90">Let&apos;s talk.</p>
           <p className="mt-stack-sm text-body-lg text-ink-800">
             Tell us about your project and we&apos;ll book a free consultation —
@@ -77,7 +79,7 @@ export default function ContactPage() {
               {PHONE_DISPLAY}
             </TrackedPhoneLink>
             <p className="mt-2 text-body-sm text-ink-800/70">
-              Mon–Fri 8am–5pm AEST
+              {PHONE_HOURS_LABEL}
             </p>
           </article>
 
@@ -138,7 +140,7 @@ export default function ContactPage() {
               </h2>
               <table className="w-full text-left text-body-sm">
                 <tbody>
-                  {HOURS.map((row) => (
+                  {CONTACT_HOURS_TABLE.map((row) => (
                     <tr
                       key={row.days}
                       className="border-b border-ink-700/10 last:border-0"

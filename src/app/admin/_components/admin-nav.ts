@@ -4,6 +4,7 @@ import {
   LayoutDashboard,
   MapPinned,
   MessageSquareQuote,
+  Radar,
   Settings,
   Star,
 } from "lucide-react";
@@ -39,6 +40,11 @@ export const ADMIN_NAV_ITEMS = [
     href: "/admin/services-locations/",
     label: "Services & Locations",
     icon: MapPinned,
+  },
+  {
+    href: "/admin/ai-visibility/",
+    label: "AI Visibility",
+    icon: Radar,
   },
   {
     href: "/admin/settings/",

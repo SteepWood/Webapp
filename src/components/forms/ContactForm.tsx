@@ -27,6 +27,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { BUSINESS_CREDENTIALS_FOOTER } from "@/lib/business";
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/navigation";
 import {
   CONTACT_SUBJECTS,
@@ -189,7 +190,7 @@ export function ContactForm() {
 
       <div className="mt-8 space-y-2 border-t border-ink-700/10 pt-6 text-body-sm text-ink-800/80">
         <p>We respond to all enquiries within 1 business day.</p>
-        <p>HIA Member · MBA NSW · NSW Fair Trading Licence 000000C</p>
+        <p>{BUSINESS_CREDENTIALS_FOOTER}</p>
         <p>
           Your details are used only to respond to your enquiry. We never share
           data with third parties. See our{" "}

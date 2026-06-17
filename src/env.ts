@@ -53,6 +53,8 @@ export const env = createEnv({
 
     RESEND_FROM_EMAIL: z.string().email(),
     QUOTE_NOTIFY_EMAIL: z.string().email(),
+    RESEND_NEWSLETTER_SEGMENT_ID: z.string().uuid().optional(),
+    RESEND_NEWSLETTER_TOPIC_ID: z.string().uuid().optional(),
     RESEND_WEBHOOK_SECRET: z.string().min(1).optional(),
     CRON_SECRET: z.string().min(1).optional(),
   },
@@ -70,6 +72,8 @@ export const env = createEnv({
     RESEND_API_KEY: process.env.RESEND_API_KEY,
     RESEND_FROM_EMAIL: process.env.RESEND_FROM_EMAIL,
     QUOTE_NOTIFY_EMAIL: process.env.QUOTE_NOTIFY_EMAIL,
+    RESEND_NEWSLETTER_SEGMENT_ID: process.env.RESEND_NEWSLETTER_SEGMENT_ID,
+    RESEND_NEWSLETTER_TOPIC_ID: process.env.RESEND_NEWSLETTER_TOPIC_ID,
     RESEND_WEBHOOK_SECRET: process.env.RESEND_WEBHOOK_SECRET,
     CRON_SECRET: process.env.CRON_SECRET,
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,

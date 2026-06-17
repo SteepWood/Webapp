@@ -1,12 +1,10 @@
-import Image from "next/image";
 import Link from "@/components/ui/link";
 
 import { TrackedPhoneLink } from "@/components/analytics/TrackedPhoneLink";
-
 import { SteepWoodLogo } from "@/components/brand/SteepWoodLogo";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { LOCATIONS, PHONE_DISPLAY, PHONE_HREF, SERVICES } from "@/lib/navigation";
+import { FooterNewsletter } from "@/components/layout/FooterNewsletter";
+import { BUSINESS_COPYRIGHT_LINE, BUSINESS_CREDENTIALS_FOOTER } from "@/lib/business";
+import { FOOTER_HOURS_LABEL, LOCATIONS, PHONE_DISPLAY, PHONE_HREF, SERVICES, WORKSHOP_LOCATION } from "@/lib/navigation";
 
 const footerLinkClass =
   "text-ink-100/80 transition-colors duration-[var(--duration-fast)] hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900";
@@ -15,12 +13,6 @@ const LEGAL_LINKS = [
   { href: "/legal/privacy/", label: "Privacy Policy" },
   { href: "/legal/terms/", label: "Terms" },
   { href: "/legal/consumer-rights/", label: "Australian Consumer Law" },
-] as const;
-
-const CREDENTIAL_BADGES = [
-  { src: "/badges/hia.svg", alt: "Housing Industry Association member" },
-  { src: "/badges/mba.svg", alt: "Master Builders Association member" },
-  { src: "/badges/houzz.svg", alt: "Houzz professional" },
 ] as const;
 
 export function Footer() {
@@ -40,20 +32,8 @@ export function Footer() {
               Australia-wide.
             </p>
             <p className="text-caption text-ink-100/60">
-              ABN 00 000 000 000 · NSW Builder&apos;s Licence 000000C
+              {BUSINESS_CREDENTIALS_FOOTER}
             </p>
-            <div className="flex flex-wrap items-center gap-4 pt-1">
-              {CREDENTIAL_BADGES.map((badge) => (
-                <Image
-                  key={badge.src}
-                  src={badge.src}
-                  alt={badge.alt}
-                  width={72}
-                  height={32}
-                  className="h-8 w-auto brightness-0 invert opacity-70 transition-opacity duration-[var(--duration-fast)] hover:opacity-100"
-                />
-              ))}
-            </div>
           </div>
 
           <div>
@@ -105,44 +85,17 @@ export function Footer() {
               <a href="mailto:hello@steepwood.com.au" className={footerLinkClass}>
                 hello@steepwood.com.au
               </a>
-              <p className="text-sm text-ink-100/80">
-                Workshop address coming soon
-                <br />
-                Newcastle NSW
-              </p>
-              <p className="text-sm text-ink-100/80">
-                Mon–Fri 7am–5pm · Sat by appointment
-              </p>
+              <p className="text-sm text-ink-100/80">{WORKSHOP_LOCATION}</p>
+              <p className="text-sm text-ink-100/80">{FOOTER_HOURS_LABEL}</p>
             </div>
 
-            <div>
-              <h4 className="mb-stack-sm font-serif text-h4 text-ink-50">
-                Newsletter
-              </h4>
-              {/* TODO: wire newsletter submit to Resend audience API */}
-              <form className="flex flex-col gap-2 sm:flex-row" noValidate>
-                <label htmlFor="footer-newsletter-email" className="sr-only">
-                  Email address
-                </label>
-                <Input
-                  id="footer-newsletter-email"
-                  type="email"
-                  name="email"
-                  placeholder="Your email"
-                  autoComplete="email"
-                  className="border-ink-700 bg-ink-800 text-ink-50 placeholder:text-ink-100/50"
-                />
-                <Button type="button" className="shrink-0">
-                  Subscribe
-                </Button>
-              </form>
-            </div>
+            <FooterNewsletter />
           </div>
         </div>
 
         <div className="mt-stack-lg flex flex-col gap-4 border-t border-ink-700/40 pt-8 text-sm text-ink-100/70 lg:flex-row lg:items-center lg:justify-between">
           <p>
-            © {year} SteepWood Joinery Pty Ltd · All rights reserved
+            © {year} {BUSINESS_COPYRIGHT_LINE} · All rights reserved
           </p>
           <p className="text-center lg:text-left">
             Proudly servicing Newcastle, Hunter Valley &amp; Australia-wide

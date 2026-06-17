@@ -1,8 +1,9 @@
+import { AIO_CANONICAL_DESCRIPTION } from "@/lib/aio/constants";
+import { BUSINESS_LEGAL_NAME, BUSINESS_TRADING_NAME } from "@/lib/business";
 import { env } from "@/env";
+import { PHONE_SCHEMA } from "@/lib/navigation";
 
 const SITE_URL = env.NEXT_PUBLIC_SITE_URL;
-const BUSINESS_NAME = "SteepWood";
-const BUSINESS_LEGAL_NAME = "SteepWood Joinery Pty Ltd";
 
 const SOCIAL_URLS = [
   "https://www.instagram.com/steepwood/",
@@ -84,20 +85,18 @@ export function rootStructuredData() {
       {
         "@type": "LocalBusiness",
         "@id": `${SITE_URL}/#localbusiness`,
-        name: BUSINESS_NAME,
+        name: BUSINESS_TRADING_NAME,
         legalName: BUSINESS_LEGAL_NAME,
         url: SITE_URL,
         logo: `${SITE_URL}/logo.png`,
         image: `${SITE_URL}/og-default.jpg`,
-        telephone: "+61-2-4000-0000",
+        telephone: PHONE_SCHEMA,
         email: "hello@steepwood.com.au",
         priceRange: "$$$",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "TBD workshop address",
           addressLocality: "Newcastle",
           addressRegion: "NSW",
-          postalCode: "2300",
           addressCountry: "AU",
         },
         geo: {
@@ -137,7 +136,9 @@ export function rootStructuredData() {
         "@type": "Organization",
         "@id": `${SITE_URL}/#organization`,
         name: BUSINESS_LEGAL_NAME,
+        alternateName: BUSINESS_TRADING_NAME,
         url: SITE_URL,
+        description: AIO_CANONICAL_DESCRIPTION,
         logo: {
           "@type": "ImageObject",
           url: `${SITE_URL}/logo.png`,
@@ -150,7 +151,7 @@ export function rootStructuredData() {
         "@type": "WebSite",
         "@id": `${SITE_URL}/#website`,
         url: SITE_URL,
-        name: BUSINESS_NAME,
+        name: BUSINESS_TRADING_NAME,
         publisher: { "@id": `${SITE_URL}/#organization` },
         inLanguage: "en-AU",
         potentialAction: {

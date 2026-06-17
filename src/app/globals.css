@@ -85,7 +85,6 @@
 /* Base resets */
 @layer base {
   html {
-    scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -333,5 +332,11 @@
   .surface-section {
     background-color: color-mix(in srgb, #ffffff 55%, var(--color-ink-100));
     border-block: 1px solid color-mix(in srgb, var(--color-ink-700) 10%, transparent);
+  }
+
+  .answer-first {
+    border-left: 3px solid var(--color-amber-500);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
   }
 }

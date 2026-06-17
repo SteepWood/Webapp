@@ -98,6 +98,7 @@ model PortfolioProject {
   title           String
   summary         String?
   description     String?
+  clientDisplayName String? @map("client_display_name")
   locationName    String?  @map("location_name")
   serviceSlug     String?  @map("service_slug")
   beforeImageUrl  String?  @map("before_image_url")
@@ -204,4 +205,16 @@ model SitemapOverride {
   updatedAt       DateTime @default(now()) @updatedAt @map("updated_at") @db.Timestamptz(6)
 
   @@map("sitemap_overrides")
+}
+
+model AiBotVisit {
+  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userAgent String   @map("user_agent")
+  path      String
+  ipHash    String?  @map("ip_hash")
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+
+  @@index([createdAt])
+  @@index([path])
+  @@map("ai_bot_visits")
 }

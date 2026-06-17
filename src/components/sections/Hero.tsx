@@ -1,8 +1,10 @@
 import Link from "@/components/ui/link";
 
+import { IdentityBlock } from "@/components/aio/IdentityBlock";
 import { HeroMotion, HeroMotionItem } from "@/components/sections/HeroMotion";
 import { MediaFrame } from "@/components/ui/media-frame";
 import { Button } from "@/components/ui/button";
+import { CARPENTRY_LICENCE_DISPLAY } from "@/lib/business";
 import { WORKSHOP_HERO_IMAGE } from "@/lib/images";
 
 export function Hero() {
@@ -25,9 +27,12 @@ export function Hero() {
             </h1>
           </HeroMotionItem>
           <HeroMotionItem>
+            <IdentityBlock className="mb-stack-md max-w-xl" />
+          </HeroMotionItem>
+          <HeroMotionItem>
             <p className="mb-stack-lg max-w-xl text-body-lg text-ink-800">
               Bespoke kitchens, wardrobes, and commercial joinery for homes and
-              businesses across Australia. Twenty years of craftsmanship, one
+              businesses across Australia. Craftsmanship since 2014, one
               workshop, no compromises.
             </p>
           </HeroMotionItem>
@@ -43,7 +48,7 @@ export function Hero() {
           </HeroMotionItem>
           <HeroMotionItem>
             <p className="text-body-sm text-ink-800/80">
-              ★ 4.9 Google · HIA Member · Newcastle, NSW
+              {CARPENTRY_LICENCE_DISPLAY} · Newcastle, NSW
             </p>
           </HeroMotionItem>
         </HeroMotion>

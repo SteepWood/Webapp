@@ -77,7 +77,7 @@ export function ProcessReveal() {
   );
 
   return (
-    <SectionShell className="bg-ink-50">
+    <SectionShell id="process" className="bg-ink-50">
       <ScrollReveal>
         <h2 className="mb-stack-lg max-w-3xl font-serif text-h2 text-ink-900">
           From consultation to install — what to expect

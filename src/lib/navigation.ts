@@ -23,8 +23,22 @@ export const LOCATIONS: NavLocation[] = LOCATION_DEFINITIONS.map((location) => (
   label: location.name,
 }));
 
-export const PHONE_DISPLAY = "02 4000 0000";
-export const PHONE_HREF = "tel:+61240000000";
+export const PHONE_DISPLAY = "0468 387 676";
+export const PHONE_HREF = "tel:+61468387676";
+/** Schema.org telephone format for JSON-LD blocks. */
+export const PHONE_SCHEMA = "+61-468-387-676";
+
+/** Public workshop location — street address withheld until published. */
+export const WORKSHOP_LOCATION = "Newcastle, NSW";
+
+export const CONTACT_HOURS_TABLE = [
+  { days: "Monday – Friday", hours: "7:00am – 5:00pm" },
+  { days: "Saturday", hours: "9:00am – 1:00pm (by appointment)" },
+  { days: "Sunday", hours: "Closed" },
+] as const;
+
+export const PHONE_HOURS_LABEL = "Mon–Fri 7am–5pm AEST";
+export const FOOTER_HOURS_LABEL = "Mon–Fri 7am–5pm · Sat by appointment";
 
 export const PRIMARY_NAV_LINKS = [
   { href: "/portfolio/", label: "Projects" },

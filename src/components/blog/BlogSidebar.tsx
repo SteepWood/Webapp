@@ -1,10 +1,8 @@
 "use client";
 
-import Link from "@/components/ui/link";
 import { useRouter, useSearchParams } from "next/navigation";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { NewsletterSignupForm } from "@/components/forms/NewsletterSignupForm";
 import { cn } from "@/lib/utils";
 
 type BlogSidebarProps = {
@@ -89,29 +87,13 @@ export function BlogSidebar({ categories, tags }: BlogSidebarProps) {
           Occasional design inspiration and project stories from the SteepWood
           team. No spam — unsubscribe any time.
         </p>
-        <form
-          className="space-y-3"
-          onSubmit={(event) => {
-            event.preventDefault();
-          }}
-        >
-          <Input
-            type="email"
-            placeholder="you@example.com"
-            aria-label="Email address"
-            className="border-ink-700/30 bg-ink-800 text-ink-50 placeholder:text-ink-100/50"
-          />
-          <Button type="submit" className="w-full">
-            Subscribe
-          </Button>
-        </form>
-        <p className="mt-3 text-xs text-ink-100/60">
-          Newsletter signup connects in a later phase. For now,{" "}
-          <Link href="/contact/" className="text-amber-300 hover:underline">
-            contact us
-          </Link>{" "}
-          to hear about new posts.
-        </p>
+        <NewsletterSignupForm
+          inputId="blog-newsletter-email"
+          layout="stacked"
+          placeholder="you@example.com"
+          inputClassName="border-ink-700/30 bg-ink-800 text-ink-50 placeholder:text-ink-100/50"
+          messageClassName="text-amber-300"
+        />
       </section>
     </aside>
   );

@@ -7,14 +7,16 @@ import { OriginStory } from "@/components/sections/about/OriginStory";
 import { Team } from "@/components/sections/about/Team";
 import { Values } from "@/components/sections/about/Values";
 import { WorkshopGallery } from "@/components/sections/about/WorkshopGallery";
+import { FOUNDING_YEAR } from "@/lib/business";
 import { canonicalUrl } from "@/lib/seo/canonical";
+
+const ABOUT_DESCRIPTION = `Newcastle joinery craftsmanship since ${FOUNDING_YEAR}. Family-run, premium materials, fixed-price quotes. Learn the SteepWood story and meet the team.`;
 
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: "About SteepWood Custom Joinery — Newcastle Craftsmen",
-  description:
-    "Twenty years of Newcastle joinery craftsmanship. Family-run, premium materials, fixed-price quotes. Learn the SteepWood story and meet the team.",
+  description: ABOUT_DESCRIPTION,
   alternates: {
     canonical: canonicalUrl("/about/"),
     languages: {
@@ -23,8 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "About SteepWood Custom Joinery — Newcastle Craftsmen",
-    description:
-      "Twenty years of Newcastle joinery craftsmanship. Family-run, premium materials, fixed-price quotes. Learn the SteepWood story and meet the team.",
+    description: ABOUT_DESCRIPTION,
     url: canonicalUrl("/about/"),
     siteName: "SteepWood",
     locale: "en_AU",

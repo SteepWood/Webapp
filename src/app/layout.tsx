@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { ViewTransitions } from "next-view-transitions";
 
 import { AnalyticsShell } from "@/components/analytics/AnalyticsShell";
@@ -45,6 +44,7 @@ export default function RootLayout({
     <html
       lang="en-AU"
       suppressHydrationWarning
+      data-scroll-behavior="smooth"
       className={`${fraunces.variable} ${generalSans.variable} ${ibmPlexMono.variable} scroll-smooth h-full antialiased`}
     >
       <body className="bg-wood-paper flex min-h-full flex-col">
@@ -54,10 +54,9 @@ export default function RootLayout({
             <AnalyticsShell ga4Id={env.NEXT_PUBLIC_GA4_ID} />
           </Providers>
         </ViewTransitions>
-        <Script
+        <script
           id="root-jsonld"
           type="application/ld+json"
-          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(rootStructuredData()),
           }}

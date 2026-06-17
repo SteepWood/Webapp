@@ -7,6 +7,7 @@ import { SectionShell } from "@/components/sections/section-shell";
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogTitle,
 } from "@/components/ui/dialog";
 import { WORKSHOP_GALLERY_IMAGES } from "@/lib/images";
@@ -66,9 +67,16 @@ export function WorkshopGallery() {
         }}
       >
         <DialogContent className="max-w-4xl p-0" showCloseButton>
+          <DialogTitle className="sr-only">
+            {activePhoto?.caption ?? "Workshop photograph"}
+          </DialogTitle>
+          <DialogDescription className="sr-only">
+            {activePhoto
+              ? `Enlarged workshop photograph: ${activePhoto.alt}`
+              : "Enlarged workshop photograph from the SteepWood gallery"}
+          </DialogDescription>
           {activePhoto ? (
             <>
-              <DialogTitle className="sr-only">{activePhoto.caption}</DialogTitle>
               <div className="flex items-center justify-center bg-ink-100 p-4">
                 <Image
                   src={activePhoto.src}

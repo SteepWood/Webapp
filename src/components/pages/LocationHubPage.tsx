@@ -1,5 +1,8 @@
 import Link from "@/components/ui/link";
 
+import { AnswerFirst } from "@/components/aio/AnswerFirst";
+import { FactsBlock } from "@/components/aio/FactsBlock";
+import { IdentityBlock } from "@/components/aio/IdentityBlock";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { MediaFrame } from "@/components/ui/media-frame";
 import { SectionShell } from "@/components/sections/section-shell";
@@ -19,6 +22,12 @@ import {
   locationHubStructuredData,
 } from "@/lib/seo/locationStructuredData";
 import type { AggregateRatingStats } from "@/lib/testimonials/aggregateRating";
+import { getLocationIntroPrefix } from "@/lib/aio/answer-first-data";
+import { getLocationFacts } from "@/lib/aio/facts-data";
+import {
+  placeStructuredData,
+  speakableStructuredData,
+} from "@/lib/aio/schema";
 
 type LocationHubPageProps = {
   location: ResolvedLocation;
@@ -72,6 +81,11 @@ export function LocationHubPage({
       answer: faq.answer,
     })),
   );
+  const pageUrl = canonicalUrl(`/locations/${location.slug}/`);
+  const placeSchema = placeStructuredData(location);
+  const speakableSchema = speakableStructuredData(pageUrl);
+  const introPrefix = getLocationIntroPrefix(location.slug);
+  const locationFacts = getLocationFacts(location.slug);
 
   const kicker =
     location.slug === "newcastle"
@@ -94,6 +108,14 @@ export function LocationHubPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       ) : null}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+      />
 
       <SectionShell className="pb-4 pt-8">
         <nav aria-label="Breadcrumb" className="mb-stack-md">
@@ -147,7 +169,17 @@ export function LocationHubPage({
       </SectionShell>
 
       <SectionShell>
+        <IdentityBlock locationSlug={location.slug} className="max-w-3xl" />
+      </SectionShell>
+
+      <FactsBlock
+        title={`${location.name} joinery — quick facts`}
+        facts={locationFacts}
+      />
+
+      <SectionShell>
         <div className="max-w-3xl space-y-4 text-body leading-relaxed text-ink-800">
+          {introPrefix ? <AnswerFirst>{introPrefix}</AnswerFirst> : null}
           {content.introParagraphs.map((paragraph) => (
             <p key={paragraph.slice(0, 40)}>{paragraph}</p>
           ))}

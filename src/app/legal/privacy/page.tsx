@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import Link from "@/components/ui/link";
 
 import { LegalBreadcrumbs } from "@/components/legal/LegalBreadcrumbs";
+import { ABN_DISPLAY, BUSINESS_LEGAL_NAME } from "@/lib/business";
+import { WORKSHOP_LOCATION } from "@/lib/navigation";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
 export const revalidate = 86400;
@@ -51,7 +53,7 @@ export default function PrivacyPolicyPage() {
             Introduction
           </h2>
           <p>
-            SteepWood Joinery Pty Ltd (ABN 00 000 000 000) (&quot;SteepWood&quot;,
+            {BUSINESS_LEGAL_NAME} (ABN {ABN_DISPLAY}) (&quot;SteepWood&quot;,
             &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is committed to protecting your
             privacy. This Privacy Policy explains how we collect, use, disclose,
             and store personal information in accordance with the{" "}
@@ -276,7 +278,7 @@ export default function PrivacyPolicyPage() {
             >
               hello@steepwood.com.au
             </a>{" "}
-            or write to SteepWood Joinery Pty Ltd, Newcastle NSW 2300,
+            or write to {BUSINESS_LEGAL_NAME}, {WORKSHOP_LOCATION},
             Australia.
           </p>
         </section>
