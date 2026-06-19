@@ -12,7 +12,7 @@ export default function LegalLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="px-container-x py-section-y">
+    <div className="px-container-x py-section-half">
       <div className="mx-auto flex max-w-5xl flex-col gap-10 lg:flex-row lg:gap-16">
         <aside className="shrink-0 lg:w-56">
           <nav aria-label="Legal documents" className="space-y-1">

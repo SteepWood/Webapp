@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { mediaFrameAreaClass, mediaFrameImageClass } from "@/components/ui/media-frame";
 import { cn } from "@/lib/utils";
 
 type ProjectComparisonHeroProps = {
@@ -69,7 +70,10 @@ export function ProjectComparisonHero({
   return (
     <div
       ref={containerRef}
-      className="relative w-full select-none overflow-hidden bg-ink-900"
+      className={cn(
+        mediaFrameAreaClass,
+        "select-none rounded-none bg-ink-900",
+      )}
       onMouseDown={(event) => {
         setDragging(true);
         updatePosition(event.clientX);
@@ -90,7 +94,7 @@ export function ProjectComparisonHero({
         priority
         fetchPriority="high"
         sizes="100vw"
-        className="h-auto max-h-[70vh] w-full object-contain"
+        className={mediaFrameImageClass}
       />
       <div
         className="absolute inset-0 overflow-hidden"
@@ -103,7 +107,7 @@ export function ProjectComparisonHero({
           height={height}
           priority
           sizes="100vw"
-          className="h-auto max-h-[70vh] w-full object-contain"
+          className={mediaFrameImageClass}
         />
       </div>
 

@@ -1,9 +1,10 @@
 import { SectionShell } from "@/components/sections/section-shell";
 import { Skeleton } from "@/components/ui/skeleton";
-import { TestimonialsCarousel } from "@/components/testimonials/TestimonialsCarousel";
+import { TestimonialGrid } from "@/components/testimonials/TestimonialGrid";
 import { getFeaturedTestimonials } from "@/lib/db/testimonials";
 import { env } from "@/env";
 import { getAggregateRating } from "@/lib/testimonials/aggregateRating";
+import { staticFeaturedTestimonials } from "@/lib/testimonials/staticTestimonials";
 import { buildPageReviewStructuredData } from "@/lib/seo/aggregateRatingSchema";
 
 const SITE_URL = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
@@ -22,17 +23,21 @@ export function TestimonialsSkeleton() {
 }
 
 export async function Testimonials() {
-  let testimonials: Awaited<ReturnType<typeof getFeaturedTestimonials>> = [];
-  let aggregateRating: Awaited<ReturnType<typeof getAggregateRating>> = null;
+  const [testimonialsResult, aggregateRatingResult] = await Promise.allSettled([
+    getFeaturedTestimonials(6),
+    getAggregateRating(),
+  ]);
 
-  try {
-    [testimonials, aggregateRating] = await Promise.all([
-      getFeaturedTestimonials(6),
-      getAggregateRating(),
-    ]);
-  } catch {
-    return null;
-  }
+  const testimonials =
+    testimonialsResult.status === "fulfilled" &&
+    testimonialsResult.value.length > 0
+      ? testimonialsResult.value
+      : staticFeaturedTestimonials(6);
+
+  const aggregateRating =
+    aggregateRatingResult.status === "fulfilled"
+      ? aggregateRatingResult.value
+      : null;
 
   if (testimonials.length === 0) {
     return null;
@@ -60,7 +65,7 @@ export async function Testimonials() {
       <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">
         What our clients say
       </h2>
-      <TestimonialsCarousel testimonials={testimonials} />
+      <TestimonialGrid testimonials={testimonials} />
     </SectionShell>
   );
 }

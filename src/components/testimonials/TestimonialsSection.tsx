@@ -1,6 +1,6 @@
 import type { Testimonial } from "@prisma/client";
 
-import { SectionShell } from "@/components/sections/section-shell";
+import { SectionShell, sectionHeadingClass } from "@/components/sections/section-shell";
 import type { AggregateRatingStats } from "@/lib/testimonials/aggregateRating";
 import { buildPageReviewStructuredData } from "@/lib/seo/aggregateRatingSchema";
 
@@ -51,7 +51,7 @@ export function TestimonialsSection({
       ))}
 
       <SectionShell id="testimonials" className={className}>
-        <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">{title}</h2>
+        <h2 className={sectionHeadingClass}>{title}</h2>
         <TestimonialGrid testimonials={testimonials} />
       </SectionShell>
     </>

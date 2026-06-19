@@ -2,6 +2,9 @@ import type { BlogPost } from "@prisma/client";
 import Image from "next/image";
 import Link from "@/components/ui/link";
 
+import { mediaThumbAreaClass, mediaCardImageClass } from "@/components/ui/media-card";
+import { mediaFrameAreaClass } from "@/components/ui/media-frame";
+import { cn } from "@/lib/utils";
 import { BLOG_DEFAULT_AUTHOR } from "@/lib/business";
 import { calculateReadingTime } from "@/lib/blog/readingTime";
 
@@ -36,7 +39,7 @@ function BlogCard({
     <article
       className={
         featured
-          ? "surface-card overflow-hidden rounded-lg lg:grid lg:grid-cols-2"
+          ? "surface-card overflow-hidden rounded-lg lg:grid lg:grid-cols-2 lg:items-stretch"
           : "surface-card overflow-hidden rounded-lg"
       }
     >
@@ -47,8 +50,8 @@ function BlogCard({
         <div
           className={
             featured
-              ? "flex min-h-[14rem] items-center justify-center bg-ink-100 p-2 lg:min-h-full"
-              : "flex min-h-[12rem] items-center justify-center bg-ink-100 p-2"
+              ? cn(mediaFrameAreaClass, "rounded-none")
+              : mediaThumbAreaClass
           }
         >
           {post.coverImageUrl ? (
@@ -62,10 +65,10 @@ function BlogCard({
                   ? "(max-width: 1024px) 100vw, 50vw"
                   : "(max-width: 640px) 100vw, 33vw"
               }
-              className="h-auto max-h-72 w-full object-contain"
+              className={cn(mediaCardImageClass, "size-full")}
             />
           ) : (
-            <div className="flex min-h-[12rem] w-full items-end bg-gradient-to-br from-ink-800 to-ink-950 p-6">
+            <div className="absolute inset-0 flex items-end bg-gradient-to-br from-ink-800 to-ink-950 p-6">
               <span className="font-serif text-2xl text-ink-50">{post.title}</span>
             </div>
           )}

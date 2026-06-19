@@ -15,21 +15,33 @@ import {
   MediaCardTitle,
 } from "@/components/ui/media-card";
 import type { HomepageService } from "@/lib/db/homepage-page";
+import { SERVICES } from "@/lib/services-locations/services";
 
 type ServicesBentoGridProps = {
   services: HomepageService[];
 };
 
+function resolveServiceHeroImage(service: HomepageService): string | null {
+  return (
+    service.heroImageUrl ??
+    SERVICES.find((entry) => entry.slug === service.slug)?.heroImagePath ??
+    null
+  );
+}
+
 export function ServicesBentoGrid({ services }: ServicesBentoGridProps) {
   return (
     <ScrollRevealStagger className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {services.map((service) => (
+      {services.map((service) => {
+        const heroImageUrl = resolveServiceHeroImage(service);
+
+        return (
         <ScrollRevealItem key={service.slug} className="h-full">
           <MediaCard>
             <MediaCardLink href={`/${service.slug}/`}>
-              {service.heroImageUrl ? (
+              {heroImageUrl ? (
                 <MediaCardImage
-                  src={service.heroImageUrl}
+                  src={heroImageUrl}
                   alt={
                     service.heroImageAlt ??
                     `${service.name} by SteepWood in Newcastle`
@@ -55,7 +67,8 @@ export function ServicesBentoGrid({ services }: ServicesBentoGridProps) {
             </MediaCardLink>
           </MediaCard>
         </ScrollRevealItem>
-      ))}
+        );
+      })}
     </ScrollRevealStagger>
   );
 }

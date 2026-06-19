@@ -15,39 +15,29 @@ import {
   MediaCardPlaceholder,
   MediaCardTitle,
 } from "@/components/ui/media-card";
-import { SectionShell } from "@/components/sections/section-shell";
+import { SectionShell, sectionHeadingClass } from "@/components/sections/section-shell";
 import type { PortfolioProject } from "@prisma/client";
-
-function getProjectImageUrl(project: PortfolioProject): string | null {
-  return (
-    project.afterImageUrl ??
-    (Array.isArray(project.galleryImages) &&
-    project.galleryImages.length > 0 &&
-    typeof project.galleryImages[0] === "object" &&
-    project.galleryImages[0] !== null &&
-    "url" in project.galleryImages[0]
-      ? String((project.galleryImages[0] as { url: string }).url)
-      : null)
-  );
-}
+import { getProjectHeroImage } from "@/lib/portfolio/utils";
 
 export function FeaturedProjects({
   projects,
   title = "Recent projects across Australia",
   description,
+  shellClassName,
 }: {
   projects: PortfolioProject[];
   title?: string;
   description?: string;
+  shellClassName?: string;
 }) {
   if (projects.length === 0) {
     return null;
   }
 
   return (
-    <SectionShell id="projects">
+    <SectionShell id="projects" className={shellClassName}>
       <ScrollReveal>
-        <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">{title}</h2>
+        <h2 className={sectionHeadingClass}>{title}</h2>
         {description ? (
           <p className="mb-stack-md max-w-3xl text-body text-ink-800/80">
             {description}
@@ -55,22 +45,21 @@ export function FeaturedProjects({
         ) : null}
       </ScrollReveal>
 
-      <ScrollRevealStagger className="flex gap-6 overflow-x-auto pb-2 lg:grid lg:grid-cols-3 lg:overflow-visible">
+      <ScrollRevealStagger className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => {
-          const imageUrl = getProjectImageUrl(project);
+          const hero = getProjectHeroImage(project);
 
           return (
-            <ScrollRevealItem
-              key={project.slug}
-              className="h-full min-w-[85%] shrink-0 sm:min-w-[60%] lg:min-w-0"
-            >
+            <ScrollRevealItem key={project.slug} className="h-full">
               <MediaCard>
                 <MediaCardLink href={`/portfolio/${project.slug}/`}>
-                  {imageUrl ? (
+                  {hero ? (
                     <MediaCardImage
-                      src={imageUrl}
-                      alt={`${project.title}${project.locationName ? ` in ${project.locationName}` : ""}`}
-                      sizes="(max-width: 1024px) 85vw, 33vw"
+                      src={hero.url}
+                      alt={hero.alt}
+                      width={hero.width}
+                      height={hero.height}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   ) : (
                     <MediaCardPlaceholder label={project.title} />

@@ -112,7 +112,7 @@ export function ProcessScroll() {
 
   return (
     <section ref={sectionRef} className="bg-ink-50">
-      <div ref={pinRef} className="px-container-x py-section-y">
+      <div ref={pinRef} className="px-container-x py-section-half">
         <div className="mx-auto min-w-0 max-w-7xl">
           <h2 className="mb-stack-lg max-w-3xl font-serif text-h2 text-ink-900">
             From consultation to install — what to expect

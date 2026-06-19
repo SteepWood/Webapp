@@ -18,7 +18,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Header />
-      <main className="flex-1 pt-[5.5rem] pb-[calc(5rem+env(safe-area-inset-bottom))] lg:pt-28 lg:pb-0">
+      <main className="flex-1 pt-[5.5rem] pb-[calc(5rem+max(0px,env(safe-area-inset-bottom)))] lg:pt-28 lg:pb-0">
         {children}
       </main>
       <Footer />

@@ -1,4 +1,4 @@
-/* TODO: Lawyer-reviewed copy required before public launch. */
+/* TODO: Lawyer-reviewed copy required — soft launch approved; review booked next month. */
 
 import type { Metadata } from "next";
 import Link from "@/components/ui/link";

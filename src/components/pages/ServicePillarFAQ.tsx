@@ -6,17 +6,23 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { SectionShell } from "@/components/sections/section-shell";
+import { SectionShell, sectionHeadingClass } from "@/components/sections/section-shell";
 import type { ServiceFaq } from "@/lib/services-locations/serviceContent";
 
-export function ServicePillarFAQ({ faqs }: { faqs: ServiceFaq[] }) {
+export function ServicePillarFAQ({
+  faqs,
+  className,
+}: {
+  faqs: ServiceFaq[];
+  className?: string;
+}) {
   if (faqs.length === 0) {
     return null;
   }
 
   return (
-    <SectionShell id="faq">
-      <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">
+    <SectionShell id="faq" className={className}>
+      <h2 className={sectionHeadingClass}>
         Frequently asked questions
       </h2>
       <Accordion type="single" collapsible className="max-w-3xl">

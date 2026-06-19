@@ -1,4 +1,4 @@
-import { SectionShell } from "@/components/sections/section-shell";
+import { SectionShell, sectionHeadingClass } from "@/components/sections/section-shell";
 
 const VALUES = [
   {
@@ -26,7 +26,7 @@ const VALUES = [
 export function Values() {
   return (
     <SectionShell>
-      <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">Our values</h2>
+      <h2 className={sectionHeadingClass}>Our values</h2>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         {VALUES.map((value) => (
           <article

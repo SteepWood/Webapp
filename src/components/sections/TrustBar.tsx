@@ -8,7 +8,7 @@ export async function TrustBar() {
   const aggregateRating = await getAggregateRating();
 
   return (
-    <SectionShell className="surface-panel border-y border-ink-700/15 py-8">
+    <SectionShell className="surface-panel border-y border-ink-700/15 py-section-compact">
       <TrustBarMotion>
       <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
         {aggregateRating ? (

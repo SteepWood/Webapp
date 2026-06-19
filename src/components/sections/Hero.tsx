@@ -9,7 +9,7 @@ import { WORKSHOP_HERO_IMAGE } from "@/lib/images";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-container-x py-section-y">
+    <section className="relative overflow-hidden px-container-x py-section-half">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_20%_0%,_rgba(139,107,71,0.14)_0%,_transparent_55%)]"

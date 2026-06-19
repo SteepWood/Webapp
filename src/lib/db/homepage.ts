@@ -1,13 +1,20 @@
 import { cache } from "react";
 
 import { prisma } from "@/lib/db/prisma";
+import { staticFeaturedProjects } from "@/lib/portfolio/staticProjects";
 
 export const getFeaturedPortfolioProjects = cache(async () => {
-  return prisma.portfolioProject.findMany({
-    where: { isPublished: true },
-    take: 3,
-    orderBy: [{ displayOrder: "asc" }, { createdAt: "desc" }],
-  });
+  try {
+    const projects = await prisma.portfolioProject.findMany({
+      where: { isPublished: true },
+      take: 3,
+      orderBy: [{ displayOrder: "asc" }, { createdAt: "desc" }],
+    });
+
+    return projects.length > 0 ? projects : staticFeaturedProjects();
+  } catch {
+    return staticFeaturedProjects();
+  }
 });
 
 

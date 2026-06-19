@@ -58,7 +58,9 @@ Phases 1–4 are **code-complete** when `pnpm typecheck`, `pnpm build`, and each
 - [ ] Email auth enabled (magic link only for MVP)
 - [ ] **Redirect URL** added: `{NEXT_PUBLIC_SITE_URL}/auth/callback`
 - [ ] Magic-link email template branded (Authentication → Email Templates, Australian English)
-- [ ] Pre-register each admin user in Authentication → Users (`@steepwood.com.au` only; `shouldCreateUser: false` in app)
+- [ ] Pre-register each admin user in Authentication → Users (`@steepwood.com.au` only; `shouldCreateUser: false` in app):
+  - [x] `hello@steepwood.com.au` — mailbox created; user added in Supabase Auth
+  - [x] `sukhveer@steepwood.com.au` — mailbox created; user added in Supabase Auth
 - [ ] Optional: seed matching rows in `admin_users` table linked to `auth_user_id`
 
 ### 2.5 Backups

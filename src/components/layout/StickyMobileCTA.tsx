@@ -7,9 +7,11 @@ import { motion, useReducedMotion } from "motion/react";
 
 import { TrackedPhoneLink } from "@/components/analytics/TrackedPhoneLink";
 import { PHONE_HREF } from "@/lib/navigation";
+import { cn } from "@/lib/utils";
 
 export function StickyMobileCTA() {
   const [visible, setVisible] = useState(false);
+  const [footerInView, setFooterInView] = useState(false);
   const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
@@ -22,15 +24,37 @@ export function StickyMobileCTA() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const footer = document.getElementById("site-footer");
+    if (!footer) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry) {
+          setFooterInView(entry.isIntersecting);
+        }
+      },
+      { threshold: 0, rootMargin: "0px 0px 0px 0px" },
+    );
+
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, []);
+
+  const showCta = visible && !footerInView;
+
   return (
     <motion.div
       role="region"
       aria-label="Quick contact actions"
+      inert={!showCta ? true : undefined}
       className="fixed right-0 bottom-0 left-0 z-50 px-4 pb-safe lg:hidden"
       initial={false}
       animate={{
-        y: visible ? 0 : "110%",
-        opacity: visible ? 1 : 0,
+        y: showCta ? 0 : "110%",
+        opacity: showCta ? 1 : 0,
       }}
       transition={
         shouldReduceMotion
@@ -38,7 +62,12 @@ export function StickyMobileCTA() {
           : { duration: 0.4, ease: [0.22, 1, 0.36, 1] }
       }
     >
-      <div className="surface-card mx-auto mb-3 max-w-md overflow-hidden rounded-lg bg-white/95 shadow-lg backdrop-blur-xl">
+      <div
+        className={cn(
+          "surface-card mx-auto mb-3 max-w-md overflow-hidden rounded-lg bg-white/95 shadow-lg backdrop-blur-xl",
+          !showCta && "pointer-events-none",
+        )}
+      >
         <div className="flex min-h-14 items-center">
           <TrackedPhoneLink
             href={PHONE_HREF}

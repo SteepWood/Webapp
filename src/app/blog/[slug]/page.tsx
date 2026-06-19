@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "@/components/ui/link";
 import { notFound } from "next/navigation";
 
@@ -7,6 +6,7 @@ import { BlogReadDepthTracker } from "@/components/analytics/BlogReadDepthTracke
 import { BlogGrid } from "@/components/blog/BlogGrid";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { SectionShell } from "@/components/sections/section-shell";
+import { MediaFrame } from "@/components/ui/media-frame";
 import { Button } from "@/components/ui/button";
 import { BLOG_DEFAULT_AUTHOR } from "@/lib/business";
 import { extractHeadings } from "@/lib/blog/headings";
@@ -147,8 +147,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </SectionShell>
 
       {post.coverImageUrl ? (
-        <div className="flex w-full items-center justify-center bg-ink-100 px-container-x py-6">
-          <Image
+        <div className="bg-ink-100 px-container-x py-6">
+          <MediaFrame
             src={post.coverImageUrl}
             alt={post.coverImageAlt ?? post.title}
             width={1600}
@@ -156,7 +156,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             priority
             fetchPriority="high"
             sizes="100vw"
-            className="h-auto max-h-[70vh] w-full max-w-7xl object-contain"
+            frameClassName="mx-auto max-w-7xl"
           />
         </div>
       ) : null}

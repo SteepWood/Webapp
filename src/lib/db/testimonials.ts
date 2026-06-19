@@ -3,6 +3,7 @@ import { cache } from "react";
 import type { Prisma, Testimonial } from "@prisma/client";
 
 import { prisma } from "@/lib/db/prisma";
+import { staticFeaturedTestimonials } from "@/lib/testimonials/staticTestimonials";
 
 export type TestimonialFilter = {
   serviceSlug?: string;
@@ -71,7 +72,10 @@ async function fetchTestimonials(
 }
 
 export const getFeaturedTestimonials = cache(async (limit = 3) => {
-  return fetchTestimonials({ featured: true, limit });
+  const testimonials = await fetchTestimonials({ featured: true, limit });
+  return testimonials.length > 0
+    ? testimonials
+    : staticFeaturedTestimonials(limit);
 });
 
 export const getServiceTestimonials = cache(

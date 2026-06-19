@@ -6,11 +6,11 @@
 
 | Field | Value |
 |---|---|
-| Property URL | `https://steepwood.com.au` |
-| Verification method | DNS TXT record (preferred) |
-| TXT record added | _pending_ |
-| Verified date | _pending_ |
-| Sitemap submitted | `/sitemap.xml` |
+| Property URL | `https://steepwood.com.au` (domain property — ownership verified) |
+| Verification method | DNS TXT record |
+| TXT record added | Yes |
+| Verified date | 2026-06-16 |
+| Sitemap submitted | **Hold until post-deploy** — then submit `https://steepwood.com.au/sitemap.xml` |
 | Sitemap status | _pending_ |
 | Email reports enabled | _pending_ |
 

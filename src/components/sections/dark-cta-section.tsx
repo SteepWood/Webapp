@@ -52,6 +52,7 @@ type PageClosingCtaProps = {
   primaryLabel?: string;
   primaryHref?: string;
   phoneContext?: string;
+  className?: string;
 };
 
 export function PageClosingCta({
@@ -60,9 +61,10 @@ export function PageClosingCta({
   primaryLabel = "Get a Free Quote",
   primaryHref = "/contact/",
   phoneContext = "page-closing-cta",
+  className,
 }: PageClosingCtaProps) {
   return (
-    <DarkCtaSection>
+    <DarkCtaSection className={className}>
       <DarkCtaPanel>
         <h2 className="mb-stack-sm font-serif text-h2 text-ink-50">{title}</h2>
         <p className="mb-stack-lg text-body-lg text-ink-100/90">{description}</p>

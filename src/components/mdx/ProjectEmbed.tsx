@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "@/components/ui/link";
 
 import { getPortfolioProjectBySlug } from "@/lib/db/portfolio";
 import { getProjectHeroImage } from "@/lib/portfolio/utils";
+import { MediaCardImage } from "@/components/ui/media-card";
 
 export async function ProjectEmbed({ slug }: { slug: string }) {
   const project = await getPortfolioProjectBySlug(slug);
@@ -20,16 +20,13 @@ export async function ProjectEmbed({ slug }: { slug: string }) {
         className="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
       >
         {hero ? (
-          <div className="flex min-h-[12rem] items-center justify-center bg-ink-100 p-2">
-            <Image
-              src={hero.url}
-              alt={hero.alt}
-              width={hero.width}
-              height={hero.height}
-              sizes="(max-width: 768px) 100vw, 768px"
-              className="h-auto max-h-64 w-full object-contain"
-            />
-          </div>
+          <MediaCardImage
+            src={hero.url}
+            alt={hero.alt}
+            width={hero.width}
+            height={hero.height}
+            sizes="(max-width: 768px) 100vw, 768px"
+          />
         ) : null}
         <div className="bg-ink-50 p-5">
           <p className="mb-1 font-mono text-caption uppercase tracking-widest text-amber-600">

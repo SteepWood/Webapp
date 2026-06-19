@@ -262,6 +262,35 @@
     word-break: break-word;
   }
 
+  /* Section rhythm — half padding per section so stacked blocks share one full gap */
+  .py-section-half {
+    padding-block: calc(var(--spacing-section-y) / 2);
+  }
+
+  .pt-section-half {
+    padding-top: calc(var(--spacing-section-y) / 2);
+  }
+
+  .pb-section-half {
+    padding-bottom: calc(var(--spacing-section-y) / 2);
+  }
+
+  .pt-section-compact {
+    padding-top: clamp(1.25rem, 2.5vw, 2rem);
+  }
+
+  .py-section-compact {
+    padding-block: clamp(1.25rem, 2.5vw, 2rem);
+  }
+
+  .section-join {
+    padding-top: 0;
+  }
+
+  .section-end-flush {
+    padding-bottom: 0;
+  }
+
   /* Natural timber surfaces */
   .bg-wood-texture {
     --wood-base: var(--color-amber-500);

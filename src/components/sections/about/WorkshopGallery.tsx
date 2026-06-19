@@ -3,7 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import { SectionShell } from "@/components/sections/section-shell";
+import { SectionShell, sectionHeadingClass } from "@/components/sections/section-shell";
+import { MediaThumb } from "@/components/ui/media-card";
 import {
   Dialog,
   DialogContent,
@@ -25,10 +26,8 @@ export function WorkshopGallery() {
 
   return (
     <SectionShell className="bg-ink-100/40">
-      <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">
-        The workshop
-      </h2>
-      <p className="mb-stack-lg max-w-3xl text-body-lg text-ink-800">
+      <h2 className={sectionHeadingClass}>The workshop</h2>
+      <p className="mb-stack-md max-w-3xl text-body-lg text-ink-800">
         Every SteepWood project is designed, manufactured, and finished under
         one roof in Newcastle — machinery, hand tools, and experienced makers
         working side by side.
@@ -40,17 +39,14 @@ export function WorkshopGallery() {
             <button
               type="button"
               onClick={() => setActiveIndex(index)}
-              className="group flex w-full flex-col rounded-lg border border-ink-700/10 bg-ink-100 p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+              className="group flex w-full flex-col overflow-hidden rounded-lg border border-ink-700/10 bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
             >
-              <Image
+              <MediaThumb
                 src={photo.src}
                 alt={photo.alt}
-                width={800}
-                height={600}
                 sizes="(max-width: 768px) 100vw, 33vw"
-                className="h-auto max-h-48 w-full object-contain"
               />
-              <span className="mt-2 px-1 text-left text-caption text-ink-800">
+              <span className="px-3 py-2 text-left text-caption text-ink-800">
                 {photo.caption}
               </span>
             </button>
@@ -77,14 +73,14 @@ export function WorkshopGallery() {
           </DialogDescription>
           {activePhoto ? (
             <>
-              <div className="flex items-center justify-center bg-ink-100 p-4">
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-ink-100">
                 <Image
                   src={activePhoto.src}
                   alt={activePhoto.alt}
                   width={1600}
                   height={1200}
                   sizes="(max-width: 1024px) 100vw, 896px"
-                  className="h-auto max-h-[70vh] w-full object-contain"
+                  className="size-full object-cover"
                   priority
                 />
               </div>

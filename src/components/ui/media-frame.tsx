@@ -2,6 +2,12 @@ import Image, { type ImageProps } from "next/image";
 
 import { cn } from "@/lib/utils";
 
+/** Fixed 16:10 hero / feature frame — fills the box with object-cover. */
+export const mediaFrameAreaClass =
+  "relative aspect-[16/10] w-full overflow-hidden rounded-lg bg-ink-100";
+
+export const mediaFrameImageClass = "size-full object-cover";
+
 type MediaFrameProps = {
   src: ImageProps["src"];
   alt: string;
@@ -29,11 +35,7 @@ export function MediaFrame({
 }: MediaFrameProps) {
   return (
     <div
-      className={cn(
-        "flex w-full items-center justify-center rounded-lg bg-ink-100 p-2 sm:p-3",
-        frameClassName,
-        className,
-      )}
+      className={cn(mediaFrameAreaClass, frameClassName, className)}
     >
       <Image
         src={src}
@@ -43,10 +45,7 @@ export function MediaFrame({
         priority={priority}
         fetchPriority={fetchPriority}
         sizes={sizes}
-        className={cn(
-          "h-auto max-h-[min(70vh,720px)] w-full max-w-full object-contain",
-          imageClassName,
-        )}
+        className={cn(mediaFrameImageClass, imageClassName)}
       />
     </div>
   );

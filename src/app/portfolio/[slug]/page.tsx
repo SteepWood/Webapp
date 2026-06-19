@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "@/components/ui/link";
 import { notFound } from "next/navigation";
 
@@ -8,6 +7,7 @@ import { ProjectComparisonHero } from "@/components/portfolio/ProjectComparisonH
 import { ProjectGallery } from "@/components/portfolio/ProjectGallery";
 import { ProjectGrid } from "@/components/portfolio/ProjectGrid";
 import { SectionShell } from "@/components/sections/section-shell";
+import { MediaFrame } from "@/components/ui/media-frame";
 import { Button } from "@/components/ui/button";
 import {
   getPortfolioProjectBySlug,
@@ -172,8 +172,8 @@ export default async function ProjectDetailPage({
             height={hero?.height ?? 1000}
           />
         ) : hero ? (
-          <div className="flex w-full items-center justify-center px-container-x py-6">
-            <Image
+          <div className="px-container-x py-6">
+            <MediaFrame
               src={hero.url}
               alt={hero.alt}
               width={hero.width}
@@ -181,7 +181,7 @@ export default async function ProjectDetailPage({
               priority
               fetchPriority="high"
               sizes="100vw"
-              className="h-auto max-h-[70vh] w-full max-w-7xl object-contain"
+              frameClassName="mx-auto max-w-7xl rounded-none"
             />
           </div>
         ) : null}

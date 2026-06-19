@@ -1,4 +1,4 @@
-import { SectionShell } from "@/components/sections/section-shell";
+import { SectionShell, sectionHeadingClass } from "@/components/sections/section-shell";
 import { FOUNDING_YEAR } from "@/lib/business";
 
 const PARAGRAPHS = [
@@ -11,7 +11,7 @@ const PARAGRAPHS = [
 export function OriginStory() {
   return (
     <SectionShell className="bg-ink-50 pt-0">
-      <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">Our story</h2>
+      <h2 className={sectionHeadingClass}>Our story</h2>
       <div className="grid grid-cols-1 gap-8 text-body leading-relaxed text-ink-800 lg:grid-cols-2 lg:gap-12">
         <div className="flex flex-col gap-6">
           {PARAGRAPHS.slice(0, 2).map((paragraph) => (

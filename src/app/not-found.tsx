@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "@/components/ui/link";
 
 import { SectionShell } from "@/components/sections/section-shell";
 import { Button } from "@/components/ui/button";
+import {
+  MediaCard,
+  MediaCardImage,
+  MediaCardLink,
+  MediaCardTitle,
+} from "@/components/ui/media-card";
 import { prisma } from "@/lib/db/prisma";
 import { SERVICES } from "@/lib/services-locations/services";
 import { getProjectHeroImage } from "@/lib/portfolio/utils";
@@ -80,29 +85,22 @@ export default async function NotFoundPage() {
               const hero = getProjectHeroImage(project);
 
               return (
-                <Link
-                  key={project.id}
-                  href={`/portfolio/${project.slug}/`}
-                  className="group overflow-hidden rounded-lg border border-ink-700/10 bg-white"
-                >
-                  {hero ? (
-                    <div className="flex min-h-[10rem] items-center justify-center bg-ink-100 p-2">
-                      <Image
+                <MediaCard key={project.id}>
+                  <MediaCardLink href={`/portfolio/${project.slug}/`}>
+                    {hero ? (
+                      <MediaCardImage
                         src={hero.url}
                         alt={hero.alt}
                         width={hero.width}
                         height={hero.height}
                         sizes="(max-width: 768px) 100vw, 33vw"
-                        className="h-auto max-h-48 w-full object-contain"
                       />
+                    ) : null}
+                    <div className="p-4">
+                      <MediaCardTitle as="h3">{project.title}</MediaCardTitle>
                     </div>
-                  ) : null}
-                  <div className="p-4">
-                    <p className="font-medium text-ink-900 group-hover:text-amber-600">
-                      {project.title}
-                    </p>
-                  </div>
-                </Link>
+                  </MediaCardLink>
+                </MediaCard>
               );
             })}
           </div>
