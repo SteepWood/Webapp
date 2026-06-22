@@ -29,7 +29,8 @@ function jaccard(a: Set<string>, b: Set<string>): number {
 
 function buildComboText(serviceSlug: string, locationSlug: string): string {
   const service = SERVICES.find((entry) => entry.slug === serviceSlug)! as import("../src/lib/services-locations/types").ResolvedService;
-  const location = LOCATIONS.find((entry) => entry.slug === locationSlug)!;
+  const locationDef = LOCATIONS.find((entry) => entry.slug === locationSlug)!;
+  const location = { ...locationDef, projectCount: 0 };
   const content = getComboContent(service, location);
   const serviceContent = getServiceContent(serviceSlug);
   const locationContent = getLocationContent(locationSlug);
