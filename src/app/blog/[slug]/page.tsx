@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "@/components/ui/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
 import { BlogReadDepthTracker } from "@/components/analytics/BlogReadDepthTracker";
 import { BlogGrid } from "@/components/blog/BlogGrid";
@@ -222,7 +223,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </article>
 
           <div className="min-w-0 xl:sticky xl:top-28 xl:self-start">
-            <BlogSidebar categories={categories} tags={tags} compact />
+            <Suspense
+              fallback={
+                <div
+                  className="h-64 animate-pulse rounded-lg bg-ink-700/10"
+                  aria-hidden
+                />
+              }
+            >
+              <BlogSidebar categories={categories} tags={tags} compact />
+            </Suspense>
           </div>
         </div>
       </SectionShell>

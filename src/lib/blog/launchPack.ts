@@ -108,10 +108,11 @@ function stripLeadingH1(body: string, title: string): string {
   return lines.slice(index).join("\n").trimStart();
 }
 
-function normaliseMdxContent(content: string): string {
+export function normaliseMdxContent(content: string): string {
   let next = content;
 
-  next = next.replace(/<(\d)/g, "`<$1");
+  // Prevent MDX from treating comparison-style markup (e.g. "<1%") as JSX tags.
+  next = next.replace(/<(\d)/g, "&lt;$1");
 
   for (const [retiredSlug, replacementSlug] of Object.entries(
     RETIRED_BLOG_SLUG_MAP,
