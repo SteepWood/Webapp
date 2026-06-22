@@ -102,7 +102,7 @@ async function main() {
         tags: [{ name: "email_type", value: "quote_auto_reply_test" }],
       },
     },
-  ] as const;
+  ];
 
   const pause = (ms: number) =>
     new Promise<void>((resolve) => {
