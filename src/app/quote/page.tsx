@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { QuoteFormShell } from "@/components/forms/quote/QuoteFormShell";
+import { QuotePageIntro } from "@/components/pages/QuotePageIntro";
 import { SectionShell } from "@/components/sections/section-shell";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
@@ -29,23 +30,29 @@ export const metadata: Metadata = {
 
 export default function QuotePage() {
   return (
-    <SectionShell>
-      <div className="mx-auto max-w-3xl">
-        <header className="mb-stack-lg text-center md:text-left">
-          <p className="mb-stack-sm font-mono text-caption uppercase tracking-widest text-amber-600">
-            Free &amp; no obligation
-          </p>
-          <h1 className="mb-stack-sm font-serif text-display-2 text-ink-900">
-            Get a Free Measure &amp; Quote
-          </h1>
-          <p className="text-body-lg text-ink-800/80">
+    <>
+      <SectionShell>
+        <div className="mx-auto max-w-3xl">
+          <header className="mb-stack-lg text-center md:text-left">
+            <p className="mb-stack-sm font-mono text-caption uppercase tracking-widest text-amber-600">
+              Free &amp; no obligation
+            </p>
+            <h1 className="mb-stack-sm font-serif text-display-2 text-ink-900">
+              Get a Free Measure &amp; Quote
+            </h1>
+          <p className="mb-stack-sm max-w-xl text-body-lg text-ink-800">
             Tell us about your project in three quick steps. Most quotes are
-            returned within 5 working days of measurement.
+            returned within 5 working days of measurement. You can save progress
+            and return later — your enquiry is stored securely until you submit
+            the final step.
           </p>
-        </header>
+          </header>
 
-        <QuoteFormShell />
-      </div>
-    </SectionShell>
+          <QuoteFormShell />
+        </div>
+      </SectionShell>
+
+      <QuotePageIntro />
+    </>
   );
 }

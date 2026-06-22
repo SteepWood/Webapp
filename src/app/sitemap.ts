@@ -70,6 +70,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     sitemapEntry("/quote/", { changeFrequency: "monthly", priority: 0.9 }),
     sitemapEntry("/portfolio/", { changeFrequency: "weekly", priority: 0.8 }),
     sitemapEntry("/blog/", { changeFrequency: "weekly", priority: 0.7 }),
+    sitemapEntry("/search/", { changeFrequency: "monthly", priority: 0.4 }),
     sitemapEntry("/locations/", { changeFrequency: "weekly", priority: 0.8 }),
     sitemapEntry("/legal/privacy/", {
       changeFrequency: "yearly",

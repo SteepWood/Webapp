@@ -1,5 +1,6 @@
 import type { BlogPost } from "@prisma/client";
 
+import { FOUNDER_PERSON_ID, aioSiteUrl } from "@/lib/aio/schema";
 import { BLOG_DEFAULT_AUTHOR } from "@/lib/business";
 import { env } from "@/env";
 import { calculateReadingTime } from "@/lib/blog/readingTime";
@@ -28,10 +29,14 @@ export function blogPostingStructuredData(post: BlogPost) {
     image: absoluteImageUrl(post.coverImageUrl),
     datePublished: publishedAt.toISOString(),
     dateModified: post.updatedAt.toISOString(),
-    author: {
-      "@type": "Person",
-      name: post.authorName ?? BLOG_DEFAULT_AUTHOR,
-    },
+    author:
+      (post.authorName ?? BLOG_DEFAULT_AUTHOR) === BLOG_DEFAULT_AUTHOR
+        ? { "@id": FOUNDER_PERSON_ID }
+        : {
+            "@type": "Person",
+            name: post.authorName ?? BLOG_DEFAULT_AUTHOR,
+            url: aioSiteUrl,
+          },
     publisher: {
       "@type": "Organization",
       name: PUBLISHER_NAME,

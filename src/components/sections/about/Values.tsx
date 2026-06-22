@@ -27,6 +27,11 @@ export function Values() {
   return (
     <SectionShell>
       <h2 className={sectionHeadingClass}>Our values</h2>
+      <p className="mb-stack-lg max-w-3xl text-body leading-relaxed text-ink-800">
+        These principles guide every consultation, shop drawing, and installation
+        — whether the project is a single vanity or a whole-home joinery package
+        delivered interstate from our Newcastle workshop.
+      </p>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         {VALUES.map((value) => (
           <article

@@ -103,6 +103,36 @@ const nextConfig: NextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
+    localPatterns: [
+      {
+        pathname: "/images/**",
+        search: "",
+      },
+      {
+        pathname: "/blog/**",
+        search: "",
+      },
+      {
+        pathname: "/images/portfolio/**",
+        search: "?v=20250619",
+      },
+      {
+        pathname: "/brand/**",
+        search: "",
+      },
+      {
+        pathname: "/badges/**",
+        search: "",
+      },
+      {
+        pathname: "/og-default.jpg",
+        search: "",
+      },
+      {
+        pathname: "/og/**",
+        search: "",
+      },
+    ],
     remotePatterns: [
       {
         protocol: "https",

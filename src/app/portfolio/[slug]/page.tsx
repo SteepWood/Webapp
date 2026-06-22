@@ -205,7 +205,7 @@ export default async function ProjectDetailPage({
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-16">
           <div>
             {descriptionParagraphs.length > 0 ? (
-              <div className="prose prose-ink max-w-none space-y-4 text-body-lg text-ink-800/90">
+              <div className="prose-steepwood max-w-none">
                 {descriptionParagraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
@@ -218,7 +218,7 @@ export default async function ProjectDetailPage({
             )}
 
             {galleryImages.length > 0 ? (
-              <div className="mt-stack-xl">
+              <div className="content-follow">
                 <h2 className="mb-stack-md font-serif text-h3 text-ink-900">
                   Project gallery
                 </h2>

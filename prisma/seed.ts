@@ -4,9 +4,9 @@ import {
   portfolioGalleryImages,
   portfolioImagePath,
 } from "../src/lib/images";
-import { BLOG_DEFAULT_AUTHOR } from "../src/lib/business";
 import { LOCATIONS } from "../src/lib/services-locations/locations";
 import { SERVICES } from "../src/lib/services-locations/services";
+import { seedBlogPosts } from "./seedBlog";
 
 const prisma = new PrismaClient();
 
@@ -98,6 +98,60 @@ All wet-area edges were sealed in our Newcastle workshop before freight to the N
       "Custom floating bathroom vanity in Suffolk Park, Byron Bay — HMR construction, timber veneer, stone top. SteepWood for Tom & Ella Hartigan.",
     displayOrder: 3,
   },
+  {
+    slug: "office-fitout-canberra",
+    title: "Office Fitout — Barton",
+    clientDisplayName: "Rachel & Mark O'Connor",
+    summary:
+      "Reception desk, meeting-room joinery, and breakout storage for a Barton professional services suite — Polytec laminate, 2-pac accents, and integrated cable management.",
+    description: `Rachel and Mark O'Connor were relocating a twelve-person accounting practice to Barton and needed an office fitout that felt polished for client meetings without the lead times of a full commercial builder package.
+
+We designed a reception desk with concealed storage, a glass-fronted meeting-room wall unit, and breakout joinery with integrated charging and file drawers. Finishes combine Polytec Natural White laminate with 2-pac navy accents and brushed stainless pulls — matched to their existing furniture palette.
+
+Manufactured in our Newcastle workshop and installed across two weekends to limit downtime. Mark's brief called for lockable document storage, acoustic-friendly meeting-room shelving, and durable edges for high-traffic reception use.`,
+    locationName: "Barton, Canberra",
+    serviceSlug: "office-fitout",
+    metaTitle: "Office Fitout Barton — Rachel & Mark O'Connor",
+    metaDescription:
+      "Custom office fitout in Barton, Canberra — reception joinery, meeting-room storage, breakout cabinetry. SteepWood commercial joinery for Rachel & Mark O'Connor.",
+    displayOrder: 4,
+  },
+  {
+    slug: "home-office-wollongong",
+    title: "Home Office Joinery — Wollongong",
+    clientDisplayName: "Fiona & Greg Saunders",
+    summary:
+      "Floor-to-ceiling home office wall with integrated desk, printer housing, and display shelving for a Wollongong terrace renovation.",
+    description: `Fiona and Greg Saunders converted a spare bedroom in their Wollongong terrace into a permanent home office after both moved to hybrid work — they needed quiet storage, a proper sit-stand desk zone, and shelving that did not feel like flat-pack furniture.
+
+The wall unit combines a built-in desk with cable grommets, soft-close drawers, an enclosed printer bay with ventilation, and open shelving for books and awards. Polytec Ravine White fronts with oak-look laminate accents tie into the home's existing flooring.
+
+Measured in Wollongong, built in Newcastle, and installed in one day. Fiona's brief included file drawers with label rails, a pinboard-backed notice zone, and LED task lighting switched independently from the room lights.`,
+    locationName: "Wollongong, NSW",
+    serviceSlug: "home-office-joinery",
+    metaTitle: "Home Office Joinery Wollongong — Fiona & Greg Saunders",
+    metaDescription:
+      "Custom home office joinery in Wollongong — built-in desk, printer storage, display shelving. SteepWood for Fiona & Greg Saunders.",
+    displayOrder: 5,
+  },
+  {
+    slug: "laundry-cabinets-central-coast",
+    title: "Laundry Cabinetry — Erina",
+    clientDisplayName: "Michelle & Andrew Park",
+    summary:
+      "Full-height laundry cabinetry with broom cupboard, folding bench, and appliance housing for an Erina family home.",
+    description: `Michelle and Andrew Park were reconfiguring a tired laundry in their Erina home on the Central Coast — the space needed better storage for cleaning supplies, a proper folding surface, and housing for washer and dryer without visible plumbing clutter.
+
+We built full-height HMR cabinetry with a pull-out broom cupboard, overhead drying-line storage, a stone-topped folding bench, and integrated appliance cavities with access panels for maintenance. Polytec Classic White doors with satin chrome handles keep the room bright and easy to wipe down.
+
+Delivered flat-packed from our Newcastle workshop and installed in one day, co-ordinated with their plumber's relocation of trough and taps. Michelle's brief included deep drawers for pet supplies, a concealed ironing board niche, and ventilation gaps behind appliances.`,
+    locationName: "Erina, Central Coast",
+    serviceSlug: "laundry-cabinets",
+    metaTitle: "Laundry Cabinetry Erina — Michelle & Andrew Park",
+    metaDescription:
+      "Custom laundry cabinetry in Erina, Central Coast — full-height storage, folding bench, appliance housing. SteepWood for Michelle & Andrew Park.",
+    displayOrder: 6,
+  },
 ] as const;
 
 const SAMPLE_TESTIMONIALS = [
@@ -130,6 +184,36 @@ const SAMPLE_TESTIMONIALS = [
     locationSlug: "byron-bay",
     source: "Google",
     displayOrder: 3,
+  },
+  {
+    authorName: "Rachel & Mark O'Connor",
+    authorLocation: "Barton, ACT",
+    quote:
+      "Our Barton office fitout was delivered on schedule across two weekends — reception desk, meeting-room joinery, and breakout storage all feel bespoke. SteepWood co-ordinated cleanly with our IT contractor.",
+    serviceSlug: "office-fitout",
+    locationSlug: "canberra",
+    source: "Google",
+    displayOrder: 4,
+  },
+  {
+    authorName: "Fiona & Greg Saunders",
+    authorLocation: "Wollongong, NSW",
+    quote:
+      "The home office wall transformed our spare room into a proper workspace — integrated desk, printer bay, and shelving that looks built-in, not bolted on. Install was neat and the fixed quote held.",
+    serviceSlug: "home-office-joinery",
+    locationSlug: "wollongong",
+    source: "Google",
+    displayOrder: 5,
+  },
+  {
+    authorName: "Michelle & Andrew Park",
+    authorLocation: "Erina, NSW",
+    quote:
+      "Our Erina laundry finally works as a room, not a cupboard. Full-height storage, folding bench, and appliance housing were finished beautifully — and SteepWood co-ordinated with our plumber on the same day.",
+    serviceSlug: "laundry-cabinets",
+    locationSlug: "central-coast",
+    source: "Google",
+    displayOrder: 6,
   },
 ] as const;
 
@@ -329,17 +413,6 @@ async function seedTestimonials() {
   }
 }
 
-async function seedBlogAuthors() {
-  const result = await prisma.blogPost.updateMany({
-    where: { isPublished: true },
-    data: { authorName: BLOG_DEFAULT_AUTHOR },
-  });
-
-  if (result.count > 0) {
-    console.log(`  updated ${result.count} published blog post author(s)`);
-  }
-}
-
 async function main() {
   console.log("Seeding services…");
   await seedServices();
@@ -359,8 +432,8 @@ async function main() {
   console.log("Seeding portfolio testimonials…");
   await seedTestimonials();
 
-  console.log("Setting blog post authors…");
-  await seedBlogAuthors();
+  console.log("Seeding launch-pack blog posts…");
+  await seedBlogPosts(prisma);
 
   const counts = await Promise.all([
     prisma.service.count(),

@@ -7,12 +7,13 @@ import {
   MediaCard,
   MediaCardImage,
 } from "@/components/ui/media-card";
-import { SectionShell } from "@/components/sections/section-shell";
+import { SectionShell, contentSubheadingClass } from "@/components/sections/section-shell";
 import { ServicePillarFAQ } from "@/components/pages/ServicePillarFAQ";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
 import { PageClosingCta } from "@/components/sections/dark-cta-section";
 import { Button } from "@/components/ui/button";
 import type { ComboPageContent } from "@/lib/services-locations/comboContent";
+import { rotateForLocation } from "@/lib/services-locations/comboContent";
 import { getLocationContent } from "@/lib/services-locations/locationContent";
 import { getServiceContent } from "@/lib/services-locations/serviceContent";
 import {
@@ -77,6 +78,12 @@ export function ServiceLocationPage({
   const speakableSchema = speakableStructuredData(pageUrl);
   const comboFacts = getComboFacts(service.slug, location.slug);
   const costFaq = serviceContent?.faqs[0];
+  const visibleIncludes = serviceContent
+    ? rotateForLocation(serviceContent.includes, location.slug, 4)
+    : [];
+  const visibleProcessSteps = serviceContent
+    ? rotateForLocation(serviceContent.processSteps, location.slug, 3)
+    : [];
 
   return (
     <>
@@ -166,7 +173,7 @@ export function ServiceLocationPage({
               Why SteepWood for {service.shortTitle.toLowerCase()} in{" "}
               {location.name}
             </h2>
-            <div className="space-y-4 text-body leading-relaxed text-ink-800">
+            <div className="prose-steepwood max-w-none text-body leading-relaxed text-ink-800">
               {content.localContextParagraphs.map((paragraph) => (
                 <p key={paragraph.slice(0, 48)}>{paragraph}</p>
               ))}
@@ -193,20 +200,24 @@ export function ServiceLocationPage({
               {service.shortTitle} in {location.name} — what&apos;s included
             </h2>
             <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {serviceContent.includes.map((item, index) => (
+              {visibleIncludes.map((item, index) => (
                 <li key={item.title}>
                   <MediaCard className="h-full">
                     <MediaCardImage
-                      src={getServiceIncludesImage(service.slug, index)}
+                      src={getServiceIncludesImage(
+                        service.slug,
+                        serviceContent.includes.indexOf(item),
+                      )}
                       alt={`${item.title} — ${service.shortTitle} in ${location.name}`}
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                     <div className="flex flex-1 flex-col bg-white p-6">
-                      <h3 className="mb-2 font-serif text-h4 text-ink-900">
+                      <h3 className={contentSubheadingClass}>
                         {item.title}
                       </h3>
                       <p className="text-body-sm leading-relaxed text-ink-800/80">
-                        {item.description}
+                        {item.description} Typical for {location.name}{" "}
+                        {service.shortTitle.toLowerCase()} projects.
                       </p>
                     </div>
                   </MediaCard>
@@ -220,8 +231,11 @@ export function ServiceLocationPage({
               Materials, finishes, and hardware
             </h2>
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
-              <div className="space-y-4 text-body leading-relaxed text-ink-800">
-                {serviceContent.materials.map((paragraph) => (
+              <div className="prose-steepwood max-w-none text-body leading-relaxed text-ink-800">
+                {(content.localizedMaterials.length > 0
+                  ? content.localizedMaterials
+                  : serviceContent.materials
+                ).map((paragraph) => (
                   <p key={paragraph.slice(0, 40)}>{paragraph}</p>
                 ))}
               </div>
@@ -246,10 +260,10 @@ export function ServiceLocationPage({
             </SectionShell>
           ) : null}
 
-          {serviceContent.bodySections.slice(0, 3).map((section, index) => {
+          {content.locationFeatureSections.map((section, index) => {
             const sectionImage = getServiceSectionImage(service.slug, index);
             const copy = (
-              <div className="space-y-4 text-body leading-relaxed text-ink-800">
+              <div className="prose-steepwood max-w-none text-body leading-relaxed text-ink-800">
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph.slice(0, 40)}>{paragraph}</p>
                 ))}
@@ -262,7 +276,7 @@ export function ServiceLocationPage({
                 className={index % 2 === 1 ? "bg-ink-50" : undefined}
               >
                 <h2 className="mb-stack-md max-w-3xl font-serif text-h2 text-ink-900">
-                  {section.title} for {location.name} homes
+                  {section.title}
                 </h2>
                 <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
                   {index % 2 === 0 ? (
@@ -337,7 +351,7 @@ export function ServiceLocationPage({
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="flex flex-1 flex-col bg-white p-6">
-                  <h3 className="mb-2 font-serif text-h4 text-ink-900">
+                  <h3 className={contentSubheadingClass}>
                     {card.title}
                   </h3>
                   <p className="text-body-sm leading-relaxed text-ink-800/80">
@@ -356,10 +370,13 @@ export function ServiceLocationPage({
             Our {service.shortTitle.toLowerCase()} process in {location.name}
           </h2>
           <ol className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
-            {serviceContent.processSteps.map((step, index) => (
+            {visibleProcessSteps.map((step, index) => (
               <li key={step.title} className="flex flex-col gap-3">
                 <MediaFrame
-                  src={getServiceProcessImage(service.slug, index)}
+                  src={getServiceProcessImage(
+                    service.slug,
+                    serviceContent.processSteps.indexOf(step),
+                  )}
                   alt={`${step.title} — ${service.shortTitle} in ${location.name}`}
                   sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
                   frameClassName="mb-1"
@@ -369,7 +386,8 @@ export function ServiceLocationPage({
                 </span>
                 <h3 className="font-serif text-h4 text-ink-900">{step.title}</h3>
                 <p className="text-body-sm leading-relaxed text-ink-800/80">
-                  {step.description}
+                  {step.description} For {location.name} projects, this step is
+                  scheduled within our {content.leadTime} programme.
                 </p>
               </li>
             ))}

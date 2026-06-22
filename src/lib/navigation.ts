@@ -31,6 +31,10 @@ export const PHONE_SCHEMA = "+61-468-387-676";
 /** Public workshop location — street address withheld until published. */
 export const WORKSHOP_LOCATION = "Newcastle, NSW";
 
+/** Google Business Profile — leave-a-review link (verified GBP). */
+export const GOOGLE_REVIEW_URL =
+  "https://g.page/r/CbgiJ5KWkJ9vEAE/review";
+
 export const CONTACT_HOURS_TABLE = [
   { days: "Monday – Friday", hours: "7:00am – 5:00pm" },
   { days: "Saturday", hours: "9:00am – 1:00pm (by appointment)" },

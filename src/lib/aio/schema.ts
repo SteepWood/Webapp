@@ -1,8 +1,30 @@
 import { env } from "@/env";
+import { FOUNDER_JOB_TITLE, FOUNDER_NAME } from "@/lib/business";
 import { PHASE2_AREA_SERVED } from "@/lib/seo/areaServed";
 import type { ResolvedLocation, ResolvedService } from "@/lib/services-locations/types";
 
 const SITE_URL = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+
+export const FOUNDER_PERSON_ID = `${SITE_URL}/#founder`;
+
+const FOUNDER_KNOWS_ABOUT = [
+  "Custom joinery",
+  "Cabinet making",
+  "Commercial fitout",
+  "Australian timber species",
+] as const;
+
+export function founderPersonStructuredData() {
+  return {
+    "@type": "Person",
+    "@id": FOUNDER_PERSON_ID,
+    name: FOUNDER_NAME,
+    jobTitle: FOUNDER_JOB_TITLE,
+    worksFor: { "@id": `${SITE_URL}/#organization` },
+    knowsAbout: [...FOUNDER_KNOWS_ABOUT],
+    url: `${SITE_URL}/about/`,
+  };
+}
 
 type ProcessStep = {
   title: string;

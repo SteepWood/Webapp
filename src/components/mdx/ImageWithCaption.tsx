@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { MediaFrame } from "@/components/ui/media-frame";
 
 export function ImageWithCaption({
   src,
@@ -14,18 +14,51 @@ export function ImageWithCaption({
   height?: number;
 }) {
   return (
-    <figure className="my-8 not-prose">
-      <Image
+    <figure className="not-prose my-stack-lg">
+      <MediaFrame
         src={src}
         alt={alt}
         width={width}
         height={height}
-        sizes="(max-width: 768px) 100vw, 768px"
-        className="h-auto w-full rounded-lg border border-ink-700/10"
+        sizes="(max-width: 768px) 100vw, 720px"
+        frameClassName="rounded-lg"
       />
       {caption ? (
-        <figcaption className="mt-3 text-center text-body-sm text-ink-800/70">
+        <figcaption className="mt-3 text-center text-body-sm text-ink-800/65">
           {caption}
+        </figcaption>
+      ) : null}
+    </figure>
+  );
+}
+
+/** Default markdown image handler — styled like editorial figures. */
+export function MdxImage({
+  src,
+  alt,
+  title,
+}: {
+  src?: string;
+  alt?: string;
+  title?: string;
+}) {
+  if (!src) {
+    return null;
+  }
+
+  return (
+    <figure className="not-prose my-stack-lg">
+      <MediaFrame
+        src={src}
+        alt={alt ?? ""}
+        width={1200}
+        height={800}
+        sizes="(max-width: 768px) 100vw, 720px"
+        frameClassName="rounded-lg"
+      />
+      {title ? (
+        <figcaption className="mt-3 text-center text-body-sm text-ink-800/65">
+          {title}
         </figcaption>
       ) : null}
     </figure>

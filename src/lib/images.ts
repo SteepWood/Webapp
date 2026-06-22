@@ -1,6 +1,32 @@
 /** Site-wide workshop hero — replaces legacy hero-workshop.svg */
 export const WORKSHOP_HERO_IMAGE = "/images/workshop-hero-main.jpg";
 
+/** Blog index (`/blog/`) — distinct from homepage workshop hero */
+export const BLOG_INDEX_HERO_IMAGE = "/images/blog/blog-index-hero.jpg";
+
+export const LAUNCH_PACK_BLOG_SLUGS = [
+  "custom-kitchen-cost-nsw-2026",
+  "flat-pack-vs-custom-kitchen-australia",
+  "2pac-laminate-timber-veneer-kitchen-finishes-nsw",
+  "walk-in-robe-built-in-wardrobe-cost-guide-nsw",
+  "questions-to-ask-custom-joiner-australia",
+  "benchtop-guide-engineered-stone-ban-nsw",
+] as const;
+
+export type BlogInlineImageVariant = "inline-01" | "inline-02" | "inline-wide";
+
+export function blogPostCoverPath(slug: string) {
+  return `/blog/${slug}/hero.jpg`;
+}
+
+export function blogPostOgPath(slug: string) {
+  return `/blog/${slug}/og.jpg`;
+}
+
+export function blogPostInlinePath(slug: string, variant: BlogInlineImageVariant) {
+  return `/blog/${slug}/${variant}.jpg`;
+}
+
 /** Materials & finishes section on service pillar pages */
 export const MATERIALS_WORKSHOP_SAMPLES_IMAGE =
   "/images/materials-workshop-samples.jpg";
@@ -40,8 +66,11 @@ export const WORKSHOP_GALLERY_IMAGES = [
   },
 ] as const;
 
+/** Bump when portfolio JPGs in public/images/portfolio/ are replaced. */
+const PORTFOLIO_IMAGE_CACHE_VERSION = "20250619";
+
 export function portfolioImagePath(slug: string, variant: string) {
-  return `/images/portfolio/${slug}/${variant}.jpg`;
+  return `/images/portfolio/${slug}/${variant}.jpg?v=${PORTFOLIO_IMAGE_CACHE_VERSION}`;
 }
 
 export function portfolioGalleryImages(

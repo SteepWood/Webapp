@@ -71,6 +71,7 @@ type MediaCardImageProps = {
   sizes: string;
   priority?: boolean;
   loading?: "lazy" | "eager";
+  areaClassName?: string;
 };
 
 export function MediaCardImage({
@@ -81,9 +82,10 @@ export function MediaCardImage({
   sizes,
   priority,
   loading,
+  areaClassName,
 }: MediaCardImageProps) {
   return (
-    <div className={mediaCardImageAreaClass}>
+    <div className={cn(mediaCardImageAreaClass, areaClassName)}>
       <Image
         src={src}
         alt={alt}

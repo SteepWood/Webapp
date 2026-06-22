@@ -19,6 +19,8 @@
     "db:seed": "dotenv -e .env.local -- tsx prisma/seed.ts",
     "db:verify": "dotenv -e .env.local -- tsx scripts/verify-db.ts",
     "resend:verify": "dotenv -e .env.local -- tsx scripts/verify-resend.ts",
+    "email:dns-check": "tsx scripts/check-email-dns.ts",
+    "email:test-forms": "dotenv -e .env.local -- tsx scripts/test-form-emails.ts",
     "supabase:types": "supabase gen types typescript --project-id uqumesylnwumwxgoukpn --schema public > src/lib/supabase/database.types.ts",
     "audit:content": "tsx scripts/audit-content.ts",
     "smoke": "tsx scripts/smoke-test.ts",
@@ -95,7 +97,8 @@
     "supabase": "^2.105.0",
     "tailwindcss": "^4.1.8",
     "tsx": "^4.22.4",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "yaml": "^2.9.0"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

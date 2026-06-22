@@ -9,7 +9,7 @@ import {
   MediaCardImage,
   MediaCardLink,
 } from "@/components/ui/media-card";
-import { SectionShell } from "@/components/sections/section-shell";
+import { SectionShell, contentSubheadingClass } from "@/components/sections/section-shell";
 import { ServicePillarFAQ } from "@/components/pages/ServicePillarFAQ";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
 import { PageClosingCta } from "@/components/sections/dark-cta-section";
@@ -175,7 +175,7 @@ export function ServicePillarPage({
                 .
               </p>
             ) : null}
-            <div className="prose-steepwood space-y-4 text-body leading-relaxed text-ink-800">
+            <div className="prose-steepwood max-w-none text-body leading-relaxed text-ink-800">
               {content.whatIsParagraphs.map((paragraph) => (
                 <p key={paragraph.slice(0, 40)}>{paragraph}</p>
               ))}
@@ -203,7 +203,7 @@ export function ServicePillarPage({
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 <div className="flex flex-1 flex-col bg-white p-6">
-                  <h3 className="mb-2 font-serif text-h4 text-ink-900">
+                  <h3 className={contentSubheadingClass}>
                     {item.title}
                   </h3>
                   <p className="text-body-sm leading-relaxed text-ink-800/80">
@@ -221,7 +221,7 @@ export function ServicePillarPage({
           Materials &amp; finishes
         </h2>
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
-          <div className="space-y-4 text-body leading-relaxed text-ink-800">
+          <div className="prose-steepwood max-w-none text-body leading-relaxed text-ink-800">
             {materialsPrefix ? <AnswerFirst>{materialsPrefix}</AnswerFirst> : null}
             {content.materials.map((paragraph) => (
               <p key={paragraph.slice(0, 40)}>{paragraph}</p>
@@ -239,7 +239,7 @@ export function ServicePillarPage({
       {content.bodySections.map((section, index) => {
         const sectionImage = getServiceSectionImage(service.slug, index);
         const copy = (
-          <div className="space-y-4 text-body leading-relaxed text-ink-800">
+          <div className="prose-steepwood max-w-none text-body leading-relaxed text-ink-800">
             {section.paragraphs.map((paragraph) => (
               <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}
@@ -334,7 +334,7 @@ export function ServicePillarPage({
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                   <div className="flex flex-1 flex-col bg-white p-5">
-                    <h3 className="mb-1 font-serif text-h4 text-ink-900">
+                    <h3 className={contentSubheadingClass}>
                       {location.name}
                     </h3>
                     <p className="text-body-sm text-ink-800/70">

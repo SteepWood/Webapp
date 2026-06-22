@@ -10,27 +10,95 @@
 | Verification method | DNS TXT record |
 | TXT record added | Yes |
 | Verified date | 2026-06-16 |
-| Sitemap submitted | **Hold until post-deploy** — then submit `https://steepwood.com.au/sitemap.xml` |
-| Sitemap status | _pending_ |
+| Sitemap submitted | Yes — `https://steepwood.com.au/sitemap.xml` (2026-06-19) |
+| Sitemap status | Success — 202 pages discovered |
 | Email reports enabled | _pending_ |
 
 ## Bing Webmaster Tools
 
 | Field | Value |
 |---|---|
-| Import from GSC | _pending_ |
-| Verified date | _pending_ |
-| Sitemap submitted | `/sitemap.xml` |
-| Sitemap status | _pending_ |
+| Import from GSC | Yes |
+| Verified date | 2026-06-19 |
+| Sitemap submitted | `https://steepwood.com.au/sitemap.xml` |
+| Sitemap status | Success — 202 pages discovered |
 
 ## GA4
 
 | Field | Value |
 |---|---|
-| Property name | _pending_ |
-| Measurement ID | `NEXT_PUBLIC_GA4_ID` in Vercel |
-| Key events configured | `quote_submit`, `contact_submit` |
-| Verified in realtime | _pending_ |
+| Property name | SteepWood (web stream) |
+| Measurement ID | `G-DJCTNBQ2E3` |
+| Key events configured | `quote_submit`, `contact_submit` — marked as key events |
+| Verified in realtime | Yes — 2026-06-19 |
+| Cookie consent tested | Accept → GA4 loads; decline → no script (per privacy policy) |
+
+## Resend (transactional email)
+
+| Field | Value |
+|---|---|
+| Domain | steepwood.com.au |
+| Domain verified | Yes (Resend API — 2026-06-22) |
+| From address | `hello@steepwood.com.au` |
+| Notify inbox | `hello@steepwood.com.au` |
+| Vercel Production env | `RESEND_API_KEY`, `RESEND_FROM_EMAIL`, `QUOTE_NOTIFY_EMAIL` — set |
+| Form email E2E tested | **Yes — 2026-06-22** — hello@ notifications + sukhveer@ auto-reply confirmed |
+
+### DNS status (2026-06-22)
+
+| Record | Status | Value / notes |
+|---|---|---|
+| MX (inbound) | Pass | `steepwood-com-au.mail.protection.outlook.com` — Microsoft 365 receives hello@ / sukhveer@ |
+| SPF — root | Pass | `v=spf1 include:secureserver.net -all` — workspace inboxes |
+| SPF — `send` subdomain | Pass | `v=spf1 include:amazonses.com ~all` — Resend outbound |
+| DKIM — `resend._domainkey` | Pass | Resend signing key present |
+| DMARC — `_dmarc` | **Pending** | Add TXT: `v=DMARC1; p=quarantine; rua=mailto:dmarc@steepwood.com.au;` |
+
+Run locally: `pnpm email:dns-check`
+
+### Form email behaviour
+
+| Form | Team notification | Customer auto-reply |
+|---|---|---|
+| **Quote** (`/quote/`) | → `hello@steepwood.com.au` | → submitter email |
+| **Contact** (`/contact/`) | → `hello@steepwood.com.au` | _none (by design)_ |
+
+Test send bundle: `pnpm email:test-forms --to=you@steepwood.com.au`
+
+### Manual browser test (production)
+
+1. **Contact** — [steepwood.com.au/contact/](https://steepwood.com.au/contact/) → submit → check `hello@` for notification (subject starts `Contact enquiry —`).
+2. **Quote** — [steepwood.com.au/quote/](https://steepwood.com.au/quote/) → complete all 3 steps → check `hello@` for notification **and** submitter inbox for auto-reply (subject `Your SteepWood quote request — ref …`).
+3. Confirm in [Resend → Logs](https://resend.com/emails) — status should be **Delivered** (not Bounced).
+4. If mail lands in spam, add DMARC (above) and wait 24h for DNS propagation.
+
+## Google Business Profile
+
+| Field | Value |
+|---|---|
+| Location reference | `om-6582854789951435152` |
+| Status | **Verified** (confirmed 2026-06-22) |
+| Claimed date | 2026-06-19 |
+| Verified date | 2026-06-22 |
+| Public Maps URL | _regional map on contact page — review link wired_ |
+| Google review URL | https://g.page/r/CbgiJ5KWkJ9vEAE/review |
+| NAP matches website | Yes — confirmed by owner |
+
+### NAP to match exactly in GBP
+
+| Field | Website canonical |
+|---|---|
+| Business name | SteepWood |
+| Phone | 0468 387 676 |
+| Website | https://steepwood.com.au |
+| Location | Newcastle, NSW (service-area or workshop — match what you submitted) |
+| Hours | Mon–Fri 7am–5pm · Sat 9am–1pm (by appointment) · Sun closed |
+
+### After verification is approved
+
+- [x] GBP verified (2026-06-22)
+- [x] Google review link wired (contact page + footer)
+- [ ] Request reviews from recent clients (feeds local pack + TrustBar)
 
 ## Notes
 

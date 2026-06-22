@@ -4,14 +4,17 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { IdentityBlock } from "@/components/aio/IdentityBlock";
 import { TrackedPhoneLink } from "@/components/analytics/TrackedPhoneLink";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { SectionShell } from "@/components/sections/section-shell";
+import Link from "@/components/ui/link";
+import { SectionShell, contentSubheadingClass } from "@/components/sections/section-shell";
 import {
   CONTACT_HOURS_TABLE,
   PHONE_DISPLAY,
   PHONE_HREF,
   PHONE_HOURS_LABEL,
   WORKSHOP_LOCATION,
+  GOOGLE_REVIEW_URL,
 } from "@/lib/navigation";
+import { LOCATIONS } from "@/lib/services-locations/locations";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
 export const revalidate = 86400;
@@ -67,10 +70,95 @@ export default function ContactPage() {
       </SectionShell>
 
       <SectionShell className="bg-ink-50 pt-0">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
+              What happens when you contact us
+            </h2>
+            <div className="prose-steepwood space-y-stack-md text-body leading-relaxed text-ink-800">
+              <p>
+                Every enquiry is read by our Newcastle studio team — not an
+                overseas call centre. We respond within one business day, usually
+                sooner for phone messages left during workshop hours.
+              </p>
+              <p>
+                If your message is about a new kitchen, wardrobe, vanity, or
+                commercial fitout, we will direct you to our{" "}
+                <Link href="/quote/">quote form</Link> so we can capture room
+                dimensions, scope, and timeline in one structured request. That
+                helps us return accurate fixed-price pricing faster.
+              </p>
+              <p>
+                For press, supplier, careers, or general questions, use the
+                contact form on this page. Include your suburb or city so we can
+                confirm service availability across our sixteen-city coverage
+                area before we book a consultation.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
+              Consultation options
+            </h2>
+            <ul className="space-y-stack-md text-body leading-relaxed text-ink-800">
+              <li>
+                <h3 className={contentSubheadingClass}>In-home measure</h3>
+                <p className="text-body-sm text-ink-800/80">
+                  Available across Newcastle, the Hunter, Sydney, Canberra, and
+                  regional NSW on qualifying projects. We bring material samples
+                  and discuss layout on site.
+                </p>
+              </li>
+              <li>
+                <h3 className={contentSubheadingClass}>Video consultation</h3>
+                <p className="text-body-sm text-ink-800/80">
+                  Ideal for interstate clients in Melbourne, Brisbane, Perth,
+                  Adelaide, and other serviced cities. We review plans and photos
+                  together before scheduling freight and install.
+                </p>
+              </li>
+              <li>
+                <h3 className={contentSubheadingClass}>Workshop visit</h3>
+                <p className="text-body-sm text-ink-800/80">
+                  By appointment only. See finished doors, benchtop samples, and
+                  hardware in person before you commit to a specification.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </SectionShell>
+
+      <SectionShell>
+        <div className="prose-steepwood max-w-3xl text-body leading-relaxed text-ink-800">
+          <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
+            Where we work
+          </h2>
+          <p>
+            SteepWood is headquartered in Newcastle and services sixteen
+            Australian cities: {LOCATIONS.map((location) => location.name).join(", ")}.
+            Hunter and Central Coast clients benefit from local install teams;
+            Sydney, Canberra, and Wollongong projects are serviced on regular
+            routes from the workshop; interstate work is quoted with freight,
+            install partners, and lead times confirmed before contract.
+          </p>
+          <p>
+            When you call or write, include your suburb so we can confirm travel,
+            measure availability, and realistic programme dates before we book
+            a consultation. For full project quotes with dimensions and scope,
+            use the dedicated{" "}
+            <Link href="/quote/">quote form</Link> so your enquiry reaches the
+            right designer immediately.
+          </p>
+        </div>
+      </SectionShell>
+
+      <SectionShell className="bg-ink-50 pt-0">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           <article className="rounded-lg border border-ink-700/10 bg-ink-50 p-6">
             <Phone className="mb-4 size-8 text-amber-600" aria-hidden />
-            <h2 className="mb-2 font-serif text-h4 text-ink-900">Phone</h2>
+            <h2 className={contentSubheadingClass}>Phone</h2>
             <TrackedPhoneLink
               href={PHONE_HREF}
               context="contact-page"
@@ -85,7 +173,7 @@ export default function ContactPage() {
 
           <article className="rounded-lg border border-ink-700/10 bg-ink-50 p-6">
             <Mail className="mb-4 size-8 text-amber-600" aria-hidden />
-            <h2 className="mb-2 font-serif text-h4 text-ink-900">Email</h2>
+            <h2 className={contentSubheadingClass}>Email</h2>
             <a
               href="mailto:hello@steepwood.com.au"
               className="text-lg font-medium text-ink-900 transition-colors hover:text-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
@@ -96,7 +184,7 @@ export default function ContactPage() {
 
           <article className="rounded-lg border border-ink-700/10 bg-ink-50 p-6">
             <MapPin className="mb-4 size-8 text-amber-600" aria-hidden />
-            <h2 className="mb-2 font-serif text-h4 text-ink-900">
+            <h2 className={contentSubheadingClass}>
               Workshop visit
             </h2>
             <p className="text-body-sm text-ink-800/80">{WORKSHOP_ADDRESS}</p>
@@ -113,6 +201,39 @@ export default function ContactPage() {
         </div>
       </SectionShell>
 
+      <SectionShell>
+        <div className="prose-steepwood max-w-3xl text-body leading-relaxed text-ink-800">
+          <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
+            Response times and after-care
+          </h2>
+          <p>
+            Phone messages and emails received during workshop hours are typically
+            answered the same business day. Enquiries sent after hours or on
+            Sunday are queued for Monday morning. Urgent site issues for existing
+            clients should call {PHONE_DISPLAY} and leave a detailed message with
+            your contract reference.
+          </p>
+          <p>
+            After installation, care instructions and warranty documentation are
+            emailed to you and stored against your project file. For adjustment
+            visits within the warranty period, contact us with photos so we can
+            schedule a revisit with the correct parts where needed.
+          </p>
+          <p>
+            Media and partnership enquiries should include your publication name,
+            audience, and deadline. Supplier samples can be couriered to our
+            Newcastle workshop by prior arrangement — include SDS sheets where
+            applicable for new coating or board products. Careers enquiries
+            should include your trade qualification and availability for
+            Newcastle-based workshop or install roles. We reply to all careers
+            submissions within five business days when a suitable role is open.
+            Privacy-related requests should reference our privacy policy and
+            include enough detail for us to locate your records. We never
+            share contact details with third-party marketers.
+          </p>
+        </div>
+      </SectionShell>
+
       <SectionShell className="pt-0">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
@@ -122,13 +243,7 @@ export default function ContactPage() {
             <p className="mb-stack-lg text-body text-ink-800/80">
               For general enquiries, press, supplier, or careers contact — use
               the form below. For project quotes, visit our{" "}
-              <a
-                href="/quote/"
-                className="text-amber-600 underline-offset-4 hover:underline"
-              >
-                quote page
-              </a>
-              .
+              <Link href="/quote/">quote page</Link>.
             </p>
             <ContactForm />
           </div>
@@ -178,7 +293,24 @@ export default function ContactPage() {
             </div>
 
             <p className="text-body-sm text-ink-800/70">
-              Service area: 16 cities across NSW, ACT, QLD, VIC, SA, and WA.
+              Service area: {LOCATIONS.map((location) => location.name).join(", ")}.
+            </p>
+            <p className="text-body-sm leading-relaxed text-ink-800/70">
+              Interstate projects are quoted with freight, install partners, and
+              lead times confirmed upfront. Newcastle and Hunter clients receive
+              priority scheduling for in-home measures because our workshop and
+              install teams are based locally.
+            </p>
+            <p className="text-body-sm text-ink-800/70">
+              Past client?{" "}
+              <a
+                href={GOOGLE_REVIEW_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-amber-700 underline-offset-2 hover:underline"
+              >
+                Leave a Google review
+              </a>
             </p>
           </div>
         </div>

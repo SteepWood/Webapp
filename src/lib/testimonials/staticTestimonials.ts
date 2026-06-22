@@ -36,6 +36,39 @@ const FEATURED_TESTIMONIAL_SEEDS = [
     source: "Google",
     displayOrder: 3,
   },
+  {
+    id: "00000000-0000-4000-8000-000000000104",
+    authorName: "Rachel & Mark O'Connor",
+    authorLocation: "Barton, ACT",
+    quote:
+      "Our Barton office fitout was delivered on schedule across two weekends — reception desk, meeting-room joinery, and breakout storage all feel bespoke. SteepWood co-ordinated cleanly with our IT contractor.",
+    serviceSlug: "office-fitout",
+    locationSlug: "canberra",
+    source: "Google",
+    displayOrder: 4,
+  },
+  {
+    id: "00000000-0000-4000-8000-000000000105",
+    authorName: "Fiona & Greg Saunders",
+    authorLocation: "Wollongong, NSW",
+    quote:
+      "The home office wall transformed our spare room into a proper workspace — integrated desk, printer bay, and shelving that looks built-in, not bolted on. Install was neat and the fixed quote held.",
+    serviceSlug: "home-office-joinery",
+    locationSlug: "wollongong",
+    source: "Google",
+    displayOrder: 5,
+  },
+  {
+    id: "00000000-0000-4000-8000-000000000106",
+    authorName: "Michelle & Andrew Park",
+    authorLocation: "Erina, NSW",
+    quote:
+      "Our Erina laundry finally works as a room, not a cupboard. Full-height storage, folding bench, and appliance housing were finished beautifully — and SteepWood co-ordinated with our plumber on the same day.",
+    serviceSlug: "laundry-cabinets",
+    locationSlug: "central-coast",
+    source: "Google",
+    displayOrder: 6,
+  },
 ] as const;
 
 /** Static featured testimonials for homepage when the database is empty or unavailable. */

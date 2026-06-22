@@ -14,7 +14,7 @@ export function MarkdownPreview({ content }: MarkdownPreviewProps) {
   }
 
   return (
-    <div className="prose prose-ink max-w-none text-ink-900">
+    <div className="prose-steepwood max-w-none text-ink-900">
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   );

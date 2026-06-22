@@ -1,6 +1,7 @@
 import Link from "@/components/ui/link";
 
 import { Button } from "@/components/ui/button";
+import { contentSubheadingClass } from "@/components/sections/section-shell";
 import { SERVICES } from "@/lib/services-locations/services";
 
 export function ServiceCTA({ service }: { service: string }) {
@@ -15,7 +16,7 @@ export function ServiceCTA({ service }: { service: string }) {
       <p className="mb-1 font-mono text-caption uppercase tracking-widest text-amber-700">
         SteepWood service
       </p>
-      <h3 className="mb-2 font-serif text-h4 text-ink-900">{matched.name}</h3>
+      <h3 className={contentSubheadingClass}>{matched.name}</h3>
       <p className="mb-4 text-body text-ink-800/80">{matched.shortDescription}</p>
       <Button asChild>
         <Link href={`/${matched.slug}/`}>Explore {matched.shortTitle}</Link>

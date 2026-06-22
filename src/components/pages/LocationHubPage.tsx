@@ -5,7 +5,7 @@ import { FactsBlock } from "@/components/aio/FactsBlock";
 import { IdentityBlock } from "@/components/aio/IdentityBlock";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { MediaFrame } from "@/components/ui/media-frame";
-import { SectionShell } from "@/components/sections/section-shell";
+import { SectionShell, contentSubheadingClass } from "@/components/sections/section-shell";
 import { ServicePillarFAQ } from "@/components/pages/ServicePillarFAQ";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
 import { PageClosingCta } from "@/components/sections/dark-cta-section";
@@ -178,7 +178,7 @@ export function LocationHubPage({
       />
 
       <SectionShell>
-        <div className="max-w-3xl space-y-4 text-body leading-relaxed text-ink-800">
+        <div className="prose-steepwood max-w-3xl text-body leading-relaxed text-ink-800">
           {introPrefix ? <AnswerFirst>{introPrefix}</AnswerFirst> : null}
           {content.introParagraphs.map((paragraph) => (
             <p key={paragraph.slice(0, 40)}>{paragraph}</p>
@@ -196,7 +196,7 @@ export function LocationHubPage({
               key={card.title}
               className="surface-card rounded-lg p-6"
             >
-              <h3 className="mb-2 font-serif text-h4 text-ink-900">
+              <h3 className={contentSubheadingClass}>
                 {card.title}
               </h3>
               <p className="text-body-sm leading-relaxed text-ink-800/80">
@@ -222,7 +222,7 @@ export function LocationHubPage({
                 href={`/${service.slug}/${location.slug}/`}
                 className="surface-card block h-full rounded-lg p-5 transition-colors hover:border-amber-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
               >
-                <h3 className="mb-1 font-serif text-h4 text-ink-900">
+                <h3 className={contentSubheadingClass}>
                   {service.name}
                 </h3>
                 <p className="mb-3 text-body-sm text-ink-800/70">
@@ -283,7 +283,7 @@ export function LocationHubPage({
                   href={`/locations/${nearby.slug}/`}
                   className="surface-card block rounded-lg p-5 transition-colors hover:border-amber-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                 >
-                  <h3 className="mb-1 font-serif text-h4 text-ink-900">
+                  <h3 className={contentSubheadingClass}>
                     {nearby.name}
                   </h3>
                   <p className="text-body-sm text-ink-800/70">

@@ -107,12 +107,13 @@ Phases 1–4 are **code-complete** when `pnpm typecheck`, `pnpm build`, and each
 
 ## 6. Google services
 
-- [ ] **GA4** property created; `NEXT_PUBLIC_GA4_ID` set; realtime shows `page_view` after deploy
-- [ ] Key events marked: `quote_submit`, `contact_submit`
-- [ ] **Search Console** — property verified (DNS TXT preferred); sitemap `/sitemap.xml` submitted
-- [ ] **Bing Webmaster Tools** — import from GSC or verify manually; sitemap submitted
+- [x] **GA4** property created; `NEXT_PUBLIC_GA4_ID` set; realtime shows `page_view` after deploy
+- [x] Key events marked: `quote_submit`, `contact_submit`
+- [x] **Search Console** — property verified (DNS TXT preferred); sitemap `/sitemap.xml` submitted
+- [x] **Bing Webmaster Tools** — import from GSC or verify manually; sitemap submitted
 - [ ] **Google Business Profile** claimed; NAP matches website exactly
-- [ ] Cookie consent tested: decline → GA4 script not loaded
+  - Location ref: `om-6582854789951435152` — **verification in progress** (2026-06-19)
+- [x] Cookie consent tested: decline → GA4 script not loaded
 
 ---
 

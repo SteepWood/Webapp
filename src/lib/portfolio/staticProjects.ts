@@ -38,6 +38,39 @@ const FEATURED_PROJECT_SEEDS = [
     serviceSlug: "custom-bathroom-vanity",
     displayOrder: 3,
   },
+  {
+    id: "00000000-0000-4000-8000-000000000004",
+    slug: "office-fitout-canberra",
+    title: "Office Fitout — Barton",
+    clientDisplayName: "Rachel & Mark O'Connor",
+    summary:
+      "Reception desk, meeting-room joinery, and breakout storage for a Barton professional services suite — Polytec laminate, 2-pac accents, and integrated cable management.",
+    locationName: "Barton, Canberra",
+    serviceSlug: "office-fitout",
+    displayOrder: 4,
+  },
+  {
+    id: "00000000-0000-4000-8000-000000000005",
+    slug: "home-office-wollongong",
+    title: "Home Office Joinery — Wollongong",
+    clientDisplayName: "Fiona & Greg Saunders",
+    summary:
+      "Floor-to-ceiling home office wall with integrated desk, printer housing, and display shelving for a Wollongong terrace renovation.",
+    locationName: "Wollongong, NSW",
+    serviceSlug: "home-office-joinery",
+    displayOrder: 5,
+  },
+  {
+    id: "00000000-0000-4000-8000-000000000006",
+    slug: "laundry-cabinets-central-coast",
+    title: "Laundry Cabinetry — Erina",
+    clientDisplayName: "Michelle & Andrew Park",
+    summary:
+      "Full-height laundry cabinetry with broom cupboard, folding bench, and appliance housing for an Erina family home.",
+    locationName: "Erina, Central Coast",
+    serviceSlug: "laundry-cabinets",
+    displayOrder: 6,
+  },
 ] as const;
 
 /** Static featured projects for homepage when the database is empty or unavailable. */

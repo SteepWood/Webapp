@@ -166,6 +166,45 @@ export default function TermsOfServicePage() {
             </Link>{" "}
             for details of your statutory rights.
           </p>
+          <p>
+            If a provision of these Terms is found to be invalid or
+            unenforceable, the remaining provisions continue in full force. Our
+            failure to enforce any right under these Terms does not constitute a
+            waiver of that right.
+          </p>
+        </section>
+
+        <section id="quotes-contracts">
+          <h2 className="mb-stack-sm font-serif text-h3 text-ink-900">
+            Quotes, contracts, and variations
+          </h2>
+          <p>
+            Website copy and online quote tools provide general information only.
+            A binding agreement is formed when you sign our written contract and
+            pay any required deposit stated in that document. Fixed-price quotes
+            are valid for the period stated on the quote — typically thirty days
+            unless otherwise agreed in writing.
+          </p>
+          <p>
+            Variations requested after contract signing are documented in writing
+            with revised pricing and programme impacts before work proceeds.
+            Material upgrades, scope changes, or site conditions discovered after
+            measure may affect final specifications; we will not proceed with
+            chargeable variations without your written approval.
+          </p>
+          <p>
+            Deposits, progress payments, and retention amounts are set out in your
+            signed contract and reflect the scope quoted — not estimates that
+            change after approval. Cancellations and postponements are handled
+            according to the cancellation clause in your contract and applicable
+            consumer law.
+          </p>
+          <p>
+            Intellectual property in our designs and shop drawings remains with
+            SteepWood until full payment, unless otherwise agreed in writing.
+            You may not reproduce our drawings for third-party manufacture
+            without permission.
+          </p>
         </section>
 
         <section id="governing-law">

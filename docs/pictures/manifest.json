@@ -135,6 +135,57 @@
     },
     {
       "priority": "P1",
+      "source": "04-portfolio/project-office-fitout-canberra-after.jpg",
+      "deployTo": "cms:portfolio/office-fitout-canberra/after.jpg",
+      "portfolioSlug": "office-fitout-canberra",
+      "field": "afterImageUrl",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P1",
+      "source": "04-portfolio/project-office-fitout-canberra-before.jpg",
+      "deployTo": "cms:portfolio/office-fitout-canberra/before.jpg",
+      "portfolioSlug": "office-fitout-canberra",
+      "field": "beforeImageUrl",
+      "size": "1600x1000",
+      "pairWith": "project-office-fitout-canberra-after.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "04-portfolio/project-home-office-wollongong-after.jpg",
+      "deployTo": "cms:portfolio/home-office-wollongong/after.jpg",
+      "portfolioSlug": "home-office-wollongong",
+      "field": "afterImageUrl",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P1",
+      "source": "04-portfolio/project-home-office-wollongong-before.jpg",
+      "deployTo": "cms:portfolio/home-office-wollongong/before.jpg",
+      "portfolioSlug": "home-office-wollongong",
+      "field": "beforeImageUrl",
+      "size": "1600x1000",
+      "pairWith": "project-home-office-wollongong-after.jpg"
+    },
+    {
+      "priority": "P1",
+      "source": "04-portfolio/project-laundry-cabinets-central-coast-after.jpg",
+      "deployTo": "cms:portfolio/laundry-cabinets-central-coast/after.jpg",
+      "portfolioSlug": "laundry-cabinets-central-coast",
+      "field": "afterImageUrl",
+      "size": "1600x1000"
+    },
+    {
+      "priority": "P1",
+      "source": "04-portfolio/project-laundry-cabinets-central-coast-before.jpg",
+      "deployTo": "cms:portfolio/laundry-cabinets-central-coast/before.jpg",
+      "portfolioSlug": "laundry-cabinets-central-coast",
+      "field": "beforeImageUrl",
+      "size": "1600x1000",
+      "pairWith": "project-laundry-cabinets-central-coast-after.jpg"
+    },
+    {
+      "priority": "P1",
       "source": "02-services/service-custom-kitchen-joinery-hero.jpg",
       "deployTo": "public/images/services/custom-kitchen-joinery-hero.jpg",
       "dataRef": "services.ts heroImagePath",
@@ -456,7 +507,10 @@
     "projects": [
       "hamptons-kitchen-newcastle",
       "walk-in-robe-sydney",
-      "floating-vanity-byron-bay"
+      "floating-vanity-byron-bay",
+      "office-fitout-canberra",
+      "home-office-wollongong",
+      "laundry-cabinets-central-coast"
     ]
   },
   "skipGeneration": [

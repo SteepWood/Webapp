@@ -5,6 +5,22 @@ import type { BlogPost } from "@prisma/client";
 import { prisma } from "@/lib/db/prisma";
 
 export const BLOG_PAGE_SIZE = 12;
+const RELATED_TAG_PREFIX = "related:";
+
+function parsePostTags(tags: unknown): string[] {
+  return Array.isArray(tags) ? (tags as string[]) : [];
+}
+
+function extractRelatedSlugs(tags: unknown): string[] {
+  return parsePostTags(tags)
+    .filter((tag) => tag.startsWith(RELATED_TAG_PREFIX))
+    .map((tag) => tag.slice(RELATED_TAG_PREFIX.length))
+    .filter(Boolean);
+}
+
+function extractDisplayTags(tags: unknown): string[] {
+  return parsePostTags(tags).filter((tag) => !tag.startsWith(RELATED_TAG_PREFIX));
+}
 
 export type BlogListFilters = {
   category?: string;
@@ -28,9 +44,7 @@ function applyBlogFilters(posts: BlogPost[], filters: BlogListFilters): BlogPost
     }
 
     if (filters.tag) {
-      const tags = Array.isArray(post.tags) ? (post.tags as string[]) : [];
-
-      if (!tags.includes(filters.tag)) {
+      if (!extractDisplayTags(post.tags).includes(filters.tag)) {
         return false;
       }
     }
@@ -135,9 +149,7 @@ export const getPopularBlogTags = cache(async (limit = 8): Promise<string[]> => 
     const counts = new Map<string, number>();
 
     for (const post of posts) {
-      const tags = Array.isArray(post.tags) ? (post.tags as string[]) : [];
-
-      for (const tag of tags) {
+      for (const tag of extractDisplayTags(post.tags)) {
         counts.set(tag, (counts.get(tag) ?? 0) + 1);
       }
     }
@@ -153,11 +165,31 @@ export const getPopularBlogTags = cache(async (limit = 8): Promise<string[]> => 
 
 export const getRelatedBlogPosts = cache(
   async (post: BlogPost, limit = 3): Promise<BlogPost[]> => {
-    if (!post.category) {
-      return [];
-    }
+    const relatedSlugs = extractRelatedSlugs(post.tags);
 
     try {
+      if (relatedSlugs.length > 0) {
+        const related = await prisma.blogPost.findMany({
+          where: {
+            isPublished: true,
+            slug: { in: relatedSlugs },
+          },
+        });
+
+        const ordered = relatedSlugs
+          .map((slug) => related.find((entry) => entry.slug === slug))
+          .filter((entry): entry is BlogPost => Boolean(entry))
+          .slice(0, limit);
+
+        if (ordered.length > 0) {
+          return ordered;
+        }
+      }
+
+      if (!post.category) {
+        return [];
+      }
+
       return await prisma.blogPost.findMany({
         where: {
           isPublished: true,

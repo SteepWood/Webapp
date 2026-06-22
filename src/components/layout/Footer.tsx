@@ -4,7 +4,7 @@ import { TrackedPhoneLink } from "@/components/analytics/TrackedPhoneLink";
 import { SteepWoodLogo } from "@/components/brand/SteepWoodLogo";
 import { FooterNewsletter } from "@/components/layout/FooterNewsletter";
 import { BUSINESS_COPYRIGHT_LINE, BUSINESS_CREDENTIALS_FOOTER } from "@/lib/business";
-import { FOOTER_HOURS_LABEL, LOCATIONS, PHONE_DISPLAY, PHONE_HREF, SERVICES, WORKSHOP_LOCATION } from "@/lib/navigation";
+import { FOOTER_HOURS_LABEL, GOOGLE_REVIEW_URL, LOCATIONS, PHONE_DISPLAY, PHONE_HREF, SERVICES, WORKSHOP_LOCATION } from "@/lib/navigation";
 
 const footerLinkClass =
   "text-ink-100/80 transition-colors duration-[var(--duration-fast)] hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900";
@@ -92,6 +92,14 @@ export function Footer() {
               </a>
               <p className="text-sm text-ink-100/80">{WORKSHOP_LOCATION}</p>
               <p className="text-sm text-ink-100/80">{FOOTER_HOURS_LABEL}</p>
+              <a
+                href={GOOGLE_REVIEW_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={footerLinkClass}
+              >
+                Leave a Google review
+              </a>
             </div>
 
             <FooterNewsletter />

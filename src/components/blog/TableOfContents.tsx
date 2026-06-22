@@ -55,7 +55,7 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
   return (
     <nav
       aria-label="Table of contents"
-      className="sticky top-28 hidden max-h-[calc(100vh-8rem)] overflow-auto lg:block"
+      className="sticky top-28 hidden max-h-[calc(100vh-8rem)] overflow-y-auto overscroll-contain xl:block"
     >
       <p className="mb-4 font-mono text-caption uppercase tracking-widest text-amber-600">
         On this page

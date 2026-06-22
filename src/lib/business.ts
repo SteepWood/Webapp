@@ -27,4 +27,8 @@ export const BUSINESS_CREDENTIALS_LIST = [
   WORKERS_COMPENSATION_DISPLAY,
 ] as const;
 
-export const BLOG_DEFAULT_AUTHOR = "Sukhveer Kaur";
+export const FOUNDER_NAME = "Sukhveer Kaur";
+
+export const FOUNDER_JOB_TITLE = "Founder & Master Joiner";
+
+export const BLOG_DEFAULT_AUTHOR = FOUNDER_NAME;

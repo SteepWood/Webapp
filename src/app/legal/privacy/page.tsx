@@ -254,6 +254,25 @@ export default function PrivacyPolicyPage() {
           </p>
         </section>
 
+        <section id="retention">
+          <h2 className="mb-stack-sm font-serif text-h3 text-ink-900">
+            How long we keep information
+          </h2>
+          <p>
+            Quote and contact form submissions are retained while your enquiry is
+            active and for up to seven years where required for tax, warranty, or
+            dispute-resolution purposes. Marketing consent records are kept until
+            you withdraw consent or ask us to delete them, subject to legal
+            obligations to retain certain transaction data.
+          </p>
+          <p>
+            Server logs and anonymised analytics data are retained according to
+            each provider&apos;s standard retention schedule. You may request
+            deletion of personal information that we are not legally required to
+            keep by contacting our Privacy Officer.
+          </p>
+        </section>
+
         <section id="changes">
           <h2 className="mb-stack-sm font-serif text-h3 text-ink-900">
             Changes to this policy

@@ -80,45 +80,85 @@ for (const asset of manifest.assets) {
   }
 }
 
-if (shouldInclude("P0")) {
-  for (const file of [
-    "project-floating-vanity-byron-bay-after.jpg",
-    "project-floating-vanity-byron-bay-before.jpg",
-    "project-floating-vanity-byron-bay-g01.jpg",
-    "project-floating-vanity-byron-bay-g02.jpg",
-    "project-floating-vanity-byron-bay-g03.jpg",
-    "project-floating-vanity-byron-bay-g04.jpg",
-    "project-floating-vanity-byron-bay-g05.jpg",
-    "project-hamptons-kitchen-newcastle-after.jpg",
-    "project-hamptons-kitchen-newcastle-before.jpg",
-    "project-hamptons-kitchen-newcastle-g01.jpg",
-    "project-hamptons-kitchen-newcastle-g02.jpg",
-    "project-hamptons-kitchen-newcastle-g03.jpg",
-    "project-hamptons-kitchen-newcastle-g04.jpg",
-    "project-hamptons-kitchen-newcastle-g05.jpg",
-    "project-walk-in-robe-sydney-after.jpg",
-    "project-walk-in-robe-sydney-before.jpg",
-    "project-walk-in-robe-sydney-g01.jpg",
-    "project-walk-in-robe-sydney-g02.jpg",
-    "project-walk-in-robe-sydney-g03.jpg",
-    "project-walk-in-robe-sydney-g04.jpg",
-    "project-walk-in-robe-sydney-g05.jpg",
-  ]) {
-    const match = file.match(PORTFOLIO_PATTERN);
-    if (!match) continue;
+const portfolioProjects = manifest.portfolioGalleryPattern?.projects ?? [];
+const portfolioVariants = [
+  "after",
+  "before",
+  "g01",
+  "g02",
+  "g03",
+  "g04",
+  "g05",
+];
 
-    const [, slug, variant] = match;
-    const sourcePath = resolveSourcePath(`04-portfolio/${file}`);
-    if (!sourcePath) {
-      missing.push(`04-portfolio/${file}`);
-      continue;
+if (shouldInclude("P0") || shouldInclude("P1")) {
+  for (const slug of portfolioProjects) {
+    for (const variant of portfolioVariants) {
+      const file = `project-${slug}-${variant}.jpg`;
+      const match = file.match(PORTFOLIO_PATTERN);
+      if (!match) continue;
+
+      const sourcePath = resolveSourcePath(`04-portfolio/${file}`);
+      if (!sourcePath) {
+        missing.push(`04-portfolio/${file}`);
+        continue;
+      }
+
+      deployFile(
+        sourcePath,
+        `public/images/portfolio/${slug}/${variant}.jpg`,
+      );
+      deployed++;
+    }
+  }
+}
+
+const BLOG_POST_SLUGS = [
+  "custom-kitchen-cost-nsw-2026",
+  "flat-pack-vs-custom-kitchen-australia",
+  "2pac-laminate-timber-veneer-kitchen-finishes-nsw",
+  "walk-in-robe-built-in-wardrobe-cost-guide-nsw",
+  "questions-to-ask-custom-joiner-australia",
+  "benchtop-guide-engineered-stone-ban-nsw",
+];
+
+const BLOG_INLINE_VARIANTS = [
+  { suffix: "hero", dest: "hero.jpg" },
+  { suffix: "og", dest: "og.jpg" },
+  { suffix: "inline-01", dest: "inline-01.jpg" },
+  { suffix: "inline-02", dest: "inline-02.jpg" },
+  { suffix: "inline-wide", dest: "inline-wide.jpg" },
+];
+
+if (shouldInclude("P0") || shouldInclude("P1") || shouldInclude("P2") || !priorityFilter) {
+  const blogDir = join(
+    root,
+    "docs",
+    "pictures",
+    "steepwood-p1-p2-images",
+    "08-blog",
+  );
+
+  if (existsSync(blogDir)) {
+    const indexHero = join(blogDir, "blog-index-hero.jpg");
+    if (existsSync(indexHero)) {
+      deployFile(indexHero, "public/images/blog/blog-index-hero.jpg");
+      deployed++;
     }
 
-    deployFile(
-      sourcePath,
-      `public/images/portfolio/${slug}/${variant}.jpg`,
-    );
-    deployed++;
+    for (const slug of BLOG_POST_SLUGS) {
+      for (const { suffix, dest } of BLOG_INLINE_VARIANTS) {
+        const file = `blog-${slug}-${suffix}.jpg`;
+        const sourcePath = join(blogDir, file);
+        if (!existsSync(sourcePath)) {
+          missing.push(`08-blog/${file}`);
+          continue;
+        }
+
+        deployFile(sourcePath, `public/blog/${slug}/${dest}`);
+        deployed++;
+      }
+    }
   }
 }
 

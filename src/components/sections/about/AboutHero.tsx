@@ -25,6 +25,15 @@ export function AboutHero() {
             premium materials, fixed-price quotes — and a workshop where every
             detail still matters.
           </p>
+          <p className="mt-stack-sm max-w-xl text-body text-ink-800/85">
+            We publish selected portfolio projects, workshop photography, and
+            practical guides on this site so you can judge finish quality and
+            process transparency before you book a consultation.
+          </p>
+          <p className="mt-stack-sm max-w-xl text-body-sm text-ink-800/75">
+            Workshop visits and in-home measures are by appointment — contact us
+            to arrange a time that suits your build programme.
+          </p>
         </div>
         <MediaFrame
           src={WORKSHOP_HERO_IMAGE}

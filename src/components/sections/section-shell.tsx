@@ -24,6 +24,10 @@ export function sectionRhythm({
 export const sectionHeadingClass =
   "mb-stack-md font-serif text-h2 text-ink-900";
 
+/** Subheading rhythm for cards, FAQ blocks, and inline section titles. */
+export const contentSubheadingClass =
+  "mb-stack-sm font-serif text-h4 text-ink-900";
+
 export function SectionShell({
   children,
   className,

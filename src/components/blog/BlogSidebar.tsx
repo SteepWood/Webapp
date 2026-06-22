@@ -3,14 +3,16 @@
 import { useRouter, useSearchParams } from "next/navigation";
 
 import { NewsletterSignupForm } from "@/components/forms/NewsletterSignupForm";
+import { contentSubheadingClass } from "@/components/sections/section-shell";
 import { cn } from "@/lib/utils";
 
 type BlogSidebarProps = {
   categories: string[];
   tags: string[];
+  compact?: boolean;
 };
 
-export function BlogSidebar({ categories, tags }: BlogSidebarProps) {
+export function BlogSidebar({ categories, tags, compact = false }: BlogSidebarProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const activeCategory = searchParams.get("category");
@@ -33,8 +35,8 @@ export function BlogSidebar({ categories, tags }: BlogSidebarProps) {
   }
 
   return (
-    <aside className="space-y-8">
-      {categories.length > 0 ? (
+    <aside className="space-y-6">
+      {!compact && categories.length > 0 ? (
         <section className="rounded-lg border border-ink-700/10 bg-ink-50 p-5">
           <h2 className="mb-4 font-serif text-h4 text-ink-900">Categories</h2>
           <ul className="space-y-2">
@@ -82,7 +84,7 @@ export function BlogSidebar({ categories, tags }: BlogSidebarProps) {
       ) : null}
 
       <section className="rounded-lg border border-ink-700/10 bg-ink-900 p-5 text-ink-50">
-        <h2 className="mb-2 font-serif text-h4">Workshop insights</h2>
+        <h2 className={contentSubheadingClass}>Workshop insights</h2>
         <p className="mb-4 text-body-sm text-ink-100/80">
           Occasional design inspiration and project stories from the SteepWood
           team. No spam — unsubscribe any time.

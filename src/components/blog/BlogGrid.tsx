@@ -1,12 +1,26 @@
-import type { BlogPost } from "@prisma/client";
-import Image from "next/image";
-import Link from "@/components/ui/link";
+"use client";
 
-import { mediaThumbAreaClass, mediaCardImageClass } from "@/components/ui/media-card";
-import { mediaFrameAreaClass } from "@/components/ui/media-frame";
-import { cn } from "@/lib/utils";
+import type { BlogPost } from "@prisma/client";
+
+import {
+  ScrollReveal,
+  ScrollRevealItem,
+  ScrollRevealStagger,
+} from "@/components/motion/ScrollReveal";
+import {
+  MediaCard,
+  MediaCardAction,
+  MediaCardContent,
+  MediaCardDescription,
+  MediaCardImage,
+  MediaCardLink,
+  MediaCardMeta,
+  MediaCardPlaceholder,
+  MediaCardTitle,
+} from "@/components/ui/media-card";
 import { BLOG_DEFAULT_AUTHOR } from "@/lib/business";
 import { calculateReadingTime } from "@/lib/blog/readingTime";
+import { cn } from "@/lib/utils";
 
 type BlogGridProps = {
   posts: BlogPost[];
@@ -36,83 +50,77 @@ function BlogCard({
   const publishedAt = post.publishedAt ?? post.createdAt;
 
   return (
-    <article
-      className={
-        featured
-          ? "surface-card overflow-hidden rounded-lg lg:grid lg:grid-cols-2 lg:items-stretch"
-          : "surface-card overflow-hidden rounded-lg"
-      }
-    >
-      <Link
+    <MediaCard className={cn(featured && "lg:flex lg:flex-row")}>
+      <MediaCardLink
         href={`/blog/${post.slug}/`}
-        className="group block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+        className={cn(featured && "lg:flex lg:min-h-0 lg:flex-1 lg:flex-row")}
       >
         <div
-          className={
+          className={cn(
             featured
-              ? cn(mediaFrameAreaClass, "rounded-none")
-              : mediaThumbAreaClass
-          }
+              ? "lg:min-h-0 lg:w-[min(52%,520px)] lg:shrink-0"
+              : "min-w-0",
+          )}
         >
           {post.coverImageUrl ? (
-            <Image
+            <MediaCardImage
               src={post.coverImageUrl}
               alt={post.coverImageAlt ?? post.title}
               width={1600}
-              height={1000}
+              height={featured ? 1000 : 800}
               sizes={
                 featured
-                  ? "(max-width: 1024px) 100vw, 50vw"
-                  : "(max-width: 640px) 100vw, 33vw"
+                  ? "(max-width: 1024px) 100vw, 520px"
+                  : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               }
-              className={cn(mediaCardImageClass, "size-full")}
+              loading={featured ? "eager" : "lazy"}
+              areaClassName={featured ? "aspect-[16/10]" : undefined}
             />
           ) : (
-            <div className="absolute inset-0 flex items-end bg-gradient-to-br from-ink-800 to-ink-950 p-6">
-              <span className="font-serif text-2xl text-ink-50">{post.title}</span>
-            </div>
+            <MediaCardPlaceholder label={post.title} />
           )}
         </div>
-        <div className={featured ? "flex flex-col justify-center p-6 lg:p-8" : "p-5"}>
+        <MediaCardContent
+          className={cn(
+            "min-w-0 flex-1",
+            featured && "justify-center lg:px-8 lg:py-8",
+          )}
+        >
           {post.category ? (
             <p className="mb-2 font-mono text-caption uppercase tracking-widest text-amber-600">
               {post.category}
             </p>
           ) : null}
-          <h2
-            className={
+          <MediaCardTitle
+            as="h2"
+            className={cn(
               featured
-                ? "mb-3 font-serif text-display-2 text-ink-900"
-                : "mb-2 font-serif text-h4 text-ink-900"
-            }
+                ? "mb-3 line-clamp-3 text-h2 md:text-display-2"
+                : "line-clamp-2",
+            )}
           >
             {post.title}
-          </h2>
-          {post.excerpt ? (
-            <p
-              className={
-                featured
-                  ? "mb-4 text-body-lg text-ink-800/80"
-                  : "mb-3 text-body-sm leading-relaxed text-ink-800/80"
-              }
-            >
-              {post.excerpt}
-            </p>
-          ) : null}
-          <p className="text-body-sm text-ink-800/60">
+          </MediaCardTitle>
+          <MediaCardMeta>
             {post.authorName ?? BLOG_DEFAULT_AUTHOR} · {formatPostDate(publishedAt)} ·{" "}
             {readingTime} min read
-          </p>
-        </div>
-      </Link>
-    </article>
+          </MediaCardMeta>
+          {post.excerpt ? (
+            <MediaCardDescription clamp={!featured}>
+              {post.excerpt}
+            </MediaCardDescription>
+          ) : null}
+          <MediaCardAction className="mt-auto pt-4">Read article</MediaCardAction>
+        </MediaCardContent>
+      </MediaCardLink>
+    </MediaCard>
   );
 }
 
 export function BlogGrid({ posts, featured }: BlogGridProps) {
   if (!featured && posts.length === 0) {
     return (
-      <div className="rounded-lg border border-dashed border-ink-700/20 px-6 py-16 text-center">
+      <div className="rounded-lg border border-dashed border-ink-700/20 bg-ink-50/60 px-6 py-16 text-center">
         <p className="font-serif text-h4 text-ink-900">No posts found</p>
         <p className="mt-2 text-body text-ink-800/70">
           Try another category or check back soon for new articles.
@@ -123,13 +131,19 @@ export function BlogGrid({ posts, featured }: BlogGridProps) {
 
   return (
     <div className="space-y-8">
-      {featured ? <BlogCard post={featured} featured /> : null}
+      {featured ? (
+        <ScrollReveal>
+          <BlogCard post={featured} featured />
+        </ScrollReveal>
+      ) : null}
       {posts.length > 0 ? (
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <ScrollRevealStagger className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {posts.map((post) => (
-            <BlogCard key={post.slug} post={post} />
+            <ScrollRevealItem key={post.slug} className="h-full min-w-0">
+              <BlogCard post={post} />
+            </ScrollRevealItem>
           ))}
-        </div>
+        </ScrollRevealStagger>
       ) : null}
     </div>
   );
