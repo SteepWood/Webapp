@@ -121,7 +121,7 @@ export function buildComboMetaTitle(
   service: ResolvedService,
   location: ResolvedLocation,
 ): string {
-  return `${service.shortTitle} ${location.name} | SteepWood Joinery`;
+  return `${service.shortTitle} ${location.name} — Newcastle Workshop`;
 }
 
 export function buildComboMetaDescription(

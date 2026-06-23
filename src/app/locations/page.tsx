@@ -8,7 +8,7 @@ import { canonicalUrl } from "@/lib/seo/canonical";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Service Locations — Custom Joinery Across Australia",
+  title: "Locations — 16 Australian Cities Served",
   description:
     "SteepWood delivers premium custom joinery from our Newcastle workshop to 16 Australian cities and regions — NSW, ACT, QLD, VIC, SA, and WA.",
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Service Locations — Custom Joinery Across Australia",
+    title: "Locations — 16 Australian Cities Served",
     description:
       "SteepWood delivers premium custom joinery from our Newcastle workshop to 16 Australian cities and regions.",
     url: canonicalUrl("/locations/"),

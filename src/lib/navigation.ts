@@ -35,6 +35,10 @@ export const WORKSHOP_LOCATION = "Newcastle, NSW";
 export const GOOGLE_REVIEW_URL =
   "https://g.page/r/CbgiJ5KWkJ9vEAE/review";
 
+/** Google Business Profile — public listing URL for schema sameAs. */
+export const GOOGLE_BUSINESS_PROFILE_URL =
+  "https://g.page/r/CbgiJ5KWkJ9vEAE";
+
 export const CONTACT_HOURS_TABLE = [
   { days: "Monday – Friday", hours: "7:00am – 5:00pm" },
   { days: "Saturday", hours: "9:00am – 1:00pm (by appointment)" },

@@ -4,17 +4,17 @@ import { ViewTransitions } from "next-view-transitions";
 import { AnalyticsShell } from "@/components/analytics/AnalyticsShell";
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { Providers } from "@/components/providers";
+import { RootStructuredDataScript } from "@/components/seo/RootStructuredDataScript";
 import { env } from "@/env";
 import { fraunces, generalSans, ibmPlexMono } from "@/lib/fonts";
-import { rootStructuredData } from "@/lib/seo/structuredData";
 
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   title: {
-    default: "SteepWood — Premium Custom Joinery",
-    template: "%s | SteepWood",
+    default: "SteepWood Custom Joinery — Newcastle NSW | Australia-Wide",
+    template: "%s | SteepWood Joinery",
   },
   description:
     "Premium custom joinery from our Newcastle workshop. Kitchens, wardrobes, vanities, and commercial fitouts across Australia.",
@@ -54,13 +54,7 @@ export default function RootLayout({
             <AnalyticsShell ga4Id={env.NEXT_PUBLIC_GA4_ID} />
           </Providers>
         </ViewTransitions>
-        <script
-          id="root-jsonld"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(rootStructuredData()),
-          }}
-        />
+        <RootStructuredDataScript />
       </body>
     </html>
   );

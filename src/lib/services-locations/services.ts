@@ -7,7 +7,7 @@ export const SERVICES: readonly ServiceDefinition[] = [
     name: "Custom Kitchen Joinery",
     shortTitle: "Custom Kitchens",
     primaryKeyword: "custom kitchen joinery",
-    metaTitle: "Custom Kitchen Joinery Australia | SteepWood Joinery",
+    metaTitle: "Custom Kitchen Joinery Australia",
     metaDescription:
       "Custom kitchen joinery designed and built in our Newcastle workshop. Premium 2pac, Caesarstone, Blum hardware. Free design consultation Australia-wide.",
     h1: "Custom Kitchen Joinery — Handcrafted in Newcastle, Delivered Australia-Wide",
@@ -26,7 +26,7 @@ export const SERVICES: readonly ServiceDefinition[] = [
     name: "Built-In Wardrobes & Walk-In Robes",
     shortTitle: "Built-In Wardrobes",
     primaryKeyword: "built-in wardrobes",
-    metaTitle: "Built-In Wardrobes & Walk-In Robes | SteepWood",
+    metaTitle: "Built-In Wardrobes & Walk-In Robes",
     metaDescription:
       "Custom built-in wardrobes and walk-in robes designed for your space. Polytec, 2pac, Blum hardware. Free in-home consultation Australia-wide.",
     h1: "Built-In Wardrobes & Walk-In Robes — Custom Wardrobe Joinery",
@@ -45,7 +45,7 @@ export const SERVICES: readonly ServiceDefinition[] = [
     name: "Office Fitout",
     shortTitle: "Office Fitout",
     primaryKeyword: "office fitout",
-    metaTitle: "Office Fitout Australia | SteepWood Commercial",
+    metaTitle: "Office Fitout — Bespoke Workplace Joinery",
     metaDescription:
       "Complete office fitouts with bespoke joinery — reception desks, breakout joinery, meeting rooms. Sydney, Melbourne, Newcastle. Fixed-price project management.",
     h1: "Office Fitout — Workplace Design & Custom Joinery Across Australia",
@@ -64,7 +64,7 @@ export const SERVICES: readonly ServiceDefinition[] = [
     name: "Shopfitting & Retail Joinery",
     shortTitle: "Shopfitting",
     primaryKeyword: "shopfitting",
-    metaTitle: "Shopfitting & Retail Joinery Australia | SteepWood",
+    metaTitle: "Shopfitting & Retail Joinery Australia",
     metaDescription:
       "Custom shopfitting and retail joinery — fashion, hospitality, pharmacy, beauty, medical. Sydney, Melbourne, Brisbane. Fixed-price fitouts.",
     h1: "Shopfitting & Retail Joinery — Custom Shop Fitouts Across Australia",
@@ -83,7 +83,7 @@ export const SERVICES: readonly ServiceDefinition[] = [
     name: "Custom Bathroom Vanity Joinery",
     shortTitle: "Custom Vanities",
     primaryKeyword: "custom bathroom vanity",
-    metaTitle: "Custom Bathroom Vanity Joinery | SteepWood",
+    metaTitle: "Custom Bathroom Vanity Joinery",
     metaDescription:
       "Custom bathroom vanities — floating, freestanding, double-bowl. HMR construction, 2pac and timber finishes. Newcastle-crafted, Australia-wide.",
     h1: "Custom Bathroom Vanity Joinery — Handcrafted Vanities & Bathroom Cabinets",
@@ -102,7 +102,7 @@ export const SERVICES: readonly ServiceDefinition[] = [
     name: "Commercial Joinery",
     shortTitle: "Commercial Joinery",
     primaryKeyword: "commercial joinery",
-    metaTitle: "Commercial Joinery Australia | SteepWood",
+    metaTitle: "Commercial Joinery — Hospitality & Healthcare",
     metaDescription:
       "Commercial joinery for hospitality, healthcare, education, retail. Fire-rated boards, commercial hardware, shop drawings. Newcastle workshop.",
     h1: "Commercial Joinery — Custom Cabinets & Fit-Out Joinery for Business",
@@ -121,7 +121,7 @@ export const SERVICES: readonly ServiceDefinition[] = [
     name: "Custom & Bespoke Furniture",
     shortTitle: "Custom Furniture",
     primaryKeyword: "custom furniture Australia",
-    metaTitle: "Custom & Bespoke Furniture Australia | SteepWood",
+    metaTitle: "Bespoke Furniture — Australian Timber",
     metaDescription:
       "Bespoke timber furniture — dining tables, entertainment units, bedheads, shelving. Tasmanian oak, Spotted Gum, walnut. Newcastle workshop.",
     h1: "Custom & Bespoke Furniture — Handcrafted Pieces Made for Your Space",
@@ -140,7 +140,7 @@ export const SERVICES: readonly ServiceDefinition[] = [
     name: "Custom Home Office Joinery",
     shortTitle: "Home Office Joinery",
     primaryKeyword: "home office joinery",
-    metaTitle: "Custom Home Office Joinery | SteepWood",
+    metaTitle: "Home Office Joinery — Built-In Studies",
     metaDescription:
       "Built-in home offices, study nooks, library walls, custom desks. Cable management, integrated power, timber and 2pac finishes. Australia-wide.",
     h1: "Custom Home Office Joinery — Built-In Desks, Bookcases & Study Nooks",
@@ -159,7 +159,7 @@ export const SERVICES: readonly ServiceDefinition[] = [
     name: "Custom Laundry Cabinets & Joinery",
     shortTitle: "Laundry Cabinets",
     primaryKeyword: "laundry cabinets",
-    metaTitle: "Custom Laundry Cabinets & Joinery | SteepWood",
+    metaTitle: "Custom Laundry Cabinets & Joinery",
     metaDescription:
       "Custom laundry cabinets — overhead, base, broom storage, butler's pantry. HMR construction, moisture-resistant finishes. Newcastle-crafted Australia-wide.",
     h1: "Custom Laundry Cabinets & Joinery — Built to Fit Your Space",
@@ -178,7 +178,7 @@ export const SERVICES: readonly ServiceDefinition[] = [
     name: "Custom Timber Staircase Joinery",
     shortTitle: "Timber Staircases",
     primaryKeyword: "timber staircase",
-    metaTitle: "Custom Timber Staircase Joinery | SteepWood",
+    metaTitle: "Custom Timber Staircase Joinery NSW",
     metaDescription:
       "Custom timber staircases — straight, floating, curved. Tasmanian oak, Spotted Gum, American oak. NCC-compliant. Free design consultation.",
     h1: "Custom Timber Staircase Joinery — Design, Build & Install",

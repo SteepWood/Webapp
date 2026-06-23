@@ -1,5 +1,14 @@
 import type { NextConfig } from "next";
 
+/** Keep in sync with RETIRED_BLOG_SLUG_MAP in src/lib/blog/launchPack.ts */
+const RETIRED_BLOG_REDIRECTS: Record<string, string> = {
+  "kitchen-storage-planning-australia":
+    "walk-in-robe-built-in-wardrobe-cost-guide-nsw",
+  "joinery-materials-guide-2pac-timber":
+    "benchtop-guide-engineered-stone-ban-nsw",
+  "australian-home-joinery-trends-2026": "flat-pack-vs-custom-kitchen-australia",
+};
+
 const securityHeaders = [
   {
     key: "Strict-Transport-Security",
@@ -38,7 +47,29 @@ const nextConfig: NextConfig = {
     staticGenerationMaxConcurrency: 1,
   },
   async redirects() {
+    const retiredBlogRedirects = Object.entries(RETIRED_BLOG_REDIRECTS).flatMap(
+      ([slug, destination]) => [
+        {
+          source: `/blog/${slug}`,
+          destination: `/blog/${destination}/`,
+          permanent: true,
+        },
+        {
+          source: `/blog/${slug}/`,
+          destination: `/blog/${destination}/`,
+          permanent: true,
+        },
+      ],
+    );
+
     return [
+      {
+        source: "/:path*",
+        has: [{ type: "host" as const, value: "www.steepwood.com.au" }],
+        destination: "https://steepwood.com.au/:path*",
+        permanent: true,
+      },
+      ...retiredBlogRedirects,
       {
         source: "/custom-joinery/:location",
         destination: "/locations/:location/",

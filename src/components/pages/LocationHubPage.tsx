@@ -37,6 +37,17 @@ type LocationHubPageProps = {
   aggregateRating: AggregateRatingStats | null;
 };
 
+function architectureBullets(content: LocationHubContent): string[] {
+  if (content.architectureBullets && content.architectureBullets.length > 0) {
+    return content.architectureBullets;
+  }
+
+  return content.architecturalStyles
+    .split(/,\s*/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
 function trustCards(location: ResolvedLocation) {
   return [
     {
@@ -86,6 +97,7 @@ export function LocationHubPage({
   const speakableSchema = speakableStructuredData(pageUrl);
   const introPrefix = getLocationIntroPrefix(location.slug);
   const locationFacts = getLocationFacts(location.slug);
+  const architectureList = architectureBullets(content);
 
   const kicker =
     location.slug === "newcastle"
@@ -186,6 +198,29 @@ export function LocationHubPage({
         </div>
       </SectionShell>
 
+      {content.localContext ? (
+        <SectionShell className="bg-ink-50">
+          <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
+            Why SteepWood in {location.name}
+          </h2>
+          <p className="max-w-3xl text-body-lg leading-relaxed text-ink-800">
+            {content.localContext}
+          </p>
+        </SectionShell>
+      ) : null}
+
+      {content.leadTime || content.freight ? (
+        <SectionShell>
+          <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
+            Lead times and freight to {location.name}
+          </h2>
+          <div className="prose-steepwood max-w-3xl text-body leading-relaxed text-ink-800">
+            {content.leadTime ? <p>{content.leadTime}</p> : null}
+            {content.freight ? <p>{content.freight}</p> : null}
+          </div>
+        </SectionShell>
+      ) : null}
+
       <SectionShell className="bg-ink-50">
         <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">
           Why {location.name} clients choose SteepWood
@@ -254,10 +289,9 @@ export function LocationHubPage({
         </h2>
         <p className="mb-stack-md max-w-3xl text-body text-ink-800">
           We serve homeowners, builders, and designers across {location.name} and
-          surrounding suburbs. Architectural styles we work with include:{" "}
-          {content.architecturalStyles}
+          surrounding suburbs.
         </p>
-        <ul className="flex flex-wrap gap-2">
+        <ul className="mb-stack-lg flex flex-wrap gap-2">
           {content.coveredSuburbs.map((suburb) => (
             <li
               key={suburb}
@@ -265,6 +299,14 @@ export function LocationHubPage({
             >
               {suburb}
             </li>
+          ))}
+        </ul>
+        <h3 className="mb-stack-sm font-serif text-h3 text-ink-900">
+          Architecture and building types
+        </h3>
+        <ul className="max-w-3xl list-disc space-y-2 pl-5 text-body text-ink-800">
+          {architectureList.map((style) => (
+            <li key={style}>{style}</li>
           ))}
         </ul>
       </SectionShell>

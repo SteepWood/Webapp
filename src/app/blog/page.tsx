@@ -13,13 +13,17 @@ import {
   getBlogIndexData,
   getPopularBlogTags,
 } from "@/lib/db/blog";
-import { BLOG_INDEX_HERO_IMAGE } from "@/lib/images";
+import { env } from "@/env";
+import { BLOG_INDEX_HERO_IMAGE, OG_DEFAULT_IMAGE } from "@/lib/images";
 import { canonicalUrl } from "@/lib/seo/canonical";
+
+const SITE_URL = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+const BLOG_OG_IMAGE = `${SITE_URL}${OG_DEFAULT_IMAGE}`;
 
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Blog — Joinery Insights & Design Tips | SteepWood",
+  title: "Joinery Insights & Design Tips",
   description:
     "Practical joinery advice, kitchen design tips, and Australian home trends from the SteepWood workshop in Newcastle.",
   alternates: {
@@ -29,13 +33,28 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Blog — Joinery Insights & Design Tips | SteepWood",
+    title: "Joinery Insights & Design Tips | SteepWood Joinery",
     description:
       "Practical joinery advice, kitchen design tips, and Australian home trends from the SteepWood workshop in Newcastle.",
     url: canonicalUrl("/blog/"),
     siteName: "SteepWood",
     locale: "en_AU",
     type: "website",
+    images: [
+      {
+        url: BLOG_OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: "SteepWood joinery designer reviewing plans at the Newcastle workshop",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Joinery Insights & Design Tips | SteepWood Joinery",
+    description:
+      "Practical joinery advice, kitchen design tips, and Australian home trends from the SteepWood workshop in Newcastle.",
+    images: [BLOG_OG_IMAGE],
   },
 };
 

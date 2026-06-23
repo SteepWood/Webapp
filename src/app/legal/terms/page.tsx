@@ -12,7 +12,7 @@ export const revalidate = 86400;
 const LAST_UPDATED = "9 June 2026";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — SteepWood Joinery",
+  title: "Terms of Service",
   description:
     "Terms governing use of the SteepWood website, quotes, intellectual property, and joinery services. Governed by the laws of New South Wales, Australia.",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Terms of Service — SteepWood Joinery",
+    title: "Terms of Service",
     description:
       "Terms governing use of the SteepWood website, quotes, intellectual property, and joinery services. Governed by the laws of New South Wales, Australia.",
     url: canonicalUrl("/legal/terms/"),

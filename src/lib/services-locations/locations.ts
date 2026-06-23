@@ -15,7 +15,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Greater Newcastle and Hunter Region",
     driveTimeFromNewcastle: "0 — Newcastle is home",
     driveTimeShort: "local",
-    metaTitle: "Custom Joinery Newcastle NSW | SteepWood",
+    metaTitle: "Custom Joinery Newcastle NSW — Newcastle Workshop",
     metaDescription:
       "Newcastle's premium custom joinery workshop. Kitchens, wardrobes, vanities, commercial joinery. Local craftsmanship, fixed-price quotes. Free in-home visit.",
     h1: `Custom Joinery in Newcastle NSW — Local Craftsmanship Since ${FOUNDING_YEAR}`,
@@ -34,7 +34,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Greater Sydney metropolitan area",
     driveTimeFromNewcastle: "~2 hours via M1",
     driveTimeShort: "2hr",
-    metaTitle: "Custom Joinery Sydney NSW | SteepWood",
+    metaTitle: "Custom Joinery Sydney NSW — Newcastle Workshop",
     metaDescription:
       "Custom kitchens, wardrobes and bespoke joinery for Sydney homes. Newcastle-crafted, 2hr from our workshop. Free in-home design consultation and quote.",
     h1: "Custom Joinery in Sydney NSW — Newcastle-Crafted, Sydney-Delivered",
@@ -53,7 +53,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Australian Capital Territory and Queanbeyan surrounds",
     driveTimeFromNewcastle: "~5 hours",
     driveTimeShort: "5hr",
-    metaTitle: "Custom Joinery Canberra ACT | SteepWood",
+    metaTitle: "Custom Joinery Canberra ACT — Newcastle Workshop",
     metaDescription:
       "Custom kitchens, wardrobes and bespoke joinery for Canberra homes. Newcastle-crafted, ACT-delivered. Free design consultation, fixed-price quotes.",
     h1: "Custom Joinery in Canberra ACT — Bespoke Cabinetry for the Capital",
@@ -72,7 +72,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Greater Melbourne metropolitan area",
     driveTimeFromNewcastle: "Freight delivery (~9 hours road; 1-day truck transit)",
     driveTimeShort: "freight-delivered",
-    metaTitle: "Custom Joinery Melbourne VIC | SteepWood",
+    metaTitle: "Custom Joinery Melbourne VIC — Newcastle Workshop",
     metaDescription:
       "Custom kitchens, wardrobes, bespoke joinery for Melbourne homes. Newcastle-crafted, freight-delivered. Toorak, Brighton, Hawthorn, South Yarra and more.",
     h1: "Custom Joinery in Melbourne VIC — Newcastle Craft, Melbourne Style",
@@ -91,7 +91,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Central Coast NSW — Gosford to The Entrance",
     driveTimeFromNewcastle: "~1 hour 15 minutes via M1",
     driveTimeShort: "1hr",
-    metaTitle: "Custom Joinery Central Coast NSW | SteepWood",
+    metaTitle: "Custom Joinery Central Coast NSW — Newcastle Workshop",
     metaDescription:
       "Custom joinery for Central Coast homes — Gosford, Terrigal, Avoca, The Entrance. Newcastle-crafted, 1hr from our workshop. Free consultations.",
     h1: "Custom Joinery on the Central Coast — Coastal Homes, Crafted to Last",
@@ -110,7 +110,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Hunter Valley wine country and surrounds",
     driveTimeFromNewcastle: "~45 minutes",
     driveTimeShort: "45min",
-    metaTitle: "Custom Joinery Hunter Valley NSW | SteepWood",
+    metaTitle: "Custom Joinery Hunter Valley NSW — Newcastle Workshop",
     metaDescription:
       "Custom joinery for Hunter Valley homes and cellar doors — Pokolbin, Cessnock, Lovedale, Singleton. Newcastle-based, free local consultations.",
     h1: "Custom Joinery in the Hunter Valley — From Cellar Door to Country Estate",
@@ -129,7 +129,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Gold Coast metropolitan area",
     driveTimeFromNewcastle: "~9 hours (freight delivery)",
     driveTimeShort: "freight-delivered",
-    metaTitle: "Custom Joinery Gold Coast QLD | SteepWood",
+    metaTitle: "Custom Joinery Gold Coast QLD — Newcastle Workshop",
     metaDescription:
       "Custom kitchens, wardrobes, and bespoke joinery for Gold Coast homes. Newcastle-crafted, freight-delivered. Broadbeach, Mermaid, Surfers Paradise.",
     h1: "Custom Joinery on the Gold Coast — High-End Coastal Cabinetry",
@@ -148,7 +148,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Wollongong and Illawarra region",
     driveTimeFromNewcastle: "~3.5 hours",
     driveTimeShort: "3.5hr",
-    metaTitle: "Custom Joinery Wollongong NSW | SteepWood",
+    metaTitle: "Custom Joinery Wollongong NSW — Newcastle Workshop",
     metaDescription:
       "Custom joinery for Wollongong and Illawarra homes — Thirroul, Austinmer, Kiama. Newcastle-crafted, ~3.5hr delivery. Free consultations.",
     h1: "Custom Joinery in Wollongong & the Illawarra — Newcastle Craft, Coastal Quality",
@@ -167,7 +167,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Greater Brisbane metropolitan area",
     driveTimeFromNewcastle: "~9 hours (freight delivery)",
     driveTimeShort: "freight-delivered",
-    metaTitle: "Custom Joinery Brisbane QLD | SteepWood",
+    metaTitle: "Custom Joinery Brisbane QLD — Newcastle Workshop",
     metaDescription:
       "Custom kitchens, wardrobes and bespoke joinery for Brisbane homes. Newcastle-crafted, freight-delivered. New Farm, Paddington, Bulimba, Chelmer.",
     h1: "Custom Joinery in Brisbane QLD — Premium Cabinetry, Newcastle-Crafted",
@@ -186,7 +186,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Greater Perth metropolitan area",
     driveTimeFromNewcastle: "Freight only (3–5 day transit)",
     driveTimeShort: "freight-delivered",
-    metaTitle: "Custom Joinery Perth WA | SteepWood",
+    metaTitle: "Custom Joinery Perth WA — Newcastle Workshop",
     metaDescription:
       "Custom kitchens, wardrobes, bespoke joinery for Perth homes. Newcastle-crafted, freight-delivered. Cottesloe, Mosman Park, Subiaco, Floreat, Dalkeith.",
     h1: "Custom Joinery in Perth WA — Premium Cabinetry, Newcastle-Made",
@@ -205,7 +205,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Byron Bay and Northern Rivers NSW",
     driveTimeFromNewcastle: "~9 hours (freight)",
     driveTimeShort: "freight-delivered",
-    metaTitle: "Custom Joinery Byron Bay NSW | SteepWood",
+    metaTitle: "Custom Joinery Byron Bay NSW — Newcastle Workshop",
     metaDescription:
       "Custom joinery for Byron Bay and Northern Rivers homes — Suffolk Park, Bangalow, Mullumbimby. Newcastle-crafted, freight to NSW Northern Rivers.",
     h1: "Custom Joinery in Byron Bay — Coastal Craft, Made to Last",
@@ -224,7 +224,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Port Macquarie and Hastings region",
     driveTimeFromNewcastle: "~3 hours",
     driveTimeShort: "3hr",
-    metaTitle: "Custom Joinery Port Macquarie NSW | SteepWood",
+    metaTitle: "Custom Joinery Port Macquarie NSW — Newcastle Workshop",
     metaDescription:
       "Custom joinery for Port Macquarie homes — Town Beach, Lighthouse Beach, Settlement City. Newcastle-crafted, ~3hr delivery. Free design consultations.",
     h1: "Custom Joinery in Port Macquarie — Sea-Change Homes, Premium Cabinetry",
@@ -243,7 +243,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Coffs Coast and mid-north coast NSW",
     driveTimeFromNewcastle: "~5 hours",
     driveTimeShort: "5hr",
-    metaTitle: "Custom Joinery Coffs Harbour NSW | SteepWood",
+    metaTitle: "Custom Joinery Coffs Harbour NSW — Newcastle Workshop",
     metaDescription:
       "Custom joinery for Coffs Harbour, Sawtell, Bellingen, Woolgoolga. Newcastle-crafted, ~5hr delivery. Free design consultations on larger projects.",
     h1: "Custom Joinery in Coffs Harbour — Mid North Coast Craft",
@@ -262,7 +262,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Greater Adelaide metropolitan area",
     driveTimeFromNewcastle: "Freight only (2–3 day transit)",
     driveTimeShort: "freight-delivered",
-    metaTitle: "Custom Joinery Adelaide SA | SteepWood",
+    metaTitle: "Custom Joinery Adelaide SA — Newcastle Workshop",
     metaDescription:
       "Custom kitchens, wardrobes, bespoke joinery for Adelaide homes. Newcastle-crafted, freight-delivered. North Adelaide, Norwood, Unley, Glenelg.",
     h1: "Custom Joinery in Adelaide SA — Bespoke Cabinetry, Newcastle-Crafted",
@@ -281,7 +281,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Bathurst and Central West NSW",
     driveTimeFromNewcastle: "~3.5 hours",
     driveTimeShort: "3.5hr",
-    metaTitle: "Custom Joinery Bathurst NSW | SteepWood",
+    metaTitle: "Custom Joinery Bathurst NSW — Newcastle Workshop",
     metaDescription:
       "Custom joinery for Bathurst and Central West homes — heritage Federation, country contemporary, new-build. Newcastle-crafted, ~3.5hr delivery.",
     h1: "Custom Joinery in Bathurst NSW — Heritage Country, Modern Craft",
@@ -300,7 +300,7 @@ export const LOCATIONS: readonly LocationDefinition[] = [
     populationServed: "Orange and Central West wine country",
     driveTimeFromNewcastle: "~3.5 hours",
     driveTimeShort: "3.5hr",
-    metaTitle: "Custom Joinery Orange NSW | SteepWood",
+    metaTitle: "Custom Joinery Orange NSW — Newcastle Workshop",
     metaDescription:
       "Custom joinery for Orange and Central West homes — wine country contemporary, heritage Federation, new-build. Newcastle-crafted, ~3.5hr delivery.",
     h1: "Custom Joinery in Orange NSW — Wine Country Craft",

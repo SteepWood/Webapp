@@ -26,11 +26,17 @@ export function trackQuoteSubmit(params: {
   budgetRange?: string;
   locationSlug?: string;
 }) {
-  sendEvent("quote_submit", {
+  const eventParams = {
     service_count: params.serviceTypes.length,
     services: params.serviceTypes.join(","),
     budget_range: params.budgetRange ?? "unspecified",
     location_slug: params.locationSlug ?? "unspecified",
+  };
+
+  sendEvent("quote_submit", eventParams);
+  sendEvent("generate_lead", {
+    ...eventParams,
+    lead_type: "quote",
   });
 }
 

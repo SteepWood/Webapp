@@ -15,7 +15,7 @@ const ABOUT_DESCRIPTION = `Newcastle joinery craftsmanship since ${FOUNDING_YEAR
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "About SteepWood Custom Joinery — Newcastle Craftsmen",
+  title: "About — Newcastle Craftsmen Since 2014",
   description: ABOUT_DESCRIPTION,
   alternates: {
     canonical: canonicalUrl("/about/"),
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "About SteepWood Custom Joinery — Newcastle Craftsmen",
+    title: "About — Newcastle Craftsmen Since 2014",
     description: ABOUT_DESCRIPTION,
     url: canonicalUrl("/about/"),
     siteName: "SteepWood",

@@ -49,23 +49,6 @@ function buildFaqs(
   }));
 }
 
-function buildBodySections(
-  includes: ServiceInclude[],
-  whatIsParagraphs: string[],
-): ServiceBodySection[] {
-  return includes.map((item, index) => {
-    const extra =
-      whatIsParagraphs[index % whatIsParagraphs.length] ?? whatIsParagraphs[0];
-    const paragraphs = [item.description, extra].filter(
-      (paragraph): paragraph is string => Boolean(paragraph),
-    );
-
-    return {
-      title: item.title,
-      paragraphs,
-    };
-  });
-}
 
 const KITCHEN_WHAT_IS = splitParagraphs(
   `Custom kitchen joinery starts with a genuine understanding of how your household actually uses the kitchen. Are you cooking for a family of six, hosting dinner parties, or running a busy household that needs serious storage and hard-wearing surfaces? Every one of those scenarios demands different cabinet configurations, different hardware choices, and different door finishes. When you work with a custom kitchen joiner rather than a flatpack supplier, you get a team that measures your space precisely, designs around your life, and builds cabinetry that fits — floor to ceiling, wall to wall, corner to corner.
@@ -113,9 +96,10 @@ const SERVICE_CONTENT: Record<string, ServicePillarContent> = {
       },
     ],
     materials: [
-      "Our kitchens are manufactured in Newcastle using premium Laminex and Polytec decorative panels, 2pac polyurethane door finishes sprayed in our workshop, natural timber veneers, and solid hardwood accents where the brief calls for warmth.",
-      "Bench and work surfaces are available in Caesarstone, Smartstone, Essastone, Quantum Quartz, porcelain, and natural stone. We carry full sample libraries and co-ordinate door colour, benchtop, and splashback during the design stage.",
-      "Hardware is Blum throughout — soft-close drawer runners, pull-out pantry systems, and lift mechanisms that are backed by a 25-year manufacturer warranty on residential projects.",
+      "Our kitchens are manufactured in Newcastle using premium Laminex and Polytec decorative panels, 2-pac polyurethane door finishes sprayed in our workshop, natural timber veneer kitchen cabinets Australia-wide, and solid hardwood accents where the brief calls for warmth. We compare Polytec vs Laminex kitchen doors during design — including Polytec SYNC woodgrain kitchen doors and current Laminex colour trends 2025 2026 — so you see 2pac vs laminate kitchen Australia options side by side.",
+      "Bench and work surfaces are available in Caesarstone, Smartstone, Essastone, Quantum Quartz, porcelain, and natural stone. Following the engineered stone ban in NSW, we specify stone benchtop ban Australia alternative surfaces — sintered stone, porcelain, and natural stone — with transparent Caesarstone benchtop cost Australia context where legacy engineered stone remains in existing homes.",
+      "Hardware is Blum throughout — Blum soft close hardware quality is standard on every project, with pull-out pantries, integrated appliances kitchen design 2026 layouts, and lift mechanisms backed by a 25-year manufacturer warranty on residential projects.",
+      "Planning a renovation? Our process follows a practical kitchen renovation checklist Australia homeowners can track week by week, with a custom kitchen timeline how long Australia clients can expect from deposit to install. We discuss flat pack vs custom kitchen Australia trade-offs openly — including flat pack kitchen IKEA vs custom worth it scenarios — and link to our blog for deeper guides on warm minimalism kitchen design Australia and kitchen design trends Australia 2026.",
     ],
     processSteps: [
       {
@@ -182,6 +166,16 @@ const SERVICE_CONTENT: Record<string, ServicePillarContent> = {
         answer:
           "1,000 mm clear walkway on every side of the island is the practical minimum; 1,200 mm is ideal. Total island width including bench: from 900 mm for a small prep island, up to 1,500–1,800 mm for an island with seating.",
       },
+      {
+        question: "How much does a custom kitchen cost in Sydney in 2026?",
+        answer:
+          "Custom kitchen cost Sydney projects typically range from $45,000 to $95,000 for mid-to-high-spec 2-pac joinery with stone or porcelain benchtops. Kitchen renovation Sydney cost 2026 depends on scope — a straight cabinetry refresh is lower; a full layout change with butler's pantry joinery cost Australia clients often budget $75,000–$120,000.",
+      },
+      {
+        question: "What is included in a custom joinery quote for kitchens?",
+        answer:
+          "Quotes cover design consultation, manufacture in our Newcastle workshop, delivery or install to your city, soft-close hardware, and our 10-year structural warranty. Custom joinery Sydney cost 2026 and interstate pricing both itemise cabinetry, benchtops, and installation separately so you can compare like for like.",
+      },
     ]),
     relatedServices: [
       { slug: "built-in-wardrobes", label: "Built-In Wardrobes" },
@@ -192,26 +186,13 @@ const SERVICE_CONTENT: Record<string, ServicePillarContent> = {
   },
 };
 
-// Populate bodySections after includes are defined
-for (const slug of Object.keys(SERVICE_CONTENT)) {
-  const content = SERVICE_CONTENT[slug];
-  if (!content) {
-    continue;
-  }
-
-  content.bodySections = buildBodySections(
-    content.includes,
-    content.whatIsParagraphs,
-  );
-}
-
 function defineService(
   slug: string,
   content: Omit<ServicePillarContent, "bodySections">,
 ): void {
   SERVICE_CONTENT[slug] = {
     ...content,
-    bodySections: buildBodySections(content.includes, content.whatIsParagraphs),
+    bodySections: [],
   };
 }
 
@@ -259,9 +240,10 @@ We serve homeowners, builders, and interior designers across Newcastle, Sydney, 
     },
   ],
   materials: [
-    "Carcasses are built from Laminex and Polytec melamine panels. Doors are available in 2pac polyurethane, melamine, veneer, or solid timber to suit Hamptons, contemporary, and coastal interiors.",
-    "Internal fittings are Blum throughout — soft-close drawer runners, LED lighting systems, and pull-out accessories designed for daily use.",
-    "Walk-in robes can include island benches, charging stations, and integrated USB-C/AC power points as standard options.",
+    "Every SteepWood wardrobe is made to measure in our Newcastle workshop. Carcasses are built from Australian-made Polytec and Laminex melamine board, with fronts available in melamine, 2pac polyurethane, timber veneer, or solid timber to suit Hamptons, contemporary, and coastal interiors. For clients comparing supplier ranges, the Polytec vs Laminex kitchen doors question comes up constantly — both are excellent, and we hold full sample libraries of each so you can match wardrobe doors to kitchen and laundry joinery commissioned in the same project.",
+    "Timber veneer kitchen cabinets and wardrobe fronts are increasingly popular for clients who want warmth without the cost or movement of solid hardwood. We stock and order in Tasmanian oak, American oak, Blackbutt, and Spotted Gum veneer pressed on premium HMR substrates, and we finish in matt or satin polyurethane in our workshop. The same veneer libraries cross over between wardrobes, kitchens, and feature joinery, which is the easiest way to co-ordinate a whole-home palette.",
+    "Built in wardrobe design trends 2026 are leaning toward floor-to-ceiling fronts with no top reveal, integrated LED behind glass shelving, push-to-open hardware on minimalist door styles, and dressing-room layouts with island benches in walk-in robes. We are also seeing strong demand for warm timber veneer interiors paired with matt black or brushed brass handles, soft-curve profiles on bedhead-facing fronts, and walk in wardrobe design ideas Australia is borrowing from luxury hotel suites — full-height mirror panels, charging stations, jewellery drawers, and feature pendant lighting above the island.",
+    "Internal hardware is Blum end-to-end. Blum soft close hardware quality is the reason we specify it as standard rather than as an upgrade: drawer runners that close softly under any load, LEGRABOX drawer systems for shoe drawers and jewellery inserts, and SERVO-DRIVE LED strip lighting that switches with the door — all backed by a 25-year manufacturer warranty on residential projects. Pull-out shoe racks, valet rails, trouser hangers, hamper drawers, and motion-sensor lights are configured per room during the design consultation.",
   ],
   processSteps: [
     {
@@ -288,17 +270,27 @@ We serve homeowners, builders, and interior designers across Newcastle, Sydney, 
     {
       question: "How much does a built-in wardrobe cost in Australia?",
       answer:
-        "Standard built-ins: $1,000–$2,500 per linear metre. Custom robes with internal drawers and LED: $3,000–$7,500. Walk-in robes: $10,000–$30,000+.",
+        "Built in wardrobes cost Australia ranges typically run from $2,500 for a single-room hinged-door robe in melamine, through $4,000 to $8,000 for a larger built-in with 2pac fronts and Blum drawer banks, up to $10,000+ for floor-to-ceiling joinery with mirrored sliding doors, internal LED, and timber veneer fronts. Most three-bedroom homes we fit out across NSW sit between $7,000 and $15,000 for the whole house. Pricing is fixed before manufacture — we do not quote per linear metre, because every wardrobe is different.",
     },
     {
       question: "What is the minimum width for a walk-in robe?",
       answer:
-        "1,500 mm clear width for a single-sided WIR; 2,200 mm for a double-sided WIR with hanging on both walls and a 900 mm walkway.",
+        "A comfortable single-sided walk in robe needs about 1,500 mm of internal width. For a U-shape WIR with hanging on three sides, plan on 2,400 mm minimum. If you have the space, a walk in wardrobe with an island bench typically needs 3,000 mm width at the centre. For pricing context, our walk in robe cost guide Australia article — walk-in-robe-built-in-wardrobe-cost-guide-nsw — breaks down WIR pricing by layout, finish, and city.",
     },
     {
       question: "Is it cheaper to build custom wardrobes or buy flatpack?",
       answer:
-        "Flatpack (IKEA PAX) is cheaper upfront — $800–$1,500 for a comparable run. Custom is $3,000+. The trade-off is lifetime durability, ceiling-height usage, and a finish that holds up to daily wear. Custom typically pays back through resale value on a quality home.",
+        "Flatpack is cheaper on the supply price — usually 30 to 50 percent less than a custom robe of comparable scale. The trade-off is fit (flatpacks come in standard module sizes, leaving gaps at the ceiling or wall), finish (lower-grade hardware and edge banding), and longevity (most flatpack runners are not rated for the load and cycle count Blum runners carry). For a single shorter robe in a rental, flatpack can make sense. For your own home, a custom wardrobe with Blum soft-close hardware and made-to-measure dimensions pays off across the life of the home.",
+    },
+    {
+      question: "How much does a walk-in robe cost in Newcastle, NSW?",
+      answer:
+        "Walk in wardrobe Newcastle NSW cost typically lands between $8,000 and $15,000 for a standard U-shape or L-shape WIR in melamine carcass with 2pac fronts, Blum drawers, and LED strip lighting. A premium dressing room with timber veneer fronts, an island bench, full-height mirrors, and motion-sensor lighting sits from $18,000 upward. Because we manufacture in Newcastle, there is no freight loading for Hunter, Central Coast, or Lower Hunter installs — quote includes site measure, design, build, delivery, and install.",
+    },
+    {
+      question: "What are the built-in wardrobe design trends for 2026?",
+      answer:
+        "Built in wardrobe design trends 2026 are running in three clear directions. First, floor-to-ceiling fronts with no top reveal — the wardrobe disappears into the wall. Second, matt textures and warm timber veneer interiors replacing high-gloss whites. Third, dressing-room layouts inside larger walk-in robes — island benches, jewellery drawers, charging stations, and full-height mirrors are now standard requests for the master suite. We are also fitting more push-to-open Blum runners and SERVO-DRIVE LED systems for handleless minimalist styles.",
     },
     {
       question: "What materials are used for built-in wardrobes?",
@@ -361,18 +353,22 @@ We provide fixed-price contracts, detailed project programmes, and a single poin
       { title: "Project management", description: "Fixed-price contracts, programmes, and single point of contact." },
     ],
     materials: [
-      "Commercial-grade Laminex and Polytec panels, solid surface bench tops, and Blum and Häfele hardware throughout.",
-      "Acoustic treatments, ceiling systems, and flooring co-ordinated with joinery installation programmes.",
-      "Shop drawings and documentation for architect, builder, and certification requirements.",
+      "Office joinery from SteepWood is manufactured in Newcastle and installed Australia-wide. Carcasses and casework use commercial-grade Laminex and Polytec panels, compact phenolic where high-cycle wear is expected, and solid surface or stone bench tops on reception desks and breakout zones. Hardware is Blum and Häfele throughout — drawer runners, hinges, and lift mechanisms rated for the cycle counts a busy office produces.",
+      "Commercial joinery fitout cost Australia varies more by inclusions than by size: a 200 sqm tenancy with a custom reception desk, two boardroom credenzas, a breakout kitchen, and four storage walls can land anywhere between $80,000 and $250,000 depending on finish level, freight to city, and programme compression. Sydney and Melbourne tenancies typically sit at the higher end; Newcastle, Wollongong, and Canberra projects benefit from shorter freight and a more direct workshop relationship.",
+      "We also build home office fitout ideas built-in shelves elements — wall-to-wall bookcase joinery, integrated desks, and floor-to-ceiling storage — as part of larger residential commissions and for executives running serious home offices. The same workshop, the same Blum hardware, the same 2pac and veneer finishes carry across our commercial and residential work, which makes co-ordinating brand colour across head office and home study very straightforward.",
+      "Joinery lead time Australia workshop schedules are the single biggest factor in office-fitout programmes that slip. Our standard workshop lead time is six to ten weeks from signed shop drawings to delivery for a mid-sized fitout, and we book site dates against the construction programme rather than pretending to deliver in unrealistic windows. We provide weekly progress photos, shop drawings for certifier review, and a single project manager from brief to handover.",
     ],
     processSteps: [
       { title: "Workplace brief", description: "We understand headcount, work styles, and brand requirements before measuring." },
       { title: "Design and documentation", description: "3–4 weeks for design, landlord approvals, and fixed-price contract." },
-      { title: "Construction programme", description: "Typical 200–500 sqm fitout: 6–12 weeks from contract." },
+      { title: "Construction programme", description: "Manufacture in our Newcastle workshop runs in parallel with site partitioning and services. Joinery lead time Australia workshop schedules are typically six to ten weeks for a mid-sized commercial fitout, and we lock dates against the builder's programme at shop-drawing sign-off — not at deposit. Weekly photos from the workshop floor keep the project manager and tenant in the loop." },
       { title: "Handover", description: "Co-ordinated trades, defect period, and itemised depreciation schedule supplied." },
     ],
     faqs: buildFaqs("office-fitout", [
-      { question: "How much does an office fitout cost per square metre in Australia?", answer: "Basic refresh: $800–$1,200/sqm. Mid-range: $1,200–$2,000/sqm. Premium: $2,000–$3,000+/sqm. Sydney/Melbourne premium; Perth/Adelaide ~10–15% lower." },
+      { question: "How much does an office fitout cost per square metre in Australia?", answer: "Office fitout costs in Australia typically range from $800 to $3,000+ per square metre, depending on city, finish level, and the extent of structural work required. Sydney and Melbourne sit at the upper end; Perth, Adelaide, Canberra, and regional NSW offer lower rates because of trade availability and freight. A basic open-plan refresh may be achievable under $1,000 per sqm; a premium fitout with custom joinery, quality finishes, and advanced acoustic treatment will sit from $2,500 upward. Commercial joinery fitout cost Australia is the major driver inside that per-sqm figure on most projects." },
+      { question: "How does commercial joinery fitout cost compare across Australia?", answer: "Commercial joinery fitout cost Australia depends on three things: panel grade (commercial Laminex / Polytec vs decorative residential board), hardware tier (Blum and Häfele commercial-rated runners vs domestic), and the volume of custom shop-drawn elements vs off-the-shelf casework. As a rule of thumb, expect $1,200–$2,200 per linear metre for premium commercial joinery, plus separate line items for stone benchtops, integrated AV, and acoustic treatments. Freight to Sydney, Brisbane, Perth, and Adelaide is quoted separately so you can see exactly what the joinery itself costs." },
+      { question: "Do you also handle shopfitting joinery, or just office fitouts?", answer: "We do both. Shopfitting joinery cost Australia tracks slightly lower per linear metre than office fitout because retail counters and shelving systems repeat across modules, while office reception and boardroom joinery are typically one-off. If your project is retail rather than office — POS counters, display fixtures, shelving systems — see our shopfitting service page at /shopfitting/. We are happy to scope mixed-use jobs (e.g. ground-floor retail with first-floor head office) under a single project programme." },
+      { question: "Can SteepWood also build a home office to match my workplace joinery?", answer: "Yes. Many of our office-fitout clients ask us to deliver matching home office fitout ideas built-in shelves, integrated desks, and bookcase walls for their residences. Because we hold colour and timber samples on file from your commercial project, we can match decor finishes, brand colour, and hardware tier across both spaces. See our home office joinery service page at /home-office-joinery/ for residential scope." },
       { question: "What is included in an office fitout?", answer: "Demolition, partitioning, electrical, joinery (reception, kitchen, storage), flooring, ceiling, lighting, acoustic treatment, paint, signage, and IT cabling co-ordination." },
       { question: "How long does an office fitout take?", answer: "Typical 200–500 sqm fitout: 6–12 weeks from contract. Design and approvals: 3–4 weeks. Construction: 4–8 weeks. Large or council-permit-required: 16+ weeks." },
       { question: "What is the difference between a warm shell and cold shell fitout?", answer: "Cold shell: bare concrete, no services, no ceiling. Warm shell: services stubbed in, basic ceiling and floor. Turnkey: full fitout to occupancy." },
@@ -409,9 +405,10 @@ Contact SteepWood to discuss your retail fitout brief. Free initial consultation
       { title: "Landlord approvals", description: "Documentation and co-ordination for landlord and council compliance." },
     ],
     materials: [
-      "Commercial-grade Laminex and Polytec panels, CNC-routed MDF profiles, solid surface counters, and custom metal fixtures.",
-      "Execution to brand style guides, planograms, CAD files, colour codes, and brand-mandated suppliers.",
-      "10-year structural joinery warranty, 12-month builders' warranty on workmanship, and manufacturer hardware warranties.",
+      "Shopfitting joinery cost Australia varies more by finish level than by floor area. Basic retail fitouts in melamine and laminate sit at $400 to $800 per square metre; mid-range custom retail joinery with bespoke counters, fixtures, and 2pac doors runs $800 to $1,500 per sqm; premium luxury fitouts with imported finishes, architectural metalwork, and feature lighting can exceed $3,000 per sqm. Most established retailers we work with land in the mid-range tier, and we provide a fixed-price quote against the planogram and brand style guide before manufacture starts.",
+      "Our retail joinery is manufactured in Newcastle using commercial-grade Laminex and Polytec panels, CNC-routed MDF profiles, solid surface counters, and custom metal fixtures where the brief demands them. We work to planograms, brand style guides, CAD files, and brand-mandated suppliers, and we are experienced in replicating a fitout across multiple store locations when rollout consistency is required.",
+      "Where projects cross between retail and head office or back-of-house — typical for flagship stores, hospitality groups, and clinic chains — we co-ordinate scope with our commercial joinery service. Commercial joinery fitout cost Australia tends to be a bit higher per linear metre than pure retail because boardroom, reception, and storage-wall pieces are one-off rather than modular. For mixed-scope or back-of-house work, see our commercial joinery service page at /commercial-joinery/.",
+      "Every shopfit comes with a 10-year structural joinery warranty, a 12-month builders' warranty on workmanship, and the manufacturer's hardware warranty (25 years on Blum). Shop drawings, landlord documentation, and council compliance paperwork are co-ordinated by our project team — not handed back to the tenant.",
     ],
     processSteps: [
       { title: "Retail brief", description: "Sector, brand standards, landlord conditions, and opening date established upfront." },
@@ -420,7 +417,9 @@ Contact SteepWood to discuss your retail fitout brief. Free initial consultation
       { title: "Install and fit-off", description: "On-site installation with co-ordinated trades and defect-free handover." },
     ],
     faqs: buildFaqs("shopfitting", [
-      { question: "How much does a shop fitout cost in Australia?", answer: "Basic: $400–$800/sqm. Mid: $800–$1,500/sqm. Premium: $1,500–$3,000+/sqm. A 100 sqm boutique with custom joinery typically lands $80k–$150k." },
+      { question: "How much does a shop fitout cost in Australia?", answer: "Shopfitting joinery cost Australia varies widely by scope and finish level. Basic retail fitouts: $400 to $800 per square metre; mid-range custom with bespoke joinery: $800 to $1,500 per sqm; premium luxury fitouts with imported finishes and architectural metalwork can exceed $3,000 per sqm. Most established retail fitouts fall in the mid-range tier. For comparable budgets on office and head-office work, commercial joinery fitout cost Australia typically runs slightly higher per linear metre than retail because office reception and boardroom joinery pieces are one-off rather than modular." },
+      { question: "What's included in a joinery quote from SteepWood?", answer: "The joinery quote what's included Australia question gets asked a lot, because tenants have been burned before by quotes that exclude freight, install, or scope creep. A SteepWood shopfitting quote always covers: shop drawings, panel and hardware supply, manufacture in our Newcastle workshop, freight to your site, installation, fit-off, snag and final clean, plus the 10-year structural joinery warranty. Excluded items are listed line-by-line — e.g. electrical, plumbing, signage, flooring, and any landlord-mandated trade restrictions in your lease — so you know exactly what is and isn't in the number." },
+      { question: "Do you also do non-retail commercial joinery — offices, healthcare, hospitality?", answer: "Yes. We do all of it. If your scope crosses into office reception, boardroom credenzas, healthcare casework, or hospitality back-of-house, see our commercial joinery service page at /commercial-joinery/. Commercial joinery fitout cost Australia is quoted on the same basis as shopfitting — fixed-price against shop drawings, freight separately itemised, single project manager from brief to handover." },
       { question: "What is the difference between a shopfitter and a builder?", answer: "A shopfitter specialises in tenancy-scale fitouts, fixtures, joinery, and retail-specific compliance (POS, lighting, customer flow). A builder typically handles whole-building construction." },
       { question: "How long does a typical shop fitout take?", answer: "Boutique fitout (50–150 sqm): 4–8 weeks. Larger flagship (>300 sqm): 10–16 weeks. Cafe/hospitality with kitchen exhaust: add 2–4 weeks for council approvals." },
       { question: "Do I need council or landlord approval for a shop fitout?", answer: "Landlord approval is almost always required. Council DA only triggers for structural changes, signage above certain sizes, or change-of-use applications. We manage both." },
@@ -457,9 +456,10 @@ We coordinate directly with your plumber and tiler to ensure the joinery sequenc
       { title: "Plumber co-ordination", description: "Install sequenced with your plumber and tiler for a smooth renovation." },
     ],
     materials: [
-      "Moisture-resistant HMR MDF or solid hardwood carcasses with all surfaces sealed before fitting.",
-      "Door finishes in polyurethane, 2pac, and premium Laminex HMR panels that resist humidity cycles.",
-      "Blum soft-close hinges and drawer systems throughout; timber options include Tasmanian oak, Blackbutt, and Spotted Gum.",
+      "Bathroom vanity custom joinery is built differently to kitchen casework because the room behaves differently. Every SteepWood vanity uses HMR (high moisture-resistant) MDF or solid hardwood carcasses — never standard particleboard — with all cut edges sealed in our Newcastle workshop before they leave for site. Door finishes are 2pac polyurethane, Laminex HMR panels, or timber veneer kitchen cabinets Australia-style facings pressed on HMR substrate. Blum soft-close hinges and runners are standard throughout, with a 25-year manufacturer warranty on hardware.",
+      "Coastal home joinery materials humidity is a genuine engineering problem on the NSW coast — Newcastle, Central Coast, Sydney Northern Beaches, and the Hunter all see daily cycles of warm humid air against cool indoor surfaces. Standard particleboard absorbs that moisture at the unsealed edges and swells over time. HMR board, sealed edges, marine-grade adhesives, and stainless-steel hardware are the four things that keep a coastal vanity looking like new at the ten-year mark. We specify the same construction for inland clients too — humidity damage compounds quietly, and the upgrade cost is modest.",
+      "MDF vs plywood kitchen substrate Australia is a question we hear often when clients are comparing quotes. For bathroom vanities specifically, our default is HMR MDF for carcasses (dimensional stability, takes a sealed edge cleanly, sands and finishes well) rather than marine plywood (better for fully-submerged or boat-build applications, but more expensive and less flat for cabinet doors). For high-spec coastal builds we sometimes step up to marine ply on plinths and any element within 200 mm of a wet floor. The right answer depends on the room — we show samples and explain trade-offs at design stage.",
+      "Bench and basin combinations are templated to your plumber's rough-in. We work in Caesarstone, Smartstone, Essastone, Quantum Quartz, porcelain, and natural stone, with undermount, semi-recessed, or above-counter basin options. Timber-veneer fronts in Tasmanian oak, American oak, Blackbutt, and Spotted Gum bring warmth where the bathroom needs to feel like a sanctuary rather than a service room.",
     ],
     processSteps: [
       { title: "Site measure", description: "We measure your bathroom, confirm basin selection, and plan plumbing clearances." },
@@ -468,8 +468,9 @@ We coordinate directly with your plumber and tiler to ensure the joinery sequenc
       { title: "Install", description: "Co-ordinated with plumber and tiler for a seamless bathroom sequence." },
     ],
     faqs: buildFaqs("custom-bathroom-vanity", [
-      { question: "How much does a custom bathroom vanity cost in Australia?", answer: "Basic single vanity: $1,500–$2,500. Custom with stone top: $2,500–$5,000. Double vanity with full storage: $4,000–$8,000+." },
-      { question: "What is the best wood for bathroom vanity cabinets in a humid climate?", answer: "Tasmanian oak, Blackbutt, and Spotted Gum all perform well when properly sealed. We use HMR MDF for carcasses and seal all timber surfaces with marine-grade polyurethane." },
+      { question: "How much does a custom bathroom vanity cost in Australia?", answer: "Bathroom vanity custom joinery cost in Australia starts at around $1,500 for a basic single vanity in 2pac with a stone top, runs $2,500 to $4,000 for a 1,500 mm double vanity with timber veneer fronts and an undermount basin, and reaches $5,000+ for larger floating designs with integrated lighting, Smartstone tops, and matching shaving cabinets. These figures are comparable to or below many off-the-shelf premium vanities, but every piece is made exactly to your space and style." },
+      { question: "MDF or plywood — what's the best substrate for a bathroom vanity in Australia?", answer: "MDF vs plywood kitchen substrate Australia debates apply to vanities too. For most residential bathrooms we recommend HMR MDF carcasses — it is dimensionally stable, takes a sealed edge cleanly, and resists the humidity cycles a typical Australian bathroom produces. Marine plywood is better for fully wet zones (boat builds, pool changing rooms, exposed external joinery) but it is more expensive and less flat for cabinet doors. For high-spec coastal home joinery materials humidity protection, we sometimes specify marine ply on the plinth and any element within 200 mm of a wet floor, while keeping HMR MDF for the door fronts and carcass. We will show samples of each at design stage." },
+      { question: "What is the best wood for bathroom vanity cabinets in a humid climate?", answer: "For coastal home joinery materials humidity needs to drive the spec from day one. We default to HMR MDF carcasses with sealed edges, and offer timber veneer kitchen cabinets Australia-style fronts in Tasmanian oak, Blackbutt, Spotted Gum, or American oak — all pressed on HMR substrate and finished in marine-grade polyurethane. Solid hardwood vanities can also be built, but we will discuss panel orientation and finish carefully because solid timber moves more with humidity than veneer-on-HMR does." },
       { question: "Can a cabinet maker build a bathroom vanity with a stone top?", answer: "Yes — we partner with Caesarstone, Smartstone, Essastone, and Quantum Quartz fabricators to template, cut, and install stone tops as part of the vanity package." },
       { question: "What is the difference between a wall-hung and freestanding vanity?", answer: "Wall-hung (floating): cantilevered from the wall, creates an open visual base, suits contemporary bathrooms. Freestanding: rests on the floor, often with a kick plate, traditional or Hamptons styles." },
       { question: "How long does a custom bathroom vanity take to build?", answer: "3–6 weeks from deposit. We coordinate with your plumber and tiler so the install slots into the renovation sequence." },
@@ -505,23 +506,26 @@ If you are a builder, interior designer, or business owner planning a commercial
       { title: "Programme management", description: "Co-ordination with builders, PMs, and certification authorities." },
     ],
     materials: [
-      "Commercial-grade Laminex and Polytec panels, phenolic panel, stainless steel, fire-rated MDF, and solid surface bench tops.",
-      "Blum and Häfele commercial hardware; antimicrobial surfaces for healthcare where specified.",
-      "Food-safe and impact-resistant materials matched to BCA classification and building surveyor requirements.",
+      "Commercial joinery fitout cost Australia is most usefully discussed per linear metre and per finish tier, not per square metre. A premium reception desk in 2pac and stone runs from $8,000 to $25,000 finished; commercial-grade casework typically sits $1,200–$2,200 per linear metre depending on hardware tier and panel grade; bespoke boardroom credenzas with integrated AV are quoted as one-off pieces. We provide a fixed-price line-item quote against shop drawings before manufacture starts.",
+      "Materials are specified to BCA classification and building surveyor requirements. We use commercial-grade Laminex and Polytec panels, compact phenolic where wear is high, stainless steel for healthcare and food-service zones, fire-rated MDF where the spec requires it, and Blum and Häfele commercial-rated hardware throughout. Antimicrobial surfaces and food-safe finishes are sourced where the project type calls for them.",
+      "Joinery lead time Australia workshop schedules drive most commercial fitout programmes — joinery is usually the longest-lead trade after FF&E. Our standard workshop lead time is six to ten weeks from signed shop drawings to delivery for a mid-sized job, and we lock dates against the construction programme at shop-drawing sign-off, not at deposit. For phased rollouts across multiple stores or branches, we plan production schedules across all sites so freight and install can be sequenced.",
+      "Where projects cross between retail front-of-house and corporate back-of-house, we work to a single project programme. Shopfitting joinery cost Australia tends to track a touch lower per linear metre than office reception because retail counters and shelving repeat across modules, while reception desks and boardroom credenzas are one-off. For retail-only scopes, see our shopfitting service page at /shopfitting/.",
     ],
     processSteps: [
       { title: "Project consultation", description: "We review architect drawings, programme, and compliance requirements." },
       { title: "Shop drawings", description: "Documentation produced for architect mark-up and certification." },
-      { title: "Manufacture", description: "Small projects: 4–6 weeks. Mid-size packages: 8–12 weeks. Large programmes: 12–20 weeks." },
+      { title: "Manufacture", description: "Joinery lead time Australia workshop schedules are typically six to ten weeks for a mid-sized commercial job, eight to twelve for multi-store rollouts. Our Newcastle workshop produces under shop drawings signed by you, your architect, and your project manager, with weekly photo updates and a fixed delivery slot booked against the construction programme." },
       { title: "Site install", description: "Co-ordinated delivery and installation to construction programme." },
     ],
     faqs: buildFaqs("commercial-joinery", [
       { question: "What is commercial joinery?", answer: "Custom cabinetry and millwork built to commercial-grade specifications — using fire-rated, food-safe, or impact-resistant materials as required by the project's BCA classification and building surveyor." },
       { question: "How is commercial joinery different from residential joinery?", answer: "Higher material specs, formal documentation (shop drawings, architect markups), and strict programme co-ordination with builders and project managers." },
-      { question: "How much does commercial joinery cost in Australia?", answer: "Project-specific — usually quoted per item or per sqm. Reception desks: $5,000–$25,000+. Café back bars: $15,000–$60,000. Hospital nurse stations: $20,000–$100,000+." },
+      { question: "How much does commercial joinery cost in Australia?", answer: "Commercial joinery fitout cost Australia varies by sector and finish level. Hospitality back-of-house and BOH counters: $1,000–$1,500 per linear metre. Healthcare casework with antimicrobial surfaces: $1,500–$2,200 per linear metre. Premium reception and boardroom joinery: $2,000–$3,500 per linear metre, with one-off feature pieces priced separately. Stone benchtops, integrated AV, and acoustic treatments are quoted as line items so you see exactly what the joinery itself costs versus the broader fitout." },
+      { question: "What's included in a commercial joinery quote?", answer: "The joinery quote what's included Australia question is the most important one to answer before signing. A SteepWood commercial joinery quote covers: shop drawings co-ordinated with your architect, panel and hardware supply, manufacture in our Newcastle workshop, freight to your project site (anywhere in Australia), install by our own teams, fit-off, and the 10-year structural joinery warranty. Excluded items are listed line-by-line — typically electrical, plumbing, signage, flooring, certifier fees, and any landlord scope. Variations are quoted before being actioned, not after." },
+      { question: "Do you handle retail shopfitting as well as commercial joinery?", answer: "Yes. Shopfitting joinery cost Australia tracks a little lower per linear metre than commercial reception and boardroom work because retail counters and shelving systems repeat across modules. For retail-only briefs (POS counters, display fixtures, shelving systems, landlord-approval documentation), see our shopfitting service page at /shopfitting/. For mixed retail + back-of-house + corporate offices, we run the whole job under one programme and one project manager." },
       { question: "What industries use commercial joinery?", answer: "Hospitality, healthcare, education, retail, hotels, corporate offices, government, aged care." },
       { question: "Do commercial joiners work with architects and interior designers?", answer: "Yes — most commercial projects come via design professionals. We work from architect drawings, produce shop drawings for approval, and attend site meetings as required." },
-      { question: "What is the lead time for commercial joinery projects?", answer: "Small project (1–2 items): 4–6 weeks. Mid-size fitout joinery package: 8–12 weeks. Large multi-room programme: 12–20 weeks." },
+      { question: "What is the lead time for commercial joinery projects?", answer: "Joinery lead time Australia workshop schedules are typically six to ten weeks from signed shop drawings to delivery for a mid-sized job. Multi-store rollouts and complex fire-rated jobs run eight to twelve weeks. We book site install dates against the construction programme at shop-drawing sign-off — not at deposit — and we provide weekly progress photos from the workshop floor." },
       { question: "What materials are used in commercial joinery?", answer: "Laminex commercial grade, Polytec HMR, Formica, phenolic panel, stainless steel, fire-rated MDF, solid surface, commercial stone, Blum and Häfele hardware." },
       { question: "Can commercial joinery be fire-rated?", answer: "Yes — fire-rated MDF cores and intumescent finishes can achieve Group 1 and Group 2 fire indices per AS/NZS 3837 and the National Construction Code." },
     ]),
@@ -551,9 +555,10 @@ Beyond dining tables and coffee tables, we build custom entertainment units, bed
       { title: "Delivery and install", description: "Careful delivery and placement for heavy solid-timber pieces." },
     ],
     materials: [
-      "Tasmanian oak, Victorian ash, Spotted Gum, Blackbutt, American oak, and walnut — kiln-dried and acclimatised in our workshop.",
-      "Finishes include oil, lacquer, polyurethane, paint, and beeswax suited to UV and humidity exposure.",
-      "Hand-fitted dovetail joints, mortise and tenon, and book-matched panels for feature-grade pieces.",
+      "Australian timber furniture joinery species selection drives everything else on a custom piece — the weight, the workability, the colour palette, the way the finish develops over time. We hold sample stock and order through trusted mills for Tasmanian oak, Victorian ash, Spotted Gum, Blackbutt, American oak, walnut, and reclaimed hardwoods. Every board is kiln-dried and acclimatised in our Newcastle workshop before machining, which is the single most important step in stopping movement and cupping later.",
+      "Spotted Gum joinery furniture Australia clients ask for by name. The species is exceptional — JD 11 hardness, distinctive flame-grain figure, caramel-to-chocolate tones that warm a room — and we use it for dining tables, feature credenzas, bedheads, and statement shelving. It machines a little harder than oak and finishes beautifully under hand-rubbed oil or matt polyurethane. Spotted Gum sits at a premium price point and we treat it accordingly: every board face-graded for figure, end-grain sealed, and joinery cut with the grain direction marked on the shop drawing.",
+      "Blackbutt timber joinery NSW projects are increasingly common because the species is grown in coastal NSW, takes a clean satin or matt finish, and reads almost neutral in colour — pale to light tan — which suits contemporary and coastal interiors. Blackbutt is structurally strong, holds detail crisply, and is bushfire-resistant under AS 3959 BAL-29, which matters for clients in fire-affected zones. We use Blackbutt for dining tables, floating shelves, bedheads, and statement furniture where the brief calls for understatement rather than figure.",
+      "Tasmanian oak kitchen cabinet properties also describe its strengths as a furniture timber — pale, straight-grained, easy to finish in light tones, takes paint and oil equally well. The same species crosses between our furniture work and our kitchen and wardrobe work: a dining table in solid Tasmanian oak can be paired with kitchen cabinetry in Tasmanian oak veneer to read as a single material story across the room. Timber veneer kitchen cabinets Australia clients choose to extend the timber palette into wall cabinets and bookcase walls without the cost or movement of full hardwood. American oak (a denser cousin), Victorian ash, and walnut round out our standard furniture species library.",
     ],
     processSteps: [
       { title: "Design conversation", description: "Timber samples, finish options, and joinery details confirmed before cutting." },
@@ -564,7 +569,7 @@ Beyond dining tables and coffee tables, we build custom entertainment units, bed
     faqs: buildFaqs("custom-furniture", [
       { question: "How much does custom furniture cost in Australia?", answer: "Coffee table: $1,500–$4,000. Dining table (solid timber, 6-seater): $3,500–$9,000. Entertainment unit: $4,000–$12,000. Bedhead with side tables: $2,000–$5,000. Bookcase wall: $5,000–$15,000." },
       { question: "What is the lead time for bespoke furniture?", answer: "3–8 weeks depending on size and timber availability. Reclaimed or feature-grade slabs may extend lead time to 10–12 weeks." },
-      { question: "What timbers are most popular for custom furniture in Australia?", answer: "Tasmanian oak (most popular), Spotted Gum (warmer, harder), Blackbutt (pale, hard), American oak (refined), Victorian ash (close grain), walnut (premium)." },
+      { question: "What timbers are most popular for custom furniture in Australia?", answer: "Australian timber furniture joinery species selection breaks roughly into four categories. Pale and contemporary: Tasmanian oak and Victorian ash — Tasmanian oak kitchen cabinet properties (straight grain, light tone, takes finish evenly) also make it a perennial furniture favourite. Coastal and understated: Blackbutt timber joinery NSW projects use it for dining tables and shelving because the species reads light and clean. Warm and figured: Spotted Gum joinery furniture Australia clients ask for by name for the caramel tones and JD 11 hardness. Refined and European: American oak and walnut for clients who want a more formal, restrained look. We also offer timber veneer kitchen cabinets Australia-style facings on furniture cases — book-matched panels on display shelving and entertainment units — where solid hardwood would be impractical or cost-prohibitive." },
       { question: "What is the difference between custom and bespoke furniture?", answer: "We use 'custom' for made-to-measure pieces in standard SteepWood styles; 'bespoke' for fully designed-from-scratch pieces, sometimes with co-design input from the client." },
       { question: "Can I bring a design concept for a furniture maker to build?", answer: "Yes — sketches, Pinterest references, magazine clippings, or formal designs all welcome. We translate concept to shop drawing, confirm with you, then build." },
       { question: "Is custom furniture worth the investment compared to flat-pack?", answer: "Custom is a 4–10× upfront cost premium over flat-pack, but the pieces typically last decades, accept refinishing, and hold or appreciate in resale." },
@@ -599,9 +604,10 @@ A standard built-in study nook typically starts around $3,000 to $5,000. A full 
       { title: "Under-stair offices", description: "Stepped bookcase and desk layouts using angled stair space." },
     ],
     materials: [
-      "Solid Tasmanian oak and American oak desktops, 2pac polyurethane, and Polytec/Laminex veneer panels.",
-      "Blum soft-close hardware throughout; LED strip lighting under overhead shelves.",
-      "Colour and timber matching across rooms using samples held in our records for repeat orders.",
+      "Home office joinery built-in cost in Australia spans a wide range: a compact study nook in alcove form starts around $3,000 to $5,000; a full home office fit-out with wall-to-wall bookcase joinery, a solid timber desktop, and integrated lighting typically sits $8,000 to $18,000; large dual-purpose rooms with a meeting table and full storage walls can run higher. We give you a fixed-price quote against the design drawings, not a per-linear-metre estimate that drifts.",
+      "Home office fitout ideas built-in shelves keep evolving — the strongest 2026 patterns are floor-to-ceiling bookcase walls in 2pac white or timber veneer, integrated LED strip lighting under each shelf, hidden cable trays running behind the desk surface, push-to-open lower cabinets for printer/scanner stowage, and an island or peninsula desk to break a larger room into work and meeting zones. Where the room doubles as a guest space, we build Murphy beds into the cabinetry wall and tuck the desk on a return.",
+      "Desk surfaces and shelving carry across 2pac polyurethane, Polytec and Laminex veneer panels, and solid hardwood — Tasmanian oak and American oak are the perennial favourites for desktops because they sand and re-finish if a heavy piece of equipment ever marks the surface. Internal hardware is Blum throughout: soft-close drawer runners on filing pedestals, hinged-door dampers on stationery cupboards, and integrated power and USB-C charging built into the desk surface.",
+      "We also build standalone built in bookshelf joinery cost-controlled pieces — wall-to-wall fixed shelving, library-style display walls, and floating shelf systems — as discrete commissions outside a full office fit-out. Built in bookshelf joinery cost Australia ranges typically from $2,000 to $4,000 for a wall of fixed shelves in melamine, $5,000 to $10,000 for floor-to-ceiling 2pac shelving with adjustable internals and LED strip lighting, and higher again for timber veneer or solid hardwood with integrated cabinetry.",
     ],
     processSteps: [
       { title: "Workflow consultation", description: "We map your equipment, storage, and video-call backdrop requirements." },
@@ -610,7 +616,10 @@ A standard built-in study nook typically starts around $3,000 to $5,000. A full 
       { title: "Install", description: "Pre-cut penetrations for power; clean cable-managed handover." },
     ],
     faqs: buildFaqs("home-office-joinery", [
-      { question: "How much does built-in home office joinery cost in Australia?", answer: "Study nook: $3,000–$5,000. Full home office with bookcase wall: $8,000–$18,000. Library-grade fit-out with feature timber: $15,000–$30,000+." },
+      { question: "How much does built-in home office joinery cost in Australia?", answer: "Home office joinery built-in cost in Australia is best quoted against your specific room. A standard built-in study nook typically starts around $3,000 to $5,000. A full home office fit-out with floor-to-ceiling joinery, a solid timber desktop, and integrated lighting typically sits between $8,000 and $18,000 depending on size and finish. Larger executive offices with a meeting return, full bookcase walls, and integrated AV run higher. Free consultation, fixed-price quote, no per-linear-metre estimates that drift." },
+      { question: "How much does a built-in bookshelf cost in Australia?", answer: "Built in bookshelf joinery cost Australia ranges typically from $2,000 to $4,000 for a wall of fixed shelves in melamine carcass with painted MDF face, $5,000 to $10,000 for floor-to-ceiling 2pac shelving with adjustable internals and LED strip lighting, and $12,000+ for timber veneer or solid hardwood with integrated cabinetry, ladders, or hidden door panels. Most clients fall between $6,000 and $10,000 for a single feature wall, and we quote it as a fixed-price piece against the design." },
+      { question: "What's included in a SteepWood home office joinery quote?", answer: "The joinery quote what's included Australia question is worth asking before any joiner starts work. A SteepWood home office joinery quote covers: site measure, design drawings, panel and hardware supply, manufacture in our Newcastle workshop, freight to site, install, fit-off, and the 10-year structural joinery warranty. Excluded items are spelled out: typically electrical (power outlets, data, lighting circuits), patching and painting around the joinery edge, and any moving of existing power points. Variations are quoted and signed before being actioned." },
+      { question: "How can I get home office fitout ideas with built-in shelves and storage?", answer: "Home office fitout ideas built-in shelves work best when they are designed around how you actually work. We start with a 30-minute workflow conversation — how many monitors, what equipment, do you take video calls, do you need a meeting return, where does paperwork live — then design around that reality. The most common patterns we deliver are: floor-to-ceiling bookcase walls in 2pac or timber veneer, integrated LED, hidden cable trays, push-to-open lower cabinets, and an integrated desk surface in solid Tasmanian oak or American oak." },
       { question: "What is the standard height for a built-in desk?", answer: "720–740 mm to top of desk surface for seated work; 1,050–1,100 mm for standing. Adjustable electric standing desks can be integrated into joinery." },
       { question: "Can I get a standing desk built into joinery?", answer: "Yes — electric height-adjustable desk frames can be integrated within a joinery surround. Cable management routes through a riser channel." },
       { question: "What timber is best for home office furniture?", answer: "Tasmanian oak (warm, affordable), American oak (refined), walnut (premium), Spotted Gum (rich tones). For 2pac surfaces, any colour from Dulux, Resene, or Polytec palettes." },
@@ -647,9 +656,10 @@ We serve clients across Newcastle, Sydney, Melbourne, Brisbane, Perth, and Adela
       { title: "HMR carcasses", description: "High moisture-resistant board — non-negotiable for Australian laundries." },
     ],
     materials: [
-      "HMR board for all carcasses; 2pac polyurethane, polyurethane, or Laminex HMR panels for doors.",
-      "Never standard particleboard — laundries see daily steam, water spills, and washing machine condensation.",
-      "Matching kitchen finishes available when laundry and kitchen are commissioned together.",
+      "Laundry cabinet joinery cost Australia depends mainly on size, finish level, and whether you want a stone benchtop. A basic laundry with overhead and base cabinets in melamine and a laminate bench sits at the lower end of the $3,000–$10,000 range. A scullery-style laundry with 2pac doors, full-height broom storage, integrated trough, and a stone benchtop sits at the upper end. We quote it as a fixed price against the design drawings, including site measure, manufacture, delivery, install, and fit-off.",
+      "Coastal home joinery materials humidity is the single biggest factor in how a laundry holds up over time, and laundries fail faster than any other room when the wrong substrate is used. Standard particleboard has no business being in a laundry — daily steam, water spills, and washing-machine condensation will swell the unsealed edges within a few years. We use HMR (high moisture-resistant) board on every laundry carcass, seal all cut edges in our Newcastle workshop, and specify stainless-steel hardware where the cabinetry sits within splash distance of the trough.",
+      "MDF vs plywood kitchen substrate Australia is a question that applies even more sharply to laundries than kitchens. Our default for laundry carcasses is HMR MDF — it is dimensionally stable, machines and seals cleanly, and resists humidity cycles well. Marine plywood is excellent for fully wet zones (boat builds, pool changing rooms) but it is more expensive, less flat for cabinet doors, and overkill for most domestic laundries. For high-spec coastal builds we sometimes step up to marine ply on the plinth and any element within 200 mm of the floor, while keeping HMR MDF for doors and carcass.",
+      "Door finishes are 2pac polyurethane, polyurethane, or Laminex HMR panels — never standard low-pressure laminate that delaminates at the edges. White and cream finishes are by far the most popular for Australian laundries, with charcoal and deep navy popular in scullery-style designs that connect through to the kitchen. Hardware is Blum throughout: soft-close hinges and drawer runners that handle the daily open-close cycle a laundry produces.",
     ],
     processSteps: [
       { title: "Laundry measure", description: "We assess trough, appliance, and storage requirements on site." },
@@ -658,9 +668,9 @@ We serve clients across Newcastle, Sydney, Melbourne, Brisbane, Perth, and Adela
       { title: "Install", description: "Co-ordinated with plumber for trough and appliance connections." },
     ],
     faqs: buildFaqs("laundry-cabinets", [
-      { question: "How much does a custom laundry renovation cost in Australia?", answer: "Joinery-only: $3,000–$10,000. Full renovation (joinery, plumbing, tiling, flooring): $10,000–$25,000." },
+      { question: "How much does a custom laundry renovation cost in Australia?", answer: "Laundry cabinet joinery cost Australia typically falls between $3,000 and $10,000 depending on the size of the room, the number of overhead cabinets, whether benchtop stone is included, and the finish level selected. A basic laundry fit-out with overhead cabinets, base cabinets, and a laminate bench can be achieved at the lower end of that range; a large scullery-style laundry with 2pac doors and a stone benchtop will sit toward the upper end. Add $500–$1,500 if you want a tall broom cupboard with internal hooks and adjustable shelves, and $800–$2,200 for an integrated stainless trough with a stone surround." },
       { question: "What is the standard height for laundry cabinets?", answer: "Base cabinets: 900 mm. Overhead clearance: minimum 600 mm above bench." },
-      { question: "What materials should I use for laundry cabinets?", answer: "HMR board for carcasses. 2pac, polyurethane, or Laminex HMR panels for doors. Never standard particleboard." },
+      { question: "What materials should I use for laundry cabinets in a humid Australian climate?", answer: "Coastal home joinery materials humidity should drive the spec on every laundry, even inland. The four non-negotiables are: HMR board for carcasses (not standard particleboard), sealed cut edges, 2pac or Laminex HMR door fronts (not low-pressure laminate), and stainless-steel hardware near the trough. MDF vs plywood kitchen substrate Australia debates lean toward marine ply for fully wet zones, but for a domestic laundry HMR MDF is the right answer in 95% of cases — dimensionally stable, cleanly sealed, and significantly cheaper than marine ply without sacrificing real-world durability." },
       { question: "Can a cabinet maker build a laundry with a built-in trough?", answer: "Yes — we cut the benchtop to template for any laundry trough. Drop-in, undermount, and integrated stainless options all supported." },
       { question: "What is the best finish for laundry joinery?", answer: "2pac polyurethane (most durable, washable, any colour) or Laminex HMR panels (cost-effective, durable)." },
       { question: "How do I maximise storage in a small laundry?", answer: "Floor-to-ceiling overhead cabinets, slimline pull-out shelving, hanging rail above the trough, broom cupboard with internal hooks." },
@@ -695,9 +705,10 @@ We serve homeowners, builders, and architects across Newcastle, Sydney, Melbourn
       { title: "Tread overlays", description: "Hardwood overlay treads for renovating existing staircases without structural change." },
     ],
     materials: [
-      "Tasmanian oak, Victorian ash, Spotted Gum, Blackbutt, and American oak for feature hardwood stairs.",
-      "Treated pine for carpet-ready budget stairs; glass, cable, and steel balustrade systems on request.",
-      "All stairs designed to NCC Volume 2 — riser 115–190 mm, going 240–355 mm, handrail height 865–1,000 mm.",
+      "Staircase joinery timber cost NSW depends heavily on the species and the design. A budget treated-pine carpet-ready staircase typically starts around $2,500. A standard residential hardwood staircase in Tasmanian oak or American oak with closed risers and a continuous handrail typically runs $8,000 to $20,000. Floating staircases with steel stringers, hardwood treads, and glass-panel balustrades sit $18,000 to $40,000. Complex curved or geometric stairs in premium hardwood with bespoke balustrade can reach $30,000 to $50,000. Lead time is four to six weeks for a straight stair, up to twelve weeks for curved work.",
+      "Australian timber furniture joinery species selection on a staircase matters more than on almost any other piece — the stairs see daily impact, drag from shoes, sun exposure on landings, and they are the most visually dominant joinery element in the home. We work in Tasmanian oak, Victorian ash, Spotted Gum, Blackbutt, American oak, and treated pine where carpet is going down. Each species is kiln-dried and acclimatised in our Newcastle workshop before machining, with grain direction marked on the shop drawing for every tread, riser, and stringer.",
+      "Spotted Gum joinery furniture Australia clients often extend the same species into the staircase — the JD 11 hardness handles high-traffic stair use exceptionally well, the caramel-to-chocolate tones suit traditional and Hamptons interiors, and the figured grain reads beautifully on continuous treads. Blackbutt timber joinery NSW projects use Blackbutt for staircases because the species is grown locally, takes a clean satin or matt finish, reads pale enough for contemporary and coastal interiors, and meets BAL-29 bushfire requirements where the home is in a fire-prone zone. Both species are JD 10–11 and outperform softer hardwoods for stair wear.",
+      "Tasmanian oak kitchen cabinet properties — pale tone, straight grain, takes finish evenly — make it our most-requested staircase timber too, particularly when clients want the stair to read as continuous with kitchen and floor timberwork. American oak (slightly denser, more European character) is the alternative for clients wanting a refined, contemporary look. Treads can be finished in hand-rubbed oil, matt polyurethane, or satin polyurethane; risers are typically painted in a complementary tone or matched to wall paint. Balustrades carry across timber, glass panel, stainless cable, and steel flat bar to suit the architecture.",
     ],
     processSteps: [
       { title: "Site measure", description: "Floor-to-floor heights, widths, and headroom assessed on site." },
@@ -706,9 +717,9 @@ We serve homeowners, builders, and architects across Newcastle, Sydney, Melbourn
       { title: "Install", description: "On-site install typically 1–3 days depending on complexity." },
     ],
     faqs: buildFaqs("staircase-joinery", [
-      { question: "How much does a custom timber staircase cost in Australia?", answer: "Simple straight stairs (treated pine, carpet-ready): $2,500–$5,000. Solid hardwood: $8,000–$20,000. Floating or curved with glass balustrade: $20,000–$50,000+." },
+      { question: "How much does a custom timber staircase cost in Australia?", answer: "Staircase joinery timber cost NSW pricing depends heavily on the type of staircase and the timber selected. A budget treated-pine carpet-ready staircase typically starts around $2,500. A standard residential hardwood staircase in Tasmanian oak or American oak with closed risers and a continuous handrail typically runs $8,000 to $20,000. Floating staircases with steel stringers, hardwood treads, and glass balustrades sit $18,000 to $40,000. A detailed geometric or curved design in Spotted Gum or Blackbutt can reach $30,000 to $50,000." },
       { question: "What is the cheapest type of staircase in Australia?", answer: "Straight, closed-stringer, treated pine, carpet-ready. Adequate for resale-grade builds, but lacks the design impact of feature hardwood stairs." },
-      { question: "What timber is best for internal staircases?", answer: "Spotted Gum and Blackbutt for hardness; Tasmanian oak and American oak for appearance. For commercial/high-traffic: Jarrah or Merbau." },
+      { question: "What timber is best for internal staircases in Australia?", answer: "Australian timber furniture joinery species selection for a staircase is a balance of hardness, grain character, and how the species reads against the rest of the home. Spotted Gum joinery furniture Australia clients ask for by name because it is JD 11 hard (excellent stair wear), warm-toned, and visually distinctive. Blackbutt timber joinery NSW projects favour Blackbutt for its pale neutral tone, structural strength, and BAL-29 bushfire compliance — particularly relevant for homes in fire-prone zones. Tasmanian oak kitchen cabinet properties (pale, straight-grained, easy to finish evenly) also make it a perennial staircase favourite when clients want the stair to read continuous with kitchen and floor timber. American oak is the choice for slightly denser, more European character. Treated pine remains the right answer for any stair that will be carpeted." },
       { question: "What is the difference between an open-riser and closed-riser staircase?", answer: "Open-riser: gaps between treads — feels lighter, more contemporary. Closed-riser: solid riser between treads — traditional, more soundproof. Open-riser requires 125 mm sphere test compliance under NCC." },
       { question: "How long does it take to build and install a custom staircase?", answer: "Straight stairs: 4–6 weeks. Curved or geometric: 8–12 weeks. On-site install: 1–3 days." },
       { question: "Do I need a building permit for a new internal staircase?", answer: "Like-for-like replacement: usually no permit. New staircase, change of geometry, or load-bearing alteration: building approval required. We provide shop drawings for the certifier." },

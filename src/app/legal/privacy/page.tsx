@@ -13,7 +13,7 @@ export const revalidate = 86400;
 const LAST_UPDATED = "9 June 2026";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — SteepWood Joinery",
+  title: "Privacy Policy",
   description:
     "How SteepWood collects, uses, stores, and protects your personal information under the Privacy Act 1988 and Australian Privacy Principles.",
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Privacy Policy — SteepWood Joinery",
+    title: "Privacy Policy",
     description:
       "How SteepWood collects, uses, stores, and protects your personal information under the Privacy Act 1988 and Australian Privacy Principles.",
     url: canonicalUrl("/legal/privacy/"),

@@ -1,11 +1,4 @@
-"use client";
-
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FaqDisclosure } from "@/components/faq/FaqDisclosure";
 import { SectionShell, sectionHeadingClass } from "@/components/sections/section-shell";
 import type { ServiceFaq } from "@/lib/services-locations/serviceContent";
 
@@ -25,18 +18,7 @@ export function ServicePillarFAQ({
       <h2 className={sectionHeadingClass}>
         Frequently asked questions
       </h2>
-      <Accordion type="single" collapsible className="max-w-3xl">
-        {faqs.map((faq) => (
-          <AccordionItem key={faq.id} value={faq.id}>
-            <AccordionTrigger className="text-left font-medium text-ink-900">
-              {faq.question}
-            </AccordionTrigger>
-            <AccordionContent className="text-body leading-relaxed text-ink-800/80">
-              {faq.answer}
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
+      <FaqDisclosure items={faqs} />
     </SectionShell>
   );
 }

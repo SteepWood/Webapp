@@ -8,7 +8,7 @@ import { canonicalUrl } from "@/lib/seo/canonical";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Get a Free Measure & Quote — SteepWood",
+  title: "Get a Free Quote — Fixed-Price in 5 Days",
   description:
     "Request a free in-home measure and fixed-price quote for custom joinery. Tell us about your project in three quick steps.",
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Get a Free Measure & Quote — SteepWood",
+    title: "Get a Free Quote — Fixed-Price in 5 Days",
     description:
       "Request a free in-home measure and fixed-price quote for custom joinery. Tell us about your project in three quick steps.",
     url: canonicalUrl("/quote/"),

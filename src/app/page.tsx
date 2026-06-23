@@ -22,7 +22,9 @@ import { canonicalUrl } from "@/lib/seo/canonical";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "SteepWood Custom Joinery — Newcastle NSW | Australia-Wide",
+  title: {
+    absolute: "Custom Joinery Newcastle NSW — Australia-Wide",
+  },
   description:
     "Premium custom joinery from our Newcastle workshop. Kitchens, wardrobes, vanities, commercial fitouts across 16 Australian cities. Free design consultation.",
   alternates: {
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "SteepWood Custom Joinery — Newcastle NSW | Australia-Wide",
+    title: "Custom Joinery Newcastle NSW — Australia-Wide | SteepWood Joinery",
     description:
       "Premium custom joinery from our Newcastle workshop. Kitchens, wardrobes, vanities, commercial fitouts across 16 Australian cities. Free design consultation.",
     url: canonicalUrl("/"),
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SteepWood Custom Joinery — Newcastle NSW | Australia-Wide",
+    title: "Custom Joinery Newcastle NSW — Australia-Wide | SteepWood Joinery",
     description:
       "Premium custom joinery from our Newcastle workshop. Kitchens, wardrobes, vanities, commercial fitouts across 16 Australian cities. Free design consultation.",
   },

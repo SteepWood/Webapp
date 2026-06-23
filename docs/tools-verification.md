@@ -2,6 +2,54 @@
 
 > Run these steps from **`STEEPWOOD-MANUAL-OPS.md` §6** after Phase 4 code is deployed to production or a stable preview URL.
 
+## Programme phases (owner roadmap)
+
+| Phase | Focus | Status |
+|---|---|---|
+| **Phase 1** | Customisation questionnaire, business data, content, deploy & seed | **Complete** (2026-06-22) |
+| **Phase 2** | SEO optimisation & growth | **In progress** — P0 audit fixes shipped 2026-06-22 |
+| Phase 3+ | TBD | Not started |
+
+> **Note:** Phase 1 here means the **52-item pre-launch customisation programme** (live site on steepwood.com.au). This is separate from the original build-phase tags in `docs/STEEPWOOD-CURSOR-PHASES-README.md` (`phase-1-complete` = foundation scaffold).
+
+---
+
+## Phase 1 — customisation & launch — **COMPLETE**
+
+| Field | Value |
+|---|---|
+| Status | **Complete** (2026-06-22) |
+| Questions answered | **Q1–Q51** |
+| Q52 | **Skipped** (owner sign-off — questionnaire closed) |
+| Production URL | https://steepwood.com.au |
+| Production deploy | Ready (2026-06-22) |
+| Production seed | `pnpm db:seed` — 6 blog posts, 6 portfolio projects, 13 testimonials |
+
+### End-batch items completed
+
+- Commit & push to `main`
+- Vercel production deploy (blog prerender fixes included)
+- Production database seed
+- Form email E2E (hello@ notifications + quote auto-reply)
+
+### Deferred to manual ops (not blocking launch)
+
+| Item | Source | Notes |
+|---|---|---|
+| DMARC DNS record | Q40 / email | `_dmarc` TXT still pending — see Resend section below |
+| Security headers live curl test | Q38 | Code in `next.config.ts`; verify on production |
+| PageSpeed mobile ≥90 (5 URLs) | Q38 | Not run on latest deploy |
+| `pnpm audit:content` on production | Q37 | Local fixes applied; full production audit optional |
+| Sitemap resubmit (search page) | Q51 | GSC/Bing may need refresh after `/search/` added |
+| GSC email reports | Below | Still pending |
+| Real Google reviews outreach | Q45 | Review link wired; client outreach is manual |
+
+### Handoff to Phase 2 (SEO)
+
+Phase 1 delivered a production-ready site with real NAP, portfolio, blog, schema, search, and verified forms. Phase 2 work will be driven by owner-supplied SEO prompts (technical SEO, content, indexing, local, performance-as-SEO, etc.).
+
+---
+
 ## Google Search Console
 
 | Field | Value |

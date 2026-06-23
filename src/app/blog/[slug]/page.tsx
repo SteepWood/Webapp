@@ -56,7 +56,7 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = post.metaTitle ?? `${post.title} | SteepWood Blog`;
+  const title = post.metaTitle ?? post.title;
   const description =
     post.metaDescription ?? post.excerpt ?? "Insights from the SteepWood workshop.";
   const path = `/blog/${post.slug}/`;

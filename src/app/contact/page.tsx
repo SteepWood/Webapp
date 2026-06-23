@@ -26,7 +26,7 @@ const MAPS_EMBED_URL =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d378678.894!2d151.7817!3d-32.9283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b13147e6827613f%3A0x304f0bed60d7010!2sNewcastle%20NSW%2C%20Australia!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau";
 
 export const metadata: Metadata = {
-  title: "Contact SteepWood — Free Joinery Quote",
+  title: "Contact — Free Design Consultation",
   description:
     "Get a free design consultation and fixed-price quote for custom joinery. Phone, email, or contact form. Servicing 16 Australian cities from Newcastle.",
   alternates: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Contact SteepWood — Free Joinery Quote",
+    title: "Contact — Free Design Consultation",
     description:
       "Get a free design consultation and fixed-price quote for custom joinery. Phone, email, or contact form. Servicing 16 Australian cities from Newcastle.",
     url: canonicalUrl("/contact/"),

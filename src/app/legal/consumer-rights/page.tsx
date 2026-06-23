@@ -13,7 +13,7 @@ export const revalidate = 86400;
 const LAST_UPDATED = "9 June 2026";
 
 export const metadata: Metadata = {
-  title: "Australian Consumer Law — SteepWood Joinery",
+  title: "Australian Consumer Law",
   description:
     "Your rights under the Australian Consumer Law, including consumer guarantees, SteepWood warranties, and repair, replacement, or refund entitlements.",
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Australian Consumer Law — SteepWood Joinery",
+    title: "Australian Consumer Law",
     description:
       "Your rights under the Australian Consumer Law, including consumer guarantees, SteepWood warranties, and repair, replacement, or refund entitlements.",
     url: canonicalUrl("/legal/consumer-rights/"),

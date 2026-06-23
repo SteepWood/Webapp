@@ -10,7 +10,7 @@ import { searchPageStructuredData } from "@/lib/seo/searchStructuredData";
 
 export const revalidate = 3600;
 
-const BASE_TITLE = "Search SteepWood — Services, Locations & Blog";
+const BASE_TITLE = "Search — Services, Locations & Blog";
 const BASE_DESCRIPTION =
   "Search SteepWood for joinery services, location pages, and workshop articles across Australia.";
 
@@ -27,7 +27,7 @@ export async function generateMetadata({
   const canonical = canonicalUrl("/search/");
 
   return {
-    title: hasQuery ? `Search results for “${query}” | SteepWood` : BASE_TITLE,
+    title: hasQuery ? `Search results for “${query}”` : BASE_TITLE,
     description: hasQuery
       ? `Results for “${query}” across SteepWood services, locations, and joinery blog articles.`
       : BASE_DESCRIPTION,

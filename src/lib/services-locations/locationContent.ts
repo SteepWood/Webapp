@@ -1,4 +1,5 @@
 import { LOCATIONS } from "./locations";
+import { LOCATION_HUB_EXTENSIONS } from "./locationHubExtensions";
 import type { LocationDefinition } from "./types";
 
 export type LocationFaq = {
@@ -12,6 +13,14 @@ export type LocationHubContent = {
   introParagraphs: string[];
   coveredSuburbs: string[];
   architecturalStyles: string;
+  /** City-specific context for the "Why SteepWood" band (non-Newcastle hubs). */
+  localContext?: string;
+  /** Typical project lead time from deposit to install. */
+  leadTime?: string;
+  /** Freight and delivery logistics from the Newcastle workshop. */
+  freight?: string;
+  /** Architecture types as a bullet list when city-specific data is available. */
+  architectureBullets?: string[];
   nearbyLocationSlugs: string[];
   portfolioSearchNames: string[];
   faqs: LocationFaq[];
@@ -805,7 +814,24 @@ Orange projects often blend rural-residential brief with refined urban design vo
 });
 
 export function getLocationContent(slug: string): LocationHubContent | undefined {
-  return LOCATION_CONTENT[slug];
+  const base = LOCATION_CONTENT[slug];
+  const extension = LOCATION_HUB_EXTENSIONS[slug];
+
+  if (!base) {
+    return undefined;
+  }
+
+  if (!extension) {
+    return base;
+  }
+
+  return {
+    ...base,
+    localContext: extension.localContext,
+    leadTime: extension.leadTime,
+    freight: extension.freight,
+    architectureBullets: extension.architecture,
+  };
 }
 
 export function getNearbyLocations(slugs: string[]): LocationDefinition[] {

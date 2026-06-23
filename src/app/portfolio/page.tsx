@@ -11,7 +11,7 @@ import { canonicalUrl } from "@/lib/seo/canonical";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Our Projects — Custom Joinery Portfolio | SteepWood",
+  title: "Portfolio — Recent Custom Joinery Projects",
   description:
     "Explore SteepWood's custom joinery portfolio — kitchens, wardrobes, vanities, and commercial fitouts crafted in Newcastle and delivered across Australia.",
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Our Projects — Custom Joinery Portfolio | SteepWood",
+    title: "Portfolio — Recent Custom Joinery Projects | SteepWood Joinery",
     description:
       "Explore SteepWood's custom joinery portfolio — kitchens, wardrobes, vanities, and commercial fitouts crafted in Newcastle and delivered across Australia.",
     url: canonicalUrl("/portfolio/"),
