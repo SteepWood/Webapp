@@ -18,12 +18,12 @@ export function Hero() {
         <HeroMotion>
           <HeroMotionItem>
             <p className="mb-stack-sm font-mono text-caption uppercase tracking-widest text-amber-600">
-              Premium custom joinery · Newcastle, NSW
+              Premium custom joinery · Australia-wide
             </p>
           </HeroMotionItem>
           <HeroMotionItem>
             <h1 className="mb-stack-md max-w-2xl font-serif text-display-1 text-ink-900">
-              Custom Joinery, Designed and Built in Newcastle
+              SteepWood — Australia&apos;s Custom Joinery Studio
             </h1>
           </HeroMotionItem>
           <HeroMotionItem>
@@ -48,7 +48,7 @@ export function Hero() {
           </HeroMotionItem>
           <HeroMotionItem>
             <p className="text-body-sm text-ink-800/80">
-              {CARPENTRY_LICENCE_DISPLAY} · Newcastle, NSW
+              {CARPENTRY_LICENCE_DISPLAY} · Workshop in NSW
             </p>
           </HeroMotionItem>
         </HeroMotion>

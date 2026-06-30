@@ -11,7 +11,7 @@ const BASE_URL = (process.env.AUDIT_BASE_URL ?? "http://localhost:3000").replace
 );
 const MIN_WORDS = 800;
 const MAX_DUPLICATE_OVERLAP = 70;
-const CONCURRENCY = 8;
+const CONCURRENCY = Number(process.env.AUDIT_CONCURRENCY ?? 8);
 const OUTPUT_PATH = resolve(process.cwd(), "results.csv");
 
 const COMBO_URLS = new Set(

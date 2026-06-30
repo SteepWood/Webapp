@@ -15,6 +15,8 @@ primaryKeyword: "engineered stone alternatives Australia"
 secondaryKeywords: ["Caesarstone alternatives Australia", "sintered stone benchtop Australia", "benchtop options NSW 2026", "Dekton vs Neolith Australia cost"]
 internalLinks:
   - { url: "/custom-kitchen-joinery", anchor: "custom kitchen joinery" }
+  - { url: "/custom-kitchen-joinery/sydney", anchor: "custom kitchen joinery Sydney" }
+  - { url: "/laundry-cabinets/sydney", anchor: "laundry cabinets Sydney" }
   - { url: "/custom-bathroom-vanity", anchor: "custom bathroom vanity" }
   - { url: "/commercial-joinery", anchor: "commercial joinery fitouts" }
   - { url: "/blog/custom-kitchen-cost-nsw-2026", anchor: "custom kitchen cost guide for NSW" }
@@ -92,7 +94,7 @@ All pricing is supplied and installed, per linear metre, AU 2026 ranges. A stand
 | **Natural stone (granite/marble/quartzite)** | $800–$2,200+ | Present in stone; standard WHS dust controls apply at cutting | Excellent (granite/quartzite); good (marble) | Good when sealed; marble etchable | Excellent (granite/quartzite); moderate (marble) | Moderate — periodic sealing; marble requires more care | Wide — each slab unique; genuine stone movement and depth |
 | **Sintered stone (Dekton/Neolith)** | $1,200–$2,500 | Negligible | Excellent — can place hot pans directly | Excellent | Excellent | Very low — no sealing required | Wide — stone, concrete, metal, timber looks; large-format slabs |
 
-The mid-range of the market has shifted. Porcelain slab and sintered stone now sit where Caesarstone and Silestone used to be, at slightly higher price points but with meaningfully better performance characteristics. For most residential [custom kitchen joinery](/custom-kitchen-joinery) projects, the practical shortlist is: sintered stone for the performance-first buyer, porcelain slab for the performance-and-budget buyer, natural stone for the client who wants genuine material character, and laminate for tight budgets or secondary surfaces (laundry, butler's pantry).
+The mid-range of the market has shifted. Porcelain slab and sintered stone now sit where Caesarstone and Silestone used to be, at slightly higher price points but with meaningfully better performance characteristics. For most residential [custom kitchen joinery](/custom-kitchen-joinery) projects, the practical shortlist is: sintered stone for the performance-first buyer, porcelain slab for the performance-and-budget buyer, natural stone for the client who wants genuine material character, and laminate for tight budgets or secondary surfaces — including [laundry cabinets Sydney](/laundry-cabinets/sydney/) wet areas and butler's pantries.
 
 ---
 
@@ -188,7 +190,7 @@ When engaging a stonemason for any NSW kitchen project, request:
 - Current Safe Work Method Statement (SWMS) for stone fabrication and installation
 - Evidence of WHS compliance measures for respirable dust (LEV equipment, water suppression, RPE)
 
-For our [custom kitchen cost guide for NSW](/blog/custom-kitchen-cost-nsw-2026), we cover how stonemason costs integrate into a full kitchen renovation budget in more detail.
+For our [custom kitchen cost guide for NSW](/blog/custom-kitchen-cost-nsw-2026), we cover how stonemason costs integrate into a full kitchen renovation budget in more detail. Sydney homeowners can also review our [custom kitchen joinery Sydney](/custom-kitchen-joinery/sydney/) page for how benchtop specification fits the full cabinetry brief.
 
 Major sintered stone distributors with NSW coverage include Cosentino (Dekton, Sydney and Newcastle showrooms), Neolith (distributor network across NSW), and Stone Italiana. For porcelain slab, Porcelanosa has Sydney showrooms and can specify through trade accounts. Natural stone remains available from most major stone yards across the state.
 

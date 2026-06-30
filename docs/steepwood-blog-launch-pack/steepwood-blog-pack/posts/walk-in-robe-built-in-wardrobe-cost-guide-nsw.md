@@ -14,8 +14,9 @@ ogImage: "/blog/walk-in-robe-built-in-wardrobe-cost-guide-nsw/og.jpg"
 primaryKeyword: "walk in robe cost guide Australia"
 secondaryKeywords: ["built-in wardrobe cost NSW", "walk in wardrobe Newcastle NSW", "custom wardrobe cost per linear metre", "wardrobe fitout cost 2026", "built in wardrobe joinery Newcastle"]
 internalLinks:
-  - { url: "/built-in-wardrobes", anchor: "custom built-in wardrobes" }
-  - { url: "/built-in-wardrobes", anchor: "built-in wardrobe service" }
+  - { url: "/built-in-wardrobes", anchor: "built-in wardrobes" }
+  - { url: "/built-in-wardrobes/sydney", anchor: "built-in wardrobes Sydney" }
+  - { url: "/built-in-wardrobes/newcastle", anchor: "built-in wardrobes Newcastle" }
   - { url: "/custom-kitchen-joinery", anchor: "custom kitchen joinery" }
   - { url: "/home-office-joinery", anchor: "home office joinery" }
   - { url: "/custom-furniture", anchor: "custom furniture" }
@@ -216,11 +217,11 @@ When comparing quotes on a per-LM basis, confirm with each supplier exactly what
 
 Wardrobe fitout pricing varies across NSW primarily because of labour rates, travel costs, and the type of joinery being installed (site-built vs workshop-manufactured).
 
-**Newcastle and Hunter Valley**: SteepWood's home market. Workshop fabrication costs are lower than inner Sydney because of lower workshop overheads, and installation travel is included for Newcastle and the Hunter region. Expect mid-spec built-in pricing at the lower end of the $3,500–$7,000 range for a standard double-wardrobe. [Newcastle](/locations/newcastle) is also the most humidity-affected zone among SteepWood's regular service areas — MR board substrate is the correct specification here, not an optional upgrade.
+**Newcastle and Hunter Valley**: SteepWood's home market. Workshop fabrication costs are lower than inner Sydney because of lower workshop overheads, and installation travel is included for Newcastle and the Hunter region. Expect mid-spec built-in pricing at the lower end of the $3,500–$7,000 range for a standard double-wardrobe. Our [built-in wardrobes Newcastle](/built-in-wardrobes/newcastle/) service area is also the most humidity-affected zone among SteepWood's regular regions — MR board substrate is the correct specification here, not an optional upgrade.
 
 **Central Coast**: Coastal conditions (salt air, humidity cycling) make the material specification more critical. Allow for the same MR board substrate and Blum corrosion-resistant hardware. Travel from Newcastle is included in SteepWood's free measure and quote.
 
-**Sydney**: Labour costs are 15–25% higher than Newcastle rates. A mid-spec built-in wardrobe in a [Sydney](/locations/sydney) home that would be $5,500 in Newcastle will typically come in at $6,500–$7,500 from a Sydney-based fitout company. SteepWood builds walk-in robes and wardrobes for Sydney clients from the Newcastle workshop and installs on site — our portfolio includes a [Mosman walk-in robe](/portfolio/walk-in-robe-sydney) that demonstrates what workshop-quality joinery looks like at the premium end of the Sydney market.
+**Sydney**: Labour costs are 15–25% higher than Newcastle rates. A mid-spec built-in wardrobe in a Sydney home that would be $5,500 in Newcastle will typically come in at $6,500–$7,500 from a Sydney-based fitout company. SteepWood builds walk-in robes and wardrobes for [built-in wardrobes Sydney](/built-in-wardrobes/sydney/) clients from the Newcastle workshop and installs on site — our portfolio includes a [Mosman walk-in robe](/portfolio/walk-in-robe-sydney) that demonstrates what workshop-quality joinery looks like at the premium end of the Sydney market.
 
 ---
 

@@ -14,6 +14,7 @@ import { ServicePillarFAQ } from "@/components/pages/ServicePillarFAQ";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
 import { PageClosingCta } from "@/components/sections/dark-cta-section";
 import { Button } from "@/components/ui/button";
+import { RelatedServicesBlock } from "@/components/seo/RelatedServicesBlock";
 import type { ServicePillarContent } from "@/lib/services-locations/serviceContent";
 import {
   getServiceIncludesImage,
@@ -22,6 +23,7 @@ import {
   getServiceWhatIsImage,
 } from "@/lib/services-locations/serviceImages";
 import { LOCATIONS } from "@/lib/services-locations/locations";
+import { isService, SERVICE_LABEL } from "@/lib/seo-graph";
 import type { ResolvedService } from "@/lib/services-locations/types";
 import type { PortfolioProject, Testimonial } from "@prisma/client";
 import { canonicalUrl } from "@/lib/seo/canonical";
@@ -71,6 +73,12 @@ export function ServicePillarPage({
   const whatIsPrefix = getServiceWhatIsPrefix(service.slug);
   const materialsPrefix = getServiceMaterialsPrefix(service.slug);
   const serviceFacts = getServiceFacts(service.slug);
+  const hubLabel = isService(service.slug)
+    ? SERVICE_LABEL[service.slug]
+    : service.name;
+  const hubH1 = isService(service.slug)
+    ? `${hubLabel} in Australia — Custom-Built by SteepWood`
+    : service.h1;
 
   return (
     <>
@@ -123,7 +131,7 @@ export function ServicePillarPage({
               Custom Joinery · Australia-wide
             </p>
             <h1 className="mb-stack-md font-serif text-display-2 text-ink-900">
-              {service.h1}
+              {hubH1}
             </h1>
             <p className="mb-stack-lg max-w-xl text-body-lg text-ink-800">
               {content.heroIntro}
@@ -158,23 +166,6 @@ export function ServicePillarPage({
               What is {service.name.toLowerCase()}?
             </h2>
             {whatIsPrefix ? <AnswerFirst>{whatIsPrefix}</AnswerFirst> : null}
-            {content.relatedServices.length > 0 ? (
-              <p className="mb-stack-md text-body text-ink-800/80">
-                Complementary services:{" "}
-                {content.relatedServices.map((related, index) => (
-                  <span key={related.slug}>
-                    {index > 0 ? ", " : null}
-                    <Link
-                      href={`/${related.slug}/`}
-                      className="font-medium text-amber-700 underline-offset-2 hover:underline"
-                    >
-                      {related.label}
-                    </Link>
-                  </span>
-                ))}
-                .
-              </p>
-            ) : null}
             <div className="prose-steepwood max-w-none text-body leading-relaxed text-ink-800">
               {content.whatIsParagraphs.map((paragraph) => (
                 <p key={paragraph.slice(0, 40)}>{paragraph}</p>
@@ -317,11 +308,11 @@ export function ServicePillarPage({
 
       <SectionShell className="bg-ink-100/30">
         <h2 className="mb-stack-sm font-serif text-h2 text-ink-900">
-          We craft {service.name.toLowerCase()} for clients across Australia
+          {hubLabel} across Australia
         </h2>
         <p className="mb-stack-lg max-w-3xl text-body-lg text-ink-800">
-          Every location below links to our dedicated {service.shortTitle.toLowerCase()}{" "}
-          page for that city — with local logistics, drive times, and project examples.
+          We deliver {hubLabel.toLowerCase()} nationwide. Pick your closest
+          workshop hub for local information:
         </p>
         <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {LOCATIONS.map((location) => (
@@ -350,6 +341,12 @@ export function ServicePillarPage({
           ))}
         </ul>
       </SectionShell>
+
+      {isService(service.slug) ? (
+        <SectionShell>
+          <RelatedServicesBlock currentService={service.slug} />
+        </SectionShell>
+      ) : null}
 
       <ServicePillarFAQ faqs={content.faqs} />
 

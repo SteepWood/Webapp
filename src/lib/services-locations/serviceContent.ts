@@ -1,3 +1,11 @@
+import {
+  ALL_CITIES,
+  CITY_LABEL,
+  RELATED_SERVICES,
+  isService,
+  type Service,
+} from "@/lib/seo-graph";
+
 export type ServiceFaq = {
   id: string;
   question: string;
@@ -241,7 +249,7 @@ We serve homeowners, builders, and interior designers across Newcastle, Sydney, 
   ],
   materials: [
     "Every SteepWood wardrobe is made to measure in our Newcastle workshop. Carcasses are built from Australian-made Polytec and Laminex melamine board, with fronts available in melamine, 2pac polyurethane, timber veneer, or solid timber to suit Hamptons, contemporary, and coastal interiors. For clients comparing supplier ranges, the Polytec vs Laminex kitchen doors question comes up constantly — both are excellent, and we hold full sample libraries of each so you can match wardrobe doors to kitchen and laundry joinery commissioned in the same project.",
-    "Timber veneer kitchen cabinets and wardrobe fronts are increasingly popular for clients who want warmth without the cost or movement of solid hardwood. We stock and order in Tasmanian oak, American oak, Blackbutt, and Spotted Gum veneer pressed on premium HMR substrates, and we finish in matt or satin polyurethane in our workshop. The same veneer libraries cross over between wardrobes, kitchens, and feature joinery, which is the easiest way to co-ordinate a whole-home palette.",
+    "Timber veneer kitchen cabinets Australia are increasingly popular for clients who want warmth without the cost or movement of solid hardwood. We stock and order in Tasmanian oak, American oak, Blackbutt, and Spotted Gum veneer pressed on premium HMR substrates, and we finish in matt or satin polyurethane in our workshop. Wardrobe fronts in the same timber veneer libraries cross over between wardrobes, kitchens, and feature joinery, which is the easiest way to co-ordinate a whole-home palette.",
     "Built in wardrobe design trends 2026 are leaning toward floor-to-ceiling fronts with no top reveal, integrated LED behind glass shelving, push-to-open hardware on minimalist door styles, and dressing-room layouts with island benches in walk-in robes. We are also seeing strong demand for warm timber veneer interiors paired with matt black or brushed brass handles, soft-curve profiles on bedhead-facing fronts, and walk in wardrobe design ideas Australia is borrowing from luxury hotel suites — full-height mirror panels, charging stations, jewellery drawers, and feature pendant lighting above the island.",
     "Internal hardware is Blum end-to-end. Blum soft close hardware quality is the reason we specify it as standard rather than as an upgrade: drawer runners that close softly under any load, LEGRABOX drawer systems for shoe drawers and jewellery inserts, and SERVO-DRIVE LED strip lighting that switches with the door — all backed by a 25-year manufacturer warranty on residential projects. Pull-out shoe racks, valet rails, trouser hangers, hamper drawers, and motion-sensor lights are configured per room during the design consultation.",
   ],
@@ -354,7 +362,7 @@ We provide fixed-price contracts, detailed project programmes, and a single poin
     ],
     materials: [
       "Office joinery from SteepWood is manufactured in Newcastle and installed Australia-wide. Carcasses and casework use commercial-grade Laminex and Polytec panels, compact phenolic where high-cycle wear is expected, and solid surface or stone bench tops on reception desks and breakout zones. Hardware is Blum and Häfele throughout — drawer runners, hinges, and lift mechanisms rated for the cycle counts a busy office produces.",
-      "Commercial joinery fitout cost Australia varies more by inclusions than by size: a 200 sqm tenancy with a custom reception desk, two boardroom credenzas, a breakout kitchen, and four storage walls can land anywhere between $80,000 and $250,000 depending on finish level, freight to city, and programme compression. Sydney and Melbourne tenancies typically sit at the higher end; Newcastle, Wollongong, and Canberra projects benefit from shorter freight and a more direct workshop relationship.",
+      "Commercial joinery fitout cost Australia varies more by inclusions than by size: a 200 sqm tenancy with a custom reception desk, two boardroom credenzas, a breakout kitchen, and four storage walls can land anywhere between $80,000 and $250,000 depending on finish level, freight to city, and programme compression. Sydney and Melbourne tenancies typically sit at the higher end; office fit out Newcastle projects benefit from our local workshop — no interstate freight loading, faster site revisits, and shorter programmes than Sydney tenants typically see. See /office-fitout/newcastle/ for Hunter-specific scope and pricing guidance.",
       "We also build home office fitout ideas built-in shelves elements — wall-to-wall bookcase joinery, integrated desks, and floor-to-ceiling storage — as part of larger residential commissions and for executives running serious home offices. The same workshop, the same Blum hardware, the same 2pac and veneer finishes carry across our commercial and residential work, which makes co-ordinating brand colour across head office and home study very straightforward.",
       "Joinery lead time Australia workshop schedules are the single biggest factor in office-fitout programmes that slip. Our standard workshop lead time is six to ten weeks from signed shop drawings to delivery for a mid-sized fitout, and we book site dates against the construction programme rather than pretending to deliver in unrealistic windows. We provide weekly progress photos, shop drawings for certifier review, and a single project manager from brief to handover.",
     ],
@@ -366,6 +374,7 @@ We provide fixed-price contracts, detailed project programmes, and a single poin
     ],
     faqs: buildFaqs("office-fitout", [
       { question: "How much does an office fitout cost per square metre in Australia?", answer: "Office fitout costs in Australia typically range from $800 to $3,000+ per square metre, depending on city, finish level, and the extent of structural work required. Sydney and Melbourne sit at the upper end; Perth, Adelaide, Canberra, and regional NSW offer lower rates because of trade availability and freight. A basic open-plan refresh may be achievable under $1,000 per sqm; a premium fitout with custom joinery, quality finishes, and advanced acoustic treatment will sit from $2,500 upward. Commercial joinery fitout cost Australia is the major driver inside that per-sqm figure on most projects." },
+      { question: "Do you provide office fit out in Newcastle, NSW?", answer: "Yes. Office fit out Newcastle is our home market — our workshop and install teams are based here, which means the shortest lead times, direct site revisits during manufacture, and no interstate freight loading on Hunter tenancies. We fit out CBD offices, Honeysuckle professional suites, Hamilton creative spaces, and Charlestown commercial premises. Full scope, lead times, and fixed-price guidance: /office-fitout/newcastle/." },
       { question: "How does commercial joinery fitout cost compare across Australia?", answer: "Commercial joinery fitout cost Australia depends on three things: panel grade (commercial Laminex / Polytec vs decorative residential board), hardware tier (Blum and Häfele commercial-rated runners vs domestic), and the volume of custom shop-drawn elements vs off-the-shelf casework. As a rule of thumb, expect $1,200–$2,200 per linear metre for premium commercial joinery, plus separate line items for stone benchtops, integrated AV, and acoustic treatments. Freight to Sydney, Brisbane, Perth, and Adelaide is quoted separately so you can see exactly what the joinery itself costs." },
       { question: "Do you also handle shopfitting joinery, or just office fitouts?", answer: "We do both. Shopfitting joinery cost Australia tracks slightly lower per linear metre than office fitout because retail counters and shelving systems repeat across modules, while office reception and boardroom joinery are typically one-off. If your project is retail rather than office — POS counters, display fixtures, shelving systems — see our shopfitting service page at /shopfitting/. We are happy to scope mixed-use jobs (e.g. ground-floor retail with first-floor head office) under a single project programme." },
       { question: "Can SteepWood also build a home office to match my workplace joinery?", answer: "Yes. Many of our office-fitout clients ask us to deliver matching home office fitout ideas built-in shelves, integrated desks, and bookcase walls for their residences. Because we hold colour and timber samples on file from your commercial project, we can match decor finishes, brand colour, and hardware tier across both spaces. See our home office joinery service page at /home-office-joinery/ for residential scope." },
@@ -739,6 +748,144 @@ for (const [slug, content] of Object.entries(REMAINING_SERVICES)) {
   defineService(slug, content);
 }
 
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/** Strip city names from service hub body copy — cities belong only in the cities-served grid. */
+function sanitizeHubText(text: string): string {
+  let out = text
+    .replace(/\bmanufactured in Newcastle\b/gi, "manufactured in our workshop")
+    .replace(/\bManufacture in Newcastle\b/g, "Manufacture in our workshop")
+    .replace(/\bour Newcastle workshop\b/gi, "our workshop")
+    .replace(/\bOur Newcastle workshop\b/g, "Our workshop")
+    .replace(/\bin our Newcastle workshop\b/gi, "in our workshop")
+    .replace(/\bmade entirely in Newcastle\b/gi, "made entirely in our workshop")
+    .replace(/\bin Newcastle using\b/gi, "in our workshop using")
+    .replace(/\bmanufactured in Newcastle and\b/gi, "manufactured in our workshop and")
+    .replace(
+      /We work across Newcastle, Sydney, Melbourne, Brisbane, Perth, and 12 more Australian cities[^.]*\./g,
+      "We deliver nationwide from our workshop to 16 Australian cities — choose your location in the section below.",
+    )
+    .replace(
+      /We serve homeowners, builders, and interior designers across Newcastle, Sydney, Melbourne, Brisbane, Perth, Adelaide, and 10 more cities[^.]*\./g,
+      "We serve homeowners, builders, and interior designers Australia-wide.",
+    )
+    .replace(
+      /We serve clients across Newcastle, Sydney, Melbourne, Brisbane, Perth, and Adelaide[^.]*\./g,
+      "We serve clients Australia-wide with free consultations and fixed-price quotes.",
+    )
+    .replace(
+      /At SteepWood we design and build custom home office joinery across Newcastle, Sydney, Melbourne, Brisbane, Perth, and Adelaide\./g,
+      "At SteepWood we design and build custom home office joinery Australia-wide.",
+    )
+    .replace(
+      /Sydney and Melbourne sit at the upper end; Perth and Adelaide offer slightly lower rates\./g,
+      "Capital-city tenancies typically sit at the upper end; regional projects often offer lower freight and programme costs.",
+    )
+    .replace(
+      /Sydney and Melbourne tenancies typically sit at the higher end; office fit out Newcastle projects benefit from our local workshop — no interstate freight loading, faster site revisits, and shorter programmes than Sydney tenants typically see\. See \/office-fitout\/newcastle\/ for Hunter-specific scope and pricing guidance\./g,
+      "Capital-city tenancies typically sit at the higher end; projects near our workshop benefit from shorter lead times, faster site revisits, and no interstate freight loading on joinery.",
+    )
+    .replace(
+      /Sydney and Melbourne sit at the upper end; Perth, Adelaide, Canberra, and regional NSW offer lower rates because of trade availability and freight\./g,
+      "Capital cities and premium CBD tenancies sit at the upper end; regional projects often offer lower freight and trade costs.",
+    )
+    .replace(
+      /Freight to Sydney, Brisbane, Perth, and Adelaide is quoted separately/g,
+      "Interstate freight is quoted separately",
+    )
+    .replace(
+      /Newcastle, Central Coast, Sydney Northern Beaches, and the Hunter all see/g,
+      "Coastal regions across eastern Australia see",
+    )
+    .replace(
+      /How much does a custom kitchen cost in Sydney in 2026\?/g,
+      "How much does a custom kitchen cost in Australia in 2026?",
+    )
+    .replace(
+      /Custom kitchen cost Sydney projects typically range/g,
+      "Custom kitchen projects in major cities typically range",
+    )
+    .replace(
+      /Kitchen renovation Sydney cost 2026 depends/g,
+      "Kitchen renovation cost in 2026 depends",
+    )
+    .replace(
+      /Custom joinery Sydney cost 2026 and interstate pricing/g,
+      "Metro and regional pricing",
+    )
+    .replace(
+      /How much does a walk-in robe cost in Newcastle, NSW\?/g,
+      "How much does a walk-in robe cost in Australia?",
+    )
+    .replace(
+      /Walk in wardrobe Newcastle NSW cost typically lands/g,
+      "Walk-in wardrobe cost typically lands",
+    )
+    .replace(
+      /Because we manufacture in Newcastle, there is no freight loading for Hunter, Central Coast, or Lower Hunter installs — quote includes/g,
+      "Quotes include",
+    )
+    .replace(
+      /Do you provide office fit out in Newcastle, NSW\?/g,
+      "Do you provide office fit-out Australia-wide?",
+    )
+    .replace(
+      /Yes\. Office fit out Newcastle is our home market — our workshop and install teams are based here, which means the shortest lead times, direct site revisits during manufacture, and no interstate freight loading on Hunter tenancies\. We fit out CBD offices, Honeysuckle professional suites, Hamilton creative spaces, and Charlestown commercial premises\. Full scope, lead times, and fixed-price guidance: \/office-fitout\/newcastle\/\./g,
+      "Yes. We deliver office fit-outs Australia-wide from our workshop, with the shortest lead times and direct site revisits for projects in our home region. See the locations section below for city-specific scope and pricing guidance.",
+    );
+
+  for (const city of ALL_CITIES) {
+    const label = CITY_LABEL[city];
+    const re = new RegExp(`\\b${escapeRegExp(label)}\\b`, "g");
+    out = out.replace(re, "");
+  }
+
+  return out
+    .replace(/\s{2,}/g, " ")
+    .replace(/\s+([,.;])/g, "$1")
+    .replace(/,\s*,/g, ",")
+    .trim();
+}
+
+function sanitizeHubContent(content: ServicePillarContent): ServicePillarContent {
+  return {
+    ...content,
+    heroIntro: sanitizeHubText(content.heroIntro),
+    whatIsParagraphs: content.whatIsParagraphs.map(sanitizeHubText),
+    materials: content.materials.map(sanitizeHubText),
+    processSteps: content.processSteps.map((step) => ({
+      ...step,
+      title: sanitizeHubText(step.title),
+      description: sanitizeHubText(step.description),
+    })),
+    bodySections: content.bodySections.map((section) => ({
+      ...section,
+      title: sanitizeHubText(section.title),
+      paragraphs: section.paragraphs.map(sanitizeHubText),
+    })),
+    faqs: content.faqs.map((faq) => ({
+      ...faq,
+      question: sanitizeHubText(faq.question),
+      answer: sanitizeHubText(faq.answer),
+    })),
+    includes: content.includes.map((item) => ({
+      ...item,
+      title: sanitizeHubText(item.title),
+      description: sanitizeHubText(item.description),
+    })),
+  };
+}
+
 export function getServiceContent(slug: string): ServicePillarContent | undefined {
-  return SERVICE_CONTENT[slug];
+  const content = SERVICE_CONTENT[slug];
+  return content ? sanitizeHubContent(content) : undefined;
+}
+
+export function getRelatedServicesForHub(slug: string): Service[] {
+  if (!isService(slug)) {
+    return [];
+  }
+  return RELATED_SERVICES[slug];
 }

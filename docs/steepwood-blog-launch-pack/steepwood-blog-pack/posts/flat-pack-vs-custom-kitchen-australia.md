@@ -15,6 +15,7 @@ primaryKeyword: "flat pack vs custom kitchen Australia"
 secondaryKeywords: ["IKEA kitchen vs custom joinery", "Kaboodle vs custom kitchen", "custom kitchen worth the cost Australia", "flat pack kitchen hidden costs"]
 internalLinks:
   - { url: "/custom-kitchen-joinery", anchor: "custom kitchen joinery" }
+  - { url: "/custom-kitchen-joinery/newcastle", anchor: "custom kitchen joinery Newcastle" }
   - { url: "/laundry-cabinets", anchor: "laundry cabinets" }
   - { url: "/built-in-wardrobes", anchor: "built-in wardrobes" }
   - { url: "/blog/custom-kitchen-cost-nsw-2026", anchor: "Custom Kitchen Cost Guide for NSW" }
@@ -193,7 +194,7 @@ I build custom kitchens for a living, but I will tell you honestly when flat-pac
 
 **Coastal and coastal-adjacent homes.** Newcastle, Lake Macquarie, the Central Coast, and Hunter Valley homes near water are environments where particleboard flat-pack shortens its own life. Custom joinery built with MR board, proper edgebanding, and Blum's corrosion-resistant hardware is the correct specification. See our [Hamptons kitchen project](/portfolio/hamptons-kitchen-newcastle) for an example of how we approach coastal-home joinery — MR board throughout, Blum Legrabox in Carbon Black, Polytec SYNC Brushed Natural Oak doors.
 
-**Heritage homes.** Federation-era and inter-war homes in [Newcastle](/locations/newcastle) and the inner Hunter have non-standard ceiling heights, irregular wall planes, and period proportions that no modular flat-pack system can address. Custom joinery is the only option for a kitchen that reads as part of the original home rather than an obvious addition.
+**Heritage homes.** Federation-era and inter-war homes in [custom kitchen joinery Newcastle](/custom-kitchen-joinery/newcastle/) service areas and the inner Hunter have non-standard ceiling heights, irregular wall planes, and period proportions that no modular flat-pack system can address. Custom joinery is the only option for a kitchen that reads as part of the original home rather than an obvious addition.
 
 **The $800k-plus property market.** At this price point, buyers expect a custom kitchen. A flat-pack kitchen in a premium home is not a neutral outcome — it is a negotiating point at sale.
 

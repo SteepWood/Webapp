@@ -15,6 +15,8 @@ primaryKeyword: "custom kitchen cost NSW"
 secondaryKeywords: ["kitchen renovation cost Sydney", "custom kitchen cost Newcastle", "how much does a kitchen renovation cost Australia", "kitchen cabinetry cost per linear metre"]
 internalLinks:
   - { url: "/custom-kitchen-joinery", anchor: "custom kitchen joinery" }
+  - { url: "/custom-kitchen-joinery/sydney", anchor: "custom kitchen joinery Sydney" }
+  - { url: "/custom-kitchen-joinery/newcastle", anchor: "custom kitchen joinery Newcastle" }
   - { url: "/custom-bathroom-vanity", anchor: "custom bathroom vanity" }
   - { url: "/commercial-joinery", anchor: "commercial joinery" }
   - { url: "/blog/questions-to-ask-custom-joiner-australia", anchor: "questions to ask your custom joiner" }
@@ -83,7 +85,7 @@ For a full renovation with layout changes, the trade stack typically includes: p
 
 ### Location
 
-[Newcastle](/locations/newcastle) and Hunter Valley labour rates run 10–20% below inner-city [Sydney](/locations/sydney) rates for on-site installation work. For clients in Sydney, we manufacture in our Newcastle workshop (same quality, same materials, same specification) and install with our own crew — the workshop rate is the same, but travel time and accommodation for multi-day Sydney installs is factored into pricing.
+[Custom kitchen joinery Newcastle](/custom-kitchen-joinery/newcastle/) and Hunter Valley labour rates run 10–20% below inner-city [custom kitchen joinery Sydney](/custom-kitchen-joinery/sydney/) rates for on-site installation work. For Sydney clients, we manufacture in our Newcastle workshop (same quality, same materials, same specification) and install with our own crew — the workshop rate is the same, but travel time and accommodation for multi-day Sydney installs is factored into pricing.
 
 ---
 
@@ -185,7 +187,7 @@ Cost guides written for a national audience miss the regional nuances that genui
 
 ### Sydney vs Newcastle labour rates
 
-Inner-city Sydney (Surry Hills, Balmain, Mosman, the Eastern Suburbs) carries a labour premium for on-site installation of 15–25% above Hunter Valley and [Newcastle](/locations/newcastle) rates. This is driven by parking, access constraints, strata approvals, and higher cost-of-living overheads for Sydney-based tradespeople. Our Newcastle workshop rate is the same regardless of project location; the variable is the installation component. For [Sydney](/locations/sydney) clients, we factor in our crew's travel time — but for a large project the fabrication savings from a workshop-based studio versus a Sydney-only operation still stack in your favour.
+Inner-city Sydney (Surry Hills, Balmain, Mosman, the Eastern Suburbs) carries a labour premium for on-site installation of 15–25% above Hunter Valley and [custom kitchen joinery Newcastle](/custom-kitchen-joinery/newcastle/) rates. This is driven by parking, access constraints, strata approvals, and higher cost-of-living overheads for Sydney-based tradespeople. Our Newcastle workshop rate is the same regardless of project location; the variable is the installation component. For [custom kitchen joinery Sydney](/custom-kitchen-joinery/sydney/) clients, we factor in our crew's travel time — but for a large project the fabrication savings from a workshop-based studio versus a Sydney-only operation still stack in your favour.
 
 ### Hunter Valley heritage homes
 

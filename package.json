@@ -23,6 +23,8 @@
     "email:test-forms": "dotenv -e .env.local -- tsx scripts/test-form-emails.ts",
     "supabase:types": "supabase gen types typescript --project-id uqumesylnwumwxgoukpn --schema public > src/lib/supabase/database.types.ts",
     "audit:content": "tsx scripts/audit-content.ts",
+    "seo:lint": "tsx scripts/seo-lint.ts",
+    "seo:urls": "tsx scripts/export-indexing-urls.ts",
     "smoke": "tsx scripts/smoke-test.ts",
     "snapshot:seo:pre": "node scripts/snapshot-seo.mjs pre",
     "snapshot:seo:pre-aio": "node scripts/snapshot-seo.mjs pre-aio",

@@ -12,7 +12,7 @@ import { SectionShell } from "@/components/sections/section-shell";
 const PILLARS = [
   {
     icon: Warehouse,
-    title: "Newcastle Workshop",
+    title: "Our Workshop",
     description:
       "Every piece designed and manufactured in one place. No subcontracted joinery, no surprises.",
   },

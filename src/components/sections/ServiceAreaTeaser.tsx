@@ -26,12 +26,12 @@ export function ServiceAreaTeaser({
 
       <ScrollReveal className="relative max-w-3xl">
         <h2 className="mb-stack-sm font-serif text-h2 text-ink-900">
-          Crafted in Newcastle. Delivered Australia-wide.
+          Cities we service across Australia
         </h2>
         <p className="mb-stack-lg text-body-lg text-ink-800">
-          We service 16 Australian cities and regions. From our Newcastle
-          workshop we travel for free consultations across NSW and ACT, and
-          deliver via dedicated furniture freight to QLD, VIC, WA, and SA.
+          We deliver from our NSW workshop to 16 Australian cities and regions.
+          Free consultations across NSW and ACT; dedicated freight to QLD, VIC,
+          WA, and SA.
         </p>
       </ScrollReveal>
 

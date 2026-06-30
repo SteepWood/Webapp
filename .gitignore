@@ -52,6 +52,8 @@ snapshots/lighthouse-pre/
 results.csv
 lighthouse-prod.json
 lighthouse-report.json
+scripts/seo-indexing-urls.txt
 
 # Legacy nested app copy (repo root is canonical)
 /webapp/
+.env*

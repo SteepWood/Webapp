@@ -1,3 +1,13 @@
+import { CITY_SUBURBS } from "@/lib/city-suburbs";
+import {
+  ALL_CITIES,
+  CITY_LABEL,
+  CITY_STATE,
+  NEARBY_CITIES,
+  isCity,
+  type City,
+} from "@/lib/seo-graph";
+
 import { LOCATIONS } from "./locations";
 import { LOCATION_HUB_EXTENSIONS } from "./locationHubExtensions";
 import type { LocationDefinition } from "./types";
@@ -125,6 +135,11 @@ We also serve Newcastle's commercial market: cafes and restaurants along Beaumon
         "Can you replace just the kitchen doors and benchtop without changing carcasses?",
       answer:
         "Yes — door + benchtop refresh is a common Newcastle project, ~$8,000–$18,000.",
+    },
+    {
+      question: "Do you provide office fit out in Newcastle?",
+      answer:
+        "Yes — reception desks, boardroom credenzas, breakout joinery, and storage walls for Newcastle CBD, Honeysuckle, Hamilton, and Charlestown tenancies. Office fit out Newcastle is our home market with the shortest lead times. Full scope: /office-fitout/newcastle/.",
     },
     {
       question: "What suburbs of Newcastle do you cover for free in-home consultations?",
@@ -813,6 +828,118 @@ Orange projects often blend rural-residential brief with refined urban design vo
   ],
 });
 
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function sanitizeLocationHubText(text: string, owningCity: City): string {
+  const ownLabel = CITY_LABEL[owningCity];
+  let out = text;
+
+  if (owningCity !== "newcastle") {
+    out = out
+      .replace(/\bNewcastle workshop\b/gi, "our workshop")
+      .replace(/\bour Newcastle workshop\b/gi, "our workshop")
+      .replace(/\bfrom Newcastle\b/gi, "from our workshop")
+      .replace(/\bNewcastle to [^,.]+/gi, "From our workshop")
+      .replace(/\bNewcastle-crafted\b/gi, "workshop-crafted")
+      .replace(/\bNewcastle-based\b/gi, "workshop-based")
+      .replace(/\bHunter-based\b/gi, "workshop-based")
+      .replace(/\bHunter Valley experience\b/gi, `${ownLabel} regional experience`)
+      .replace(/\bSydney\/Melbourne\b/gi, "interstate")
+      .replace(/\bSydney and Melbourne\b/gi, "major capital cities")
+      .replace(/\bSydney builders\b/gi, `${ownLabel} builders`)
+      .replace(/\btrusted Sydney builders\b/gi, `trusted ${ownLabel} builders`);
+  }
+
+  for (const city of ALL_CITIES) {
+    if (city === owningCity) {
+      continue;
+    }
+
+    const label = CITY_LABEL[city];
+    const re = new RegExp(`\\b${escapeRegExp(label)}\\b`, "g");
+    out = out.replace(re, "");
+  }
+
+  return out
+    .replace(/\s{2,}/g, " ")
+    .replace(/\s+([,.;])/g, "$1")
+    .replace(/,\s*,/g, ",")
+    .trim();
+}
+
+function buildCityQualifiedIntro(city: City): string {
+  const label = CITY_LABEL[city];
+  const state = CITY_STATE[city];
+
+  if (city === "newcastle") {
+    return "Newcastle is where SteepWood lives and works. Our workshop and design studio are based here, which means every piece of joinery we make for a Newcastle home or business is built within driving distance of the people who will use it.";
+  }
+
+  return `SteepWood delivers custom joinery to ${label} ${state}. Operating from our workshop since 2014, we design and install custom kitchens in ${label}, built-in wardrobes in ${label}, bathroom vanities in ${label}, laundry cabinetry, custom furniture, staircases, and commercial joinery for ${label} projects.`;
+}
+
+function buildCityQualifiedBody(city: City): string[] {
+  const label = CITY_LABEL[city];
+  const state = CITY_STATE[city];
+
+  if (city === "newcastle") {
+    return [
+      `We design and build for the full range of Newcastle housing: Federation cottages in Hamilton and Cooks Hill that need joinery to suit period detail; coastal homes in Merewether and Newcastle East where moisture resistance and finish durability matter most; family homes across the Hunter from Maryland to Lake Macquarie; and apartment renovations in Newcastle West and Honeysuckle where every centimetre of cabinetry has to earn its place.`,
+      `We also serve Newcastle's commercial market: cafes and restaurants along Beaumont and Darby Street, retail tenancies in Marketown and Charlestown Square, professional offices around the CBD, and hospitality fitouts across the Hunter.`,
+    ];
+  }
+
+  return [
+    `Every joinery phrase on this page is written for ${label} — bespoke joinery in ${label}, custom kitchens in ${label}, and cabinetry designed for ${label} homes and businesses. We service ${label} from our workshop with full project management, on-site measure, and fixed quotes.`,
+    `Each ${label} project is drawn in-house, manufactured by licensed cabinetmakers, and installed by our team or vetted ${label} partners. Free consultations are available for qualifying ${label} ${state} projects.`,
+  ];
+}
+
+function buildCityQualifiedLocalContext(city: City): string {
+  const label = CITY_LABEL[city];
+  return `We service ${label} from our workshop with full project management, on-site measure and fixed quotes. Every ${label} project is drawn in-house, manufactured by licensed cabinetmakers and installed by our team.`;
+}
+
+function sanitizeLocationHubContent(
+  slug: string,
+  content: LocationHubContent,
+): LocationHubContent {
+  if (!isCity(slug)) {
+    return content;
+  }
+
+  const city = slug;
+  const suburbs = CITY_SUBURBS[city];
+
+  return {
+    ...content,
+    heroIntro: buildCityQualifiedIntro(city),
+    introParagraphs: buildCityQualifiedBody(city),
+    coveredSuburbs: suburbs,
+    nearbyLocationSlugs: [...NEARBY_CITIES[city]],
+    localContext: content.localContext
+      ? sanitizeLocationHubText(content.localContext, city)
+      : buildCityQualifiedLocalContext(city),
+    leadTime: content.leadTime
+      ? sanitizeLocationHubText(content.leadTime, city)
+      : content.leadTime,
+    freight: content.freight
+      ? sanitizeLocationHubText(content.freight, city)
+      : content.freight,
+    architecturalStyles: sanitizeLocationHubText(content.architecturalStyles, city),
+    architectureBullets: content.architectureBullets?.map((item) =>
+      sanitizeLocationHubText(item, city),
+    ),
+    faqs: content.faqs.map((faq) => ({
+      ...faq,
+      question: sanitizeLocationHubText(faq.question, city),
+      answer: sanitizeLocationHubText(faq.answer, city),
+    })),
+  };
+}
+
 export function getLocationContent(slug: string): LocationHubContent | undefined {
   const base = LOCATION_CONTENT[slug];
   const extension = LOCATION_HUB_EXTENSIONS[slug];
@@ -821,17 +948,19 @@ export function getLocationContent(slug: string): LocationHubContent | undefined
     return undefined;
   }
 
-  if (!extension) {
-    return base;
+  let merged: LocationHubContent = base;
+
+  if (extension) {
+    merged = {
+      ...base,
+      localContext: extension.localContext,
+      leadTime: extension.leadTime,
+      freight: extension.freight,
+      architectureBullets: extension.architecture,
+    };
   }
 
-  return {
-    ...base,
-    localContext: extension.localContext,
-    leadTime: extension.leadTime,
-    freight: extension.freight,
-    architectureBullets: extension.architecture,
-  };
+  return sanitizeLocationHubContent(slug, merged);
 }
 
 export function getNearbyLocations(slugs: string[]): LocationDefinition[] {

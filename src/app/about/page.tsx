@@ -7,15 +7,15 @@ import { OriginStory } from "@/components/sections/about/OriginStory";
 import { Team } from "@/components/sections/about/Team";
 import { Values } from "@/components/sections/about/Values";
 import { WorkshopGallery } from "@/components/sections/about/WorkshopGallery";
-import { FOUNDING_YEAR } from "@/lib/business";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
-const ABOUT_DESCRIPTION = `Newcastle joinery craftsmanship since ${FOUNDING_YEAR}. Family-run, premium materials, fixed-price quotes. Learn the SteepWood story and meet the team.`;
+const ABOUT_DESCRIPTION =
+  "Founded in 2014, SteepWood is a Newcastle custom joinery studio led by Sukhveer Kaur. NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269.";
 
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "About — Newcastle Craftsmen Since 2014",
+  title: "About SteepWood — Custom Joinery Newcastle Since 2014 | Pavit Cabinetry",
   description: ABOUT_DESCRIPTION,
   alternates: {
     canonical: canonicalUrl("/about/"),
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "About — Newcastle Craftsmen Since 2014",
+    title: "About SteepWood — Custom Joinery Newcastle Since 2014 | Pavit Cabinetry",
     description: ABOUT_DESCRIPTION,
     url: canonicalUrl("/about/"),
     siteName: "SteepWood",

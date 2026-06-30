@@ -8,9 +8,9 @@ import { canonicalUrl } from "@/lib/seo/canonical";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Locations — 16 Australian Cities Served",
+  title: "Locations — SteepWood Custom Joinery Across Australia",
   description:
-    "SteepWood delivers premium custom joinery from our Newcastle workshop to 16 Australian cities and regions — NSW, ACT, QLD, VIC, SA, and WA.",
+    "SteepWood delivers custom joinery to 16 cities across Australia. Find your nearest service area.",
   alternates: {
     canonical: canonicalUrl("/locations/"),
     languages: {
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Locations — 16 Australian Cities Served",
+    title: "Locations — SteepWood Custom Joinery Across Australia",
     description:
-      "SteepWood delivers premium custom joinery from our Newcastle workshop to 16 Australian cities and regions.",
+      "SteepWood delivers custom joinery to 16 cities across Australia. Find your nearest service area.",
     url: canonicalUrl("/locations/"),
     siteName: "SteepWood",
     locale: "en_AU",
@@ -36,12 +36,12 @@ export default function LocationsIndexPage() {
           Australia-wide
         </p>
         <h1 className="mb-stack-md font-serif text-display-2 text-ink-900">
-          Locations we serve
+          SteepWood Locations Across Australia
         </h1>
         <p className="text-body-lg text-ink-800">
-          Every SteepWood project is designed and built in our Newcastle
-          workshop. We travel for free consultations across NSW and ACT, and
-          deliver via dedicated furniture freight to QLD, VIC, WA, and SA.
+          Every SteepWood project is designed and built in our workshop. We
+          travel for free consultations across NSW and ACT, and deliver via
+          dedicated furniture freight to QLD, VIC, WA, and SA.
         </p>
       </div>
 

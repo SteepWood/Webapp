@@ -42,6 +42,7 @@ const cspDirectives = [
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  trailingSlash: true,
   experimental: {
     // Supabase transaction pooler allows one connection per Prisma client.
     staticGenerationMaxConcurrency: 1,
@@ -78,6 +79,16 @@ const nextConfig: NextConfig = {
       {
         source: "/custom-joinery/:location/",
         destination: "/locations/:location/",
+        permanent: true,
+      },
+      {
+        source: "/joinery/newcastle",
+        destination: "/locations/newcastle/",
+        permanent: true,
+      },
+      {
+        source: "/joinery/newcastle/",
+        destination: "/locations/newcastle/",
         permanent: true,
       },
       {

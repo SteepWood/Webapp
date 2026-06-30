@@ -15,6 +15,7 @@ primaryKeyword: "2pac vs laminate kitchen Australia"
 secondaryKeywords: ["Polytec vs Laminex kitchen doors", "polyurethane kitchen cabinets Australia", "timber veneer kitchen cabinet", "kitchen door finish comparison Australia", "Polytec SYNC woodgrain doors"]
 internalLinks:
   - { url: "/custom-kitchen-joinery", anchor: "custom kitchen joinery" }
+  - { url: "/custom-kitchen-joinery/newcastle", anchor: "custom kitchen joinery Newcastle" }
   - { url: "/built-in-wardrobes", anchor: "built-in wardrobes" }
   - { url: "/laundry-cabinets", anchor: "laundry cabinets" }
   - { url: "/custom-bathroom-vanity", anchor: "custom bathroom vanity" }
@@ -169,7 +170,7 @@ Standard particleboard substrate absorbs moisture through its edges and, over ti
 
 **2-pac on MR board** — the gold standard for coastal NSW. The cured polyurethane film is non-porous, does not absorb salt air, and does not shrink or expand with humidity cycling. Edge-banding on MR board with 2-pac door panels creates a fully sealed cabinet door. We have 2-pac kitchens installed in beachside properties along the Central Coast that are approaching 12 years old and showing no moisture-related issues.
 
-**Laminate (Polytec/Laminex) on MR board** — a sound choice when correctly specified. The laminate face is moisture-resistant. The critical point is the edge-banding: a poorly banded laminate edge on a coastal property is an entry point for moisture. When we use laminate on coastal projects at SteepWood, we specify 2 mm ABS edge-banding in a matching colour, applied with a hot-melt adhesive system designed for high-humidity environments. Polytec SYNC on MR board with correct edge-banding has performed reliably across a number of our Central Coast and [Newcastle joinery](/locations/newcastle) projects.
+**Laminate (Polytec/Laminex) on MR board** — a sound choice when correctly specified. The laminate face is moisture-resistant. The critical point is the edge-banding: a poorly banded laminate edge on a coastal property is an entry point for moisture. When we use laminate on coastal projects at SteepWood, we specify 2 mm ABS edge-banding in a matching colour, applied with a hot-melt adhesive system designed for high-humidity environments. Polytec SYNC on MR board with correct edge-banding has performed reliably across a number of our Central Coast and [custom kitchen joinery Newcastle](/custom-kitchen-joinery/newcastle/) projects.
 
 **Timber veneer on MR board, sealed** — workable but requires a complete topcoat. An oiled veneer finish is not appropriate for a coastal kitchen. A properly sealed veneer door — sealed on all six faces including the back — with MR board substrate and fully banded edges will perform well. The higher cost of veneer is partly justified in coastal applications by the fact that a surface that develops some character with age is more forgiving than a pristine 2-pac door that shows every salt-haze mark.
 

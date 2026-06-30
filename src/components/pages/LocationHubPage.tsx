@@ -10,9 +10,15 @@ import { ServicePillarFAQ } from "@/components/pages/ServicePillarFAQ";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
 import { PageClosingCta } from "@/components/sections/dark-cta-section";
 import { Button } from "@/components/ui/button";
-import { SERVICES } from "@/lib/services-locations/services";
+import { CityServiceGrid } from "@/components/seo/CityServiceGrid";
 import type { LocationHubContent } from "@/lib/services-locations/locationContent";
 import { getNearbyLocations } from "@/lib/services-locations/locationContent";
+import {
+  CITY_LABEL,
+  CITY_STATE,
+  NEARBY_CITIES,
+  isCity,
+} from "@/lib/seo-graph";
 import type { ResolvedLocation } from "@/lib/services-locations/types";
 import type { PortfolioProject, Testimonial } from "@prisma/client";
 import { canonicalUrl } from "@/lib/seo/canonical";
@@ -49,24 +55,25 @@ function architectureBullets(content: LocationHubContent): string[] {
 }
 
 function trustCards(location: ResolvedLocation) {
+  const label = location.name;
   return [
     {
-      title: "Workshop crafted in Newcastle",
+      title: `Workshop-crafted joinery for ${label}`,
       description:
-        "Every project is designed and manufactured in our Newcastle workshop — not outsourced to a third-party factory.",
+        "Every project is designed and manufactured in our workshop — not outsourced to a third-party factory.",
     },
     {
-      title: `Free measure visits to ${location.name}`,
+      title: `Free measure visits to ${label}`,
       description:
         "We attend your home for design consultations and site measures at no charge on qualifying projects.",
     },
     {
-      title: "Delivery and install by our team",
+      title: `Delivery and install in ${label}`,
       description:
         "Installations are managed by our own crews in NSW and ACT, with vetted partners interstate.",
     },
     {
-      title: "From our Newcastle workshop",
+      title: `Logistics to ${label}`,
       description: location.driveTimeFromNewcastle,
     },
   ];
@@ -79,7 +86,10 @@ export function LocationHubPage({
   testimonials,
   aggregateRating,
 }: LocationHubPageProps) {
-  const nearbyLocations = getNearbyLocations(content.nearbyLocationSlugs);
+  const nearbySlugs = isCity(location.slug)
+    ? NEARBY_CITIES[location.slug]
+    : content.nearbyLocationSlugs;
+  const nearbyLocations = getNearbyLocations(nearbySlugs);
   const localBusinessSchema = locationHubStructuredData(
     location,
     content.coveredSuburbs,
@@ -99,10 +109,15 @@ export function LocationHubPage({
   const locationFacts = getLocationFacts(location.slug);
   const architectureList = architectureBullets(content);
 
-  const kicker =
-    location.slug === "newcastle"
+  const hubH1 = isCity(location.slug)
+    ? `Custom Joinery ${CITY_LABEL[location.slug]} — SteepWood Cabinet Maker in ${CITY_LABEL[location.slug]} ${CITY_STATE[location.slug]}`
+    : location.h1;
+
+  const kicker = isCity(location.slug)
+    ? location.slug === "newcastle"
       ? "Newcastle · Our Home"
-      : `Newcastle to ${location.name}`;
+      : `${CITY_LABEL[location.slug]} ${CITY_STATE[location.slug]}`
+    : `Service area · ${location.name}`;
 
   return (
     <>
@@ -155,7 +170,7 @@ export function LocationHubPage({
               {kicker}
             </p>
             <h1 className="mb-stack-md font-serif text-display-2 text-ink-900">
-              {location.h1}
+              {hubH1}
             </h1>
             <p className="mb-stack-lg max-w-xl text-body-lg text-ink-800">
               {content.heroIntro}
@@ -243,33 +258,19 @@ export function LocationHubPage({
       </SectionShell>
 
       <SectionShell>
-        <h2 className="mb-stack-sm font-serif text-h2 text-ink-900">
-          Services in {location.name}
-        </h2>
-        <p className="mb-stack-lg max-w-3xl text-body-lg text-ink-800">
-          Ten custom joinery services, each with a dedicated {location.name} page
-          covering local logistics, materials, and project examples.
-        </p>
-        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.map((service) => (
-            <li key={service.slug}>
-              <Link
-                href={`/${service.slug}/${location.slug}/`}
-                className="surface-card block h-full rounded-lg p-5 transition-colors hover:border-amber-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
-              >
-                <h3 className={contentSubheadingClass}>
-                  {service.name}
-                </h3>
-                <p className="mb-3 text-body-sm text-ink-800/70">
-                  {service.shortDescription}
-                </p>
-                <p className="text-body-sm font-medium text-amber-700">
-                  {service.shortTitle} in {location.name} →
-                </p>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {isCity(location.slug) ? (
+          <CityServiceGrid city={location.slug} />
+        ) : (
+          <>
+            <h2 className="mb-stack-sm font-serif text-h2 text-ink-900">
+              Services in {location.name}
+            </h2>
+            <p className="mb-stack-lg max-w-3xl text-body-lg text-ink-800">
+              Ten custom joinery services, each with a dedicated {location.name}{" "}
+              page covering local logistics, materials, and project examples.
+            </p>
+          </>
+        )}
       </SectionShell>
 
       <FeaturedProjects projects={projects} />
@@ -316,7 +317,7 @@ export function LocationHubPage({
       {nearbyLocations.length > 0 ? (
         <SectionShell className="bg-ink-100/30">
           <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">
-            Nearby locations
+            Nearby cities we also service
           </h2>
           <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {nearbyLocations.map((nearby) => (
@@ -326,13 +327,10 @@ export function LocationHubPage({
                   className="surface-card block rounded-lg p-5 transition-colors hover:border-amber-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                 >
                   <h3 className={contentSubheadingClass}>
-                    {nearby.name}
+                    Custom joinery {nearby.name}
                   </h3>
                   <p className="text-body-sm text-ink-800/70">
-                    {nearby.region} · {nearby.driveTimeFromNewcastle}
-                  </p>
-                  <p className="mt-2 text-body-sm font-medium text-amber-700">
-                    Custom joinery in {nearby.name} →
+                    {nearby.region} · {nearby.state}
                   </p>
                 </Link>
               </li>
@@ -342,7 +340,11 @@ export function LocationHubPage({
       ) : null}
 
       <PageClosingCta
-        title={`Ready to start your ${location.name} project?`}
+        title={
+          isCity(location.slug)
+            ? `Get a custom joinery quote in ${CITY_LABEL[location.slug]}`
+            : `Ready to start your ${location.name} project?`
+        }
         description="Free design consultation, fixed-price quote within 5 working days, no obligation."
         phoneContext="location-hub-cta"
       />

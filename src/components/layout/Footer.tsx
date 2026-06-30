@@ -3,6 +3,7 @@ import Link from "@/components/ui/link";
 import { TrackedPhoneLink } from "@/components/analytics/TrackedPhoneLink";
 import { SteepWoodLogo } from "@/components/brand/SteepWoodLogo";
 import { FooterNewsletter } from "@/components/layout/FooterNewsletter";
+import { FooterServiceMatrix } from "@/components/layout/FooterServiceMatrix";
 import { BUSINESS_COPYRIGHT_LINE, BUSINESS_CREDENTIALS_FOOTER } from "@/lib/business";
 import { FOOTER_HOURS_LABEL, GOOGLE_REVIEW_URL, LOCATIONS, PHONE_DISPLAY, PHONE_HREF, SERVICES, WORKSHOP_LOCATION } from "@/lib/navigation";
 
@@ -105,6 +106,8 @@ export function Footer() {
             <FooterNewsletter />
           </div>
         </div>
+
+        <FooterServiceMatrix />
 
         <div className="mt-stack-lg flex flex-col items-center gap-4 border-t border-ink-700/40 pt-8 text-center text-sm text-ink-100/70 lg:flex-row lg:items-center lg:justify-between lg:text-left">
           <p className="max-w-prose lg:max-w-none">

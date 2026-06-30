@@ -12,26 +12,32 @@ import { ServicePillarFAQ } from "@/components/pages/ServicePillarFAQ";
 import { TestimonialsSection } from "@/components/testimonials/TestimonialsSection";
 import { PageClosingCta } from "@/components/sections/dark-cta-section";
 import { Button } from "@/components/ui/button";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { FAQSchema } from "@/components/schema/FAQSchema";
+import { ServiceAreaSchema } from "@/components/schema/ServiceAreaSchema";
 import type { ComboPageContent } from "@/lib/services-locations/comboContent";
 import { rotateForLocation } from "@/lib/services-locations/comboContent";
-import { getLocationContent } from "@/lib/services-locations/locationContent";
 import { getServiceContent } from "@/lib/services-locations/serviceContent";
 import {
   getServiceIncludesImage,
   getServiceProcessImage,
   getServiceSectionImage,
 } from "@/lib/services-locations/serviceImages";
-import { LOCATIONS } from "@/lib/services-locations/locations";
-import { SERVICES } from "@/lib/services-locations/services";
+import {
+  CITY_LABEL,
+  CITY_STATE,
+  NEARBY_CITIES,
+  RELATED_SERVICES,
+  SERVICE_LABEL,
+  SERVICE_PRIMARY_KEYWORD,
+  isCity,
+  isService,
+  type City,
+  type Service,
+} from "@/lib/seo-graph";
 import type { ResolvedServiceLocation } from "@/lib/services-locations/types";
 import type { PortfolioProject, Testimonial } from "@prisma/client";
 import { canonicalUrl } from "@/lib/seo/canonical";
-import {
-  comboBreadcrumbStructuredData,
-  comboFaqStructuredData,
-  comboLocalBusinessStructuredData,
-  comboServiceStructuredData,
-} from "@/lib/seo/serviceLocationStructuredData";
 import type { AggregateRatingStats } from "@/lib/testimonials/aggregateRating";
 import { getComboFacts } from "@/lib/aio/facts-data";
 import { speakableStructuredData } from "@/lib/aio/schema";
@@ -55,29 +61,32 @@ export function ServiceLocationPage({
 }: ServiceLocationPageProps) {
   const { service, location } = combo;
   const serviceContent = getServiceContent(service.slug);
-  const locationContent = getLocationContent(location.slug);
+  const isCombo =
+    isService(service.slug) && isCity(location.slug);
+  const serviceKey = isService(service.slug) ? service.slug : null;
+  const cityKey = isCity(location.slug) ? location.slug : null;
+  const svcLabel =
+    serviceKey !== null ? SERVICE_LABEL[serviceKey] : service.name;
+  const svcKw =
+    serviceKey !== null
+      ? SERVICE_PRIMARY_KEYWORD[serviceKey]
+      : service.primaryKeyword;
+  const cityLbl = cityKey !== null ? CITY_LABEL[cityKey] : location.name;
+  const cityState = cityKey !== null ? CITY_STATE[cityKey] : location.state;
 
-  const siblingServices = SERVICES.filter((item) => item.slug !== service.slug)
-    .slice(0, 5);
-  const siblingLocations = (locationContent?.nearbyLocationSlugs ?? [])
-    .slice(0, 5);
+  const nearbyCities: City[] =
+    cityKey !== null ? NEARBY_CITIES[cityKey] : [];
+  const relatedServices: Service[] =
+    serviceKey !== null ? RELATED_SERVICES[serviceKey] : [];
 
   const pageUrl = canonicalUrl(`/${service.slug}/${location.slug}/`);
+  const comboH1 = isCombo
+    ? `${svcLabel} ${cityLbl} — SteepWood Custom Cabinetmakers in ${cityLbl} ${cityState}`
+    : combo.h1;
 
-  const serviceSchema = comboServiceStructuredData(combo);
-  const localBusinessSchema = comboLocalBusinessStructuredData(combo);
-  const breadcrumbSchema = comboBreadcrumbStructuredData(combo);
-  const faqSchema = comboFaqStructuredData(
-    service.slug,
-    location.slug,
-    content.faqs.map((faq) => ({
-      question: faq.question,
-      answer: faq.answer,
-    })),
-  );
   const speakableSchema = speakableStructuredData(pageUrl);
   const comboFacts = getComboFacts(service.slug, location.slug);
-  const costFaq = serviceContent?.faqs[0];
+  const costFaq = content.faqs[0];
   const visibleIncludes = serviceContent
     ? rotateForLocation(serviceContent.includes, location.slug, 4)
     : [];
@@ -87,24 +96,25 @@ export function ServiceLocationPage({
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      {faqSchema ? (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
+      {serviceKey !== null && cityKey !== null ? (
+        <ServiceAreaSchema service={serviceKey} city={cityKey} />
       ) : null}
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: svcLabel, url: `/${service.slug}/` },
+          {
+            name: `${svcLabel} ${cityLbl}`,
+            url: `/${service.slug}/${location.slug}/`,
+          },
+        ]}
+      />
+      <FAQSchema
+        faqs={content.faqs.map((faq) => ({
+          question: faq.question,
+          answer: faq.answer,
+        }))}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
@@ -140,7 +150,7 @@ export function ServiceLocationPage({
               {service.shortTitle} · {location.name}
             </p>
             <h1 className="mb-stack-md font-serif text-display-2 text-ink-900">
-              {combo.h1}
+              {comboH1}
             </h1>
             <p className="mb-stack-lg max-w-xl text-body-lg text-ink-800">
               {content.heroIntro}
@@ -170,20 +180,13 @@ export function ServiceLocationPage({
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
             <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
-              Why SteepWood for {service.shortTitle.toLowerCase()} in{" "}
-              {location.name}
+              {svcLabel} in {cityLbl} — what we build
             </h2>
             <div className="prose-steepwood max-w-none text-body leading-relaxed text-ink-800">
               {content.localContextParagraphs.map((paragraph) => (
                 <p key={paragraph.slice(0, 48)}>{paragraph}</p>
               ))}
             </div>
-            {locationContent ? (
-              <p className="mt-stack-md text-body-sm text-ink-800/80">
-                Suburbs we serve in {location.name}:{" "}
-                {locationContent.coveredSuburbs.join(", ")}.
-              </p>
-            ) : null}
           </div>
           <MediaFrame
             src={location.heroImagePath}
@@ -314,7 +317,7 @@ export function ServiceLocationPage({
         }
         description={
           !hasLocalProjects && projects.length > 0
-            ? `Photographed from our Newcastle workshop; designs are replicable to ${location.name} homes and businesses.`
+            ? `Photographed from our workshop; designs are replicable to ${cityLbl} homes and businesses.`
             : undefined
         }
       />
@@ -327,19 +330,19 @@ export function ServiceLocationPage({
         <ul className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {[
             {
-              title: "Newcastle-crafted",
+              title: "Workshop-crafted",
               description:
-                "Every project is designed and manufactured in our Newcastle workshop using premium Laminex, Polytec, 2pac, stone, and Blum hardware.",
+                "Every project is designed and manufactured in our workshop using premium Laminex, Polytec, 2pac, stone, and Blum hardware.",
               image: "/images/workshop/assembly-bench.jpg",
             },
             {
-              title: `Free measure visits to ${location.name}`,
-              description: `We attend your ${location.name} home or business for design consultations and site measures at no charge on qualifying projects.`,
+              title: `Free measure visits to ${cityLbl}`,
+              description: `We attend your ${cityLbl} home or business for design consultations and site measures at no charge on qualifying projects.`,
               image: location.heroImagePath,
             },
             {
-              title: location.driveTimeFromNewcastle,
-              description: `Delivery and install co-ordinated from our Newcastle workshop. Typical lead time: ${content.leadTime}.`,
+              title: `Logistics to ${cityLbl}`,
+              description: `Delivery and install co-ordinated from our workshop. Typical lead time: ${content.leadTime}.`,
               image: "/images/workshop/dispatch-prep.jpg",
             },
           ].map((card) => (
@@ -408,62 +411,54 @@ export function ServiceLocationPage({
 
       <ServicePillarFAQ faqs={content.faqs} />
 
-      <SectionShell className="bg-ink-100/30">
+      <SectionShell className="bg-ink-100/30" aria-label="Related joinery in nearby areas">
         <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
-          {service.shortTitle} in nearby cities
+          {svcLabel} in nearby cities
         </h2>
         <ul className="mb-stack-lg grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {siblingLocations.map((nearbySlug) => {
-            const nearby =
-              LOCATIONS.find((item) => item.slug === nearbySlug)?.name ??
-              nearbySlug;
-            return (
-              <li key={nearbySlug}>
-                <Link
-                  href={`/${service.slug}/${nearbySlug}/`}
-                  className="block rounded-md border border-ink-700/10 bg-ink-50 px-4 py-3 text-sm font-medium text-ink-900 transition-colors hover:border-amber-500/40 hover:text-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
-                >
-                  {service.shortTitle} in {nearby} →
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-
-        <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
-          Other joinery services in {location.name}
-        </h2>
-        <ul className="mb-stack-lg grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {siblingServices.map((sibling) => (
-            <li key={sibling.slug}>
+          {nearbyCities.map((nearbySlug) => (
+            <li key={nearbySlug}>
               <Link
-                href={`/${sibling.slug}/${location.slug}/`}
+                href={`/${service.slug}/${nearbySlug}/`}
                 className="block rounded-md border border-ink-700/10 bg-ink-50 px-4 py-3 text-sm font-medium text-ink-900 transition-colors hover:border-amber-500/40 hover:text-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
               >
-                {sibling.shortTitle} in {location.name} →
+                {svcLabel} {CITY_LABEL[nearbySlug]}
               </Link>
             </li>
           ))}
         </ul>
 
-        <div className="flex flex-wrap gap-4 text-body-sm">
-          <Link
-            href={`/${service.slug}/`}
-            className="font-medium text-amber-700 underline-offset-2 hover:underline"
-          >
-            All {service.name.toLowerCase()} services →
-          </Link>
-          <Link
-            href={`/locations/${location.slug}/`}
-            className="font-medium text-amber-700 underline-offset-2 hover:underline"
-          >
-            Custom joinery in {location.name} →
-          </Link>
-        </div>
+        <h2 className="mb-stack-md font-serif text-h2 text-ink-900">
+          Related services in {cityLbl}
+        </h2>
+        <ul className="mb-stack-lg grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {relatedServices.map((relatedSlug) => (
+            <li key={relatedSlug}>
+              <Link
+                href={`/${relatedSlug}/${location.slug}/`}
+                className="block rounded-md border border-ink-700/10 bg-ink-50 px-4 py-3 text-sm font-medium text-ink-900 transition-colors hover:border-amber-500/40 hover:text-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+              >
+                {SERVICE_LABEL[relatedSlug]} in {cityLbl}
+              </Link>
+            </li>
+          ))}
+          <li>
+            <Link
+              href={`/locations/${location.slug}/`}
+              className="block rounded-md border border-ink-700/10 bg-ink-50 px-4 py-3 text-sm font-medium text-ink-900 transition-colors hover:border-amber-500/40 hover:text-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+            >
+              All SteepWood services in {cityLbl}
+            </Link>
+          </li>
+        </ul>
       </SectionShell>
 
       <PageClosingCta
-        title={`Get a free ${service.shortTitle.toLowerCase()} quote for ${location.name}`}
+        title={
+          isCombo
+            ? `Get a free ${svcKw} quote in ${cityLbl}`
+            : `Get a free ${service.shortTitle.toLowerCase()} quote for ${location.name}`
+        }
         description="Fixed-price quote within 5 working days. We respond to all enquiries within one business day."
         phoneContext="service-location-cta"
       />

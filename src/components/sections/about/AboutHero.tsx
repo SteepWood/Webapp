@@ -9,13 +9,12 @@ export function AboutHero() {
     <SectionShell className="pb-0">
       <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="min-w-0">
-          <p className="mb-stack-sm font-mono text-caption uppercase tracking-widest text-amber-600">
-            Our story
-          </p>
           <h1 className="mb-stack-md font-serif text-display-2 text-ink-900">
-            About SteepWood — Custom Joinery Crafted in Newcastle Since{" "}
-            {FOUNDING_YEAR}
+            About SteepWood — Custom Joinery Newcastle Since {FOUNDING_YEAR}
           </h1>
+          <p className="mb-stack-sm font-mono text-caption uppercase tracking-widest text-amber-600">
+            About us
+          </p>
           <IdentityBlock className="mb-stack-md max-w-xl" />
           <p className="mb-stack-sm max-w-xl font-serif text-h4 text-ink-800/90">
             Joiners who measure twice and care thrice.

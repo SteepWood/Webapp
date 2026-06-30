@@ -23,10 +23,11 @@ export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Custom Joinery Newcastle NSW — Australia-Wide",
+    absolute:
+      "SteepWood — Custom Joinery & Cabinetmakers Australia (NSW Licence 489553C)",
   },
   description:
-    "Premium custom joinery from our Newcastle workshop. Kitchens, wardrobes, vanities, commercial fitouts across 16 Australian cities. Free design consultation.",
+    "Custom joinery, kitchens, wardrobes, vanities and commercial fit-outs across Australia. Workshop since 2014. NSW Carpentry Licence 489553C.",
   alternates: {
     canonical: canonicalUrl("/"),
     languages: {
@@ -34,9 +35,10 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Custom Joinery Newcastle NSW — Australia-Wide | SteepWood Joinery",
+    title:
+      "SteepWood — Custom Joinery & Cabinetmakers Australia | SteepWood Joinery",
     description:
-      "Premium custom joinery from our Newcastle workshop. Kitchens, wardrobes, vanities, commercial fitouts across 16 Australian cities. Free design consultation.",
+      "Custom joinery, kitchens, wardrobes, vanities and commercial fit-outs across Australia. Workshop since 2014. NSW Carpentry Licence 489553C.",
     url: canonicalUrl("/"),
     siteName: "SteepWood",
     locale: "en_AU",
@@ -44,9 +46,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Joinery Newcastle NSW — Australia-Wide | SteepWood Joinery",
+    title:
+      "SteepWood — Custom Joinery & Cabinetmakers Australia | SteepWood Joinery",
     description:
-      "Premium custom joinery from our Newcastle workshop. Kitchens, wardrobes, vanities, commercial fitouts across 16 Australian cities. Free design consultation.",
+      "Custom joinery, kitchens, wardrobes, vanities and commercial fit-outs across Australia. Workshop since 2014. NSW Carpentry Licence 489553C.",
   },
 };
 
