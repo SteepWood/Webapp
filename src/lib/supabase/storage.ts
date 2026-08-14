@@ -113,6 +113,41 @@ export async function createSignedReadUrl(path: string, expiresIn = 60 * 60) {
   return data.signedUrl;
 }
 
+/**
+ * Attachments are stored as private bucket object paths (not public URLs).
+ * Resolve each path to a time-limited signed URL for admin viewing.
+ */
+export async function resolveQuoteAttachmentHrefs(
+  attachments: ReadonlyArray<{ url: string; name: string }>,
+  expiresIn = 60 * 60,
+): Promise<
+  Array<{ url: string; name: string; href: string | null; error?: string }>
+> {
+  return Promise.all(
+    attachments.map(async (file) => {
+      if (file.url.startsWith("http://") || file.url.startsWith("https://")) {
+        return { ...file, href: file.url };
+      }
+
+      try {
+        const href = await createSignedReadUrl(file.url, expiresIn);
+        return { ...file, href };
+      } catch (error) {
+        console.error(
+          "[storage] Failed to create signed URL for attachment:",
+          file.url,
+          error,
+        );
+        return {
+          ...file,
+          href: null,
+          error: "File unavailable or missing from storage.",
+        };
+      }
+    }),
+  );
+}
+
 export async function createSignedUploadUrl(
   path: string,
   bucket = QUOTE_ATTACHMENTS_BUCKET,

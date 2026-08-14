@@ -52,7 +52,7 @@ const checks: SmokeCheck[] = [
     name: "Locations index",
     path: "/locations/",
     assert: (response, body) =>
-      response.ok && body.toLowerCase().includes("locations we serve"),
+      response.ok && body.toLowerCase().includes("locations across australia"),
   },
   {
     name: "Location hub Newcastle",

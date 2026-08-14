@@ -1,5 +1,6 @@
 "use server";
 
+import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
 import { env } from "@/env";
@@ -9,6 +10,22 @@ import { createClient } from "@/lib/supabase/server";
 export type AdminAuthState =
   | { ok: true }
   | { ok: false; error: string };
+
+/**
+ * Prefer the live request host so production magic links never point at localhost
+ * when NEXT_PUBLIC_SITE_URL is still set to a local dev URL.
+ */
+async function resolveAuthSiteUrl(): Promise<string> {
+  const headerStore = await headers();
+  const host = headerStore.get("x-forwarded-host") ?? headerStore.get("host");
+  const proto = headerStore.get("x-forwarded-proto") ?? "https";
+
+  if (host && !host.includes("localhost") && !host.startsWith("127.0.0.1")) {
+    return `${proto}://${host}`;
+  }
+
+  return env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+}
 
 export async function sendAdminMagicLink(
   input: unknown,
@@ -33,7 +50,8 @@ export async function sendAdminMagicLink(
   }
 
   const supabase = await createClient();
-  const redirectTo = new URL("/auth/callback", env.NEXT_PUBLIC_SITE_URL);
+  const siteUrl = await resolveAuthSiteUrl();
+  const redirectTo = new URL("/auth/callback", siteUrl);
   redirectTo.searchParams.set("next", "/admin/");
 
   const { error } = await supabase.auth.signInWithOtp({

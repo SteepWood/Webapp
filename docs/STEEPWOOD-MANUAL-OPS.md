@@ -56,12 +56,17 @@ Phases 1–4 are **code-complete** when `pnpm typecheck`, `pnpm build`, and each
 ### 2.4 Admin authentication
 
 - [ ] Email auth enabled (magic link only for MVP)
-- [ ] **Redirect URL** added: `{NEXT_PUBLIC_SITE_URL}/auth/callback`
+- [ ] **Site URL** (Authentication → URL Configuration) set to `https://steepwood.com.au` — **not** `http://localhost:3000`. If Site URL is localhost, magic links open localhost and fail on production.
+- [ ] **Redirect URLs** allowlist includes:
+  - `https://steepwood.com.au/auth/callback`
+  - `http://localhost:3000/auth/callback` (local dev only)
+- [ ] Vercel Production env: `NEXT_PUBLIC_SITE_URL=https://steepwood.com.au` (never localhost in Production/Preview)
 - [ ] Magic-link email template branded (Authentication → Email Templates, Australian English)
 - [ ] Pre-register each admin user in Authentication → Users (`@steepwood.com.au` only; `shouldCreateUser: false` in app):
   - [x] `hello@steepwood.com.au` — mailbox created; user added in Supabase Auth
   - [x] `sukhveer@steepwood.com.au` — mailbox created; user added in Supabase Auth
 - [ ] Optional: seed matching rows in `admin_users` table linked to `auth_user_id`
+- [ ] Login only via **https://steepwood.com.au/admin/login/** for production (not localhost)
 
 ### 2.5 Backups
 

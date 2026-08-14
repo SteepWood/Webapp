@@ -10,6 +10,7 @@ import {
   parseQuoteAttachments,
   parseQuoteDetails,
 } from "@/lib/email/quoteData";
+import { resolveQuoteAttachmentHrefs } from "@/lib/supabase/storage";
 
 export const dynamic = "force-dynamic";
 
@@ -30,7 +31,11 @@ export default async function AdminQuoteDetailPage({
   const details = parseQuoteDetails(quote);
   const adminMeta = parseQuoteAdminMeta(quote);
   const attachments = parseQuoteAttachments(quote);
-  const emailData = buildQuoteEmailData(quote, process.env.NEXT_PUBLIC_SITE_URL ?? "");
+  const attachmentLinks = await resolveQuoteAttachmentHrefs(attachments);
+  const emailData = buildQuoteEmailData(
+    quote,
+    process.env.NEXT_PUBLIC_SITE_URL ?? "",
+  );
 
   return (
     <div className="space-y-8">
@@ -128,22 +133,31 @@ export default async function AdminQuoteDetailPage({
       <section className="rounded-lg border border-ink-700/10 bg-white p-6">
         <div className="flex items-center justify-between gap-4">
           <h2 className="font-serif text-h3 text-ink-900">Attachments</h2>
-          <Badge variant="secondary">{attachments.length} files</Badge>
+          <Badge variant="secondary">{attachmentLinks.length} files</Badge>
         </div>
-        {attachments.length === 0 ? (
+        {attachmentLinks.length === 0 ? (
           <p className="mt-4 text-body-sm text-ink-800/70">No attachments.</p>
         ) : (
           <ul className="mt-4 space-y-2">
-            {attachments.map((file) => (
+            {attachmentLinks.map((file) => (
               <li key={`${file.url}-${file.name}`}>
-                <a
-                  href={file.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-amber-600 hover:underline"
-                >
-                  {file.name}
-                </a>
+                {file.href ? (
+                  <a
+                    href={file.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-600 hover:underline"
+                  >
+                    {file.name}
+                  </a>
+                ) : (
+                  <span className="text-ink-800/70">
+                    {file.name}
+                    <span className="ml-2 text-body-sm text-red-700">
+                      ({file.error ?? "Unable to open file."})
+                    </span>
+                  </span>
+                )}
               </li>
             ))}
           </ul>
