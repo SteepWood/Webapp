@@ -7,24 +7,24 @@ const BRAND = {
   logo: {
     light: "/brand/steepwood-logo-trimmed.png",
     dark: "/brand/steepwood-logo-dark.png",
-    width: 1586,
-    height: 448,
-    alt: "SteepWood — Premium Custom Joinery",
+    width: 935,
+    height: 691,
+    alt: "SteepWood Joinery — Premium Custom Joinery",
   },
   mark: {
     light: "/brand/steepwood-favicon-trimmed.png",
     dark: "/brand/steepwood-favicon-dark.png",
-    width: 936,
-    height: 958,
+    width: 932,
+    height: 570,
     alt: "SteepWood",
   },
 } as const;
 
 type SteepWoodLogoProps = {
   className?: string;
-  /** Full wordmark for light backgrounds; mark + text for dark backgrounds */
+  /** Full stacked wordmark; mark = icon only with text for dark surfaces */
   variant?: "full" | "mark";
-  /** Light = dark logo on wood/paper backgrounds; dark = white logo on ink surfaces */
+  /** Light = dark logo on light backgrounds; dark = light logo on ink surfaces */
   theme?: "light" | "dark";
   priority?: boolean;
 };
@@ -50,7 +50,7 @@ export function SteepWoodLogo({
           alt=""
           width={assets.width}
           height={assets.height}
-          className="h-11 w-11 shrink-0 rounded-lg object-contain lg:h-12 lg:w-12"
+          className="h-11 w-auto shrink-0 object-contain lg:h-12"
           priority={priority}
         />
         <span className="font-serif text-2xl font-semibold tracking-tight text-ink-50 lg:text-3xl">
@@ -70,8 +70,8 @@ export function SteepWoodLogo({
         alt={assets.alt}
         width={assets.width}
         height={assets.height}
-        sizes="(max-width: 640px) 280px, (max-width: 1024px) 340px, 400px"
-        className="block h-[4.5rem] w-auto max-w-[min(100%,22rem)] object-contain object-left sm:h-20 lg:h-[5.25rem]"
+        sizes="(max-width: 640px) 140px, (max-width: 1024px) 168px, 196px"
+        className="block h-14 w-auto max-w-[min(100%,12rem)] object-contain object-left sm:h-16 lg:h-[4.5rem] lg:max-w-[14rem]"
         priority={priority}
       />
     </Link>
