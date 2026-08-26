@@ -1,28 +1,37 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
+  COOKIE_CONSENT_EVENT,
   readCookieConsent,
   writeCookieConsent,
   type CookieConsentValue,
 } from "@/lib/analytics/consent";
 
-export function CookieConsent() {
-  const [visible, setVisible] = useState(false);
+function subscribeConsent(onStoreChange: () => void) {
+  window.addEventListener(COOKIE_CONSENT_EVENT, onStoreChange);
+  window.addEventListener("storage", onStoreChange);
+  return () => {
+    window.removeEventListener(COOKIE_CONSENT_EVENT, onStoreChange);
+    window.removeEventListener("storage", onStoreChange);
+  };
+}
 
-  useEffect(() => {
-    setVisible(readCookieConsent() === null);
-  }, []);
+export function CookieConsent() {
+  const consent = useSyncExternalStore(
+    subscribeConsent,
+    readCookieConsent,
+    () => null,
+  );
+
+  if (consent !== null) {
+    return null;
+  }
 
   function handleChoice(value: CookieConsentValue) {
     writeCookieConsent(value);
-    setVisible(false);
-  }
-
-  if (!visible) {
-    return null;
   }
 
   return (

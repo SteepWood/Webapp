@@ -35,11 +35,15 @@ export function TestimonialsCarousel({
       return;
     }
 
-    updateButtons();
+    // Defer initial sync so setState is not called synchronously in the effect body.
+    const frame = requestAnimationFrame(() => {
+      updateButtons();
+    });
     emblaApi.on("select", updateButtons);
     emblaApi.on("reInit", updateButtons);
 
     return () => {
+      cancelAnimationFrame(frame);
       emblaApi.off("select", updateButtons);
       emblaApi.off("reInit", updateButtons);
     };

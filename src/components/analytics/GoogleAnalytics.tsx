@@ -1,34 +1,32 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 import {
   COOKIE_CONSENT_EVENT,
   readCookieConsent,
-  type CookieConsentValue,
 } from "@/lib/analytics/consent";
 
 type GoogleAnalyticsProps = {
   measurementId?: string;
 };
 
+function subscribeConsent(onStoreChange: () => void) {
+  window.addEventListener(COOKIE_CONSENT_EVENT, onStoreChange);
+  window.addEventListener("storage", onStoreChange);
+  return () => {
+    window.removeEventListener(COOKIE_CONSENT_EVENT, onStoreChange);
+    window.removeEventListener("storage", onStoreChange);
+  };
+}
+
 export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
-  const [consent, setConsent] = useState<CookieConsentValue | null>(null);
-
-  useEffect(() => {
-    setConsent(readCookieConsent());
-
-    function handleConsentChange(event: Event) {
-      const detail = (event as CustomEvent<CookieConsentValue>).detail;
-      setConsent(detail);
-    }
-
-    window.addEventListener(COOKIE_CONSENT_EVENT, handleConsentChange);
-    return () => {
-      window.removeEventListener(COOKIE_CONSENT_EVENT, handleConsentChange);
-    };
-  }, []);
+  const consent = useSyncExternalStore(
+    subscribeConsent,
+    readCookieConsent,
+    () => null,
+  );
 
   if (!measurementId || consent !== "accepted") {
     return null;

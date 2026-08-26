@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
 import { useMediaQuery } from "@/hooks/use-media-query";
 
@@ -27,11 +27,7 @@ export function LenisProvider({ children }: LenisProviderProps) {
   const lenisRef = useRef<Lenis | null>(null);
   const reducedMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
   const desktopViewport = useMediaQuery("(min-width: 768px)");
-  const [enabled, setEnabled] = useState(false);
-
-  useEffect(() => {
-    setEnabled(shouldUseLenis(reducedMotion, desktopViewport));
-  }, [reducedMotion, desktopViewport]);
+  const enabled = shouldUseLenis(reducedMotion, desktopViewport);
 
   useGSAP(
     () => {

@@ -1,7 +1,7 @@
 "use client";
 
 import LiquidGlass from "liquid-glass-react";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -12,10 +12,6 @@ type LiquidGlassSurfaceProps = {
 };
 
 function supportsLiquidGlass(): boolean {
-  if (typeof window === "undefined") {
-    return false;
-  }
-
   const ua = navigator.userAgent;
   const isSafari = /Safari/.test(ua) && !/Chrome/.test(ua);
   const isFirefox = /Firefox/.test(ua);
@@ -24,16 +20,20 @@ function supportsLiquidGlass(): boolean {
   return supportsBackdrop && !isSafari && !isFirefox;
 }
 
+function subscribeNever() {
+  return () => undefined;
+}
+
 export function LiquidGlassSurface({
   children,
   className,
   fallbackClassName,
 }: LiquidGlassSurfaceProps) {
-  const [useGlass, setUseGlass] = useState(false);
-
-  useEffect(() => {
-    setUseGlass(supportsLiquidGlass());
-  }, []);
+  const useGlass = useSyncExternalStore(
+    subscribeNever,
+    supportsLiquidGlass,
+    () => false,
+  );
 
   if (!useGlass) {
     return (

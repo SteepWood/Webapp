@@ -4,11 +4,8 @@ export const WORKSHOP_HERO_IMAGE = "/images/workshop-hero-main.jpg";
 /** Blog index (`/blog/`) — distinct from homepage workshop hero */
 export const BLOG_INDEX_HERO_IMAGE = "/images/blog/blog-index-hero.jpg";
 
-export {
-  ALL_SEEDED_BLOG_SLUGS as LAUNCH_PACK_BLOG_SLUGS,
-  BATCH2_BLOG_SLUGS,
-  LAUNCH_PACK_SLUGS,
-} from "@/lib/blog/launchPack";
+// NOTE: Do not re-export from launchPack here — that module uses node:fs and
+// would pull Node APIs into any client component that imports @/lib/images.
 
 export type BlogInlineImageVariant = "inline-01" | "inline-02" | "inline-wide";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 import { Button } from "@/components/ui/button";
 import { useQuoteFormStore } from "@/lib/stores/quoteForm";
@@ -10,14 +10,14 @@ import { Step1Form } from "./Step1Form";
 import { Step2Form } from "./Step2Form";
 import { Step3Form } from "./Step3Form";
 
+function subscribeNever() {
+  return () => undefined;
+}
+
 export function QuoteFormShell() {
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(subscribeNever, () => true, () => false);
   const step = useQuoteFormStore((state) => state.step);
   const setStep = useQuoteFormStore((state) => state.setStep);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   if (!mounted) {
     return (
