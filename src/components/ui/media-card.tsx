@@ -103,11 +103,13 @@ export function MediaCardImage({
 type MediaThumbProps = {
   src: string;
   alt: string;
+  title?: string;
   width?: number;
   height?: number;
   sizes: string;
   priority?: boolean;
   loading?: "lazy" | "eager";
+  unoptimized?: boolean;
   areaClassName?: string;
   imageClassName?: string;
 };
@@ -116,11 +118,13 @@ type MediaThumbProps = {
 export function MediaThumb({
   src,
   alt,
+  title,
   width = 800,
   height = 600,
   sizes,
   priority,
   loading,
+  unoptimized = false,
   areaClassName,
   imageClassName,
 }: MediaThumbProps) {
@@ -129,11 +133,13 @@ export function MediaThumb({
       <Image
         src={src}
         alt={alt}
+        title={title}
         width={width}
         height={height}
         sizes={sizes}
         priority={priority}
         loading={loading}
+        unoptimized={unoptimized}
         className={cn(mediaCardImageClass, "size-full", imageClassName)}
       />
     </div>

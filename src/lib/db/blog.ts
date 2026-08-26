@@ -2,6 +2,7 @@ import { cache } from "react";
 
 import type { BlogPost } from "@prisma/client";
 
+import { parseDisplayTags } from "@/lib/blog/launchPack";
 import { prisma } from "@/lib/db/prisma";
 
 export const BLOG_PAGE_SIZE = 12;
@@ -19,7 +20,7 @@ function extractRelatedSlugs(tags: unknown): string[] {
 }
 
 function extractDisplayTags(tags: unknown): string[] {
-  return parsePostTags(tags).filter((tag) => !tag.startsWith(RELATED_TAG_PREFIX));
+  return parseDisplayTags(tags);
 }
 
 export type BlogListFilters = {
@@ -53,10 +54,20 @@ function applyBlogFilters(posts: BlogPost[], filters: BlogListFilters): BlogPost
   });
 }
 
+function publishedWhere(now = new Date()) {
+  return {
+    isPublished: true as const,
+    OR: [
+      { publishedAt: null },
+      { publishedAt: { lte: now } },
+    ],
+  };
+}
+
 export const getPublishedBlogSlugs = cache(async (): Promise<string[]> => {
   try {
     const posts = await prisma.blogPost.findMany({
-      where: { isPublished: true },
+      where: publishedWhere(),
       select: { slug: true },
       orderBy: [{ publishedAt: "desc" }, { createdAt: "desc" }],
     });
@@ -71,7 +82,7 @@ export const getBlogPostBySlug = cache(
   async (slug: string): Promise<BlogPost | null> => {
     try {
       return await prisma.blogPost.findFirst({
-        where: { slug, isPublished: true },
+        where: { slug, ...publishedWhere() },
       });
     } catch {
       return null;
@@ -85,14 +96,15 @@ export const getBlogIndexData = cache(
 
     try {
       const allPosts = await prisma.blogPost.findMany({
-        where: { isPublished: true },
+        where: publishedWhere(),
         orderBy: [{ publishedAt: "desc" }, { createdAt: "desc" }],
       });
 
       const filtered = applyBlogFilters(allPosts, filters);
-      const featured = page === 1 && !filters.category && !filters.tag
-        ? (filtered[0] ?? null)
-        : null;
+      const featured =
+        page === 1 && !filters.category && !filters.tag
+          ? (filtered[0] ?? null)
+          : null;
       const listPosts =
         featured && page === 1 ? filtered.slice(1) : filtered;
       const total = listPosts.length;
@@ -123,7 +135,7 @@ export const getBlogIndexData = cache(
 export const getBlogCategories = cache(async (): Promise<string[]> => {
   try {
     const posts = await prisma.blogPost.findMany({
-      where: { isPublished: true, category: { not: null } },
+      where: { ...publishedWhere(), category: { not: null } },
       select: { category: true },
     });
 
@@ -142,7 +154,7 @@ export const getBlogCategories = cache(async (): Promise<string[]> => {
 export const getPopularBlogTags = cache(async (limit = 8): Promise<string[]> => {
   try {
     const posts = await prisma.blogPost.findMany({
-      where: { isPublished: true },
+      where: publishedWhere(),
       select: { tags: true },
     });
 
@@ -171,7 +183,7 @@ export const getRelatedBlogPosts = cache(
       if (relatedSlugs.length > 0) {
         const related = await prisma.blogPost.findMany({
           where: {
-            isPublished: true,
+            ...publishedWhere(),
             slug: { in: relatedSlugs },
           },
         });
@@ -192,7 +204,7 @@ export const getRelatedBlogPosts = cache(
 
       return await prisma.blogPost.findMany({
         where: {
-          isPublished: true,
+          ...publishedWhere(),
           category: post.category,
           slug: { not: post.slug },
         },

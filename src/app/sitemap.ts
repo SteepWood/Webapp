@@ -44,8 +44,9 @@ async function getDynamicPages(): Promise<MetadataRoute.Sitemap> {
         where: {
           isPublished: true,
           slug: { notIn: [...RETIRED_BLOG_SLUGS] },
+          OR: [{ publishedAt: null }, { publishedAt: { lte: new Date() } }],
         },
-        select: { slug: true, updatedAt: true },
+        select: { slug: true, updatedAt: true, publishedAt: true },
       }),
       prisma.portfolioProject.findMany({
         where: { isPublished: true },

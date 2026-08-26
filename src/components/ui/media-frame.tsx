@@ -11,11 +11,14 @@ export const mediaFrameImageClass = "size-full object-cover";
 type MediaFrameProps = {
   src: ImageProps["src"];
   alt: string;
+  title?: string;
   width?: number;
   height?: number;
   priority?: boolean;
   fetchPriority?: "high" | "low" | "auto";
   sizes?: string;
+  /** Serve the original JPEG so IPTC/XMP metadata is preserved. */
+  unoptimized?: boolean;
   className?: string;
   frameClassName?: string;
   imageClassName?: string;
@@ -24,11 +27,13 @@ type MediaFrameProps = {
 export function MediaFrame({
   src,
   alt,
+  title,
   width = 1600,
   height = 1000,
   priority = false,
   fetchPriority,
   sizes = "100vw",
+  unoptimized = false,
   className,
   frameClassName,
   imageClassName,
@@ -40,11 +45,13 @@ export function MediaFrame({
       <Image
         src={src}
         alt={alt}
+        title={title}
         width={width}
         height={height}
         priority={priority}
         fetchPriority={fetchPriority}
         sizes={sizes}
+        unoptimized={unoptimized}
         className={cn(mediaFrameImageClass, imageClassName)}
       />
     </div>

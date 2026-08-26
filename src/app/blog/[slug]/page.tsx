@@ -20,7 +20,9 @@ import {
 } from "@/components/sections/section-shell";
 import { Button } from "@/components/ui/button";
 import { BLOG_DEFAULT_AUTHOR } from "@/lib/business";
+import { getBlogImageAltsFromPack } from "@/lib/blog/batch2ImageMeta";
 import { extractHeadings } from "@/lib/blog/headings";
+import { parseImageAltsFromTags } from "@/lib/blog/launchPack";
 import { renderBlogMdx } from "@/lib/blog/renderMdx";
 import { calculateReadingTime } from "@/lib/blog/readingTime";
 import {
@@ -32,8 +34,9 @@ import {
 } from "@/lib/db/blog";
 import { canonicalUrl } from "@/lib/seo/canonical";
 import {
-  blogBreadcrumbStructuredData,
-  blogPostingStructuredData,
+  blogOpenGraphImageAlt,
+  blogOpenGraphImageUrl,
+  blogPostJsonLdGraph,
 } from "@/lib/seo/blogStructuredData";
 
 export const dynamicParams = false;
@@ -60,6 +63,8 @@ export async function generateMetadata({
   const description =
     post.metaDescription ?? post.excerpt ?? "Insights from the SteepWood workshop.";
   const path = `/blog/${post.slug}/`;
+  const ogImage = blogOpenGraphImageUrl(post);
+  const ogAlt = blogOpenGraphImageAlt(post);
 
   return {
     title,
@@ -80,18 +85,20 @@ export async function generateMetadata({
       publishedTime: (post.publishedAt ?? post.createdAt).toISOString(),
       modifiedTime: post.updatedAt.toISOString(),
       authors: [post.authorName ?? BLOG_DEFAULT_AUTHOR],
-      ...(post.coverImageUrl
-        ? {
-            images: [
-              {
-                url: post.coverImageUrl.startsWith("http")
-                  ? post.coverImageUrl
-                  : canonicalUrl(post.coverImageUrl),
-                alt: post.coverImageAlt ?? post.title,
-              },
-            ],
-          }
-        : {}),
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: ogAlt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
     },
   };
 }
@@ -127,19 +134,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const readingTime = calculateReadingTime(post.content);
   const publishedAt = post.publishedAt ?? post.createdAt;
   const publishedLabel = formatPostDate(publishedAt);
-  const postingSchema = blogPostingStructuredData(post);
-  const breadcrumbSchema = blogBreadcrumbStructuredData(post);
+  const jsonLd = blogPostJsonLdGraph(post);
+  const imageAlts =
+    getBlogImageAltsFromPack(post.slug) ?? parseImageAltsFromTags(post.tags);
 
   return (
     <>
       <BlogReadDepthTracker slug={post.slug} />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(postingSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
       <SectionShell className="pb-0">
@@ -189,12 +193,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               slug={post.slug}
               variant="pair"
               imageAlts={
-                post.coverImageAlt
-                  ? [
-                      `${post.coverImageAlt} — detail`,
-                      `${post.coverImageAlt} — context`,
-                    ]
-                  : undefined
+                imageAlts
+                  ? [imageAlts["inline-01"], imageAlts["inline-02"]]
+                  : post.coverImageAlt
+                    ? [
+                        `${post.coverImageAlt} — detail`,
+                        `${post.coverImageAlt} — context`,
+                      ]
+                    : undefined
               }
             />
 
@@ -206,7 +212,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               slug={post.slug}
               variant="wide"
               imageAlts={
-                post.coverImageAlt ? [`${post.coverImageAlt} — feature`] : undefined
+                imageAlts
+                  ? [imageAlts["inline-wide"]]
+                  : post.coverImageAlt
+                    ? [`${post.coverImageAlt} — feature`]
+                    : undefined
               }
             />
 

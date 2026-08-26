@@ -1,0 +1,518 @@
+
+URL: https://www.innerwest.nsw.gov.au/heritage-and-conservation/heritage-and-development 
+TITLE: Heritage and development | Inner West Council 
+ERROR: None 
+CONTENT:
+ - **Page title:** Heritage and development
+- **Breadcrumb:** Home → Heritage and conservation → Heritage and development
+- **Stated purpose:** Guidance on developing within heritage-listed sites and conservation areas.
+- **Practical information about renovating:** Not provided in the page content.
+- **Practical information about heritage work:** Not provided in the page content beyond the general reference to developing within heritage-listed sites and conservation areas.
+- **Strata approval information:** Not provided in the page content.
+- **Freight logistics information:** Not provided in the page content.
+- **NSW building-contract variations information:** Not provided in the page content.
+- **Stated limitations:** No specific limitations, approval requirements, procedures, costs, timeframes, contacts, or exemptions are stated in the page content.
+- **Page last updated:** 24 Mar 2026
+
+URL: https://www.innerwest.nsw.gov.au/heritage-and-conservation/heritage-conservation-areas 
+TITLE: Heritage conservation areas 
+ERROR: None 
+CONTENT:
+ - The page states that heritage conservation areas protect places of shared heritage value by recognising and preserving the distinctive character of neighbourhoods.
+- No information is provided about:
+  - Renovation requirements or restrictions
+  - Heritage work or approvals
+  - Strata approval
+  - Freight logistics
+  - NSW building-contract variations
+  - Stated limitations relating to any of these matters
+- Page last updated: 06 Aug 2026
+
+URL: https://www.nsw.gov.au/housing-and-construction/strata/living/renovations 
+TITLE: Strata renovation rules - NSW Government 
+ERROR: None 
+CONTENT:
+ ## Renovation approval requirements
+
+- Permission is required for:
+  - Kitchen renovations.
+  - Bathroom renovations.
+  - Changes to walls, floors or ceilings.
+- Permission is not required for cosmetic changes that:
+  - Do not affect the structure of the property.
+  - Do not require waterproofing.
+- Check the strata scheme’s by-laws before starting renovation work to identify:
+  - What approvals are needed.
+  - How to obtain approval.
+- If the correct process is not followed, the owner may have to pay to restore the property to its pre-renovation condition.
+
+## Renovations costing over $5,000
+
+For renovations to an apartment, duplex or other strata property costing over $5,000:
+
+- Any strata building work must:
+  - Be done safely.
+  - Meet building standards.
+- A registered design practitioner must prepare regulated designs.
+- A registered building practitioner must oversee the work.
+- The page directs readers to find a registered practitioner to assist with renovations.
+
+## Types of renovations
+
+### Cosmetic work
+
+Cosmetic work does not need approval.
+
+Cosmetic work includes changes that:
+
+- Do not affect the structure or outside of the apartment, duplex or strata property.
+- Do not require waterproofing.
+
+Examples include:
+
+- Installing or replacing hooks, nails, screws, handrails, blinds, curtains or built-in wardrobes.
+- Painting the interior.
+- Filling minor holes and cracks in internal walls.
+- Laying carpet.
+
+A strata scheme may add further types of work to its cosmetic-work list. The scheme’s by-laws should be checked.
+
+### Minor renovations
+
+Minor renovations need approval.
+
+To undertake minor renovations, the owner must contact the:
+
+- Owners corporation.
+- Strata committee.
+- Strata managing agent.
+
+Permission must be requested from one of these parties.
+
+If permission is not obtained, the owner may have to pay to restore the property to its pre-renovation condition.
+
+Owners corporations must keep a record of each approved minor renovation for 10 years.
+
+Minor renovations include:
+
+- Kitchen renovations, such as installing or removing cupboards.
+- Changes to internal walls.
+- Changes to recessed light fittings.
+- Installing or replacing wood, tile or other hard flooring, including removing carpets.
+- Installing or replacing wiring, cabling, power or access points.
+- Installing a rainwater tank.
+- Installing a clothesline.
+- Installing a reverse-cycle air conditioner.
+- Installing double- or triple-glazed windows.
+- Installing a heat pump.
+- Installing ceiling insulation.
+
+A strata scheme may add further types of work to its minor-renovation list. The scheme’s by-laws should be checked.
+
+Minor renovations cannot:
+
+- Change the outside or structure of the apartment, duplex or strata property.
+- Require waterproofing.
+
+#### Information required for a minor renovation application
+
+The applicant must provide the owners corporation, strata committee or strata managing agent with:
+
+- Plans of the work, including the dates and times when the w
+
+URL: https://www.nsw.gov.au/housing-and-construction/strata/living/by-laws 
+TITLE: Strata by-laws 
+ERROR: None 
+CONTENT:
+ ## Renovating in a strata scheme
+
+- Owners generally do not need owners corporation approval for cosmetic work such as:
+  - Painting the walls inside an apartment.
+  - Laying carpet.
+  - Installing built-in wardrobes.
+- Strata by-laws might apply to larger renovation projects.
+- The page directs readers to learn more about the kinds of renovations permitted and the approval required.
+- By-laws vary between strata schemes, so the by-laws for the specific scheme must be checked.
+
+## Strata approval and by-law changes relevant to renovations
+
+- Any owner in a strata scheme can propose or write a by-law for consideration by the owners corporation.
+- The process for adding, changing or removing a strata by-law is:
+  1. Write the proposal and obtain support from other owners.
+  2. Write the new by-law. If there is no similar model by-law, the page states that it is best to hire a lawyer because incorrect or unclear wording can create legal issues.
+  3. Write a motion and an explanatory note:
+     - The motion must include the proposer’s name and an explanation of what it is for.
+     - The explanatory note explains the suggested by-law and provides supporting information.
+     - The explanatory note cannot be more than 300 words.
+  4. Submit the by-law, motion and explanatory note to the owners corporation secretary before notice of the next general meeting is sent. The by-law and motion are then placed on the meeting agenda for a vote.
+     - If they are not submitted in time, the proposer must wait for the next meeting.
+  5. The owners must discuss and vote on the proposed by-law.
+     - A special resolution is required.
+     - No more than 25% of votes can be against the proposed by-law.
+  6. The owners corporation must register the change with NSW Land Registry Services within six months of approving it.
+     - Changes are not valid or enforceable until registered by NSW Land Registry Services.
+     - A consolidation/change of by-laws form and a copy of the updated by-laws must be submitted.
+     - The form may be completed by the strata manager or secretary but must be submitted online by someone who subscribes to an Electronic Lodgement Network Operator, usually a solicitor or conveyancer.
+
+## Common-property renovations and works
+
+- Common property is owned and used by all residents in a strata scheme.
+- Common-property by-laws usually set rules about:
+  - How common property can be used.
+  - Who is responsible for maintaining it.
+- An owner may want to create a common-property by-law to:
+  - Obtain the right to use a garden bed.
+  - Make renovations to common property.
+  - Obtain exclusive access to an area.
+- A new common-property by-law, change to a common-property by-law, or removal of a common-property by-law requires:
+  - A special resolution, meaning no more than 25% of votes can be against the by-law.
+  - Written agreement from each owner to whom the by-law grants rights or special privileges.
+- An owner cannot unreasonably refuse consen
+
+URL: https://www.wsc.nsw.gov.au/Plan-and-Build/Heritage 
+TITLE: Heritage - Wingecarribee Shire Council - NSW Government 
+ERROR: None 
+CONTENT:
+ ## Heritage and renovation/development
+
+- Heritage listing does not mean that a property cannot change or adapt to meet the needs of current and future occupants and users.
+- Any changes must be carefully considered and designed and undertaken in a manner that does not adversely affect the heritage significance of the place.
+- Heritage information includes development on heritage properties, including properties within heritage conservation areas.
+- The local heritage of the Wingecarribee Shire is managed through the **Wingecarribee Local Environmental Plan (WLEP) 2010**.
+- **Clause 5.10 of the WLEP 2010** contains the planning controls for heritage places.
+- **Schedule 5 of the WLEP 2010** lists:
+  - Statutory heritage items
+  - Archaeological sites
+  - Heritage conservation areas in the Wingecarribee Shire.
+- Heritage sites and areas are mapped on the **Heritage Map** forming part of the WLEP 2010.
+- Heritage information includes:
+  - How heritage items are assessed
+  - Conservation areas
+  - The State Heritage Register and Inventory
+  - Benefits of owning a heritage property
+  - Heritage and development.
+
+## Checking whether a property is heritage-listed
+
+- The NSW Planning Portal Spatial Viewer can be used to search by property address.
+- The Spatial Viewer can display planning and related information, including:
+  - Zoning
+  - Bush fire hazard
+  - Flooding
+  - Heritage listings, including State Heritage Register items of State heritage significance.
+- Written confirmation of heritage and other planning information can be obtained by applying for a planning certificate under **section 10.7 of the Environment Planning and Assessment Act 1979**, formerly section 149.
+- A planning certificate will state, among other things, whether a property:
+  - Is a heritage item; or
+  - Is within a conservation area.
+- Two types of certificates are available:
+  - **Section 10.7(2)** — provides the statutory information.
+  - **Section 10.7(2) & (5)** — provides additional information.
+- The page specifically states that the **10.7(5) certificate does not provide additional heritage information**.
+
+## Heritage studies and assistance
+
+- Heritage studies examined the heritage of the Wingecarribee Shire, provided recommendations about the conservation and management of heritage, and recommended a list of heritage items.
+- Heritage Assistance Grants are normally run annually.
+- The grants scheme is funded by Wingecarribee Shire Council with funding support from the NSW Government.
+- Council biennially runs the Wingecarribee Heritage Awards as part of the Australian Heritage Festival, with assistance from the Wingecarribee Heritage Advisory Committee.
+
+## Interim Heritage Orders
+
+- The page provides information about:
+  - Interim Heritage Orders
+  - Current Interim Heritage Orders
+  - Previous Interim Heritage Orders issued by Wingecarribee Shire Council.
+
+## Stated heritage context relevant to works
+
+- Joadja is a State Heritage Listed and Nationally significant f
+
+URL: https://www.wsc.nsw.gov.au/Plan-and-Build/Heritage/Heritage-Studies-and-Plans 
+TITLE: Heritage Studies and Plans 
+ERROR: None 
+CONTENT:
+ ## Heritage work and renovation
+
+- The Wingecarribee Heritage Study 1993:
+  - Examined the heritage of Wingecarribee Shire.
+  - Provided recommendations about the conservation and management of heritage.
+  - Recommended a list of heritage items that were subsequently listed in the Wingecarribee Local Environmental Plan 1989.
+  - Was commissioned in 1990 by the Heritage Council of NSW, the Department of Planning and Wingecarribee Shire Council.
+  - Was undertaken by JRC Planning Services.
+- The Wingecarribee Heritage Survey 2009 investigated approximately 700 buildings and places as potential new heritage items.
+- The sites investigated in the 2009 survey had been identified through:
+  - Earlier heritage studies and reports.
+  - Development Applications, formerly called Land Use Applications, received by Council.
+  - Council’s Heritage Advisor and planners.
+  - Nominations by members of the local community.
+- Heritage consultants researched each identified site and evaluated its heritage significance.
+- The consultants recommended that nearly 400 investigated properties be made heritage items under the Wingecarribee Local Environmental Plan 2010.
+- Council resolved on 8 February 2012 to notify owners of the identified properties about:
+  - The consultants’ findings.
+  - An opportunity to discuss the implications of heritage listing with Council officers.
+- Notifications and consultations commenced in February 2012.
+- At its Ordinary Meeting on 11 July 2012, Council resolved to defer a decision pending further consultation with owners.
+- Further consultations and requests for feedback were undertaken with property owners.
+- The results were reported to Council on 28 November 2012.
+- Council resolved to:
+  - Heritage list Council-owned and Council-controlled properties.
+  - Heritage list properties whose owners supported heritage listing.
+  - Defer items where the owner objected to the proposed heritage listing.
+  - Defer items where the owner did not respond to Council’s offer to consult.
+- 81 items were subsequently heritage listed and included in Amendment No. 40 to the Wingecarribee Local Environmental Plan 2010.
+- Amendment No. 40 was published on the NSW Legislation website on 10 March 2017.
+- More than 250 proposed heritage items deferred by Council were re-examined as part of the Community Heritage Study 2021–23.
+- The Community Heritage Study 2021–23 examined:
+  - Proposed heritage items deferred by Council in 2012.
+  - A significant number of newly identified potential heritage items.
+  - Heritage conservation areas.
+- The draft Community Heritage Study was subject to:
+  - Engagement with affected owners and the community.
+  - Public exhibition in the latter half of 2023.
+  - Peer review by an independent heritage consultant engaged by Council.
+- The independent Peer Review report was publicly exhibited in June 2024.
+- Council adopted the Wingecarribee Community Heritage Study 2021–23 on 7 August 2024, following endorsement by the Local Pl
+
+URL: https://www.transport.nsw.gov.au/projects/strategy/nsw-freight-and-ports-plan-0/part-2-state-of-freight 
+TITLE: Part 2: The State of Freight 
+ERROR: None 
+CONTENT:
+ ## Renovating, heritage work, strata approval and NSW building-contract variations
+
+- The page contains no stated information about:
+  - Renovating.
+  - Heritage work or heritage approvals.
+  - Strata approval or strata by-laws.
+  - NSW building-contract variations.
+  - Building approvals, development applications, construction contracts or variation procedures.
+
+## Freight volumes and growth
+
+| Item | Stated detail |
+|---|---|
+| NSW freight volume in 2016 | Over 480 million tonnes |
+| Forecast NSW freight volume in 2036 | 618 million tonnes |
+| Forecast overall increase to 2036 | 28 per cent |
+| Greater Sydney freight-task growth to 2036 | Almost 50 per cent |
+| Greater Sydney freight volumes moving through the city | Expected to increase by about 50 per cent by 2036 |
+| Regional NSW freight task | Forecast to grow by around 12 per cent by 2036 |
+| Regional NSW freight task in 2016 | 255 million tonnes |
+| Regional NSW freight task in 2036 | 286 million tonnes |
+
+### Drivers of freight growth
+
+- Population growth.
+- Economic growth, resulting in increases in freight movements over and above the rate of population growth.
+- Growth in global commodity demand.
+
+### Asia-related freight opportunities
+
+- Rising populations and incomes in Asia are driving increased demand for premium agricultural products.
+- This creates increased opportunities for NSW producers to export their products.
+- Freight network efficiency and connectivity are critical to realising these opportunities.
+- The NSW Government set a target to contribute to achieving 30 per cent growth in the value of NSW primary industries in NSW by 2020.
+- Much of that targeted growth was export focused.
+
+## Major commodities and freight modes
+
+### Dominant commodities
+
+| Area | Dominant commodities |
+|---|---|
+| Greater Sydney | Manufactured goods; construction materials; consumer goods; waste |
+| Regional NSW | Coal; grain and steel; forestry; other agricultural produce |
+
+- Smaller deliveries are also important to the overall supply chain.
+- Examples include deliveries between small businesses and consumers driven by e-commerce.
+- E-commerce deliveries are expected to grow significantly.
+
+### Freight network
+
+The NSW freight network comprises:
+
+- Ports.
+- Shipping channels.
+- Airports.
+- Prescribed airspace.
+- Roads.
+- Rail lines.
+- Pipelines.
+- Intermodal terminals.
+- Freight-related precincts.
+
+- The majority of freight is moved by road.
+- Coal is the major exception and is generally transported by rail.
+- Almost half of NSW agricultural produce is moved by rail.
+
+### Potential freight shifts
+
+- Rail is well-suited to transporting containerised freight, including agricultural exports and construction materials, over longer distances.
+- Coastal shipping is well-suited to transporting construction materials and other bulk freight.
+- The page identifies opportunities to improve freight efficiency by shifting some commodities away from road transport to rail and coastal shipping.
+
+## Freight-s
+
+URL: https://www.qfmlogistics.com.au/dubbo-freight-services 
+TITLE: Dubbo Freight | Central West NSW Regional Hub | QFM 
+ERROR: None 
+CONTENT:
+ - Dubbo is a central-west NSW wholesale and distribution hub.
+- Freight categories relevant to building and renovation work include:
+  - Building products
+  - Trade supplies
+  - Construction materials
+  - Industrial components
+  - Project components
+- QFM arranges:
+  - Pallet, carton and trade loads into Dubbo from every Australian capital.
+  - Outbound collections on request.
+  - Wholesale and distribution pickups for building products, trade supplies and industrial components.
+  - On-forwarding from Dubbo to:
+    - Orange
+    - Bathurst
+    - Mudgee
+    - Wellington
+    - Narromine
+    - Gilgandra
+    - Coonamble
+    - Lightning Ridge
+- Regional on-forwarding is stated to cover construction, trade and institutional freight across the central-west plains.
+- Dubbo freight routes:
+  - Sydney inbound via the Mitchell Highway through Bathurst and Orange.
+  - Melbourne via the Newell Highway through Parkes.
+  - Outbound east to Sydney via the Mitchell Highway.
+  - Outbound south to Melbourne via the Newell Highway.
+- Sydney-to-Dubbo freight via Bathurst and Orange takes five to six hours, with next-day delivery on most carriers.
+- QFM can price both the Mitchell Highway and Newell Highway routes based on the required delivery window.
+- Dubbo Airport provides domestic air access for urgent consignments, including:
+  - Project components
+  - Time-critical parts
+  - Medical equipment
+- Construction and residential development in the Dubbo region generates site-freight requirements.
+- QFM arranges tail-lift delivery to unmanned sites.
+- QFM coordinates multi-drop runs where needed.
+- Quote submissions should include site conditions, including:
+  - Access restrictions
+  - After-hours windows
+  - Equipment availability
+- Quote requests should include:
+  - Pickup suburbs
+  - Delivery suburbs
+  - Freight dimensions: length × width × height
+  - Weight
+  - Access constraints
+- The page does not state any requirements or processes for:
+  - Heritage work
+  - Heritage approvals
+  - Strata approval
+  - NSW building-contract variations
+  - Development applications
+  - Building permits
+  - Council approvals
+  - Owner’s corporation approvals
+  - Contract-prime-cost or variation pricing rules
+
+URL: https://www.nsw.gov.au/housing-and-construction/building-or-renovating-a-home/preparing/contracts 
+TITLE: Contracts for residential building work 
+ERROR: None 
+CONTENT:
+ ## Renovating and residential building work
+
+- A written contract is required when the contract price is:
+  - More than $5,000 including GST; or
+  - Unknown, but the reasonable market cost of labour and materials is more than $5,000 including GST.
+- Residential building work valued between $5,000 and $20,000 must be covered by a small jobs contract.
+- Work valued at more than $20,000 must be covered by an extensive large job contract.
+- The written contract must be dated and signed by, or on behalf of, each party.
+- The contract may specify that work is paid for at regular intervals.
+- Before entering into a contract for residential building work costing more than $5,000, builders and tradespeople must give the owner a copy of the Consumer Building Guide.
+- Before signing, owners should:
+  - Make sure the contract does not make them responsible for termite control instead of the builder or tradesperson.
+  - Ensure progress payments are for work actually done, rather than time spent on the job.
+  - Make sure the dollar value assigned to each stage of work is realistic.
+  - Get information about insurance.
+  - Be clear about the duration of warranties.
+  - Discuss anything they do not understand with the builder or tradesperson.
+  - Not sign if they are unhappy, because they have the right to request changes to the contract.
+  - Obtain legal advice before changing a standard contract, or if the builder or tradesperson has amended a standard contract or included special conditions.
+- Arbitration clauses are not permitted in a home building contract and are deemed void.
+- A licence in the name of an individual does not permit that individual’s company or partnership to make the contract, even if the individual is a company director or a member of the partnership.
+- If a company or partnership is making the contract, it must be licensed in the company or partnership name.
+- The page advises checking the contractor’s details using the home building online licence check before signing.
+- The page states: “Don't sign any contract if it doesn't meet all these criteria.”
+
+### Contract requirements relevant to renovation work
+
+Contracts must contain:
+
+- The parties’ names, including the contractor licence holder’s name as shown on the contractor licence.
+- The contractor licence number.
+- A description of the work.
+- Any plans or specifications.
+- The contract price, if known.
+- A quality-of-construction clause stating that the work will comply with:
+  - The Building Code of Australia, to the extent required under the Environmental Planning and Assessment Act 1979.
+  - All other relevant codes, standards and specifications that the work is required to comply with under any law.
+  - The conditions of any relevant development consent or complying development certificate.
+- A clause stating that the contract may limit the contractor’s liability for failure to comply with the work-compliance clause if the failure relates solely to:
+  - A design or specification
+
+URL: https://www.info.buy.nsw.gov.au/resources/construction/construction-procurement-guide-managing-variations 
+TITLE: Construction procurement guide: managing variations 
+ERROR: None 
+CONTENT:
+ ## NSW construction-contract variations
+
+- Updated: 1 Jul 2008.
+- Guidance applies to contracts for construction work and agreements for related services.
+- Terminology:
+  - “Contract” includes construction contracts and service agreements.
+  - “Contractor” includes contractors, consultants and project managers.
+  - “Principal’s representative” means the principal’s authorised person or the principal’s representative, as applicable.
+- In general terms, a variation is a change to the work required under the contract.
+- For a construction contract, a variation is usually defined as a change to the works. Each standard-form contract contains additional provisions relating to variations and their management.
+- If the principal’s representative directs a variation, the contractor is obliged to carry out the instruction.
+- The contractor is generally not entitled to change the works without agreement confirmed in writing by the principal’s representative.
+- A variation should generally be consistent with, or similar in nature to, the work under the contract.
+- A variation becomes part of the contract. All contract conditions apply to the changed work, including provisions for:
+  - extensions of time
+  - site conditions, if applicable.
+- A variation instruction will often lead to contractor claims for:
+  - additional payment
+  - an extension to the period for completion.
+- Additional payment may include costs associated with:
+  - delay
+  - acceleration
+  - disruption.
+- Variations are identified as one of the main reasons for cost and time overruns.
+- The approved scope of work should not be changed without good reason.
+- It is not the role of the principal’s representative to improve the approved design.
+
+## Categories of variations
+
+### Unavoidable variations
+
+- Unavoidable variations are necessary to minimise adverse effects caused by unexpected events or circumstances.
+- They may be required to avoid:
+  - health problems
+  - safety problems
+  - security problems.
+- They do not result in a change to the scope of the work.
+- Examples include:
+  - minimising increased cost or another adverse impact caused by a latent condition, such as:
+    - unanticipated ground conditions
+    - hazardous materials
+    - existing services
+  - overcoming a fault in the principal’s design or documentation, such as:
+    - an error
+    - ambiguity
+    - inconsistency
+  - overcoming such a fault where it is not an omission or lack of completeness that may be the contractor’s responsibility, and where failing to remedy it could:
+    - result in health, safety or security problems
+    - prevent work from continuing
+  - overcoming a change in statutory requirements that occurred since tenders closed.
+- Failure to give an instruction in these circumstances may:
+  - prevent completion of the contract
+  - constitute a breach of contract by the principal.
+- The client must be made aware of the consequences of failing to respond promptly.
+- If an instruction is not given promptly,

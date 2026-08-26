@@ -4,14 +4,11 @@ export const WORKSHOP_HERO_IMAGE = "/images/workshop-hero-main.jpg";
 /** Blog index (`/blog/`) — distinct from homepage workshop hero */
 export const BLOG_INDEX_HERO_IMAGE = "/images/blog/blog-index-hero.jpg";
 
-export const LAUNCH_PACK_BLOG_SLUGS = [
-  "custom-kitchen-cost-nsw-2026",
-  "flat-pack-vs-custom-kitchen-australia",
-  "2pac-laminate-timber-veneer-kitchen-finishes-nsw",
-  "walk-in-robe-built-in-wardrobe-cost-guide-nsw",
-  "questions-to-ask-custom-joiner-australia",
-  "benchtop-guide-engineered-stone-ban-nsw",
-] as const;
+export {
+  ALL_SEEDED_BLOG_SLUGS as LAUNCH_PACK_BLOG_SLUGS,
+  BATCH2_BLOG_SLUGS,
+  LAUNCH_PACK_SLUGS,
+} from "@/lib/blog/launchPack";
 
 export type BlogInlineImageVariant = "inline-01" | "inline-02" | "inline-wide";
 

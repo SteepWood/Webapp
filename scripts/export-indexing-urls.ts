@@ -5,7 +5,7 @@
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { LAUNCH_PACK_SLUGS } from "../src/lib/blog/launchPack";
+import { ALL_SEEDED_BLOG_SLUGS } from "../src/lib/blog/launchPack";
 import { ALL_CITIES, ALL_SERVICES } from "../src/lib/seo-graph";
 
 const BASE =
@@ -63,7 +63,7 @@ function buildUrlList(): string[] {
     }
   }
 
-  for (const slug of LAUNCH_PACK_SLUGS) {
+  for (const slug of ALL_SEEDED_BLOG_SLUGS) {
     urls.push(canonicalPath(`/blog/${slug}/`));
   }
 
@@ -78,7 +78,7 @@ writeFileSync(outPath, `${urls.join("\n")}\n`, "utf8");
 const comboCount = ALL_SERVICES.length * ALL_CITIES.length;
 
 console.log(`Exported ${urls.length} URLs to scripts/seo-indexing-urls.txt`);
-console.log(`  Static + hubs: ${urls.length - comboCount - LAUNCH_PACK_SLUGS.length}`);
+console.log(`  Static + hubs: ${urls.length - comboCount - ALL_SEEDED_BLOG_SLUGS.length}`);
 console.log(`  Combo pages:   ${comboCount}`);
-console.log(`  Blog posts:    ${LAUNCH_PACK_SLUGS.length}`);
+console.log(`  Blog posts:    ${ALL_SEEDED_BLOG_SLUGS.length}`);
 console.log(`\nSubmit sitemap: ${BASE}/sitemap.xml`);

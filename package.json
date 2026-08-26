@@ -17,6 +17,7 @@
     "prisma:migrate": "dotenv -e .env.local -- prisma migrate dev",
     "setup:db": "tsx scripts/setup-supabase-env.ts",
     "db:seed": "dotenv -e .env.local -- tsx prisma/seed.ts",
+    "blog:placeholders": "node scripts/generate-blog-placeholders.mjs",
     "db:verify": "dotenv -e .env.local -- tsx scripts/verify-db.ts",
     "resend:verify": "dotenv -e .env.local -- tsx scripts/verify-resend.ts",
     "email:dns-check": "tsx scripts/check-email-dns.ts",

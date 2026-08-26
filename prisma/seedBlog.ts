@@ -1,8 +1,11 @@
 import type { PrismaClient } from "@prisma/client";
 
 import {
-  LAUNCH_PACK_SLUGS,
+  ALL_SEEDED_BLOG_SLUGS,
   RETIRED_BLOG_SLUGS,
+  encodeFaqTag,
+  encodeImageAltTag,
+  encodeLocationFocusTags,
   loadLaunchPackPosts,
 } from "../src/lib/blog/launchPack";
 import { blogPostCoverPath } from "../src/lib/images";
@@ -23,8 +26,17 @@ export async function seedBlogPosts(prisma: PrismaClient): Promise<void> {
   });
 
   for (const post of posts) {
-    const tags = [...post.tags, ...encodeRelatedPostTags(post.relatedPosts)];
+    const faqTag = encodeFaqTag(post.faq);
+    const imageAltTag = encodeImageAltTag(post.imageAlts);
+    const tags = [
+      ...post.tags,
+      ...encodeRelatedPostTags(post.relatedPosts),
+      ...encodeLocationFocusTags(post.locationFocus),
+      imageAltTag,
+      ...(faqTag ? [faqTag] : []),
+    ];
 
+    // Publish the full Batch 1 + Batch 2 catalogue at once (no staggered schedule).
     await prisma.blogPost.upsert({
       where: { slug: post.slug },
       update: {
@@ -61,7 +73,7 @@ export async function seedBlogPosts(prisma: PrismaClient): Promise<void> {
 
   const unpublished = await prisma.blogPost.updateMany({
     where: {
-      slug: { notIn: [...LAUNCH_PACK_SLUGS] },
+      slug: { notIn: [...ALL_SEEDED_BLOG_SLUGS] },
       isPublished: true,
     },
     data: { isPublished: false },
@@ -71,7 +83,7 @@ export async function seedBlogPosts(prisma: PrismaClient): Promise<void> {
     console.log(`  unpublished ${unpublished.count} legacy blog post(s)`);
   }
 
-  console.log(`  upserted ${posts.length} launch-pack blog post(s)`);
+  console.log(`  upserted ${posts.length} blog post(s) — all published`);
 }
 
 export { RELATED_TAG_PREFIX };

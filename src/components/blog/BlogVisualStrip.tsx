@@ -1,4 +1,8 @@
 import { MediaThumb } from "@/components/ui/media-card";
+import {
+  getBlogImageMeta,
+  type BlogImageSlot,
+} from "@/lib/blog/batch2ImageMeta";
 import { blogPostInlinePath } from "@/lib/images";
 import { cn } from "@/lib/utils";
 
@@ -16,6 +20,8 @@ const DEFAULT_PAIR_ALTS = [
 
 const DEFAULT_WIDE_ALT = "Wide feature image for this article";
 
+const PAIR_SLOTS = ["inline-01", "inline-02"] as const satisfies BlogImageSlot[];
+
 export function BlogVisualStrip({
   slug,
   variant = "pair",
@@ -23,25 +29,31 @@ export function BlogVisualStrip({
   imageAlts,
 }: BlogVisualStripProps) {
   if (variant === "wide") {
-    const alt = imageAlts?.[0] ?? DEFAULT_WIDE_ALT;
+    const meta = getBlogImageMeta(slug, "inline-wide");
+    const alt = meta?.alt ?? imageAlts?.[0] ?? DEFAULT_WIDE_ALT;
 
     return (
       <figure className={cn("not-prose my-stack-lg", className)}>
         <MediaThumb
           src={blogPostInlinePath(slug, "inline-wide")}
           alt={alt}
-          width={1600}
-          height={1000}
-          sizes="(max-width: 768px) 100vw, 720px"
+          title={meta?.title_attr}
+          width={meta?.width ?? 1600}
+          height={meta?.height ?? 1000}
+          sizes={meta?.sizes ?? "(max-width: 768px) 100vw, 720px"}
+          loading="lazy"
+          unoptimized
           areaClassName="aspect-[16/10] rounded-lg border border-ink-700/10"
           imageClassName="group-hover:scale-100"
         />
+        {meta?.caption ? (
+          <figcaption className="mt-3 text-body-sm leading-relaxed text-ink-800/70">
+            {meta.caption}
+          </figcaption>
+        ) : null}
       </figure>
     );
   }
-
-  const alts = imageAlts ?? [...DEFAULT_PAIR_ALTS];
-  const variants = ["inline-01", "inline-02"] as const;
 
   return (
     <div
@@ -50,19 +62,36 @@ export function BlogVisualStrip({
         className,
       )}
     >
-      {variants.map((inlineVariant, index) => (
-        <figure key={inlineVariant} className="min-w-0">
-          <MediaThumb
-            src={blogPostInlinePath(slug, inlineVariant)}
-            alt={alts[index] ?? DEFAULT_PAIR_ALTS[index] ?? DEFAULT_WIDE_ALT}
-            width={1200}
-            height={900}
-            sizes="(max-width: 640px) 100vw, 50vw"
-            areaClassName="aspect-[4/3] rounded-lg border border-ink-700/10"
-            imageClassName="group-hover:scale-100"
-          />
-        </figure>
-      ))}
+      {PAIR_SLOTS.map((slot, index) => {
+        const meta = getBlogImageMeta(slug, slot);
+        const alt =
+          meta?.alt ??
+          imageAlts?.[index] ??
+          DEFAULT_PAIR_ALTS[index] ??
+          DEFAULT_WIDE_ALT;
+
+        return (
+          <figure key={slot} className="min-w-0">
+            <MediaThumb
+              src={blogPostInlinePath(slug, slot)}
+              alt={alt}
+              title={meta?.title_attr}
+              width={meta?.width ?? 1200}
+              height={meta?.height ?? 900}
+              sizes={meta?.sizes ?? "(max-width: 640px) 100vw, 50vw"}
+              loading="lazy"
+              unoptimized
+              areaClassName="aspect-[4/3] rounded-lg border border-ink-700/10"
+              imageClassName="group-hover:scale-100"
+            />
+            {meta?.caption ? (
+              <figcaption className="mt-3 text-body-sm leading-relaxed text-ink-800/70">
+                {meta.caption}
+              </figcaption>
+            ) : null}
+          </figure>
+        );
+      })}
     </div>
   );
 }
