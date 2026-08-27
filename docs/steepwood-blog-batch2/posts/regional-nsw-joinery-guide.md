@@ -2,7 +2,7 @@
 title: "Custom Joinery in Regional New South Wales: 2026 Cost Guide"
 slug: "regional-nsw-joinery-guide"
 description: "Custom joinery regional NSW costs, city-by-city demand, freight, measure visits and installation planning from Orange to Coffs Harbour."
-date: "2026-09-19"
+date: "2026-09-22"
 author: "Sukhveer Kaur"
 category: "Local Guides"
 tags: ["regional NSW joinery", "Orange cabinetry", "regional kitchen renovation", "joinery logistics", "custom cabinetry"]

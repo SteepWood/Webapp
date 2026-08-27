@@ -2,7 +2,7 @@
 title: "What a Custom Reception Desk Costs in Australia"
 slug: "reception-desk-cost-australia"
 description: "Reception desk cost Australia explained, from stock counters to custom curved joinery with accessible layouts, data and installation planning."
-date: "2026-09-04"
+date: "2026-09-07"
 author: "Sukhveer Kaur"
 category: "Commercial"
 tags: ["reception desk", "commercial joinery", "office fitout", "reception counter", "Australia costs"]

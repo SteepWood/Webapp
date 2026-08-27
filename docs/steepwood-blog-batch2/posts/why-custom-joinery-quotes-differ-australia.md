@@ -2,7 +2,7 @@
 title: "Why One Quote Says $1,000 and the Next Says $9,000"
 slug: "why-custom-joinery-quotes-differ-australia"
 description: "Why is custom joinery so expensive? A $1,000 wardrobe range and a $9,000 quote can both be real. Compare scope, GST, hardware and site conditions."
-date: "2026-09-08"
+date: "2026-09-11"
 author: "Sukhveer Kaur"
 category: "Buying Guides"
 tags: ["custom joinery", "quote comparison", "wardrobes", "NSW renovation", "cabinetry costs"]

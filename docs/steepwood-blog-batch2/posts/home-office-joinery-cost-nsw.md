@@ -2,7 +2,7 @@
 title: "Built-In Home Office Joinery: NSW Costs and Layouts That Work"
 slug: "home-office-joinery-cost-nsw"
 description: "Built in home office cost NSW explained, from study nooks to full desk walls with storage, cable management and practical working dimensions."
-date: "2026-09-02"
+date: "2026-09-05"
 author: "Sukhveer Kaur"
 category: "Home Offices"
 tags: ["home office joinery", "built-in desk", "study nook", "NSW costs", "office storage"]

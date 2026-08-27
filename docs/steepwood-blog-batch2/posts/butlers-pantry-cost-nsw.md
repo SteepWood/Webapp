@@ -2,7 +2,7 @@
 title: "What a Butler's Pantry Costs in NSW, and When It Is Worth It"
 slug: "butlers-pantry-cost-nsw"
 description: "A butler's pantry in NSW runs about $8,000 for a fitted cupboard build to $35,000 plus for a full second kitchen. Costed builds and the space you need."
-date: "2026-08-25"
+date: "2026-08-28"
 author: "Sukhveer Kaur"
 category: "Kitchen Design"
 tags: ["butlers pantry", "scullery", "NSW costs", "kitchen design", "custom joinery"]

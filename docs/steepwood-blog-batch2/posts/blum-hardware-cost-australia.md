@@ -2,7 +2,7 @@
 title: "What Blum Hardware Actually Costs in a NSW Kitchen"
 slug: "blum-hardware-cost-australia"
 description: "Blum hardware cost Australia: LEGRABOX drawers start around $233 including GST and soft-close hinges about $14. A NSW joiner prices the real upgrade."
-date: "2026-08-27"
+date: "2026-08-30"
 author: "Sukhveer Kaur"
 category: "Materials"
 tags: ["Blum hardware", "kitchen hardware", "LEGRABOX", "NSW kitchens", "cost guide"]

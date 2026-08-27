@@ -2,7 +2,7 @@
 title: "Joinery for Period and Rural Homes: Southern Highlands and Hunter Valley"
 slug: "southern-highlands-hunter-valley-joinery-guide"
 description: "Joinery Southern Highlands and Hunter Valley guide for period homes, rural access, country kitchens, mudrooms and cellar-door fitouts."
-date: "2026-09-18"
+date: "2026-09-21"
 author: "Sukhveer Kaur"
 category: "Local Guides"
 tags: ["Southern Highlands joinery", "Hunter Valley joinery", "period homes", "country kitchens", "rural properties"]

@@ -2,7 +2,7 @@
 title: "Office Fitout Costs in NSW, and the Joinery Share of the Budget"
 slug: "office-fitout-joinery-cost-nsw"
 description: "Office fitout cost per square metre NSW explained, isolating the joinery package for tea points, storage, lockers, credenzas and reception."
-date: "2026-09-05"
+date: "2026-09-08"
 author: "Sukhveer Kaur"
 category: "Commercial"
 tags: ["office fitout", "commercial joinery", "tea point", "office storage", "NSW fitout costs"]

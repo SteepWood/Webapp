@@ -2,7 +2,7 @@
 title: "What a Kitchen Island Costs in NSW, and What Size Actually Works"
 slug: "kitchen-island-cost-nsw"
 description: "Kitchen island cost NSW: a custom island runs about $3,000 for a simple bench to $25,000 plus with a waterfall top and integrated services."
-date: "2026-08-30"
+date: "2026-09-02"
 author: "Sukhveer Kaur"
 category: "Kitchen Design"
 tags: ["kitchen island", "island bench", "kitchen cost", "NSW kitchen", "waterfall benchtop"]

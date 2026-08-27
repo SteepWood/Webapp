@@ -2,7 +2,7 @@
 title: "What Cabinetmakers Earn Against What They Charge, in NSW"
 slug: "cabinetmaker-hourly-rate-vs-charge-out-nsw"
 description: "Cabinet maker hourly rate NSW: award wages begin around $25.74 an hour while specialist charge-out can exceed $120. See the costs between them."
-date: "2026-09-07"
+date: "2026-09-10"
 author: "Sukhveer Kaur"
 category: "Buying Guides"
 tags: ["cabinetmaker rates", "joinery cost", "NSW", "charge-out rate", "custom joinery"]

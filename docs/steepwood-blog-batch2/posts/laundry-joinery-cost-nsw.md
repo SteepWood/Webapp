@@ -2,7 +2,7 @@
 title: "What Custom Laundry Joinery Costs in NSW in 2026"
 slug: "laundry-joinery-cost-nsw"
 description: "Custom laundry joinery in NSW runs about $3,000 for a basic refresh to $25,000 plus for a full walk-through laundry. A Newcastle joiner breaks down every line item."
-date: "2026-08-22"
+date: "2026-08-25"
 author: "Sukhveer Kaur"
 category: "Laundry"
 tags: ["laundry joinery", "laundry renovation", "NSW costs", "custom cabinetry", "Newcastle joiner"]
