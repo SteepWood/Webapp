@@ -55,12 +55,24 @@ Phase 1 delivered a production-ready site with real NAP, portfolio, blog, schema
 | Field | Value |
 |---|---|
 | Property URL | `https://steepwood.com.au` (domain property — ownership verified) |
-| Verification method | DNS TXT record |
-| TXT record added | Yes |
+| Verification method | DNS TXT + HTML meta (`NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`) |
+| TXT record added | Yes — `google-site-verification=RX9Vpek4LrCJcDuRMPXp65yBSegV5jkd98gAOHKHjuE` |
 | Verified date | 2026-06-16 |
 | Sitemap submitted | Yes — `https://steepwood.com.au/sitemap.xml` (2026-06-19) |
-| Sitemap status | Success — 202 pages discovered |
+| Image sitemap | Submit `https://steepwood.com.au/sitemap-images.xml` (Batch 2 images) |
+| Sitemap status | Resubmit after Batch 2 — expect ~36 blog URLs + marketing pages |
 | Email reports enabled | _pending_ |
+| Linked to GA4 | _confirm in GSC → Settings → Associations_ |
+
+### Wire-up checklist (owner)
+
+1. Open [Google Search Console](https://search.google.com/search-console) → property **steepwood.com.au**.
+2. **Sitemaps** → add / resubmit:
+   - `https://steepwood.com.au/sitemap.xml`
+   - `https://steepwood.com.au/sitemap-images.xml`
+3. **Settings → Associations** → link GA4 property **SteepWood** (`G-DJCTNBQ2E3`).
+4. **Settings → Users and permissions** → confirm `hello@steepwood.com.au` / owner emails receive reports.
+5. Optional: URL Inspection → request indexing for `/blog/` and a few new Batch 2 posts.
 
 ## Bing Webmaster Tools
 

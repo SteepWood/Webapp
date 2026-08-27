@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   },
   description:
     "Premium custom joinery from our Newcastle workshop. Kitchens, wardrobes, vanities, and commercial fitouts across Australia.",
+  verification: env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
   openGraph: {
     siteName: "SteepWood",
     locale: "en_AU",

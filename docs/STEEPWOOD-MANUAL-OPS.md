@@ -114,7 +114,9 @@ Phases 1–4 are **code-complete** when `pnpm typecheck`, `pnpm build`, and each
 
 - [x] **GA4** property created; `NEXT_PUBLIC_GA4_ID` set; realtime shows `page_view` after deploy
 - [x] Key events marked: `quote_submit`, `contact_submit`
-- [x] **Search Console** — property verified (DNS TXT preferred); sitemap `/sitemap.xml` submitted
+- [x] **Search Console** — property verified (DNS TXT + HTML meta via `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`); sitemap `/sitemap.xml` submitted
+- [ ] **Search Console** — resubmit `/sitemap.xml` + submit `/sitemap-images.xml` after Batch 2
+- [ ] **Search Console** — link GA4 association (`G-DJCTNBQ2E3`) and enable email reports
 - [x] **Bing Webmaster Tools** — import from GSC or verify manually; sitemap submitted
 - [ ] **Google Business Profile** claimed; NAP matches website exactly
   - Location ref: `om-6582854789951435152` — **verification in progress** (2026-06-19)
