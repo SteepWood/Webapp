@@ -2,7 +2,7 @@
 title: "Bespoke Joinery in Sydney's Eastern Suburbs"
 slug: "joinery-cost-guide-eastern-suburbs-sydney"
 description: "Bespoke joinery Eastern Suburbs Sydney cost guide for 2026: terrace, apartment and heritage-aware kitchen, wardrobe and furniture budgets."
-date: "2026-09-17"
+date: "2026-08-17"
 author: "Sukhveer Kaur"
 category: "Local Guides"
 tags: ["Eastern Suburbs", "bespoke joinery", "Sydney", "terrace homes", "cost guide"]

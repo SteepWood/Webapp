@@ -2,7 +2,7 @@
 title: "Custom Joinery in Sydney's Inner West: 2026 Cost Guide"
 slug: "joinery-cost-guide-inner-west-sydney"
 description: "Custom joinery Inner West Sydney costs explained for Newtown, Marrickville and Balmain terraces, including access, storage and 2026 price bands."
-date: "2026-09-19"
+date: "2026-08-19"
 author: "Sukhveer Kaur"
 category: "Local Guides"
 tags: ["Inner West joinery", "terrace renovation", "Sydney cabinetry", "custom kitchen", "small-space storage"]

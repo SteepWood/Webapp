@@ -2,7 +2,7 @@
 title: "Timber Species for Joinery in Australia, Priced Per Metre"
 slug: "joinery-timber-species-guide-nsw"
 description: "Joinery timber species Australia: Spotted Gum, Blackbutt, Tasmanian Oak and American White Oak priced per metre in August 2026, with practical selection advice."
-date: "2026-09-03"
+date: "2026-08-03"
 author: "Sukhveer Kaur"
 category: "Materials"
 tags: ["joinery timber", "Spotted Gum", "Blackbutt", "Tasmanian Oak", "Australian timber"]

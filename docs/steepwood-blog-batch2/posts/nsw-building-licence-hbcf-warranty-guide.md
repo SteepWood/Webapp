@@ -2,7 +2,7 @@
 title: "Licences, Insurance and Warranties: What NSW Law Requires of Your Joiner"
 slug: "nsw-building-licence-hbcf-warranty-guide"
 description: "NSW building licence check: licence and written contract above $5,000, HBCF at $20,000. Check your joiner before a deposit. General information only."
-date: "2026-09-12"
+date: "2026-08-12"
 author: "Sukhveer Kaur"
 category: "Buying Guides"
 tags: ["NSW licence", "HBCF", "building warranty", "joinery contract", "consumer protection"]

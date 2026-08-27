@@ -2,7 +2,7 @@
 title: "Floating or Floor-Mounted Vanity: the Cost and the Trade-Offs in NSW"
 slug: "floating-vanity-vs-floor-mounted-cost-nsw"
 description: "Floating vanity cost NSW: a custom wall-hung vanity is typically 10 to 20 per cent more than a floor-mounted equivalent once wall framing is allowed for."
-date: "2026-08-31"
+date: "2026-07-31"
 author: "Sukhveer Kaur"
 category: "Bathrooms"
 tags: ["floating vanity", "bathroom renovation", "custom vanity", "NSW bathrooms", "cost guide"]

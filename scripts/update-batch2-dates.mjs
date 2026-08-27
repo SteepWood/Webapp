@@ -42,9 +42,9 @@ const POSTS_DIR = path.join(
   "posts",
 );
 
-/** 30 consecutive days: 25 Aug 2026 → 23 Sep 2026 (Australia/Sydney calendar dates). */
+/** 30 consecutive days: 25 Jul 2026 → 23 Aug 2026 (Australia/Sydney calendar dates). */
 function scheduleDate(dayIndex) {
-  const start = new Date(Date.UTC(2026, 7, 25)); // 2026-08-25
+  const start = new Date(Date.UTC(2026, 6, 25)); // 2026-07-25
   start.setUTCDate(start.getUTCDate() + dayIndex);
   const year = start.getUTCFullYear();
   const month = String(start.getUTCMonth() + 1).padStart(2, "0");

@@ -2,7 +2,7 @@
 title: "Custom Joinery on Sydney's Northern Beaches"
 slug: "joinery-cost-guide-northern-beaches"
 description: "Kitchen renovation Northern Beaches cost guide for 2026: premium joinery ranges, coastal material choices and delivery realities from Manly to Palm Beach."
-date: "2026-09-16"
+date: "2026-08-16"
 author: "Sukhveer Kaur"
 category: "Local Guides"
 tags: ["Northern Beaches", "Sydney", "kitchen renovation", "custom joinery", "cost guide"]

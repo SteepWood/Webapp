@@ -36,7 +36,7 @@ export async function seedBlogPosts(prisma: PrismaClient): Promise<void> {
       ...(faqTag ? [faqTag] : []),
     ];
 
-    // Batch 2: staggered publish dates from frontmatter (25 Aug – 23 Sep 2026).
+    // Batch 2: staggered publish dates from frontmatter (25 Jul – 23 Aug 2026).
     await prisma.blogPost.upsert({
       where: { slug: post.slug },
       update: {

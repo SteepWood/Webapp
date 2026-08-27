@@ -2,7 +2,7 @@
 title: "Custom Joinery on the Central Coast: 2026 Costs"
 slug: "joinery-cost-guide-central-coast"
 description: "Kitchen renovation Central Coast cost guide for 2026: realistic joinery ranges, suburbs, coastal materials and what to plan from Gosford to Wyong."
-date: "2026-09-14"
+date: "2026-08-14"
 author: "Sukhveer Kaur"
 category: "Local Guides"
 tags: ["Central Coast", "kitchen renovation", "custom joinery", "cost guide", "coastal homes"]

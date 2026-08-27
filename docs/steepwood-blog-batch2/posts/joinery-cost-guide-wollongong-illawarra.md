@@ -2,7 +2,7 @@
 title: "Custom Joinery in Wollongong and the Illawarra"
 slug: "joinery-cost-guide-wollongong-illawarra"
 description: "Kitchen renovation Wollongong cost guide for 2026: realistic Illawarra joinery ranges, suburbs, escarpment access and strata considerations."
-date: "2026-09-15"
+date: "2026-08-15"
 author: "Sukhveer Kaur"
 category: "Local Guides"
 tags: ["Wollongong", "Illawarra", "kitchen renovation", "custom joinery", "cost guide"]

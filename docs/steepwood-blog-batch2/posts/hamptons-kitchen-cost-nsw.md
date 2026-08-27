@@ -2,7 +2,7 @@
 title: "What a Hamptons Kitchen Costs to Build Properly in NSW"
 slug: "hamptons-kitchen-cost-nsw"
 description: "Hamptons kitchen cost NSW explained: shaker joinery, two-pack paint, stone and pantry choices priced for a proper 2026 build."
-date: "2026-09-04"
+date: "2026-08-04"
 author: "Sukhveer Kaur"
 category: "Kitchen Design"
 tags: ["Hamptons kitchen", "kitchen costs", "shaker joinery", "NSW renovation", "two-pack cabinetry"]

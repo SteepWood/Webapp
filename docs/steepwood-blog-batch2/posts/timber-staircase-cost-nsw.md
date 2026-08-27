@@ -2,7 +2,7 @@
 title: "What a Timber Staircase Costs in NSW in 2026"
 slug: "timber-staircase-cost-nsw"
 description: "Timber staircase cost NSW: straight pine stairs start around $3,500, hardwood runs about $5,500 to $9,000, and curved stairs can exceed $25,000."
-date: "2026-09-01"
+date: "2026-08-01"
 author: "Sukhveer Kaur"
 category: "Staircases"
 tags: ["timber staircase", "staircase cost", "hardwood stairs", "NSW joinery", "balustrades"]

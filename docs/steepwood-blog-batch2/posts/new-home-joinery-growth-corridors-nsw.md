@@ -2,7 +2,7 @@
 title: "Joinery for New Homes in Sydney's Growth Corridors"
 slug: "new-home-joinery-growth-corridors-nsw"
 description: "New home joinery Sydney guide to builder upgrades, direct joiner options and second-fix cabinetry across the growth corridors in 2026."
-date: "2026-09-23"
+date: "2026-08-23"
 author: "Sukhveer Kaur"
 category: "Local Guides"
 tags: ["new home joinery Sydney", "builder upgrades", "project home kitchen", "second-fix joinery", "Sydney growth corridors"]

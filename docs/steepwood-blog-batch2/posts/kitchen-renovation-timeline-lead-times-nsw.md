@@ -2,7 +2,7 @@
 title: "How Long a Custom Kitchen Really Takes in NSW, Week by Week"
 slug: "kitchen-renovation-timeline-lead-times-nsw"
 description: "A custom NSW kitchen runs about 10 to 16 weeks from first measure to final handover. Here is the week-by-week timeline, the real lead times, and why spring books out."
-date: "2026-08-26"
+date: "2026-07-26"
 author: "Sukhveer Kaur"
 category: "Kitchen Design"
 tags: ["kitchen timeline", "NSW renovation", "joinery lead times", "custom kitchen", "Newcastle joiner"]

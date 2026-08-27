@@ -2,7 +2,7 @@
 title: "Custom Joinery in Newcastle and the Hunter: 2026 Costs and Local Realities"
 slug: "joinery-cost-guide-newcastle-hunter"
 description: "Custom joinery Newcastle cost guide for Newcastle NSW 2300, Lake Macquarie and the Hunter. Kitchen, wardrobe, laundry and vanity price ranges for 2026."
-date: "2026-09-13"
+date: "2026-08-13"
 author: "Sukhveer Kaur"
 category: "Local Guides"
 tags: ["Newcastle joinery", "Hunter joinery", "custom kitchens", "cabinetmaker Newcastle", "joinery costs"]

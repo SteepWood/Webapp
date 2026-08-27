@@ -2,7 +2,7 @@
 title: "What Custom Timber Furniture Costs in Australia in 2026"
 slug: "custom-timber-furniture-cost-australia"
 description: "Custom timber furniture cost Australia explained: dining tables, beds, desks and sideboards priced by species, joints, finish and freight."
-date: "2026-09-06"
+date: "2026-08-06"
 author: "Sukhveer Kaur"
 category: "Materials"
 tags: ["custom furniture", "timber dining table", "bespoke furniture", "hardwood furniture", "Australian joinery"]

@@ -2,7 +2,7 @@
 title: "Porcelain and Sintered Stone Benchtop Prices in NSW, 2026"
 slug: "porcelain-sintered-stone-benchtop-cost-nsw"
 description: "Installed porcelain and sintered stone benchtops run about $900 to $1,400 per linear metre in NSW. Real prices, fabrication costs and layout allowances."
-date: "2026-08-27"
+date: "2026-07-27"
 author: "Sukhveer Kaur"
 category: "Materials"
 tags: ["porcelain benchtop", "sintered stone", "NSW costs", "Dekton", "Neolith"]

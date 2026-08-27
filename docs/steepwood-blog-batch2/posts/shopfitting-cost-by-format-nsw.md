@@ -2,7 +2,7 @@
 title: "Shopfitting Costs in NSW by Format: Café, Retail, Clinic and Salon"
 slug: "shopfitting-cost-by-format-nsw"
 description: "Shopfitting cost per square metre in Australia ranges from $500 to $2,000. Compare café, retail, medical, dental and salon fitout budgets in NSW."
-date: "2026-09-09"
+date: "2026-08-09"
 author: "Sukhveer Kaur"
 category: "Commercial"
 tags: ["shopfitting", "commercial joinery", "NSW fitout", "cafe fitout", "retail fitout"]

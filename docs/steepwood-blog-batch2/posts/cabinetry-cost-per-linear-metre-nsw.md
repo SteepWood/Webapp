@@ -2,7 +2,7 @@
 title: "Cabinetry Cost Per Linear Metre in NSW, Finish by Finish"
 slug: "cabinetry-cost-per-linear-metre-nsw"
 description: "Custom cabinetry in NSW runs about $800 per linear metre in laminate to $4,000 plus in solid timber. What a linear metre includes, and what it does not."
-date: "2026-08-29"
+date: "2026-07-29"
 author: "Sukhveer Kaur"
 category: "Cost Guides"
 tags: ["cabinetry cost", "linear metre", "kitchen cabinets", "NSW costs", "custom joinery"]

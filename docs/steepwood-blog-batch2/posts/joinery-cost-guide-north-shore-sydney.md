@@ -2,7 +2,7 @@
 title: "Custom Joinery on Sydney's North Shore: 2026"
 slug: "joinery-cost-guide-north-shore-sydney"
 description: "Custom joinery North Shore Sydney cost guide for 2026: Lower and Upper North Shore kitchens, robes, libraries, staircases and local access factors."
-date: "2026-09-18"
+date: "2026-08-18"
 author: "Sukhveer Kaur"
 category: "Local Guides"
 tags: ["North Shore", "Sydney", "custom joinery", "kitchens", "cost guide"]

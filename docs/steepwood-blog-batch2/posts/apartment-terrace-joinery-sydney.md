@@ -2,7 +2,7 @@
 title: "Apartment Joinery in Sydney: Costs, Strata Rules and What Fits"
 slug: "apartment-terrace-joinery-sydney"
 description: "Apartment joinery Sydney costs, strata approval, service-lift access and compact kitchen, robe and laundry planning for 2026."
-date: "2026-09-20"
+date: "2026-08-20"
 author: "Sukhveer Kaur"
 category: "Local Guides"
 tags: ["apartment joinery Sydney", "strata renovation", "small-space joinery", "built-in robes", "apartment kitchen"]
