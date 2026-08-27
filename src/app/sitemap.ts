@@ -57,7 +57,7 @@ async function getDynamicPages(): Promise<MetadataRoute.Sitemap> {
     return [
       ...blogPosts.map((post) =>
         sitemapEntry(`/blog/${post.slug}/`, {
-          lastModified: post.updatedAt,
+          lastModified: post.publishedAt ?? post.updatedAt,
           changeFrequency: "monthly",
           priority: 0.6,
         }),

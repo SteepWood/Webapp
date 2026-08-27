@@ -6,6 +6,7 @@ export function revalidatePublicHomepage() {
 
 export function revalidateBlogPaths(slug?: string) {
   revalidatePath("/blog/");
+  revalidatePath("/sitemap.xml");
 
   if (slug) {
     revalidatePath(`/blog/${slug}/`);
