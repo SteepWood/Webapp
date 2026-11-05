@@ -38,6 +38,8 @@ relatedPosts:
   - "office-fitout-newcastle-guide"
   - "office-fitout-central-coast-guide"
   - "commercial-joinery-newcastle-guide"
+  - "office-fitout-sydney-small-business"
+  - "christmas-shutdown-fitout-planning-nsw"
 ---
 
 # How Long Does an Office Fitout Take? NSW Timeline Guide
@@ -134,6 +136,12 @@ If you have just decided to move or refit, these steps in the first four weeks s
 - Book a measure with your designer and joiner.
 - Decide who signs off designs and variations.
 - Talk to your IT provider about data, Wi-Fi and AV needs.
+
+
+## Related guides in this series
+
+- [small office fitouts in Sydney](/blog/office-fitout-sydney-small-business)
+- [Christmas shutdown fitout planning](/blog/christmas-shutdown-fitout-planning-nsw)
 
 ## Frequently asked questions
 

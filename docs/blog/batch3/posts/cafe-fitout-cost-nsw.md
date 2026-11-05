@@ -38,6 +38,8 @@ relatedPosts:
   - "shopfitting-cost-by-format-nsw"
   - "shop-fitout-newcastle-guide"
   - "shop-fitout-central-coast"
+  - "shop-counter-display-joinery"
+  - "compact-laminate-commercial-joinery"
 ---
 
 # Cafe Fitout Cost NSW 2026: Per m² Prices and Joinery Budget
@@ -136,6 +138,12 @@ Cafe fitouts usually take longer than retail because of services and approvals. 
 ## Who is building your counter
 
 SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery. Our [shopfitting](/shopfitting) page shows the retail and hospitality work we take on, and the [Newcastle shop fitout guide](/blog/shop-fitout-newcastle-guide) covers dry retail.
+
+
+## Related guides in this series
+
+- [custom shop counters and display joinery](/blog/shop-counter-display-joinery)
+- [compact laminate for commercial joinery](/blog/compact-laminate-commercial-joinery)
 
 ## Frequently asked questions
 

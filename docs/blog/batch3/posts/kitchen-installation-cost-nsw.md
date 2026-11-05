@@ -38,6 +38,8 @@ relatedPosts:
   - "custom-kitchen-cost-nsw-2026"
   - "flat-pack-vs-custom-kitchen-australia"
   - "kitchen-renovation-timeline-lead-times-nsw"
+  - "kitchen-installation-sydney"
+  - "kitchen-installation-process-day-by-day"
 ---
 
 # Kitchen Installation Cost NSW: What You Pay For in 2026
@@ -123,6 +125,12 @@ SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, N
 ## How long installation takes
 
 A standard custom kitchen is usually installed in two to four days. The benchtop is templated after the cabinets go in, then fitted later, and plumbing and electrical fit-off follow. The [kitchen renovation timeline](/blog/kitchen-renovation-timeline-lead-times-nsw) post covers manufacture lead times before install day.
+
+
+## Related guides in this series
+
+- [kitchen installation in Sydney](/blog/kitchen-installation-sydney)
+- [day-by-day kitchen installation process](/blog/kitchen-installation-process-day-by-day)
 
 ## Frequently asked questions
 

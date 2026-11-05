@@ -38,6 +38,9 @@ relatedPosts:
   - "shop-fitout-newcastle-guide"
   - "shopfitting-cost-by-format-nsw"
   - "office-fitout-central-coast-guide"
+  - "shop-counter-display-joinery"
+  - "salon-barber-shop-fitout-nsw"
+  - "commercial-joinery-central-coast"
 ---
 
 # Shop Fitters Central Coast: Retail Fitout Guide for 2026
@@ -143,6 +146,13 @@ A clear layout also helps staff work faster in peak periods, from school holiday
 ## Planning around the Central Coast trading year
 
 Timing matters on the Coast. Summer holidays, Easter and the school holiday weeks bring visitors to Terrigal, The Entrance and Ettalong, and many shops do a large share of their trade in those weeks. Plan the fitout so the shop is open and settled before the busy period, not halfway through it. In practice, that means locking in design and approvals in the cooler months, manufacturing joinery while the old shop keeps trading, and installing in a short closure window. If the fitout must happen during peak season, night and weekend installation keeps the doors open.
+
+
+## Related guides in this series
+
+- [custom shop counters and display joinery](/blog/shop-counter-display-joinery)
+- [salon and barber shop fitouts](/blog/salon-barber-shop-fitout-nsw)
+- [commercial joinery on the Central Coast](/blog/commercial-joinery-central-coast)
 
 ## Frequently asked questions
 

@@ -38,6 +38,9 @@ relatedPosts:
   - "office-fitout-joinery-cost-nsw"
   - "reception-desk-cost-australia"
   - "joinery-cost-guide-newcastle-hunter"
+  - "office-fitout-timeline-nsw"
+  - "office-kitchenette-breakout-joinery"
+  - "christmas-shutdown-fitout-planning-nsw"
 ---
 
 # Office Fitout Newcastle: 2026 Costs, Timelines and Joinery
@@ -133,6 +136,13 @@ A simple brief prevents most disputes later.
 - Ask for licence, insurance and warranty details in writing.
 
 SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on all joinery. You can check any contractor licence through [Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence). For a sense of the finish we deliver on commercial jobs, see our [office fitout project example](/portfolio/office-fitout-canberra) or the main [office fitout service](/office-fitout) page.
+
+
+## Related guides in this series
+
+- [how long an office fitout takes in NSW](/blog/office-fitout-timeline-nsw)
+- [office kitchenette and breakout joinery](/blog/office-kitchenette-breakout-joinery)
+- [Christmas shutdown fitout planning](/blog/christmas-shutdown-fitout-planning-nsw)
 
 ## Frequently asked questions
 

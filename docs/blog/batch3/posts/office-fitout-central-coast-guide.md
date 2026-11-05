@@ -38,6 +38,8 @@ relatedPosts:
   - "office-fitout-newcastle-guide"
   - "office-fitout-joinery-cost-nsw"
   - "reception-desk-cost-australia"
+  - "office-fitout-sydney-small-business"
+  - "commercial-joinery-central-coast"
 ---
 
 # Office Fitout Central Coast: Costs and Planning for Gosford
@@ -129,6 +131,12 @@ A small office does not need a corporate budget to look professional. Spend wher
 - **Hold a contingency.** Ten per cent is sensible for older Gosford buildings.
 
 These choices often save more than shopping around for a cheaper builder.
+
+
+## Related guides in this series
+
+- [small-business office fitouts in Sydney](/blog/office-fitout-sydney-small-business)
+- [commercial joinery on the Central Coast](/blog/commercial-joinery-central-coast)
 
 ## Frequently asked questions
 

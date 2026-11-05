@@ -39,6 +39,9 @@ relatedPosts:
   - "office-fitout-joinery-cost-nsw"
   - "why-custom-joinery-quotes-differ-australia"
   - "cabinetmaker-hourly-rate-vs-charge-out-nsw"
+  - "commercial-joinery-sydney-builders"
+  - "compact-laminate-commercial-joinery"
+  - "commercial-joinery-central-coast"
 ---
 
 # Commercial Joinery Newcastle: A Guide for Builders and Owners
@@ -126,6 +129,13 @@ Most problems on commercial joinery packages come from the same few gaps, and th
 - **Defects window too short.** Allow time after install for adjustments, handles and sign-off before the client moves in.
 
 A short pre-start meeting between the builder, the joiner and the electrician solves most of these.
+
+
+## Related guides in this series
+
+- [commercial joinery for Sydney builders](/blog/commercial-joinery-sydney-builders)
+- [compact laminate for commercial joinery](/blog/compact-laminate-commercial-joinery)
+- [commercial joinery on the Central Coast](/blog/commercial-joinery-central-coast)
 
 ## Frequently asked questions
 

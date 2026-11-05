@@ -36,6 +36,8 @@ relatedPosts:
   - "decking-cost-newcastle"
   - "joinery-cost-guide-central-coast"
   - "joinery-timber-species-guide-nsw"
+  - "deck-builders-sydney-cost"
+  - "spotted-gum-merbau-blackbutt-decking-nsw"
 ---
 
 # Composite Decking Central Coast: Composite vs Timber in 2026
@@ -129,6 +131,12 @@ Choose composite if:
 - Children or pets play on the deck and splinters are a worry.
 
 Many clients choose a mix: hardwood stairs and fascia with composite boards, or composite on the open area with hardwood under the roof. We can price both options side by side so you can compare.
+
+
+## Related guides in this series
+
+- [deck builders and costs in Sydney](/blog/deck-builders-sydney-cost)
+- [hardwood decking species for NSW](/blog/spotted-gum-merbau-blackbutt-decking-nsw)
 
 ## Frequently asked questions
 

@@ -37,6 +37,8 @@ relatedPosts:
   - "shopfitting-cost-by-format-nsw"
   - "office-fitout-newcastle-guide"
   - "reception-desk-cost-australia"
+  - "shop-counter-display-joinery"
+  - "salon-barber-shop-fitout-nsw"
 ---
 
 # Shop Fitout Newcastle: Costs, Counters and Lead Times
@@ -132,6 +134,12 @@ New retailers in Newcastle often lose time and money in the same places.
 - **Leaving signage to the end.** Signage often needs separate approval and long lead times.
 
 Planning these early keeps your opening date safe.
+
+
+## Related guides in this series
+
+- [custom shop counters and display joinery](/blog/shop-counter-display-joinery)
+- [salon and barber shop fitouts in NSW](/blog/salon-barber-shop-fitout-nsw)
 
 ## Frequently asked questions
 

@@ -38,6 +38,8 @@ relatedPosts:
   - "home-office-joinery-cost-nsw"
   - "joinery-cost-guide-newcastle-hunter"
   - "blum-hardware-cost-australia"
+  - "home-office-joinery-central-coast"
+  - "home-office-built-ins-hybrid-work-nsw"
 ---
 
 # Home Office Joinery Newcastle: Built-In Desks and Storage
@@ -140,6 +142,12 @@ A few small decisions make the difference between a home office you love and one
 - Plan power above the desk, not just at skirting level.
 - Allow ventilation for printers, routers and computers in closed cupboards.
 - Leave space for a proper chair to roll back.
+
+
+## Related guides in this series
+
+- [home office joinery on the Central Coast](/blog/home-office-joinery-central-coast)
+- [home office built-ins for hybrid work](/blog/home-office-built-ins-hybrid-work-nsw)
 
 ## Frequently asked questions
 

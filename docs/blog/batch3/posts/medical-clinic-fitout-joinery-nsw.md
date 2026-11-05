@@ -38,6 +38,8 @@ relatedPosts:
   - "reception-desk-cost-australia"
   - "office-fitout-timeline-nsw"
   - "commercial-joinery-newcastle-guide"
+  - "compact-laminate-commercial-joinery"
+  - "commercial-joinery-central-coast"
 ---
 
 # Medical Fitout Newcastle and NSW: Clinic Joinery Guide 2026
@@ -128,6 +130,12 @@ Our [Newcastle service area](/locations/newcastle) page lists Hunter suburbs, an
 6. Ask for joinery shop drawings before manufacture.
 
 SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery. See our [Newcastle commercial joinery guide](/blog/commercial-joinery-newcastle-guide) and [commercial joinery in Newcastle](/commercial-joinery/newcastle) page.
+
+
+## Related guides in this series
+
+- [compact laminate for commercial joinery](/blog/compact-laminate-commercial-joinery)
+- [commercial joinery on the Central Coast](/blog/commercial-joinery-central-coast)
 
 ## Frequently asked questions
 

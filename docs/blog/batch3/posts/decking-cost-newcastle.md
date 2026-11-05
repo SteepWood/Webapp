@@ -37,6 +37,8 @@ relatedPosts:
   - "joinery-timber-species-guide-nsw"
   - "nsw-building-licence-hbcf-warranty-guide"
   - "questions-to-ask-custom-joiner-australia"
+  - "deck-builders-sydney-cost"
+  - "spotted-gum-merbau-blackbutt-decking-nsw"
 ---
 
 # Decking Cost Newcastle 2026: Timber vs Composite per m²
@@ -127,6 +129,12 @@ A deck quote should be easy to compare line by line. Before you sign, check that
 - Oil or coating, and whether the first coat is included.
 
 If two quotes differ by thousands, the difference is usually in the subframe, the fixings or the balustrade, not the boards.
+
+
+## Related guides in this series
+
+- [deck builders and costs in Sydney](/blog/deck-builders-sydney-cost)
+- [Spotted Gum, Merbau and Blackbutt decking guide](/blog/spotted-gum-merbau-blackbutt-decking-nsw)
 
 ## Frequently asked questions
 
