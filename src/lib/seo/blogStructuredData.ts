@@ -7,7 +7,11 @@ import {
 } from "@/lib/blog/batch2ImageMeta";
 import { BLOG_DEFAULT_AUTHOR, FOUNDER_JOB_TITLE } from "@/lib/business";
 import { calculateReadingTime } from "@/lib/blog/readingTime";
-import { parseFaqFromTags } from "@/lib/blog/launchPack";
+import {
+  LOCATION_FOCUS_TAG_PREFIX,
+  parseAboutServiceFromTags,
+  parseFaqFromTags,
+} from "@/lib/blog/launchPack";
 import { env } from "@/env";
 import { blogPostCoverPath, blogPostOgPath } from "@/lib/images";
 
@@ -52,6 +56,14 @@ export function blogPostingStructuredData(post: BlogPost) {
         ]
       : undefined);
 
+  const aboutService = parseAboutServiceFromTags(post.tags);
+  const locationFocus = Array.isArray(post.tags)
+    ? (post.tags as string[])
+        .filter((tag) => tag.startsWith(LOCATION_FOCUS_TAG_PREFIX))
+        .map((tag) => tag.slice(LOCATION_FOCUS_TAG_PREFIX.length).trim())
+        .filter(Boolean)
+    : [];
+
   return {
     "@type": "BlogPosting",
     "@id": `${SITE_URL}${path}#article`,
@@ -83,6 +95,28 @@ export function blogPostingStructuredData(post: BlogPost) {
     image,
     ...(packSchema?.additionalImages?.length
       ? { associatedMedia: packSchema.additionalImages }
+      : {}),
+    ...(aboutService
+      ? {
+          about: {
+            "@type": "Service",
+            name: aboutService,
+            serviceType: aboutService,
+            provider: { "@id": `${SITE_URL}/#organization` },
+          },
+        }
+      : {}),
+    ...(locationFocus.length
+      ? {
+          spatialCoverage: locationFocus.map((name) => ({
+            "@type": "City",
+            name,
+          })),
+          areaServed: locationFocus.map((name) => ({
+            "@type": "City",
+            name,
+          })),
+        }
       : {}),
     mainEntityOfPage: { "@id": `${SITE_URL}${path}#webpage` },
     articleBody,

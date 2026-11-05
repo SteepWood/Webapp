@@ -54,9 +54,9 @@ Use an indicative planning band only after you separate base-building work, serv
 | --- | --- | --- | --- |
 | Coffee-led café | [about $1,200–$2,500/m²](https://traderefer.au/trades/retail-shop-fit-out) | Counter, back bar and seating can be a major package | Existing plumbing, ventilation and food-premises approvals |
 | Food retail or takeaway | [about $800–$2,000/m²](https://traderefer.au/trades/retail-shop-fit-out) | Service counter, display, storage and menu wall | Equipment clearances and hygienic finish brief |
-| Boutique retail | [about $500–$1,500/m²](https://focusshopfit.com.au/the-quintessential-2026-price-guide-for-shopfitout-in-australia/) | Display, point-of-sale, fitting rooms and stockroom | Brand detail and landlord presentation rules |
+| Boutique retail | [about $500–$1,500/m²](https://focusshopfit.com.au/the-quintessential-2026-price-guide-for-shop-fitout-in-australia/) | Display, point-of-sale, fitting rooms and stockroom | Brand detail and landlord presentation rules |
 | Medical or dental | [use a detailed brief, not a generic rate](https://www.jll.com/en-au/insights/cost-fit-out-guide) | Reception, consult-room and specialist storage package | Services coordination, privacy and clinical-use requirements |
-| Hair and beauty | [about $800–$1,500/m²](https://focusshopfit.com.au/the-quintessential-2026-price-guide-for-shopfitout-in-australia/) | Stations, retail wall, reception and storage | Water, drainage, mirrors and repeated-use durability |
+| Hair and beauty | [about $800–$1,500/m²](https://focusshopfit.com.au/the-quintessential-2026-price-guide-for-shop-fitout-in-australia/) | Stations, retail wall, reception and storage | Water, drainage, mirrors and repeated-use durability |
 | Professional suite | [office fitout benchmarks are a useful contrast](https://www.jll.com/en-au/insights/cost-fit-out-guide) | Reception, meeting-room and utility joinery | Building access, acoustics and after-hours work |
 
 A complete commercial figure is usually stated ex-GST in tenders. Ask for the contract total and every allowance on the same GST basis before deciding who is cheaper. That single discipline prevents a false saving.
@@ -161,7 +161,7 @@ These are indicative 2026 GST-inclusive feasibility examples, built as transpare
 | Fitout | Joinery allowance | Other principal allowances | Indicative complete range including GST | What shifts it |
 | --- | ---: | ---: | ---: | --- |
 | 60 m² coffee-led café | [$28,000–$58,000](https://traderefer.au/trades/retail-shop-fit-out) | Services, equipment, finishes and approvals | [$72,000–$150,000](https://traderefer.au/trades/retail-shop-fit-out) | Existing services versus a new food tenancy |
-| 120 m² boutique | [$32,000–$85,000](https://focusshopfit.com.au/the-quintessential-2026-price-guide-for-shopfitout-in-australia/) | Lighting, flooring, signage and make-good | [$70,000–$180,000](https://focusshopfit.com.au/the-quintessential-2026-price-guide-for-shopfitout-in-australia/) | Joinery density and shopfront standard |
+| 120 m² boutique | [$32,000–$85,000](https://focusshopfit.com.au/the-quintessential-2026-price-guide-for-shop-fitout-in-australia/) | Lighting, flooring, signage and make-good | [$70,000–$180,000](https://focusshopfit.com.au/the-quintessential-2026-price-guide-for-shop-fitout-in-australia/) | Joinery density and shopfront standard |
 | 180 m² dental suite | scope-led allowance | Services, specialist equipment and consultant coordination | [obtain a detailed clinical-fitout estimate](https://www.jll.com/en-au/insights/cost-fit-out-guide) | Room count, equipment and approval brief |
 
 The dental row deliberately does not pretend a generic rate is a quote. It is safer and more useful to agree the clinical brief, equipment plan and consultant drawings first.

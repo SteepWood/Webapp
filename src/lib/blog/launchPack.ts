@@ -20,10 +20,26 @@ const BATCH2_POSTS_DIR = path.join(
   "posts",
 );
 
+const BATCH3_POSTS_DIR = path.join(
+  process.cwd(),
+  "docs",
+  "blog",
+  "batch3",
+  "posts",
+);
+
 const BATCH2_RESEARCH_DIR = path.join(
   process.cwd(),
   "docs",
   "steepwood-blog-batch2",
+  "research",
+);
+
+const BATCH3_RESEARCH_DIR = path.join(
+  process.cwd(),
+  "docs",
+  "blog",
+  "batch3",
   "research",
 );
 
@@ -71,6 +87,40 @@ export const BATCH2_BLOG_SLUGS = [
   "new-home-joinery-growth-corridors-nsw",
 ] as const;
 
+/** Batch 3 — commercial / install / decking programme (publish-all 24 Aug–6 Nov 2026). */
+export const BATCH3_BLOG_SLUGS = [
+  "office-fitout-newcastle-guide",
+  "kitchen-installation-cost-nsw",
+  "shop-fitout-newcastle-guide",
+  "decking-cost-newcastle",
+  "home-office-joinery-newcastle",
+  "commercial-joinery-newcastle-guide",
+  "office-fitout-central-coast-guide",
+  "kitchen-installation-newcastle",
+  "composite-vs-timber-decking-central-coast",
+  "shop-fitout-central-coast",
+  "cafe-fitout-cost-nsw",
+  "built-in-desk-study-nook-sydney",
+  "kitchen-installation-central-coast",
+  "office-fitout-timeline-nsw",
+  "retail-shop-fitout-sydney",
+  "deck-builders-sydney-cost",
+  "medical-clinic-fitout-joinery-nsw",
+  "commercial-joinery-sydney-builders",
+  "kitchen-installation-sydney",
+  "home-office-joinery-central-coast",
+  "office-kitchenette-breakout-joinery",
+  "shop-counter-display-joinery",
+  "spotted-gum-merbau-blackbutt-decking-nsw",
+  "salon-barber-shop-fitout-nsw",
+  "kitchen-installation-process-day-by-day",
+  "compact-laminate-commercial-joinery",
+  "home-office-built-ins-hybrid-work-nsw",
+  "office-fitout-sydney-small-business",
+  "commercial-joinery-central-coast",
+  "christmas-shutdown-fitout-planning-nsw",
+] as const;
+
 /**
  * Hard blocks from TOPIC_SLATE — must not go live until owner confirmation.
  * Seeded as unpublished drafts; cron will not publish without a publishedAt.
@@ -83,6 +133,7 @@ export const BATCH2_HARD_BLOCK_SLUGS = [
 export const ALL_SEEDED_BLOG_SLUGS = [
   ...LAUNCH_PACK_SLUGS,
   ...BATCH2_BLOG_SLUGS,
+  ...BATCH3_BLOG_SLUGS,
 ] as const;
 
 const RETIRED_BLOG_SLUGS = [
@@ -103,6 +154,7 @@ const RETIRED_BLOG_SLUG_MAP: Record<string, string> = {
 export const FAQ_TAG_PREFIX = "faqjson:";
 export const IMAGE_ALT_TAG_PREFIX = "imgalt:";
 export const LOCATION_FOCUS_TAG_PREFIX = "locfocus:";
+export const ABOUT_SERVICE_TAG_PREFIX = "aboutservice:";
 
 type LaunchPackFrontmatter = {
   title: string;
@@ -152,6 +204,7 @@ export type LaunchPackBlogPost = {
   imageAlts: BlogImageAltManifest;
   primaryKeyword: string | null;
   secondaryKeywords: string[];
+  aboutService: string | null;
 };
 
 function splitFrontmatter(raw: string): { frontmatter: string; body: string } {
@@ -253,12 +306,21 @@ function defaultImageAlts(
   };
 }
 
+function resolveResearchPath(slug: string): string | null {
+  const candidates = [
+    path.join(BATCH3_RESEARCH_DIR, `RESEARCH-${slug}.md`),
+    path.join(BATCH2_RESEARCH_DIR, `RESEARCH-${slug}.md`),
+  ];
+
+  return candidates.find((candidate) => existsSync(candidate)) ?? null;
+}
+
 export function loadResearchImageAlts(
   slug: string,
 ): Partial<BlogImageAltManifest> {
-  const researchPath = path.join(BATCH2_RESEARCH_DIR, `RESEARCH-${slug}.md`);
+  const researchPath = resolveResearchPath(slug);
 
-  if (!existsSync(researchPath)) {
+  if (!researchPath) {
     return {};
   }
 
@@ -280,6 +342,43 @@ export function loadResearchImageAlts(
   }
 
   return alts;
+}
+
+export function loadResearchAboutService(slug: string): string | null {
+  const researchPath = resolveResearchPath(slug);
+  if (!researchPath) {
+    return null;
+  }
+
+  const raw = readFileSync(researchPath, "utf8");
+  const match = raw.match(/Service node\s*\(`?about`?\):\s*(.+)/i);
+  return match?.[1]?.trim() || null;
+}
+
+/** Australia/Sydney offset for a calendar date (AEDT from first Sunday of October 2026). */
+export function sydneyOffsetForDate(isoDate: string): "+10:00" | "+11:00" {
+  return isoDate >= "2026-10-04" ? "+11:00" : "+10:00";
+}
+
+export function encodeAboutServiceTag(serviceType: string): string {
+  return `${ABOUT_SERVICE_TAG_PREFIX}${serviceType}`;
+}
+
+export function parseAboutServiceFromTags(tags: unknown): string | null {
+  if (!Array.isArray(tags)) {
+    return null;
+  }
+
+  for (const tag of tags) {
+    if (typeof tag === "string" && tag.startsWith(ABOUT_SERVICE_TAG_PREFIX)) {
+      const value = tag.slice(ABOUT_SERVICE_TAG_PREFIX.length).trim();
+      if (value) {
+        return value;
+      }
+    }
+  }
+
+  return null;
 }
 
 export function parseLaunchPackPostFile(filePath: string): LaunchPackBlogPost {
@@ -306,6 +405,8 @@ export function parseLaunchPackPostFile(filePath: string): LaunchPackBlogPost {
   );
   const isBatch1 = (LAUNCH_PACK_SLUGS as readonly string[]).includes(data.slug);
   const publishHour = isBatch1 ? "09:00:00" : "07:00:00";
+  const offset = isBatch1 ? "+10:00" : sydneyOffsetForDate(data.date);
+  const aboutService = loadResearchAboutService(data.slug);
 
   return {
     slug: data.slug,
@@ -320,8 +421,8 @@ export function parseLaunchPackPostFile(filePath: string): LaunchPackBlogPost {
     authorName: data.author ?? BLOG_DEFAULT_AUTHOR,
     category: data.category ?? null,
     tags: data.tags ?? [],
-    // Batch 1 keeps historical 09:00; Batch 2 schedule is 07:00 Australia/Sydney.
-    publishedAt: new Date(`${data.date}T${publishHour}+10:00`),
+    // Batch 1: 09:00 AEST. Batch 2/3: 07:00 Australia/Sydney (AEDT from 4 Oct 2026).
+    publishedAt: new Date(`${data.date}T${publishHour}${offset}`),
     shouldPublishWhenDue: !hardBlocked,
     faq: data.faq ?? [],
     relatedPosts: normaliseRelatedPosts(data.relatedPosts),
@@ -329,6 +430,7 @@ export function parseLaunchPackPostFile(filePath: string): LaunchPackBlogPost {
     imageAlts,
     primaryKeyword: data.primaryKeyword ?? null,
     secondaryKeywords: data.secondaryKeywords ?? [],
+    aboutService,
   };
 }
 
@@ -347,10 +449,11 @@ function loadPostsFromDirectory(directory: string): LaunchPackBlogPost[] {
 export function loadLaunchPackPosts(): LaunchPackBlogPost[] {
   const batch1 = loadPostsFromDirectory(LAUNCH_PACK_POSTS_DIR);
   const batch2 = loadPostsFromDirectory(BATCH2_POSTS_DIR);
+  const batch3 = loadPostsFromDirectory(BATCH3_POSTS_DIR);
 
   const bySlug = new Map<string, LaunchPackBlogPost>();
 
-  for (const post of [...batch1, ...batch2]) {
+  for (const post of [...batch1, ...batch2, ...batch3]) {
     bySlug.set(post.slug, post);
   }
 
@@ -450,7 +553,8 @@ export function parseDisplayTags(tags: unknown): string[] {
       !tag.startsWith("related:") &&
       !tag.startsWith(FAQ_TAG_PREFIX) &&
       !tag.startsWith(IMAGE_ALT_TAG_PREFIX) &&
-      !tag.startsWith(LOCATION_FOCUS_TAG_PREFIX),
+      !tag.startsWith(LOCATION_FOCUS_TAG_PREFIX) &&
+      !tag.startsWith(ABOUT_SERVICE_TAG_PREFIX),
   );
 }
 

@@ -3,6 +3,7 @@ import type { PrismaClient } from "@prisma/client";
 import {
   ALL_SEEDED_BLOG_SLUGS,
   RETIRED_BLOG_SLUGS,
+  encodeAboutServiceTag,
   encodeFaqTag,
   encodeImageAltTag,
   encodeLocationFocusTags,
@@ -34,9 +35,10 @@ export async function seedBlogPosts(prisma: PrismaClient): Promise<void> {
       ...encodeLocationFocusTags(post.locationFocus),
       imageAltTag,
       ...(faqTag ? [faqTag] : []),
+      ...(post.aboutService ? [encodeAboutServiceTag(post.aboutService)] : []),
     ];
 
-    // Batch 2: staggered publish dates from frontmatter (25 Jul – 23 Aug 2026).
+    // Batch 1–3: publishedAt from frontmatter dates (Batch 3: 24 Aug – 6 Nov 2026).
     await prisma.blogPost.upsert({
       where: { slug: post.slug },
       update: {
