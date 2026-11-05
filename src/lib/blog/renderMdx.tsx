@@ -4,7 +4,7 @@ import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 
 import { mdxComponents } from "@/components/mdx/mdxComponents";
-import { normaliseMdxContent } from "@/lib/blog/launchPack";
+import { normaliseMdxContent } from "@/lib/blog/launchPackShared";
 
 export async function renderBlogMdx(source: string) {
   const content = normaliseMdxContent(source);

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { RETIRED_BLOG_SLUGS } from "@/lib/blog/launchPack";
+import { RETIRED_BLOG_SLUGS } from "@/lib/blog/launchPackShared";
 import { prisma } from "@/lib/db/prisma";
 import {
   getAllLocationSlugs,

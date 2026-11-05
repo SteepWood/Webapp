@@ -11,7 +11,7 @@ import {
   LOCATION_FOCUS_TAG_PREFIX,
   parseAboutServiceFromTags,
   parseFaqFromTags,
-} from "@/lib/blog/launchPack";
+} from "@/lib/blog/launchPackShared";
 import { env } from "@/env";
 import { blogPostCoverPath, blogPostOgPath } from "@/lib/images";
 

@@ -22,7 +22,7 @@ import { Button } from "@/components/ui/button";
 import { BLOG_DEFAULT_AUTHOR } from "@/lib/business";
 import { getBlogImageAltsFromPack } from "@/lib/blog/batch2ImageMeta";
 import { extractHeadings } from "@/lib/blog/headings";
-import { parseImageAltsFromTags } from "@/lib/blog/launchPack";
+import { parseImageAltsFromTags } from "@/lib/blog/launchPackShared";
 import { renderBlogMdx } from "@/lib/blog/renderMdx";
 import { calculateReadingTime } from "@/lib/blog/readingTime";
 import {

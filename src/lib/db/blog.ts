@@ -2,7 +2,7 @@ import { cache } from "react";
 
 import type { BlogPost } from "@prisma/client";
 
-import { parseDisplayTags } from "@/lib/blog/launchPack";
+import { parseDisplayTags } from "@/lib/blog/launchPackShared";
 import { prisma } from "@/lib/db/prisma";
 
 export const BLOG_PAGE_SIZE = 12;
