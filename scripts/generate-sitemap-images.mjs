@@ -72,38 +72,8 @@ const BATCH3_SLUGS = [
   "christmas-shutdown-fitout-planning-nsw",
 ];
 
-const BATCH3_LASTMOD = [
-  "2026-08-24T07:00:00+10:00",
-  "2026-08-27T07:00:00+10:00",
-  "2026-08-29T07:00:00+10:00",
-  "2026-09-01T07:00:00+10:00",
-  "2026-09-03T07:00:00+10:00",
-  "2026-09-06T07:00:00+10:00",
-  "2026-09-08T07:00:00+10:00",
-  "2026-09-11T07:00:00+10:00",
-  "2026-09-13T07:00:00+10:00",
-  "2026-09-16T07:00:00+10:00",
-  "2026-09-19T07:00:00+10:00",
-  "2026-09-21T07:00:00+10:00",
-  "2026-09-24T07:00:00+10:00",
-  "2026-09-26T07:00:00+10:00",
-  "2026-09-29T07:00:00+10:00",
-  "2026-10-01T07:00:00+10:00",
-  "2026-10-04T07:00:00+11:00",
-  "2026-10-06T07:00:00+11:00",
-  "2026-10-09T07:00:00+11:00",
-  "2026-10-11T07:00:00+11:00",
-  "2026-10-14T07:00:00+11:00",
-  "2026-10-17T07:00:00+11:00",
-  "2026-10-19T07:00:00+11:00",
-  "2026-10-22T07:00:00+11:00",
-  "2026-10-24T07:00:00+11:00",
-  "2026-10-27T07:00:00+11:00",
-  "2026-10-29T07:00:00+11:00",
-  "2026-11-01T07:00:00+11:00",
-  "2026-11-03T07:00:00+11:00",
-  "2026-11-06T07:00:00+11:00",
-];
+// dateModified for every Batch 3 post (Publish All Now + Phase 2 image go-live).
+const BATCH3_DATE_MODIFIED = "2026-11-06T07:00:00+11:00";
 
 const SLOT_ORDER = ["hero", "inline-01", "inline-02", "inline-wide", "og"];
 
@@ -193,8 +163,8 @@ for (let i = 0; i < BATCH2_SLUGS.length; i++) {
   appendPost(chunks, BATCH2_SLUGS[i], batch2.get(BATCH2_SLUGS[i]), batch2ScheduleDate(i));
 }
 
-for (let i = 0; i < BATCH3_SLUGS.length; i++) {
-  appendPost(chunks, BATCH3_SLUGS[i], batch3.get(BATCH3_SLUGS[i]), BATCH3_LASTMOD[i]);
+for (const slug of BATCH3_SLUGS) {
+  appendPost(chunks, slug, batch3.get(slug), BATCH3_DATE_MODIFIED);
 }
 
 chunks.push(`</urlset>`);
