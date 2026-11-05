@@ -1,0 +1,29 @@
+{
+  "wave": 3,
+  "regenerated": [
+    {
+      "n": 54,
+      "slug": "cafe-fitout-cost-nsw",
+      "slot": "inline-02",
+      "filename": "054-cafe-fitout-cost-nsw-inline-02.jpg",
+      "reason": "Full figure: a person is visible from the neck down, with both hands holding cups.",
+      "secondPass": "Kept. Back-bar shelving with ceramic cups, no people."
+    },
+    {
+      "n": 57,
+      "slug": "built-in-desk-study-nook-sydney",
+      "slot": "og",
+      "filename": "057-built-in-desk-study-nook-sydney-og.jpg",
+      "reason": "Legible text on book spines.",
+      "secondPass": "Kept. Separate composition from the hero, no legible text."
+    },
+    {
+      "n": 66,
+      "slug": "office-fitout-timeline-nsw",
+      "slot": "hero",
+      "filename": "066-office-fitout-timeline-nsw-hero.jpg",
+      "reason": "Legible labels on the pinned shop drawings.",
+      "secondPass": "Kept. Drawing lines remain on the plan, with no legible words."
+    }
+  ]
+}

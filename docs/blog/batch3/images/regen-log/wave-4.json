@@ -1,0 +1,61 @@
+{
+  "wave": 4,
+  "regenerated": [
+    {
+      "n": 78,
+      "slug": "deck-builders-sydney-cost",
+      "slot": "inline-01",
+      "filename": "078-deck-builders-sydney-cost-inline-01.jpg",
+      "reason": "Forearms and hands pulling a drawer.",
+      "secondPass": "Kept. Deck-board close-up with stainless fixings, no people."
+    },
+    {
+      "n": 86,
+      "slug": "commercial-joinery-sydney-builders",
+      "slot": "hero",
+      "filename": "086-commercial-joinery-sydney-builders-hero.jpg",
+      "reason": "Printed labels and a barcode on the protected modules.",
+      "secondPass": "Kept. Wrapped carcasses and a finished module, no labels or barcodes."
+    },
+    {
+      "n": 88,
+      "slug": "commercial-joinery-sydney-builders",
+      "slot": "inline-01",
+      "filename": "088-commercial-joinery-sydney-builders-inline-01.jpg",
+      "reason": "Proud, misaligned corner block on the edge banding.",
+      "secondPass": "Kept the straight drawer frame. Residual: the close-up is a drawer front, not the edge-banding detail."
+    },
+    {
+      "n": 91,
+      "slug": "kitchen-installation-sydney",
+      "slot": "hero",
+      "filename": "091-kitchen-installation-sydney-hero.jpg",
+      "reason": "Two full figures fitting the overhead cabinets.",
+      "secondPass": "Kept. Island and overheads on floor protection, no people."
+    },
+    {
+      "n": 93,
+      "slug": "kitchen-installation-sydney",
+      "slot": "inline-01",
+      "filename": "093-kitchen-installation-sydney-inline-01.jpg",
+      "reason": "Forearms and hands fitting a cabinet against the brick wall.",
+      "secondPass": "Rejected. The second frame still showed hands and added a kneeling partial figure. Kept the first frame; forearms remain, hands are anatomically sound, and no face or full figure is visible."
+    },
+    {
+      "n": 96,
+      "slug": "home-office-joinery-central-coast",
+      "slot": "hero",
+      "filename": "096-home-office-joinery-central-coast-hero.jpg",
+      "reason": "Legible titles on book spines.",
+      "secondPass": "Kept. Water-view desk and shelving, no legible words."
+    },
+    {
+      "n": 99,
+      "slug": "home-office-joinery-central-coast",
+      "slot": "inline-02",
+      "filename": "099-home-office-joinery-central-coast-inline-02.jpg",
+      "reason": "Legible titles on book spines.",
+      "secondPass": "Kept. Study shelving and cupboards, no legible text."
+    }
+  ]
+}

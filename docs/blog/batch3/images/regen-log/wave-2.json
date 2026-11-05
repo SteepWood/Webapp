@@ -1,0 +1,32 @@
+[
+  {
+    "n": 40,
+    "slug": "kitchen-installation-newcastle",
+    "slot": "inline-wide",
+    "reason": "disembodied gloved hand inside the drawer"
+  },
+  {
+    "n": 41,
+    "slug": "composite-vs-timber-decking-central-coast",
+    "slot": "hero",
+    "reason": "elevated deck with open edges and no balustrade"
+  },
+  {
+    "n": 45,
+    "slug": "composite-vs-timber-decking-central-coast",
+    "slot": "inline-wide",
+    "reason": "elevated dining deck overlooking a drop with no balustrade"
+  },
+  {
+    "n": 40,
+    "slug": "kitchen-installation-newcastle",
+    "slot": "inline-wide",
+    "reason": "parent re-regen: bare forearm — empty kitchen kept"
+  },
+  {
+    "n": 45,
+    "slug": "composite-vs-timber-decking-central-coast",
+    "slot": "inline-wide",
+    "reason": "parent re-regen: missing balustrade + arm — balustrade dining deck kept"
+  }
+]

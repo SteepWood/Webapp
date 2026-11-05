@@ -2,11 +2,11 @@ import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 /**
- * Regenerates public/sitemap-images.xml for Batch 2 posts.
+ * Regenerates public/sitemap-images.xml for Batch 2 + Batch 3 posts.
  * Page <loc> values use trailing slashes to match next.config trailingSlash.
  */
 
-const SLUG_ORDER = [
+const BATCH2_SLUGS = [
   "laundry-joinery-cost-nsw",
   "kitchen-renovation-timeline-lead-times-nsw",
   "porcelain-sintered-stone-benchtop-cost-nsw",
@@ -39,15 +39,89 @@ const SLUG_ORDER = [
   "new-home-joinery-growth-corridors-nsw",
 ];
 
+const BATCH3_SLUGS = [
+  "office-fitout-newcastle-guide",
+  "kitchen-installation-cost-nsw",
+  "shop-fitout-newcastle-guide",
+  "decking-cost-newcastle",
+  "home-office-joinery-newcastle",
+  "commercial-joinery-newcastle-guide",
+  "office-fitout-central-coast-guide",
+  "kitchen-installation-newcastle",
+  "composite-vs-timber-decking-central-coast",
+  "shop-fitout-central-coast",
+  "cafe-fitout-cost-nsw",
+  "built-in-desk-study-nook-sydney",
+  "kitchen-installation-central-coast",
+  "office-fitout-timeline-nsw",
+  "retail-shop-fitout-sydney",
+  "deck-builders-sydney-cost",
+  "medical-clinic-fitout-joinery-nsw",
+  "commercial-joinery-sydney-builders",
+  "kitchen-installation-sydney",
+  "home-office-joinery-central-coast",
+  "office-kitchenette-breakout-joinery",
+  "shop-counter-display-joinery",
+  "spotted-gum-merbau-blackbutt-decking-nsw",
+  "salon-barber-shop-fitout-nsw",
+  "kitchen-installation-process-day-by-day",
+  "compact-laminate-commercial-joinery",
+  "home-office-built-ins-hybrid-work-nsw",
+  "office-fitout-sydney-small-business",
+  "commercial-joinery-central-coast",
+  "christmas-shutdown-fitout-planning-nsw",
+];
+
+const BATCH3_LASTMOD = [
+  "2026-08-24T07:00:00+10:00",
+  "2026-08-27T07:00:00+10:00",
+  "2026-08-29T07:00:00+10:00",
+  "2026-09-01T07:00:00+10:00",
+  "2026-09-03T07:00:00+10:00",
+  "2026-09-06T07:00:00+10:00",
+  "2026-09-08T07:00:00+10:00",
+  "2026-09-11T07:00:00+10:00",
+  "2026-09-13T07:00:00+10:00",
+  "2026-09-16T07:00:00+10:00",
+  "2026-09-19T07:00:00+10:00",
+  "2026-09-21T07:00:00+10:00",
+  "2026-09-24T07:00:00+10:00",
+  "2026-09-26T07:00:00+10:00",
+  "2026-09-29T07:00:00+10:00",
+  "2026-10-01T07:00:00+10:00",
+  "2026-10-04T07:00:00+11:00",
+  "2026-10-06T07:00:00+11:00",
+  "2026-10-09T07:00:00+11:00",
+  "2026-10-11T07:00:00+11:00",
+  "2026-10-14T07:00:00+11:00",
+  "2026-10-17T07:00:00+11:00",
+  "2026-10-19T07:00:00+11:00",
+  "2026-10-22T07:00:00+11:00",
+  "2026-10-24T07:00:00+11:00",
+  "2026-10-27T07:00:00+11:00",
+  "2026-10-29T07:00:00+11:00",
+  "2026-11-01T07:00:00+11:00",
+  "2026-11-03T07:00:00+11:00",
+  "2026-11-06T07:00:00+11:00",
+];
+
 const SLOT_ORDER = ["hero", "inline-01", "inline-02", "inline-wide", "og"];
 
 const ROOT = process.cwd();
-const META_PATH = path.join(
+const BATCH2_META = path.join(
   ROOT,
   "src",
   "lib",
   "blog",
   "batch2-images",
+  "image-metadata.json",
+);
+const BATCH3_META = path.join(
+  ROOT,
+  "docs",
+  "blog",
+  "batch3",
+  "images",
   "image-metadata.json",
 );
 const OUT_PATH = path.join(ROOT, "public", "sitemap-images.xml");
@@ -61,43 +135,33 @@ function escapeXml(value) {
     .replaceAll("'", "&apos;");
 }
 
-function scheduleDate(dayIndex) {
+function batch2ScheduleDate(dayIndex) {
   const start = new Date(Date.UTC(2026, 6, 25)); // 2026-07-25
   start.setUTCDate(start.getUTCDate() + dayIndex);
   const year = start.getUTCFullYear();
   const month = String(start.getUTCMonth() + 1).padStart(2, "0");
   const day = String(start.getUTCDate()).padStart(2, "0");
-  // 07:00 Australia/Sydney (AEST, UTC+10)
   return new Date(`${year}-${month}-${day}T07:00:00+10:00`).toISOString();
 }
 
-const records = JSON.parse(readFileSync(META_PATH, "utf8"));
-const bySlug = new Map();
-
-for (const record of records) {
-  if (!bySlug.has(record.slug)) {
-    bySlug.set(record.slug, new Map());
+function indexBySlug(records) {
+  const bySlug = new Map();
+  for (const record of records) {
+    if (!bySlug.has(record.slug)) {
+      bySlug.set(record.slug, new Map());
+    }
+    bySlug.get(record.slug).set(record.slot, record);
   }
-  bySlug.get(record.slug).set(record.slot, record);
+  return bySlug;
 }
 
-const chunks = [
-  `<?xml version="1.0" encoding="UTF-8"?>`,
-  `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"`,
-  `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">`,
-];
-
-for (let i = 0; i < SLUG_ORDER.length; i++) {
-  const slug = SLUG_ORDER[i];
-  const slots = bySlug.get(slug);
+function appendPost(chunks, slug, slots, lastmodIso) {
   if (!slots) {
     throw new Error(`Missing image metadata for ${slug}`);
   }
-
-  const lastmod = scheduleDate(i);
   chunks.push(`  <url>`);
   chunks.push(`    <loc>https://steepwood.com.au/blog/${slug}/</loc>`);
-  chunks.push(`    <lastmod>${lastmod}</lastmod>`);
+  chunks.push(`    <lastmod>${new Date(lastmodIso).toISOString()}</lastmod>`);
 
   for (const slot of SLOT_ORDER) {
     const record = slots.get(slot);
@@ -106,9 +170,7 @@ for (let i = 0; i < SLUG_ORDER.length; i++) {
     }
     chunks.push(`    <image:image>`);
     chunks.push(`      <image:loc>${escapeXml(record.url)}</image:loc>`);
-    chunks.push(
-      `      <image:title>${escapeXml(record.alt)}</image:title>`,
-    );
+    chunks.push(`      <image:title>${escapeXml(record.alt)}</image:title>`);
     chunks.push(
       `      <image:caption>${escapeXml(record.caption)}</image:caption>`,
     );
@@ -118,8 +180,27 @@ for (let i = 0; i < SLUG_ORDER.length; i++) {
   chunks.push(`  </url>`);
 }
 
+const batch2 = indexBySlug(JSON.parse(readFileSync(BATCH2_META, "utf8")));
+const batch3 = indexBySlug(JSON.parse(readFileSync(BATCH3_META, "utf8")));
+
+const chunks = [
+  `<?xml version="1.0" encoding="UTF-8"?>`,
+  `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"`,
+  `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">`,
+];
+
+for (let i = 0; i < BATCH2_SLUGS.length; i++) {
+  appendPost(chunks, BATCH2_SLUGS[i], batch2.get(BATCH2_SLUGS[i]), batch2ScheduleDate(i));
+}
+
+for (let i = 0; i < BATCH3_SLUGS.length; i++) {
+  appendPost(chunks, BATCH3_SLUGS[i], batch3.get(BATCH3_SLUGS[i]), BATCH3_LASTMOD[i]);
+}
+
 chunks.push(`</urlset>`);
 chunks.push(``);
 
 writeFileSync(OUT_PATH, chunks.join("\n"), "utf8");
-console.log(`Wrote ${OUT_PATH} (${SLUG_ORDER.length} posts, trailing-slash locs + lastmod).`);
+console.log(
+  `Wrote ${OUT_PATH} (${BATCH2_SLUGS.length + BATCH3_SLUGS.length} posts, trailing-slash locs + lastmod).`,
+);

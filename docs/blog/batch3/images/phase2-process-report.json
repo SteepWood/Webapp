@@ -1,0 +1,62 @@
+[
+  {
+    "n": 146,
+    "slug": "christmas-shutdown-fitout-planning-nsw",
+    "slot": "hero",
+    "status": "ok",
+    "bytes": 101096,
+    "sizeKb": 99,
+    "quality": 84,
+    "width": 1600,
+    "height": 1000,
+    "raw": "146-christmas-shutdown-fitout-planning-nsw-hero.jpg"
+  },
+  {
+    "n": 147,
+    "slug": "christmas-shutdown-fitout-planning-nsw",
+    "slot": "og",
+    "status": "ok",
+    "bytes": 69142,
+    "sizeKb": 68,
+    "quality": 84,
+    "width": 1200,
+    "height": 630,
+    "raw": "147-christmas-shutdown-fitout-planning-nsw-og.jpg"
+  },
+  {
+    "n": 148,
+    "slug": "christmas-shutdown-fitout-planning-nsw",
+    "slot": "inline-01",
+    "status": "ok",
+    "bytes": 95668,
+    "sizeKb": 93,
+    "quality": 84,
+    "width": 1200,
+    "height": 900,
+    "raw": "148-christmas-shutdown-fitout-planning-nsw-inline-01.jpg"
+  },
+  {
+    "n": 149,
+    "slug": "christmas-shutdown-fitout-planning-nsw",
+    "slot": "inline-02",
+    "status": "ok",
+    "bytes": 77154,
+    "sizeKb": 75,
+    "quality": 84,
+    "width": 1200,
+    "height": 900,
+    "raw": "149-christmas-shutdown-fitout-planning-nsw-inline-02.jpg"
+  },
+  {
+    "n": 150,
+    "slug": "christmas-shutdown-fitout-planning-nsw",
+    "slot": "inline-wide",
+    "status": "ok",
+    "bytes": 115082,
+    "sizeKb": 112,
+    "quality": 84,
+    "width": 1600,
+    "height": 1000,
+    "raw": "150-christmas-shutdown-fitout-planning-nsw-inline-wide.jpg"
+  }
+]
