@@ -526,3 +526,40 @@
     margin-top: var(--spacing-stack-xl);
   }
 }
+
+/* === SteepWood colour theme: 1. Walnut & Copper === */
+:root {
+  /* Tailwind v4 theme tokens used across the site */
+  --color-ink-50: #f7f2ea;
+  --color-ink-100: #efe4d4;
+  --color-ink-700: #4d3a2c;
+  --color-ink-800: #3a2a1f;
+  --color-ink-900: #2a1c13;
+  --color-ink-950: #1e140d;
+  --color-amber-50: #f6ebdd;
+  --color-amber-100: #ebd6bd;
+  --color-amber-400: #d39a5e;
+  --color-amber-500: #9c5a22;
+  --color-amber-600: #7a4418;
+  --color-amber-700: #6a3a14;
+  --color-amber-800: #4f2b0f;
+  /* shadcn/ui tokens */
+  --background: #fbf7f1;
+  --foreground: #2a1c13;
+  --card: #ffffff;
+  --card-foreground: #2a1c13;
+  --popover: #ffffff;
+  --popover-foreground: #2a1c13;
+  --primary: #9c5a22;
+  --primary-foreground: #f7f2ea;
+  --secondary: #f1e8da;
+  --secondary-foreground: #2a1c13;
+  --muted: #f1e8da;
+  --muted-foreground: #6a5546;
+  --accent: #ebd6bd;
+  --accent-foreground: #2a1c13;
+  --border: #e6d9c8;
+  --input: #e6d9c8;
+  --ring: #9c5a22;
+}
+/* === end SteepWood colour theme === */
