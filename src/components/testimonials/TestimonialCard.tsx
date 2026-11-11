@@ -79,7 +79,13 @@ function SourceBadge({ source }: { source: string | null }) {
   );
 }
 
-export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+export function TestimonialCard({
+  testimonial,
+  showSourceBadge = true,
+}: {
+  testimonial: Testimonial;
+  showSourceBadge?: boolean;
+}) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -102,7 +108,7 @@ export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
               <span>, {testimonial.authorLocation}</span>
             ) : null}
           </p>
-          <SourceBadge source={testimonial.source} />
+          {showSourceBadge ? <SourceBadge source={testimonial.source} /> : null}
         </figcaption>
       </button>
 
@@ -130,7 +136,7 @@ export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
                 ? `, ${testimonial.authorLocation}`
                 : ""}
             </p>
-            <SourceBadge source={testimonial.source} />
+            {showSourceBadge ? <SourceBadge source={testimonial.source} /> : null}
             {testimonial.sourceUrl ? (
               <Button asChild variant="outline" size="sm">
                 <a

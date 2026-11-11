@@ -1,4 +1,9 @@
 import { SectionShell } from "@/components/sections/section-shell";
+import {
+  homepageHeadingClass,
+  homepageInnerClass,
+  homepageSectionClass,
+} from "@/components/sections/homepageStyles";
 import { Skeleton } from "@/components/ui/skeleton";
 import { TestimonialGrid } from "@/components/testimonials/TestimonialGrid";
 import { getFeaturedTestimonials } from "@/lib/db/testimonials";
@@ -53,7 +58,8 @@ export async function Testimonials() {
   });
 
   return (
-    <SectionShell id="testimonials">
+    <section id="testimonials" className={homepageSectionClass}>
+      <div className={homepageInnerClass}>
       {schemas.map((schema, index) => (
         <script
           key={`homepage-review-schema-${index}`}
@@ -62,10 +68,12 @@ export async function Testimonials() {
         />
       ))}
 
-      <h2 className="mb-stack-lg font-serif text-h2 text-ink-900">
+      <h2 className={`${homepageHeadingClass} mb-10`}>
         What our clients say
       </h2>
-      <TestimonialGrid testimonials={testimonials} />
-    </SectionShell>
+      {/* TODO: Show Google Verified review labels once the Google Business Profile is verified. (SW 2026-11-11) */}
+      <TestimonialGrid testimonials={testimonials} showSourceBadge={false} />
+      </div>
+    </section>
   );
 }

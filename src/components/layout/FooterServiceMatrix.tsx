@@ -24,7 +24,7 @@ export function FooterServiceMatrix() {
           </span>
         </span>
         <span className="mt-1 block text-sm font-sans font-normal text-ink-100/60">
-          {ALL_SERVICES.length} services across {ALL_CITIES.length} locations
+          All services and locations
         </span>
       </summary>
 

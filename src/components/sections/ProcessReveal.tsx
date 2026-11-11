@@ -1,19 +1,15 @@
 "use client";
 
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef } from "react";
-
 import {
   ScrollReveal,
   ScrollRevealItem,
   ScrollRevealStagger,
 } from "@/components/motion/ScrollReveal";
-import { SectionShell } from "@/components/sections/section-shell";
-import { useMediaQuery } from "@/hooks/use-media-query";
-
-gsap.registerPlugin(ScrollTrigger);
+import {
+  homepageHeadingClass,
+  homepageInnerClass,
+  homepageBandClass,
+} from "@/components/sections/homepageStyles";
 
 const STEPS = [
   {
@@ -30,9 +26,9 @@ const STEPS = [
   },
   {
     number: "03",
-    title: "Manufacture in Newcastle",
+    title: "Made in-house",
     description:
-      "Residential projects typically take 8–12 weeks; commercial fitouts 10–16 weeks. Every component is built and finished in our workshop.",
+      "Residential projects typically take 8–12 weeks; commercial fitouts 10–16 weeks. Every component is built and finished by our own makers.",
   },
   {
     number: "04",
@@ -43,63 +39,26 @@ const STEPS = [
 ] as const;
 
 export function ProcessReveal() {
-  const lineRef = useRef<HTMLDivElement>(null);
-  const reducedMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
-  const desktopViewport = useMediaQuery("(min-width: 1024px)");
-
-  useGSAP(
-    () => {
-      if (reducedMotion || !desktopViewport || !lineRef.current) {
-        return;
-      }
-
-      const tween = gsap.fromTo(
-        lineRef.current,
-        { scaleX: 0 },
-        {
-          scaleX: 1,
-          ease: "none",
-          scrollTrigger: {
-            trigger: lineRef.current,
-            start: "top 80%",
-            end: "bottom 60%",
-            scrub: 0.6,
-          },
-        },
-      );
-
-      return () => {
-        tween.scrollTrigger?.kill();
-        tween.kill();
-      };
-    },
-    { dependencies: [reducedMotion, desktopViewport] },
-  );
-
   return (
-    <SectionShell id="process" className="bg-ink-50">
-      <ScrollReveal>
-        <h2 className="mb-stack-lg max-w-3xl font-serif text-h2 text-ink-900">
-          From consultation to install — what to expect
-        </h2>
-      </ScrollReveal>
+    <section id="process" className={homepageBandClass}>
+      <div className={homepageInnerClass}>
+        <ScrollReveal>
+          <h2 className={`${homepageHeadingClass} mb-10 max-w-3xl`}>
+            From consultation to install — what to expect
+          </h2>
+        </ScrollReveal>
 
-      <div className="relative">
-        <div
-          ref={lineRef}
-          aria-hidden
-          className="absolute top-[2.75rem] right-0 left-0 hidden h-px origin-left bg-gradient-to-r from-amber-500/70 via-amber-400/40 to-transparent lg:block"
-        />
-
-        <ScrollRevealStagger className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
+        <ScrollRevealStagger className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
           {STEPS.map((step) => (
             <ScrollRevealItem key={step.number}>
-              <article className="flex flex-col gap-3">
-                <span className="font-serif text-5xl leading-none text-amber-600">
+              <article className="flex h-full flex-col gap-3 rounded-lg border border-[#e6d9c8] bg-white p-6">
+                <span className="flex size-11 items-center justify-center rounded-full bg-amber-500 font-serif text-lg text-[#f7f2ea]">
                   {step.number}
                 </span>
-                <h3 className="font-serif text-h4 text-ink-900">{step.title}</h3>
-                <p className="text-body-sm leading-relaxed text-ink-800/80">
+                <h3 className="font-serif text-xl leading-snug text-ink-900">
+                  {step.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-ink-800/80">
                   {step.description}
                 </p>
               </article>
@@ -107,6 +66,6 @@ export function ProcessReveal() {
           ))}
         </ScrollRevealStagger>
       </div>
-    </SectionShell>
+    </section>
   );
 }

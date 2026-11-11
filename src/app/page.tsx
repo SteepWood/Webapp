@@ -6,6 +6,10 @@ import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Hero } from "@/components/sections/Hero";
 import { HomepageFAQ } from "@/components/sections/HomepageFAQ";
+import {
+  homepageInnerClass,
+  homepageSectionClass,
+} from "@/components/sections/homepageStyles";
 import { ProcessReveal } from "@/components/sections/ProcessReveal";
 import { ServiceAreaTeaser } from "@/components/sections/ServiceAreaTeaser";
 import { ServicesOverview } from "@/components/sections/ServicesOverview";
@@ -15,9 +19,11 @@ import {
 } from "@/components/sections/Testimonials";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { WhySteepWood } from "@/components/sections/WhySteepWood";
-import { WORKSHOP_HERO_IMAGE } from "@/lib/images";
+import { WorkshopSection } from "@/components/sections/WorkshopSection";
 import { getHomepagePageData } from "@/lib/db/homepage-page";
 import { canonicalUrl } from "@/lib/seo/canonical";
+
+const HOMEPAGE_HERO_IMAGE = "/images/workshop/people-3-saw-wide.jpg";
 
 export const revalidate = 86400;
 
@@ -54,7 +60,7 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  preload(WORKSHOP_HERO_IMAGE, {
+  preload(HOMEPAGE_HERO_IMAGE, {
     as: "image",
     fetchPriority: "high",
   });
@@ -62,19 +68,26 @@ export default async function HomePage() {
   const { services, locations, projects, faqs } = await getHomepagePageData();
 
   return (
-    <>
+    <div className="overflow-x-clip bg-[#faf8f5] max-lg:-mb-[calc(5rem+env(safe-area-inset-bottom))]">
       <Hero />
       <TrustBar />
       <ServicesOverview services={services} />
-      <WhySteepWood />
-      <FeaturedProjects projects={projects} />
+      <WorkshopSection />
+      <FeaturedProjects projects={projects} variant="editorial" />
       <ProcessReveal />
       <Suspense fallback={<TestimonialsSkeleton />}>
         <Testimonials />
       </Suspense>
+      <WhySteepWood />
       <ServiceAreaTeaser locations={locations} />
-      <HomepageFAQ faqs={faqs} />
-      <FinalCTA />
-    </>
+      <section id="faq" className={homepageSectionClass}>
+        <div
+          className={`${homepageInnerClass} grid items-start gap-10 lg:grid-cols-[1.5fr_1fr] lg:gap-12`}
+        >
+          <HomepageFAQ faqs={faqs} embedded />
+          <FinalCTA />
+        </div>
+      </section>
+    </div>
   );
 }

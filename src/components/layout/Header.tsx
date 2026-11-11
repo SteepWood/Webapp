@@ -2,6 +2,7 @@
 
 import Link from "@/components/ui/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, Phone } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 
@@ -41,7 +42,13 @@ import { cn } from "@/lib/utils";
 const navLinkClass =
   "rounded-md px-3 py-2 text-sm font-medium text-ink-900 transition-colors hover:text-amber-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-50";
 
-function DesktopNav() {
+function DesktopNav({ lightOnHero }: { lightOnHero: boolean }) {
+  const linkClass = cn(
+    navLinkClass,
+    lightOnHero &&
+      "text-[#f7f2ea] hover:text-amber-100 focus-visible:ring-offset-ink-950",
+  );
+
   return (
     <>
       <nav
@@ -53,8 +60,9 @@ function DesktopNav() {
             <NavigationMenuItem>
               <NavigationMenuTrigger
                 className={cn(
-                  navLinkClass,
-                  "bg-transparent hover:bg-ink-100/60 data-[state=open]:bg-ink-100/60",
+                  linkClass,
+                  "bg-transparent hover:bg-white/10 data-[state=open]:bg-white/10",
+                  !lightOnHero && "hover:bg-ink-100/60 data-[state=open]:bg-ink-100/60",
                 )}
               >
                 Services
@@ -85,7 +93,7 @@ function DesktopNav() {
         </NavigationMenu>
 
         {PRIMARY_NAV_LINKS.map((link) => (
-          <Link key={link.href} href={link.href} className={navLinkClass}>
+          <Link key={link.href} href={link.href} className={linkClass}>
             {link.label}
           </Link>
         ))}
@@ -96,7 +104,7 @@ function DesktopNav() {
           href={PHONE_HREF}
           context="header-desktop"
           className={cn(
-            navLinkClass,
+            linkClass,
             "inline-flex items-center gap-2 whitespace-nowrap",
           )}
           aria-label={`Call SteepWood on ${PHONE_DISPLAY}`}
@@ -128,6 +136,8 @@ export function Header() {
   }, []);
 
   const closeMobile = () => setMobileOpen(false);
+  const pathname = usePathname();
+  const lightOnHero = pathname === "/" && !scrolled;
 
   return (
     <header className="fixed top-0 right-0 left-0 z-50 h-[5.5rem] pt-safe lg:h-28">
@@ -147,10 +157,14 @@ export function Header() {
       />
 
       <div className="relative mx-auto flex h-full max-w-7xl items-center justify-between gap-4 px-container-x">
-        <SteepWoodLogo priority className="relative z-10 shrink-0" />
+        <SteepWoodLogo
+          priority
+          theme={lightOnHero ? "dark" : "light"}
+          className="relative z-10 shrink-0"
+        />
 
         <div className="hidden flex-1 items-center justify-end gap-4 lg:flex">
-          <DesktopNav />
+          <DesktopNav lightOnHero={lightOnHero} />
         </div>
 
         <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
@@ -158,7 +172,10 @@ export function Header() {
             <Button
               variant="ghost"
               size="icon"
-              className="relative z-10 lg:hidden"
+              className={cn(
+                "relative z-10 lg:hidden",
+                lightOnHero && "text-[#f7f2ea] hover:bg-white/10",
+              )}
               aria-label="Open menu"
             >
               <Menu className="size-5" />

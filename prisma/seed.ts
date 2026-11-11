@@ -20,13 +20,13 @@ const HOMEPAGE_FAQS = [
   {
     question: "Do you service areas outside Newcastle?",
     answer:
-      "Yes. We travel for free consultations across NSW and the ACT, and deliver finished joinery via dedicated furniture freight to QLD, VIC, SA, and WA. Our workshop is in Newcastle, but we have completed projects in 16 Australian cities and regions.",
+      "Yes. We travel for free consultations across NSW and the ACT, and deliver finished joinery via dedicated furniture freight to QLD, VIC, SA, and WA. We are based in Newcastle, but we have completed projects in 16 Australian cities and regions.",
     displayOrder: 2,
   },
   {
     question: "How long does a custom kitchen take from quote to install?",
     answer:
-      "Most residential kitchen projects take 10–14 weeks from signed contract to installation. This includes design, engineering, manufacturing in our Newcastle workshop, and scheduled delivery. We provide a firm timeline at quote stage.",
+      "Most residential kitchen projects take 10–14 weeks from signed contract to installation. This includes design, engineering, manufacturing in-house, and scheduled delivery. We provide a firm timeline at quote stage.",
     displayOrder: 3,
   },
   {
@@ -38,7 +38,7 @@ const HOMEPAGE_FAQS = [
   {
     question: "Is there a warranty on SteepWood joinery?",
     answer:
-      "Yes. All SteepWood joinery carries a 10-year structural warranty and Blum's 25-year hardware warranty. We stand behind our craftsmanship because every piece is designed, manufactured, and quality-checked in our own workshop.",
+      "Yes. All SteepWood joinery carries a 10-year structural warranty and Blum's 25-year hardware warranty. We stand behind our craftsmanship because every piece is designed, manufactured, and quality-checked in-house.",
     displayOrder: 5,
   },
 ] as const;

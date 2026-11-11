@@ -563,3 +563,13 @@
   --ring: #9c5a22;
 }
 /* === end SteepWood colour theme === */
+
+/* === SteepWood background: Linen === */
+:root {
+  --background: #faf8f5;
+  --muted: #f1eae0;
+  --secondary: #f1eae0;
+}
+body { background-color: #faf8f5; }
+.bg-ink-50 { background-color: #f1eae0; }
+/* === end background === */
