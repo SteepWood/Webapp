@@ -94,19 +94,19 @@ function ServiceCardCopy({
   return (
     <span
       className={cn(
-        "flex min-w-0 flex-1 flex-col",
-        featured ? "justify-center p-6 md:p-10" : "p-4",
+        "flex min-w-0 flex-1 flex-col p-[14px] md:p-4",
+        featured && "justify-center md:p-10",
       )}
     >
       <span
         className={cn(
-          "font-serif leading-tight text-ink-900",
-          featured ? "text-[21px] md:text-[34px]" : "text-[21px]",
+          "font-serif text-[18px] leading-[1.25] text-ink-900 md:text-[21px] md:leading-tight",
+          featured && "md:text-[34px]",
         )}
       >
         {service.name}
       </span>
-      <span className="mt-2 text-[14.5px] leading-snug text-[#5c4a3c]">
+      <span className="mt-2 text-sm leading-snug text-[#5c4a3c] md:text-[14.5px]">
         {serviceDescription(service)}
       </span>
       <span className="mt-3 text-sm font-semibold text-amber-500">Explore →</span>
@@ -143,8 +143,8 @@ function ServicePhotoCard({
           className={cn(
             "relative block shrink-0 overflow-hidden",
             featured
-              ? "aspect-[4/3] w-full md:aspect-auto md:min-h-[420px] md:w-[60%]"
-              : "min-h-[118px] w-[118px] self-stretch md:aspect-[4/3] md:w-full",
+              ? "h-[200px] w-full md:aspect-auto md:h-auto md:min-h-[420px] md:w-[60%]"
+              : "min-h-[120px] w-[120px] self-stretch md:aspect-[4/3] md:h-auto md:w-full md:self-auto",
           )}
         >
           <ServicePhoto src={heroImageUrl} alt={alt} sizes={sizes} />

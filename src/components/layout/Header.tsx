@@ -142,7 +142,7 @@ export function Header() {
   const solidBar = scrolled || pathname === "/";
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 h-[5.5rem] pt-safe lg:h-28">
+    <header className="fixed top-0 right-0 left-0 z-50 h-16 pt-safe md:h-[5.5rem] lg:h-28">
       <motion.div
         className={cn(
           "absolute inset-0 border-b transition-colors",
@@ -163,6 +163,7 @@ export function Header() {
           priority
           theme={lightOnHero ? "dark" : "light"}
           className="relative z-10 shrink-0"
+          imageClassName="max-md:!h-auto max-md:!w-14 max-md:!max-w-none"
         />
 
         <div className="hidden flex-1 items-center justify-end gap-4 lg:flex">

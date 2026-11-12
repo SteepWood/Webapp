@@ -47,17 +47,17 @@ export function WhySteepWood() {
         <ScrollReveal>
           <h2 className={`${homepageHeadingClass} mb-10`}>Why SteepWood</h2>
         </ScrollReveal>
-        <ScrollRevealStagger className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <ScrollRevealStagger className="grid grid-cols-2 gap-3 md:gap-8 lg:grid-cols-4">
           {PILLARS.map((pillar) => (
             <ScrollRevealItem key={pillar.title}>
-              <div className="flex h-full flex-col gap-3 rounded-lg border border-[#e6d9c8] bg-white p-6">
+              <div className="flex h-full flex-col gap-3 rounded-lg border border-[#e6d9c8] bg-white p-[14px] md:p-6">
                 <pillar.icon
-                  className="size-8 text-amber-700"
+                  className="size-6 text-amber-700 md:size-8"
                   aria-hidden
                   strokeWidth={1.5}
                 />
-                <h3 className="font-serif text-xl text-ink-900">{pillar.title}</h3>
-                <p className="text-sm leading-relaxed text-ink-800/80">
+                <h3 className="font-serif text-base text-ink-900 md:text-xl">{pillar.title}</h3>
+                <p className="text-[13px] leading-relaxed text-ink-800/80 md:text-sm">
                   {pillar.description}
                 </p>
               </div>

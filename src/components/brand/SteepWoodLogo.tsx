@@ -22,6 +22,7 @@ const BRAND = {
 
 type SteepWoodLogoProps = {
   className?: string;
+  imageClassName?: string;
   /** Full stacked wordmark; mark = icon only with text for dark surfaces */
   variant?: "full" | "mark";
   /** Light = dark logo on light backgrounds; dark = light logo on ink surfaces */
@@ -31,6 +32,7 @@ type SteepWoodLogoProps = {
 
 export function SteepWoodLogo({
   className,
+  imageClassName,
   variant = "full",
   theme = "light",
   priority = false,
@@ -71,7 +73,10 @@ export function SteepWoodLogo({
         width={assets.width}
         height={assets.height}
         sizes="(max-width: 640px) 140px, (max-width: 1024px) 168px, 196px"
-        className="block h-14 w-auto max-w-[min(100%,12rem)] object-contain object-left sm:h-16 lg:h-[4.5rem] lg:max-w-[14rem]"
+        className={cn(
+          "block h-14 w-auto max-w-[min(100%,12rem)] object-contain object-left sm:h-16 lg:h-[4.5rem] lg:max-w-[14rem]",
+          imageClassName,
+        )}
         priority={priority}
       />
     </Link>

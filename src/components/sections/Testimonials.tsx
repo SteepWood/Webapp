@@ -72,7 +72,11 @@ export async function Testimonials() {
         What our clients say
       </h2>
       {/* TODO: Show Google Verified review labels once the Google Business Profile is verified. (SW 2026-11-11) */}
-      <TestimonialGrid testimonials={testimonials} showSourceBadge={false} />
+      <TestimonialGrid
+        testimonials={testimonials}
+        showSourceBadge={false}
+        snapOnPhone
+      />
       </div>
     </section>
   );

@@ -51,13 +51,15 @@ export function ProcessReveal() {
         <ScrollRevealStagger className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
           {STEPS.map((step) => (
             <ScrollRevealItem key={step.number}>
-              <article className="flex h-full flex-col gap-3 rounded-lg border border-[#e6d9c8] bg-white p-6">
-                <span className="flex size-11 items-center justify-center rounded-full bg-amber-500 font-serif text-lg text-[#f7f2ea]">
-                  {step.number}
-                </span>
-                <h3 className="font-serif text-xl leading-snug text-ink-900">
-                  {step.title}
-                </h3>
+              <article className="flex h-full flex-col gap-3 rounded-lg border border-[#e6d9c8] bg-white p-4 md:p-6">
+                <div className="flex items-center gap-3 md:flex-col md:items-start">
+                  <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-amber-500 font-serif text-base text-[#f7f2ea] md:size-11 md:text-lg">
+                    {step.number}
+                  </span>
+                  <h3 className="font-serif text-xl leading-snug text-ink-900">
+                    {step.title}
+                  </h3>
+                </div>
                 <p className="text-sm leading-relaxed text-ink-800/80">
                   {step.description}
                 </p>

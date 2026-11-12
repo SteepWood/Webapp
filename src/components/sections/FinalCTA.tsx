@@ -20,7 +20,7 @@ export function FinalCTA() {
         className="absolute inset-0 bg-[linear-gradient(0deg,rgba(30,20,13,0.92)_0%,rgba(30,20,13,0.75)_45%,rgba(30,20,13,0.1)_85%)]"
       />
       <div className="relative flex min-h-[420px] flex-col justify-end p-6 text-[#f7f2ea] sm:p-8">
-        <h2 className="mb-3 font-serif text-[2rem] leading-[1.15] text-[#f7f2ea] lg:text-[2.625rem]">
+        <h2 className="mb-3 font-serif text-[1.75rem] leading-[1.15] text-[#f7f2ea] md:text-[2rem] lg:text-[2.625rem]">
           Ready to start your project?
         </h2>
         <p className="mb-6 max-w-md text-base leading-relaxed text-[#efe4d4]">

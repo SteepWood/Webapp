@@ -8,7 +8,7 @@ import { BUSINESS_COPYRIGHT_LINE, BUSINESS_CREDENTIALS_FOOTER } from "@/lib/busi
 import { FOOTER_HOURS_LABEL, GOOGLE_REVIEW_URL, LOCATIONS, PHONE_DISPLAY, PHONE_HREF, SERVICES, WORKSHOP_LOCATION } from "@/lib/navigation";
 
 const footerLinkClass =
-  "text-ink-100/80 transition-colors duration-[var(--duration-fast)] hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900";
+  "text-ink-100/80 transition-colors duration-[var(--duration-fast)] hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900 max-md:inline-flex max-md:min-h-11 max-md:items-center max-md:py-2.5";
 
 const LEGAL_LINKS = [
   { href: "/legal/privacy/", label: "Privacy Policy" },
@@ -27,7 +27,7 @@ export function Footer() {
   return (
     <footer
       id="site-footer"
-      className="scroll-mt-24 border-t border-amber-400/20 bg-ink-950 pt-section-half pb-12 text-ink-100"
+      className="scroll-mt-24 border-t border-amber-400/20 bg-ink-950 pt-section-half pb-[90px] text-ink-100 md:pb-12"
     >
       <div className="mx-auto max-w-7xl px-container-x">
         <div className="grid grid-cols-1 gap-stack-lg md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
@@ -83,7 +83,7 @@ export function Footer() {
               <TrackedPhoneLink
                 href={PHONE_HREF}
                 context="footer"
-                className="text-xl font-medium text-ink-50 transition-colors duration-[var(--duration-fast)] hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900"
+                className="text-xl font-medium text-ink-50 transition-colors duration-[var(--duration-fast)] hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-900 max-md:inline-flex max-md:min-h-11 max-md:items-center max-md:py-2.5"
                 aria-label={`Call SteepWood on ${PHONE_DISPLAY}`}
               >
                 {PHONE_DISPLAY}
@@ -135,7 +135,7 @@ export function Footer() {
           Designed and Developed by{" "}
           <a
             href={DEVELOPER_CREDIT.href}
-            className="text-ink-100/75 underline decoration-ink-100/30 underline-offset-2 transition-colors duration-[var(--duration-fast)] hover:text-amber-400 hover:decoration-amber-400/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950"
+            className="text-ink-100/75 underline decoration-ink-100/30 underline-offset-2 transition-colors duration-[var(--duration-fast)] hover:text-amber-400 hover:decoration-amber-400/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950 max-md:inline-flex max-md:min-h-11 max-md:items-center max-md:py-2.5"
             target="_blank"
             rel="noopener noreferrer"
           >

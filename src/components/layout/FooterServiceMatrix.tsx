@@ -8,7 +8,7 @@ import {
 } from "@/lib/seo-graph";
 
 const matrixLinkClass =
-  "text-xs text-ink-100/65 transition-colors duration-[var(--duration-fast)] hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950";
+  "text-xs text-ink-100/65 transition-colors duration-[var(--duration-fast)] hover:text-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950 max-md:inline-flex max-md:min-h-11 max-md:items-center max-md:py-2.5";
 
 export function FooterServiceMatrix() {
   return (

@@ -82,9 +82,11 @@ function SourceBadge({ source }: { source: string | null }) {
 export function TestimonialCard({
   testimonial,
   showSourceBadge = true,
+  quoteClassName,
 }: {
   testimonial: Testimonial;
   showSourceBadge?: boolean;
+  quoteClassName?: string;
 }) {
   const [open, setOpen] = useState(false);
 
@@ -96,7 +98,7 @@ export function TestimonialCard({
         className="surface-card flex h-full w-full flex-col rounded-lg p-6 text-left transition-colors hover:border-amber-400/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
       >
         <StarRating rating={testimonial.rating} />
-        <blockquote className="mb-4 flex-1 font-serif text-body italic leading-relaxed text-ink-800">
+        <blockquote className={cn("mb-4 flex-1 font-serif text-body italic leading-relaxed text-ink-800", quoteClassName)}>
           &ldquo;{testimonial.quote}&rdquo;
         </blockquote>
         <figcaption className="space-y-2">

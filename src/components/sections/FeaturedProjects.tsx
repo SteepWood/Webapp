@@ -32,15 +32,22 @@ function EditorialProjectCard({
   project,
   sizes,
   feature = false,
+  className,
 }: {
   project: PortfolioProject;
   sizes: string;
   feature?: boolean;
+  className?: string;
 }) {
   const hero = getProjectHeroImage(project);
 
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-[12px] border border-[#e6d9c8] bg-white shadow-[0_14px_30px_-24px_rgba(42,28,19,0.35)]">
+    <article
+      className={cn(
+        "flex h-full w-[85%] shrink-0 snap-start flex-col overflow-hidden rounded-[12px] border border-[#e6d9c8] bg-white shadow-[0_14px_30px_-24px_rgba(42,28,19,0.35)] md:w-full md:shrink",
+        className,
+      )}
+    >
       <Link
         href={`/portfolio/${project.slug}/`}
         className="group flex h-full flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
@@ -49,8 +56,8 @@ function EditorialProjectCard({
           className={cn(
             "relative block w-full overflow-hidden",
             feature
-              ? "aspect-[4/3] lg:aspect-auto lg:min-h-[320px] lg:flex-1"
-              : "aspect-[4/3]",
+              ? "h-[220px] md:aspect-[4/3] md:h-auto lg:aspect-auto lg:min-h-[320px] lg:flex-1"
+              : "h-[220px] md:aspect-[4/3] md:h-auto",
           )}
         >
           {hero ? (
@@ -121,30 +128,32 @@ export function FeaturedProjects({
             ) : null}
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 items-stretch gap-4 lg:grid-cols-[1.6fr_1fr]">
+          <div className="flex snap-x snap-mandatory gap-3 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] md:grid md:grid-cols-1 md:items-stretch md:gap-4 md:overflow-visible lg:grid-cols-[1.6fr_1fr] [&::-webkit-scrollbar]:hidden">
             <EditorialProjectCard
               project={feature}
               sizes="(max-width: 1024px) 100vw, 58vw"
               feature
+              className="lg:row-span-2"
             />
-            <div className="grid grid-cols-1 gap-4">
-              {stacked.map((project) => (
-                <EditorialProjectCard
-                  key={project.slug}
-                  project={project}
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                />
-              ))}
-            </div>
+            {stacked.map((project) => (
+              <EditorialProjectCard
+                key={project.slug}
+                project={project}
+                sizes="(max-width: 1024px) 100vw, 40vw"
+              />
+            ))}
           </div>
+          <p className="mt-3 text-[13px] text-[#5c4a3c] md:hidden">
+            Swipe to see more →
+          </p>
 
           {more.length > 0 ? (
             <div
               className={cn(
-                "mt-4 grid grid-cols-1 gap-4",
-                more.length === 2 && "sm:grid-cols-2",
-                more.length === 3 && "sm:grid-cols-3",
-                more.length >= 4 && "sm:grid-cols-2",
+                "mt-4 flex snap-x snap-mandatory gap-3 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] md:grid md:grid-cols-1 md:gap-4 md:overflow-visible [&::-webkit-scrollbar]:hidden",
+                more.length === 2 && "md:grid-cols-2",
+                more.length === 3 && "md:grid-cols-3",
+                more.length >= 4 && "md:grid-cols-2",
               )}
             >
               {more.map((project) => (

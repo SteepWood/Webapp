@@ -36,12 +36,12 @@ export async function TrustBar() {
         {PROOF_STATS.map((stat) => (
           <li
             key={stat.value}
-            className="border-[#dccbb6] border-r border-b px-5 py-8 even:border-r-0 lg:border-b-0 lg:px-8 lg:even:border-r lg:last:border-r-0"
+            className="border-[#dccbb6] border-r border-b p-4 even:border-r-0 md:px-5 md:py-8 lg:border-b-0 lg:px-8 lg:even:border-r lg:last:border-r-0"
           >
-            <p className="font-serif text-4xl leading-none text-amber-500 lg:text-5xl">
+            <p className="font-serif text-[28px] leading-none whitespace-nowrap text-amber-500 md:text-4xl lg:text-5xl">
               {stat.value}
             </p>
-            <p className="mt-3 max-w-[14rem] text-sm leading-snug text-[#5c4a3c]">
+            <p className="mt-2 max-w-[14rem] text-[13px] leading-snug text-[#5c4a3c] md:mt-3 md:text-sm">
               {stat.label}
             </p>
           </li>

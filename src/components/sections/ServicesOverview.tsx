@@ -39,7 +39,7 @@ export function ServicesOverview({
         <ServicesBentoGrid services={services} />
 
         <p
-          className="mt-12 max-w-3xl text-base leading-relaxed text-ink-800"
+          className="mt-12 max-w-3xl rounded-[14px] bg-white p-[18px] text-[15px] leading-[1.6] text-[#5c4a3c] md:rounded-none md:bg-transparent md:p-0 md:text-base md:leading-relaxed md:text-ink-800"
           data-aio="identity-block"
         >
           {HOMEPAGE_INTRO}
