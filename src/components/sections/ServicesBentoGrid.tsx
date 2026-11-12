@@ -43,10 +43,13 @@ function resolveServiceHeroImage(service: HomepageService): string | null {
 function serviceDescription(service: HomepageService): string {
   return (
     service.shortDescription ??
-    service.description?.slice(0, 160) ??
+    service.description ??
     "Bespoke joinery designed and made in-house."
   );
 }
+
+const cardClass =
+  "group flex h-full overflow-hidden rounded-[12px] border border-[#e6d9c8] bg-white shadow-[0_14px_30px_-24px_rgba(42,28,19,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2";
 
 function findService(
   services: HomepageService[],
@@ -55,63 +58,98 @@ function findService(
   return services.find((service) => service.slug === slug);
 }
 
-function ServicePhotoCard({
-  service,
+function ServicePhoto({
+  src,
+  alt,
   sizes,
-  className,
-  compact = false,
+}: {
+  src: string | null;
+  alt: string;
+  sizes: string;
+}) {
+  return (
+    <>
+      {src ? (
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes={sizes}
+          className="object-cover transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
+        />
+      ) : (
+        <span className="absolute inset-0 bg-ink-100" />
+      )}
+    </>
+  );
+}
+
+function ServiceCardCopy({
+  service,
+  featured = false,
 }: {
   service: HomepageService;
-  sizes: string;
-  className?: string;
-  compact?: boolean;
+  featured?: boolean;
+}) {
+  return (
+    <span
+      className={cn(
+        "flex min-w-0 flex-1 flex-col",
+        featured ? "justify-center p-6 md:p-10" : "p-4",
+      )}
+    >
+      <span
+        className={cn(
+          "font-serif leading-tight text-ink-900",
+          featured ? "text-[21px] md:text-[34px]" : "text-[21px]",
+        )}
+      >
+        {service.name}
+      </span>
+      <span className="mt-2 text-[14.5px] leading-snug text-[#5c4a3c]">
+        {serviceDescription(service)}
+      </span>
+      <span className="mt-3 text-sm font-semibold text-amber-500">Explore →</span>
+    </span>
+  );
+}
+
+function ServicePhotoCard({
+  service,
+  featured = false,
+}: {
+  service: HomepageService;
+  featured?: boolean;
 }) {
   const heroImageUrl = resolveServiceHeroImage(service);
   const alt =
     service.heroImageAlt ?? `${service.name} by SteepWood in Newcastle`;
+  const sizes = featured
+    ? "(max-width: 700px) 100vw, 60vw"
+    : "(max-width: 700px) 120px, (max-width: 1024px) 50vw, 30vw";
 
   return (
-    <ScrollRevealItem className={cn("h-full min-h-0", className)}>
+    <ScrollRevealItem className="h-full min-h-0">
       <Link
         href={`/${service.slug}/`}
-        className="group relative flex h-full min-h-[190px] overflow-hidden rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
-      >
-        {heroImageUrl ? (
-          <Image
-            src={heroImageUrl}
-            alt={alt}
-            fill
-            sizes={sizes}
-            className="object-cover transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
-          />
-        ) : (
-          <span className="absolute inset-0 bg-gradient-to-br from-ink-800 to-ink-950" />
+        className={cn(
+          cardClass,
+          featured
+            ? "flex-col md:min-h-[420px] md:flex-row"
+            : "flex-row md:flex-col",
         )}
+      >
         <span
-          aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-[rgba(30,20,13,0.88)] via-[rgba(30,20,13,0.15)] to-transparent"
-        />
-        <span className="relative mt-auto flex max-h-full w-full flex-col p-3 text-[#f7f2ea] sm:p-4">
-          <span
-            className={cn(
-              "font-serif leading-tight",
-              compact ? "text-base" : "text-xl lg:text-2xl",
-            )}
-          >
-            {service.name}
-          </span>
-          <span
-            className={cn(
-              "mt-1 line-clamp-2 leading-snug text-[#f7f2ea]/85",
-              compact ? "text-xs" : "text-sm",
-            )}
-          >
-            {serviceDescription(service)}
-          </span>
-          <span className={cn("mt-1.5 text-[#f7f2ea]/80", compact ? "text-xs" : "text-sm")}>
-            Explore →
-          </span>
+          className={cn(
+            "relative block shrink-0 overflow-hidden",
+            featured
+              ? "aspect-[4/3] w-full md:aspect-auto md:min-h-[420px] md:w-[60%]"
+              : "min-h-[118px] w-[118px] self-stretch md:aspect-[4/3] md:w-full",
+          )}
+        >
+          <ServicePhoto src={heroImageUrl} alt={alt} sizes={sizes} />
         </span>
+        <ServiceCardCopy service={service} featured={featured} />
       </Link>
     </ScrollRevealItem>
   );
@@ -147,48 +185,31 @@ export function ServicesBentoGrid({ services }: ServicesBentoGridProps) {
     <div className="flex flex-col gap-12">
       <div>
         <GroupLabel>For homes</GroupLabel>
-        <ScrollRevealStagger className="grid grid-cols-2 auto-rows-[190px] gap-3 lg:grid-cols-3 lg:auto-rows-[250px]">
-          {kitchen ? (
-            <ServicePhotoCard
-              service={kitchen}
-              sizes="(max-width: 1024px) 100vw, 34vw"
-              className="col-span-2 row-span-2 h-full lg:col-span-1 lg:col-start-1 lg:row-span-3 lg:row-start-1"
-            />
-          ) : null}
+        {kitchen ? (
+          <div className="mb-4">
+            <ServicePhotoCard service={kitchen} featured />
+          </div>
+        ) : null}
+        <ScrollRevealStagger className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {homes.map((service) => (
-            <ServicePhotoCard
-              key={service.slug}
-              service={service}
-              sizes="(max-width: 1024px) 50vw, 22vw"
-              compact
-            />
+            <ServicePhotoCard key={service.slug} service={service} />
           ))}
         </ScrollRevealStagger>
       </div>
 
       <div>
         <GroupLabel>For businesses</GroupLabel>
-        <ScrollRevealStagger className="grid grid-cols-1 gap-3 lg:grid-cols-3">
+        <ScrollRevealStagger className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {businesses.map((service) => (
-            <ServicePhotoCard
-              key={service.slug}
-              service={service}
-              sizes="(max-width: 1024px) 100vw, 33vw"
-              className="h-[220px] lg:h-[330px]"
-            />
+            <ServicePhotoCard key={service.slug} service={service} />
           ))}
         </ScrollRevealStagger>
       </div>
 
       {extras.length > 0 ? (
-        <ScrollRevealStagger className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <ScrollRevealStagger className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {extras.map((service) => (
-            <ServicePhotoCard
-              key={service.slug}
-              service={service}
-              sizes="(max-width: 640px) 100vw, 50vw"
-              className="h-[220px]"
-            />
+            <ServicePhotoCard key={service.slug} service={service} />
           ))}
         </ScrollRevealStagger>
       ) : null}

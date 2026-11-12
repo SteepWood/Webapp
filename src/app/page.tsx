@@ -23,7 +23,7 @@ import { WorkshopSection } from "@/components/sections/WorkshopSection";
 import { getHomepagePageData } from "@/lib/db/homepage-page";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
-const HOMEPAGE_HERO_IMAGE = "/images/workshop/people-3-saw-wide.jpg";
+const HOMEPAGE_HERO_IMAGE = "/images/workshop/people-3-saw-wide-bright.jpg";
 
 export const revalidate = 86400;
 

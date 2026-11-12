@@ -30,43 +30,52 @@ import { cn } from "@/lib/utils";
 
 function EditorialProjectCard({
   project,
-  className,
   sizes,
+  feature = false,
 }: {
   project: PortfolioProject;
-  className?: string;
   sizes: string;
+  feature?: boolean;
 }) {
   const hero = getProjectHeroImage(project);
 
   return (
-    <article className={cn("group relative min-h-[290px] overflow-hidden rounded-lg", className)}>
+    <article className="flex h-full flex-col overflow-hidden rounded-[12px] border border-[#e6d9c8] bg-white shadow-[0_14px_30px_-24px_rgba(42,28,19,0.35)]">
       <Link
         href={`/portfolio/${project.slug}/`}
-        className="absolute inset-0 block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
+        className="group flex h-full flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2"
       >
-        {hero ? (
-          <Image
-            src={hero.url}
-            alt={hero.alt}
-            fill
-            sizes={sizes}
-            className="object-cover transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
-          />
-        ) : (
-          <span className="absolute inset-0 bg-ink-800" />
-        )}
         <span
-          aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-[rgba(30,20,13,0.88)] via-[rgba(30,20,13,0.12)] to-transparent"
-        />
-        <span className="absolute inset-x-0 bottom-0 flex flex-col p-5 text-[#f7f2ea]">
-          <span className="font-serif text-2xl leading-tight">{project.title}</span>
+          className={cn(
+            "relative block w-full overflow-hidden",
+            feature
+              ? "aspect-[4/3] lg:aspect-auto lg:min-h-[320px] lg:flex-1"
+              : "aspect-[4/3]",
+          )}
+        >
+          {hero ? (
+            <Image
+              src={hero.url}
+              alt={hero.alt}
+              fill
+              sizes={sizes}
+              className="object-cover transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03]"
+            />
+          ) : (
+            <span className="absolute inset-0 bg-ink-100" />
+          )}
+        </span>
+        <span className="flex flex-col p-5">
+          <span className="font-serif text-[21px] leading-tight text-ink-900">
+            {project.title}
+          </span>
           {project.locationName ? (
-            <span className="mt-1 text-sm text-[#f7f2ea]/85">{project.locationName}</span>
+            <span className="mt-1 text-[13px] font-semibold text-amber-500">
+              {project.locationName}
+            </span>
           ) : null}
           {project.summary ? (
-            <span className="mt-2 line-clamp-2 text-sm leading-snug text-[#f7f2ea]/80">
+            <span className="mt-2 text-[14.5px] leading-snug text-[#5c4a3c]">
               {project.summary}
             </span>
           ) : null}
@@ -112,19 +121,21 @@ export function FeaturedProjects({
             ) : null}
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1.6fr_1fr] lg:grid-rows-[290px_290px]">
+          <div className="grid grid-cols-1 items-stretch gap-4 lg:grid-cols-[1.6fr_1fr]">
             <EditorialProjectCard
               project={feature}
               sizes="(max-width: 1024px) 100vw, 58vw"
-              className="min-h-[420px] lg:row-span-2 lg:min-h-0"
+              feature
             />
-            {stacked.map((project) => (
-              <EditorialProjectCard
-                key={project.slug}
-                project={project}
-                sizes="(max-width: 1024px) 100vw, 34vw"
-              />
-            ))}
+            <div className="grid grid-cols-1 gap-4">
+              {stacked.map((project) => (
+                <EditorialProjectCard
+                  key={project.slug}
+                  project={project}
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
+              ))}
+            </div>
           </div>
 
           {more.length > 0 ? (
@@ -140,7 +151,7 @@ export function FeaturedProjects({
                 <EditorialProjectCard
                   key={project.slug}
                   project={project}
-                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
                 />
               ))}
             </div>

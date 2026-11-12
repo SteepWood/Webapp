@@ -9,7 +9,6 @@ import {
 const TICKS = [
   "Moisture-resistant HMR board for wet areas",
   "Blum soft-close hardware as standard",
-  "Safety glasses and hearing protection at every saw",
   "Every job checked and wrapped before delivery",
 ] as const;
 
@@ -19,21 +18,24 @@ const PHOTOS = [
     alt: "Cabinet assembly underway in the SteepWood workshop, Newcastle",
     caption: "Cabinet assembly",
     className: "col-span-1 row-span-2 min-h-[320px] lg:min-h-0",
-    sizes: "(max-width: 1024px) 50vw, 28vw",
+    imageClassName: "object-[40%_50%]",
+    sizes: "(max-width: 700px) 100vw, 50vw",
   },
   {
     src: "/images/workshop/people-1-saw-two-workers.jpg",
     alt: "Two joiners cutting sheet material on a panel saw in the SteepWood workshop, Newcastle",
     caption: "Panel cutting",
     className: "min-h-[180px]",
-    sizes: "(max-width: 1024px) 50vw, 22vw",
+    imageClassName: "object-center",
+    sizes: "(max-width: 700px) 50vw, 25vw",
   },
   {
     src: "/images/workshop/warehouse.jpg",
     alt: "Board stock stored on racks in the SteepWood workshop, Newcastle",
     caption: "Board stock",
     className: "min-h-[180px]",
-    sizes: "(max-width: 1024px) 50vw, 22vw",
+    imageClassName: "object-[50%_30%]",
+    sizes: "(max-width: 700px) 50vw, 25vw",
   },
 ] as const;
 
@@ -81,7 +83,7 @@ export function WorkshopSection() {
                 alt={photo.alt}
                 fill
                 sizes={photo.sizes}
-                className="object-cover"
+                className={`object-cover ${photo.imageClassName}`}
               />
               <figcaption className="absolute bottom-3 left-3 rounded bg-ink-950/85 px-2.5 py-1 text-xs text-[#f7f2ea]">
                 {photo.caption}

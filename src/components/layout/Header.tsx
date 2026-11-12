@@ -137,14 +137,16 @@ export function Header() {
 
   const closeMobile = () => setMobileOpen(false);
   const pathname = usePathname();
-  const lightOnHero = pathname === "/" && !scrolled;
+  // The homepage hero is linen, so the bar stays dark text on a solid light background.
+  const lightOnHero = false;
+  const solidBar = scrolled || pathname === "/";
 
   return (
     <header className="fixed top-0 right-0 left-0 z-50 h-[5.5rem] pt-safe lg:h-28">
       <motion.div
         className={cn(
           "absolute inset-0 border-b transition-colors",
-          scrolled
+          solidBar
             ? "border-ink-700/15 bg-white/92 shadow-md backdrop-blur-xl"
             : "border-transparent bg-transparent",
         )}
