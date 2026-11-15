@@ -1,6 +1,9 @@
 import type { MetadataRoute } from "next";
 
-import { RETIRED_BLOG_SLUGS } from "@/lib/blog/launchPackShared";
+import {
+  blogPublishedCutoff,
+  RETIRED_BLOG_SLUGS,
+} from "@/lib/blog/launchPackShared";
 import { prisma } from "@/lib/db/prisma";
 import {
   getAllLocationSlugs,
@@ -44,7 +47,10 @@ async function getDynamicPages(): Promise<MetadataRoute.Sitemap> {
         where: {
           isPublished: true,
           slug: { notIn: [...RETIRED_BLOG_SLUGS] },
-          OR: [{ publishedAt: null }, { publishedAt: { lte: new Date() } }],
+          OR: [
+            { publishedAt: null },
+            { publishedAt: { lte: blogPublishedCutoff() } },
+          ],
         },
         select: { slug: true, updatedAt: true, publishedAt: true },
       }),

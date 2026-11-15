@@ -38,12 +38,11 @@ export async function seedBlogPosts(prisma: PrismaClient): Promise<void> {
       ...(post.aboutService ? [encodeAboutServiceTag(post.aboutService)] : []),
     ];
 
-    // Publish-all-now: if a scheduled time is still in the future (e.g. 07:00
-    // today), clamp to now so the post is visible immediately after seed.
-    const publishedAt =
-      post.publishedAt.getTime() > Date.now() ? new Date() : post.publishedAt;
+    // Keep the frontmatter timestamp (07:00 Australia/Sydney). Same-day posts
+    // are listed via blogPublishedCutoff, so 07:00 today is not clamped.
+    const publishedAt = post.publishedAt;
 
-    // Batch 1–3: publishedAt from frontmatter dates (Batch 3: 24 Aug – 6 Nov 2026).
+    // Batch 1–4: publishedAt from frontmatter dates (Batch 4: 7–16 Nov 2026).
     await prisma.blogPost.upsert({
       where: { slug: post.slug },
       update: {

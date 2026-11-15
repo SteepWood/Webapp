@@ -1,5 +1,6 @@
 import imageMetadataJson from "@/lib/blog/batch2-images/image-metadata.json";
 import imageSchemaJson from "@/lib/blog/batch2-images/image-schema.json";
+import batch4ImageMetadataJson from "../../../docs/blog/batch4/images/image-metadata.json";
 
 export type BlogImageSlot =
   | "hero"
@@ -38,7 +39,10 @@ type BlogImageSchemaEntry = {
   openGraphImage: Record<string, unknown>;
 };
 
-const records = imageMetadataJson as BlogImageMetaRecord[];
+const records = [
+  ...(imageMetadataJson as BlogImageMetaRecord[]),
+  ...(batch4ImageMetadataJson as BlogImageMetaRecord[]),
+];
 const schemaBySlug = imageSchemaJson as Record<string, BlogImageSchemaEntry>;
 
 const metaBySlugSlot = new Map<string, BlogImageMetaRecord>();

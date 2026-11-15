@@ -153,7 +153,7 @@ For any multi-room project, make a room schedule before asking for the final pri
 
 ### Licence and consumer checks
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [$5,000 including GST](https://www.leadkit.com.au/blog/kitchen-renovation-cost-sydney-2026). For relevant residential work valued at [$20,000 including GST or more](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw), confirm HBCF requirements before any deposit. We publicly provide a [10-year structural warranty](https://steepwood.com.au/about/) on joinery we manufacture.
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [$5,000 including GST](https://www.leadkit.com.au/blog/kitchen-renovation-cost-sydney-2026). For relevant residential work valued at [$20,000 including GST or more](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw), confirm HBCF requirements before any deposit. We publicly provide a [10-year structural warranty](https://steepwood.com.au/about/) on joinery we manufacture.
 
 ### Planning a whole-house programme without losing control of it
 

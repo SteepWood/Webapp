@@ -120,7 +120,7 @@ Hardwood decks look best when oiled. A penetrating decking oil keeps the colour 
 
 Spotted Gum and Blackbutt also appear in our indoor joinery, from benchtops to stair treads. Our [joinery timber species guide](/blog/joinery-timber-species-guide-nsw) covers them for interior use, which helps if you want the deck to connect visually with a kitchen or living area.
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability.
 
 ## Frequently asked questions
 

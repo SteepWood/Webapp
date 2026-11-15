@@ -97,7 +97,7 @@ All posts now go live on 6 November 2026, so the "Needed by" dates below are pas
 | 6 | **Install durations and lead times quoted in posts.** Examples: "cabinets usually go in over two to four days", "install often one to three days", "manufacture 4–8 weeks". Confirm these match how SteepWood works. | Posts 2, 8, 13, 19, 25, 29 | 8 Nov |
 | 7 | **Installing kitchens bought elsewhere.** Posts say SteepWood focuses on installing kitchens it designs and builds, and will "tell you honestly" about other installs. Confirm this policy. | Posts 2, 8, 13, 19 | 8 Nov |
 | 8 | **Live site figures that conflict with the posts.** (a) The live home office page says "from $3,000"; posts quote third-party ranges of $3,000–$8,000 (InsideOut) and $4,000–$8,000 (Sparky). These are consistent, but confirm the "from" price. (b) The live commercial joinery page says a typical lead time of 8–12 weeks; post 6 says "a few weeks" for manufacture after approval. Pick one figure and we will align the post or the page. | Posts 5, 6, 12, 20, 27 | 11 Nov |
-| 9 | **Business name consistency.** The live office fitout page mentions "Pavit Pty Ltd"; posts use "Pavit Cabinetry Pty Ltd t/as SteepWood". Fix the live page so the name matches GBP and ABN records. | Site-wide (NAP) | ASAP |
+| 9 | **Business name consistency.** The live office fitout page mentions "Pavit Pty Ltd"; posts use "Pavit Pty Ltd t/as SteepWood". Fix the live page so the name matches GBP and ABN records. | Site-wide (NAP) | ASAP |
 | 10 | **Christmas shutdown dates.** Post 30 does not state SteepWood's own closure dates. If you want them included, send the dates. | Post 30 | 5 Dec |
 
 ## 6. Phase 2 images

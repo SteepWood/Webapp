@@ -62,7 +62,7 @@ Every listing must carry identical details, matching the site exactly:
 
 ```
 SteepWood
-Pavit Cabinetry Pty Ltd t/as SteepWood
+Pavit Pty Ltd t/as SteepWood
 Newcastle NSW, Australia
 0468 387 676
 hello@steepwood.com.au
@@ -89,7 +89,7 @@ Not one of the 34 competitors reviewed publishes a licence number anywhere.
 
 Implementation:
 
-- Footer, site-wide: `Pavit Cabinetry Pty Ltd t/as SteepWood · NSW Carpentry Contractor Licence 489553C · ABN 52 697 313 269 · 0468 387 676`
+- Footer, site-wide: `Pavit Pty Ltd t/as SteepWood · NSW Carpentry Contractor Licence 489553C · ABN 52 697 313 269 · 0468 387 676`
 - Same line on every location page, every service page and in the author aside on blog posts.
 - In the organisation JSON-LD as `identifier` entries, per `SCHEMA-SPEC.md` §4.
 - On the Google Business Profile description and in the services descriptions.

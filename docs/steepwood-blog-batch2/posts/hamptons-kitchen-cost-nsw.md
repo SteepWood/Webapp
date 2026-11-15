@@ -160,7 +160,7 @@ A home in Manly does not need the same answer as a home in Cooks Hill or Pokolbi
 
 ## Compliance and credentials
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. New South Wales requires a licence for residential building work above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements)); Home Building Compensation cover is generally required for eligible residential projects above [$20,000 including GST](https://www.sira.nsw.gov.au/home-building-compensation). We provide a 10-year structural warranty on all joinery. Confirm the contract, insurance position and exact inclusions for the individual job before work starts.
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. New South Wales requires a licence for residential building work above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements)); Home Building Compensation cover is generally required for eligible residential projects above [$20,000 including GST](https://www.sira.nsw.gov.au/home-building-compensation). We provide a 10-year structural warranty on all joinery. Confirm the contract, insurance position and exact inclusions for the individual job before work starts.
 
 ## FAQ
 

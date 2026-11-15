@@ -282,7 +282,7 @@ Batch 3 briefs, recorded from the finished posts so Cursor, an editor or a futur
 - **Internal links** `/office-fitout`, `/office-fitout/sydney`, `/commercial-joinery/sydney`, `/blog/office-fitout-joinery-cost-nsw`, `/blog/office-fitout-timeline-nsw`, `/blog/commercial-joinery-sydney-builders`, `/blog/office-kitchenette-breakout-joinery`, `/blog/reception-desk-cost-australia`, `/quote`
 - **Related posts** office-fitout-joinery-cost-nsw, office-fitout-timeline-nsw, commercial-joinery-sydney-builders
 - **FAQ** How much does a small office fitout cost in Sydney? · How long does a small office fitout take? · What joinery does a small office need? · Can joinery be made outside Sydney? · How can a small business reduce fitout costs?
-- **Flags** README §5 item 9: live office fitout page shows 'Pavit Pty Ltd'; fix to 'Pavit Cabinetry Pty Ltd' for NAP consistency.
+- **Flags** README §5 item 9: live office fitout page shows 'Pavit Pty Ltd'; fix to 'Pavit Pty Ltd' for NAP consistency.
 
 ---
 

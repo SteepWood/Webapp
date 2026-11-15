@@ -1,6 +1,6 @@
 export const BUSINESS_TRADING_NAME = "SteepWood";
 
-export const BUSINESS_LEGAL_NAME = "Pavit Cabinetry Pty Ltd";
+export const BUSINESS_LEGAL_NAME = "Pavit Pty Ltd";
 
 /** Footer and legal copyright line — registered entity trading as the brand. */
 export const BUSINESS_COPYRIGHT_LINE = `${BUSINESS_LEGAL_NAME} t/as ${BUSINESS_TRADING_NAME}`;

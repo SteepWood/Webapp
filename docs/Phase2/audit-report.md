@@ -1,7 +1,7 @@
 # SteepWood.com.au — Full SEO Audit
 
 **Site:** https://steepwood.com.au
-**Trading entity:** Pavit Cabinetry Pty Ltd t/a SteepWood (ABN 52 697 313 269 · NSW Carpentry Contractor 489553C)
+**Trading entity:** Pavit Pty Ltd t/a SteepWood (ABN 52 697 313 269 · NSW Carpentry Contractor 489553C)
 **HQ:** Newcastle, NSW
 **Audit date:** 22 June 2026  
 **P0 code fixes shipped:** 22 June 2026 (Phase 2 PR 1)
@@ -168,7 +168,7 @@ For a Newcastle joinery business operating since 2014 (per the brand story), thi
 
 | Priority | Action | Why |
 |---|---|---|
-| **P0** | Check whether SteepWood / Pavit Cabinetry / "Castle & Co joinery arm" had any prior web presence. If so, 301-redirect every old URL to the closest match on steepwood.com.au. | Recovers historic authority + any aged anchor profile. |
+| **P0** | Check whether SteepWood / Pavit Pty Ltd / "Castle & Co joinery arm" had any prior web presence. If so, 301-redirect every old URL to the closest match on steepwood.com.au. | Recovers historic authority + any aged anchor profile. |
 | **P0** | Claim and verify Google Business Profile for the Newcastle workshop. Add full NAP, hours, services, photos, owner Q&A, and link to steepwood.com.au. | Local pack visibility is the highest-converting channel for joinery. |
 | **P0** | Submit consistent NAP (Name / Address / Phone) to: Yellow Pages AU, True Local, Hotfrog AU, Pure Local, Aussie Web, ServiceSeeking, HiPages, Houzz AU, Bing Places, Apple Business Connect. | Local citation foundation for Newcastle + 16 cities. |
 | P1 | Outreach for 5–10 industry placements: Houzz AU profile + project features, Australian Designer Rugs / Belle / Vogue Living "trade directory" listings, BUILD Australian Architecture Awards (where eligible), Master Builders Association NSW member directory, HIA member directory. | Topical relevance + AU authority. |

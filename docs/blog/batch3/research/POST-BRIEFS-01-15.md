@@ -30,7 +30,7 @@ Batch 3 briefs, recorded from the finished posts so Cursor, an editor or a futur
 - **Internal links** `/office-fitout`, `/office-fitout/newcastle`, `/commercial-joinery/newcastle`, `/locations/newcastle`, `/blog/office-fitout-joinery-cost-nsw`, `/blog/reception-desk-cost-australia`, `/portfolio/office-fitout-canberra`, `/quote`
 - **Related posts** office-fitout-joinery-cost-nsw, reception-desk-cost-australia, joinery-cost-guide-newcastle-hunter
 - **FAQ** How much does an office fitout cost in Newcastle? · How long does an office fitout take in Newcastle? · What is the difference between Cat A and Cat B fitout? · Do I need approval for an office fitout in Newcastle? · Can SteepWood build only the joinery for my office fitout?
-- **Flags** README §5 item 9: live office fitout page shows 'Pavit Pty Ltd'; fix to 'Pavit Cabinetry Pty Ltd' for NAP consistency. README §5 item 4: no clients are named. Confirm whether named case studies can be added at backfill.
+- **Flags** README §5 item 9: live office fitout page shows 'Pavit Pty Ltd'; fix to 'Pavit Pty Ltd' for NAP consistency. README §5 item 4: no clients are named. Confirm whether named case studies can be added at backfill.
 
 ---
 
@@ -158,7 +158,7 @@ Batch 3 briefs, recorded from the finished posts so Cursor, an editor or a futur
 - **Internal links** `/office-fitout`, `/office-fitout/central-coast`, `/commercial-joinery/central-coast`, `/locations/central-coast`, `/blog/office-fitout-newcastle-guide`, `/blog/office-fitout-joinery-cost-nsw`, `/blog/reception-desk-cost-australia`, `/quote`
 - **Related posts** office-fitout-newcastle-guide, office-fitout-joinery-cost-nsw, reception-desk-cost-australia
 - **FAQ** How much does an office fitout cost on the Central Coast? · Is office space on the Central Coast cheaper than Sydney? · Do you travel from Newcastle to the Central Coast? · What joinery does a small office usually need? · When should I start planning an office fitout?
-- **Flags** README §5 item 9: live office fitout page shows 'Pavit Pty Ltd'; fix to 'Pavit Cabinetry Pty Ltd' for NAP consistency.
+- **Flags** README §5 item 9: live office fitout page shows 'Pavit Pty Ltd'; fix to 'Pavit Pty Ltd' for NAP consistency.
 
 ---
 

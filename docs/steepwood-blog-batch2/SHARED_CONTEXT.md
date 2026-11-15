@@ -10,7 +10,7 @@ Version: 2026-08-21. Site: https://steepwood.com.au
 | Field | Value |
 | --- | --- |
 | Trading name | SteepWood |
-| Legal entity | Pavit Cabinetry Pty Ltd t/as SteepWood |
+| Legal entity | Pavit Pty Ltd t/as SteepWood |
 | Workshop | Newcastle, NSW |
 | Operating since | 2014 |
 | ABN | 52 697 313 269 |

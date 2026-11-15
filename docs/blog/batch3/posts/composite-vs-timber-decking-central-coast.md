@@ -110,7 +110,7 @@ Many small backyard decks are exempt. Under NSW rules a deck can be exempt if it
 
 ## Who builds your deck
 
-In NSW, [carpentry work includes timber and timber composites and footings for timber decks](https://www.nsw.gov.au/business-and-economy/licences-and-credentials/building-and-trade-licences-and-registrations/carpentry-work). SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability. Our [Central Coast joinery cost guide](/blog/joinery-cost-guide-central-coast) covers indoor work in the same area, and our [timber species guide](/blog/joinery-timber-species-guide-nsw) compares local hardwoods.
+In NSW, [carpentry work includes timber and timber composites and footings for timber decks](https://www.nsw.gov.au/business-and-economy/licences-and-credentials/building-and-trade-licences-and-registrations/carpentry-work). SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability. Our [Central Coast joinery cost guide](/blog/joinery-cost-guide-central-coast) covers indoor work in the same area, and our [timber species guide](/blog/joinery-timber-species-guide-nsw) compares local hardwoods.
 
 ## Which one should you choose
 

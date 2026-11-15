@@ -30,7 +30,7 @@ When complete, zip the folder as **`steepwood-s14-keyword-weave.zip`** and place
 
 ## Brand context
 
-- **Business:** SteepWood Custom Joinery — Pavit Cabinetry Pty Ltd t/as SteepWood
+- **Business:** SteepWood Custom Joinery — Pavit Pty Ltd t/as SteepWood
 - **ABN:** 52 697 313 269 · **NSW Carpentry Contractor Licence:** 489553C
 - **Workshop:** Newcastle, NSW — installs Australia-wide (16 cities)
 - **Voice:** Premium, practical, workshop-led. Confident but not salesy.

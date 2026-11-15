@@ -40,7 +40,7 @@ Frontmatter exactly as templated in `SHARED_CONTEXT.md`, including the `location
 - **Do not duplicate** the six live Batch 1 posts or recreate the three retired slugs. Both lists are in `SHARED_CONTEXT.md`.
 - **Internal links: 6 to 10 per post, from the allowed list in your brief only.** Never link to a Batch 2 post with a later publish date than yours. Never link to a location hub that is not one of the 16 live ones. Body hrefs omit the trailing slash.
 - **Prices** are indicative 2026 ranges. Say so. Where a total is given to a consumer, give it including GST, per the ACCC single-price rule. Where a commercial figure is conventionally quoted ex-GST, say which basis is used.
-- **Compliance line** appears in every post that discusses money: SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269, and NSW requires a licence for residential building work above $5,000 including GST.
+- **Compliance line** appears in every post that discusses money: SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269, and NSW requires a licence for residential building work above $5,000 including GST.
 - **Flag uncertainty** as `NEEDS_OWNER_CONFIRMATION: <what needs confirming>` inline in the research file, and use a neutral market range in the post body rather than a SteepWood-specific claim.
 
 ## Structure contract

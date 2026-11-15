@@ -128,7 +128,7 @@ If you also need staff or back-office space fitted out, our [Central Coast offic
 
 ## Working with SteepWood
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty. Read more on our [shopfitting service](/shopfitting) and [Central Coast commercial joinery](/commercial-joinery/central-coast) pages.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty. Read more on our [shopfitting service](/shopfitting) and [Central Coast commercial joinery](/commercial-joinery/central-coast) pages.
 
 ## Making a small shop work harder
 

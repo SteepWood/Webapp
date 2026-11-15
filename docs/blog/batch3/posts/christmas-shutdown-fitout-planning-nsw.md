@@ -128,7 +128,7 @@ Work on public holidays usually costs more because of award penalty rates, and f
 
 For larger fitouts, see our [office fitouts](/office-fitout) and [shopfitting](/shopfitting) pages.
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery.
 
 ## Frequently asked questions
 

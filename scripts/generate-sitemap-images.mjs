@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 /**
- * Regenerates public/sitemap-images.xml for Batch 2 + Batch 3 posts.
+ * Regenerates public/sitemap-images.xml for Batch 2, Batch 3 and Batch 4 posts.
  * Page <loc> values use trailing slashes to match next.config trailingSlash.
  */
 
@@ -72,8 +72,22 @@ const BATCH3_SLUGS = [
   "christmas-shutdown-fitout-planning-nsw",
 ];
 
+const BATCH4_SLUGS = [
+  "office-fitout-parramatta",
+  "kitchen-installation-lake-macquarie",
+  "shop-fitout-maitland",
+  "deck-builders-lake-macquarie",
+  "restaurant-fitout-newcastle",
+  "home-office-joinery-north-shore-sydney",
+  "pharmacy-fitout-nsw",
+  "warehouse-office-fitout-western-sydney",
+  "kitchen-installation-maitland-hunter-valley",
+  "childcare-centre-joinery-nsw",
+];
+
 // dateModified for every Batch 3 post (Publish All Now + Phase 2 image go-live).
 const BATCH3_DATE_MODIFIED = "2026-11-06T07:00:00+11:00";
+const BATCH4_DATE_MODIFIED = "2026-11-16T07:00:00+11:00";
 
 const SLOT_ORDER = ["hero", "inline-01", "inline-02", "inline-wide", "og"];
 
@@ -91,6 +105,14 @@ const BATCH3_META = path.join(
   "docs",
   "blog",
   "batch3",
+  "images",
+  "image-metadata.json",
+);
+const BATCH4_META = path.join(
+  ROOT,
+  "docs",
+  "blog",
+  "batch4",
   "images",
   "image-metadata.json",
 );
@@ -152,6 +174,7 @@ function appendPost(chunks, slug, slots, lastmodIso) {
 
 const batch2 = indexBySlug(JSON.parse(readFileSync(BATCH2_META, "utf8")));
 const batch3 = indexBySlug(JSON.parse(readFileSync(BATCH3_META, "utf8")));
+const batch4 = indexBySlug(JSON.parse(readFileSync(BATCH4_META, "utf8")));
 
 const chunks = [
   `<?xml version="1.0" encoding="UTF-8"?>`,
@@ -167,10 +190,14 @@ for (const slug of BATCH3_SLUGS) {
   appendPost(chunks, slug, batch3.get(slug), BATCH3_DATE_MODIFIED);
 }
 
+for (const slug of BATCH4_SLUGS) {
+  appendPost(chunks, slug, batch4.get(slug), BATCH4_DATE_MODIFIED);
+}
+
 chunks.push(`</urlset>`);
 chunks.push(``);
 
 writeFileSync(OUT_PATH, chunks.join("\n"), "utf8");
 console.log(
-  `Wrote ${OUT_PATH} (${BATCH2_SLUGS.length + BATCH3_SLUGS.length} posts, trailing-slash locs + lastmod).`,
+  `Wrote ${OUT_PATH} (${BATCH2_SLUGS.length + BATCH3_SLUGS.length + BATCH4_SLUGS.length} posts, trailing-slash locs + lastmod).`,
 );

@@ -124,7 +124,7 @@ Compact laminate [carries a higher upfront cost than standard laminate sheets](h
 
 We machine compact laminate in Newcastle and install across the Hunter, Central Coast and Sydney. See [Newcastle commercial joinery](/commercial-joinery/newcastle) and our [Newcastle commercial joinery guide](/blog/commercial-joinery-newcastle-guide) for local projects.
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery.
 
 ## Frequently asked questions
 

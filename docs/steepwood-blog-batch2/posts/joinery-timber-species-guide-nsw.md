@@ -157,7 +157,7 @@ The location matrix is not a rule book. A well-designed Blackbutt stair can work
 
 ## Compliance and credentials
 
-The per-metre timber inputs are dated August 2026 ex-GST supplier prices. Any consumer-facing installed price is shown including GST in line with [Australian display-price guidance](https://business.gov.au/legal/fair-trading/display-prices). SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/licences-and-credentials/building-and-trade-licences-and-registrations/carpentry-work), and eligible work at [$20,000 or more including GST requires HBCF insurance](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw).
+The per-metre timber inputs are dated August 2026 ex-GST supplier prices. Any consumer-facing installed price is shown including GST in line with [Australian display-price guidance](https://business.gov.au/legal/fair-trading/display-prices). SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/licences-and-credentials/building-and-trade-licences-and-registrations/carpentry-work), and eligible work at [$20,000 or more including GST requires HBCF insurance](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw).
 
 ## FAQ
 

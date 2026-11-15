@@ -175,7 +175,7 @@ For an in-person project brief, use our [Newcastle joinery projects](/locations/
 
 ## Compliance and credentials
 
-Indicative consumer prices above are shown including GST where a consumer-facing amount is stated, consistent with the [ACCC single-price guidance](https://business.gov.au/legal/fair-trading/display-prices). SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/licences-and-credentials/building-and-trade-licences-and-registrations/carpentry-work), and projects valued at [$20,000 or more including GST require HBCF insurance](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw) where it applies.
+Indicative consumer prices above are shown including GST where a consumer-facing amount is stated, consistent with the [ACCC single-price guidance](https://business.gov.au/legal/fair-trading/display-prices). SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/licences-and-credentials/building-and-trade-licences-and-registrations/carpentry-work), and projects valued at [$20,000 or more including GST require HBCF insurance](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw) where it applies.
 
 ## FAQ
 

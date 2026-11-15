@@ -115,7 +115,7 @@ In NSW, [deck building is listed under carpentry work](https://www.nsw.gov.au/bu
 
 Spring and early summer are the busiest months for deck builders in Sydney. If you want a deck for Christmas entertaining, book the measure early, because approvals and material supply can take weeks. Autumn and winter builds are often easier to schedule.
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability.
 
 ## Frequently asked questions
 

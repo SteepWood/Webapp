@@ -138,7 +138,7 @@ A kitchenette is often one of the last joinery items installed in a fitout, afte
 
 A breakout area works best when the kitchen and seating are designed together. A long bench at standing height gives people somewhere to eat, chat or open a laptop. Banquette seating along a wall with tables in front fits more people in less space and can include storage under the seat. Power points at bench level let people work there too. In smaller offices, an island with stools at one end can replace a separate lunch table altogether.
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery.
 
 
 ## Related guides in this series

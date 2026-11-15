@@ -115,7 +115,7 @@ See [Newcastle office fitout joinery](/office-fitout/newcastle), [Newcastle shop
 
 ## Compliance and paperwork
 
-Commercial clients and builders should check insurance, licences and safe work documents before work starts. SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on our joinery. We provide SWMS and inductions as required by the site.
+Commercial clients and builders should check insurance, licences and safe work documents before work starts. SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on our joinery. We provide SWMS and inductions as required by the site.
 
 ## Common commercial joinery mistakes
 

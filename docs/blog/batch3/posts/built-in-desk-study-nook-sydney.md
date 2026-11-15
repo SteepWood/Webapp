@@ -126,7 +126,7 @@ Because our joinery is made in the workshop, on-site time is short, which helps 
 
 Families often want one nook that works for school and work. A long desk for two, lower open shelves for children, and a lockable drawer for the adult's work items works well. Adjustable chairs and footrests help children sit at an adult desk height. If you are outside Sydney, our [Newcastle home office guide](/blog/home-office-joinery-newcastle) covers the same ideas for Hunter homes.
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with a 10-year structural warranty on joinery. Our [home office joinery](/home-office-joinery) page shows more layouts.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with a 10-year structural warranty on joinery. Our [home office joinery](/home-office-joinery) page shows more layouts.
 
 ## Frequently asked questions
 

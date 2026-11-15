@@ -113,7 +113,7 @@ You can see the wider area we cover on our [Newcastle service area](/locations/n
 
 In NSW, [carpentry work includes cutting and placing timber or timber composites, and concreting for footings for outdoor structures such as timber decks](https://www.nsw.gov.au/business-and-economy/licences-and-credentials/building-and-trade-licences-and-registrations/carpentry-work). A contractor licence is needed for residential work over $5,000 including labour and materials.
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability. Our [NSW licence and warranty guide](/blog/nsw-building-licence-hbcf-warranty-guide) explains what to check, and our list of [questions to ask before you hire](/blog/questions-to-ask-custom-joiner-australia) applies to deck builders too.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability. Our [NSW licence and warranty guide](/blog/nsw-building-licence-hbcf-warranty-guide) explains what to check, and our list of [questions to ask before you hire](/blog/questions-to-ask-custom-joiner-australia) applies to deck builders too.
 
 ## What a fair deck quote should show
 

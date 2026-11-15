@@ -39,5 +39,5 @@
 
 ## NEEDS_OWNER_CONFIRMATION
 
-- README §5 item 9: live office fitout page shows 'Pavit Pty Ltd'; fix to 'Pavit Cabinetry Pty Ltd' for NAP consistency.
+- README §5 item 9: live office fitout page shows 'Pavit Pty Ltd'; fix to 'Pavit Pty Ltd' for NAP consistency.
 - README §5 item 4: no clients are named. Confirm whether named case studies can be added at backfill.

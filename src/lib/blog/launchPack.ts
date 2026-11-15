@@ -3,12 +3,14 @@ import path from "node:path";
 
 import { parse as parseYaml } from "yaml";
 
+import { getBlogImageAltsFromPack } from "@/lib/blog/batch2ImageMeta";
 import { BLOG_DEFAULT_AUTHOR } from "@/lib/business";
 import {
   ALL_SEEDED_BLOG_SLUGS,
   BATCH2_BLOG_SLUGS,
   BATCH2_HARD_BLOCK_SLUGS,
   BATCH3_BLOG_SLUGS,
+  BATCH4_BLOG_SLUGS,
   LAUNCH_PACK_SLUGS,
   RETIRED_BLOG_SLUG_MAP,
   RETIRED_BLOG_SLUGS,
@@ -54,6 +56,22 @@ const BATCH3_RESEARCH_DIR = path.join(
   "docs",
   "blog",
   "batch3",
+  "research",
+);
+
+const BATCH4_POSTS_DIR = path.join(
+  /* turbopackIgnore: true */ process.cwd(),
+  "docs",
+  "blog",
+  "batch4",
+  "posts",
+);
+
+const BATCH4_RESEARCH_DIR = path.join(
+  /* turbopackIgnore: true */ process.cwd(),
+  "docs",
+  "blog",
+  "batch4",
   "research",
 );
 
@@ -183,6 +201,7 @@ function defaultImageAlts(
 
 function resolveResearchPath(slug: string): string | null {
   const candidates = [
+    path.join(BATCH4_RESEARCH_DIR, `RESEARCH-${slug}.md`),
     path.join(BATCH3_RESEARCH_DIR, `RESEARCH-${slug}.md`),
     path.join(BATCH2_RESEARCH_DIR, `RESEARCH-${slug}.md`),
   ];
@@ -241,12 +260,16 @@ export function parseLaunchPackPostFile(filePath: string): LaunchPackBlogPost {
 
   const content = normaliseMdxContent(stripLeadingH1(body, data.title));
   const researchAlts = loadResearchImageAlts(data.slug);
-  const heroAlt = researchAlts.hero ?? data.hero?.alt ?? null;
+  const packAlts = (BATCH4_BLOG_SLUGS as readonly string[]).includes(data.slug)
+    ? getBlogImageAltsFromPack(data.slug)
+    : null;
+  const heroAlt = data.hero?.alt ?? packAlts?.hero ?? researchAlts.hero ?? null;
   const defaults = defaultImageAlts(data.slug, heroAlt);
   const imageAlts: BlogImageAltManifest = {
     ...defaults,
     ...researchAlts,
-    hero: researchAlts.hero ?? heroAlt ?? defaults.hero,
+    ...(packAlts ?? {}),
+    hero: heroAlt ?? defaults.hero,
   };
 
   const hardBlocked = (BATCH2_HARD_BLOCK_SLUGS as readonly string[]).includes(
@@ -298,10 +321,11 @@ export function loadLaunchPackPosts(): LaunchPackBlogPost[] {
   const batch1 = loadPostsFromDirectory(LAUNCH_PACK_POSTS_DIR);
   const batch2 = loadPostsFromDirectory(BATCH2_POSTS_DIR);
   const batch3 = loadPostsFromDirectory(BATCH3_POSTS_DIR);
+  const batch4 = loadPostsFromDirectory(BATCH4_POSTS_DIR);
 
   const bySlug = new Map<string, LaunchPackBlogPost>();
 
-  for (const post of [...batch1, ...batch2, ...batch3]) {
+  for (const post of [...batch1, ...batch2, ...batch3, ...batch4]) {
     bySlug.set(post.slug, post);
   }
 
@@ -318,8 +342,10 @@ export {
   LAUNCH_PACK_POSTS_DIR,
   BATCH2_POSTS_DIR,
   BATCH3_POSTS_DIR,
+  BATCH4_POSTS_DIR,
   BATCH2_BLOG_SLUGS,
   BATCH3_BLOG_SLUGS,
+  BATCH4_BLOG_SLUGS,
   LAUNCH_PACK_SLUGS,
   RETIRED_BLOG_SLUGS,
   RETIRED_BLOG_SLUG_MAP,

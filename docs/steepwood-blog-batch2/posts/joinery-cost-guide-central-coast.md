@@ -165,7 +165,7 @@ Spring is commonly the busiest renovation season and trades book ahead, accordin
 
 ### Licence, insurance and what to check locally
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [$5,000 including GST](https://www.serviceseeking.com.au/industry-insights/is-spring-a-good-time-to-renovate-7-reasons). Ask every contractor to identify the licensee, licence category, scope, inclusions, exclusions and the party coordinating other trades.
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [$5,000 including GST](https://www.serviceseeking.com.au/industry-insights/is-spring-a-good-time-to-renovate-7-reasons). Ask every contractor to identify the licensee, licence category, scope, inclusions, exclusions and the party coordinating other trades.
 
 For residential work at or above [$20,000 including GST](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw), Home Building Compensation Fund requirements may apply; confirm the actual contract position before any deposit. Our public position is a [10-year structural warranty](https://steepwood.com.au/about/) on joinery we manufacture. A warranty is not a substitute for a complete written scope and proper installation conditions.
 

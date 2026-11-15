@@ -165,7 +165,7 @@ A direct scope can be excellent when those boundaries are clean. It is poor valu
 
 SteepWood manufactures in Newcastle, NSW, offers a free in-home measure and quote across NSW and ACT, and sends installation crews to suitable work. We do not have a Sydney growth-corridor showroom or second workshop.
 
-For money and residential work, SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). NSW contracts between [ $5,000 and $20,000](https://www.nsw.gov.au/housing-and-construction/building-or-renovating-a-home/preparing/contracts) need a written small-job contract, while work above [ $20,000](https://www.nsw.gov.au/housing-and-construction/building-or-renovating-a-home/preparing/contracts) needs a large-job contract.
+For money and residential work, SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). NSW contracts between [ $5,000 and $20,000](https://www.nsw.gov.au/housing-and-construction/building-or-renovating-a-home/preparing/contracts) need a written small-job contract, while work above [ $20,000](https://www.nsw.gov.au/housing-and-construction/building-or-renovating-a-home/preparing/contracts) needs a large-job contract.
 
 ## FAQ
 

@@ -927,7 +927,7 @@ export const rootGraph = {
       '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
       '@id': 'https://steepwood.com.au/#localbusiness',
       name: 'SteepWood Custom Joinery',
-      legalName: 'Pavit Cabinetry Pty Ltd',
+      legalName: 'Pavit Pty Ltd',
       alternateName: 'SteepWood',
       description: 'Newcastle-headquartered custom joinery studio serving 16 Australian cities. Custom kitchens, built-in wardrobes, office fitouts, shopfitting, bathroom vanities, commercial joinery and bespoke furniture.',
       url: 'https://steepwood.com.au',

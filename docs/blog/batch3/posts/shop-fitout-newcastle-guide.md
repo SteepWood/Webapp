@@ -120,7 +120,7 @@ Our [Newcastle and Lake Macquarie service area](/locations/newcastle) page lists
 
 ## Who to brief and what to ask
 
-Commercial shop fitouts are not residential building work, but you should still ask every contractor for insurance, a written scope and a programme. SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on all joinery. You can read more on our [shopfitting service](/shopfitting) and [commercial joinery](/commercial-joinery) pages.
+Commercial shop fitouts are not residential building work, but you should still ask every contractor for insurance, a written scope and a programme. SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on all joinery. You can read more on our [shopfitting service](/shopfitting) and [commercial joinery](/commercial-joinery) pages.
 
 ## Common shop fitout mistakes
 

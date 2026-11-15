@@ -135,7 +135,7 @@ A simple brief prevents most disputes later.
 - Ask for a programme that shows joinery manufacture and install dates.
 - Ask for licence, insurance and warranty details in writing.
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on all joinery. You can check any contractor licence through [Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence). For a sense of the finish we deliver on commercial jobs, see our [office fitout project example](/portfolio/office-fitout-canberra) or the main [office fitout service](/office-fitout) page.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on all joinery. You can check any contractor licence through [Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence). For a sense of the finish we deliver on commercial jobs, see our [office fitout project example](/portfolio/office-fitout-canberra) or the main [office fitout service](/office-fitout) page.
 
 
 ## Related guides in this series

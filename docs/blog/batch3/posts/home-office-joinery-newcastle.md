@@ -131,7 +131,7 @@ Our [Newcastle service area](/locations/newcastle) page lists the suburbs we vis
 
 Renovation activity remains steady in the region. ABS building approvals data shows [$115.5 million of residential alterations and additions approved in Newcastle](https://www.abs.gov.au/statistics/industry/building-and-construction/building-approvals-australia/jun-2026/87310do005_202606.xlsx) in the 2025–26 year. Many of those projects now include a dedicated study.
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, and every piece of joinery carries our 10-year structural warranty.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, and every piece of joinery carries our 10-year structural warranty.
 
 ## Mistakes to avoid
 

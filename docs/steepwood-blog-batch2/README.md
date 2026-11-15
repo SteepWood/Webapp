@@ -2,7 +2,7 @@
 
 Thirty long-form posts, a 30-day publishing schedule, the NSW market research behind them, and two Cursor implementation briefs.
 
-Prepared August 2026 for Pavit Cabinetry Pty Ltd t/as SteepWood, Newcastle NSW.
+Prepared August 2026 for Pavit Pty Ltd t/as SteepWood, Newcastle NSW.
 
 ---
 

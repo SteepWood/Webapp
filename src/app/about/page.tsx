@@ -15,7 +15,7 @@ const ABOUT_DESCRIPTION =
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "About SteepWood — Custom Joinery Newcastle Since 2014 | Pavit Cabinetry",
+  title: "About SteepWood — Custom Joinery Newcastle Since 2014 | Pavit Pty Ltd",
   description: ABOUT_DESCRIPTION,
   alternates: {
     canonical: canonicalUrl("/about/"),
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "About SteepWood — Custom Joinery Newcastle Since 2014 | Pavit Cabinetry",
+    title: "About SteepWood — Custom Joinery Newcastle Since 2014 | Pavit Pty Ltd",
     description: ABOUT_DESCRIPTION,
     url: canonicalUrl("/about/"),
     siteName: "SteepWood",

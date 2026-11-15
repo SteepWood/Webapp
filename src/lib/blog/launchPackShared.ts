@@ -78,6 +78,20 @@ export const BATCH3_BLOG_SLUGS = [
   "christmas-shutdown-fitout-planning-nsw",
 ] as const;
 
+/** Batch 4 — one post per day, 7–16 Nov 2026, published together on 16 Nov. */
+export const BATCH4_BLOG_SLUGS = [
+  "office-fitout-parramatta",
+  "kitchen-installation-lake-macquarie",
+  "shop-fitout-maitland",
+  "deck-builders-lake-macquarie",
+  "restaurant-fitout-newcastle",
+  "home-office-joinery-north-shore-sydney",
+  "pharmacy-fitout-nsw",
+  "warehouse-office-fitout-western-sydney",
+  "kitchen-installation-maitland-hunter-valley",
+  "childcare-centre-joinery-nsw",
+] as const;
+
 export const BATCH2_HARD_BLOCK_SLUGS = [
   "porcelain-sintered-stone-benchtop-cost-nsw",
   "nsw-building-licence-hbcf-warranty-guide",
@@ -87,7 +101,23 @@ export const ALL_SEEDED_BLOG_SLUGS = [
   ...LAUNCH_PACK_SLUGS,
   ...BATCH2_BLOG_SLUGS,
   ...BATCH3_BLOG_SLUGS,
+  ...BATCH4_BLOG_SLUGS,
 ] as const;
+
+/** Listing cutoff so a 07:00 Sydney post on today's date is included before 07:00. */
+export function blogPublishedCutoff(now = new Date()): Date {
+  const sydneyDate = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Australia/Sydney",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(now);
+  const endOfSydneyDay = new Date(
+    `${sydneyDate}T23:59:59.999${sydneyOffsetForDate(sydneyDate)}`,
+  );
+
+  return endOfSydneyDay.getTime() > now.getTime() ? endOfSydneyDay : now;
+}
 
 export const RETIRED_BLOG_SLUGS = [
   "kitchen-storage-planning-australia",

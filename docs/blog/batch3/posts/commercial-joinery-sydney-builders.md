@@ -34,7 +34,7 @@ faq:
   - question: "How do you handle Sydney site access rules?"
     answer: "We plan around dock bookings, lift sizes, after-hours work and building inductions. Modules are sized to fit lifts and doorways, and deliveries are timed to the site's rules."
   - question: "What insurance and licences do you hold?"
-    answer: "SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, with $20 million public liability. We provide SWMS and complete site inductions as required."
+    answer: "SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, with $20 million public liability. We provide SWMS and complete site inductions as required."
 relatedPosts:
   - "commercial-joinery-newcastle-guide"
   - "why-custom-joinery-quotes-differ-australia"
@@ -128,7 +128,7 @@ Our [Sydney service area](/locations/sydney), [Sydney office fitout joinery](/of
 
 ## Compliance and documentation
 
-We provide insurance certificates, SWMS and licence details at pre-start. SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery. Builders can [check our licence with Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence).
+We provide insurance certificates, SWMS and licence details at pre-start. SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery. Builders can [check our licence with Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence).
 
 ## Working together on the program
 
@@ -158,7 +158,7 @@ We plan around dock bookings, lift sizes, after-hours work and building inductio
 
 ### What insurance and licences do you hold?
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, with $20 million public liability. We provide SWMS and complete site inductions as required.
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, with $20 million public liability. We provide SWMS and complete site inductions as required.
 
 ## Send your tender drawings
 

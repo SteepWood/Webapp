@@ -1,6 +1,6 @@
 # NSW Market Research — Batch 3 (Fitout, Shopfitting, Commercial Joinery, Kitchen Installation, Decking, Home Office)
 
-Prepared 6 November 2026 for SteepWood (Pavit Cabinetry Pty Ltd t/as SteepWood), Newcastle NSW. Window: 30 posts, originally 7 November to 6 December 2026; now all published 6 November 2026, dated 24 August to 6 November 2026.
+Prepared 6 November 2026 for SteepWood (Pavit Pty Ltd t/as SteepWood), Newcastle NSW. Window: 30 posts, originally 7 November to 6 December 2026; now all published 6 November 2026, dated 24 August to 6 November 2026.
 
 Purpose: give Cursor and the owner the evidence behind the 30 topics, the keywords, the locations and the structure. Batch 2's evidence base (`blog-batch2/research/NSW-MARKET-RESEARCH.md`, `LOCATION-STRATEGY.md`) still applies and is not repeated here.
 
@@ -215,7 +215,7 @@ Reuse `blog-batch2/cursor/SCHEMA-SPEC.md` unchanged: one `@graph` per post with 
 | GBP service list updated: add Decking, Kitchen installation, Shopfitting, Commercial joinery | Once, week 1 | Owner |
 | Review requests to recent commercial clients | 2–3 per week | Owner |
 | Citation clean-up: TradieCorner, hipages, Localsearch, Yellow Pages | Once | VA |
-| NAP check: "Pavit Cabinetry Pty Ltd t/as SteepWood" consistent everywhere | Once | VA |
+| NAP check: "Pavit Pty Ltd t/as SteepWood" consistent everywhere | Once | VA |
 | Share commercial posts on LinkedIn to builders and property managers | 3 per week | Owner |
 | Request indexing in Search Console for each post | Daily | Cursor or owner |
 

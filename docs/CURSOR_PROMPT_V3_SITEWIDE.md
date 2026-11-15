@@ -349,7 +349,7 @@ export default function Page() {
         <section className="hero-intro">
           <p>
             SteepWood designs, manufactures and installs {KW} from our Newcastle workshop.
-            Operating as Pavit Cabinetry Pty Ltd since 2014 (NSW Carpentry Contractor Licence 489553C),
+            Operating as Pavit Pty Ltd since 2014 (NSW Carpentry Contractor Licence 489553C),
             we deliver {SECONDARY[0]}, {SECONDARY[1]} and {SECONDARY[2]} to architects, builders
             and homeowners nationwide.
           </p>
@@ -557,7 +557,7 @@ export default function Page() {
           <p>
             SteepWood delivers {SVC_KW} in {CITY_LBL} {STATE}. Every {SVC_KW} project for {CITY_LBL}
             clients is drawn, manufactured and installed by our team — operating since 2014 as
-            Pavit Cabinetry Pty Ltd (NSW Carpentry Contractor Licence 489553C).
+            Pavit Pty Ltd (NSW Carpentry Contractor Licence 489553C).
           </p>
         </section>
 
@@ -689,7 +689,7 @@ export const metadata: Metadata = {
 ```tsx
 // app/about/page.tsx
 export const metadata: Metadata = {
-  title: 'About SteepWood — Custom Joinery Newcastle Since 2014 | Pavit Cabinetry',
+  title: 'About SteepWood — Custom Joinery Newcastle Since 2014 | Pavit Pty Ltd',
   description: 'Founded in 2014, SteepWood is a Newcastle custom joinery studio led by Sukhveer Kaur. NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269.',
   alternates: { canonical: 'https://steepwood.com.au/about/' },
 };
@@ -803,7 +803,7 @@ export function Footer() {
 
         <section>
           <h3>SteepWood</h3>
-          <p>Pavit Cabinetry Pty Ltd</p>
+          <p>Pavit Pty Ltd</p>
           <p>ABN 52 697 313 269</p>
           <p>NSW Carpentry Contractor Licence 489553C</p>
           <p><a href="mailto:hello@steepwood.com.au">hello@steepwood.com.au</a></p>
@@ -947,7 +947,7 @@ export function LocalBusinessSchema({ city }: { city?: City }) {
     '@type': 'LocalBusiness',
     '@id': 'https://steepwood.com.au/#business',
     name: 'SteepWood',
-    legalName: 'Pavit Cabinetry Pty Ltd',
+    legalName: 'Pavit Pty Ltd',
     url: 'https://steepwood.com.au/',
     telephone: '+61468387676',
     email: 'hello@steepwood.com.au',
@@ -1067,7 +1067,7 @@ This is the single source of truth for what each URL targets. Reference when QA-
 | URL pattern | Primary keyword | Secondary keywords | Don't target |
 |---|---|---|---|
 | `/` | "custom joinery Australia", "SteepWood" | "joinery NSW", "cabinetmaker Newcastle" | Any city-specific service term |
-| `/about/` | "SteepWood about", "Pavit Cabinetry" | "Sukhveer Kaur", "Newcastle joinery studio" | Service-specific queries |
+| `/about/` | "SteepWood about", "Pavit Pty Ltd" | "Sukhveer Kaur", "Newcastle joinery studio" | Service-specific queries |
 | `/quote/` | "joinery quote", "custom kitchen quote" | "free joinery consult" | — |
 | `/portfolio/` | "joinery portfolio Australia" | "custom kitchen examples", "wardrobe projects" | — |
 | `/blog/` | "joinery blog Australia" | "custom kitchen guide", "wardrobe guide" | — |

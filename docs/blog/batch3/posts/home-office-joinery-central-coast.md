@@ -114,7 +114,7 @@ Working from home works best when work can be put away. Lockable drawers for cli
 
 If you are in the Hunter, our [Newcastle home office guide](/blog/home-office-joinery-newcastle) covers local homes, and the [Sydney study nook guide](/blog/built-in-desk-study-nook-sydney) has ideas for small spaces. Our [Central Coast service area](/locations/central-coast) lists the suburbs we visit.
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with a 10-year structural warranty on joinery.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with a 10-year structural warranty on joinery.
 
 ## The commuter's home office checklist
 

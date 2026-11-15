@@ -169,7 +169,7 @@ A staircase can sit alongside a dining table, bench seat or other [custom timber
 
 ## Compliance and credentials
 
-Prices in this guide are indicative 2026 consumer ranges including GST. SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/licences-and-credentials/building-and-trade-licences-and-registrations/carpentry-work), and [HBCF insurance applies to eligible work at $20,000 or more including GST](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw). NSW statutory warranties are [six years for major defects and two years for other defects](https://hia.com.au/resources-and-advice/managing-your-business/managing-compliance/articles/statutory-warranties-for-home-building-work).
+Prices in this guide are indicative 2026 consumer ranges including GST. SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/licences-and-credentials/building-and-trade-licences-and-registrations/carpentry-work), and [HBCF insurance applies to eligible work at $20,000 or more including GST](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw). NSW statutory warranties are [six years for major defects and two years for other defects](https://hia.com.au/resources-and-advice/managing-your-business/managing-compliance/articles/statutory-warranties-for-home-building-work).
 
 ## FAQ
 

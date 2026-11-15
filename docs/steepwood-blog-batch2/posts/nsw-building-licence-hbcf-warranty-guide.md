@@ -134,7 +134,7 @@ The ACCC single-price rule means consumer prices must be displayed as a total in
 
 ## What this looks like at SteepWood
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C ([verify through Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence)). The workshop is in Newcastle, New South Wales, and we provide a written scope with a quote. We publish that information so a client can verify it, not because a website statement replaces independent checking.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C ([verify through Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence)). The workshop is in Newcastle, New South Wales, and we provide a written scope with a quote. We publish that information so a client can verify it, not because a website statement replaces independent checking.
 
 SteepWood states a [ten-year structural warranty on all joinery](/about). The HBCF position for a particular SteepWood contract, the current public-liability certificate and the exact licence-category wording should be confirmed with the workshop before deposit. Use the [consumer rights information](/legal/consumer-rights), [questions to ask a custom joiner](/blog/questions-to-ask-custom-joiner-australia) and [contact the workshop](/contact) to document those answers.
 

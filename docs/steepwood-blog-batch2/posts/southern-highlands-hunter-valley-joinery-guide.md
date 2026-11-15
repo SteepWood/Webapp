@@ -177,6 +177,6 @@ SteepWood provides residential and commercial joinery, and a cellar-door or gues
 
 Yes, SteepWood provides a free in-home measure and quote across NSW and ACT and installation crews travel from the Newcastle workshop. Travel needs to be scheduled around the project and access conditions, so it is priced from the actual brief rather than a blanket regional promise. There is no Bowral showroom or second workshop.
 
-For money and residential work, SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements).
+For money and residential work, SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements).
 
 > **STEEPWOOD CUSTOM JOINERY** — Bring the property access, existing plans and the rooms that must work hardest. [Get a free measure and quote](/quote) for a Southern Highlands or Hunter Valley project.

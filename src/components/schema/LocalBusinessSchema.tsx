@@ -11,7 +11,7 @@ export function LocalBusinessSchema({ city }: LocalBusinessSchemaProps) {
     "@type": "LocalBusiness",
     "@id": "https://steepwood.com.au/#business",
     name: "SteepWood",
-    legalName: "Pavit Cabinetry Pty Ltd",
+    legalName: "Pavit Pty Ltd",
     url: "https://steepwood.com.au/",
     telephone: "+61468387676",
     email: "hello@steepwood.com.au",

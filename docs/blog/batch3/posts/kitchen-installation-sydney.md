@@ -121,7 +121,7 @@ ABS data shows Sydney's renovation activity is concentrated in these areas, led 
 
 Workshop-built kitchens arrive ready to fit, so on-site time is shorter. That helps with strata hours, parking and neighbours. Lower workshop overheads in Newcastle can also keep the price competitive while quality stays consistent.
 
-SteepWood is Pavit Cabinetry Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with a 10-year structural warranty on joinery. See our [custom kitchen joinery](/custom-kitchen-joinery) page and [Sydney service area](/locations/sydney).
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with a 10-year structural warranty on joinery. See our [custom kitchen joinery](/custom-kitchen-joinery) page and [Sydney service area](/locations/sydney).
 
 ## Preparing for install day
 
