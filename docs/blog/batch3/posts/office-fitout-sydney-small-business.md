@@ -36,9 +36,9 @@ faq:
   - question: "How can a small business reduce fitout costs?"
     answer: "Reuse existing partitions and services, keep wet areas where plumbing already exists, focus custom joinery on reception and kitchen, and choose durable laminate over premium finishes in back-of-house areas."
 relatedPosts:
+  - "office-fitout-parramatta"
+  - "warehouse-office-fitout-western-sydney"
   - "office-fitout-joinery-cost-nsw"
-  - "office-fitout-timeline-nsw"
-  - "commercial-joinery-sydney-builders"
 ---
 
 # Small Office Fitout Sydney: Costs and Joinery for 2026
@@ -104,7 +104,7 @@ Workshop-built joinery with pre-finished panels reduces noise and dust on site, 
 | Inner West | Creative studios, design firms, allied health |
 | Northern Beaches (Brookvale, Dee Why) | Local services, trades offices, health |
 
-See [Sydney office fitouts](/office-fitout/sydney) and [Sydney commercial joinery](/commercial-joinery/sydney) for our service areas.
+See [Sydney office fitouts](/office-fitout/sydney) and [Sydney commercial joinery](/commercial-joinery/sydney) for our service areas. Parramatta tenants should also read our [Parramatta office fitout guide](/blog/office-fitout-parramatta), and warehouse offices further west are covered in our [Western Sydney warehouse office fitout guide](/blog/warehouse-office-fitout-western-sydney).
 
 ## Before you sign the lease
 

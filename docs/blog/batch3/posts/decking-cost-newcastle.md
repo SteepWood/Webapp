@@ -34,9 +34,9 @@ faq:
   - question: "How long does it take to build a deck?"
     answer: "A simple ground-level deck of around 20 square metres is often built in about a week once materials are on site. Elevated decks, stairs, balustrades and approvals extend the timeline. Wet weather can also delay footing and framing work."
 relatedPosts:
+  - "deck-builders-lake-macquarie"
   - "joinery-timber-species-guide-nsw"
   - "nsw-building-licence-hbcf-warranty-guide"
-  - "questions-to-ask-custom-joiner-australia"
   - "deck-builders-sydney-cost"
   - "spotted-gum-merbau-blackbutt-decking-nsw"
 ---
@@ -107,7 +107,7 @@ Large parts of Newcastle and Lake Macquarie sit inside declared [Mine Subsidence
 | Port Stephens and Nelson Bay | Salt and sun | Durable species or composite with stainless fixings |
 | Hunter Valley and Cessnock | Hot, dry summers, bushfire zones | BAL assessment and bushfire-resisting species |
 
-You can see the wider area we cover on our [Newcastle service area](/locations/newcastle) and [Hunter Valley service area](/locations/hunter-valley) pages.
+You can see the wider area we cover on our [Newcastle service area](/locations/newcastle) and [Hunter Valley service area](/locations/hunter-valley) pages. Lake Macquarie decks have their own timber and approval notes in our [Lake Macquarie deck builders guide](/blog/deck-builders-lake-macquarie).
 
 ## Licences and who builds your deck
 

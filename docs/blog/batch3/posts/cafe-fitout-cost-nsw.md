@@ -35,9 +35,9 @@ faq:
   - question: "Do I need council approval for a cafe fitout?"
     answer: "Most new food premises need council approval and must meet the food premises fitout standard. Requirements vary by council, so check with your local council, such as City of Newcastle or Central Coast Council, before finalising the design."
 relatedPosts:
+  - "restaurant-fitout-newcastle"
   - "shopfitting-cost-by-format-nsw"
   - "shop-fitout-newcastle-guide"
-  - "shop-fitout-central-coast"
   - "shop-counter-display-joinery"
   - "compact-laminate-commercial-joinery"
 ---
@@ -109,7 +109,7 @@ Cafes in NSW must meet the food premises fitout standard and council requirement
 - Adequate lighting and ventilation.
 - Council approval before trading.
 
-Our [shopfitting cost by format](/blog/shopfitting-cost-by-format-nsw) guide links to council food premises guidance and covers the approval steps in more detail. For joinery, it means choosing laminates, compact laminate and sealed edges rather than raw timber in food prep zones.
+Our [shopfitting cost by format](/blog/shopfitting-cost-by-format-nsw) guide links to council food premises guidance and covers the approval steps in more detail. For joinery, it means choosing laminates, compact laminate and sealed edges rather than raw timber in food prep zones. A full dining room, rather than a cafe counter, is covered in our [Newcastle restaurant fitout guide](/blog/restaurant-fitout-newcastle).
 
 ## Cafe fitouts by region
 

@@ -35,9 +35,9 @@ faq:
   - question: "How far do you travel for kitchen installations?"
     answer: "We install across Newcastle, Lake Macquarie, Maitland, Port Stephens, Cessnock and the Hunter Valley, and travel to the Central Coast and Sydney for custom kitchen projects."
 relatedPosts:
+  - "kitchen-installation-lake-macquarie"
+  - "kitchen-installation-maitland-hunter-valley"
   - "kitchen-installation-cost-nsw"
-  - "joinery-cost-guide-newcastle-hunter"
-  - "benchtop-guide-engineered-stone-ban-nsw"
 ---
 
 # Kitchen Installation Newcastle: Choosing Local Kitchen Installers
@@ -114,7 +114,7 @@ Stone, porcelain and sintered tops are measured after the cabinets are fixed, so
 - Keep pets and children away from the work area.
 - Agree a daily start time with the installer.
 
-Our work on the [Hamptons kitchen in Newcastle](/portfolio/hamptons-kitchen-newcastle) shows how a careful install brings a design together.
+Our work on the [Hamptons kitchen in Newcastle](/portfolio/hamptons-kitchen-newcastle) shows how a careful install brings a design together. The same install sequence applies around the lake and in the Hunter, in our [Lake Macquarie kitchen installation guide](/blog/kitchen-installation-lake-macquarie) and our [Maitland kitchen installation guide](/blog/kitchen-installation-maitland-hunter-valley).
 
 ## Where we install
 

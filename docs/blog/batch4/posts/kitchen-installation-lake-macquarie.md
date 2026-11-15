@@ -35,9 +35,9 @@ faq:
   - question: "Can I still have stone benchtops?"
     answer: "Engineered stone has been banned in Australia since 1 July 2024. Porcelain, sintered stone, natural stone, compact laminate and timber are the common alternatives."
 relatedPosts:
+  - "kitchen-installation-maitland-hunter-valley"
+  - "deck-builders-lake-macquarie"
   - "kitchen-installation-newcastle"
-  - "kitchen-installation-cost-nsw"
-  - "benchtop-guide-engineered-stone-ban-nsw"
 ---
 
 # Kitchen Installation Lake Macquarie: Costs, Steps and Local Tips
@@ -102,7 +102,7 @@ Lake Macquarie homes have a few local quirks worth planning for.
 | Morisset and Cooranbong | Growing estates | New homes with builder-grade kitchens to replace |
 | Cardiff and Glendale | Post-war homes | Check for asbestos before demolition |
 
-Our [Newcastle and Lake Macquarie service area](/locations/newcastle) covers every suburb on this list.
+Our [Newcastle and Lake Macquarie service area](/locations/newcastle) covers every suburb on this list. If you are comparing the Hunter, our [Maitland kitchen installation guide](/blog/kitchen-installation-maitland-hunter-valley) covers the same process inland, and our [Lake Macquarie deck builders guide](/blog/deck-builders-lake-macquarie) covers outdoor timber work on the same lake.
 
 ## How to compare Lake Macquarie installers
 

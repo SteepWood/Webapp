@@ -36,9 +36,9 @@ faq:
   - question: "What joinery does a pharmacy need?"
     answer: "Dispensary benches and drawers, script-in and collection counters, front-of-shop gondolas and wall displays, a consult room, a lockable storage area and staff facilities."
 relatedPosts:
+  - "childcare-centre-joinery-nsw"
   - "medical-clinic-fitout-joinery-nsw"
   - "shop-counter-display-joinery"
-  - "compact-laminate-commercial-joinery"
 ---
 
 # Pharmacy Fitout NSW: Costs, Pharmacy Council Rules and Joinery
@@ -133,6 +133,8 @@ The same principles apply to health tenancies; see our [medical clinic fitout jo
 | Hunter Valley | Maitland, Cessnock, new estates | Growing suburbs need new pharmacies |
 
 See our [Newcastle commercial joinery](/commercial-joinery/newcastle) and [Central Coast commercial joinery](/commercial-joinery/central-coast) pages, and the [Maitland shop fitout guide](/blog/shop-fitout-maitland) for Hunter Valley approvals.
+
+Childcare centres have their own joinery rules, set out in our [childcare centre joinery NSW guide](/blog/childcare-centre-joinery-nsw).
 
 ## Working with SteepWood
 

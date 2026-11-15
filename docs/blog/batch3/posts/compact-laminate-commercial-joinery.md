@@ -35,9 +35,9 @@ faq:
   - question: "Can compact laminate be used for kitchen benchtops?"
     answer: "Yes. It is popular for staff kitchens, cafes and some homes because it resists water, heat and stains and allows a slim, modern edge. Accurate fabrication and support are important."
 relatedPosts:
+  - "childcare-centre-joinery-nsw"
   - "commercial-joinery-newcastle-guide"
   - "office-kitchenette-breakout-joinery"
-  - "medical-clinic-fitout-joinery-nsw"
 ---
 
 # Compact Laminate Joinery: Where It Beats Standard Laminate
@@ -122,7 +122,7 @@ Compact laminate [carries a higher upfront cost than standard laminate sheets](h
 
 ## Regions we supply
 
-We machine compact laminate in Newcastle and install across the Hunter, Central Coast and Sydney. See [Newcastle commercial joinery](/commercial-joinery/newcastle) and our [Newcastle commercial joinery guide](/blog/commercial-joinery-newcastle-guide) for local projects.
+We machine compact laminate in Newcastle and install across the Hunter, Central Coast and Sydney. See [Newcastle commercial joinery](/commercial-joinery/newcastle) and our [Newcastle commercial joinery guide](/blog/commercial-joinery-newcastle-guide) for local projects. Childcare centres are a common use, covered in our [childcare centre joinery NSW guide](/blog/childcare-centre-joinery-nsw).
 
 SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery.
 

@@ -35,9 +35,9 @@ faq:
   - question: "How long does a Maitland shop fitout take?"
     answer: "Once design and approval are done, a small shop is often two to four weeks on site. Joinery is built in our Newcastle workshop while the site works happen, so the closure period stays short."
 relatedPosts:
+  - "pharmacy-fitout-nsw"
+  - "kitchen-installation-maitland-hunter-valley"
   - "shop-fitout-newcastle-guide"
-  - "shop-counter-display-joinery"
-  - "shopfitting-cost-by-format-nsw"
 ---
 
 # Shop Fitout Maitland: Retail Fitout Guide for the Hunter Valley
@@ -97,7 +97,7 @@ Storepro's project list includes an [RM Williams fitout at Stockland Green Hills
 | Fitting rooms | Converts browsing into sales | Durable laminate, good mirrors and hooks |
 | Stockroom shelving | Keeps the shop floor clear | Size to your carton dimensions |
 
-Our [shop counter and display joinery guide](/blog/shop-counter-display-joinery) has more detail on each item. If you are fitting out a salon or barber shop in a new estate, see the [salon and barber shop fitout guide](/blog/salon-barber-shop-fitout-nsw).
+Our [shop counter and display joinery guide](/blog/shop-counter-display-joinery) has more detail on each item. If you are fitting out a salon or barber shop in a new estate, see the [salon and barber shop fitout guide](/blog/salon-barber-shop-fitout-nsw). A pharmacy in the same town follows different rules, which our [pharmacy fitout NSW guide](/blog/pharmacy-fitout-nsw) sets out, and new houses around Maitland often need a kitchen at the same time, covered in our [Maitland kitchen installation guide](/blog/kitchen-installation-maitland-hunter-valley).
 
 ## Timeline from lease to opening
 

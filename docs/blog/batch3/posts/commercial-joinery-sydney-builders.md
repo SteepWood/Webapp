@@ -36,9 +36,9 @@ faq:
   - question: "What insurance and licences do you hold?"
     answer: "SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, with $20 million public liability. We provide SWMS and complete site inductions as required."
 relatedPosts:
+  - "warehouse-office-fitout-western-sydney"
+  - "childcare-centre-joinery-nsw"
   - "commercial-joinery-newcastle-guide"
-  - "why-custom-joinery-quotes-differ-australia"
-  - "office-fitout-joinery-cost-nsw"
 ---
 
 # Commercial Joinery Sydney: A Joinery Partner for Builders
@@ -124,7 +124,7 @@ To get a sharper price:
 | North Shore | Medical, professional services and retail |
 | Northern Beaches | Retail, hospitality and medical |
 
-Our [Sydney service area](/locations/sydney), [Sydney office fitout joinery](/office-fitout/sydney) and [Sydney shopfitting](/shopfitting/sydney) pages have more detail.
+Our [Sydney service area](/locations/sydney), [Sydney office fitout joinery](/office-fitout/sydney) and [Sydney shopfitting](/shopfitting/sydney) pages have more detail. Warehouse offices are covered in our [Western Sydney warehouse office fitout guide](/blog/warehouse-office-fitout-western-sydney), and childcare joinery is covered in our [childcare centre joinery NSW guide](/blog/childcare-centre-joinery-nsw).
 
 ## Compliance and documentation
 

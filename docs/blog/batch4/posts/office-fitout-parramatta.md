@@ -35,9 +35,9 @@ faq:
   - question: "Can SteepWood supply only the joinery for my fitout?"
     answer: "Yes. We build reception counters, kitchenettes, storage walls and meeting room joinery in our Newcastle workshop and install in Parramatta, either directly for you or as a subcontractor to your builder."
 relatedPosts:
+  - "warehouse-office-fitout-western-sydney"
   - "office-fitout-sydney-small-business"
   - "office-fitout-timeline-nsw"
-  - "reception-desk-cost-australia"
 ---
 
 # Office Fitout Parramatta: 2026 Cost, Timeline and Leasing Guide
@@ -113,7 +113,7 @@ See our [office fitout timeline](/blog/office-fitout-timeline-nsw) for a week-by
 | Norwest | Corporate head offices | Business park rules and generous floor plates |
 | Olympic Park | Sports, events and corporate | Newer buildings, simpler services |
 
-Our [Sydney service area](/locations/sydney) lists the suburbs we install in.
+Our [Sydney service area](/locations/sydney) lists the suburbs we install in. For a warehouse or industrial office further west, see our [warehouse office fitout guide for Western Sydney](/blog/warehouse-office-fitout-western-sydney).
 
 ## Common Parramatta fitout mistakes
 

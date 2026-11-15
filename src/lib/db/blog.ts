@@ -3,6 +3,7 @@ import { cache } from "react";
 import type { BlogPost } from "@prisma/client";
 
 import {
+  BATCH4_BLOG_SLUGS,
   blogPublishedCutoff,
   parseDisplayTags,
 } from "@/lib/blog/launchPackShared";
@@ -24,6 +25,37 @@ function extractRelatedSlugs(tags: unknown): string[] {
 
 function extractDisplayTags(tags: unknown): string[] {
   return parseDisplayTags(tags);
+}
+
+const BATCH4_SLUG_SET = new Set<string>(BATCH4_BLOG_SLUGS);
+
+/** Surface one Batch 4 guide on earlier posts in the same category. */
+async function prependSameCategoryBatch4Post(
+  post: BlogPost,
+  ordered: BlogPost[],
+): Promise<BlogPost[]> {
+  if (BATCH4_SLUG_SET.has(post.slug) || !post.category) {
+    return ordered;
+  }
+
+  if (ordered.some((entry) => BATCH4_SLUG_SET.has(entry.slug))) {
+    return ordered;
+  }
+
+  const batch4Related = await prisma.blogPost.findFirst({
+    where: {
+      ...publishedWhere(),
+      category: post.category,
+      slug: { in: [...BATCH4_BLOG_SLUGS] },
+    },
+    orderBy: [{ publishedAt: "desc" }, { createdAt: "desc" }],
+  });
+
+  if (!batch4Related || batch4Related.slug === post.slug) {
+    return ordered;
+  }
+
+  return [batch4Related, ...ordered];
 }
 
 export type BlogListFilters = {
@@ -193,11 +225,11 @@ export const getRelatedBlogPosts = cache(
 
         const ordered = relatedSlugs
           .map((slug) => related.find((entry) => entry.slug === slug))
-          .filter((entry): entry is BlogPost => Boolean(entry))
-          .slice(0, limit);
+          .filter((entry): entry is BlogPost => Boolean(entry));
 
-        if (ordered.length > 0) {
-          return ordered;
+        const withBatch4 = await prependSameCategoryBatch4Post(post, ordered);
+        if (withBatch4.length > 0) {
+          return withBatch4.slice(0, limit);
         }
       }
 

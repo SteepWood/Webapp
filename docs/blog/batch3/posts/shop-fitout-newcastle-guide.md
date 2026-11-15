@@ -34,9 +34,9 @@ faq:
   - question: "Can a shop fitout be done after hours?"
     answer: "Yes. Joinery can be built in the workshop and installed at night or over a weekend to protect trading. After-hours work costs more, so tell the shopfitter early if your lease or centre requires it."
 relatedPosts:
+  - "shop-fitout-maitland"
+  - "restaurant-fitout-newcastle"
   - "shopfitting-cost-by-format-nsw"
-  - "office-fitout-newcastle-guide"
-  - "reception-desk-cost-australia"
   - "shop-counter-display-joinery"
   - "salon-barber-shop-fitout-nsw"
 ---
@@ -116,7 +116,7 @@ Food premises add council and food-safety requirements, which usually extend the
 | Maitland and Rutherford | High street and bulky goods | Larger floor areas, more shelving runs |
 | Warners Bay and Belmont | Lakeside cafes and services | Moisture-resistant finishes near the water |
 
-Our [Newcastle and Lake Macquarie service area](/locations/newcastle) page lists the suburbs we visit for measures. If you also need office space fitted out, see our [Newcastle office fitout guide](/blog/office-fitout-newcastle-guide).
+Our [Newcastle and Lake Macquarie service area](/locations/newcastle) page lists the suburbs we visit for measures. If you also need office space fitted out, see our [Newcastle office fitout guide](/blog/office-fitout-newcastle-guide). Maitland shops are covered in our [Maitland shop fitout guide](/blog/shop-fitout-maitland), and dining rooms are covered in our [Newcastle restaurant fitout guide](/blog/restaurant-fitout-newcastle).
 
 ## Who to brief and what to ask
 

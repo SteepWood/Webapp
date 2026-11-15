@@ -35,9 +35,9 @@ faq:
   - question: "How long does a kitchen installation take?"
     answer: "A standard custom kitchen is usually installed in two to four days, with the stone benchtop templated after the cabinets go in and fitted one to two weeks later. Plumbing and electrical fit-off follow the benchtop. The whole room is usually back in use within about two to three weeks of the install start."
 relatedPosts:
+  - "kitchen-installation-maitland-hunter-valley"
   - "custom-kitchen-cost-nsw-2026"
   - "flat-pack-vs-custom-kitchen-australia"
-  - "kitchen-renovation-timeline-lead-times-nsw"
   - "kitchen-installation-sydney"
   - "kitchen-installation-process-day-by-day"
 ---
@@ -114,7 +114,7 @@ Site conditions differ across the regions we cover, and they affect install time
 | Central Coast | Coastal homes in Terrigal and Woy Woy, some slab-on-ground | Moisture-resistant board and careful sealing |
 | Sydney | Apartments with strata rules and lift bookings | Delivery windows, noise hours and parking |
 
-See our pages for [kitchens in Newcastle](/custom-kitchen-joinery/newcastle), [Central Coast kitchen joinery](/custom-kitchen-joinery/central-coast) and our [Sydney service area](/locations/sydney).
+See our pages for [kitchens in Newcastle](/custom-kitchen-joinery/newcastle), [Central Coast kitchen joinery](/custom-kitchen-joinery/central-coast) and our [Sydney service area](/locations/sydney). For Maitland and the Hunter Valley, our [Maitland kitchen installation guide](/blog/kitchen-installation-maitland-hunter-valley) applies these ranges to local houses.
 
 ## Licences, trades and who is responsible
 

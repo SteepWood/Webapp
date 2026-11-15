@@ -35,9 +35,9 @@ faq:
   - question: "What joinery does a GP clinic need?"
     answer: "Most GP clinics need a reception desk, consult room desks and storage, treatment room benches with sinks, clean and dirty utility storage, staff kitchenette and waiting room joinery. Each item should be drawn and priced separately."
 relatedPosts:
+  - "pharmacy-fitout-nsw"
+  - "childcare-centre-joinery-nsw"
   - "reception-desk-cost-australia"
-  - "office-fitout-timeline-nsw"
-  - "commercial-joinery-newcastle-guide"
   - "compact-laminate-commercial-joinery"
   - "commercial-joinery-central-coast"
 ---
@@ -118,7 +118,7 @@ Joinery is manufactured off site during construction, then installed once walls,
 | Central Coast (Gosford, Erina, Wyong) | GP, allied health, dental | Strong medical leasing market |
 | Sydney | Specialist and allied health | Building rules and after-hours installs |
 
-Our [Newcastle service area](/locations/newcastle) page lists Hunter suburbs, and [Newcastle office fitout joinery](/office-fitout/newcastle) covers admin areas.
+Our [Newcastle service area](/locations/newcastle) page lists Hunter suburbs, and [Newcastle office fitout joinery](/office-fitout/newcastle) covers admin areas. Pharmacies and childcare centres have their own rules, in our [pharmacy fitout NSW guide](/blog/pharmacy-fitout-nsw) and our [childcare centre joinery NSW guide](/blog/childcare-centre-joinery-nsw).
 
 ## Planning tips for practice owners
 

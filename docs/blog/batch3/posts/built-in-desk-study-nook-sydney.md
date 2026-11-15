@@ -35,9 +35,9 @@ faq:
   - question: "Do you build study nooks for children?"
     answer: "Yes. A family study nook can have a long desk for two, lower shelves for books, and adjustable or replaceable parts as children grow. Plan for good lighting and power for laptops and lamps."
 relatedPosts:
+  - "home-office-joinery-north-shore-sydney"
   - "home-office-joinery-newcastle"
   - "apartment-terrace-joinery-sydney"
-  - "home-office-joinery-cost-nsw"
 ---
 
 # Built In Desk Sydney: Study Nook Ideas, Sizes and Costs
@@ -124,7 +124,7 @@ Because our joinery is made in the workshop, on-site time is short, which helps 
 
 ## Children and shared study spaces
 
-Families often want one nook that works for school and work. A long desk for two, lower open shelves for children, and a lockable drawer for the adult's work items works well. Adjustable chairs and footrests help children sit at an adult desk height. If you are outside Sydney, our [Newcastle home office guide](/blog/home-office-joinery-newcastle) covers the same ideas for Hunter homes.
+Families often want one nook that works for school and work. A long desk for two, lower open shelves for children, and a lockable drawer for the adult's work items works well. Adjustable chairs and footrests help children sit at an adult desk height. If you are outside Sydney, our [Newcastle home office guide](/blog/home-office-joinery-newcastle) covers the same ideas for Hunter homes. For a full study rather than a nook, see our [North Shore home office joinery guide](/blog/home-office-joinery-north-shore-sydney).
 
 SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with a 10-year structural warranty on joinery. Our [home office joinery](/home-office-joinery) page shows more layouts.
 

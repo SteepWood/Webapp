@@ -35,9 +35,9 @@ faq:
   - question: "Can SteepWood work with my builder or designer?"
     answer: "Yes. We often supply and install the joinery package for a builder or designer, working from their drawings, and coordinate with the plumber, electrician and kitchen equipment supplier."
 relatedPosts:
+  - "pharmacy-fitout-nsw"
   - "cafe-fitout-cost-nsw"
   - "commercial-joinery-newcastle-guide"
-  - "compact-laminate-commercial-joinery"
 ---
 
 # Restaurant Fitout Newcastle: 2026 Costs, Food Rules and Joinery
@@ -114,6 +114,8 @@ Local venue sales show how much a fitout is worth. A Newcastle bar listing on [B
 7. Council food premises inspection, then open.
 
 For a smaller venue, see our [cafe fitout cost guide](/blog/cafe-fitout-cost-nsw). If you are also looking at a Hunter Valley site, our [Maitland shop fitout guide](/blog/shop-fitout-maitland) covers approvals there.
+
+If the tenancy is a pharmacy rather than a dining room, start with our [pharmacy fitout NSW guide](/blog/pharmacy-fitout-nsw).
 
 ## Common mistakes to avoid
 

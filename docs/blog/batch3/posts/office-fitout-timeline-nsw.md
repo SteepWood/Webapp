@@ -35,9 +35,9 @@ faq:
   - question: "When should I start planning an office relocation?"
     answer: "Start well before your lease expires. Some guides suggest the full relocation process, from search to move-in, can run 6 to 12 months. Even a small fitout benefits from at least three months of planning."
 relatedPosts:
+  - "warehouse-office-fitout-western-sydney"
   - "office-fitout-newcastle-guide"
   - "office-fitout-central-coast-guide"
-  - "commercial-joinery-newcastle-guide"
   - "office-fitout-sydney-small-business"
   - "christmas-shutdown-fitout-planning-nsw"
 ---
@@ -108,6 +108,8 @@ Our post on [joinery lead times](/blog/kitchen-renovation-timeline-lead-times-ns
 4. **Run manufacture in parallel.** Off-site joinery while partitions go up.
 5. **Stage the work.** If you must stay open, zone the fitout.
 6. **Keep a single decision-maker.** One person approving drawings saves days.
+
+A warehouse office in Western Sydney has its own programme, which our [warehouse office fitout guide](/blog/warehouse-office-fitout-western-sydney) walks through.
 
 ## Regional differences
 
