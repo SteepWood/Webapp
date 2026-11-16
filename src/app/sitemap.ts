@@ -11,30 +11,51 @@ import {
   getAllServiceSlugs,
 } from "@/lib/services-locations/resolvers";
 import { canonicalUrl } from "@/lib/seo/canonical";
-import { fileMtime, maxMtime } from "@/lib/seo/sitemapMtime";
+import {
+  contentLastmod,
+  latestContentDate,
+  sydneyDate,
+} from "@/lib/seo/sitemapMtime";
 
 export const revalidate = 3600;
 
-const SERVICE_CONTENT_MTIME = fileMtime(
+const SERVICE_LASTMOD = contentLastmod(
   "src/lib/services-locations/serviceContent.ts",
+  "src/lib/services-locations/services.ts",
+  "src/components/pages/ServicePillarPage.tsx",
 );
-const LOCATION_CONTENT_MTIME = maxMtime(
+const LOCATION_LASTMOD = contentLastmod(
   "src/lib/services-locations/locationContent.ts",
   "src/lib/services-locations/locationHubExtensions.ts",
+  "src/lib/services-locations/locations.ts",
+  "src/components/pages/LocationHubPage.tsx",
 );
-const LEGAL_MTIME = fileMtime("src/app/legal/privacy/page.tsx");
+const COMBO_LASTMOD = contentLastmod(
+  "src/lib/services-locations/comboContent.ts",
+  "src/lib/services-locations/serviceContent.ts",
+  "src/lib/services-locations/locationContent.ts",
+  "src/components/pages/ServiceLocationPage.tsx",
+);
+
+function blogLastmod(updatedAt: Date, publishedAt: Date | null): string {
+  const modified =
+    updatedAt.getTime() >= (publishedAt?.getTime() ?? 0)
+      ? updatedAt
+      : (publishedAt ?? updatedAt);
+  return sydneyDate(modified);
+}
 
 function sitemapEntry(
   path: string,
   options: {
     changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
     priority: number;
-    lastModified?: Date;
+    lastModified: string;
   },
 ): MetadataRoute.Sitemap[number] {
   return {
     url: canonicalUrl(path),
-    lastModified: options.lastModified ?? new Date(),
+    lastModified: options.lastModified,
     changeFrequency: options.changeFrequency,
     priority: options.priority,
   };
@@ -63,18 +84,14 @@ async function getDynamicPages(): Promise<MetadataRoute.Sitemap> {
     return [
       ...blogPosts.map((post) =>
         sitemapEntry(`/blog/${post.slug}/`, {
-          // Prefer updatedAt so go-live / image refreshes bump lastmod past back-dated publishedAt.
-          lastModified:
-            post.updatedAt.getTime() >= (post.publishedAt?.getTime() ?? 0)
-              ? post.updatedAt
-              : (post.publishedAt ?? post.updatedAt),
+          lastModified: blogLastmod(post.updatedAt, post.publishedAt),
           changeFrequency: "monthly",
           priority: 0.6,
         }),
       ),
       ...portfolioProjects.map((project) =>
         sitemapEntry(`/portfolio/${project.slug}/`, {
-          lastModified: project.updatedAt,
+          lastModified: sydneyDate(project.updatedAt),
           changeFrequency: "monthly",
           priority: 0.7,
         }),
@@ -86,59 +103,81 @@ async function getDynamicPages(): Promise<MetadataRoute.Sitemap> {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const dynamicPages = await getDynamicPages();
+  const blogPostDates = dynamicPages
+    .filter((entry) => entry.url.includes("/blog/"))
+    .map((entry) =>
+      typeof entry.lastModified === "string" ? entry.lastModified : "",
+    );
+  const portfolioDates = dynamicPages
+    .filter(
+      (entry) =>
+        entry.url.includes("/portfolio/") &&
+        entry.url !== canonicalUrl("/portfolio/"),
+    )
+    .map((entry) =>
+      typeof entry.lastModified === "string" ? entry.lastModified : "",
+    );
+
   const staticPages: MetadataRoute.Sitemap = [
     sitemapEntry("/", {
-      lastModified: fileMtime("src/app/page.tsx"),
+      lastModified: contentLastmod("src/app/page.tsx"),
       changeFrequency: "weekly",
       priority: 1.0,
     }),
     sitemapEntry("/about/", {
-      lastModified: fileMtime("src/app/about/page.tsx"),
+      lastModified: contentLastmod("src/app/about/page.tsx"),
       changeFrequency: "monthly",
       priority: 0.8,
     }),
     sitemapEntry("/contact/", {
-      lastModified: fileMtime("src/app/contact/page.tsx"),
+      lastModified: contentLastmod("src/app/contact/page.tsx"),
       changeFrequency: "monthly",
       priority: 0.7,
     }),
     sitemapEntry("/quote/", {
-      lastModified: fileMtime("src/app/quote/page.tsx"),
+      lastModified: contentLastmod("src/app/quote/page.tsx"),
       changeFrequency: "monthly",
       priority: 0.9,
     }),
     sitemapEntry("/portfolio/", {
-      lastModified: fileMtime("src/app/portfolio/page.tsx"),
+      lastModified: latestContentDate([
+        contentLastmod("src/app/portfolio/page.tsx"),
+        ...portfolioDates,
+      ]),
       changeFrequency: "weekly",
       priority: 0.8,
     }),
     sitemapEntry("/blog/", {
-      lastModified: fileMtime("src/app/blog/page.tsx"),
+      lastModified: latestContentDate([
+        contentLastmod("src/app/blog/page.tsx"),
+        ...blogPostDates,
+      ]),
       changeFrequency: "weekly",
       priority: 0.7,
     }),
     sitemapEntry("/search/", {
-      lastModified: fileMtime("src/app/search/page.tsx"),
+      lastModified: contentLastmod("src/app/search/page.tsx"),
       changeFrequency: "monthly",
       priority: 0.4,
     }),
     sitemapEntry("/locations/", {
-      lastModified: fileMtime("src/app/locations/page.tsx"),
+      lastModified: contentLastmod("src/app/locations/page.tsx"),
       changeFrequency: "weekly",
       priority: 0.8,
     }),
     sitemapEntry("/legal/privacy/", {
-      lastModified: LEGAL_MTIME,
+      lastModified: contentLastmod("src/app/legal/privacy/page.tsx"),
       changeFrequency: "yearly",
       priority: 0.3,
     }),
     sitemapEntry("/legal/terms/", {
-      lastModified: fileMtime("src/app/legal/terms/page.tsx"),
+      lastModified: contentLastmod("src/app/legal/terms/page.tsx"),
       changeFrequency: "yearly",
       priority: 0.3,
     }),
     sitemapEntry("/legal/consumer-rights/", {
-      lastModified: fileMtime("src/app/legal/consumer-rights/page.tsx"),
+      lastModified: contentLastmod("src/app/legal/consumer-rights/page.tsx"),
       changeFrequency: "yearly",
       priority: 0.3,
     }),
@@ -146,7 +185,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const servicePages: MetadataRoute.Sitemap = getAllServiceSlugs().map((slug) =>
     sitemapEntry(`/${slug}/`, {
-      lastModified: SERVICE_CONTENT_MTIME,
+      lastModified: SERVICE_LASTMOD,
       changeFrequency: "weekly",
       priority: 0.9,
     }),
@@ -155,7 +194,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const locationHubPages: MetadataRoute.Sitemap = getAllLocationSlugs().map(
     (slug) =>
       sitemapEntry(`/locations/${slug}/`, {
-        lastModified: LOCATION_CONTENT_MTIME,
+        lastModified: LOCATION_LASTMOD,
         changeFrequency: "weekly",
         priority: 0.8,
       }),
@@ -164,13 +203,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const serviceLocationPages: MetadataRoute.Sitemap =
     getAllServiceLocationPairs().map(({ service, location }) =>
       sitemapEntry(`/${service}/${location}/`, {
-        lastModified: LOCATION_CONTENT_MTIME,
+        lastModified: COMBO_LASTMOD,
         changeFrequency: "weekly",
         priority: 0.85,
       }),
     );
-
-  const dynamicPages = await getDynamicPages();
 
   return [
     ...staticPages,

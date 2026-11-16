@@ -20,8 +20,8 @@ internalLinks:
   - { url: "/locations/port-macquarie", anchor: "Port Macquarie joinery service area" }
   - { url: "/locations/coffs-harbour", anchor: "Coffs Harbour joinery service area" }
   - { url: "/locations/byron-bay", anchor: "Byron Bay joinery service area" }
-  - { url: "/home-office-joinery/orange-nsw", anchor: "home-office joinery in Orange" }
-  - { url: "/staircase-joinery/orange-nsw", anchor: "staircase joinery in Orange" }
+  - { url: "/home-office-joinery/orange", anchor: "home-office joinery in Orange" }
+  - { url: "/staircase-joinery/orange", anchor: "staircase joinery in Orange" }
   - { url: "/blog/timber-staircase-cost-nsw", anchor: "timber staircase cost guide" }
   - { url: "/quote", anchor: "Get a free measure and quote" }
 faq:
@@ -75,7 +75,7 @@ This is where people waste money: a homeowner orders from a distance on nominal 
 
 Orange and Bathurst have established homes, cold conditions and a blend of renovation, regional professional and rural-edge work. Orange had a population of [43,512](https://www.abs.gov.au/census/find-census-data/quickstats/2021/LGA16100) and Bathurst Regional [43,567](https://www.abs.gov.au/census/find-census-data/quickstats/2021/LGA10550) in the Census data used for this programme. Dubbo Regional had [54,922](https://www.abs.gov.au/census/find-census-data/quickstats/2021/LGA12750) people.
 
-The useful joinery brief here is often whole-room: kitchen plus pantry, entry storage, home office, laundry and sometimes staircase work. That is why [home-office joinery in Orange](/home-office-joinery/orange-nsw) and [staircase joinery in Orange](/staircase-joinery/orange-nsw) are service-led pages rather than generic location claims.
+The useful joinery brief here is often whole-room: kitchen plus pantry, entry storage, home office, laundry and sometimes staircase work. That is why [home-office joinery in Orange](/home-office-joinery/orange) and [staircase joinery in Orange](/staircase-joinery/orange) are service-led pages rather than generic location claims.
 
 ## Riverina and Murray: Wagga Wagga, Albury, Griffith
 

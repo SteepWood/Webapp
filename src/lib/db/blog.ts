@@ -115,13 +115,11 @@ export const getPublishedBlogSlugs = cache(async (): Promise<string[]> => {
 
 export const getBlogPostBySlug = cache(
   async (slug: string): Promise<BlogPost | null> => {
-    try {
-      return await prisma.blogPost.findFirst({
-        where: { slug, ...publishedWhere() },
-      });
-    } catch {
-      return null;
-    }
+    // Rethrow database errors. Returning null makes the page call notFound(),
+    // and a transient pooler failure then gets cached as a 404.
+    return prisma.blogPost.findFirst({
+      where: { slug, ...publishedWhere() },
+    });
   },
 );
 

@@ -17,7 +17,7 @@ locationFocus: ["Newcastle", "Bathurst", "Orange"]
 internalLinks:
   - { url: "/staircase-joinery", anchor: "custom staircase joinery" }
   - { url: "/staircase-joinery/newcastle", anchor: "Newcastle staircase joinery" }
-  - { url: "/staircase-joinery/orange-nsw", anchor: "Orange NSW staircase service" }
+  - { url: "/staircase-joinery/orange", anchor: "Orange NSW staircase service" }
   - { url: "/custom-furniture", anchor: "custom timber furniture" }
   - { url: "/locations/newcastle", anchor: "Newcastle service area" }
   - { url: "/locations/bathurst", anchor: "Bathurst joinery projects" }
@@ -153,7 +153,7 @@ Stair demand follows housing form. Detached houses, extensions and split-level s
 | Wollongong | High alterations market | Renovations where access must be planned |
 | City of Sydney | [2.1% separate houses](https://www.abs.gov.au/census) | Fewer domestic stairs; tight access and strata constraints |
 
-For Newcastle homes in Merewether, Cooks Hill or New Lambton, the stair brief often needs an early measure because old openings are rarely perfectly square. In regional work, transport and site readiness should be confirmed before a custom stair is fabricated. Our [Newcastle staircase joinery](/staircase-joinery/newcastle) and [Orange NSW staircase service](/staircase-joinery/orange-nsw) pages explain the service context.
+For Newcastle homes in Merewether, Cooks Hill or New Lambton, the stair brief often needs an early measure because old openings are rarely perfectly square. In regional work, transport and site readiness should be confirmed before a custom stair is fabricated. Our [Newcastle staircase joinery](/staircase-joinery/newcastle) and [Orange NSW staircase service](/staircase-joinery/orange) pages explain the service context.
 
 ## A better staircase brief starts before the timber sample
 

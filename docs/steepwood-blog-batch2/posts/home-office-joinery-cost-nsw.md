@@ -16,7 +16,7 @@ secondaryKeywords: ["custom home office joinery cost Australia", "built in desk 
 locationFocus: ["Wollongong", "Sydney", "Orange"]
 internalLinks:
   - { url: "/home-office-joinery", anchor: "home office joinery" }
-  - { url: "/home-office-joinery/orange-nsw", anchor: "Orange home office joinery" }
+  - { url: "/home-office-joinery/orange", anchor: "Orange home office joinery" }
   - { url: "/office-fitout", anchor: "commercial office fitout joinery" }
   - { url: "/portfolio/home-office-wollongong", anchor: "Wollongong home office portfolio" }
   - { url: "/blog/custom-kitchen-cost-nsw-2026", anchor: "custom joinery cost guide" }

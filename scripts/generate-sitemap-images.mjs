@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 /**
- * Regenerates public/sitemap-images.xml for Batch 2, Batch 3 and Batch 4 posts.
+ * Regenerates public/sitemap-images.xml for Batch 1, Batch 2, Batch 3 and Batch 4 posts.
  * Page <loc> values use trailing slashes to match next.config trailingSlash.
  */
 
@@ -85,9 +85,17 @@ const BATCH4_SLUGS = [
   "childcare-centre-joinery-nsw",
 ];
 
-// dateModified for every Batch 3 post (Publish All Now + Phase 2 image go-live).
-const BATCH3_DATE_MODIFIED = "2026-11-06T07:00:00+11:00";
-const BATCH4_DATE_MODIFIED = "2026-11-16T07:00:00+11:00";
+const BATCH1_SLUGS = [
+  "custom-kitchen-cost-nsw-2026",
+  "flat-pack-vs-custom-kitchen-australia",
+  "2pac-laminate-timber-veneer-kitchen-finishes-nsw",
+  "walk-in-robe-built-in-wardrobe-cost-guide-nsw",
+  "questions-to-ask-custom-joiner-australia",
+  "benchtop-guide-engineered-stone-ban-nsw",
+];
+
+// Name fix and Batch 4 go-live edited Batch 2, 3 and 4 on this day.
+const NAME_FIX_DATE = "2026-11-16";
 
 const SLOT_ORDER = ["hero", "inline-01", "inline-02", "inline-wide", "og"];
 
@@ -117,6 +125,13 @@ const BATCH4_META = path.join(
   "image-metadata.json",
 );
 const OUT_PATH = path.join(ROOT, "public", "sitemap-images.xml");
+const BATCH1_POSTS_DIR = path.join(
+  ROOT,
+  "docs",
+  "steepwood-blog-launch-pack",
+  "steepwood-blog-pack",
+  "posts",
+);
 
 function escapeXml(value) {
   return value
@@ -127,13 +142,30 @@ function escapeXml(value) {
     .replaceAll("'", "&apos;");
 }
 
-function batch2ScheduleDate(dayIndex) {
-  const start = new Date(Date.UTC(2026, 6, 25)); // 2026-07-25
-  start.setUTCDate(start.getUTCDate() + dayIndex);
-  const year = start.getUTCFullYear();
-  const month = String(start.getUTCMonth() + 1).padStart(2, "0");
-  const day = String(start.getUTCDate()).padStart(2, "0");
-  return new Date(`${year}-${month}-${day}T07:00:00+10:00`).toISOString();
+function batch1Slots(slug) {
+  const raw = readFileSync(path.join(BATCH1_POSTS_DIR, `${slug}.md`), "utf8");
+  const altMatch = raw.match(/hero:\s*\n\s+src:[^\n]+\n\s+alt:\s*"([^"]+)"/);
+  const dateMatch = raw.match(/^date:\s*"(\d{4}-\d{2}-\d{2})"/m);
+  if (!altMatch?.[1] || !dateMatch?.[1]) {
+    throw new Error(`Missing hero alt or date for Batch 1 post ${slug}.`);
+  }
+  const alt = altMatch[1].trim();
+  const labels = {
+    hero: alt,
+    og: alt,
+    "inline-01": `${alt} — detail`,
+    "inline-02": `${alt} — context`,
+    "inline-wide": `${alt} — feature`,
+  };
+  const slots = new Map();
+  for (const slot of SLOT_ORDER) {
+    slots.set(slot, {
+      url: `https://steepwood.com.au/blog/${slug}/${slot}.jpg`,
+      alt: labels[slot],
+      caption: labels[slot],
+    });
+  }
+  return { slots, lastmod: dateMatch[1] };
 }
 
 function indexBySlug(records) {
@@ -153,7 +185,11 @@ function appendPost(chunks, slug, slots, lastmodIso) {
   }
   chunks.push(`  <url>`);
   chunks.push(`    <loc>https://steepwood.com.au/blog/${slug}/</loc>`);
-  chunks.push(`    <lastmod>${new Date(lastmodIso).toISOString()}</lastmod>`);
+  const lastmod = String(lastmodIso).slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(lastmod)) {
+    throw new Error(`Invalid lastmod for ${slug}: ${lastmodIso}`);
+  }
+  chunks.push(`    <lastmod>${lastmod}</lastmod>`);
 
   for (const slot of SLOT_ORDER) {
     const record = slots.get(slot);
@@ -182,16 +218,21 @@ const chunks = [
   `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">`,
 ];
 
-for (let i = 0; i < BATCH2_SLUGS.length; i++) {
-  appendPost(chunks, BATCH2_SLUGS[i], batch2.get(BATCH2_SLUGS[i]), batch2ScheduleDate(i));
+for (const slug of BATCH1_SLUGS) {
+  const batch1 = batch1Slots(slug);
+  appendPost(chunks, slug, batch1.slots, batch1.lastmod);
+}
+
+for (const slug of BATCH2_SLUGS) {
+  appendPost(chunks, slug, batch2.get(slug), NAME_FIX_DATE);
 }
 
 for (const slug of BATCH3_SLUGS) {
-  appendPost(chunks, slug, batch3.get(slug), BATCH3_DATE_MODIFIED);
+  appendPost(chunks, slug, batch3.get(slug), NAME_FIX_DATE);
 }
 
 for (const slug of BATCH4_SLUGS) {
-  appendPost(chunks, slug, batch4.get(slug), BATCH4_DATE_MODIFIED);
+  appendPost(chunks, slug, batch4.get(slug), NAME_FIX_DATE);
 }
 
 chunks.push(`</urlset>`);
@@ -199,5 +240,5 @@ chunks.push(``);
 
 writeFileSync(OUT_PATH, chunks.join("\n"), "utf8");
 console.log(
-  `Wrote ${OUT_PATH} (${BATCH2_SLUGS.length + BATCH3_SLUGS.length + BATCH4_SLUGS.length} posts, trailing-slash locs + lastmod).`,
+  `Wrote ${OUT_PATH} (${BATCH1_SLUGS.length + BATCH2_SLUGS.length + BATCH3_SLUGS.length + BATCH4_SLUGS.length} posts, trailing-slash locs + lastmod).`,
 );
