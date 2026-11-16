@@ -173,7 +173,7 @@ A final practical check is to photograph existing conditions before work begins 
 
 ### What does custom joinery cost on Sydney's North Shore?
 
-Indicative [2026](https://www.leadkit.com.au/blog/kitchen-renovation-cost-sydney-2026) kitchen joinery ranges begin around [$30,000 to $55,000](https://www.thequoteyard.com.au/services/built-in-wardrobe-cost-2026-nsw) for a mid-range Sydney kitchen and can exceed [$45,000](%s) for a larger premium custom project. Wardrobes, libraries, offices and staircases are separately scoped because their components, access and installation requirements differ.
+Indicative [2026](https://www.leadkit.com.au/blog/kitchen-renovation-cost-sydney-2026) kitchen joinery ranges begin around [$30,000 to $55,000](https://www.thequoteyard.com.au/services/built-in-wardrobe-cost-2026-nsw) for a mid-range Sydney kitchen and can exceed $45,000 for a larger premium custom project. Wardrobes, libraries, offices and staircases are separately scoped because their components, access and installation requirements differ.
 
 ### Do you work in Ku-ring-gai heritage areas?
 
@@ -181,7 +181,7 @@ Yes, subject to the particular property and its approval pathway. Heritage items
 
 ### How much is a walk-in robe in Mosman?
 
-A market planning range for a walk-in robe in NSW is about [$18,000 to $40,000 or more](%s), depending on room size, cabinetry length, drawers, doors, lighting coordination and finish. A Mosman address does not set the price; access and specification do.
+A market planning range for a walk-in robe in NSW is about $18,000 to $40,000 or more, depending on room size, cabinetry length, drawers, doors, lighting coordination and finish. A Mosman address does not set the price; access and specification do.
 
 ### Can you do a whole-house joinery package?
 

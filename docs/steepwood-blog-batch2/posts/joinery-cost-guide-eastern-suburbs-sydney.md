@@ -180,7 +180,7 @@ A final practical check is to photograph existing conditions before work begins 
 
 ### What does bespoke joinery cost in Sydney's Eastern Suburbs?
 
-Indicative [2026](https://www.leadkit.com.au/blog/kitchen-renovation-cost-sydney-2026) kitchen joinery ranges begin around [$30,000 to $55,000](https://www.leadkit.com.au/blog/kitchen-renovation-cost-sydney-2026) for a mid-range Sydney kitchen and can exceed [$45,000](%s) for a larger bespoke specification. In the Eastern Suburbs, narrow access, out-of-square rooms, strata delivery rules and period details can change installation and coordination costs.
+Indicative [2026](https://www.leadkit.com.au/blog/kitchen-renovation-cost-sydney-2026) kitchen joinery ranges begin around [$30,000 to $55,000](https://www.leadkit.com.au/blog/kitchen-renovation-cost-sydney-2026) for a mid-range Sydney kitchen and can exceed $45,000 for a larger bespoke specification. In the Eastern Suburbs, narrow access, out-of-square rooms, strata delivery rules and period details can change installation and coordination costs.
 
 ### Can you work in a heritage conservation area?
 

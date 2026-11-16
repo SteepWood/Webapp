@@ -1,6 +1,6 @@
 /**
- * Point Orange service links at the live location slug (`orange`).
- * The posts linked to `orange-nsw`, which 404s.
+ * Fix internal links that 404: Orange uses the `orange` slug, and leftover
+ * `%s` placeholders are plain prices with no destination.
  */
 import { PrismaClient } from "@prisma/client";
 
@@ -14,7 +14,9 @@ function replacePaths(value: string): string {
   for (const [from, to] of REPLACEMENTS) {
     next = next.replaceAll(from, to);
   }
-  return next;
+  return next
+    .replaceAll("[$45,000](%s)", "$45,000")
+    .replaceAll("[$18,000 to $40,000 or more](%s)", "$18,000 to $40,000 or more");
 }
 
 const prisma = new PrismaClient();
@@ -25,6 +27,7 @@ async function main() {
       OR: [
         { content: { contains: "orange-nsw" } },
         { excerpt: { contains: "orange-nsw" } },
+        { content: { contains: "](%s)" } },
       ],
     },
     select: { id: true, slug: true, content: true, excerpt: true },
