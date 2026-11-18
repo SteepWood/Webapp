@@ -46,7 +46,7 @@ relatedPosts:
 
 Most NSW homeowners searching for kitchen renovation costs find the same handful of aggregator pages publishing the same ranges with no real context. This guide is different: it's written from inside a Newcastle joinery workshop by a licensed craftsperson, and it explains not just what things cost but **why** — which is the information you actually need before you call anyone for a quote.
 
-SteepWood holds NSW Carpentry Contractor Licence **489553C** and has been manufacturing custom joinery in our Newcastle workshop since 2014. The figures below reflect real 2026 AU pricing, confirmed against current market data from [Whatsthedamage](https://whatsthedamage.com.au/kitchen-renovation-cost-sydney/) and [Buildana](https://www.buildana.com.au/insights/kitchen-renovation-cost-sydney), filtered through the perspective of someone who actually prices and builds these kitchens.
+SteepWood holds NSW Carpentry Contractor Licence **505342C** and has been manufacturing custom joinery in our Newcastle workshop since 2014. The figures below reflect real 2026 AU pricing, confirmed against current market data from [Whatsthedamage](https://whatsthedamage.com.au/kitchen-renovation-cost-sydney/) and [Buildana](https://www.buildana.com.au/insights/kitchen-renovation-cost-sydney), filtered through the perspective of someone who actually prices and builds these kitchens.
 
 ---
 
@@ -233,7 +233,7 @@ When you get a per-metre figure from any joinery studio, ask: does this include 
 
 Getting three quotes is sensible. Comparing them accurately is harder than most homeowners expect.
 
-**Step 1: Verify the licence.** Any person performing joinery installation in NSW must hold a current [NSW Carpentry Contractor Licence](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence). You can verify SteepWood's Licence 489553C on the Service NSW website, and you should check any other studio's licence the same way. An unlicensed installer is not just a compliance risk — it voids your ability to make a claim under the NSW Home Building Act if work is defective.
+**Step 1: Verify the licence.** Any person performing joinery installation in NSW must hold a current [NSW Carpentry Contractor Licence](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence). You can verify SteepWood's Licence 505342C on the Service NSW website, and you should check any other studio's licence the same way. An unlicensed installer is not just a compliance risk — it voids your ability to make a claim under the NSW Home Building Act if work is defective.
 
 **Step 2: Compare inclusions line by line.** Use the inclusions list from the previous section. Request that all quotes itemise: design, carcass material specification (MR board or particleboard), door finish, hardware brand and model, benchtop (if included), and installation. If a quote doesn't specify these items, ask.
 
@@ -271,6 +271,6 @@ Autumn (March–May) and early winter (June–July) are typically our best-avail
 
 A custom kitchen is one of the highest-return investments you can make in a NSW home — both for liveability and for resale. The difference between a $25,000 and a $60,000 kitchen comes down to substrate quality, hardware specification, finish choice, and the expertise of the people designing and building it.
 
-SteepWood has been manufacturing [custom kitchen joinery](/custom-kitchen-joinery) from our Newcastle workshop since 2014 under NSW Carpentry Contractor Licence 489553C. Every kitchen we build carries a 10-year structural warranty. We offer a free in-home measure and quote across NSW and ACT.
+SteepWood has been manufacturing [custom kitchen joinery](/custom-kitchen-joinery) from our Newcastle workshop since 2014 under NSW Carpentry Contractor Licence 505342C. Every kitchen we build carries a 10-year structural warranty. We offer a free in-home measure and quote across NSW and ACT.
 
 **[Get your free measure and quote](/quote)** — or call us on 0468 387 676, Mon–Fri 7am–5pm, Sat by appointment. hello@steepwood.com.au.

@@ -125,7 +125,7 @@ The organisation node should already exist site-wide. If it does not, add it onc
   "foundingDate": "2014",
   "identifier": [
     { "@type": "PropertyValue", "name": "ABN", "value": "52 697 313 269" },
-    { "@type": "PropertyValue", "name": "NSW Carpentry Contractor Licence", "value": "489553C" }
+    { "@type": "PropertyValue", "name": "NSW Carpentry Contractor Licence", "value": "505342C" }
   ],
   "address": {
     "@type": "PostalAddress",

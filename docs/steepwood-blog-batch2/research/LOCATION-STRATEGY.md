@@ -55,7 +55,7 @@ Rationale: the first ten are the drive-time catchment where distance actually he
 
 Newcastle plus Lake Macquarie plus Central Coast alone is $374.1m of approved alterations. The Central Coast is the **seventh-largest alterations market in NSW** and holds the **largest dwelling stock outside Sydney** at 152,706 dwellings.
 
-Known SERP defect to exploit: for *custom joinery Newcastle*, **five of ten page-one results are UK or US businesses** (`ajsjoinery.co.uk`, `jpcjoinery.co.uk`, `jarvisgreenjoinery.co.uk`, `specialistjoineryco.co.uk`, `west-end-cabinet.com`). For *joinery Newcastle NSW*, a directory (Localsearch) outranks every joiner. Aggressive geo-disambiguation — "Newcastle NSW 2300", "the Hunter", postcode and LGA naming, ABN, Licence 489553C, `areaServed` schema — is a structural fix nobody else has made.
+Known SERP defect to exploit: for *custom joinery Newcastle*, **five of ten page-one results are UK or US businesses** (`ajsjoinery.co.uk`, `jpcjoinery.co.uk`, `jarvisgreenjoinery.co.uk`, `specialistjoineryco.co.uk`, `west-end-cabinet.com`). For *joinery Newcastle NSW*, a directory (Localsearch) outranks every joiner. Aggressive geo-disambiguation — "Newcastle NSW 2300", "the Hunter", postcode and LGA naming, ABN, Licence 505342C, `areaServed` schema — is a structural fix nobody else has made.
 
 Keyword evidence: *kitchen renovations newcastle* 210 searches per month, KD 21, CPC $2.02; *kitchen renovations central coast* 170 per month, **KD 8** ([keyword research PDF](https://cdn2.f-cdn.com/files/download/193561461/Keyword%20Research%20For%20Brilliant%20Australia%20-%20Sheet1.pdf)).
 

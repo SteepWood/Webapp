@@ -127,7 +127,7 @@ If the tenancy is a pharmacy rather than a dining room, start with our [pharmacy
 
 ## Working with SteepWood
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty. See our [Newcastle shopfitting](/shopfitting/newcastle) page for retail and hospitality work.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability and a 10-year structural warranty. See our [Newcastle shopfitting](/shopfitting/newcastle) page for retail and hospitality work.
 
 ## Frequently asked questions
 

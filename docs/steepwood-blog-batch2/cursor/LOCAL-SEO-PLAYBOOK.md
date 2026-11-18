@@ -68,7 +68,7 @@ Newcastle NSW, Australia
 hello@steepwood.com.au
 https://steepwood.com.au
 ABN 52 697 313 269
-NSW Carpentry Contractor Licence 489553C
+NSW Carpentry Contractor Licence 505342C
 ```
 
 Priority Australian citations: Google Business Profile, Bing Places, Apple Business Connect, Localsearch, True Local, Yellow Pages Australia, Hotfrog, Aussie Web, StartLocal, Yelp Australia, ABN Lookup consistency, NSW Fair Trading licence record consistency, HIA or relevant industry directory if membership exists.
@@ -89,7 +89,7 @@ Not one of the 34 competitors reviewed publishes a licence number anywhere.
 
 Implementation:
 
-- Footer, site-wide: `Pavit Pty Ltd t/as SteepWood · NSW Carpentry Contractor Licence 489553C · ABN 52 697 313 269 · 0468 387 676`
+- Footer, site-wide: `Pavit Pty Ltd t/as SteepWood · NSW Carpentry Contractor Licence 505342C · ABN 52 697 313 269 · 0468 387 676`
 - Same line on every location page, every service page and in the author aside on blog posts.
 - In the organisation JSON-LD as `identifier` entries, per `SCHEMA-SPEC.md` §4.
 - On the Google Business Profile description and in the services descriptions.

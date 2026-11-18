@@ -137,7 +137,7 @@ Rent-free periods in Sydney are valuable. Running manufacture in parallel with s
 
 Building in Newcastle and installing in Sydney is common for joinery. Workshop costs are lower, quality control is consistent and install crews arrive with everything finished, edged and labelled. For a Hunter comparison, see our [Newcastle shop fitout guide](/blog/shop-fitout-newcastle-guide).
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty. See our [shopfitting service](/shopfitting) and [Sydney commercial joinery](/commercial-joinery/sydney) pages.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability and a 10-year structural warranty. See our [shopfitting service](/shopfitting) and [Sydney commercial joinery](/commercial-joinery/sydney) pages.
 
 ## Frequently asked questions
 

@@ -112,7 +112,7 @@ The [Lake Macquarie district](https://www.buildinginspectionslakemac.com.au/what
 
 ## Working with SteepWood
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty. Our deck work sits within that carpentry licence. Where a job needs another licence class, we say so before you sign.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability and a 10-year structural warranty. Our deck work sits within that carpentry licence. Where a job needs another licence class, we say so before you sign.
 
 ## Frequently asked questions
 

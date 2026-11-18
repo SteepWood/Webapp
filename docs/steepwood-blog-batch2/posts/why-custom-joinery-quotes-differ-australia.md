@@ -193,7 +193,7 @@ A joinery job is affected by geography when it changes access, travel, delivery,
 | Inner Sydney | Parking, stairs and apartment strata requirements |
 | Wollongong | Coastal exposure and inter-regional programme |
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C ([verify a contractor licence through Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence)), ABN 52 697 313 269, and NSW requires a licence for residential building work above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). Our [cabinetmaker wage and charge-out guide](/blog/cabinetmaker-hourly-rate-vs-charge-out-nsw) explains why a labour figure is not the total project cost; our [questions to ask a custom joiner](/blog/questions-to-ask-custom-joiner-australia) help test the rest of the proposal.
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C ([verify a contractor licence through Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence)), ABN 52 697 313 269, and NSW requires a licence for residential building work above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). Our [cabinetmaker wage and charge-out guide](/blog/cabinetmaker-hourly-rate-vs-charge-out-nsw) explains why a labour figure is not the total project cost; our [questions to ask a custom joiner](/blog/questions-to-ask-custom-joiner-australia) help test the rest of the proposal.
 
 ## FAQ
 

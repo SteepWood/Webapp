@@ -118,7 +118,7 @@ Our work on the [Hamptons kitchen in Newcastle](/portfolio/hamptons-kitchen-newc
 
 ## Where we install
 
-We install kitchens across our [Newcastle service area](/locations/newcastle), including Lake Macquarie, Maitland and Port Stephens, and in [Hunter Valley kitchens](/custom-kitchen-joinery/hunter-valley) from Cessnock to Singleton. SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with a 10-year structural warranty on joinery.
+We install kitchens across our [Newcastle service area](/locations/newcastle), including Lake Macquarie, Maitland and Port Stephens, and in [Hunter Valley kitchens](/custom-kitchen-joinery/hunter-valley) from Cessnock to Singleton. SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with a 10-year structural warranty on joinery.
 
 ## Questions to ask at the measure
 

@@ -35,7 +35,7 @@ export function LocalBusinessSchema({ city }: LocalBusinessSchemaProps) {
       {
         "@type": "PropertyValue",
         name: "NSW Carpentry Contractor Licence",
-        value: "489553C",
+        value: "505342C",
       },
     ],
   };

@@ -120,7 +120,7 @@ See our pages for [kitchens in Newcastle](/custom-kitchen-joinery/newcastle), [C
 
 In NSW, residential building work valued over [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements) needs a contractor licence. Plumbing and electrical work must be done by licensed plumbers and electricians, regardless of the job value.
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with a 10-year structural warranty on all joinery. Our quote shows exactly which trades are included and which are separate, so you are never surprised at fit-off.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with a 10-year structural warranty on all joinery. Our quote shows exactly which trades are included and which are separate, so you are never surprised at fit-off.
 
 ## How long installation takes
 

@@ -29,4 +29,4 @@
 
 - NEEDS_OWNER_CONFIRMATION: confirm SteepWood’s HBCF eligibility and process for each eligible residential contract before publication.
 - NEEDS_OWNER_CONFIRMATION: confirm the current public-liability certificate and certificate wording before representing currency to a client.
-- NEEDS_OWNER_CONFIRMATION: confirm the precise licence-category wording for NSW Carpentry Contractor Licence 489553C before publication.
+- NEEDS_OWNER_CONFIRMATION: confirm the precise licence-category wording for NSW Carpentry Contractor Licence 505342C before publication.

@@ -10,7 +10,7 @@ import { WorkshopGallery } from "@/components/sections/about/WorkshopGallery";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
 const ABOUT_DESCRIPTION =
-  "Founded in 2014, SteepWood is a Newcastle custom joinery studio led by Sukhveer Kaur. NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269.";
+  "Founded in 2014, SteepWood is a Newcastle custom joinery studio led by Sukhveer Kaur. NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269.";
 
 export const revalidate = 86400;
 

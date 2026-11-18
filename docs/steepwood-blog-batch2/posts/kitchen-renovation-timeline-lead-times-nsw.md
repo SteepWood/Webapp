@@ -168,7 +168,7 @@ Our [NSW kitchen cost guide](/blog/custom-kitchen-cost-nsw-2026) explains why re
 
 For the cabinetry scope itself, start with [custom kitchen joinery](/custom-kitchen-joinery). Our [Newcastle service area](/locations/newcastle) is the appropriate local starting point before a target date is set.
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above $5,000 including GST, and contracts over $20,000 need the appropriate large-job and Home Building Compensation pathway ([NSW Government contract guide](https://www.nsw.gov.au/housing-and-construction/compliance-and-regulation/your-obligations-to-your-customers/guide-to-providing-home-building-contracts)).
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269. NSW requires a licence for residential building work above $5,000 including GST, and contracts over $20,000 need the appropriate large-job and Home Building Compensation pathway ([NSW Government contract guide](https://www.nsw.gov.au/housing-and-construction/compliance-and-regulation/your-obligations-to-your-customers/guide-to-providing-home-building-contracts)).
 
 A kitchen is often technically installed before it is genuinely ready to use. The benchtop needs to be in place before the sink and cooktop can be fitted; an integrated dishwasher needs a panel adjusted after it is operating; doors and drawers need final alignment once the room has settled. Build that handover week into the programme. It is where a careful installer corrects the small things that distinguish a finished fitout from a room that merely has cabinets in it.
 

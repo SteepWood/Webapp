@@ -5,7 +5,7 @@ Batch 3 briefs, recorded from the finished posts so Cursor, an editor or a futur
 - 1,000–1,900 words, Australian English, author Sukhveer Kaur.
 - Direct answer to the primary keyword inside the first 100 words.
 - At least 6 H2s, 2 tables, 4 inline sources and 5 FAQs matching the `FAQPage` schema.
-- One SteepWood CTA block and the trust line (ABN 52 697 313 269, Licence 489553C, $20M public liability, 10-year structural warranty).
+- One SteepWood CTA block and the trust line (ABN 52 697 313 269, Licence 505342C, $20M public liability, 10-year structural warranty).
 - Internal links only to pages live on the post's publish date (checked by `scripts/build_and_validate.py`).
 - 5 image slots per post: hero, og, inline-01, inline-02, inline-wide.
 
@@ -97,7 +97,7 @@ Batch 3 briefs, recorded from the finished posts so Cursor, an editor or a futur
 - **Internal links** `/locations/newcastle`, `/locations/hunter-valley`, `/blog/joinery-timber-species-guide-nsw`, `/blog/nsw-building-licence-hbcf-warranty-guide`, `/blog/questions-to-ask-custom-joiner-australia`, `/contact`, `/quote`
 - **Related posts** joinery-timber-species-guide-nsw, nsw-building-licence-hbcf-warranty-guide, questions-to-ask-custom-joiner-australia
 - **FAQ** How much does a deck cost per square metre in Newcastle? · Is composite decking worth it in Newcastle? · Do I need council approval for a deck in Newcastle? · What is the best timber for decking in Newcastle? · How long does it take to build a deck?
-- **Flags** README §5 item 1: confirm deck work sits within Carpentry Contractor Licence 489553C, or soften deck-building claims. README §5 item 2: decide whether to build /decking pages; until then decking posts link to location pages and /quote.
+- **Flags** README §5 item 1: confirm deck work sits within Carpentry Contractor Licence 505342C, or soften deck-building claims. README §5 item 2: decide whether to build /decking pages; until then decking posts link to location pages and /quote.
 
 ---
 
@@ -205,7 +205,7 @@ Batch 3 briefs, recorded from the finished posts so Cursor, an editor or a futur
 - **Internal links** `/locations/central-coast`, `/blog/decking-cost-newcastle`, `/blog/joinery-cost-guide-central-coast`, `/blog/joinery-timber-species-guide-nsw`, `/contact`, `/quote`
 - **Related posts** decking-cost-newcastle, joinery-cost-guide-central-coast, joinery-timber-species-guide-nsw
 - **FAQ** Is composite decking more expensive than timber? · Is composite decking good near the beach? · Can I use composite decking in a bushfire zone? · Does composite decking get hot? · How long does composite decking last?
-- **Flags** README §5 item 1: confirm deck work sits within Carpentry Contractor Licence 489553C, or soften deck-building claims. README §5 item 2: decide whether to build /decking pages; until then decking posts link to location pages and /quote.
+- **Flags** README §5 item 1: confirm deck work sits within Carpentry Contractor Licence 505342C, or soften deck-building claims. README §5 item 2: decide whether to build /decking pages; until then decking posts link to location pages and /quote.
 
 ---
 

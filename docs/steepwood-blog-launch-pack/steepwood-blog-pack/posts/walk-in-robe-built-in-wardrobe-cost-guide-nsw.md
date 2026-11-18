@@ -275,6 +275,6 @@ Yes, and it is one of the more straightforward custom joinery projects. A built-
 
 ## Get a Free Wardrobe Quote from SteepWood
 
-SteepWood builds [custom built-in wardrobes](/built-in-wardrobes) and walk-in robes from our Newcastle workshop. Every wardrobe is built to the same structural standard as our kitchen joinery — 18mm MR board carcasses, Blum hardware, and your choice of Polytec, 2-pac, or timber veneer finish. NSW Carpentry Contractor Licence 489553C. 10-year structural warranty on all joinery.
+SteepWood builds [custom built-in wardrobes](/built-in-wardrobes) and walk-in robes from our Newcastle workshop. Every wardrobe is built to the same structural standard as our kitchen joinery — 18mm MR board carcasses, Blum hardware, and your choice of Polytec, 2-pac, or timber veneer finish. NSW Carpentry Contractor Licence 505342C. 10-year structural warranty on all joinery.
 
 We offer a free in-home measure and quote across NSW and ACT. [Get a free measure and quote](/quote), call 0468 387 676, or email hello@steepwood.com.au. Monday–Friday 7am–5pm, Saturday by appointment.

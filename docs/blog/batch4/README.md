@@ -79,7 +79,7 @@ Items 1, 6 and 9 were resolved by the owner on 16 November. Confirm the rest whe
 
 | # | Item | Affects |
 | --- | --- | --- |
-| 1 | **Deck licence scope.** Resolved 16 Nov: wording softened. The post now says SteepWood takes on timber decks and outdoor carpentry within Carpentry Licence 489553C and will say at quote stage if a deck needs another licence class. | Post 4 |
+| 1 | **Deck licence scope.** Resolved 16 Nov: wording softened. The post now says SteepWood takes on timber decks and outdoor carpentry within Carpentry Licence 505342C and will say at quote stage if a deck needs another licence class. | Post 4 |
 | 2 | **Build `/decking` pages?** Decking posts still link to `/locations/newcastle` and `/quote` only. | Post 4 |
 | 4 | **Named clients or projects.** Posts name no clients. Say if case studies can be added (for example the Rutherford barber fitout). | Posts 1, 3, 5, 7, 8, 10 |
 | 5 | **"Illustrative image" captions.** Generated images are captioned as illustrative. Supply real project photos for any slot if you prefer. | Phase 2 |

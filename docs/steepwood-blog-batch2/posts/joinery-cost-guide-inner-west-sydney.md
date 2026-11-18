@@ -169,7 +169,7 @@ The Inner West has [heritage conservation areas](https://www.innerwest.nsw.gov.a
 
 This is general information, not planning or legal advice. It is still worth doing before design sign-off because a period profile, reused original element or different service route can be a better outcome than forcing a generic kitchen into an old room.
 
-For money and residential work, the compliance point is straightforward: SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). Our workshop is in Newcastle, NSW; we provide a free in-home measure and quote across NSW and ACT, and installation crews travel. There is no Sydney showroom or second workshop implied by this service area.
+For money and residential work, the compliance point is straightforward: SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). Our workshop is in Newcastle, NSW; we provide a free in-home measure and quote across NSW and ACT, and installation crews travel. There is no Sydney showroom or second workshop implied by this service area.
 
 ## FAQ
 

@@ -10,7 +10,7 @@ export const FOUNDING_YEAR = 2014;
 export const ABN_DISPLAY = "52 697 313 269";
 
 export const CARPENTRY_LICENCE_DISPLAY =
-  "NSW Carpentry Contractor Licence 489553C";
+  "NSW Carpentry Contractor Licence 505342C";
 
 export const PUBLIC_LIABILITY_INSURANCE_DISPLAY =
   "Public liability insurance — $20 million";

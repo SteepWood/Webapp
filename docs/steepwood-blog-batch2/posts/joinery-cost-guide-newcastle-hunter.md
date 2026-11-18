@@ -63,7 +63,7 @@ The cost range is useful only when the scope is comparable. Ask for the material
 
 ## Newcastle, New South Wales, and why that needs saying
 
-Search engines routinely mix Newcastle NSW with businesses overseas. Local signals need to be plain: Newcastle NSW 2300, the City of Newcastle, Lake Macquarie, Maitland, Port Stephens and the Hunter. SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, with NSW Carpentry Contractor Licence 489553C, and our workshop is in Newcastle NSW.
+Search engines routinely mix Newcastle NSW with businesses overseas. Local signals need to be plain: Newcastle NSW 2300, the City of Newcastle, Lake Macquarie, Maitland, Port Stephens and the Hunter. SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, with NSW Carpentry Contractor Licence 505342C, and our workshop is in Newcastle NSW.
 
 The workshop location is not a slogan. It controls how we measure, manufacture, stage delivery and return for installation. We offer a free in-home measure and quote across NSW and the ACT, and installation crews travel, but that does not mean there is a Lake Macquarie showroom, a Maitland factory or a Hunter Valley branch. Use the [Newcastle NSW joinery service area](/locations/newcastle) or [Hunter Valley joinery service area](/locations/hunter-valley) for the service model; call the workshop before planning a visit.
 
@@ -182,7 +182,7 @@ See a completed direction in our [Newcastle Hamptons kitchen portfolio](/portfol
 
 ## Licence, insurance and what to check locally
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C ([verify through Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence)), ABN 52 697 313 269. NSW requires a licence for residential building work above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). Verify the licensee, licence number, category, written scope, GST basis and relevant insurance documents before a deposit.
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C ([verify through Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence)), ABN 52 697 313 269. NSW requires a licence for residential building work above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). Verify the licensee, licence number, category, written scope, GST basis and relevant insurance documents before a deposit.
 
 For eligible residential work at [$20,000 including GST or more](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw), ask about the HBCF certificate before any deposit or payment. This is general information, not legal advice. Local council, strata, heritage and building-management conditions can also affect a particular project, so check the actual property before work is released.
 

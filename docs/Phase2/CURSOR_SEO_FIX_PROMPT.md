@@ -467,7 +467,7 @@ No verified GBP for SteepWood. Local pack visibility is impossible without it.
    - Upload 10+ workshop and portfolio photos.
    - Add all 10 services as products with descriptions.
    - Seed 5+ owner Q&A questions covering pricing, timeline, materials, warranty, service area.
-   - Add the NSW Carpentry Contractor Licence number (489553C) as an attribute and in the business description.
+   - Add the NSW Carpentry Contractor Licence number (505342C) as an attribute and in the business description.
 
 ### Sitewide code change to support GBP linking
 
@@ -943,7 +943,7 @@ export const rootGraph = {
       ],
       identifier: [
         { '@type': 'PropertyValue', propertyID: 'ABN', value: '52 697 313 269' },
-        { '@type': 'PropertyValue', propertyID: 'NSW Carpentry Contractor Licence', value: '489553C' },
+        { '@type': 'PropertyValue', propertyID: 'NSW Carpentry Contractor Licence', value: '505342C' },
       ],
       address: {
         '@type': 'PostalAddress',
@@ -1014,7 +1014,7 @@ export const rootGraph = {
 
 For each directory:
 - Use **identical NAP**: SteepWood Custom Joinery / Newcastle NSW workshop address / 0468 387 676 / hello@steepwood.com.au
-- Reference: NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269, since 2014
+- Reference: NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269, since 2014
 - Use the same business description (200–300 words) across all listings
 
 Submit in this order:
@@ -1204,7 +1204,7 @@ Use this as the source of truth for every on-page edit. Where a keyword appears 
 | 5 | kitchen design trends Australia 2026 | Blog/insights teaser block |
 | 6 | engineered stone alternatives Australia | Materials band ("post-engineered-stone benchtops in sintered stone, porcelain, natural stone") |
 | 7 | custom joinery warranty Australia | Trust band ("10-year structural warranty, 25-year Blum hardware warranty") |
-| 8 | NSW carpentry licence check | Licence band ("NSW Carpentry Contractor 489553C — verify on Service NSW") |
+| 8 | NSW carpentry licence check | Licence band ("NSW Carpentry Contractor 505342C — verify on Service NSW") |
 
 ### `/custom-kitchen-joinery/`
 

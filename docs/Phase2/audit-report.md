@@ -1,7 +1,7 @@
 # SteepWood.com.au — Full SEO Audit
 
 **Site:** https://steepwood.com.au
-**Trading entity:** Pavit Pty Ltd t/a SteepWood (ABN 52 697 313 269 · NSW Carpentry Contractor 489553C)
+**Trading entity:** Pavit Pty Ltd t/a SteepWood (ABN 52 697 313 269 · NSW Carpentry Contractor 505342C)
 **HQ:** Newcastle, NSW
 **Audit date:** 22 June 2026  
 **P0 code fixes shipped:** 22 June 2026 (Phase 2 PR 1)

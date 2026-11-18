@@ -137,7 +137,7 @@ These are indicative 2026 ranges, not a SteepWood quote. Our [home office joiner
 
 Sydney apartments and terraces need compact layouts, Newcastle and Lake Macquarie homes often have room for a full study, and Central Coast homes often mix work with coastal living. See [Sydney home office joinery](/home-office-joinery/sydney), [Newcastle home office joinery](/home-office-joinery/newcastle) and [Central Coast home office joinery](/home-office-joinery/central-coast). Our [Wollongong home office project](/portfolio/home-office-wollongong) shows a finished example. North Shore houses are covered in our [North Shore home office joinery guide](/blog/home-office-joinery-north-shore-sydney).
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability and a 10-year structural warranty on joinery.
 
 ## Frequently asked questions
 

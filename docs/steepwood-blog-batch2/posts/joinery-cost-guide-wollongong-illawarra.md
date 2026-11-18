@@ -156,7 +156,7 @@ A long-distance project succeeds on preparation. The room must be ready, site ac
 
 ### Licence, insurance and a clear written scope
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). Confirm the licensee, work scope, exclusions and coordination responsibilities in writing.
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269. NSW requires a licence for residential building work above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). Confirm the licensee, work scope, exclusions and coordination responsibilities in writing.
 
 For residential work valued at [$20,000 including GST or more](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw), check the relevant Home Building Compensation Fund requirements before a deposit. SteepWood publicly provides a [10-year structural warranty](https://steepwood.com.au/about/) on our joinery. The project still needs correct site preparation, clear variations and a proper installation plan.
 

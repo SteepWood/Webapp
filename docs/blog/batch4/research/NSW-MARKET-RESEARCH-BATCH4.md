@@ -1,6 +1,6 @@
 # NSW Market Research — Batch 4 (10 posts, 7 to 16 November 2026)
 
-Prepared 16 November 2026 for SteepWood (Pavit Pty Ltd t/as SteepWood, ABN 52 697 313 269, Licence 489553C), Newcastle NSW. Window: 10 posts, one per day, dated 7 to 16 November 2026 (the day after Batch 3 finished, up to today) and all published today.
+Prepared 16 November 2026 for SteepWood (Pavit Pty Ltd t/as SteepWood, ABN 52 697 313 269, Licence 505342C), Newcastle NSW. Window: 10 posts, one per day, dated 7 to 16 November 2026 (the day after Batch 3 finished, up to today) and all published today.
 
 Batch 2 (`blog-batch2/research/NSW-MARKET-RESEARCH.md`) and Batch 3 (`blog-batch3/research/NSW-MARKET-RESEARCH-BATCH3.md`) evidence still applies and is not repeated here. This file covers what is new: the gaps left after 66 live posts, the new locations, the new competitors and the keyword, structure and schema decisions for Batch 4.
 

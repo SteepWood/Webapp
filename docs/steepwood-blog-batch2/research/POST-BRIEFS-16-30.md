@@ -11,7 +11,7 @@ Read `SHARED_CONTEXT.md` and the universal requirements at the top of `POST-BRIE
 5. Be **materially different** from every other location post. Same skeleton, genuinely different content. A reader in Bowral and a reader in Marrickville must get different advice. Reused paragraphs across location posts will be rejected.
 6. Link to `/locations/sydney` or `/locations/newcastle` and so on **only where that hub already exists**. The 16 live hubs are: newcastle, sydney, canberra, melbourne, central-coast, hunter-valley, gold-coast, wollongong, brisbane, perth, byron-bay, port-macquarie, coffs-harbour, adelaide, bathurst, orange. Everything else is plain text.
 7. State the travel position honestly. The workshop is in Newcastle, the in-home measure and quote is free across NSW and ACT, and installation crews travel. Do not imply a local showroom or a second workshop.
-8. Include the licence line: Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, and note that NSW requires a licence for residential building work above $5,000 including GST ([NSW Government](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements)).
+8. Include the licence line: Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C, and note that NSW requires a licence for residential building work above $5,000 including GST ([NSW Government](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements)).
 
 ---
 

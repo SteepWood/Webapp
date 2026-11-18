@@ -39,7 +39,7 @@ def service(slug):
     return "Joinery"
 
 # Owner-confirmation items by slug (README section 5 numbering).
-DECK = "README §5 item 1: confirm deck work sits within Carpentry Contractor Licence 489553C, or soften deck-building claims."
+DECK = "README §5 item 1: confirm deck work sits within Carpentry Contractor Licence 505342C, or soften deck-building claims."
 DECKPAGE = "README §5 item 2: decide whether to build /decking pages; until then decking posts link to location pages and /quote."
 TIMES = "README §5 item 6: confirm install durations and lead times quoted in this post match SteepWood practice."
 ELSEWHERE = "README §5 item 7: confirm policy on installing kitchens bought elsewhere (FAQ answer is cautious)."
@@ -171,7 +171,7 @@ Batch 3 briefs, recorded from the finished posts so Cursor, an editor or a futur
 - 1,000–1,900 words, Australian English, author Sukhveer Kaur.
 - Direct answer to the primary keyword inside the first 100 words.
 - At least 6 H2s, 2 tables, 4 inline sources and 5 FAQs matching the `FAQPage` schema.
-- One SteepWood CTA block and the trust line (ABN 52 697 313 269, Licence 489553C, $20M public liability, 10-year structural warranty).
+- One SteepWood CTA block and the trust line (ABN 52 697 313 269, Licence 505342C, $20M public liability, 10-year structural warranty).
 - Internal links only to pages live on the post's publish date (checked by `scripts/build_and_validate.py`).
 - 5 image slots per post: hero, og, inline-01, inline-02, inline-wide.
 

@@ -129,7 +129,7 @@ Our [Newcastle service area](/locations/newcastle) page lists Hunter suburbs, an
 5. Allow budget for accessible design at reception and in bathrooms.
 6. Ask for joinery shop drawings before manufacture.
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery. See our [Newcastle commercial joinery guide](/blog/commercial-joinery-newcastle-guide) and [commercial joinery in Newcastle](/commercial-joinery/newcastle) page.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability and a 10-year structural warranty on joinery. See our [Newcastle commercial joinery guide](/blog/commercial-joinery-newcastle-guide) and [commercial joinery in Newcastle](/commercial-joinery/newcastle) page.
 
 
 ## Related guides in this series

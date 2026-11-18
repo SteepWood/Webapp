@@ -4,7 +4,7 @@ Every post must follow this brief.
 
 ## SteepWood facts (use these verbatim)
 - Premium custom joinery studio, **Newcastle NSW** workshop
-- NSW Carpentry Contractor Licence **489553C**
+- NSW Carpentry Contractor Licence **505342C**
 - ABN 52 697 313 269
 - 10-year structural warranty on all joinery
 - Hand-crafted in Newcastle workshop, Australian-sourced timber where possible

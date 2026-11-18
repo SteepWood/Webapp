@@ -156,7 +156,7 @@ Equally, a local supplier may be the right choice if they can show the material,
 
 Manufacture dates depend on approved drawings, material availability and workshop capacity. Delivery dates depend on a ready site and a safe route. Benchtops may need a template after cabinets are installed. These are ordinary dependencies, not excuses. A regional programme should show them early so the local builder and owner can plan the rest of the works around a real sequence.
 
-For money and residential work, SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements).
+For money and residential work, SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements).
 
 ## FAQ
 

@@ -251,7 +251,7 @@ In a typical year, our kitchen joinery splits roughly as follows by finish type:
 
 We do not specify standard particleboard substrate for any kitchen, and we do not use low-cost laminates outside the Polytec and Laminex commercial ranges. These are not upsells — they are the minimum standard required to produce work we are prepared to warranty.
 
-All SteepWood joinery carries a **10-year structural warranty** (Lic. 489553C). When we specify a finish for your kitchen, we are specifying something we expect to stand behind for a decade.
+All SteepWood joinery carries a **10-year structural warranty** (Lic. 505342C). When we specify a finish for your kitchen, we are specifying something we expect to stand behind for a decade.
 
 ---
 
@@ -279,4 +279,4 @@ Timber veneer can work in laundries and bathrooms when correctly specified, but 
 
 ---
 
-If you are at the stage of choosing a kitchen finish and want a direct recommendation based on your home, your location, and your brief, we offer a free in-home measure and quote across all of NSW and ACT. Call **0468 387 676** (Mon–Fri 7am–5pm, Sat by appointment), email **hello@steepwood.com.au**, or use the form at [/quote](/quote) to start the conversation. Our Newcastle workshop builds every piece of [custom kitchen joinery](/custom-kitchen-joinery) we supply — no outsourced flat-pack assembly, no interstate freight delays — and we stand behind all structural work with a 10-year warranty (NSW Carpentry Contractor Licence 489553C).
+If you are at the stage of choosing a kitchen finish and want a direct recommendation based on your home, your location, and your brief, we offer a free in-home measure and quote across all of NSW and ACT. Call **0468 387 676** (Mon–Fri 7am–5pm, Sat by appointment), email **hello@steepwood.com.au**, or use the form at [/quote](/quote) to start the conversation. Our Newcastle workshop builds every piece of [custom kitchen joinery](/custom-kitchen-joinery) we supply — no outsourced flat-pack assembly, no interstate freight delays — and we stand behind all structural work with a 10-year warranty (NSW Carpentry Contractor Licence 505342C).

@@ -138,7 +138,7 @@ Childcare centres have their own joinery rules, set out in our [childcare centre
 
 ## Working with SteepWood
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty. See our [shopfitting service](/shopfitting) page for retail work.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability and a 10-year structural warranty. See our [shopfitting service](/shopfitting) page for retail work.
 
 ## Frequently asked questions
 

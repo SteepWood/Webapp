@@ -249,7 +249,7 @@ Standard flat-pack cabinets using 16mm particleboard will typically last 8–12 
 
 ## Ready to Compare Properly?
 
-If you have a kitchen project in NSW or the ACT and you want a quote you can actually compare against a flat-pack estimate — line by line, with clear scope — we will give you one at no cost. SteepWood holds NSW Carpentry Contractor Licence **489553C**, builds in our Newcastle workshop, and backs every kitchen with a **10-year structural warranty**. We do not take a deposit until you have approved drawings.
+If you have a kitchen project in NSW or the ACT and you want a quote you can actually compare against a flat-pack estimate — line by line, with clear scope — we will give you one at no cost. SteepWood holds NSW Carpentry Contractor Licence **505342C**, builds in our Newcastle workshop, and backs every kitchen with a **10-year structural warranty**. We do not take a deposit until you have approved drawings.
 
 [Get a free measure and quote](/quote) — or read our [Custom Kitchen Cost Guide for NSW](/blog/custom-kitchen-cost-nsw-2026) to understand what drives the numbers before you call.
 

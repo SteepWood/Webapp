@@ -39,5 +39,5 @@
 
 ## NEEDS_OWNER_CONFIRMATION
 
-- README §5 item 1: confirm deck work sits within Carpentry Contractor Licence 489553C, or soften deck-building claims.
+- README §5 item 1: confirm deck work sits within Carpentry Contractor Licence 505342C, or soften deck-building claims.
 - README §5 item 2: decide whether to build /decking pages; until then decking posts link to location pages and /quote.

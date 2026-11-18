@@ -323,7 +323,7 @@ const SECONDARY = SERVICE_SECONDARY_KEYWORDS[SERVICE]; // ["custom kitchens", ..
 
 export const metadata: Metadata = {
   title: `${LABEL} Australia — SteepWood Custom Cabinetry Since 2014`,
-  description: `${LABEL} designed and built by SteepWood. ${SECONDARY[0]}, ${SECONDARY[1]} and ${SECONDARY[2]} delivered nationally from our Newcastle workshop. NSW Licence 489553C.`,
+  description: `${LABEL} designed and built by SteepWood. ${SECONDARY[0]}, ${SECONDARY[1]} and ${SECONDARY[2]} delivered nationally from our Newcastle workshop. NSW Licence 505342C.`,
   alternates: { canonical: `https://steepwood.com.au/${SERVICE}/` },
   openGraph: {
     title: `${LABEL} Australia — SteepWood`,
@@ -349,7 +349,7 @@ export default function Page() {
         <section className="hero-intro">
           <p>
             SteepWood designs, manufactures and installs {KW} from our Newcastle workshop.
-            Operating as Pavit Pty Ltd since 2014 (NSW Carpentry Contractor Licence 489553C),
+            Operating as Pavit Pty Ltd since 2014 (NSW Carpentry Contractor Licence 505342C),
             we deliver {SECONDARY[0]}, {SECONDARY[1]} and {SECONDARY[2]} to architects, builders
             and homeowners nationwide.
           </p>
@@ -428,7 +428,7 @@ const STATE = CITY_STATE[CITY];   // "SA"
 
 export const metadata: Metadata = {
   title: `Custom Joinery ${LABEL} — Cabinet Maker ${LABEL} ${STATE} | SteepWood`,
-  description: `Custom joinery and cabinetry in ${LABEL} ${STATE}. Custom kitchens, built-in wardrobes, vanities and commercial fit-outs delivered to ${LABEL}. NSW Licence 489553C.`,
+  description: `Custom joinery and cabinetry in ${LABEL} ${STATE}. Custom kitchens, built-in wardrobes, vanities and commercial fit-outs delivered to ${LABEL}. NSW Licence 505342C.`,
   alternates: { canonical: `https://steepwood.com.au/locations/${CITY}/` },
 };
 
@@ -534,7 +534,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `https://steepwood.com.au/${SERVICE}/${CITY}/` },
   openGraph: {
     title: `${SVC_LABEL} ${CITY_LBL} ${STATE}`,
-    description: `Bespoke ${SVC_KW} in ${CITY_LBL}. NSW Licence 489553C.`,
+    description: `Bespoke ${SVC_KW} in ${CITY_LBL}. NSW Licence 505342C.`,
     url: `https://steepwood.com.au/${SERVICE}/${CITY}/`,
   },
 };
@@ -557,7 +557,7 @@ export default function Page() {
           <p>
             SteepWood delivers {SVC_KW} in {CITY_LBL} {STATE}. Every {SVC_KW} project for {CITY_LBL}
             clients is drawn, manufactured and installed by our team — operating since 2014 as
-            Pavit Pty Ltd (NSW Carpentry Contractor Licence 489553C).
+            Pavit Pty Ltd (NSW Carpentry Contractor Licence 505342C).
           </p>
         </section>
 
@@ -670,8 +670,8 @@ The home page is currently competing with combo pages for "custom joinery newcas
 // app/page.tsx — HOME
 
 export const metadata: Metadata = {
-  title: 'SteepWood — Custom Joinery & Cabinetmakers Australia (NSW Licence 489553C)',
-  description: 'Custom joinery, kitchens, wardrobes, vanities and commercial fit-outs across Australia. Newcastle workshop since 2014. NSW Carpentry Licence 489553C.',
+  title: 'SteepWood — Custom Joinery & Cabinetmakers Australia (NSW Licence 505342C)',
+  description: 'Custom joinery, kitchens, wardrobes, vanities and commercial fit-outs across Australia. Newcastle workshop since 2014. NSW Carpentry Licence 505342C.',
   alternates: { canonical: 'https://steepwood.com.au/' },
 };
 ```
@@ -690,7 +690,7 @@ export const metadata: Metadata = {
 // app/about/page.tsx
 export const metadata: Metadata = {
   title: 'About SteepWood — Custom Joinery Newcastle Since 2014 | Pavit Pty Ltd',
-  description: 'Founded in 2014, SteepWood is a Newcastle custom joinery studio led by Sukhveer Kaur. NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269.',
+  description: 'Founded in 2014, SteepWood is a Newcastle custom joinery studio led by Sukhveer Kaur. NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269.',
   alternates: { canonical: 'https://steepwood.com.au/about/' },
 };
 
@@ -805,7 +805,7 @@ export function Footer() {
           <h3>SteepWood</h3>
           <p>Pavit Pty Ltd</p>
           <p>ABN 52 697 313 269</p>
-          <p>NSW Carpentry Contractor Licence 489553C</p>
+          <p>NSW Carpentry Contractor Licence 505342C</p>
           <p><a href="mailto:hello@steepwood.com.au">hello@steepwood.com.au</a></p>
           <p><a href="tel:+61468387676">0468 387 676</a></p>
         </section>
@@ -963,7 +963,7 @@ export function LocalBusinessSchema({ city }: { city?: City }) {
       : { '@type': 'Country', name: 'Australia' },
     identifier: [
       { '@type': 'PropertyValue', name: 'ABN', value: '52 697 313 269' },
-      { '@type': 'PropertyValue', name: 'NSW Carpentry Contractor Licence', value: '489553C' },
+      { '@type': 'PropertyValue', name: 'NSW Carpentry Contractor Licence', value: '505342C' },
     ],
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />;

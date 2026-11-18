@@ -134,7 +134,7 @@ You can [check a builder or tradesperson licence](https://www.service.nsw.gov.au
 
 Commercial joinery often sits within a bigger fitout. See [Central Coast office fitouts](/office-fitout/central-coast) and [Central Coast shopfitting](/shopfitting/central-coast).
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability and a 10-year structural warranty on joinery.
 
 ## Frequently asked questions
 

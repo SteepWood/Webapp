@@ -277,7 +277,7 @@ Do not report Phase 1 complete until every line passes.
 - [ ] Rich Results Test passes with zero errors on at least six sampled posts
 - [ ] Schema Markup Validator returns zero errors on the same six
 - [ ] Every marked-up FAQ is visible on the page
-- [ ] Organisation node carries ABN 52 697 313 269 and Licence 489553C, rating 4.9 from 13 reviews
+- [ ] Organisation node carries ABN 52 697 313 269 and Licence 505342C, rating 4.9 from 13 reviews
 - [ ] No `Product`, `Offer` or article-level `Review` markup anywhere
 
 **Scheduling and indexing**

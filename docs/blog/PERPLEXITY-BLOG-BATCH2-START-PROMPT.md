@@ -28,7 +28,7 @@ Also read Batch 1 style models if available:
 
 - Australian English only  
 - Author: Sukhveer Kaur  
-- Facts: Newcastle workshop, Licence 489553C, ABN 52 697 313 269, since 2014  
+- Facts: Newcastle workshop, Licence 505342C, ABN 52 697 313 269, since 2014  
 - Never republish Batch 1 or retired blog slugs  
 - No code deploy, no image generation in this phase  
 

@@ -152,7 +152,7 @@ For a substantial brief, work with a complete drawing set, appliance specificati
 
 ### Licence, heritage and consumer checks
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). For work valued at [$20,000 including GST or more](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw), confirm the relevant HBCF requirements before any deposit.
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269. NSW requires a licence for residential building work above [$5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). For work valued at [$20,000 including GST or more](https://www.hiainsurance.com.au/products/home-warranty-insurance/home-warranty-insurance-nsw), confirm the relevant HBCF requirements before any deposit.
 
 Character stock can bring heritage considerations. [Northern Beaches Council says owners can modernise a listed building but must respect its heritage significance](https://www.northernbeaches.nsw.gov.au/community/heritage/information-owners-heritage-items). Check the specific property and any external or building changes early. Internal joinery may be simpler, but it should still fit the room’s proportions rather than erase the character that made the house valuable.
 

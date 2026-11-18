@@ -23,17 +23,17 @@ import { WorkshopSection } from "@/components/sections/WorkshopSection";
 import { getHomepagePageData } from "@/lib/db/homepage-page";
 import { canonicalUrl } from "@/lib/seo/canonical";
 
-const HOMEPAGE_HERO_IMAGE = "/images/hero/great-room-simple-sage.jpg";
+const HOMEPAGE_HERO_IMAGE = "/images/hero/fine-walnut-kitchen.jpg";
 
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "SteepWood — Custom Joinery & Cabinetmakers Australia (NSW Licence 489553C)",
+      "SteepWood — Custom Joinery & Cabinetmakers Australia (NSW Licence 505342C)",
   },
   description:
-    "Custom joinery, kitchens, wardrobes, vanities and commercial fit-outs across Australia. Workshop since 2014. NSW Carpentry Licence 489553C.",
+    "Custom joinery, kitchens, wardrobes, vanities and commercial fit-outs across Australia. Workshop since 2014. NSW Carpentry Licence 505342C.",
   alternates: {
     canonical: canonicalUrl("/"),
     languages: {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title:
       "SteepWood — Custom Joinery & Cabinetmakers Australia | SteepWood Joinery",
     description:
-      "Custom joinery, kitchens, wardrobes, vanities and commercial fit-outs across Australia. Workshop since 2014. NSW Carpentry Licence 489553C.",
+      "Custom joinery, kitchens, wardrobes, vanities and commercial fit-outs across Australia. Workshop since 2014. NSW Carpentry Licence 505342C.",
     url: canonicalUrl("/"),
     siteName: "SteepWood",
     locale: "en_AU",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title:
       "SteepWood — Custom Joinery & Cabinetmakers Australia | SteepWood Joinery",
     description:
-      "Custom joinery, kitchens, wardrobes, vanities and commercial fit-outs across Australia. Workshop since 2014. NSW Carpentry Licence 489553C.",
+      "Custom joinery, kitchens, wardrobes, vanities and commercial fit-outs across Australia. Workshop since 2014. NSW Carpentry Licence 505342C.",
   },
 };
 

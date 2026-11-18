@@ -116,7 +116,7 @@ export function buildServiceMetadata(service: ResolvedService): Metadata {
     const secondary = SERVICE_SECONDARY_KEYWORDS[service.slug];
     return buildMetadata({
       title: `${label} Australia — SteepWood Custom Cabinetry Since 2014`,
-      description: `${label} designed and built by SteepWood. ${secondary[0]}, ${secondary[1]} and ${secondary[2]} delivered nationally from our workshop. NSW Licence 489553C.`,
+      description: `${label} designed and built by SteepWood. ${secondary[0]}, ${secondary[1]} and ${secondary[2]} delivered nationally from our workshop. NSW Licence 505342C.`,
       path: `/${service.slug}/`,
     });
   }
@@ -134,7 +134,7 @@ export function buildLocationMetadata(location: ResolvedLocation): Metadata {
     const state = CITY_STATE[location.slug];
     return buildMetadata({
       title: `Custom Joinery ${label} — Cabinet Maker ${label} ${state} | SteepWood`,
-      description: `Custom joinery and cabinetry in ${label} ${state}. Custom kitchens, built-in wardrobes, vanities and commercial fit-outs delivered to ${label}. NSW Licence 489553C.`,
+      description: `Custom joinery and cabinetry in ${label} ${state}. Custom kitchens, built-in wardrobes, vanities and commercial fit-outs delivered to ${label}. NSW Licence 505342C.`,
       path: `/locations/${location.slug}/`,
     });
   }

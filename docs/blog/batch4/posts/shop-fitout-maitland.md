@@ -123,7 +123,7 @@ If you are comparing markets, our [Newcastle shop fitout guide](/blog/shop-fitou
 
 ## Working with SteepWood
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty. See our [shopfitting service](/shopfitting) and [Hunter Valley commercial joinery](/commercial-joinery/hunter-valley) pages.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability and a 10-year structural warranty. See our [shopfitting service](/shopfitting) and [Hunter Valley commercial joinery](/commercial-joinery/hunter-valley) pages.
 
 ## Frequently asked questions
 

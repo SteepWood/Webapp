@@ -27,7 +27,7 @@ faq:
   - question: "Do I really need a licensed joiner for cabinetry in NSW?"
     answer: "Yes. Under the NSW Home Building Act 1989, any joinery work valued above $5,000 (including labour and materials) must be carried out by a holder of a valid NSW Carpentry Contractor Licence. Unlicensed work is illegal, uninsured, and cannot be claimed under the NSW Home Building Compensation Fund. Always verify the licence number via Service NSW before signing anything."
   - question: "How do I check a NSW carpentry licence?"
-    answer: "Go to the Service NSW tradesperson licence check at service.nsw.gov.au and enter the licence number or business name. The result will show whether the licence is current, the licence class, and the holder's name. SteepWood's licence is 489553C — check it yourself. If a builder cannot give you a licence number, stop there."
+    answer: "Go to the Service NSW tradesperson licence check at service.nsw.gov.au and enter the licence number or business name. The result will show whether the licence is current, the licence class, and the holder's name. SteepWood's licence is 505342C — check it yourself. If a builder cannot give you a licence number, stop there."
   - question: "Is a 50% upfront deposit normal for joinery?"
     answer: "No. A 50% upfront deposit is a significant red flag. For a genuine workshop-based joinery business, the standard schedule is 10% on signing, a progress payment when manufacture begins (typically 40–50% of the balance), and the remainder on completion of installation. Never pay more than 30% before work commences. If a builder demands more, they may lack the working capital to operate safely."
   - question: "What if my joiner goes out of business mid-project?"
@@ -106,7 +106,7 @@ It is also worth knowing that regardless of what any written warranty says, Aust
 
 **What a red flag sounds like:** "We guarantee our work" with nothing in writing, or a 12-month cosmetic warranty on a $40,000 kitchen fitout. Both suggest the builder is not confident in their own product.
 
-> **STEEPWOOD SERVICE** — SteepWood backs every project with a **10-year structural warranty** on all joinery, supported by Carpentry Contractor Licence 489553C. Our [Newcastle workshop](/about) is open for client visits by appointment, and we provide a written scope of works with every quote. [Get a free measure and quote](/quote) — no same-day pressure, no surprises.
+> **STEEPWOOD SERVICE** — SteepWood backs every project with a **10-year structural warranty** on all joinery, supported by Carpentry Contractor Licence 505342C. Our [Newcastle workshop](/about) is open for client visits by appointment, and we provide a written scope of works with every quote. [Get a free measure and quote](/quote) — no same-day pressure, no surprises.
 
 ---
 
@@ -184,7 +184,7 @@ We publish our answers to all ten questions here — not because we expect every
 
 | Question | SteepWood's answer |
 |---|---|
-| NSW Carpentry Contractor Licence | **489553C** — verify at [Service NSW](https://www.service.nsw.gov.au/transaction/check-tradesperson-licence) |
+| NSW Carpentry Contractor Licence | **505342C** — verify at [Service NSW](https://www.service.nsw.gov.au/transaction/check-tradesperson-licence) |
 | Workshop location and visits | Newcastle NSW workshop — visits welcome by appointment. [See our workshop](/about) |
 | In-house manufacture | All cabinetry designed and manufactured in our Newcastle workshop. Benchtops fabricated by named local fabricators |
 | Substrate and hardware | 18mm MR board carcasses as standard; Blum Legrabox drawer systems, Blum Clip Top Blumotion hinges; Hettich internal organisation systems available |
@@ -209,7 +209,7 @@ Yes. Under the NSW Home Building Act 1989, any joinery work valued above $5,000 
 
 ### How do I check a NSW carpentry licence?
 
-Go to the [Service NSW tradesperson licence check](https://www.service.nsw.gov.au/transaction/check-tradesperson-licence) and enter the licence number or business name. The result will show whether the licence is current, the licence class, and the holder's name. SteepWood's licence is 489553C — check it yourself. If a builder cannot give you a licence number, stop there.
+Go to the [Service NSW tradesperson licence check](https://www.service.nsw.gov.au/transaction/check-tradesperson-licence) and enter the licence number or business name. The result will show whether the licence is current, the licence class, and the holder's name. SteepWood's licence is 505342C — check it yourself. If a builder cannot give you a licence number, stop there.
 
 ### Is a 50% upfront deposit normal for joinery?
 

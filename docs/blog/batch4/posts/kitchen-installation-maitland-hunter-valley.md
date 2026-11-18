@@ -111,7 +111,7 @@ If you are closer to the lake, our [Lake Macquarie kitchen installation guide](/
 
 ## Working with SteepWood
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty. See our [custom kitchen joinery](/custom-kitchen-joinery) page for finishes and examples.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability and a 10-year structural warranty. See our [custom kitchen joinery](/custom-kitchen-joinery) page for finishes and examples.
 
 ## Frequently asked questions
 

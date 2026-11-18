@@ -120,7 +120,7 @@ Our [Sydney service area](/locations/sydney) covers all of these suburbs.
 
 ## Working with SteepWood
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty. See our [home office joinery service](/home-office-joinery) page for examples and finishes.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability and a 10-year structural warranty. See our [home office joinery service](/home-office-joinery) page for examples and finishes.
 
 ## Frequently asked questions
 

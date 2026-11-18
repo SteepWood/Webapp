@@ -112,7 +112,7 @@ Because we travel from Newcastle, we plan each Coast install as a block of days 
 | What warranty covers the work? | Cabinets and installation |
 | How are defects handled? | Response time after handover |
 
-You can [check a builder or tradesperson licence with Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence). SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with a 10-year structural warranty on joinery.
+You can [check a builder or tradesperson licence with Service NSW](https://www.service.nsw.gov.au/transaction/check-a-builder-or-tradesperson-licence). SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with a 10-year structural warranty on joinery.
 
 ## Holiday homes and rentals
 

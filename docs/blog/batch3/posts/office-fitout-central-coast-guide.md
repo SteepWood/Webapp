@@ -117,7 +117,7 @@ Offices near the water in Terrigal, The Entrance and Woy Woy face more humidity 
 
 ## Why work with SteepWood
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability and a 10-year structural warranty on joinery. See our [office fitout joinery](/office-fitout) and [Central Coast commercial joinery](/commercial-joinery/central-coast) pages for more.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability and a 10-year structural warranty on joinery. See our [office fitout joinery](/office-fitout) and [Central Coast commercial joinery](/commercial-joinery/central-coast) pages for more.
 
 ## Budgeting tips for small Central Coast offices
 

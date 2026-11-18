@@ -5,7 +5,7 @@ Batch 4 briefs, recorded from the finished posts so Cursor, an editor or a futur
 - 1,000–1,900 words, Australian English, author Sukhveer Kaur.
 - Direct answer to the primary keyword inside the first 100 words.
 - At least 6 H2s, 2 tables, 4 inline sources and 5 FAQs matching the `FAQPage` schema.
-- One SteepWood CTA block and the trust line (ABN 52 697 313 269, Licence 489553C, $20M public liability, 10-year structural warranty).
+- One SteepWood CTA block and the trust line (ABN 52 697 313 269, Licence 505342C, $20M public liability, 10-year structural warranty).
 - Internal links only to pages live on the post's publish date (checked by `scripts/build_and_validate.py`).
 - 5 image slots per post: hero, og, inline-01, inline-02, inline-wide.
 
@@ -104,7 +104,7 @@ Batch 4 briefs, recorded from the finished posts so Cursor, an editor or a futur
 - **Internal links** `/locations/newcastle`, `/blog/decking-cost-newcastle`, `/blog/spotted-gum-merbau-blackbutt-decking-nsw`, `/blog/composite-vs-timber-decking-central-coast`, `/blog/deck-builders-sydney-cost`, `/quote`
 - **Related posts** decking-cost-newcastle, spotted-gum-merbau-blackbutt-decking-nsw, composite-vs-timber-decking-central-coast
 - **FAQ** How much does a deck cost in Lake Macquarie? · Do I need approval for a deck in Lake Macquarie? · Is my Lake Macquarie property in a mine subsidence district? · What is the best timber for a deck near the lake? · Can I build a deck right to the waterline?
-- **Flags** README §5 item 1: confirm deck work sits within Carpentry Contractor Licence 489553C, or soften deck-building claims. README §5 item 2: decide whether to build /decking pages; until then decking posts link to location pages and /quote.
+- **Flags** README §5 item 1: confirm deck work sits within Carpentry Contractor Licence 505342C, or soften deck-building claims. README §5 item 2: decide whether to build /decking pages; until then decking posts link to location pages and /quote.
 
 ---
 

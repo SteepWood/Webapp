@@ -89,7 +89,7 @@ All posts now go live on 6 November 2026, so the "Needed by" dates below are pas
 
 | # | Item | Affects | Needed by |
 | --- | --- | --- | --- |
-| 1 | **Deck licence scope.** NSW Carpentry Contractor Licence 489553C covers carpentry. Some deck work, especially larger or structural landscaping decks, may need a structural landscaping licence. Confirm which deck work SteepWood does and under which licence. If unsure, soften "we build decks" to "we build timber decks and outdoor carpentry within our licence". | Posts 4, 9, 16, 23 | 9 Nov |
+| 1 | **Deck licence scope.** NSW Carpentry Contractor Licence 505342C covers carpentry. Some deck work, especially larger or structural landscaping decks, may need a structural landscaping licence. Confirm which deck work SteepWood does and under which licence. If unsure, soften "we build decks" to "we build timber decks and outdoor carpentry within our licence". | Posts 4, 9, 16, 23 | 9 Nov |
 | 2 | **Build a `/decking` service page?** Decking posts currently link to location pages and `/quote` only. A `/decking` page plus `/decking/newcastle`, `/decking/central-coast` and `/decking/sydney` would give the decking posts a page to rank. | Phase 1 Step 9 | Any time |
 | 3 | **North Sydney / Lower North Shore hub?** Optional Sydney commercial hub. | Phase 1 Step 9 | Any time |
 | 4 | **Can projects or clients be named?** Posts currently name no clients. If you want named case studies (for example GYG Boolaroo, or the Rutherford barber fitout), say so and we will add them in the backfill. | All commercial posts | Backfill |

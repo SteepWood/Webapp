@@ -8,7 +8,7 @@ Universal per-post requirements, on top of the brief:
 - Opens with the direct answer to the primary keyword inside the first 120 words, including a number.
 - One "The NSW numbers" or equivalent evidence section using the location data.
 - A mandatory **NSW location matrix** section for non-local posts: a table of at least eight NSW regions with a relevant local variable, drawn from `LOCATION-STRATEGY.md`.
-- Compliance box naming Licence 489553C, the $5,000 licence threshold and the $20,000 HBCF threshold where money is discussed.
+- Compliance box naming Licence 505342C, the $5,000 licence threshold and the $20,000 HBCF threshold where money is discussed.
 - FAQ section with six questions, each answered in 40–90 words, matching the `FAQPage` schema.
 - Blockquote CTA using the exact class string in `SHARED_CONTEXT.md`, once mid-article and once at the close.
 - 5 image alt texts, written into the companion `research/RESEARCH-{slug}.md`.

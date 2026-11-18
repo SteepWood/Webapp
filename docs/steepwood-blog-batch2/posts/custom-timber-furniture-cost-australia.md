@@ -165,7 +165,7 @@ For fitted timber work, the detailing logic is similar to [custom kitchen joiner
 
 ## Compliance and credentials
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. Consumer prices should be expressed as a total including GST under the [Australian Government single-price guidance](https://business.gov.au/legal/fair-trading/display-prices). We provide a 10-year structural warranty on all joinery; the written scope will state the furniture construction, finish and delivery basis.
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269. Consumer prices should be expressed as a total including GST under the [Australian Government single-price guidance](https://business.gov.au/legal/fair-trading/display-prices). We provide a 10-year structural warranty on all joinery; the written scope will state the furniture construction, finish and delivery basis.
 
 ## FAQ
 

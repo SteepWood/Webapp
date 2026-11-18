@@ -125,21 +125,26 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const shouldReduceMotion = useReducedMotion();
 
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > 48);
+      // Homepage uses a shorter threshold. Other pages keep 48px.
+      const threshold = isHome ? 10 : 48;
+      setScrolled(window.scrollY > threshold);
     };
 
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [isHome]);
 
   const closeMobile = () => setMobileOpen(false);
-  const pathname = usePathname();
-  // The homepage hero is linen, so the bar stays dark text on a solid light background.
   const lightOnHero = false;
-  const solidBar = scrolled || pathname === "/";
+  // Homepage stays on a solid light bar, including at the top, so the dark hero
+  // cannot show through the menu. Other pages stay clear until they scroll.
+  const solidBar = isHome || scrolled;
 
   return (
     <header className="fixed top-0 right-0 left-0 z-50 h-16 pt-safe md:h-[5.5rem] lg:h-28">
@@ -147,7 +152,9 @@ export function Header() {
         className={cn(
           "absolute inset-0 border-b transition-colors",
           solidBar
-            ? "border-ink-700/15 bg-white/92 shadow-md backdrop-blur-xl"
+            ? isHome && scrolled
+              ? "border-ink-700/15 bg-white/[0.97] shadow-md backdrop-blur-xl"
+              : "border-ink-700/15 bg-white/92 shadow-md backdrop-blur-xl"
             : "border-transparent bg-transparent",
         )}
         animate={{ opacity: 1 }}

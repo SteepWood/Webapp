@@ -134,10 +134,10 @@ function buildComboHeroIntro(service: Service, city: City): string {
   const state = CITY_STATE[city];
 
   if (service === "office-fitout" && city === "newcastle") {
-    return `SteepWood delivers office fit-out in ${cityLbl} ${state}. Reception desks, boardroom credenzas, breakout kitchens, and storage walls for ${cityLbl} CBD and inner-city tenancies — designed, manufactured and installed by our team since 2014 (NSW Carpentry Contractor Licence 489553C).`;
+    return `SteepWood delivers office fit-out in ${cityLbl} ${state}. Reception desks, boardroom credenzas, breakout kitchens, and storage walls for ${cityLbl} CBD and inner-city tenancies — designed, manufactured and installed by our team since 2014 (NSW Carpentry Contractor Licence 505342C).`;
   }
 
-  return `SteepWood delivers ${svcKw} in ${cityLbl} ${state}. Every ${svcKw} project for ${cityLbl} clients is drawn, manufactured and installed by our team — operating since 2014 as Pavit Pty Ltd (NSW Carpentry Contractor Licence 489553C).`;
+  return `SteepWood delivers ${svcKw} in ${cityLbl} ${state}. Every ${svcKw} project for ${cityLbl} clients is drawn, manufactured and installed by our team — operating since 2014 as Pavit Pty Ltd (NSW Carpentry Contractor Licence 505342C).`;
 }
 
 function buildComboServiceDetail(service: Service, city: City): string {

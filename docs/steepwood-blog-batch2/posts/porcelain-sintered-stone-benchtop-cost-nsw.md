@@ -141,7 +141,7 @@ For a complete kitchen package, compare the surface allowance beside [custom kit
 
 For related decisions, compare [custom kitchen joinery](/custom-kitchen-joinery) with a [custom bathroom vanity](/custom-bathroom-vanity), then read the [NSW kitchen cost guide](/blog/custom-kitchen-cost-nsw-2026) and [laundry joinery cost guide](/blog/laundry-joinery-cost-nsw). We service [Newcastle](/locations/newcastle) and [Sydney](/locations/sydney); the final scope is confirmed through a [free measure and quote](/quote).
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above $5,000 including GST; work above $20,000 follows the larger contract and Home Building Compensation pathway where applicable ([NSW Government contract guidance](https://www.nsw.gov.au/housing-and-construction/compliance-and-regulation/your-obligations-to-your-customers/guide-to-providing-home-building-contracts)).
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269. NSW requires a licence for residential building work above $5,000 including GST; work above $20,000 follows the larger contract and Home Building Compensation pathway where applicable ([NSW Government contract guidance](https://www.nsw.gov.au/housing-and-construction/compliance-and-regulation/your-obligations-to-your-customers/guide-to-providing-home-building-contracts)).
 
 ## FAQ
 

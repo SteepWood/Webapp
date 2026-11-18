@@ -125,7 +125,7 @@ Our [Newcastle office fitout guide](/blog/office-fitout-newcastle-guide), [Centr
 
 For a 150 m² office with reception, kitchenette and storage, a realistic program from signed lease is often around three months: several weeks for design and landlord approval, a few weeks for shop drawings and manufacture alongside site works, a short construction period and a week for defects and move-in. Your own program will depend on the building, approvals and how quickly decisions are made.
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 489553C, with $20 million public liability. Our [commercial joinery guide](/blog/commercial-joinery-newcastle-guide) explains how we work with builders.
+SteepWood is Pavit Pty Ltd trading as SteepWood, ABN 52 697 313 269, NSW Carpentry Contractor Licence 505342C, with $20 million public liability. Our [commercial joinery guide](/blog/commercial-joinery-newcastle-guide) explains how we work with builders.
 
 ## A checklist for the first month
 

@@ -14,7 +14,7 @@ Version: 2026-08-21. Site: https://steepwood.com.au
 | Workshop | Newcastle, NSW |
 | Operating since | 2014 |
 | ABN | 52 697 313 269 |
-| Licence | NSW Carpentry Contractor Licence 489553C |
+| Licence | NSW Carpentry Contractor Licence 505342C |
 | Warranty | 10-year structural warranty on all joinery |
 | Insurance (public copy) | Public liability $20 million; workers' compensation current |
 | Author byline (all posts) | Sukhveer Kaur (Founder & Master Joiner) |

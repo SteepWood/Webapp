@@ -181,7 +181,7 @@ The national office fitout benchmark of [AU$3,011 per square metre](https://www.
 
 ## Compliance and credentials
 
-SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. Commercial prices in this article are explicitly ex-GST; consumer price displays have separate [GST-inclusive single-price requirements](https://business.gov.au/legal/fair-trading/display-prices). Accessibility dimensions and approvals must be confirmed against the National Construction Code, AS 1428 and the project’s access professional before manufacture. We provide a 10-year structural warranty on all joinery.
+SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269. Commercial prices in this article are explicitly ex-GST; consumer price displays have separate [GST-inclusive single-price requirements](https://business.gov.au/legal/fair-trading/display-prices). Accessibility dimensions and approvals must be confirmed against the National Construction Code, AS 1428 and the project’s access professional before manufacture. We provide a 10-year structural warranty on all joinery.
 
 ## FAQ
 

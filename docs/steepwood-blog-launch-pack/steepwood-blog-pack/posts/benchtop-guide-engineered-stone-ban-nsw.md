@@ -176,7 +176,7 @@ Marble — or a convincing marble-look porcelain slab — is the authentic Hampt
 
 Lightly veined quartzite, travertine-look sintered stone, or warm-toned porcelain slab. The palette is earthy and grounded rather than stark. Avoid high-gloss white sintered stone in these styles — it reads as too clinical. Brushed or matte surfaces read warmer.
 
-> **STEEPWOOD SERVICE** — SteepWood designs and builds [custom kitchen joinery](/custom-kitchen-joinery) from our Newcastle workshop, hand-crafted in Australian-sourced timber where possible, with a 10-year structural warranty. We work with your stonemason of choice or can refer you to WHS-compliant suppliers in the Newcastle and Sydney regions. [Get a free measure and quote](/quote) — we cover all NSW and ACT, with free in-home measure and quote. NSW Carpentry Contractor Licence 489553C.
+> **STEEPWOOD SERVICE** — SteepWood designs and builds [custom kitchen joinery](/custom-kitchen-joinery) from our Newcastle workshop, hand-crafted in Australian-sourced timber where possible, with a 10-year structural warranty. We work with your stonemason of choice or can refer you to WHS-compliant suppliers in the Newcastle and Sydney regions. [Get a free measure and quote](/quote) — we cover all NSW and ACT, with free in-home measure and quote. NSW Carpentry Contractor Licence 505342C.
 
 ---
 
@@ -238,4 +238,4 @@ No. The prohibition under Australian WHS law covers manufacture, supply, and ins
 
 ---
 
-If you are planning a kitchen or bathroom renovation in NSW and want to work through the benchtop specification alongside your joinery design, we offer a free in-home measure and quote across all of NSW and ACT. Our Newcastle workshop has been crafting custom joinery since 2014 under NSW Carpentry Contractor Licence 489553C, backed by a 10-year structural warranty on all joinery work. Call us on 0468 387 676 (Mon–Fri 7am–5pm, Sat by appointment), email hello@steepwood.com.au, or [get a free measure and quote](/quote) online.
+If you are planning a kitchen or bathroom renovation in NSW and want to work through the benchtop specification alongside your joinery design, we offer a free in-home measure and quote across all of NSW and ACT. Our Newcastle workshop has been crafting custom joinery since 2014 under NSW Carpentry Contractor Licence 505342C, backed by a 10-year structural warranty on all joinery work. Call us on 0468 387 676 (Mon–Fri 7am–5pm, Sat by appointment), email hello@steepwood.com.au, or [get a free measure and quote](/quote) online.

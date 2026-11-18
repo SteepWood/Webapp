@@ -161,7 +161,7 @@ The travel position is equally clear: SteepWood manufactures in Newcastle, provi
 
 Before paying a deposit or booking a lift, collect the by-laws, written approval route, approved drawings, appliance schedule, wet-trade scope, lift and dock rules, working hours, protection requirements, parking instructions and a contact for the building manager. Ask whether waste removal, insurance certificates or a bond are required. Then have the joiner confirm cabinet sizes against the route.
 
-For money and residential work, SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 489553C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). This article is general information, not legal advice; use the current NSW guidance and your scheme documents for the actual approval decision.
+For money and residential work, SteepWood is Pavit Pty Ltd trading as SteepWood, NSW Carpentry Contractor Licence 505342C, ABN 52 697 313 269. NSW requires a licence for residential building work above [ $5,000 including GST](https://www.nsw.gov.au/business-and-economy/running-a-business/advertising-laws-and-your-business/building-trade-advertisements). This article is general information, not legal advice; use the current NSW guidance and your scheme documents for the actual approval decision.
 
 ## FAQ
 
