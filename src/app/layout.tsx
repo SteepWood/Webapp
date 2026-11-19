@@ -54,7 +54,10 @@ export default function RootLayout({
         <ViewTransitions>
           <Providers>
             <SiteChrome>{children}</SiteChrome>
-            <AnalyticsShell ga4Id={env.NEXT_PUBLIC_GA4_ID} />
+            <AnalyticsShell
+              ga4Id={env.NEXT_PUBLIC_GA4_ID}
+              googleAdsId={env.NEXT_PUBLIC_GOOGLE_ADS_ID}
+            />
           </Providers>
         </ViewTransitions>
         <RootStructuredDataScript />

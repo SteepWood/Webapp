@@ -10,7 +10,10 @@ import {
 
 type GoogleAnalyticsProps = {
   measurementId?: string;
+  googleAdsId?: string;
 };
+
+const GOOGLE_ADS_ID_PATTERN = /^AW-\d+$/;
 
 function subscribeConsent(onStoreChange: () => void) {
   window.addEventListener(COOKIE_CONSENT_EVENT, onStoreChange);
@@ -21,7 +24,10 @@ function subscribeConsent(onStoreChange: () => void) {
   };
 }
 
-export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
+export function GoogleAnalytics({
+  measurementId,
+  googleAdsId,
+}: GoogleAnalyticsProps) {
   const consent = useSyncExternalStore(
     subscribeConsent,
     readCookieConsent,
@@ -31,6 +37,11 @@ export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
   if (!measurementId || consent !== "accepted") {
     return null;
   }
+
+  const adsConfig =
+    googleAdsId && GOOGLE_ADS_ID_PATTERN.test(googleAdsId)
+      ? `gtag('config', '${googleAdsId}');`
+      : "";
 
   return (
     <>
@@ -44,6 +55,7 @@ export function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${measurementId}', { send_page_view: true });
+          ${adsConfig}
         `}
       </Script>
     </>
