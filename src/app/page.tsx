@@ -68,7 +68,7 @@ export default async function HomePage() {
   const { services, locations, projects, faqs } = await getHomepagePageData();
 
   return (
-    <div className="overflow-x-clip bg-[#faf8f5] max-lg:-mb-[calc(5rem+env(safe-area-inset-bottom))]">
+    <div className="overflow-x-clip max-lg:-mb-[calc(5rem+env(safe-area-inset-bottom))]">
       <Hero />
       <TrustBar />
       <ServicesOverview services={services} />

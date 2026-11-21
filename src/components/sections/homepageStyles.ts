@@ -1,8 +1,8 @@
 /** Shared layout classes for the homepage restyle only. */
-export const homepageCanvasClass = "overflow-x-clip bg-[#faf8f5]";
+export const homepageCanvasClass = "overflow-x-clip";
 
 export const homepageSectionClass =
-  "scroll-mt-28 bg-[#faf8f5] py-12 md:py-16 lg:py-24";
+  "scroll-mt-28 py-12 md:py-16 lg:py-24";
 
 export const homepageBandClass =
   "scroll-mt-28 bg-[#f1eae0] py-12 md:py-16 lg:py-24";
